@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Pubs Galore guide to good pubs in Wales." />
+  <meta name="keywords" content="pubs, uk, guide, review, picture, photo, festival, beer, galore, listing" />
+  <title>Pubs in Wales : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="/js/core/countries.js?v=3"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  map = new countrymap($('#googlemap')[0], 52.34876318198808, -3.95507812500000, 7, 3, '');
+});
+var map = null;
+
+function setGoogleMaps() {
+  var showmaps = "false";
+  if (document.cookie) {
+    $.each(document.cookie.split(";"), function(x, cook) {
+      var contents = $.trim(cook).split("=");
+      if (contents[0] == "showmaps") showmaps = contents[1];
+    });
+  }
+  var expiredate = new Date();
+  expiredate.setFullYear(expiredate.getFullYear() + 1);
+  if (showmaps == "false") {
+    document.cookie = "showmaps=true;expires=" + expiredate.toGMTString() + ";path=/";
+  } else {
+    document.cookie = "showmaps=false;expires=" + expiredate.toGMTString() + ";path=/";
+  }
+  window.location.reload();
+}
+
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<link type="text/css" rel="stylesheet" href="/css/core/countries.css" />
+<style type="text/css">
+#googlemap {
+  width: 600px; 
+  height: 500px; 
+}
+
+</style>
+<!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+<!--[if lt IE 8]>
+<style>
+.gminformation, #googlemap {
+  display: inline;
+  zoom: 1;
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Wales Page">Wales</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="3pdtc5u3jqhd7mj3vre2d2af92" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  <hr /><p class="tool"><span class="smallbutton" onclick="setGoogleMaps()">Disable Google Maps</span></p>
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29715"><strong>Camra vouchers</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=13624">Mobyduck</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+</div>
+  <div class="gminformation">
+<a id="countyname121" class="countyname" href="/counties/clwyd/">Clwyd</a>
+<a id="countyname122" class="countyname" href="/counties/dyfed/">Dyfed</a>
+<a id="countyname123" class="countyname" href="/counties/gwent/">Gwent</a>
+<a id="countyname124" class="countyname" href="/counties/gwynedd/">Gwynedd</a>
+<a id="countyname125" class="countyname" href="/counties/mid-glamorgan/">Mid Glamorgan</a>
+<a id="countyname126" class="countyname" href="/counties/powys/">Powys</a>
+<a id="countyname127" class="countyname" href="/counties/south-glamorgan/">South Glamorgan</a>
+<a id="countyname128" class="countyname" href="/counties/west-glamorgan/">West Glamorgan</a>
+
+  </div>
+
+  <div id="googlemap"></div>
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>
