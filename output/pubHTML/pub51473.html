@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Lounge pub in Lerwick, Shetland Islands, ZE1 0BJ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Lounge" />
+  <meta name="keywords" content="The Lounge, 4  Mounthooly Street, Lerwick, Shetland Islands, Lerwick Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Lounge in Lerwick" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/51001_51500/51473_f321c07c.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/51473/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="60.15276600000000" />
+<meta property="og:longitude" content="-1.14287900000000" />
+<meta property="og:street-address" content="4  Mounthooly Street" />
+<meta property="og:locality" content="Lerwick" />
+<meta property="og:region" content="Shetland Islands" />
+<meta property="og:postal-code" content="ZE1 0BJ" />
+<meta property="og:country-name" content="Scotland" />
+<meta property="og:description" content="Do you like The Lounge in Lerwick? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Lounge the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/51473/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Lounge in Lerwick" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Lounge " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/51001_51500/51473_f321c07c.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/51473/" />
+<meta name="geo.position" content="60.15276600000000;-1.14287900000000" />
+<meta name="geo.placename" content="The Lounge in Lerwick" />
+<meta name="geo.region" content="UK" />
+<title>The Lounge in Lerwick : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":51473},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(51473);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 51473;var pubaddress = "4  Mounthooly Street";var pubname = "The Lounge";var pubpostcode = "ZE1 0BJ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/scotland/" title="Pubs Galore : Scotland Page">Scotland</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/shetland/" title="Pubs Galore : Shetland Islands Page">Shetland Islands</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/lerwick/shetland/" title="Pubs Galore : Lerwick Page">Lerwick</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Lounge Page">The Lounge Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="1u3silhc28u6febe4k2svkcpr7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 4.0531158447266E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/51473/" class="indisplay"><img src="/images/display/51001_51500/51473_f321c07c.jpg?w=2" alt="Picture of The Lounge" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Tuesday, 31<sup>st</sup> July 2018<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/51473/" class="smallbutton">View all this pub's pictures</a> (5 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/51473/">Pub map</a><br /><a href="/pubreviews/51473/">Pub reviews (2)</a><br /><a href="/pubpictures/51473/">Pub pictures (6)</a><br /><a href="/core/pubaudit.php?id=51473" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Lounge, Lerwick Central, Lerwick</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">4  Mounthooly Street</span><br />
+
+
+<span class="town">Lerwick</span><br />
+<span class="postcode">ZE1 0BJ</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/lerwick-central/shetland/">Lerwick Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Lounge  <span class="h2note">(Average Rating: <span id="averagerating"><b>7&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review132369" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Lounge</h6>
+<p class="old">Tucked off just behind Commercial St (look for the illuminated sign above a doorway) and famed in the islands for its folk music nights. There are two bars, though the upper bar appears to be closed out of peak times (as it was on my first visit). The street level bar is sparse but strangely characterful, with a lino floor, 60&#039;s style half-length light wood wall panelling and some turquoise leatherette padded perimeter seating. Dart board and fake stove fire spotted, plus news on the TV. Not much on at the bar here, just three BrewDog bottles and an Innis and Gunn can in the fridge, so half a Tennants was the choice for the swiftest dispatch to make time for one more bar before closing. I popped in the other door the next day for the live music and found the lounge upstairs. It&rsquo;s an atmospheric H shaped interior with red walls, blue fabric bench seating and muted lighting. Instruments hanging from the walls attest to the live music, as does the tuned upright piano. There was a better beer choice in the fridge here with three BrewDog (including Choc Psycho), Swannay Scarpa Special and Valhalla bottles. It got pretty busy and the live folk music jam was great fun. You really must make a point of doing this one if you are here on a live music night (which starts around 9 &ndash; they like to do things late in Lerwick) which are usually on Wednesday and Saturday.</p>
+<p class="Reviewer">On 25<sup>th</sup> March 2018 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review72148" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=David1958">David Ross</a> left this review about The Lounge Bar</h6>
+<p class="old">Mentioned in Ann Cleeves&rsquo; Shetland based detective novels, currently being serialised on TV, this is one of Lerwick&rsquo;s best known and most popular pubs. Despite the name, it actually consists of a street level bar and an upstairs lounge. The latter is the Islands&rsquo; most renowned live music venue and a folk band were in the process of setting up while I was there. There are acoustic and electric guitars hanging from the walls as well as pictures of, presumably local, musicians in action in the pub. The wood panelled downstairs bar is more basic and traditional in style, with a mix of bench seating around the walls and stools at tables. There is also ample standing room in the middle of the floor and a TV, a juke box and a darts board. The walls are decorated with foreign banknotes, beer posters and photos of regular customers. Although the upstairs lounge is considerably more plush, prices are the same in both sections, with Tennent&rsquo;s lager selling at &pound;3.30 a pint. Also on draught are Caledonia Best, Guinness, Stella Artois, Carling lager, Tartan Special and Gaymer&rsquo;s cider.</p>
+<p class="Reviewer">On 6<sup>th</sup> July 2013 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 769 recommendations about 683 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Lounge</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="165361666844817">Facebook - <a href="https://www.facebook.com/The-Lounge-Bar-165361666844817/" target="_blank" rel="nofollow">The Lounge Bar</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/51473/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([60.15276600000000, -1.14287900000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([60.15276600000000, -1.14287900000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=51473">View all updates for The Lounge, Lerwick</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        27<span class="sup">th</span> Aug 2018, 10:16
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        31<span class="sup">st</span> Jul 2018, 12:23
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11851473">No</span> <span id="discdetail11851473" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 August 2018 by Quinno _</span></li><li>Bar Billiards : <span id="fac10751473">No</span> <span id="discdetail10751473" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 August 2018 by Quinno _</span></li><li>Beer Festivals : <span id="fac11751473">No</span> <span id="discdetail11751473" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 August 2018 by Quinno _</span></li><li>Beer Garden : <span id="fac11451473">No</span> <span id="discdetail11451473" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 August 2018 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10251473">No</span> <span id="discdetail10251473" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 August 2018 by Quinno _</span></li><li>Car Park : <span id="fac11351473">No</span> <span id="discdetail11351473" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 August 2018 by Quinno _</span></li><li>Darts : <span id="fac11151473">Yes</span> <span id="discdetail11151473" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 August 2018 by Quinno _</span></li><li>Function Room : <span id="fac12351473">Yes</span> <span id="discdetail12351473" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 August 2018 by Quinno _</span></li><li>Hot Food : <span id="fac10351473">No</span> <span id="discdetail10351473" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 August 2018 by Quinno _</span></li><li>Jukebox : <span id="fac11251473">Yes</span> <span id="discdetail11251473" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 July 2013 by hondo .</span></li><li>Karaoke : <span id="fac10651473">No</span> <span id="discdetail10651473" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 August 2018 by Quinno _</span></li><li>Live Music : <span id="fac10851473">Yes</span>  - <span id="discdetail10851473" class="discdetail" style="">Wed and Sat</span> -   <span class="Reviewer">last updated 27 August 2018 by Quinno _</span></li><li>Micropub : <span id="fac12251473">No</span> <span id="discdetail12251473" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 August 2018 by Quinno _</span></li><li>Pinball : <span id="fac11651473">No</span> <span id="discdetail11651473" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 August 2018 by Quinno _</span></li><li>Pool Table : <span id="fac10451473">No</span> <span id="discdetail10451473" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 August 2018 by Quinno _</span></li><li>Real Ale : <span id="fac10151473">No</span> <span id="discdetail10151473" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 August 2018 by Quinno _</span></li><li>Real Cider : <span id="fac11951473">No</span> <span id="discdetail11951473" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 August 2018 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11am - 1am</td></tr>
+<tr><td>Monday</td><td>11am - 1am</td></tr>
+<tr><td>Tuesday</td><td>11am - 1am</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>11am - 1am</td></tr>
+<tr><td>Thursday</td><td>11am - 1am</td></tr>
+<tr><td>Friday</td><td>11am - 1am</td></tr>
+<tr><td>Saturday</td><td>11am - 1am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 2 reviewer(s)" title="Pub has average rating of 8 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/51467/" class="List1">Captain Flints</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 3 reviewer(s)" title="Pub has average rating of 4.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/52361/" class="List1">Grand Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 2 reviewer(s)" title="Pub has average rating of 4.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/51476/" class="List1">Thule</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 2 reviewer(s)" title="Pub has average rating of 4.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/52362/" class="List1">Queens Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/51471/" class="List1">Kveldsro House Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/80423/" class="List1">Da Wheel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86726/" class="List1">Mareel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 2 reviewer(s)" title="Pub has average rating of 8 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/51470/" class="List1">Douglas Arms</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

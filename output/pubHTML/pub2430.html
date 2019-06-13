@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Ye Olde Swan pub in Woughton On The Green (near Milton Keynes), Buckinghamshire, MK6 3BS : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Ye Olde Swan" />
+  <meta name="keywords" content="Ye Olde Swan, Newport Road, Woughton On The Green, Milton Keynes, Buckinghamshire, , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Ye Olde Swan in Woughton On The Green" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/2001_2500/2430_723878032fff9ca1ddae22cf03a25886.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/2430/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.02924692117781" />
+<meta property="og:longitude" content="-0.72366267442703" />
+<meta property="og:street-address" content="Newport Road" />
+<meta property="og:locality" content="Woughton On The Green" />
+<meta property="og:region" content="Buckinghamshire" />
+<meta property="og:postal-code" content="MK6 3BS" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Ye Olde Swan in Woughton On The Green? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Ye Olde Swan the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/2430/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Ye Olde Swan in Woughton On The Green" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Ye Olde Swan " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/2001_2500/2430_723878032fff9ca1ddae22cf03a25886.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/2430/" />
+<meta name="geo.position" content="52.02924692117781;-0.72366267442703" />
+<meta name="geo.placename" content="Ye Olde Swan in Woughton On The Green" />
+<meta name="geo.region" content="UK" />
+<title>Ye Olde Swan in Woughton On The Green (near Milton Keynes) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":2430},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(2430);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 2430;var pubaddress = "Newport Road";var pubname = "Ye Olde Swan";var pubpostcode = "MK6 3BS";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/buckinghamshire/" title="Pubs Galore : Buckinghamshire Page">Buckinghamshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/milton-keynes/buckinghamshire/" title="Pubs Galore : Milton Keynes Page">Milton Keynes</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/woughton-on-the-green/buckinghamshire/" title="Pubs Galore : Woughton On The Green Page">Woughton On The Green</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Ye Olde Swan Page">Ye Olde Swan Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="esatiu169ojrblqm4s6j7q2m36" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/2430/" class="indisplay"><img src="/images/display/2001_2500/2430_723878032fff9ca1ddae22cf03a25886.jpg?w=2" alt="Picture of Ye Olde Swan" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
+  Submitted on Monday, 30<sup>th</sup> June 2008<br />
+  With picture contributions to 20227 other pubs<br />
+<a href="/pubpictures/2430/" class="smallbutton">View all this pub's pictures</a> (2 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/2430/">Pub map</a><br /><a href="/pubreviews/2430/">Pub reviews (5)</a><br /><a href="/pubpictures/2430/">Pub pictures (3)</a><br /><a href="/core/pubaudit.php?id=2430" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Ye Olde Swan, Milton Keynes</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Newport Road</span><br />
+
+<span class="town">Woughton On The Green</span><br />
+<span class="postaltown">Postal town: Milton Keynes</span><br />
+<span class="postcode">MK6 3BS</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01908679489</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Chef & Brewer (Spirit Pubs)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/woughton-on-the-green/buckinghamshire/">Woughton On The Green</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Ye Olde Swan  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review78508" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Thuck+Phat">Thuck Phat</a> left this review about Ye Olde Swan</h6>
+<p class="old">Not a vast amount to add to the two comprehensive reviews below.<br />
+Ye Olde Swan is a formulaic gastropub in the rural seeming enclave of Woughton on the Green yet still very close to Milton Keynes. It retains many original features. So if you live close to MK or need to go there and fancy a meal in a pub with a country feel set in a rural seeming village then is the place.<br />
+The service was very efficient and friendly enough.<br />
+Beers: Adnams Southwold, Speckled, Hobgoblin and Pride. Not adventurous but the Pride was very well kept and slipped down easily.<br />
+I&#039;d try it if I needed a meal in the area or a reliable pint.</p>
+<p class="Reviewer">On 15<sup>th</sup> January 2014 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 663 recommendations about 662 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review78399" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a> left this review about Ye Olde Swan</h6>
+<p class="old">A Chef and Brewer chain pub,aimed at the dining market although fine to pop into for a beer.Blackthorn has done a very thorough review,I felt it was a pleasant enough &quot;gastro pub by numbers&quot;.The large garden looked like a plus point in good weather,and the area around the bar by the entrance had high tables,sofas and ,at a lower level traditional tables and chairs which were not set for diners and proved a decent spot to drink.Much of the remaining interior is set for diners in various discrete sections.The real fireplaces still work but no fires had been set on a windy morning visit,shame.<br />
+The four handpumps were serving Adnams Southwold,Old Speckled Hen,Hobgoblin and a decent London Pride,backing up the cask marque accreditation.Annoyingly nuts were not served by the bag,but poured into a vessel increasing the price to an eye watering amount.There was a fruit machine in the &quot;drinking&quot; section and the muzak was pretty loud.Good on them for having a weekly quiz night,and Fizz Friday wasn&#039;t an invitation to buy discounted wife beater,but a deal on prosecco and champagne all day.<br />
+We didnt eat but at lunchtime there is a fixed price menu for 1,2 or 3 courses at &pound;6,&pound;9 and &pound;12.Mains on the a la carte were generally &pound;11-&pound;14.<br />
+Rather too sterile for me to place on the revisit list,but a respectable and decent type of foodie pub.</p>
+<p class="Reviewer">On 12<sup>th</sup> January 2014 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 1916 recommendations about 1916 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review62365" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about Ye Olde Swan</h6>
+<p class="old">A large and attractive pub in a pleasant location a few minutes walk from the canal, this seems a popular spot and was almost full on a recent mid-week evening visit, albeit predominantly with diners. First impressions were not that encouraging with a sign in the car park proclaiming that they were &quot;proud to serve Costa coffee&quot; and Christmas menu leaflets just inside the door. In July. <br />
+<br />
+The pub is split in to several different areas, and many of these are clearly aimed more at eating than drinking. It&#039;s had a contemporary makeover at some point which may have removed some of it&#039;s original charm, but it&#039;s not at all unpleasant. The main bar area has an attractive farmhouse tiled floor, and there is cream wood panelling on much of the walls. To the left is a small snug with green wood panelling on the lower part of the walls, maroon paintwork up above, several old black and white photo&#039;s on the walls and some comfy looking leather armchairs. The pub then extends on in to numerous different areas with either dark laminate on the floors or carpet. Many of these are quite cosy with low beamed ceiling, suitably sagging in places, and some of the lower beams having had padding applied. Obviously the Health &amp; Safety police felt that the &quot;Mind your head&quot; signs were insufficient. Candles adorned many of the tables, and many of the rooms offered views out to the gardens. A free standing, dual aspect brick chimney breast separated two of the rooms and was an attractive feature, although whether it&#039;s still used I&#039;m not sure. <br />
+<br />
+Outside there is a beer garden with picnic benches as well as a patio with modern wicker chairs and high tables and this looked to be a pleasant spot. The food menu is extensive and split in to different sections such as Salads/Vegetarian, Meat/Poultry, Fish, Pies, Burgers and Grills. Prices were slightly above the budget end of the scale, with main courses starting at around &pound;9 and going up to &pound;15 or so. I had the Oven baked salmon wrapped in pancetta with a cheesy mash, green beans and a white wine and pesto sauce, which was a decent enough and attractively presented dish, although the pancetta was noticeable only by it&#039;s absence. At &pound;13.29 it wasn&#039;t the cheapest option, but I was quite happy with it.<br />
+<br />
+Beers on tap were Greene King IPA, Marston&#039;s Single Hop Styrian and one which the barman described as Young&#039;s Gold, although I didn&#039;t see a pump clip for that and can&#039;t see it listed on the Young&#039;s website. Ciders were Aspall&#039;s Suffolk and Weston&#039;s Traditional Scrumpy which makes a very pleasant change when the rest of Milton Keynes is drowning in a sea of Strongbow. This is a tricky one to mark - it&#039;s a pleasant pub, staff were friendly and there was good food. On the downside, the choice of beer wasn&#039;t great and it&#039;s not really that &quot;pubby&quot; although having said that they do hold Tuesday&#039;s quiz nights, which is not perhaps what you might expect. Overall I&#039;d say give it a go if you&#039;re passing, but it&#039;s probably not worth making a special effort to get there - unless of course you&#039;re in Milton Keynes itself and want to avoid all the dross that is there.</p>
+<p class="Reviewer">On 1<sup>st</sup> August 2012 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/2430/">View more reviews of Ye Olde Swan (5)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Ye Olde Swan</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Ye Olde Swan page at the Chef &amp; Brewer site - <a href="http://www.chefandbrewer.com/pub/ye-olde-swan-woughton-on-the-green-milton-keynes/c0156/" title="Submitted by:- Blackthorn _" target="_blank">www.chefandbrewer.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="191857884333065">Facebook - <a href="https://www.facebook.com/YeOldeSwanMiltonKeynes/" target="_blank" rel="nofollow">Ye Olde Swan</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/2430/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Blackthorn">Blackthorn _</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.02924692117781, -0.72366267442703], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.02924692117781, -0.72366267442703]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Fenny Stratford, 2.36 miles, 45 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Milton Keynes Central, 2.69 miles, 52 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Bow Brickhill, 2.76 miles, 53 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('c~p|HthlChA{@hBqBx@]tBi@jAJdB[AUBOhBgC`C{AFFhBq@b@IHGj@H?]TD|AInCYz@OxDaAjBq@JMJf@v@mAhAuAnAeAZSjAk@~@YXGj@CbC?LCHMt@c@n@WXGl@@\\Hb@Xp@~@^YDM\\_@BJXOn@o@DONJLAl@YlCiBdA{@Pt@R^NEZa@~@S@DTu@Zk@r@m@j@Ul@Kf@?t@F~@MjA?dCLdCV~B^b@XJ@PGbDI~BBb@P^^|@fALLVHx@AnCe@x@Ax@HvBf@z@LPAbA[b@]JOF[L}@\\w@`@c@rEoCzCeB|@[~@SXD\\IFx@@j@LhC?XjBJZF?r@I@@p@Cx@HrH', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('c~p|HthlCc@h@Et@T`GLdE@nCMv@e@nBI`AFz@~@rFFt@RzBE\\@jAMrH^lCF|CChAYjCQzILtDJzDL~AjB|KZnBR~Bv@dFlCnLtC`V?t@G\\aBpBeN`P|AxEyBjC@FALCFlArDELBNmC~C@DANCDlAtDEL@LqA~AsAdBCIuDtEBJW\\Z`Ac@j@\\jAELCz@@RqAzAFZ@\\Gj@QVOJQAS~Fa@Jf@~Ad@\\^t@l@hBOXWlAAf@DVd@~A{BjC|ArEeOlQ|@lCEP}BnCj@dB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('c~p|HthlChA{@hBqBx@]tBi@jAJdB[AUBOhBgC`C{AFFhBq@b@IHGv@JdAKDgCEc@_@mBAU?iAR{ATeAPkD@gAIkFH{AZsA\\mA^eBDc@@u@Fw@NK~AWTO\\]~AChAVNEJKz@oBN}ALe@`@k@j@a@d@m@d@s@K]c@]Gs@SgDd@]Rx@`AnAj@CRW^aBfDaCp@EbBBbB^p@E~C_Br@{@b@K@a@Cy@KaA_@kCj@c@\\SFUAU@_@Dg@LWLEPAXaBH{@]cBxAaATQJQHe@TsF`AJPGLILYDa@f@eOTeAf@s@Nq@\\Br@o@l@q@b@YrFeBg@cLHSjAMhEaBT]VE\\C^VfBQjBV~CZZ_@p@JPJj@~AzH~Cd@WZB`@p@`AHl@XFNr@C@l@BL?@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.02924692117781,-0.72366267442703], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=2430">View all updates for Ye Olde Swan, Woughton On The Green</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        15<span class="sup">th</span> Jan 2014, 11:28
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Thuck+Phat">Thuck Phat</a> amended by <a rel="nofollow" href="/userinfo.php?name=Thuck+Phat">Thuck Phat</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        15<span class="sup">th</span> Jan 2014, 11:27
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Thuck+Phat">Thuck Phat</a> amended by <a rel="nofollow" href="/userinfo.php?name=Thuck+Phat">Thuck Phat</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Beer Garden : <span id="fac1142430">Yes</span> <span id="discdetail1142430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 January 2014 by Bucking Fastard</span></li><li>CAMRA Discount : <span id="fac1022430">Yes</span>  - <span id="discdetail1022430" class="discdetail" style="">10% </span> -   <span class="Reviewer">last updated 18 October 2015 by ROB Camra</span></li><li>Car Park : <span id="fac1132430">Yes</span> <span id="discdetail1132430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 January 2014 by Bucking Fastard</span></li><li>Hot Food : <span id="fac1032430">Yes</span> <span id="discdetail1032430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 January 2014 by Bucking Fastard</span></li><li>Micropub : <span id="fac1222430">No</span> <span id="discdetail1222430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 January 2016 by Blackthorn _</span></li><li>Quiz Night : <span id="fac1092430">Yes</span>  - <span id="discdetail1092430" class="discdetail" style="">Tuesdays</span> -   <span class="Reviewer">last updated 11 January 2014 by Bucking Fastard</span></li><li>Real Ale : <span id="fac1012430">Yes</span> <span id="discdetail1012430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - 11pm</td></tr>
+<tr><td>Saturday</td><td>11am - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/2460/" class="List1">The Peartree Bridge Inn</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

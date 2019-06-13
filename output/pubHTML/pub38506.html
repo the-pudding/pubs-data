@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Blue Gates Hotel pub in Smethwick, West Midlands, B66 1AA : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Blue Gates Hotel" />
+  <meta name="keywords" content="Blue Gates Hotel, 100  High Street, Smethwick, West Midlands, Smethwick Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Blue Gates Hotel in Smethwick" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/38501_39000/38506_6ccd1fad.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/38506/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.49659298858502" />
+<meta property="og:longitude" content="-1.97288912268448" />
+<meta property="og:street-address" content="100  High Street" />
+<meta property="og:locality" content="Smethwick" />
+<meta property="og:region" content="West Midlands" />
+<meta property="og:postal-code" content="B66 1AA" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Blue Gates Hotel in Smethwick? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Blue Gates Hotel the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/38506/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Blue Gates Hotel in Smethwick" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Blue Gates Hotel " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/38501_39000/38506_6ccd1fad.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/38506/" />
+<meta name="geo.position" content="52.49659298858502;-1.97288912268448" />
+<meta name="geo.placename" content="Blue Gates Hotel in Smethwick" />
+<meta name="geo.region" content="UK" />
+<title>Blue Gates Hotel in Smethwick : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":38506},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(38506);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 38506;var pubaddress = "100  High Street";var pubname = "Blue Gates Hotel";var pubpostcode = "B66 1AA";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/west-midlands/" title="Pubs Galore : West Midlands Page">West Midlands</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/smethwick/west-midlands/" title="Pubs Galore : Smethwick Page">Smethwick</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Blue Gates Hotel Page">Blue Gates Hotel Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="gohl2ar0esnj2nci5ptvinp813" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/38506/" class="indisplay"><img src="/images/display/38501_39000/38506_6ccd1fad.jpg?w=2" alt="Picture of Blue Gates Hotel" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
+  Submitted on Wednesday, 26<sup>th</sup> April 2017<br />
+  With picture contributions to 24007 other pubs<br />
+<a href="/pubpictures/38506/" class="smallbutton">View all this pub's pictures</a> (4 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/38506/">Pub map</a><br /><a href="/pubreviews/38506/">Pub reviews (2)</a><br /><a href="/pubpictures/38506/">Pub pictures (5)</a><br /><a href="/core/pubaudit.php?id=38506" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Blue Gates Hotel, Smethwick Central, Smethwick</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">100  High Street</span><br />
+
+
+<span class="town">Smethwick</span><br />
+<span class="postcode">B66 1AA</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/smethwick-central/west-midlands/">Smethwick Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Blue Gates Hotel  <span class="h2note">(Average Rating: <span id="averagerating"><b>4</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review116670" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about Blue Gates Hotel</h6>
+<p class="old">Sometimes a pub is worth visiting not for its beer, its atmosphere or its architecture, but because it has an interesting story to tell, and such is the case with the otherwise fairly unremarkable Blue Gates &ndash; a large pub and former hotel opposite Smethwick Rolfe Street station. In 1965, civil rights activist Malcolm X visited Smethwick after learning of a local government scheme that prevented black and Asian residents from buying their own homes in the area. As part of his visit, he was taken to the Blue Gates &ndash; a segregated pub with a separate bar for black and Asian customers. He entered the whites-only Smoke Room but was refused service and was forced to move through to the side bar where he was served a pint of bitter. Testimonies from local Sikh residents paint a bleak picture of life for immigrants in places like Smethwick and his visit plus the attendant press coverage galvanised the community to push for change, with pub segregation in the town on the way out by the end of the year. Sadly Malcolm X never got to see these results as he was assassinated back in the US just nine days after his visit to the Blue Gates.<br />
+I suspect he might be pleased to find the pub currently being operated by two friendly Indian gentlemen and frequented by a wide range of customers from this multi-cultural community. Having said that, when I arrived on a Saturday afternoon, I was unsure quite what to expect when I was confronted by a sign on the front door stating that the pub was open for &lsquo;Regulars Only&rsquo;. Undeterred, I soldiered on, finding myself inside a large open plan room &ndash; the old separate bars having been knocked through to form a large square room with a central island servery. The room is carpeted throughout with some comfy banquettes around the perimeter supplemented by some standard chairs. This leaves a large gap between the seats and servery, which unfortunately makes the place feel rather soulless, even as a good pre-match crowd started to build up ahead of West Brom&rsquo;s 3pm kick off. The front right corner is filled by a pool table and there was a dartboard on the other side of the room, but this only made a small dent in the empty acreage. As if this wasn&rsquo;t enough, there is an overspill area to the rear right, which is also opened out beyond a small low wall and offers more of the same seating in a very plain, unadorned space. TV&rsquo;s throughout the room were showing Bargain Hunt with the sound on, although thankfully someone put The Doors on the juke box which drowned it out. Elsewhere, several pictures sparingly dot the walls, many depicting various Indian scenes.<br />
+It was no great surprise to find no handpulls on the bar, so I ended up with a pint of M&amp;B Mild for &pound;2.30, which represented good value and by far the most interesting option among the usual keg mega-brand suspects. The service was pretty efficient and friendly and the pub seems to have a good core of regulars who all seemed to know one another.<br />
+I was really pleased to visit this pub which merits a small footnote in the struggle for race relations in the UK. The pub today is a basic affair that will probably have little of interest to the casual visitor, but it seems to serve the local community well (certainly more so than its 1960&rsquo;s incarnation) and has a story that deserves to be told.</p>
+<p class="Reviewer">On 4<sup>th</sup> April 2017 
+  - rating: <b>4</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review73331" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Soup+Dragon">Soup Dragon</a> left this review about Blue Gates Hotel</h6>
+<p class="old">This is a detached pub and former hotel. It is a 1930s build, which replaced an earleir hotel on the same site and with the same name - indeed, there were likely two previous incarnations. It is in a 17th century style, executed in brick, with large sash windows and dormered mansard roof. There is a projecting enrance tower, and blue shutteres are attached to the lower frontage windows as a pun on the name. The interior is a huge open plan room, all around the central island serving bar. There is a dart board, table footy game and a couple of pool tables. The decor is mainly cream, with some wood panel and it mainly has perimeter seating. A few mixed prints adorn the walls. There is a TV - somewhat awkward for most to see, which had general programmes on. The service was friendly and the clientele mixed and cosmopolitan - watch out for the impromptu dancing by the semi-merry locals - driven by coutry and western music on the jukebox. Beer; no real ale, just the usual keg stuff, with a decent enough M&amp;B MILD. A place that is so big, i am sure it nearly always feels empty, no matter how many are in. Nothing for the real ale fan, but friendly and ok for a swifty.</p>
+<p class="Reviewer">On 14<sup>th</sup> August 2013 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 3053 recommendations about 3048 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Blue Gates Hotel</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="117296298339498">Facebook - <a href="https://www.facebook.com/pages/The-Blue-Gates/117296298339498" target="_blank" rel="nofollow">The Blue Gates</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/38506/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.49659298858502, -1.97288912268448], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.49659298858502, -1.97288912268448]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Smethwick Rolfe Street, 0.16 miles, 3 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Smethwick Galton Bridge, 0.5 miles, 9 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Smethwick Galton Bridge High Level, 0.51 miles, 9 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('igl_I`k`Ka@g@`BiECMNi@^kAMSSS?SUKQeC', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('igl_I`k`Ka@g@qA|CaBhDwArDw@lCeA`ByBrCiB|Bo@l@o@jABT?NIZGHSDIC_@d@gBxDEIKXEKIGDKGI]d@OTAH', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('igl_I`k`Ka@g@qA|CaBhDwArDw@lCeA`ByBrCiB|Bo@l@o@jABT?NIZGHSDIC_@d@gBxDEIKXEKIGs@pC', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.49659298858502,-1.97288912268448], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=38506">View all updates for Blue Gates Hotel, Smethwick</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        26<span class="sup">th</span> Apr 2017, 21:31
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        26<span class="sup">th</span> Apr 2017, 18:42
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Bar Billiards : <span id="fac10738506">No</span> <span id="discdetail10738506" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 April 2017 by Pub SignMan</span></li><li>Darts : <span id="fac11138506">Yes</span> <span id="discdetail11138506" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2013 by Old Blue</span></li><li>Hot Food : <span id="fac10338506">No</span> <span id="discdetail10338506" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 April 2017 by Pub SignMan</span></li><li>Jukebox : <span id="fac11238506">Yes</span> <span id="discdetail11238506" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 April 2017 by Pub SignMan</span></li><li>Live TV Sports : <span id="fac11038506">Yes</span> <span id="discdetail11038506" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 April 2017 by Pub SignMan</span></li><li>Micropub : <span id="fac12238506">No</span> <span id="discdetail12238506" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 April 2017 by Pub SignMan</span></li><li>Pinball : <span id="fac11638506">No</span> <span id="discdetail11638506" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 April 2017 by Pub SignMan</span></li><li>Pool Table : <span id="fac10438506">Yes</span> <span id="discdetail10438506" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2013 by Old Blue</span></li><li>Real Ale : <span id="fac10138506">No</span> <span id="discdetail10138506" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2013 by Old Blue</span></li><li>Real Cider : <span id="fac11938506">No</span> <span id="discdetail11938506" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 April 2017 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/38521/" class="List1">Old Talbot</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/67813/" class="List1">Red Cow</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/38530/" class="List1">The Hollybush</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/57280/" class="List1">Jee Jee&#039;s Punjabi Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/38531/" class="List1">The Desi 2</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 1 reviewer(s)" title="Pub has average rating of 8 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/38526/" class="List1">The Robin</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

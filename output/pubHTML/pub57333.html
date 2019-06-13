@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Merchants Inn pub in Rugby, Warwickshire, CV21 3AN : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Merchants Inn" />
+  <meta name="keywords" content="The Merchants Inn, 5 Little Church Street, Rugby, Warwickshire, Rugby Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Merchants Inn in Rugby" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/57001_57500/57333_bb4d88a7.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/57333/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.37140712688250" />
+<meta property="og:longitude" content="-1.26153945922852" />
+<meta property="og:street-address" content="5 Little Church Street" />
+<meta property="og:locality" content="Rugby" />
+<meta property="og:region" content="Warwickshire" />
+<meta property="og:postal-code" content="CV21 3AN" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Merchants Inn in Rugby? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Merchants Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/57333/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Merchants Inn in Rugby" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Merchants Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/57001_57500/57333_bb4d88a7.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/57333/" />
+<meta name="geo.position" content="52.37140712688250;-1.26153945922852" />
+<meta name="geo.placename" content="The Merchants Inn in Rugby" />
+<meta name="geo.region" content="UK" />
+<title>The Merchants Inn in Rugby : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":57333},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(57333);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 57333;var pubaddress = "5 Little Church Street";var pubname = "The Merchants Inn";var pubpostcode = "CV21 3AN";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/warwickshire/" title="Pubs Galore : Warwickshire Page">Warwickshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/rugby/warwickshire/" title="Pubs Galore : Rugby Page">Rugby</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Merchants Inn Page">The Merchants Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="8rgp1j791t1sap8l1i151t9lu1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/57333/" class="indisplay"><img src="/images/display/57001_57500/57333_bb4d88a7.jpg?w=2" alt="Picture of The Merchants Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=traveller" class="indisplay">Jim Newell</a><br />
+  Submitted on Saturday, 27<sup>th</sup> September 2014<br />
+  With picture contributions to 5159 other pubs<br />
+<a href="/pubpictures/57333/" class="smallbutton">View all this pub's pictures</a> (36 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/57333/">Pub map</a><br /><a href="/pubreviews/57333/">Pub reviews (14)</a><br /><a href="/pubpictures/57333/">Pub pictures (37)</a><br /><a href="/core/pubaudit.php?id=57333" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Merchants Inn, Rugby Central, Rugby</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">5 Little Church Street</span><br />
+
+
+<span class="town">Rugby</span><br />
+<span class="postcode">CV21 3AN</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01788571119</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/rugby-central/warwickshire/">Rugby Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Merchants Inn</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/TheMerchantsInn" target="_blank"><img src="https://pbs.twimg.com/profile_images/692323807634284548/Sdm-QTEj_normal.jpg" alt="The Merchants Inn" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/TheMerchantsInn" target="_blank">The Merchants Inn</a></strong>
+Today @ The Pub: live entertainment with Kent Duchaine + Leadbessie (9pm)
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/TheMerchantsInn/status/1138332560415703041">7:30 AM Jun 11th</a> from <a href="http://www.websites4pubs.co.uk" rel="nofollow">our website by websites4pubs</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/TheMerchantsInn" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/TheMerchantsInn" target="_blank">The Merchants Inn</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Merchants Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>9</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review135332" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Mappiman">Ian Mapp</a> left this review about The Merchants Inn</h6>
+<p>Proper pub that I felt instantly at home in.<br />
+<br />
+Walls covered in brew paraphernalia.  Large central area with big screen showing the Rugby, even when football is on.  A smaller snug section, with a magnificent chesterfield  arm chair.<br />
+<br />
+9 real ale handpulls on - North Cotswold Winter Solstice was chosen, but unfortunately the only gravity fed barrel, fetched from around the back.  Would have preferred to have been warned on this.<br />
+<br />
+Cracking pub, nonetheless - possibly the 2nd best found in Rugby.</p>
+<p class="Reviewer">On 11<sup>th</sup> December 2018 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 517 recommendations about 512 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review115350" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+Bundy">Al Bundy</a> left this review about The Merchants Inn</h6>
+<p class="old">This is a cracking pub. Hidden down the church lane this is a large, olde worlde kind of place. The its mainly open plan with the bar being central. Lots of beer related signs adorn the walls and the ceiling is covered with approximately a billion pump clips. The pub is basically split into 4 areas; a small area to your left on entering, the main nar area up a couple of steps and then 2 areas to the rear of the pub. 9 handpumps on the bar in a bank of 8 for ales and a handpump at the side of the bar for cider. Beers today were from Bright side, North Yorkshire, Oakham, Purity, Nethergate and Hook Norton. An excellent place.</p>
+<p class="Reviewer">On 16<sup>th</sup> February 2017 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 3273 recommendations about 3191 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review85224" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Merchants Inn</h6>
+<p class="old">This is another of Rugby&#039;s top ale houses, set in a large Brewer&#039;s Tudor building in the historic centre of town. You enter into the lower, front part of the pub which has limited seating and several glass cabinets full of books as well as a collection of pump clips on the ceiling and a few bits of breweriana. A raised area to the right has a dartboard and a signed England rugby shirt on display. Moving further into the pub, you reach the main bar area, with the servery on the right hand side and a large open space opposite broken up with chunky pillars surrounded by drinking ledges. The area is lit from above where a couple of skylights can be found, but the rest of the ceiling is notable for the vast collection of pumps clips, stuck to a series of rails. The room has been decorated with all sorts of breweriana including some great brewery mirrors and enamel signs that are well worth exploring. There are also hundreds of bottles lined up on a high shelf that runs around the room. Seating is a mix of benches and standard chairs which extends into a rear carpeted section full of more breweriana and a TV screen. There is a second rear seating area to the right which has a high gabbled roof, hop lined walls and a huge screen on the back wall which was showing cricket during our visit. Pews have been arranged into booth formations and there are display cabinets full of beer bottles and shelves stacked with jugs and books. There is a lot more beer memorabilia here too including an illuminated Tetley&#039;s sign. A side door leads out to a small beer garden, situated on the other side of the road that runs past the pub.<br />
+On the bar, another strong ale line up awaited us, with the options of Titanic Lifeboat, Burton Bridge Top Dog Stout and Stairway to Heaven, Oakham Bishops Farewell, Tring Tea Kettle Stout and Cassowary, RCH Firefox, Portobello Market Porter, Purity Mad Goose and Batemans XB. The Lifeboat was in great shape and possibly the best beer I had during our long day out around town.<br />
+This is a great pub that demands repeat visits. There is plenty to keep you entertained here, not least the fantastic ale selection and for my money, this was the best pub visited all day. A must when in Rugby.</p>
+<p class="Reviewer">On 18<sup>th</sup> July 2014 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/57333/">View more reviews of The Merchants Inn (14)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Merchants Inn</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Merchants Inn, includes real ale listing, menus and a list of upcoming events - <a href="http://www.merchantsinn.co.uk" title="Submitted by:- elizabeth mcgraw" target="_blank">www.merchantsinn.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="147346961990806">Facebook - <a href="https://www.facebook.com/PubOfRugby/" target="_blank" rel="nofollow">The Merchants Inn</a></li></ul><ul id="Custom2"><li class="twitlink" id="121170054">Twitter - <a href="https://twitter.com/TheMerchantsInn" target="_blank" rel="nofollow">The Merchants Inn</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/57333/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.37140712688250, -1.26153945922852], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.37140712688250, -1.26153945922852]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Rugby, 0.92 miles, 17 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Long Buckby, 11.11 miles, 3 hr 34 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Coventry, 13 miles, 4 hr 11 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ixs~HtkuFB^UD_D@MGMACiEuAVC_BD_@k@o@sDsA@SQgFKy@IUkCgCeBiAYsDs@_@`AqJyF}BcBg@EIBo@AKGIuAa@EG?ODs@sAa@GDGCP{Bc@M@WXoAwB_B_@Q', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ixs~HtkuFB^UDSAYiDk@eEYa@WaAC?Cm@Bs@AAFmADg@HODe@OElB}PVcBHa@LS@OAYF_@Vq@^mBv@cF@WBaLJmCtGuRjL_\\d@aB`@w@\\gA`AiCZwAH{F?iZBqFCa@B}@J}@`@uA|@iCt@qCDe@^wMM_Cm@iFIiAq@{FKcBE}A\\cIReCRcBT}@fAaBjCqC|AsBdAgC|BwBrAcA?QF[FIJCX}@lAcFv@sCf@aCZoAtA{Gn@qEJ_BBsAEoFGqBQcBmAqEaAaC_AqBOo@VuAn@cC~@wF|AaGzBoG`A}C`@cAp@gAzAcAbBu@b@GTB`@Nv@b@`AZCq@HyEVkDb@mDp@mDrC{LNeC\\yFJwGDw@J{@hCkQ^gEBQBmEFcE^aMk@k@ZUBW^}GAeBNcC@o@AmDDo@r@qBz@}C^{AJWPMXF`@qAXoARm@GGM]AQ?UDSd@eAT{@\\kAx@gEdAoGDg@KQEWA_@D]LYNOPCF{DMuGIeCKoAPGxDsCnKmJtDqDfJcHtKwIbHcGnG{ErPgNdHgGrAy@v@}AbAiC|@aA^Mf@Bh@SxKsF~C{Bt@OlHuEjBrCjDnGr@bAj@l@bBfAn@\\^_ADHxC_JvAuEfAoErAoHl@eCl@}Az@{ArAuAp@_@rFqCdCuBu@_DsAaFg@cDEqABoAJqCV{C~@iITuArFoTNc@`BiDn@}Ad@cBjAoGjCcOdAiFReDJeALw@|AaGpAwGhA_EbAcD`@}APiAr@qCzAoExAsI`EvBjA\\XAXe@Pe@Hm@FaAFuDJmAX_BjAuEp@wEh@gBd@iA~EiJhFkJjDiJlDeJ`@{@\\o@zC{DvBuBh@_@|C}Al@e@f@e@t@gAn@gAVYRMh@WbAYJMDEDYBYCs@QiA]uAm@_BsAwCQW_@c@SOmBcAOOMYEY?WdAaJj@gFRgAX}@pCcEj@gAn@nA~AnD~AlAPRBjBn@b@p@w@n@sAdAqCtCSfAR\\q@RW^IlBF|@JbCNx@KD@z@vAvApAd@RV@`@GPQXi@FQDULoB?o@KwAHcANi@xDzC`@Vx@XdBHbBG', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ixs~HtkuFB^UD_D@G~@S|BUtAYdApCzCDJ?N?fASbBO|@\\PYlCi@fAkAzEUGsA~CcArCgBlK_A|Ee@rBcDpFoDrStCnCrErDa@pAsApFUtAKhAMxAG~@InCANMtD?l@QlCK|CErCLxHAnCEbBKbBStBI~AG`DAdGDjDHhB_@Zi@T}Ee@kDQ_BDKNM\\UhAE|@m@dRQ`Ei@xAcAzGO~A@nBg@tKc@bFUzCj@d@r@|@y@|EXNVVMjAUnEUtCDZ[xHoBr`@fAzQJHo@pUtBrNDn@HPBb@mAzQwCvNmBdEeE~H{A~BENe@XCRJfElAdNA`CDn@Hb@\\t@PTrCl@dAnAsFll@{@bIsBxQ}@xISdDo@lOQvBWjBmAvFb@d@cAbEt@nIRnRIlIH`@?lE[hJb@LRvACh@HxBn@xD`AzENVJb@jCzG\\hCR`AfBlC|AzECn@Bt@PhA?\\c@`AAh@XzA@~@QlBJxA\\lC\\bAfAbCp@nB`@b@ZzAlDhI`BdFfApFH@tB{AXxApAfI\\pCE~@S^e@Je@Oc@GaAJYHWTWf@S|@a@~GB`APd@tClGkAzB_@~@Qh@Qz@YfBGx@AtBE`@GZc@x@oAz@[JWIk@m@WKkDKSJMzEBR?lGC`ASnFCzDiAfN_@lGw@~KErAPxUEbGDjE?vAGrAS~Bu@lMIbCO~GApCBvAHpD^jMBj@`@pD\\rJHxJHtE@xMDtAJ~Aw@X_@`@c@rAsB~HSfBWzAc@fA_@j@i@Dk@Sq@aAKr@w@xDIvACx@N|B]v@UjB[xA_@l@m@b@_@L]j@_@xAG`@@PDPI`@BzADp@A`ChBv@n@h@fB`BRXXr@hAvDVd@c@xHYbCGDGP?`AENa@TNb@D`@E`DB|BFbB?lACzDCbBGhBOpAsAnGa@pCc@fH@n@E`A?d@Eb@U~@Gf@MvDFV?fAOlCCf@GXGt@C`Ac@rCAZ?x@wAvBc@z@_AxBw@~BWbAk@pCQhAQzA|@\\c@xEW~Ao@Ce@Xq@vAMbARdAa@~@aABSNQ~D?NDp@R~BCnDIjA@dB{AfLCl@`@b@DLk@dBZRiAvGe@~CaAfJ?`@GXGb@Ap@GBGRE`@Af@K|@Op@u@vGELYnB@L[SGFWlBUlAa@dBgAtD[nAOv@g@vAe@dA[h@a@j@}@~@wChC]^k@^ZhCh@VSz@m@jFMTCVa@Oq@AoAh@q@n@eBlBIN_DjEwAhAaDtCGNFLGb@QB{A`AoDt@uBn@Fr@F`@JrAb@fDe@~Bp@bFsBhAqErBoBfAWXmB|DFJUl@N|@EV]R?r@@ZDJJFL?bF`VFn@f@JDZSvCTFV?t@RCZB@BU', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.37140712688250,-1.26153945922852], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=57333">View all updates for The Merchants Inn, Rugby</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        11<span class="sup">th</span> Dec 2018, 15:27
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Mappiman">Ian Mapp</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        11<span class="sup">th</span> Dec 2018, 15:26
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Mappiman">Ian Mapp</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11857333">No</span> <span id="discdetail11857333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Bar Billiards : <span id="fac10757333">No</span> <span id="discdetail10757333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Beer Festivals : <span id="fac11757333">Yes</span>  - <span id="discdetail11757333" class="discdetail" style="">Spring &amp; Autumn</span> -   <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Beer Garden : <span id="fac11457333">Yes</span> <span id="discdetail11457333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10257333">No</span> <span id="discdetail10257333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Car Park : <span id="fac11357333">No</span> <span id="discdetail11357333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Child Friendly : <span id="fac12157333">Yes</span> <span id="discdetail12157333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Darts : <span id="fac11157333">No</span> <span id="discdetail11157333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Dog Friendly : <span id="fac10557333">Yes</span> <span id="discdetail10557333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Hot Food : <span id="fac10357333">Yes</span>  - <span id="discdetail10357333" class="discdetail" style="">Lunchtime only</span> -   <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Jukebox : <span id="fac11257333">No</span> <span id="discdetail11257333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Karaoke : <span id="fac10657333">No</span> <span id="discdetail10657333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Live Music : <span id="fac10857333">Yes</span> <span id="discdetail10857333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11057333">Yes</span> <span id="discdetail11057333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Micropub : <span id="fac12257333">No</span> <span id="discdetail12257333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Pinball : <span id="fac11657333">No</span> <span id="discdetail11657333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Pool Table : <span id="fac10457333">No</span> <span id="discdetail10457333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Quiz Night : <span id="fac10957333">Yes</span> <span id="discdetail10957333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Real Ale : <span id="fac10157333">Yes</span> <span id="discdetail10157333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Real Cider : <span id="fac11957333">Yes</span> <span id="discdetail11957333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>Wheelchair Access : <span id="fac12057333">Yes</span> <span id="discdetail12057333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li><li>WiFi : <span id="fac11557333">Yes</span> <span id="discdetail11557333" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 March 2018 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 11pm</td></tr>
+<tr><td>Monday</td><td>12noon - Midnight</td></tr>
+<tr><td>Tuesday</td><td>12noon - Midnight</td></tr>
+<tr><td>Wednesday</td><td>12noon - Midnight</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>12noon - Midnight</td></tr>
+<tr><td>Friday</td><td>12noon - 1am</td></tr>
+<tr><td>Saturday</td><td>12noon - 1am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 27 picture(s)" title="Pub has 27 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 13 recommendation(s)" title="Pub has 13recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 13 reviewer(s)" title="Pub has average rating of 6 from 13 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/67266/" class="List1">The Lawrence Sheriff</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 22 picture(s)" title="Pub has 22 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 9 recommendation(s)" title="Pub has 9recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 9 reviewer(s)" title="Pub has average rating of 6 from 9 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/37168/" class="List1">The Black Swan / Dirty Duck</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 18 picture(s)" title="Pub has 18 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 3 reviewer(s)" title="Pub has average rating of 4 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/57331/" class="List1">Bar 29</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 20 picture(s)" title="Pub has 20 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 5 reviewer(s)" title="Pub has average rating of 4.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/37178/" class="List1">The Crown</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 6 reviewer(s)" title="Pub has average rating of 6 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/67265/" class="List1">The Bull</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 4 reviewer(s)" title="Pub has average rating of 5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/37248/" class="List1">The Horseshoes (The Rugby Hotel)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 18 picture(s)" title="Pub has 18 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 4 reviewer(s)" title="Pub has average rating of 5.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/37204/" class="List1">The London House</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/37219/" class="List1">Midas Lounge</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

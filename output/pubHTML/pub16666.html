@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Man of Kent pub in Rochester, Kent, ME1 1YN : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Man of Kent" />
+  <meta name="keywords" content="The Man of Kent, 8  John Street, Rochester, Kent, Rochester Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Man of Kent in Rochester" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/16501_17000/16666_d746167b.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/16666/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.38359200000000" />
+<meta property="og:longitude" content="0.50527900000000" />
+<meta property="og:street-address" content="8  John Street" />
+<meta property="og:locality" content="Rochester" />
+<meta property="og:region" content="Kent" />
+<meta property="og:postal-code" content="ME1 1YN" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Man of Kent in Rochester? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Man of Kent the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/16666/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Man of Kent in Rochester" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Man of Kent " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/16501_17000/16666_d746167b.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/16666/" />
+<meta name="geo.position" content="51.38359200000000;0.50527900000000" />
+<meta name="geo.placename" content="The Man of Kent in Rochester" />
+<meta name="geo.region" content="UK" />
+<title>The Man of Kent in Rochester : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":16666},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(16666);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 16666;var pubaddress = "8  John Street";var pubname = "The Man of Kent";var pubpostcode = "ME1 1YN";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/kent/" title="Pubs Galore : Kent Page">Kent</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/rochester/kent/" title="Pubs Galore : Rochester Page">Rochester</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Man of Kent Page">The Man of Kent Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="eabguth2c6m3rv1ofqg6vqmjv2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/16666/" class="indisplay"><img src="/images/display/16501_17000/16666_d746167b.jpg?w=2" alt="Picture of The Man of Kent" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
+  Submitted on Saturday, 18<sup>th</sup> May 2019<br />
+  With picture contributions to 24007 other pubs<br />
+<a href="/pubpictures/16666/" class="smallbutton">View all this pub's pictures</a> (24 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/16666/">Pub map</a><br /><a href="/pubreviews/16666/">Pub reviews (8)</a><br /><a href="/pubpictures/16666/">Pub pictures (25)</a><br /><a href="/core/pubaudit.php?id=16666" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Man of Kent, Rochester Town, Rochester</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">8  John Street</span><br />
+
+
+<span class="town">Rochester</span><br />
+<span class="postcode">ME1 1YN</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/rochester-town/kent/">Rochester Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Man of Kent  <span class="h2note">(Average Rating: <span id="averagerating"><b>8</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review131874" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> left this review about The Man Of Kent</h6>
+<p>A very attractive old exterior of Styles &amp; Winch, a Maidstone brewery that bought up the local Troy Town brewery (which still stands at the end of nearby Cazeneuve St). The front doors are shut off and entry is through the side, which takes you into a glorious back street community local with no frills or pretensions. The L-shaped bar has a splendid array of 11 handpumps, all serving different Kent beers at time of visit, plus a clutch of German fonts serving Paulaner and Hacker-Pschorr. At the end of the bar is a small heap of Kentish ciders in boxes while at the back of the pub there is a side room incorporating a library, with a garden behind. We were there early evening when there was a steady flow of regulars, judging from the pulling of the correct beer as they arrived, always a good sign. A permanent exhibition of Kent beers in a proper local which should not be missed.</p>
+<p class="Reviewer">On 16<sup>th</sup> August 2018 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 1783 recommendations about 1742 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review127693" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a> left this review about The Man Of Kent</h6>
+<p class="old">We called in here on a Saturday eve looking for a comprehensive selection of Kent ales. Unfortunately out of 11 handpumps across the bar, only five were in use. We went for one from Goody Ales Good Health and one from Canterbury ales, both of which were fairly average and didn&#039;t warrant a second go. Beer wise, most of the customers on our visit were drinking German and Belgian beers.</p>
+<p class="Reviewer">On 2<sup>nd</sup> April 2018 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2750 recommendations about 2750 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review96682" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> left this review about The Man Of Kent</h6>
+<p class="old">The Man of Kent is a back street pub that is a short walk downhill to the train station.<br />
+Once inside i was really surprised to see the real ale choice on the bar.<br />
+The room is L shaped with the bar facing,there is bench seating to the front and pew seats to the left with small stools,there are a few leather settees in a small area to the front left.<br />
+I had a drink of Gadds No 7 which was a really nice drink,the other beers i noted were Gadds DR Sunshine,Goody Ales Genesis,Goachers and Imperial Stout,there were many other real ales and real Ciders i failed to note.<br />
+If you like real ales then this is the pub to visit if in Rochester.<br />
+<br />
+Pub visited 6/6/2015</p>
+<p class="Reviewer">On 6<sup>th</sup> June 2015 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 6113 recommendations about 6113 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/16666/">View more reviews of The Man of Kent (8)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Man of Kent</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="1466694163565335">Facebook - <a href="https://www.facebook.com/manofkentrochesterkentuk/" target="_blank" rel="nofollow">The Man of Kent Ale House</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/16666/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.38359200000000, 0.50527900000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.38359200000000, 0.50527900000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Rochester, 0.5 miles, 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Chatham, 0.89 miles, 17 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Strood, 1.23 miles, 23 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('azrxH_vaBKIg@ScAWI|@{CcB_@`A{@lCe@nC@\\KPYNcCsBSWsBkDSUUm@Ke@q@b@[uA[}@]sAgChB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('azrxH_vaBKIXaDXgEBu@?gAfBC?[XiBEi@j@YK[SQO_A`AoBbAeIAy@JgBe@eFAs@H[hAeHVGN?CQTIhAaDn@oITKzB}KKg@HYQWeBiBMIMl@v@t@h@{A', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('azrxH_vaBKIg@ScAWI|@{CcB_@`A{@lCe@nC@\\KPYNcCsBSWsBkDSUUm@Ke@q@b@{@lAi@p@wDdD{DzCs@d@eDfDMD[KYtASa@IG[p@oBlDuExIQTK?{@mACHqD_E_CcC_AfDGJOFk@E[Nk@aAWWk@Wi@jAl@hA', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.38359200000000,0.50527900000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=16666">View all updates for The Man of Kent, Rochester</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> May 2019, 10:13
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> May 2019, 10:12
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11816666">No</span> <span id="discdetail11816666" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 August 2018 by Graham Coombs</span></li><li>Bar Billiards : <span id="fac10716666">No</span> <span id="discdetail10716666" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2013 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11416666">Yes</span> <span id="discdetail11416666" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2013 by Pub SignMan</span></li><li>Car Park : <span id="fac11316666">No</span> <span id="discdetail11316666" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2013 by Pub SignMan</span></li><li>Dog Friendly : <span id="fac10516666"></span> <span id="discdetail10516666" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 August 2018 by Graham Coombs</span></li><li>Hot Food : <span id="fac10316666">No</span> <span id="discdetail10316666" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 August 2018 by Graham Coombs</span></li><li>Jukebox : <span id="fac11216666">No</span> <span id="discdetail11216666" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 August 2018 by Graham Coombs</span></li><li>Karaoke : <span id="fac10616666">No</span> <span id="discdetail10616666" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 August 2018 by Graham Coombs</span></li><li>Live Music : <span id="fac10816666">Yes</span> <span id="discdetail10816666" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2013 by Pub SignMan</span></li><li>Live TV Sports : <span id="fac11016666">No</span> <span id="discdetail11016666" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 August 2018 by Graham Coombs</span></li><li>Micropub : <span id="fac12216666">No</span> <span id="discdetail12216666" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 August 2018 by Graham Coombs</span></li><li>Pinball : <span id="fac11616666">No</span> <span id="discdetail11616666" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2013 by Pub SignMan</span></li><li>Pool Table : <span id="fac10416666">No</span> <span id="discdetail10416666" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2013 by Pub SignMan</span></li><li>Quiz Night : <span id="fac10916666">Yes</span>  - <span id="discdetail10916666" class="discdetail" style="">Mon</span> -   <span class="Reviewer">last updated 16 August 2018 by Graham Coombs</span></li><li>Real Ale : <span id="fac10116666">Yes</span> <span id="discdetail10116666" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 December 2011 by Alan Hurdle</span></li><li>Real Cider : <span id="fac11916666">Yes</span> <span id="discdetail11916666" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2013 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>1pm - 11pm</td></tr>
+<tr><td>Monday</td><td>3pm - 11pm</td></tr>
+<tr><td>Tuesday</td><td>2pm - 11pm</td></tr>
+<tr><td>Wednesday</td><td>2pm - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>2pm - 11pm</td></tr>
+<tr><td>Friday</td><td>2pm - Midnight</td></tr>
+<tr><td>Saturday</td><td>12 - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 6 reviewer(s)" title="Pub has average rating of 7.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/16654/" class="List1">The Good Intent</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 18 picture(s)" title="Pub has 18 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 5 reviewer(s)" title="Pub has average rating of 6.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/16655/" class="List1">The Granville Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 4 reviewer(s)" title="Pub has average rating of 5.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/16682/" class="List1">The Rising Sun</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 2 reviewer(s)" title="Pub has average rating of 4 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66354/" class="List1">Oliver&#039;s</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 18 picture(s)" title="Pub has 18 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2.5 from 6 reviewer(s)" title="Pub has average rating of 2.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/59096/" class="List1">Queen Charlotte</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 22 picture(s)" title="Pub has 22 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 10 reviewer(s)" title="Pub has average rating of 6 from 10 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56912/" class="List1">The Golden Lion (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 21 picture(s)" title="Pub has 21 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 7 reviewer(s)" title="Pub has average rating of 6.5 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/16645/" class="List1">The Eagle Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 21 picture(s)" title="Pub has 21 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 6 reviewer(s)" title="Pub has average rating of 4 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/16636/" class="List1">The City Wall</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

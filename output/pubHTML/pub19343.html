@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Waterside Inn pub in Leigh, Manchester (Greater), WN7 4DB : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Waterside Inn" />
+  <meta name="keywords" content="The Waterside Inn, Canal Street, Leigh, Manchester (Greater), Leigh Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Waterside Inn in Leigh" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/19001_19500/19343_3f514d6b.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/19343/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="53.49430734169548" />
+<meta property="og:longitude" content="-2.52154469490051" />
+<meta property="og:street-address" content="Canal Street" />
+<meta property="og:locality" content="Leigh" />
+<meta property="og:region" content="Manchester (Greater)" />
+<meta property="og:postal-code" content="WN7 4DB" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Waterside Inn in Leigh? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Waterside Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/19343/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Waterside Inn in Leigh" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Waterside Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/19001_19500/19343_3f514d6b.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/19343/" />
+<meta name="geo.position" content="53.49430734169548;-2.52154469490051" />
+<meta name="geo.placename" content="The Waterside Inn in Leigh" />
+<meta name="geo.region" content="UK" />
+<title>The Waterside Inn in Leigh : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":19343},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(19343);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 19343;var pubaddress = "Canal Street";var pubname = "The Waterside Inn";var pubpostcode = "WN7 4DB";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/greater-manchester/" title="Pubs Galore : Manchester (Greater) Page">Manchester (Greater)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/leigh/greater-manchester/" title="Pubs Galore : Leigh Page">Leigh</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Waterside Inn Page">The Waterside Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="i8150oc5cp9iqd9gtpebpt2uh2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/19343/" class="indisplay"><img src="/images/display/19001_19500/19343_3f514d6b.jpg?w=2" alt="Picture of The Waterside Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=Al+Bundy" class="indisplay">Al Bundy</a><br />
+  Submitted on Wednesday, 23<sup>rd</sup> August 2017<br />
+  With picture contributions to 3269 other pubs<br />
+<a href="/pubpictures/19343/" class="smallbutton">View all this pub's pictures</a> (9 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/19343/">Pub map</a><br /><a href="/pubreviews/19343/">Pub reviews (3)</a><br /><a href="/pubpictures/19343/">Pub pictures (10)</a><br /><a href="/core/pubaudit.php?id=19343" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Waterside Inn, Leigh Town, Leigh</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Canal Street</span><br />
+
+
+<span class="town">Leigh</span><br />
+<span class="postcode">WN7 4DB</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01942605005</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Greene King</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/leigh-town/greater-manchester/">Leigh Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Waterside Inn</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/WatersideLeigh" target="_blank"><img src="https://pbs.twimg.com/profile_images/1033805129126961153/Z3lvVt3d_normal.jpg" alt="The Waterside, Leigh" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/WatersideLeigh" target="_blank">The Waterside, Leigh</a></strong>
+Game of the weekend.....
+
+England vs France
+
+Kick off at 3pm and don&#039;t forget to download the season ticket app and&hellip; <a href='https://t.co/crS7zFcvks' target='_blank'>https://t.co/crS7zFcvks</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/WatersideLeigh/status/1094566673695363072">12:00 PM Feb 10th</a> from <a href="http://www.facebook.com/twitter" rel="nofollow">Facebook</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/WatersideLeigh" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/WatersideLeigh" target="_blank">The Waterside, Leigh</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Waterside Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>1&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review121527" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+Bundy">Al Bundy</a> left this review about The Waterside Inn</h6>
+<p class="old">Large Greene King eatery place. Its a wide, thin pub with 3 areas to sit. The central bar has 4 handpumps serving 4 Greene King rubbish (IPA, the pubs own Gk vinegar that goes by the name Waterside Rope And Anchor, some crappy Radio X nonsense and St Austell Tribute. To the rear of the pub is some canal thingy, which could very well be the source of the beer. Awful.</p>
+<p class="Reviewer">On 23<sup>rd</sup> August 2017 
+  - rating: <b>1</b><br />
+  <span class="leftspace">[User has posted 3273 recommendations about 3191 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review34156" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=alison1971">Alison Taylor</a> left this review about The Waterside Inn</h6>
+<p class="old">Just moved 2 leigh area, been in The Waterside for meals few times- always good food, great prices and value. <br />
+Bar staff havent a clue on food or drinks lol, but when food comes its good.<br />
+Nighttime The waterside is packed with a variety of age groups, plays good up 2 date music and cheesy 80&#039;s mixed in, small dance floor but overall friendly atmosphere. Attracts late nighters and single groups in A*</p>
+<p class="Reviewer">On 20<sup>th</sup> September 2010 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 1 recommendations about 1 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review10925" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=M1VIP">Andrew Evans</a> left this review about The Waterside Inn</h6>
+<p class="old">Very disappointing, not your usual Hardy Hansons. The little child who served me couldn&#039;t tell the difference between mild or bitter even after topping up my bitter which still was 30% short. I did ask for Old Trip after all, shame the onlooking manager was just as niaive/thick as she was who had to give me my money back. Shame this pub&#039;s standards have plummetted since Chris Speight had it. He did have the Governor at Cheadle afterwards. Highly recommended!<br />
+Warning! They charge for soda water!</p>
+<p class="Reviewer">On 6<sup>th</sup> January 2009 
+  - rating: <b>2</b><br />
+  <span class="leftspace">[User has posted 151 recommendations about 149 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Waterside Inn</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="294369127318158">Facebook - <a href="https://www.facebook.com/TheWatersideInnLeigh/" target="_blank" rel="nofollow">The Waterside Inn</a></li></ul><ul id="Custom2"><li class="twitlink" id="874324026">Twitter - <a href="https://twitter.com/WatersideLeigh" target="_blank" rel="nofollow">The Waterside, Leigh</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/19343/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([53.49430734169548, -2.52154469490051], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([53.49430734169548, -2.52154469490051]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Daisy Hill, 3.53 miles, 1 hr 8 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Hag Fold, 3.64 miles, 1 hr 10 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Atherton, 3.78 miles, 1 hr 12 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('icoeIpmkNUMuA[YMGfBiBa@aCjPmFwCIh@aBw@gA]s@i@?mBo@M_A?eAID}DsL{BoAGgAD}DA_CGFt@?fACr@m@hE_TeN{KqGkBaAcGuDwL}IuEyCgFiCwMgE{@i@iB{AoAfBWXeCrDqCtCoAv@[J_DXYpA_AI{@JsBlAqBz@oANiC?sVmDcFc@uACsC\\aG|AsTjBaALQHQ@IEQDQCyBy@qE_AyBYo@@RiB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('icoeIpmkNUMuA[YMDaAsASyFgBl@qEeA_@oBYb@uFu@S}@KqEsANiC_DE{BIM?IICAEDANo@EgGFsDLeOVo@qIKkD_@wF[}Cq@sEa@sB[kCeAmKw@Rq@Xc@?aAKm@H@w@Aa@cBqCe@iAuEmPkDiMwEsQwCFuGnA}En@yCg@_DNqCd@cAFeAIiA^}ALe@`@AIgIlAI_AyFrAiDgGc@_A[_@KeBoCn@mA`@}@LaCt@c@aE_HzA_@Rm@j@[b@K`@uToI_FuBiCy@wC_DFUj@{DGIn@cCAAa@|A', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('icoeIpmkNUMuA[YMDaAsASyFgBl@qEZmDd@yLR}DkFaBj@qGuAw@L_Bc@qAu@wC{@qCs@q@m@UwBqAu@Um@HAa@}Bs@}OyF}DkAeAdBi@cA{@o@LeAR_AG}@sCeFiAmKe@_D{CyOqA}Hu@cD]iBeCwLSaAk@kAqByHcBgSMkDuBTu@]O?sCjBy@bAmA`BMBSRc@c@k@a@qAsA]OaBOwDmAmF}AmAOaIVwBBu@GeA]g@Y_B_Ce@e@g@Oc@Cq@Jm@Xo@FSEYOu@qG]mEQkDF{@HYLYNQj@i@Xm@u@gAc@]k@[kFuAyCSMIQWEWA[HeFE}@g@Ce@Bq@?sGu@sCa@_CQUAgDv@}By@@SME@UYIF@LyA', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.49430734169548,-2.52154469490051], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=19343">View all updates for The Waterside Inn, Leigh</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        23<span class="sup">rd</span> Aug 2017, 18:52
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Al+Bundy">Al Bundy</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        23<span class="sup">rd</span> Aug 2017, 15:28
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Al+Bundy">Al Bundy</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Karaoke : <span id="fac10619343">Yes</span> <span id="discdetail10619343" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 July 2015 by Dave McNally</span></li><li>Real Ale : <span id="fac10119343">Yes</span> <span id="discdetail10119343" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/19318/" class="List1">The Centurion</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 1 from 1 reviewer(s)" title="Pub has average rating of 1 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/70325/" class="List1">The Lock</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/70326/" class="List1">Britannia</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/19316/" class="List1">Bliss</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/78271/" class="List1">Soundbar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/70327/" class="List1">Cafe Stella</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2 from 1 reviewer(s)" title="Pub has average rating of 2 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/19326/" class="List1">Leigh Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/19339/" class="List1">The Spinning Jenny</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

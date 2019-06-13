@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Pennyblacks pub in Birmingham, West Midlands, B1 1XL : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Pennyblacks" />
+  <meta name="keywords" content="Pennyblacks, 132-134 Wharfside Street, Birmingham, West Midlands, Birmingham Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Pennyblacks in Birmingham" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/65501_66000/65580_73008edf.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/65580/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.47529415784727" />
+<meta property="og:longitude" content="-1.90648614886845" />
+<meta property="og:street-address" content="132-134 Wharfside Street" />
+<meta property="og:locality" content="Birmingham" />
+<meta property="og:region" content="West Midlands" />
+<meta property="og:postal-code" content="B1 1XL" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Pennyblacks in Birmingham? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Pennyblacks the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/65580/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Pennyblacks in Birmingham" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Pennyblacks " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/65501_66000/65580_73008edf.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/65580/" />
+<meta name="geo.position" content="52.47529415784727;-1.90648614886845" />
+<meta name="geo.placename" content="Pennyblacks in Birmingham" />
+<meta name="geo.region" content="UK" />
+<title>Pennyblacks in Birmingham : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":65580},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(65580);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 65580;var pubaddress = "132-134 Wharfside Street";var pubname = "Pennyblacks";var pubpostcode = "B1 1XL";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/west-midlands/" title="Pubs Galore : West Midlands Page">West Midlands</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/birmingham/west-midlands/" title="Pubs Galore : Birmingham Page">Birmingham</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Pennyblacks Page">Pennyblacks Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="7r0ghfh25tk9rph011n7nvj2a1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/65580/" class="indisplay"><img src="/images/display/65501_66000/65580_73008edf.jpg?w=2" alt="Picture of Pennyblacks" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
+  Submitted on Wednesday, 15<sup>th</sup> February 2017<br />
+  With picture contributions to 24007 other pubs<br />
+<a href="/pubpictures/65580/" class="smallbutton">View all this pub's pictures</a> (7 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/65580/">Pub map</a><br /><a href="/pubreviews/65580/">Pub reviews (6)</a><br /><a href="/pubpictures/65580/">Pub pictures (8)</a><br /><a href="/core/pubaudit.php?id=65580" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Pennyblacks, Birmingham Central, Birmingham</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">132-134 Wharfside Street</span><br />
+<span class="region">The Mailbox</span><br />
+
+<span class="town">Birmingham</span><br />
+<span class="postcode">B1 1XL</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01216321460</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/birmingham-central/west-midlands/">Birmingham Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by Pennyblacks</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/Pennyblacks" target="_blank"><img src="https://pbs.twimg.com/profile_images/960586854771896320/jt0UPjvE_normal.jpg" alt="Pennyblacks" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/Pennyblacks" target="_blank">Pennyblacks</a></strong>
+For those who aren&rsquo;t celebrating valentine&rsquo;s day, we are showing the Real Madrid v Paris Saint-Germain game tonight&hellip; <a href='https://t.co/qp8TcyKEmO' target='_blank'>https://t.co/qp8TcyKEmO</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/Pennyblacks/status/963810874619285504">4:23 PM Feb 14th 2018</a> from <a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/Pennyblacks" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/Pennyblacks" target="_blank">Pennyblacks</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Pennyblacks  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review97795" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about Pennyblacks</h6>
+<p class="old">Modern bar / restaurant underneath the Mailbox, but in quite a quiet spot beside the canal - or it would be, without the &#039;background&#039; music (unless you are making use of one of the patio tables outside, if the weather suits).  Nothing much to say about the interior, but I did notice that an &#039;Off the Rails&#039; package in one of the four &#039;VIP Booths&#039; was available at just &pound;800 - bargain!  Beer-wise, there was only one operational handpump of the total of five on different parts of the counter, but I did manage to get a fair pint of Wickwar Gold (albeit at &pound;4.00).  You can also get a &#039;yard of ale&#039; at &pound;16, and it&#039;s a long time since I&#039;ve seen that advertised...</p>
+<p class="Reviewer">On 26<sup>th</sup> July 2015 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review96772" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=danny+o%27revey">Danny O&#039;Revey</a> left this review about Pennyblacks</h6>
+<p class="old">24/06/2015 revisit - Refurbed to a more trendy brash fashion - gone is the wine tasting and emphasis on real ales, but 4 do still remain, just more hidden &amp; less obvious. <br />
+<br />
+The high seating has also gone in favour or leather type arm chairs, sofas and half is given over to large party drinking/food. In my humble, not as good as the original.<br />
+<br />
+<br />
+21/05/2010 - This pub is actually at the rear of the main Mailbox development and at canal level. Its a purpose built modern unit at the rear of what used to be the Post Office sorting Office, now known as the Mailbox, a mixed use development in central Birmingham.<br />
+<br />
+Its a large open plan room, with the bar running down the left and modern furniture, rustic seats and benches. The bar is copper and clear of pumps which are at the rear, and part of the bar is lower, presumably to accommodate wheel chair users. The floor is stone/wood. Its quite well done and feels modern and airy. The windows open up in summer to bring an open feel. There is also some seating canalside basin at the front and there are views down to Gas Street basin and I believe the building at the opposite end was Duran Duran&#039;s former rehersal rooms! The balcony to the right above the stairs is where BBC do the local weather on warmer days, so if you time it right your friends may get to see you waving if they watch the Midlands news!<br />
+<br />
+There is a Waterbus stop directly outside (The Mailbox) though I&#039;m not sure of the frequency.<br />
+<br />
+There are occasional wine tasting events at the barrel at the far end.<br />
+<br />
+Quite pricey for Birmingham, reflecting its location, its &pound;3.10 a pint, but there are 5 real ales, and they are more unual than a number of other real ale pubs in Birmingham, including Church End and Wyre Piddle.<br />
+<br />
+Overall a very pleasant place, especially in Summer, though suffers from being busy at peak times due to the location. Although modern its comfortable and offers a contrast to other pubs in the City Centre.</p>
+<p class="Reviewer">On 29<sup>th</sup> June 2015 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 1177 recommendations about 1154 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review64269" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a> left this review about Pennyblacks</h6>
+<p class="old">Apart from a lot of wine and lager flying round, they do serve five rotating real ales, which are always on tap. The barmaid was very helpful when looking for their five handpumps and to my surprise they are displayed and served from the back wall of the bar area, which is a first for me. They can serve it from whereever they like within reason. The only problem I had was trying to read what was on the pumpclip, in order to decide whether I liked it or not. So the barstaff must get fed up naming all the beers out to the likes of me.</p>
+<p class="Reviewer">On 11<sup>th</sup> October 2012 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2750 recommendations about 2750 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/65580/">View more reviews of Pennyblacks (6)</a>
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=744">Birmingham real ale contrasting pubs</a> by <a rel="nofollow" href="/userinfo.php?name=danny+o%27revey">Danny O&#039;Revey</a><br />
+<a href="/crawl/viewcrawl.php?crawl=897">Pubcrawl Birmingham</a> by <a rel="nofollow" href="/userinfo.php?name=mongoose">Michael Petersen</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Pennyblacks</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of Pennyblacks, contains menu - <a href="http://www.pennyblacksbar.com/" title="Submitted by:- Andy Ven" target="_blank">www.pennyblacksbar.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="1439072253021801">Facebook - <a href="https://www.facebook.com/Pennyblacks-Birmingham-Bar-1439072253021801/" target="_blank" rel="nofollow">Pennyblacks Birmingham Bar</a></li></ul><ul id="Custom2"><li class="twitlink" id="117442507">Twitter - <a href="https://twitter.com/Pennyblacks" target="_blank" rel="nofollow">Pennyblacks</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/65580/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.47529415784727, -1.90648614886845], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.47529415784727, -1.90648614886845]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Five Ways, 0.46 miles, 8 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Birmingham New Street, 0.57 miles, 10 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Birmingham Moor Street, 0.82 miles, 15 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('c`h_InjsJ`@g@vAtENZG^SzCMf@EJHHA@PXdE~Ib@p@d@h@~BlAFHnBhAnA`A`A|@C?Ul@XLGd@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('c`h_InjsJQPw@}CMNQb@[q@uAgFyBuHi@z@GBm@r@OEk@cBtCwD@K{@wCm@_CNQDLp@{@CMUUOa@Ci@JyAaAUJyBq@M', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('c`h_InjsJQPw@}CMNQb@[q@uAgFyBuHi@z@GBm@r@OEk@cBqCeM]yABCIk@Sm@^sJ`@yBRoAHo@@kCIy@BKDGQaBGeAGi@q@gDSa@YMHm@DaAAM}BuAFSDBBMAANk@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.47529415784727,-1.90648614886845], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=65580">View all updates for Pennyblacks, Birmingham</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        8<span class="sup">th</span> Apr 2019, 17:46
+      </div><div class="auditexp">Pub <a href="/pubmapaudit/65580/">map correction</a> submitted by <a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        8<span class="sup">th</span> Apr 2019, 17:46
+      </div><div class="auditexp">Pub <a href="/pubmapaudit/65580/">map correction</a> submitted by <a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Hot Food : <span id="fac10365580">Yes</span> <span id="discdetail10365580" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Real Ale : <span id="fac10165580">Yes</span> <span id="discdetail10165580" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2010 by hondo .</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>Closed</td></tr>
+<tr><td>Monday</td><td>12noon - 10pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 10pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>12noon - 10pm</td></tr>
+<tr><td>Thursday</td><td>12noon - 10pm</td></tr>
+<tr><td>Friday</td><td>12noon - 10pm</td></tr>
+<tr><td>Saturday</td><td>Closed</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54982/" class="List1">Gas Street Social</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83098/" class="List1">Aluna</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85007/" class="List1">Bottles</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/68967/" class="List1">Cafe Rouge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/68971/" class="List1">Bar Estilo</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/67789/" class="List1">Bar Epernay</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/74341/" class="List1">Miller &amp; Carter</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/67792/" class="List1">Strada</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

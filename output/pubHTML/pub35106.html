@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Woolpack pub in Ipswich, Suffolk, IP4 2SH : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Woolpack" />
+  <meta name="keywords" content="The Woolpack, 1  Tuddenham Road, Ipswich, Suffolk, Ipswich Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Woolpack in Ipswich" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/35001_35500/35106_0fd33492.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/35106/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.06182837861111" />
+<meta property="og:longitude" content="1.16003930568695" />
+<meta property="og:street-address" content="1  Tuddenham Road" />
+<meta property="og:locality" content="Ipswich" />
+<meta property="og:region" content="Suffolk" />
+<meta property="og:postal-code" content="IP4 2SH" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Woolpack in Ipswich? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Woolpack the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/35106/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Woolpack in Ipswich" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Woolpack " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/35001_35500/35106_0fd33492.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/35106/" />
+<meta name="geo.position" content="52.06182837861111;1.16003930568695" />
+<meta name="geo.placename" content="The Woolpack in Ipswich" />
+<meta name="geo.region" content="UK" />
+<title>The Woolpack in Ipswich : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":35106},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(35106);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 35106;var pubaddress = "1  Tuddenham Road";var pubname = "The Woolpack";var pubpostcode = "IP4 2SH";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/suffolk/" title="Pubs Galore : Suffolk Page">Suffolk</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/ipswich/suffolk/" title="Pubs Galore : Ipswich Page">Ipswich</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Woolpack Page">The Woolpack Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="ipnrcdfqallc6gct7tv238ofa0" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/35106/" class="indisplay"><img src="/images/display/35001_35500/35106_0fd33492.jpg?w=2" alt="Picture of The Woolpack" /></a><br />  Image posted by <a href="/userinfo.php?name=Pangolin" class="indisplay">Graham Coombs</a><br />
+  Submitted on Wednesday, 27<sup>th</sup> February 2019<br />
+  With picture contributions to 2588 other pubs<br />
+<a href="/pubpictures/35106/" class="smallbutton">View all this pub's pictures</a> (10 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/35106/">Pub map</a><br /><a href="/pubreviews/35106/">Pub reviews (3)</a><br /><a href="/pubpictures/35106/">Pub pictures (11)</a><br /><a href="/core/pubaudit.php?id=35106" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Woolpack, Ipswich Central, Ipswich</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">1  Tuddenham Road</span><br />
+
+
+<span class="town">Ipswich</span><br />
+<span class="postcode">IP4 2SH</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/ipswich-central/suffolk/">Ipswich Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Woolpack</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/WoolpackIpswich" target="_blank"><img src="https://pbs.twimg.com/profile_images/991062682886426624/aWPLDovd_normal.jpg" alt="The Woolpack" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/WoolpackIpswich" target="_blank">The Woolpack</a></strong>
+Sun is out
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/WoolpackIpswich/status/1134757409564647424">10:43 AM Jun 1st</a> from <a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/WoolpackIpswich" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/WoolpackIpswich" target="_blank">The Woolpack</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Woolpack  <span class="h2note">(Average Rating: <span id="averagerating"><b>7&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review137132" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> left this review about The Woolpack</h6>
+<p>Well worth the short uphill walk from the town centre, this nice-looking pub sits in the fork of a road junction. The interior has been sympathetically refurbished with slight gastro leanings, but happily retaining a good multi-room layout. At the front is a small snug, with a larger room used for board games off to the side and a tabled dining area to the rear. A further small bar in the other front corner completes the range round the central servery. There is a car park to the rear and tables out by the road, which does not seem too busy. The food is perhaps slightly pretentious but looked good. Draught beers, which are now listed over each bar, were Adnams Southwold &amp; Broadside and Butcombe Original and seemed in excellent condition (Cask Marque accreditation). Craft stuff also available.</p>
+<p class="Reviewer">On 27<sup>th</sup> February 2019 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 1777 recommendations about 1736 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review83264" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Woolpack</h6>
+<p class="old">Reputedly one of Ipswich&#039;s oldest pubs, believed to date back to the 16th Century, the Woolpack is a well kept gastro style pub, just outside the town centre, next to Christchurch Park. Entering up the steps to the main front door, you turn right into a small snug with padded rests on the walls to lean against, but no room for any tables and chairs. A large map of Suffolk dominates the walls and there is a nice door bearing the pub&#039;s name. All of the hand pumps can be viewed in this snug, so it&#039;s worth squeezing in if you want to be sure of exactly what is on. To the front left there is a lounge style room, which I eventually had to repair to, in order to get a seat. The room is bare boarded, but with a few large rugs to dampen down the noise. The furniture includes a number of chunky tables served by a mix of chairs, plus a few comfy armchairs in the front corner. There is a huge fireplace on the back wall underneath an equally impressive sized mirror. An upright piano stands in the far corner and has a big collection of board games on top of it. To the right, you move into a dining room, set up for those wanting food, but there were a few customers sat in here clearly just enjoying a drink. It&#039;s a comfortable and cosy room with plenty of standard tables and chairs, with each table having an unusual bottle of unknown provenance set in the middle and filled with fresh daffodils. Outside the pub there is a nice front seating area which has plenty of benches overlooking the entrance to the park and the two roads which pass either side of the building.<br />
+The ale range was pretty good, if perhaps a little &#039;safe&#039;, offering Morland Old Speckled Hen, Adnams Broadside and Southwold Bitter, Taylor Landlord, Sharps Doom Bar and Island Brewery Wight Gold. The latter seemed like the most interesting proposition, so I ordered a pint from the rather gruff barman who slowly served his regulars before eventually acknowledging my presence. Thankfully, the beer was in pretty good condition and went down well enough.<br />
+This is a pretty good pub and worth including on a crawl around town given its proximity to the Mulberry Tree and the pleasant walk through the park to the Greyhound. A friendlier welcome and slightly more exciting beer range could elevate this pub to one of the best in town.</p>
+<p class="Reviewer">On 26<sup>th</sup> May 2014 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review24348" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=oldboots">Old Boots</a> left this review about The Woolpack</h6>
+<p class="old">Slightly odd interior layout with three rooms, a centre snug with 3 handpumps, a lounge to the left with three more pumps and a L shaped bar to the right served only by a pumpless counter.  The lounge to the left is the main bar, furnished with pine chairs and tables and a corner bench seat with lots of menu blackboards on the wall, decoration is from brewery material,  prints, and certificates from CAMRA etc. The snug has a bench seat, the walls are finished in tongue and groove and woodchip, it would be overcrowded with six people in it. The other bar has machines and tables and chairs of various forms and sweeps round to the back of the pub.  Beers from Adnams and guests, there are more clips than the six handpumps, guests on when I visited were from Wells and Young, Black Sheep, St Austell and Woodfordes, all I tried were in good condition served by a cheeky Irish lad.   The toilets are labelled &ldquo;Ewes&rdquo; and &ldquo;Rams&rdquo;.<br />
+</p>
+<p class="Reviewer">On 24<sup>th</sup> March 2010 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 1974 recommendations about 1855 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Woolpack</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Woolpack - <a href="http://www.woolpack-ipswich.co.uk/" title="Submitted by:- Pub SignMan" target="_blank">www.woolpack-ipswich.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="134054150112632">Facebook - <a href="https://www.facebook.com/thewoolpackipswich/" target="_blank" rel="nofollow">The Woolpack</a></li></ul><ul id="Custom2"><li class="twitlink" id="2178524874">Twitter - <a href="https://twitter.com/WoolpackIpswich" target="_blank" rel="nofollow">The Woolpack</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/35106/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=oldboots">Old Boots</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.06182837861111, 1.16003930568695], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.06182837861111, 1.16003930568695]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Ipswich, 1.19 miles, 22 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Westerfield, 1.48 miles, 28 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Derby Road (Ipswich), 1.59 miles, 30 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ciw|H}qaFdAhADJ@JNLQjCZ~@f@fBXP?rAFMz@v@bB|Bt@rAPd@v@UT?GdACdAn@RAvEAf@JrCvEnBx@BHBd@L|@`@h@v@bBdDTh@D`@RJR@B\\^r@z@~@n@nCb@dCf@tBl@jArAxBh@f@tEdDpCtAEj@LQLC\\DjEbCj@`@VB^QRLMx@DBP_A', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ciw|H}qaFsDaEGFs@IQjDEJgCEOVmHrAu@DgBMmAQwAe@_GmAi@O[c@mDuGkBcCs@ScAEo@Bm@j@MRIBKCy@c@cADo@A{Bk@sGwCcCu@kAKmGKkDTmA@wAGuB_@kCq@cCsAwAoAeAeA_@i@ASFGEgA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ciw|H}qaFdAhADJ@Jd@Xh@Nh@oCj@aCXoB|Fk@z@?vD]LeD@qBAiCSmBPKz@OhEcAJFKaCbBa@Ee@U{C^OdBc@C}EPKrAsBb@kB@E_@qAGIh@{AhA_Cx@wAf@_BRoBh@mElC{Nh@_GPwELcH@uCbN_IFYaAUB_@UOAGPUCCQLHG', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.06182837861111,1.16003930568695], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=35106">View all updates for The Woolpack, Ipswich</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        27<span class="sup">th</span> Feb 2019, 17:17
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        27<span class="sup">th</span> Feb 2019, 12:26
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> amended by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11835106">No</span> <span id="discdetail11835106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2014 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10735106">No</span> <span id="discdetail10735106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2014 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11435106">Yes</span> <span id="discdetail11435106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2014 by Pub SignMan</span></li><li>Car Park : <span id="fac11335106">No</span> <span id="discdetail11335106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2014 by Pub SignMan</span></li><li>Darts : <span id="fac11135106">No</span> <span id="discdetail11135106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 February 2019 by Graham Coombs</span></li><li>Dog Friendly : <span id="fac10535106">Yes</span> <span id="discdetail10535106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2014 by Pub SignMan</span></li><li>Function Room : <span id="fac12335106">No</span> <span id="discdetail12335106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 February 2019 by Graham Coombs</span></li><li>Hot Food : <span id="fac10335106">Yes</span> <span id="discdetail10335106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2014 by Pub SignMan</span></li><li>Jukebox : <span id="fac11235106">No</span> <span id="discdetail11235106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 February 2019 by Graham Coombs</span></li><li>Karaoke : <span id="fac10635106">No</span> <span id="discdetail10635106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 February 2019 by Graham Coombs</span></li><li>Live Music : <span id="fac10835106">Yes</span> <span id="discdetail10835106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2014 by Pub SignMan</span></li><li>Live TV Sports : <span id="fac11035106">No</span> <span id="discdetail11035106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 February 2019 by Graham Coombs</span></li><li>Micropub : <span id="fac12235106">No</span> <span id="discdetail12235106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 February 2019 by Graham Coombs</span></li><li>Pinball : <span id="fac11635106">No</span> <span id="discdetail11635106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2014 by Pub SignMan</span></li><li>Pool Table : <span id="fac10435106">No</span> <span id="discdetail10435106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2014 by Pub SignMan</span></li><li>Quiz Night : <span id="fac10935106">Yes</span> <span id="discdetail10935106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2014 by Pub SignMan</span></li><li>Real Ale : <span id="fac10135106">Yes</span> <span id="discdetail10135106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 March 2010 by moby duck</span></li><li>Real Cider : <span id="fac11935106">No</span> <span id="discdetail11935106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2014 by Pub SignMan</span></li><li>WiFi : <span id="fac11535106">Yes</span> <span id="discdetail11535106" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 February 2019 by Graham Coombs</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>10am - 10:30pm</td></tr>
+<tr><td>Monday</td><td>10am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>10am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>10am - 11pm</td></tr>
+<tr><td>Thursday</td><td>10am - 11pm</td></tr>
+<tr><td>Friday</td><td>10am - Midnight</td></tr>
+<tr><td>Saturday</td><td>10am - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66542/" class="List1">La Galleria</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/35061/" class="List1">The Salutation Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 21 picture(s)" title="Pub has 21 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 2 reviewer(s)" title="Pub has average rating of 5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/35007/" class="List1">Halberd Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 36 picture(s)" title="Pub has 36 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 5 reviewer(s)" title="Pub has average rating of 6 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54074/" class="List1">Yates</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54069/" class="List1">29</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 27 picture(s)" title="Pub has 27 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 6 reviewer(s)" title="Pub has average rating of 7 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54070/" class="List1">The Cricketers (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 27 picture(s)" title="Pub has 27 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/34969/" class="List1">Cock &amp; Pye</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66955/" class="List1">Church&#039;s  Bar</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

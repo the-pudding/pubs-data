@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Rising Sun pub in Basingstoke, Hampshire, RG21 5TB : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Rising Sun" />
+  <meta name="keywords" content="The Rising Sun, Chapel Hill, Basingstoke, Hampshire, Basingstoke Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Rising Sun in Basingstoke" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/57001_57500/57369_cf568fb5.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/57369/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.26937091932077" />
+<meta property="og:longitude" content="-1.09197668220895" />
+<meta property="og:street-address" content="Chapel Hill" />
+<meta property="og:locality" content="Basingstoke" />
+<meta property="og:region" content="Hampshire" />
+<meta property="og:postal-code" content="RG21 5TB" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Rising Sun in Basingstoke? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Rising Sun the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/57369/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Rising Sun in Basingstoke" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Rising Sun " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/57001_57500/57369_cf568fb5.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/57369/" />
+<meta name="geo.position" content="51.26937091932077;-1.09197668220895" />
+<meta name="geo.placename" content="The Rising Sun in Basingstoke" />
+<meta name="geo.region" content="UK" />
+<title>The Rising Sun in Basingstoke : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":57369},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(57369);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 57369;var pubaddress = "Chapel Hill";var pubname = "The Rising Sun";var pubpostcode = "RG21 5TB";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/hampshire/" title="Pubs Galore : Hampshire Page">Hampshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/basingstoke/hampshire/" title="Pubs Galore : Basingstoke Page">Basingstoke</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Rising Sun Page">The Rising Sun Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="4t13992c7lhk5k249q26fkqrg3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/57369/" class="indisplay"><img src="/images/display/57001_57500/57369_cf568fb5.jpg?w=1" alt="Picture of The Rising Sun" /></a><br />  Image posted by <a href="/userinfo.php?name=PaulOfHorsham" class="indisplay">paulof horsham</a><br />
+  Submitted on Saturday, 9<sup>th</sup> August 2014<br />
+  With picture contributions to 1315 other pubs<br />
+<a href="/pubpictures/57369/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/57369/">Pub map</a><br /><a href="/pubreviews/57369/">Pub reviews (5)</a><br /><a href="/pubpictures/57369/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=57369" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Rising Sun, Basingstoke Central, Basingstoke</h1>
+  <div class="pubposter">Pub added by Anonymous User</div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Chapel Hill</span><br />
+
+
+<span class="town">Basingstoke</span><br />
+<span class="postcode">RG21 5TB</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01256321520</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/basingstoke-central/hampshire/">Basingstoke Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Rising Sun  <span class="h2note">(Average Rating: <span id="averagerating"><b>8&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review87995" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about Rising Sun</h6>
+<p class="old">A bit of a clean-up here (hooray) and a re-naming, but essentially remains as was. Three ales: Courage Best, Black Sheep Bitter and GK Old Nutty Hen (pretty good). Fair enough, quite busy on my Friday visit. Given the slide downhill of the Queens Head, it&rsquo;s good to see this one open again for the thirsty commuter.<br />
+<br />
+Reviews as Way Inn<br />
+May 2012<br />
+A recent re-visit found the beer selection to have evolved - TT Landlord, Longdog, Oakleaf Hole Hearted, GK OSH and. Abbot. The Longdog was good and Hole Hearted absolutely spot-on. However the interior is looking pretty grubby (eg the furnishings are getting very tatty) and the pub, never the most light/welcoming at the best of times due its position, feels a bit dingy and desperate, what with the lights not switched on and the lack of homely touches on a grey day. A coat of paint, some new upholstering and half a dozen sets of new light fittings really would do wonders. There&rsquo;s at least one real fire on the go now so there&rsquo;s potential. This could be as good (maybe even better) as the Queens Arms if management want it to be. Rated 7<br />
+<br />
+November 2008<br />
+A pub that&rsquo;s getting popular with the younger crowd and is also becoming well-known for its beer. There&rsquo;s usually Abbot, Deuchars, Landlord and Palmers available and they are in pretty good shape. Quite a large interior, the inside downstairs I always find a bit dingy &ndash; it&rsquo;s better up the steps as there&rsquo;s a bit more natural light coming in. The beer garden is functional but well-done. The jukebox (decent selection) music is often pointlessly on the loud side, perhaps the landlord is deaf. The food available (posh pub grub with garnish, usually) is pretty good in my experience. Staff are usually pretty good as well. Overall, I&#039;d recommend a visit here if you are in the town. Rated 8</p>
+<p class="Reviewer">On 13<sup>th</sup> October 2014 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review70889" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=BeerDrinkingGuy">dave stray</a> left this review about The Way Inn</h6>
+<p class="old">Abbot Ale and Timothy Taylor are the main ales available. Appears to hold occasional music nights. Pub is large and never seems to get very busy here.</p>
+<p class="Reviewer">On 7<sup>th</sup> June 2013 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 265 recommendations about 183 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review31754" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=BeerDrinkingGuy">dave stray</a> left this review about The Way Inn</h6>
+<p class="old">Many ales - as many as 6 at one time. Also the Jukebox is good fun.</p>
+<p class="Reviewer">On 15<sup>th</sup> August 2010 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 265 recommendations about 183 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/57369/">View more reviews of The Rising Sun (5)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Rising Sun</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="1415334595420738">Facebook - <a href="https://www.facebook.com/RisingSunBasingstoke/" target="_blank" rel="nofollow">The Rising Sun - Basingstoke</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/57369/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.26937091932077, -1.09197668220895], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.26937091932077, -1.09197668220895]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Basingstoke, 0.22 miles, 4 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Bramley (Hants), 5.51 miles, 1 hr 46 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Hook, 6.41 miles, 2 hr 3 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('cq|wHdgtElAkD|A_FxAyBC?@IVk@?SSm@G_AAm@C@EaA', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('cq|wHdgtEv@yB]OGK@y@Om@MQKRMMO]c@CoARMgBmAPIgCcBj@kAVU@g@{OG?CW}@PcA?eB_@w@Ai@u@_AuCg@wCoA_FS]QGeBcEu@eAuA}AE_@We@Ge@IQCOAHcBw@KMO?mB_ABi@ICBMH{@MI[a@UQYSEWMm@MKWEGg@yBuAA[BmAKYOSUSCS?MEI_IqFIi@Fu@?wADGEY]]QYKI@QNs@V{@KmAe@y@G_AYaA{@q@e@YBO?MEc@Si@SSiAo@qGsAwAg@uATU@]c@SV{B{CESA_@SYAWwB@{BLWFw@DgBAwED?Pw@CeDi@K`@gS@qNr@kCZKFwDjAyD`BaDdBoLfB_KhAiC^oBGsAa@eAW_@SM_@DgCIu@BoCI{A]{BSMe@HaBJaBQwAgAaCyC]i@Yu@OiAaAu@]e@aCcBQDw@GYLUf@Yx@WdA[vAGTIJIFW?mCIg@Di@JwDvBs@f@yEjEoA|@e@Ta@JiABg@R_DzCcAr@oBd@u@h@QFg@FuAAqFUY?cAZ]@]G}Ae@QA}@HkElAs@Io@R{@NaDbAkGdC]oAc@oASc@c@s@m@o@s@k@u@i@aB_Ac@_@yB{B}@yAo@kAgByDgC{Eo@{AG[KoAGiBE}EGcCQ{B_AuHYaDb@SBG`A_@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('cq|wHdgtElAkD|A_FxAyBC?@IVk@?SSm@G_AAm@C@G_BCUCCOmDM{@IWUeCFC?wFMkFQm@U}Ae@aCE_AAs@[mBIOMIBWESSkC}D{u@Mw@_@iAIwBDcAYgH@]IyB@WJy@YaG]aCOuEa@sFKoEKsBIoHU{Fb@g@J?HBLSYcAIGm@eDCi@?u@Fe@Nm@`EqE`CwC?IAU[mAMu@UaBUqDc@iD[oAk@}C_@gBk@yBe@eCCILKEYCsBDeAE_@Ue@BIAIp@oBLeA\\mBHQJQTIESkAu@yAW[?sCj@]kAQ_JeA_St@iEHu@BaCFqC~AwJf@aCfAmDR}@l@kBfDaPpAyGNiAn@XtC_@i@oC_@iCSyBKsBI}CAgSCeDMwCk@sI_@qCqAyF{@mCg@oAmEsJw@sBy@mCc@oB]gCU_CKcCC}CHsFRmGHkFBiDgAyiAi@y[Y_My@gLcA_Gq@uC[g@{@mCmAqDcDoIq@{BsGeQw@gBmByEJuCDc@_@cEM]IiBBaAz@qAMyFU[?c@FM?GPS`@kADc@kAsC{@iBEy@TaDLuC?aBC]cAJgACsAB?QL[Ci@EB?O@?JMEu@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.26937091932077,-1.09197668220895], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=57369">View all updates for The Rising Sun, Basingstoke</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        17<span class="sup">th</span> Jul 2017, 07:42
+      </div><div class="auditexp">Request to mark pub as open by <a rel="nofollow" href="/userinfo.php?name=Mobyduck">moby duck</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        17<span class="sup">th</span> Jul 2017, 06:49
+      </div><div class="auditexp">Request to mark pub as open submitted by <a rel="nofollow" href="/userinfo.php?name=Mobyduck">moby duck</a>, with included notes: <span class="reason">Re opened Saturday 15th July.</span>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11857369">No</span> <span id="discdetail11857369" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2014 by Quinno _</span></li><li>Bar Billiards : <span id="fac10757369">No</span> <span id="discdetail10757369" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2014 by Quinno _</span></li><li>Beer Festivals : <span id="fac11757369">No</span> <span id="discdetail11757369" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2014 by Quinno _</span></li><li>Beer Garden : <span id="fac11457369">Yes</span> <span id="discdetail11457369" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2014 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10257369">No</span>  - <span id="discdetail10257369" class="discdetail" style="">Discount withdrawn</span> -   <span class="Reviewer">last updated 06 February 2017 by ROB Camra</span></li><li>Car Park : <span id="fac11357369">Yes</span> <span id="discdetail11357369" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 July 2014 by ROB Camra</span></li><li>Child Friendly : <span id="fac12157369">Yes</span> <span id="discdetail12157369" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2014 by Quinno _</span></li><li>Hot Food : <span id="fac10357369">Yes</span> <span id="discdetail10357369" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2014 by Quinno _</span></li><li>Jukebox : <span id="fac11257369">Yes</span> <span id="discdetail11257369" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2014 by Quinno _</span></li><li>Karaoke : <span id="fac10657369">No</span> <span id="discdetail10657369" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2014 by Quinno _</span></li><li>Live Music : <span id="fac10857369">Yes</span> <span id="discdetail10857369" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2014 by Quinno _</span></li><li>Live TV Sports : <span id="fac11057369">No</span> <span id="discdetail11057369" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2014 by Quinno _</span></li><li>Pinball : <span id="fac11657369">No</span> <span id="discdetail11657369" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2014 by Quinno _</span></li><li>Real Ale : <span id="fac10157369">Yes</span> <span id="discdetail10157369" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2014 by Quinno _</span></li><li>Real Cider : <span id="fac11957369">No</span> <span id="discdetail11957369" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2014 by Quinno _</span></li><li>Wheelchair Access : <span id="fac12057369">Yes</span> <span id="discdetail12057369" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2014 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - 11pm</td></tr>
+<tr><td>Saturday</td><td>12noon - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/13317/" class="List1">The New Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 9 recommendation(s)" title="Pub has 9recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 6 reviewer(s)" title="Pub has average rating of 7 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/13327/" class="List1">The Queens Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2.5 from 2 reviewer(s)" title="Pub has average rating of 2.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/13339/" class="List1">The Wheatsheaf</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 5 reviewer(s)" title="Pub has average rating of 5.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56870/" class="List1">The Maidenhead Inn (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 1 reviewer(s)" title="Pub has average rating of 8 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/69850/" class="List1">Plush Lounge Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 3 reviewer(s)" title="Pub has average rating of 4.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/68195/" class="List1">The Bakers</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3.5 from 2 reviewer(s)" title="Pub has average rating of 3.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/13299/" class="List1">Laarsen&#039;s</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 5 reviewer(s)" title="Pub has average rating of 4.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56867/" class="List1">The Angel (JD Wetherspoon)</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

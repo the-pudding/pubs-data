@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Prince George pub in Tattenhoe, Milton Keynes, Buckinghamshire, MK4 3FA : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Prince George" />
+  <meta name="keywords" content="Prince George, Portishead Drive, Milton Keynes, Buckinghamshire, Tattenhoe, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Prince George in Milton Keynes" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/81001_81500/81443_54e8a1ce87a11251cd7c1b5084c164a6.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/81443/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.99831620000000" />
+<meta property="og:longitude" content="-0.79587710000000" />
+<meta property="og:street-address" content="Portishead Drive" />
+<meta property="og:locality" content="Milton Keynes" />
+<meta property="og:region" content="Buckinghamshire" />
+<meta property="og:postal-code" content="MK4 3FA" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Prince George in Milton Keynes? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Prince George the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/81443/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Prince George in Milton Keynes" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Prince George " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/81001_81500/81443_54e8a1ce87a11251cd7c1b5084c164a6.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/81443/" />
+<meta name="geo.position" content="51.99831620000000;-0.79587710000000" />
+<meta name="geo.placename" content="Prince George in Milton Keynes" />
+<meta name="geo.region" content="UK" />
+<title>Prince George in Tattenhoe, Milton Keynes : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":81443},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(81443);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 81443;var pubaddress = "Portishead Drive";var pubname = "Prince George";var pubpostcode = "MK4 3FA";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/buckinghamshire/" title="Pubs Galore : Buckinghamshire Page">Buckinghamshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/milton-keynes/buckinghamshire/" title="Pubs Galore : Milton Keynes Page">Milton Keynes</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Prince George Page">Prince George Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="gj1dsp6n7emhmn09rnfl5ds9e3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/81443/" class="indisplay"><img src="/images/display/81001_81500/81443_54e8a1ce87a11251cd7c1b5084c164a6.jpg?w=1" alt="Picture of Prince George" /></a><br />  Image posted by <a href="/userinfo.php?name=Blackthorn" class="indisplay">Blackthorn _</a><br />
+  Submitted on Thursday, 13<sup>th</sup> February 2014<br />
+  With picture contributions to 4300 other pubs<br />
+<a href="/pubpictures/81443/" class="smallbutton">View all this pub's pictures</a> (3 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/81443/">Pub map</a><br /><a href="/pubreviews/81443/">Pub reviews (1)</a><br /><a href="/pubpictures/81443/">Pub pictures (4)</a><br /><a href="/core/pubaudit.php?id=81443" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Prince George, Tattenhoe, Milton Keynes</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=Blackthorn">Blackthorn _</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Portishead Drive</span><br />
+
+
+<span class="town">Milton Keynes</span><br />
+<span class="postcode">MK4 3FA</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/tattenhoe/buckinghamshire/">Tattenhoe</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Prince George  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review80421" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about Prince George</h6>
+<p class="old">A new build pub on the outskirts of Milton Keynes, it&rsquo;s a good size development standing in it&rsquo;s own grounds along with a car park, landscaping and a few tables on the patio at the front. It was pretty much full to capacity on a recent Tuesday evening visit, but that may well of course be due to all the locals checking it out as it has only been open for a couple of weeks.<br />
+<br />
+Inside it&rsquo;s essentially all one open room, although sub-divided in to different areas with the left hand side more geared up for dining, although many punters in the other half were also eating. Staff all seemed pleasant and friendly, perhaps fresh from their training courses, from the greeter at the door to the landlord who carefully wiped off my glass with a paper serviette as he had spilt a little as he was pouring it. I don&rsquo;t think I&rsquo;ve ever had that before! D&eacute;cor wise it looks as though they&rsquo;ve tried to go for a farmhouse kitchen look with some chunky wood timberwork, cream painted boards on the ceiling and an old dresser. Flooring was mostly wood strip and parquet, with some grey slate style tiling around the bar and the paintwork looked to be the usual Farrow &amp; Ball options, although there is also some exposed brickwork. A floor to ceiling wine rack acted as a partition wall and there was a large fire-place at one end, although this was not in use.<br />
+<br />
+There is clearly an emphasis on food here and the menu offered an extensive choice and there should be something to suit most palettes. It was divided in to sections such as mains, rotisserie/grill, traditional pies, salads, spuds, etc. The mains were mostly priced in the &pound;8 - &pound;10 range and consisted of the usual pub staples such as Toad in the hole, Ham Egg &amp; Chips, Fish &amp; Chips and even Scampi in a basket. My Hunter&rsquo;s Chicken was pleasant enough and quite tasty, although clearly not freshly prepared. At &pound;8.75 it was perhaps slightly expensive for something mass produced, but I&rsquo;ve no real complaints.<br />
+<br />
+Beer wise, the choice was entirely from the McMullen&rsquo;s stable with their IPA, AK, Country Bitter and Cask Ale (that&rsquo;s it&rsquo;s name, not a description!). The solitary cider was Aspall&rsquo;s Suffolk.</p>
+<p class="Reviewer">On 5<sup>th</sup> March 2014 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Prince George</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Prince George page on the McMullens website - <a href="http://www.mcmullens.co.uk/princegeorge" title="Submitted by:- Blackthorn _" target="_blank">www.mcmullens.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="418590768268125">Facebook - <a href="https://www.facebook.com/princegeorgemk/" target="_blank" rel="nofollow">The Prince - Tattenhoe</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/81443/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Blackthorn">Blackthorn _</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.99831620000000, -0.79587710000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.99831620000000, -0.79587710000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Bletchley, 3.13 miles, 1 hr 0 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Milton Keynes Central, 3.46 miles, 1 hr 6 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Fenny Stratford, 4.15 miles, 1 hr 20 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('g|j|HnlzCDDV??c@Ne@m@u@?o@B_@JD~@}A@MFIIc@i@yAc@}@_@i@[Mg@yA?gAA_@Is@SSBSn@}A\\S@w@PgAAq@HINa@TWh@QFGDQ`CeSNCJKv@uGDk@IUGGn@eFTa@B]?[Iw@BM@CKSGG_AWEEISG]AO?q@^eANSIQSWe@Oi@e@g@_Ak@w@Uk@Gi@EMSOc@OI[OyAQs@Q_@E{BPU]mAUiAc@qDQc@U[vDqMPMT?PQv@oBEQMuA@]X{@\\[o@s@~@_DJYHIb@iAXkATs@fJwTHQpAcBFL`@q@hAiCrFiKcBqDpAwBF_@?yA|AyJPwBDgCAcAEgAIcAW_AJMSi@_@w@s@cAa@Uc@IG_AHyC@?_@oNi@{La@wEaAmEa@kAq@oAUUf@wD[oAA_A]oB^aEoCm@CWNuBEkASwAMcBC]D_@c@_FWuGDQp@GFIHAJHIgBZIAKJA@I', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('g|j|HnlzCDDV??c@Ne@m@u@?o@B_@JD~@}A@MFIIc@i@yAc@}@_@i@[M}As@@QCSEQUOp@mDRe@?EG@MECU?IKM_Aa@MO{AgD_@}@q@GYe@iCuFo@eB}DgJa@u@mDgDILM?IMAKaB\\AmB]@CqAEYUm@a@[o@Ie@QQe@Mo@uAV_ACc@IqAaAi@i@e@]_@O}@Mq@BUGOQ[NY{AW[SMOQwBgD]q@]y@Wa@WQAPO^iAvBOF]Ea@QOYk@dA]h@]T[Hc@Am@Q]Ec@?_@FGUOMQBKVOBy@b@c@b@QXo@gAe@VIc@QRQFO\\s@`AeCeF]y@Ca@I]i@~@Wg@WZKHm@P}AZY@eA^{@?YJA_@IEmCM@KmBGiA[]UY]Q_@gA}CWGGEa@u@FIPGkBmEeAiB{HG@c@GUsB{Ba@Yk@?QDOPQd@EV]UwBk@sEgBU[Qo@Io@QUWBWEUXY?aA_@c@I}@Ck@K_Bu@?a@uE{EWMQQQAQROQa@dAg@xAQZqBpBMb@G`@Cj@UhAE\\?d@G\\Ud@MI}CsAsAy@}BuDkBdEkDiKe@_AaCpCPb@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('g|j|HnlzCDDV??c@Ne@m@u@?o@B_@JD~@}A@MFIIc@i@yAc@}@_@i@[Mg@yA?gAA_@Is@SSBSn@}A\\S@w@PgAAq@HINa@TWh@QFGDQ`CeSNCJKv@uGDk@IUGGn@eFTa@B]?[Iw@BM@CKSGG_AWEEISG]AO?q@^eANSIQSWe@Oi@e@g@_Ak@w@Uk@Gi@EMSOc@OI[OyAQs@Q_@E{BPU]mAUiAc@qDQc@U[vDqMPMT?PQv@oBEQMuA@]X{@\\[o@s@~@_DJYHIb@iAXkATs@fJwTHQpAcBFL`@q@hAiCrFiKcBqDpAwBF_@?yA|AyJPwBDgCAcAEgAIcAW_AJMSi@_@w@s@cAa@Uc@IG_AHyC@?_@oNi@{La@wEaAmEa@kAq@oAUUf@wD~BiI~CmIv@cATOu@kHk@oDQiBASEE_@kB}A}K[aCHAMqBDUKOCUWH[iCKkAQwB?}@AWSiDk@wH_@{DOg@SaCUsAFUCYyAqKUmBe@oIQaI?e@II?UUSmAaBy@q@m@[oBo@aBYW?gBP_@AyAk@W]ABK@CEOPO]KaCCoB', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.99831620000000,-0.79587710000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=81443">View all updates for Prince George, Milton Keynes</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        5<span class="sup">th</span> Sep 2014, 10:16
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> approved
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        5<span class="sup">th</span> Mar 2014, 07:42
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> deleted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Bar Billiards : <span id="fac10781443">No</span> <span id="discdetail10781443" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2014 by Blackthorn _</span></li><li>Beer Garden : <span id="fac11481443">Yes</span> <span id="discdetail11481443" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2014 by Blackthorn _</span></li><li>Car Park : <span id="fac11381443">Yes</span> <span id="discdetail11381443" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2014 by Blackthorn _</span></li><li>Child Friendly : <span id="fac12181443">Yes</span> <span id="discdetail12181443" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2014 by Blackthorn _</span></li><li>Darts : <span id="fac11181443">No</span> <span id="discdetail11181443" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2014 by Blackthorn _</span></li><li>Hot Food : <span id="fac10381443">Yes</span> <span id="discdetail10381443" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2014 by Blackthorn _</span></li><li>Jukebox : <span id="fac11281443">No</span> <span id="discdetail11281443" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2014 by Blackthorn _</span></li><li>Karaoke : <span id="fac10681443">No</span> <span id="discdetail10681443" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2014 by Blackthorn _</span></li><li>Live Music : <span id="fac10881443">No</span> <span id="discdetail10881443" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2014 by Blackthorn _</span></li><li>Live TV Sports : <span id="fac11081443">No</span> <span id="discdetail11081443" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2014 by Blackthorn _</span></li><li>Pinball : <span id="fac11681443">No</span> <span id="discdetail11681443" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2014 by Blackthorn _</span></li><li>Pool Table : <span id="fac10481443">No</span> <span id="discdetail10481443" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2014 by Blackthorn _</span></li><li>Real Ale : <span id="fac10181443">Yes</span> <span id="discdetail10181443" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2014 by Blackthorn _</span></li><li>Real Cider : <span id="fac11981443">No</span> <span id="discdetail11981443" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2014 by Blackthorn _</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11am - 10:30pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - 11pm</td></tr>
+<tr><td>Saturday</td><td>11am - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/60387/" class="List1">The Nut and Squirrel</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

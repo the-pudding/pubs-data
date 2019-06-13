@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="George Inn pub in Backwell (near Bristol), Bristol (County), BS48 3PG : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of George Inn" />
+  <meta name="keywords" content="George Inn, 125  Farleigh Road, Backwell, Bristol, Bristol (County), , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="George Inn in Backwell" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/1_500/380_8bb159ef.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/380/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.41949118355811" />
+<meta property="og:longitude" content="-2.72459864616394" />
+<meta property="og:street-address" content="125  Farleigh Road" />
+<meta property="og:locality" content="Backwell" />
+<meta property="og:region" content="Bristol (County)" />
+<meta property="og:postal-code" content="BS48 3PG" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like George Inn in Backwell? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make George Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/380/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="George Inn in Backwell" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about George Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/1_500/380_8bb159ef.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/380/" />
+<meta name="geo.position" content="51.41949118355811;-2.72459864616394" />
+<meta name="geo.placename" content="George Inn in Backwell" />
+<meta name="geo.region" content="UK" />
+<title>George Inn in Backwell (near Bristol) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":380},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(380);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 380;var pubaddress = "125  Farleigh Road";var pubname = "George Inn";var pubpostcode = "BS48 3PG";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/bristol/" title="Pubs Galore : Somerset Page">Somerset</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/bristol/bristol/" title="Pubs Galore : Bristol Page">Bristol</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/backwell/somerset/" title="Pubs Galore : Backwell Page">Backwell</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : George Inn Page">George Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="5bot0c4e6b0ngajedskgrcose2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/380/" class="indisplay"><img src="/images/display/1_500/380_8bb159ef.jpg?w=2" alt="Picture of George Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=Blackthorn" class="indisplay">Blackthorn _</a><br />
+  Submitted on Thursday, 16<sup>th</sup> June 2011<br />
+  With picture contributions to 4300 other pubs<br />
+<a href="/pubpictures/380/" class="smallbutton">View all this pub's pictures</a> (8 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/380/">Pub map</a><br /><a href="/pubreviews/380/">Pub reviews (2)</a><br /><a href="/pubpictures/380/">Pub pictures (9)</a><br /><a href="/core/pubaudit.php?id=380" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">George Inn, Bristol</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">125  Farleigh Road</span><br />
+
+<span class="town">Backwell</span><br />
+<span class="postaltown">Postal town: Bristol</span><br />
+<span class="postcode">BS48 3PG</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01275462770</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/backwell/somerset/">Backwell</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by George Inn</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/TheGeorgeBwell" target="_blank"><img src="https://pbs.twimg.com/profile_images/2351688352/image_normal.jpg" alt="TheGeorgeAtBackwell" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/TheGeorgeBwell" target="_blank">TheGeorgeAtBackwell</a></strong>
+We can&#039;t wait to greet all the families treating Dads to special meals on Sunday. We still have a few tables left b&hellip; <a href='https://t.co/vlmDxG5R9f' target='_blank'>https://t.co/vlmDxG5R9f</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/TheGeorgeBwell/status/1138038116864991232">12:00 PM Jun 10th</a> from <a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/TheGeorgeBwell" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/TheGeorgeBwell" target="_blank">TheGeorgeAtBackwell</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of George Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>8</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review50053" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about George Inn</h6>
+<p class="old">Since my last review, the pub has closed yet again and been boarded up for about six months. In contrast to previous re-openings where not much has changed with the pub, this time it has undergone a &pound;300k refurbishment and has Malvern Inns at the helm. The main entrance is now around the back, where you walk up a slate tiled path illuminated on either side by recessed LED uplighters. To the left is an attractive gravelled courtyard garden with several tables and chairs.<br />
+<br />
+The layout of the pub is unchanged, but it has undergone significant refurbishment. The main bar area has a predominantly wood floor with some black and white chequered tiles immediately in front of the bar and slate tiles elsewhere. The colour scheme is a mixture of cream and chocolate brown. Down a small slope to the right is a lounge area with several tables and chairs, plenty of cushions and some black and white prints of old Bristol on the walls. Separating the two is a dual aspect open chimney, and I understand they are plans to install a stone fireplace here. Beyond this is an impressive stone walled room with a high vaulted ceiling, a large table and high backed leather chairs reminiscent of a medieval dining room. I believe this is planned to be used as a function room.<br />
+<br />
+To the left of the bar area is another room more geared up for dining, with an exposed stone wall and fireplace at the far end. The menu looks to be a good selection of dishes, slightly above your usual &ldquo;pub grub&rdquo;, but nonetheless reasonable looking value with most of the main courses around the &pound;9 mark. There is also a bar menu with a selection of light bites and tapas style dishes. Drink prices seemed expensive at &pound;8 for two pints, although this was primarily due to the Peroni being &pound;4.25 a pint. &ldquo;Enjoy your drinks&rdquo; said the friendly barman. &ldquo;I would bl**dy well hope so at that price&rdquo; commented Mrs. B.<br />
+<br />
+Beers on tap were Old Speckled Hen, Tribute and Butcombe. There was a fourth pump for Bass but this had run out. Ciders were Thatcher&rsquo;s Gold and Stowford Press. There was also a good selection of continental lagers &ndash; no Fosters or Carling here.</p>
+<p class="Reviewer">On 4<sup>th</sup> August 2011 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review34714" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about George Inn</h6>
+<p class="old">I believe this is yet again under new management. This cannot bode well for the future of the pub, it&#039;s obviously not making any money if landlords last no more than a few months. This is a shame as it&#039;s a tidy, up together pub in a prime location.<br />
+<br />
+Not much has changed though, even the pictures on the wall are the same. They have been advertising that there is now a pool table, although I could not see any evidence of it when I visited. I queried this, and was told it&#039;s in a barn out the back, and they could &ldquo;unlock it if I wanted&rdquo;.<br />
+<br />
+Food is now very traditional pub grub &ndash; haddock &amp; chips, scampi &amp; chips, pie of the day, lasagne, etc. and is advertised as &ldquo;home cooked&rdquo; whatever that means. Nothing even as adventurous as a curry or a chilli, and no specials board either. The menu does not list any desserts, but says to ask for today&#039;s selection. One punter did this and got an extremely bemused expression from the barmaid, although to be fair she did then real some off. Nothing wrong with a basic pub grub menu of course, as long as it&#039;s decent food. Unfortunately on this occasion it was a bit disappointing &ndash; my beer battered haddock and chips was just about ok, but certainly not worth the &pound;7.50 or so I paid. The fish itself was very small, being almost as much batter as fish.<br />
+<br />
+On the plus side though, it&#039;s still got a pleasant ambience, and all the staff seemed friendly and helpful. It was quite quiet on a Friday night though, with only a dozen or so people being in there at 8:30pm, and it&#039;s a big old pub. If that&#039;s what it&#039;s like at a prime time like that, I can&#039;t see the new owners lasting too long, which will be a shame. It did liven up (rather too much) later on, with a horde of rather noisy teenagers, but then it was the last day of term so this may not be typical.<br />
+<br />
+Beers on this occasion were Doom Bar, Butcombe and Courage Best. The cider was Thatcher&#039;s Gold.</p>
+<p class="Reviewer">On 24<sup>th</sup> July 2010 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for George Inn</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the George at Backwell - <a href="http://www.thegeorgeatbackwell.com/" title="Submitted by:- Blackthorn _" target="_blank">www.thegeorgeatbackwell.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="215812978446246">Facebook - <a href="https://www.facebook.com/thegeorgeatbackwell/" target="_blank" rel="nofollow">The George at Backwell</a></li></ul><ul id="Custom2"><li class="twitlink" id="333599822">Twitter - <a href="https://twitter.com/TheGeorgeBwell" target="_blank" rel="nofollow">TheGeorgeAtBackwell</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/380/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.41949118355811, -2.72459864616394], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.41949118355811, -2.72459864616394]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Nailsea & Backwell, 1.36 miles, 26 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Yatton, 6.18 miles, 1 hr 59 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Shirehampton, 8.05 miles, 2 hr 35 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('mzyxHncsOVjA`@tA]^[h@LNDNAJ_C`GdApAFhADnEJ~BJt@Cl@n@zVL`JrAdBXpA_FhKw@pCg@xBkArC{@n@PjFp@xG^zGl@l@DXOJYDi@TtBxNs@b@bAzFXtBEDZrAHDBNBAEOHAF`@HCSkA', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('mzyxHncsOVjAdAdD~B`Ft@pBnAoBPOXJf@D`BIHTl@p@FXLGxBdCzA|AtAfAxAlBVRR^b@\\\\n@ZTTd@VJN\\vBpADFp@R~@d@XTj@Pt@?b@LT@?h@\\`DZzA|@`CNz@@v@Ch@gA`Bg@j@RV@ZUfBc@tFKlEBrCNdFGtEHdCRxAVv@XnA`@pAXlA\\jCb@bEId@\\\\bA|Av@bBXv@bA`D\\jDNp@\\r@V\\RPB^R~@Fj@?v@D\\p@vBD\\?Zg@rGEjBHpC?pAY`E^zD?h@E`BVNtAVbDdBdBpAvBxChD|DlA~Bx@~BXxEpBrLhAShAd@x@GzDfHfIbCdAAh@BRXL`@n@zDRfBJ|@Pv@D~@IzCx@vF\\bE`@jGx@lPDPHv@tDlJjArBzEnDoClHcBbDtExJ\\bATpVoA`@d@pLl@pMHfCPdAPt@l@zAhBrD^vAp@|CHNGp@UjGBJnDvFjCjHWpAc@dBhCbFz@rHfGi@pE|Cb@z@`DxEvEtH`EjERbH?lE@FMt@UvFMrAIj@On@_@jAqE~Jg@dB}@nEOpBIrCQrB]~AWr@m@lAk@n@eBfBoAr@u@XaDt@IR@b@NbAZzA`@hAX\\Rf@\\|A_EbClBrFF^Uf@EIUVBNW}@DGh@fB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('mzyxHncsOWkAo@yDcA{HwA}LKgACcAAoD_GhAgMdFoITgUMm@Z{JvBw@`AUDq@EKZ{@lASF{Ai@s@Q{@IgDkA[QoDWm@Qy@I{LHs@GaAc@YiA}Ao@iDhEsAr@_AVUzAQv@o@nB_@ECq@Ko@q@cCsAgDk@eAiAaCy@GcAA_ADw@L}@AmAg@mB_@k@Nk@DiIsUO~AeDf@aPdDaHaAsD?eDMuJwGuB{@uBcAeBeBY?QPYh@k@nDWj@_@Z]JaCHaCl@b@eDoCcBk@McHuFoHcW?_AIqAMeASg@Yc@KP_@T{Aj@_ATa@DmA\\aAj@mAfAkAnAi@r@Qd@q@nCQj@}A@eGVuA\\_COwANqDlBuBtA}DfEu@`@eBRiCS@gAEmBEy@Gg@[gAe@eAaA`As@L]@]KY_@Wc@Wo@q@q@k@Mi@DcCp@c@VWV]l@Op@[^iBb@iHp@sCl@oAb@AQBUFIrC{ADS_@uBYuCCoA_@}B@i@iB{LR[F_@?Ky@_GWUOaBUmBw@iJm@sFOu@A]DWNQ@Ii@oHEGICEMQaEEOGM?b@KhDITOBGEmdAikADMJHBGRPD\\zHxITy@JQJd@JIXwAfBbAFNRlBHv@XK@JJJBJnBeApBeBLNTnAHEFFVHPCLa@d@_AFWDs@Ck@DOtBaCvAuBh@k@j@eA~@kAhAaBhAcB|GgM\\cA`@}A^}BZqDd@VFUFD`@STm@F@?DB@G~AD?LaC@_A', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.41949118355811,-2.72459864616394], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=380">View all updates for George Inn, Backwell</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        25<span class="sup">th</span> Aug 2017, 21:45
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a>
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        16<span class="sup">th</span> Apr 2012, 00:21
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac118380">Yes</span> <span id="discdetail118380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li><li>Bar Billiards : <span id="fac107380">No</span> <span id="discdetail107380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li><li>Beer Garden : <span id="fac114380">Yes</span> <span id="discdetail114380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li><li>CAMRA Discount : <span id="fac102380">No</span> <span id="discdetail102380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li><li>Car Park : <span id="fac113380">Yes</span> <span id="discdetail113380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li><li>Child Friendly : <span id="fac121380">Yes</span> <span id="discdetail121380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li><li>Darts : <span id="fac111380">No</span> <span id="discdetail111380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li><li>Function Room : <span id="fac123380">Yes</span>  - <span id="discdetail123380" class="discdetail" style="">According to Facebook page</span> -   <span class="Reviewer">last updated 21 July 2015 by Dave McNally</span></li><li>Hot Food : <span id="fac103380">Yes</span> <span id="discdetail103380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 July 2010 by hondo .</span></li><li>Jukebox : <span id="fac112380">No</span> <span id="discdetail112380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li><li>Karaoke : <span id="fac106380">No</span> <span id="discdetail106380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li><li>Live Music : <span id="fac108380">No</span> <span id="discdetail108380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li><li>Live TV Sports : <span id="fac110380">No</span> <span id="discdetail110380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li><li>Micropub : <span id="fac122380">No</span> <span id="discdetail122380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li><li>Pinball : <span id="fac116380">No</span> <span id="discdetail116380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li><li>Pool Table : <span id="fac104380">No</span> <span id="discdetail104380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li><li>Quiz Night : <span id="fac109380">Yes</span> <span id="discdetail109380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 August 2017 by Blackthorn _</span></li><li>Real Ale : <span id="fac101380">Yes</span> <span id="discdetail101380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Real Cider : <span id="fac119380">No</span> <span id="discdetail119380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li><li>Wheelchair Access : <span id="fac120380">Yes</span> <span id="discdetail120380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li><li>WiFi : <span id="fac115380">Yes</span> <span id="discdetail115380" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 January 2016 by Jonathan Wilde</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>7am - 10pm</td></tr>
+<tr><td>Monday</td><td>7am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>7am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>7am - 11pm</td></tr>
+<tr><td>Thursday</td><td>7am - Midnight</td></tr>
+<tr><td>Friday</td><td>7am - Midnight</td></tr>
+<tr><td>Saturday</td><td>7am - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

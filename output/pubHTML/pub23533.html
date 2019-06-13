@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Harrow pub in Fleet Street, EC4, London (Central), EC4Y 8JJ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Harrow" />
+  <meta name="keywords" content="The Harrow, 22  Whitefriars Street, EC4, London (Central), Fleet Street, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Harrow in EC4" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/23501_24000/23533_23e19db0.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/23533/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.51294913760902" />
+<meta property="og:longitude" content="-0.10677337646484" />
+<meta property="og:street-address" content="22  Whitefriars Street" />
+<meta property="og:locality" content="EC4" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="EC4Y 8JJ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Harrow in EC4? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Harrow the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/23533/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Harrow in EC4" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Harrow " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/23501_24000/23533_23e19db0.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/23533/" />
+<meta name="geo.position" content="51.51294913760902;-0.10677337646484" />
+<meta name="geo.placename" content="The Harrow in EC4" />
+<meta name="geo.region" content="UK" />
+<title>The Harrow in Fleet Street, EC4 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":23533},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(23533);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 23533;var pubaddress = "22  Whitefriars Street";var pubname = "The Harrow";var pubpostcode = "EC4Y 8JJ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/ec4/central-london/" title="Pubs Galore : EC4 Page">EC4</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Harrow Page">The Harrow Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="1ejjpjffhk0s7mo2rrgre68t21" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/23533/" class="indisplay"><img src="/images/display/23501_24000/23533_23e19db0.jpg?w=2" alt="Picture of The Harrow" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Thursday, 24<sup>th</sup> March 2016<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/23533/" class="smallbutton">View all this pub's pictures</a> (21 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/23533/">Pub map</a><br /><a href="/pubreviews/23533/">Pub reviews (9)</a><br /><a href="/pubpictures/23533/">Pub pictures (22)</a><br /><a href="/core/pubaudit.php?id=23533" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Harrow, Fleet Street, EC4</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">22  Whitefriars Street</span><br />
+
+
+<span class="town">EC4</span><br />
+<span class="postcode">EC4Y 8JJ</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Fuller's</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/fleet-street/central-london/">Fleet Street</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Harrow</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/TheHarrowLondon" target="_blank"><img src="https://pbs.twimg.com/profile_images/992023727054442496/QBiDIQUn_normal.jpg" alt="The Harrow" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/TheHarrowLondon" target="_blank">The Harrow</a></strong>
+Come and watch the<a href="http://twitter.com/search?q=%23londonmarathon" target="_blank"> #londonmarathon</a><a href="http://twitter.com/search?q=%23sundayroast" target="_blank"> #sundayroast</a><a href="http://twitter.com/search?q=%23beef" target="_blank"> #beef</a><a href="http://twitter.com/search?q=%23bigscreen" target="_blank"> #bigscreen</a> @ The Harrow <a href='https://t.co/eCjkZmQZet' target='_blank'>https://t.co/eCjkZmQZet</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/TheHarrowLondon/status/1122448283178295296">11:31 AM Apr 28th</a> from <a href="http://instagram.com" rel="nofollow">Instagram</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/TheHarrowLondon" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/TheHarrowLondon" target="_blank">The Harrow</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Harrow  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review113629" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> left this review about The Harrow</h6>
+<p class="old">This is a Fuller&#039;s pub so expect the usual suspects to be on - London Pride, Oliver&#039;s Island, plus they had on the seasonal Jack Frost (&pound;4.35 a pint). A top-up was given before I had chance to request it - I know that&#039;s what should happen, but it&#039;s nice to see when it does happen. As I was taking my first slurp of the Jack Frost the barmaid, or landlady perhaps, starting pulling through something on the fourth pump, adding a pump clip proclaiming it to be a Fuller&#039;s beer called Wise Men. She said it was the new Fuller&#039;s &quot;charity&quot; beer; I would certainly have gone for it had been on when I ordered. Presumably because of my interest, after I had sat down the barmaid brought a taster over to my table. That&#039;s what I call service! Being a Fuller&#039;s pub they obviously do food, but I thought it a tad expensive, even for Central London. The steak sarny is &pound;9.50 and the club sarny &pound;8.50, plus an extra &pound;1.50 for chips. The cheapest main course is &pound;10, for either ham/egg/chips; sausage &amp; mash; or rigatoni. But that&#039;s Central London for you.<br />
+<br />
+This is a strangely shaped pub. The bar counter is tucked away on the right, next to the stairs (assuming you enter via the Whitefriars St entrance) that lead up to the Primrose Hill entrance on a different level. There&#039;s another room to the right of the short corridor leading to the Primrose Hill entrance that was being used by diners when I was in - maybe it&#039;s the dining room? In the main bar area there&#039;s a few tall tables/tall stools near the entrance, two or three normal tables/chairs; plus there&#039;s a sofa and a few small stools on a raised area at the back on the left.<br />
+<br />
+I quite liked this pub, but that&#039;s possibly because of the positive beer experience that I encountered. It seemd a bit more traditional as a pub than the simplistic Hack &amp; Hop along the road. I have to say that the beer at the H&amp;H was a bit more interesting than at the Harrow, but of course that is probably as a result of living in London where Fuller&#039;s beers are everywhere. I&#039;d visit this one again.</p>
+<p class="Reviewer">On 11<sup>th</sup> December 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2495 recommendations about 2415 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review111188" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> left this review about The Harrow</h6>
+<p class="old">This pub has a history dating back over 300 years and was supposedly rebuilt in the 1820s. As described below, with muted music and little seating.<br />
+Ales: a meagre choice of just London Pride and Oliver&#039;s Island. A third pump was unused.<br />
+This is only really worth a visit to tick it off your list, otherwise it doesn&#039;t really warrant a special detour.</p>
+<p class="Reviewer">On 30<sup>th</sup> September 2016 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 874 recommendations about 860 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review105275" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Harrow</h6>
+<p class="old">Tidy Fullers pub slightly off the beaten track. Nicely done inside - a mini L shape, gold and burgundy wallpaper, jumbo Charrington mirror, old picked glass leaded wood door, dark varnish bar. However there isn&rsquo;t much seating, it&rsquo;s really designed for late afternoon vertical drinking. Entrances on either side of the building. Discovered an upstairs bar more with a more sedate lounge-like character. Four pumps, three on; Pride, Oliver&#039;s and Spring Sprinter which was in decent nick even if the beer itself is a tasteless, insipid brew. Efficient but friendly barmaid who appreciated a thank you, perhaps some of the patrons in here lack manners? It&rsquo;s worth a look. 6.5</p>
+<p class="Reviewer">On 2<sup>nd</sup> April 2016 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/23533/">View more reviews of The Harrow (9)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Harrow</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Harrow - <a href="http://www.harrowlondon.co.uk/" title="Submitted by:- Tris C" target="_blank">www.harrowlondon.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="369569706487015">Facebook - <a href="https://www.facebook.com/TheHarrowLondon/" target="_blank" rel="nofollow">The Harrow</a></li></ul><ul id="Custom2"><li class="twitlink" id="1357643756">Twitter - <a href="https://twitter.com/TheHarrowLondon" target="_blank" rel="nofollow">The Harrow</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/23533/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Old+Blue">Old Blue</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.51294913760902, -0.10677337646484], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.51294913760902, -0.10677337646484]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> City Thameslink, 0.35 miles, 6 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Farringdon (London), 0.63 miles, 12 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> London Blackfriars, 2.47 miles, 47 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('wblyHf{SPE\\??s@}AAAg@m@@@MAu@KDKe@AU?w@DW?[MC?IEGC@{@Cq@[?gB{ALIeBCeB]OYUk@s@OXANI?', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('wblyHf{Se@NmDrAk@H@K_BCKZu@H?EMBAGA?AYk@DKB{@SCFsA]?SGSBOCACM@Gk@IScAIFECQNAGw@a@gGoAUmAOAEUOEOOi@J_E`Ae@eCBWMk@e@^Kc@c@b@@F??', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('wblyHf{SPE~@C`C?A~EnC@@dOBtFIJ@v@HHDPRzFf@pGRbB?TINf@|CzApHl@lCPf@B@nA|Cn@pAn@fAz@nAzA`BfAr@xBdB~AtABKPJTFBHj@AzB|@jE|@@OJB@UhFz@z@BnEl@fAF@Ke@y@FYiI}G}LaIuQcRqGmjA@sI', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.51294913760902,-0.10677337646484], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=23533">View all updates for The Harrow, EC4</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> May 2019, 17:16
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> May 2019, 11:30
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11823533">No</span> <span id="discdetail11823533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li><li>Bar Billiards : <span id="fac10723533">No</span> <span id="discdetail10723533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li><li>Beer Festivals : <span id="fac11723533">No</span> <span id="discdetail11723533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li><li>Beer Garden : <span id="fac11423533">No</span> <span id="discdetail11423533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10223533">No</span> <span id="discdetail10223533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li><li>Car Park : <span id="fac11323533">No</span> <span id="discdetail11323533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li><li>Child Friendly : <span id="fac12123533">No</span> <span id="discdetail12123533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li><li>Darts : <span id="fac11123533">No</span> <span id="discdetail11123533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li><li>Dog Friendly : <span id="fac10523533">No</span> <span id="discdetail10523533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li><li>Function Room : <span id="fac12323533">Yes</span>  - <span id="discdetail12323533" class="discdetail" style="">60-person capacity.</span> -   <span class="Reviewer">last updated 30 September 2016 by Tris C</span></li><li>Hot Food : <span id="fac10323533">Yes</span> <span id="discdetail10323533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li><li>Jukebox : <span id="fac11223533">No</span> <span id="discdetail11223533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li><li>Karaoke : <span id="fac10623533">No</span> <span id="discdetail10623533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li><li>Live Music : <span id="fac10823533">No</span> <span id="discdetail10823533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li><li>Live TV Sports : <span id="fac11023533">No</span> <span id="discdetail11023533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 September 2016 by Tris C</span></li><li>Micropub : <span id="fac12223533">No</span> <span id="discdetail12223533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li><li>Pinball : <span id="fac11623533">No</span> <span id="discdetail11623533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li><li>Pool Table : <span id="fac10423533">No</span> <span id="discdetail10423533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li><li>Real Ale : <span id="fac10123533">Yes</span>  - <span id="discdetail10123533" class="discdetail" style="">Fuller&#039;s.</span> -   <span class="Reviewer">last updated 30 September 2016 by Tris C</span></li><li>Real Cider : <span id="fac11923533">Yes</span> <span id="discdetail11923533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 September 2016 by Tris C</span></li><li>WiFi : <span id="fac11523533">Yes</span> <span id="discdetail11523533" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 April 2016 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>Closed</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - 11pm</td></tr>
+<tr><td>Saturday</td><td>Closed</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 21 picture(s)" title="Pub has 21 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 12 reviewer(s)" title="Pub has average rating of 6.5 from 12 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23521/" class="List1">Hack &amp; Hop</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82143/" class="List1">Lutyens Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 23 picture(s)" title="Pub has 23 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 11 reviewer(s)" title="Pub has average rating of 6.5 from 11 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54215/" class="List1">The Tipperary</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 31 picture(s)" title="Pub has 31 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 22 recommendation(s)" title="Pub has 22recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 21 reviewer(s)" title="Pub has average rating of 7.5 from 21 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56162/" class="List1">Ye Olde Cheshire Cheese</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 22 picture(s)" title="Pub has 22 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 3 reviewer(s)" title="Pub has average rating of 5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23570/" class="List1">Jamies Tudor Street</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 33 picture(s)" title="Pub has 33 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 14 recommendation(s)" title="Pub has 14recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 14 reviewer(s)" title="Pub has average rating of 7 from 14 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23507/" class="List1">The Old Bell</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87746/" class="List1">The Leaf &amp; Cane</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 7 reviewer(s)" title="Pub has average rating of 6 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54260/" class="List1">Crown &amp; Sugar Loaf</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

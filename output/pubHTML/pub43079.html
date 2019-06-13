@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Broadfield pub in Sheffield, South Yorkshire, S7 1FR : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Broadfield" />
+  <meta name="keywords" content="The Broadfield, 452 Abbeydale Road, Sheffield, South Yorkshire, Nether Edge, Broadfield, Abbeydale Road, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Broadfield in Sheffield" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/43001_43500/43079_9a7ce60d.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/43079/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="53.35819408190409" />
+<meta property="og:longitude" content="-1.48263931274414" />
+<meta property="og:street-address" content="452 Abbeydale Road" />
+<meta property="og:locality" content="Sheffield" />
+<meta property="og:region" content="South Yorkshire" />
+<meta property="og:postal-code" content="S7 1FR" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Broadfield in Sheffield? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Broadfield the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/43079/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Broadfield in Sheffield" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Broadfield " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/43001_43500/43079_9a7ce60d.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/43079/" />
+<meta name="geo.position" content="53.35819408190409;-1.48263931274414" />
+<meta name="geo.placename" content="The Broadfield in Sheffield" />
+<meta name="geo.region" content="UK" />
+<title>The Broadfield in Sheffield : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":43079},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(43079);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 43079;var pubaddress = "452 Abbeydale Road";var pubname = "The Broadfield";var pubpostcode = "S7 1FR";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/south-yorkshire/" title="Pubs Galore : South Yorkshire Page">South Yorkshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/sheffield/south-yorkshire/" title="Pubs Galore : Sheffield Page">Sheffield</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Broadfield Page">The Broadfield Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="7m92iq1dij54kgqri23tsb42c4" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/43079/" class="indisplay"><img src="/images/display/43001_43500/43079_9a7ce60d.jpg?w=2" alt="Picture of The Broadfield" /></a><br />  Image posted by <a href="/userinfo.php?name=sheffield+hatter" class="indisplay">Will Larter</a><br />
+  Submitted on Thursday, 5<sup>th</sup> January 2012<br />
+  With picture contributions to 8564 other pubs<br />
+<a href="/pubpictures/43079/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/43079/">Pub map</a><br /><a href="/pubreviews/43079/">Pub reviews (3)</a><br /><a href="/pubpictures/43079/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=43079" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Broadfield, Sheffield</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">452 Abbeydale Road</span><br />
+
+
+<span class="town">Sheffield</span><br />
+<span class="postcode">S7 1FR</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01142550200</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/nether-edge/south-yorkshire/">Nether Edge</a>, <a href="/areas/broadfield/south-yorkshire/">Broadfield</a>, <a href="/areas/abbeydale-road/south-yorkshire/">Abbeydale Road</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Broadfield  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review135256" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Broadfield</h6>
+<p>This is a large roadside pub on a main road leading from the city centre. The pub clearly used to have a two bar layout, with a porch offering etched glass doors into the Lounge or the Taproom, both of which now emerge into the same large, opened out room. The servery straddles the two former rooms with decent sized seating areas to either side. The lounge area seemed to be set up more for dining, including a rear section that seemed to be used as a formal restaurant area. This side of the pub is bare boarded and has a great many tables and chairs plus a few padded benches under exposed stone walls decorated with tasteful paintings, plain mirrors and enhanced by nicely refurbished fireplaces and a few bits of etched glasswork. The taproom is also bare boarded but has a number of large rugs which help to dampen down the noise a bit. Low stools serve small tables to the front of the room, with tables and chairs filling the main bulk of this spacious area, whilst some rather wonderful screened booths can be found down the right hand wall with smart banquettes and some attractive stained glass screens and doors. Contemporary art prints line the walls on this side of the pub, making it feel a bit more lively and vibrant than the lounge side. The bar has an angular U-shaped counter with dark wood tongue and groove panel frontage and a modern bar back necessitated by the room being knocked through. A few branded whiskey jugs hang from the gantry, which I thought was a pleasing touch. A door to the rear right leads out to a beer garden and the pub had old 70&rsquo;s pop hits playing quietly in the background on my mid-week, early evening visit.<br />
+Six handpulls offered Bad Seed Rule The Roost Espresso Stout, First Chop Hop, True North Blonde and a real cider, with the remaining tow pumps out of action. I gave the Hop a try and thought it was in good shape, worthy of the pub&rsquo;s inclusion in the 2018 Good Beer Guide. I found the barman to be quite friendly and the locals seemed to have a good rapport with staff, making for quite a nice ambience in the taproom.<br />
+This is a pretty good example of how to this sort of large, opened out roadside pub can be made attractive to a contemporary audience. I liked the clear separation of drinkers and diners and found the ale range to be interesting and well kept, which will no doubt reward repeat visits. There&rsquo;s no getting past the fact that the pub has lost a bit of its character in being opened out, but there are still a number of interesting features to explore and I&rsquo;d be pleased to call this place my local if I lived in the area.</p>
+<p class="Reviewer">On 5<sup>th</sup> December 2018 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review55215" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=sheffield+hatter">Will Larter</a> left this review about The Broadfield Hotel</h6>
+<p class="old">It&#039;s a few years since I was here, and I&#039;d noticed in passing that the facade had recently been completely changed. Apparently the pub is now in the same ownership as the York in nearby Broomhill, and the new acquisition has also been completely changed inside.<br />
+<br />
+On entering, there is an apparent choice between a lounge to the left and a taproom to the right, but in fact both doors open into the same large room, encompassing the whole pub. <br />
+<br />
+The bar is large and fairly centrally placed, and there has been an effort to break up the room into distinct areas. This has been most successful to the right, where a number of glazed partitions, apparently recycled from other locations, serve to screen off several small, cosy areas. There&#039;s a railway theme of sorts here, with light fittings and signs from waiting rooms, and luggage racks from pre-war carriages, with appropriate suitcases, presumably empty, lodged in or suspended from them. A few railway photos add to the theme, but not excessively so.<br />
+<br />
+On the bar are 10 hand pumps, two with cider and the remainder with mainly local beers. I had the Traditional Bitter from Crown Brewery, which was fine but a little pricey at &pound;3 a pint; I got the feeling I was contributing towards the cost of the refurbishment. Some unusual and interesting music was playing at a reasonable volume and the atmosphere was pleasant and welcoming. This made a change from what I can recall of my previous visit, when the word &quot;threatening&quot; might well have appeared in my review, if I had written one.</p>
+<p class="Reviewer">On 5<sup>th</sup> January 2012 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 2309 recommendations about 2199 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review39973" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> left this review about The Broadfield Hotel</h6>
+<p class="old">The Broadfield is a large pub on the busy abbeydale road.<br />
+Once inside i went in a very large room that had pool tables at one end,this is a Greene King house and there were a couple of their beers on the bar i had a drink of GK IPA which was nothing special the other beer was GK Abbot.<br />
+There are better pubs than this nearby.<br />
+<br />
+Pub visited 10 february 2007.</p>
+<p class="Reviewer">On 10<sup>th</sup> February 2007 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 6113 recommendations about 6113 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=1012">Sheffield pub crawl by bus (not the usual suspects)</a> by <a rel="nofollow" href="/userinfo.php?name=sheffield+hatter">Will Larter</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Broadfield</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>The Broadfield official site - <a href="http://www.thebroadfield.com/" title="Submitted by:- Will Larter" target="_blank">www.thebroadfield.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="256370864406247">Facebook - <a href="https://www.facebook.com/thebroadfield/" target="_blank" rel="nofollow">The Broadfield</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/43079/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=sheffield+hatter">Will Larter</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([53.35819408190409, -1.48263931274414], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([53.35819408190409, -1.48263931274414]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Sheffield, 1.84 miles, 35 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Dore & Totley, 2.7 miles, 52 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Darnall, 4.36 miles, 1 hr 24 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('motdIpp`HGE]_@e@w@[{@]kBMe@}@eB]i@s@{@g@a@qEaCJeABy@Ai@Gw@Ik@Wy@SCg@{@QQBMiC{Bc@g@e@u@UMMAE{@WoAw@sFq@kCKoA@o@iAa@_@GEc@K]mB{CuHwL}DmGITGBkZmEsC[a@CaBUGCQSoCaBQOg@SKQKe@OyAGKC\\AfAcCkA]UQWKQYsAyAkGkGPe@d@SEk@AEOEMc@CQU]C?OCK?KIABaB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('motdIpp`HjCpBj@p@lBnCpClDjBnBZTRHrADp@LlErArAb@ZNlD|Cv@x@z@hA|BrDfCnEvAlDbAdC|BnGrAhFpA~BZd@jB|B|BhCjAzAtAhCHKb@z@DArCjFhBxCdCdDTRF]DEVAf@TDQDGVI\\Bd@L|A~Ar@TXIV@TFH^l@zA`@b@v@Zt@nAn@|ALV`A~@Xj@ZlAHPLNb@VLLn@lBJXb@\\dApAh@XNNXl@n@`CBT^z@FVDh@Bh@L@DdC]|@|FnI|AtBVl@`BxBjFtGxBtCl@bAj@j@TLhBl@ZP|FfE\\Px@VrFt@xF~@j@Pl@cBEKJ_@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('motdIpp`HGECGEY@qDJcB@_AAo@HKEMFC?WKOCI@CAo@@]DOj@k@ESBUKUJQv@sB[i@AQgEkHo@aAeAy@EKHOXeB@o@Xu@l@_AE]@WJ[E[Oe@Gc@@w@OGaAeA_@k@gAqAqAoCWq@Vu@T_ANcAh@cFNUCO@MDGAUDc@?]AkANWDSFiBy@iBXwA|@oFFmAQ@IMeCyFQg@UeAEQB{AAYQs@Ai@KeBw@{D}BuLg@qBc@oAsCcJnAkDd@_Aj@y@De@ReADc@Ea@Iq@Mc@CU@}@BOe@[u@USAm@B]KMMSc@SmADEAaAKq@s@qAi@g@Ho@YY?_@C_@O_@LwBEyCRYXYMkAF}AK_BQaAUcA[y@NsAc@aAG]Ci@a@{@k@oDWq@U[m@a@]s@[c@FKaCuJK_@a@Ia@]Am@Mg@B[DGk@kBMo@?_@DSPYk@gADG[}@i@aBg@_AgGuJuB_EUWOGeBg@uASkAKSGSM[q@[]G@EGIPqASKFsGgAq@a@OSa@w@c@n@mA{CoAsCKNeBgEmAiCGFK@GCKW?[BIm@yBUuAIiAEgBa@DMN{@oAQ}@Ge@{@c@[YMDI]OMaAIWOi@i@?a@GA?FyBmBr@sC|@iEd@sCDaEEOJ]DYBYCg@Qw@_AkBj@}AwBoCk@o@}BoBETwI_Kk@{@o@k@GPa@[HWkHiGUjBcF}Bk@_@`@oCQMTmADBKp@^RIn@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.35819408190409,-1.48263931274414], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=43079">View all updates for The Broadfield, Sheffield</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        26<span class="sup">th</span> May 2019, 22:24
+      </div><div class="auditexp">Request to add pub to area <a href="/areas/abbeydale-road/south-yorkshire/">Abbeydale Road</a> by <a rel="nofollow" href="/userinfo.php?name=sheffield+hatter">Will Larter</a> approved
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        26<span class="sup">th</span> May 2019, 22:24
+      </div><div class="auditexp">Request to add pub to area <a href="/areas/abbeydale-road/south-yorkshire/">Abbeydale Road</a> by <a rel="nofollow" href="/userinfo.php?name=sheffield+hatter">Will Larter</a>
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11843079">No</span> <span id="discdetail11843079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 December 2018 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10743079">No</span> <span id="discdetail10743079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 December 2018 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11443079">Yes</span> <span id="discdetail11443079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 December 2018 by Pub SignMan</span></li><li>Car Park : <span id="fac11343079">No</span> <span id="discdetail11343079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 December 2018 by Pub SignMan</span></li><li>Child Friendly : <span id="fac12143079">Yes</span> <span id="discdetail12143079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 December 2018 by Pub SignMan</span></li><li>Darts : <span id="fac11143079">No</span> <span id="discdetail11143079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 December 2018 by Pub SignMan</span></li><li>Dog Friendly : <span id="fac10543079">Yes</span> <span id="discdetail10543079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 December 2018 by Pub SignMan</span></li><li>Hot Food : <span id="fac10343079">Yes</span> <span id="discdetail10343079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 December 2018 by Pub SignMan</span></li><li>Jukebox : <span id="fac11243079">No</span> <span id="discdetail11243079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 December 2018 by Pub SignMan</span></li><li>Karaoke : <span id="fac10643079">No</span> <span id="discdetail10643079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 December 2018 by Pub SignMan</span></li><li>Micropub : <span id="fac12243079">No</span> <span id="discdetail12243079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 December 2018 by Pub SignMan</span></li><li>Pinball : <span id="fac11643079">No</span> <span id="discdetail11643079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 December 2018 by Pub SignMan</span></li><li>Pool Table : <span id="fac10443079">No</span> <span id="discdetail10443079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 December 2018 by Pub SignMan</span></li><li>Real Ale : <span id="fac10143079">Yes</span> <span id="discdetail10143079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 July 2013 by Will Larter</span></li><li>Real Cider : <span id="fac11943079">Yes</span> <span id="discdetail11943079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 December 2018 by Pub SignMan</span></li><li>Wheelchair Access : <span id="fac12043079">Yes</span> <span id="discdetail12043079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 December 2018 by Pub SignMan</span></li><li>WiFi : <span id="fac11543079">Yes</span> <span id="discdetail11543079" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 December 2018 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11:30am - 11pm</td></tr>
+<tr><td>Monday</td><td>11:30am - 0:30am</td></tr>
+<tr><td>Tuesday</td><td>11:30am - 0:30am</td></tr>
+<tr><td>Wednesday</td><td>11:30am - 0:30am</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>11:30am - 0:30am</td></tr>
+<tr><td>Friday</td><td>11:30am - 1:30am</td></tr>
+<tr><td>Saturday</td><td>11:30am - 1:30am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87469/" class="List1">The Gin Bar at Vintedge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87047/" class="List1">Barrowboy</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84605/" class="List1">Picture House Social</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82962/" class="List1">The Hardy Pick</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 2 reviewer(s)" title="Pub has average rating of 7 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/72414/" class="List1">Byron House</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87766/" class="List1">Dead Donkey</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84998/" class="List1">The Tramshed</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/43116/" class="List1">The Crown Inn</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

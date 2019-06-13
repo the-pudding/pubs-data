@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Albion pub in Conwy, Gwynedd, LL32 8RF : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Albion" />
+  <meta name="keywords" content="The Albion, 6 Uppergate Street, Conwy, Gwynedd, Conwy Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Albion in Conwy" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/54001_54500/54162_0db4e59a.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/54162/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="53.28080991939069" />
+<meta property="og:longitude" content="-3.83134245872498" />
+<meta property="og:street-address" content="6 Uppergate Street" />
+<meta property="og:locality" content="Conwy" />
+<meta property="og:region" content="Gwynedd" />
+<meta property="og:postal-code" content="LL32 8RF" />
+<meta property="og:country-name" content="Wales" />
+<meta property="og:description" content="Do you like The Albion in Conwy? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Albion the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/54162/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Albion in Conwy" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Albion " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/54001_54500/54162_0db4e59a.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/54162/" />
+<meta name="geo.position" content="53.28080991939069;-3.83134245872498" />
+<meta name="geo.placename" content="The Albion in Conwy" />
+<meta name="geo.region" content="UK" />
+<title>The Albion in Conwy : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":54162},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(54162);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 54162;var pubaddress = "6 Uppergate Street";var pubname = "The Albion";var pubpostcode = "LL32 8RF";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/wales/" title="Pubs Galore : Wales Page">Wales</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/gwynedd/" title="Pubs Galore : Gwynedd Page">Gwynedd</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/conwy/gwynedd/" title="Pubs Galore : Conwy Page">Conwy</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Albion Page">The Albion Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="1e65bsf92lmtet7upbumtf7216" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/54162/" class="indisplay"><img src="/images/display/54001_54500/54162_0db4e59a.jpg?w=2" alt="Picture of The Albion" /></a><br />  Image posted by <a href="/userinfo.php?name=Al+Bundy" class="indisplay">Al Bundy</a><br />
+  Submitted on Wednesday, 18<sup>th</sup> April 2012<br />
+  With picture contributions to 3269 other pubs<br />
+<a href="/pubpictures/54162/" class="smallbutton">View all this pub's pictures</a> (9 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/54162/">Pub map</a><br /><a href="/pubreviews/54162/">Pub reviews (11)</a><br /><a href="/pubpictures/54162/">Pub pictures (10)</a><br /><a href="/core/pubaudit.php?id=54162" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Albion, Conwy Central, Conwy</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">6 Uppergate Street</span><br />
+
+
+<span class="town">Conwy</span><br />
+<span class="postcode">LL32 8RF</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/conwy-central/gwynedd/">Conwy Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Albion  <span class="h2note">(Average Rating: <span id="averagerating"><b>9&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review106016" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> left this review about The Albion</h6>
+<p class="old">Having spent two nights in Conwy I had two evening visits to this pub on the Thursday and Friday. I&#039;ve known about this place for a few years so expectations were high and it didn&#039;t disappoint. It&#039;s well described below and on the Thursday I opted for the main bar and on the busier Friday the back room.<br />
+Although this isn&#039;t a micropub it is run on similar lines with no music, TV screens, fruit machines or mainstream keg beers. The wines and spirits are also non-mainstream apart from possibly Courvoisier Brandy.<br />
+The bar has ten hand pumps with two ciders, beers from the gang of four brewers who took it on and a couple of guests. On my visit guests were from the Conquest brewery and Derby. I had four different beers on my two visits Great Orme Chocoholic &amp; Bad Bad Boy, Conquest ESB and Nant Cwrw Carw. The last one was &pound;3.20 and the rest &pound;3.30. All were in first class condition. <br />
+I really liked this place and discovered at the end of the second night that the owners had also taken on the Bridge in Conwy, I already knew about the Australia in Porthmadog. This is good as it gives me an excuse to return!</p>
+<p class="Reviewer">On 21<sup>st</sup> April 2016 
+  - rating: <b>10</b><br />
+  <span class="leftspace">[User has posted 2121 recommendations about 2116 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review100114" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pub+Anorak">John Bonser</a> left this review about The Albion</h6>
+<p class="old">Inside the city walls, on a prominent street corner in the centre of Conwy, is The Albion Ale House, a pub that proudly displays a prominent banner proclaiming it as &ldquo;CAMRA North Wales Pub of the Year 2015&rdquo;<br />
+<br />
+Externally the pub still retains some evidence of former Ansells ownership with the old trademark squirrel logo and several branded Ansells lamps still in evidence. The pub sign features an old sailing ship and merely refers to the pub as &ldquo;The Albion&rdquo;, although I gather that the pub&rsquo;s official name is now The Albion Ale House &ndash; a name it took on when the pub reopened in February 2012, following an 18 month or so period of closure. <br />
+<br />
+The pub is jointly owned and run by a consortium of 4 local Welsh breweries &ndash; Great Orme, Purple Moose, Bragdy Conwy and Bragdy Nant. Staff wear black T shirts with these names listed on the back to remind us of this.<br />
+<br />
+The pub features in CAMRA&rsquo;s National Inventory of Historic Pub Interiors for its unspoilt 1920&rsquo;s interior which was lovingly restored and enhanced as far as possible by the new partners. It is said to be the best example of an inter war pub in Wales<br />
+<br />
+There&rsquo;s 3 separate rooms with the Lounge (formerly the Smoke Room) on the left as you go in being visually the most impressive. Here we see a fine large brick surrounded fireplace in a wide inglenook straddling almost the entire length of one wall with several small circular Art Nouveau stained leaded windows here. There&rsquo;s an unusual alcove by the door with a double length seat. A number of old framed black and white photos and fixed seating around the wall with old bell pushes still in situ add to the fine traditional feel of this room. Heavy looking dark ceiling beams complete the picture here. There&rsquo;s a separate entrance to this room direct from the street corner which features an Art Deco style curved top and some etched glass.<br />
+<br />
+The bar servery is in the room on the right, which is effectively the public bar, seemingly being the favoured room of the regulars and features the original counter and a fine original mirrored bar back which prominently incorporates in the centre an old round clock. A good number of framed CAMRA award certificates are on display here, as is, high up on a shelf behind the bar, an old miniature Watneys Red Barrel <br />
+<br />
+Behind this room, accessed via a corridor with green tiled walls and a quarry tiled floor, is the Snug, a room in similar style, with old bell pushes and fixed seating and a small serving hatch in the wall allowing service direct from the main bar. In this room we see a display of framed match books and a picture of a ship &ndash; Dryden ( Lamport and Holt Shipping Line ) &ndash; whose bell, we are told, is  behind the bar in the Public bar and is still rung at closing time. A few photos of Conwy lifeboat crew also feature here.<br />
+<br />
+There&rsquo;s a small outside covered patio at the rear.<br />
+<br />
+I think that this is probably the first pub where I can ever recollect seeing a substantial separate menu of dog food displayed on the tables &ndash; and I&rsquo;m not talking about free dog biscuits and bowls of water here. A colourful &ldquo;Great British Pub Dog Food&rdquo; menu features such delights as Lamb and Rice Kibble, or Salmon and Potato which, for a standard 250g portion, will set dog owners back the princely sum of &pound; 2.99p. And all this, somewhat unusually in a pub, not on the South Downs or in The Lake District, where one might expect a good number of dog walkers, but inside the old town walls in the picturesque tourist destination town of Conwy. Not being a doggy person, I was not exactly disappointed that no dogs were present during the course of my visits<br />
+<br />
+Pleasingly, us mere mortal humans are also catered for, food wise, with a range of cold snacks including pork pies, pasties, pickled eggs, nuts, crisps, olives etc being on offer. Potato crisps using 100% Welsh potatoes are supplied by (and I kid you not) a firm called Jones O Gymru.<br />
+<br />
+There&rsquo;s no TV or fruit machines here, just good beer, cheer and conversation. Notably, and pleasingly, on both of my visits, a small group of overseas visitors had specifically sought this pub out for its beer range and were suitably impressed.<br />
+<br />
+There&rsquo;s 10 pumps, of which 2 are used for Welsh ciders. A range of real ales are offered, featuring prominently, but not exclusively, those of the 4 brewing partners and other Welsh breweries. On my visits on 2 consecutive days, breweries featured included Great Orme, Bragdy Conwy, Tiny Rebel and Waen amongst others. Beers on at any particular time was listed on a blackboard in the corridor with gravities and prices listed, along with details of what&rsquo;s coming soon. Whilst there&rsquo;s no beer taste or style details given, a small jam pot by each pump clip shows you the colour of the beer and the enthusiastic and willing staff will gladly give you a taster on request. Prices varied between &pound; 3.10p and &pound; 3.30p depending on gravity.<br />
+<br />
+The CAMRA Good Beer Guide 2016 sticker is prominently displayed on the bar counter. It goes without saying that beer quality was top notch. If I have one negative, it is that there appears to be a disproportionate emphasis on higher gravity beers with, on my second visit, 4 of the 8 beers having gravities of over 5% (this later increased to 5 out of 8) and the weakest beer being 4.2%. A selection of foreign and craft beers are also available.<br />
+<br />
+This is definitely a destination pub when anywhere near the vicinity &ndash; I really hope to get here again sometime</p>
+<p class="Reviewer">On 6<sup>th</sup> October 2015 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 560 recommendations about 560 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review99573" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about The Albion</h6>
+<p class="old">Splendid award-winning, alehouse. Restrained, light decor in the 1920s interior of the bar area, side lounge and rear smoke room with period windows, lanterns, etc.  Some interesting historical black &amp; white photographs too.  Small part-covered rear patio.  A few bar snacks, but otherwise no food.  Excellent choice of eight local and regional real ales - e.g. Nant Chwarel &pound;3.10 - and two ciders.  First class.</p>
+<p class="Reviewer">On 20<sup>th</sup> September 2015 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/54162/">View more reviews of The Albion (11)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Albion</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Albion - <a href="http://albionalehouse.weebly.com/" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">albionalehouse.weebly.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="828044473904510">Facebook - <a href="https://www.facebook.com/pages/Albion-Ale-House/828044473904510" target="_blank" rel="nofollow">Albion Ale House</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/54162/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Millay">Clive Thompson</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([53.28080991939069, -3.83134245872498], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([53.28080991939069, -3.83134245872498]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Conwy, 0.14 miles, 2 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Llandudno Junction, 1.11 miles, 21 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Deganwy, 1.84 miles, 35 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('qledIzikVU_@b@kAj@}@Vi@V~@ZzAEJEJGKp@sB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('qledIzikVk@_AnAuCIMHk@Xc@PSSqBNm@Lw@v@i@YyB{@iEA_@BQFa@IK?UDuAAa@L{@AOEE@YQQFO?u@_AiHu@{EcAuDy@mC{CsIuBqFsCoIEDUk@WKHcAAo@y@gJO}AEWD[Gy@QOMiBYyC?e@@GAQAG@m@Lk@Lo@PPH@BEb@}AN_ADw@DB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('qledIzikVk@_AnAuCIMHk@Xc@PSSqBNm@Lw@v@i@YyB{@iEA_@BQFa@IK?UDuAAa@L{@AOEE@YQQFO?u@_AiHu@{EcAuDy@mC{CsIwByFY?OGIL[CqCvEQb@gB|C{@lBuBfE_A~BI\\c@a@S@_@GOMi@Mc@k@_@QY_@i@oDKGeBjByDpFQ\\@Le@b@sAjCgCtFwAjCoElGeAnB{@bBw@hBkAlDARYbA]x@_A`Eq@pDiAdJ', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.28080991939069,-3.83134245872498], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=54162">View all updates for The Albion, Conwy</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        21<span class="sup">st</span> Apr 2016, 21:05
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        17<span class="sup">th</span> Apr 2016, 19:47
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11854162">No</span> <span id="discdetail11854162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 October 2013 by Malden man</span></li><li>Bar Billiards : <span id="fac10754162">No</span> <span id="discdetail10754162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 October 2013 by Malden man</span></li><li>Beer Festivals : <span id="fac11754162">No</span> <span id="discdetail11754162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 April 2016 by Aqualung .</span></li><li>Beer Garden : <span id="fac11454162">Yes</span> <span id="discdetail11454162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 April 2014 by Alan Hurdle</span></li><li>CAMRA Discount : <span id="fac10254162">No</span> <span id="discdetail10254162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 April 2016 by Aqualung .</span></li><li>Car Park : <span id="fac11354162">No</span> <span id="discdetail11354162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 October 2013 by Malden man</span></li><li>Child Friendly : <span id="fac12154162">No</span> <span id="discdetail12154162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 October 2013 by Malden man</span></li><li>Darts : <span id="fac11154162">No</span> <span id="discdetail11154162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 October 2013 by Malden man</span></li><li>Dog Friendly : <span id="fac10554162">Yes</span> <span id="discdetail10554162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 April 2014 by Alan Hurdle</span></li><li>Function Room : <span id="fac12354162">No</span> <span id="discdetail12354162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 April 2016 by Aqualung .</span></li><li>Hot Food : <span id="fac10354162">No</span> <span id="discdetail10354162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 October 2013 by Malden man</span></li><li>Jukebox : <span id="fac11254162">No</span> <span id="discdetail11254162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 October 2013 by Malden man</span></li><li>Karaoke : <span id="fac10654162">No</span> <span id="discdetail10654162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 October 2013 by Malden man</span></li><li>Live Music : <span id="fac10854162">No</span> <span id="discdetail10854162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 April 2016 by Aqualung .</span></li><li>Live TV Sports : <span id="fac11054162">No</span> <span id="discdetail11054162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 October 2013 by Malden man</span></li><li>Micropub : <span id="fac12254162">No</span> <span id="discdetail12254162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 April 2016 by Aqualung .</span></li><li>Pinball : <span id="fac11654162">No</span> <span id="discdetail11654162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 October 2013 by Malden man</span></li><li>Pool Table : <span id="fac10454162">No</span> <span id="discdetail10454162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 October 2013 by Malden man</span></li><li>Quiz Night : <span id="fac10954162">No</span> <span id="discdetail10954162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 April 2016 by Aqualung .</span></li><li>Real Ale : <span id="fac10154162">Yes</span> <span id="discdetail10154162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Alan Hurdle</span></li><li>Real Cider : <span id="fac11954162">Yes</span> <span id="discdetail11954162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 October 2013 by Malden man</span></li><li>Wheelchair Access : <span id="fac12054162">No</span> <span id="discdetail12054162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 April 2016 by Aqualung .</span></li><li>WiFi : <span id="fac11554162">Yes</span> <span id="discdetail11554162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 April 2014 by Alan Hurdle</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85466/" class="List1">The Bank of Conwy</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 3 reviewer(s)" title="Pub has average rating of 4.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54164/" class="List1">The Erskine Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 5 reviewer(s)" title="Pub has average rating of 6 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/44785/" class="List1">Ye Olde Mail Coach</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 4 reviewer(s)" title="Pub has average rating of 8 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/44779/" class="List1">Castle Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 6 reviewer(s)" title="Pub has average rating of 6 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62109/" class="List1">The Liverpool Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 5 reviewer(s)" title="Pub has average rating of 7 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/44775/" class="List1">Blue Bell</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 3 reviewer(s)" title="Pub has average rating of 7.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62108/" class="List1">The George and Dragon</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8.5 from 2 reviewer(s)" title="Pub has average rating of 8.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/44782/" class="List1">The Old White House</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Windmill pub in Southwark, SE1, London (Central), SE1 8LW : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Windmill" />
+  <meta name="keywords" content="The Windmill, 86  The Cut, SE1, London (Central), Southwark, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Windmill in SE1" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/24001_24500/24303_a93257b7.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/24303/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.50297448677637" />
+<meta property="og:longitude" content="-0.10816621842002" />
+<meta property="og:street-address" content="86  The Cut" />
+<meta property="og:locality" content="SE1" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="SE1 8LW" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Windmill in SE1? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Windmill the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/24303/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Windmill in SE1" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Windmill " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/24001_24500/24303_a93257b7.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/24303/" />
+<meta name="geo.position" content="51.50297448677637;-0.10816621842002" />
+<meta name="geo.placename" content="The Windmill in SE1" />
+<meta name="geo.region" content="UK" />
+<title>The Windmill in Southwark, SE1 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":24303},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(24303);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 24303;var pubaddress = "86  The Cut";var pubname = "The Windmill";var pubpostcode = "SE1 8LW";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/se1/central-london/" title="Pubs Galore : SE1 Page">SE1</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Windmill Page">The Windmill Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="o4i1pbc8ptgatmcnlkcv9jrd95" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/24303/" class="indisplay"><img src="/images/display/24001_24500/24303_a93257b7.jpg?w=2" alt="Picture of The Windmill" /></a><br />  Image posted by <a href="/userinfo.php?name=Maldenman" class="indisplay">Malden man</a><br />
+  Submitted on Monday, 21<sup>st</sup> March 2016<br />
+  With picture contributions to 1669 other pubs<br />
+<a href="/pubpictures/24303/" class="smallbutton">View all this pub's pictures</a> (9 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/24303/">Pub map</a><br /><a href="/pubreviews/24303/">Pub reviews (8)</a><br /><a href="/pubpictures/24303/">Pub pictures (10)</a><br /><a href="/core/pubaudit.php?id=24303" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Windmill, Southwark, SE1</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">86  The Cut</span><br />
+
+
+<span class="town">SE1</span><br />
+<span class="postcode">SE1 8LW</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/southwark/central-london/">Southwark</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Windmill</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/WindmillSE1" target="_blank"><img src="https://pbs.twimg.com/profile_images/942775771193597952/xJRWjsIw_normal.jpg" alt="The Windmill" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/WindmillSE1" target="_blank">The Windmill</a></strong>
+#International<a href="http://twitter.com/search?q=%23Rugby" target="_blank"> #Rugby</a>
+14:30<a href="http://twitter.com/search?q=%23Wales" target="_blank"> #Wales</a> v<a href="http://twitter.com/search?q=%23SouthAfrica" target="_blank"> #SouthAfrica</a> <a href='https://t.co/xl6zRMl9kj' target='_blank'>https://t.co/xl6zRMl9kj</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/WindmillSE1/status/936902791351513089">10:20 AM Dec 2nd 2017</a> from <a href="http://www.hootsuite.com" rel="nofollow">Hootsuite</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/WindmillSE1" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/WindmillSE1" target="_blank">The Windmill</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Windmill  <span class="h2note">(Average Rating: <span id="averagerating"><b>6</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review127550" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about The Windmill</h6>
+<p class="old">Reasonably smart two-room pub with a central servery, taken over by Fuller&#039;s but not re-branded as yet.  Seating is at a premium due to the awkward furniture arrangement in both parts, but there are also some wooden benches out front.  The rear wall is decorated with numerous photographs of actors from the nearby theatres.  Pride, Seafarers, the seasonal Front Row (&pound;4.60) and Castle Rock Harvest Pale as a guest available from the four handpumps on this visit.   Nothing special, but it remains one of the better places in the area.</p>
+<p class="Reviewer">On 30<sup>th</sup> March 2018 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review114979" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Strongers">Steve C</a> left this review about The Windmill</h6>
+<p class="old">The Windmill was very busy when I visited on the Thursday evening before Christmas. Thankfully I was able to fight my way through the crowds in the front bar to the back bar where it was a little quieter. I was served almost immediately by one of the attentive barmaids before making my escape to one of the picnic tables that are located under an awning at the front of the pub. It was busy out here too, but I managed to get some perching space at the end of a table. Available from the bar was a selection of standard and premium keg products alongside a lone hand pump that was drawing Sharp&rsquo;s Doom bar. The background music was hardly audible over the din of conversation. I&rsquo;m sure that the live music every Saturday evening is a bit louder. Sky and BT Sports are advertised. I thought this pub was OK and I would have no problem returning.</p>
+<p class="Reviewer">On 1<sup>st</sup> February 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 3386 recommendations about 3366 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review110232" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> left this review about The Windmill</h6>
+<p class="old">There was just Doom Bar available in here, at a fairly hefty &pound;2.20 for a short measure half. Thai food seems to be served here with stir fries, curries, noodles, etc, all at &pound;7.50. There are a few seats outside the pub, where there was also a stand also doing food, and with a sign saying that no outside food is to be brought inside.<br />
+<br />
+Being a stone&#039;s throw from the Old Vic this would have to be regarded as a Theatre pub. The ceiling of the front bar is plastered with posters for hundreds of productions, and all the walls have (mainly black and white) photographs of actors, who presumably performed at the Old Vic. There is another room at the back, with the two rooms separated by the servery. Both rooms are bare-boarded and are furnished with some fairly standard tables combined with some banquettes and small round stools. TVs were on showing some cricket (but muted) with some low volume music being played. <br />
+<br />
+I quite liked this pub. It felt like I was in a pub rather than a bar. With even a half decent ale selection I would probably visit again - but with only Doom Bar at an expensive &pound;2.20 a half? Probably not.</p>
+<p class="Reviewer">On 2<sup>nd</sup> September 2016 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2495 recommendations about 2415 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/24303/">View more reviews of The Windmill (8)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Windmill</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Windmill - <a href="http://www.windmillwaterloo.co.uk/?utm_campaign=fullers.co.uk%20to%20pub%20sites&amp;utm_medium=referral&amp;utm_source=pub+finder&amp;utm_content=windmill" title="Submitted by:- Rex Rattus" target="_blank">www.windmillwaterloo.co.uk</a></li>
+			<li>Official site of The Windmill - <a href="http://www.windmillwaterloo.co.uk/" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">www.windmillwaterloo.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="twitlink" id="364770681">Twitter - <a href="https://twitter.com/WindmillSE1" target="_blank" rel="nofollow">The Windmill</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/24303/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Strongers">Steve C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.50297448677637, -0.10816621842002], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.50297448677637, -0.10816621842002]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> London Waterloo, 0.3 miles, 5 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Elephant & Castle, 0.92 miles, 17 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> London Blackfriars, 1.99 miles, 38 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('kdjyHpcT_@TEA{Ar@{@Vl@vG]Nt@jCW^AEHK@DIJAEHK@DIJAEHK@DQRBV|AxDYp@BP', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('kdjyHpcT\\YxAnG`@vALOF@VY@MdDaEtCqDvHcKR{@JcA@e@\\iAf@gApBwCzGgJGK`A}ANSj@}@Am@Bi@Fc@HYJQl@YNMHQD]^LF_CZmChAF`@?Az@Dh@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('kdjyHpcT\\YxAnGl@lBANPVD?j@f@XFEl@Fj@n@bBl@lBn@lBxAnDw@pAJPTXJR@PEz@O|AEV[hAEbAHJHNJf@Xx@Lp@EFId@k@jAGl@EAEtFMlCJz@?h@E?SlUB@ANGEYA?HaAE?U]m@O]iI}G}LaIuQcRqGmjA@sI', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.50297448677637,-0.10816621842002], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=24303">View all updates for The Windmill, SE1</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        26<span class="sup">th</span> Oct 2018, 16:35
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> approved
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        26<span class="sup">th</span> Oct 2018, 16:35
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a>
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11824303">No</span> <span id="discdetail11824303" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 October 2014 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10724303">No</span> <span id="discdetail10724303" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 October 2014 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11424303">Yes</span> <span id="discdetail11424303" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 October 2014 by Pub SignMan</span></li><li>Car Park : <span id="fac11324303">No</span> <span id="discdetail11324303" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 October 2014 by Pub SignMan</span></li><li>Child Friendly : <span id="fac12124303">Yes</span> <span id="discdetail12124303" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 October 2014 by Pub SignMan</span></li><li>Hot Food : <span id="fac10324303">Yes</span> <span id="discdetail10324303" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 September 2016 by Rex Rattus</span></li><li>Live Music : <span id="fac10824303">Yes</span> <span id="discdetail10824303" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 October 2014 by Pub SignMan</span></li><li>Live TV Sports : <span id="fac11024303">Yes</span> <span id="discdetail11024303" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 October 2014 by Pub SignMan</span></li><li>Pinball : <span id="fac11624303">No</span> <span id="discdetail11624303" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 October 2014 by Pub SignMan</span></li><li>Pool Table : <span id="fac10424303">No</span> <span id="discdetail10424303" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 October 2014 by Pub SignMan</span></li><li>Real Ale : <span id="fac10124303">Yes</span> <span id="discdetail10124303" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 September 2016 by Rex Rattus</span></li><li>Real Cider : <span id="fac11924303">Yes</span> <span id="discdetail11924303" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 October 2014 by Pub SignMan</span></li><li>WiFi : <span id="fac11524303">Yes</span> <span id="discdetail11524303" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 October 2014 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 3 reviewer(s)" title="Pub has average rating of 4.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66351/" class="List1">The Cut Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 8 reviewer(s)" title="Pub has average rating of 4.5 from 8 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55626/" class="List1">The Anchor and Hope</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 18 recommendation(s)" title="Pub has 18recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 18 reviewer(s)" title="Pub has average rating of 7.5 from 18 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24204/" class="List1">The Kings Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 4 reviewer(s)" title="Pub has average rating of 5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55630/" class="List1">The Stage Door</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66350/" class="List1">Wahaca</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81811/" class="List1">Ev Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 9 recommendation(s)" title="Pub has 9recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 8 reviewer(s)" title="Pub has average rating of 5.5 from 8 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55059/" class="List1">The Fire Station</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81665/" class="List1">Jacks Bar</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

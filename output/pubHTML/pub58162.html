@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Beacon Hotel pub in Aspley, Nottingham, Nottinghamshire, NG8 5RX : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Beacon Hotel" />
+  <meta name="keywords" content="The Beacon Hotel, Aspley Lane, Nottingham, Nottinghamshire, Aspley, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Beacon Hotel in Nottingham" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/58001_58500/58162_2665cf54.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/58162/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.97290500000000" />
+<meta property="og:longitude" content="-1.21007700000000" />
+<meta property="og:street-address" content="Aspley Lane" />
+<meta property="og:locality" content="Nottingham" />
+<meta property="og:region" content="Nottinghamshire" />
+<meta property="og:postal-code" content="NG8 5RX" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Beacon Hotel in Nottingham? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Beacon Hotel the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/58162/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Beacon Hotel in Nottingham" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Beacon Hotel " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/58001_58500/58162_2665cf54.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/58162/" />
+<meta name="geo.position" content="52.97290500000000;-1.21007700000000" />
+<meta name="geo.placename" content="The Beacon Hotel in Nottingham" />
+<meta name="geo.region" content="UK" />
+<title>The Beacon Hotel in Aspley, Nottingham : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":58162},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(58162);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 58162;var pubaddress = "Aspley Lane";var pubname = "The Beacon Hotel";var pubpostcode = "NG8 5RX";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/nottinghamshire/" title="Pubs Galore : Nottinghamshire Page">Nottinghamshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/nottingham/nottinghamshire/" title="Pubs Galore : Nottingham Page">Nottingham</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Beacon Hotel Page">The Beacon Hotel Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="i49hkie22i45dej1oagm2hbvd4" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/58162/" class="indisplay"><img src="/images/display/58001_58500/58162_2665cf54.jpg?w=1" alt="Picture of The Beacon Hotel" /></a><br />  Image posted by <a href="/userinfo.php?name=Al+10000" class="indisplay">Alan Winfield</a><br />
+  Submitted on Saturday, 9<sup>th</sup> June 2012<br />
+  With picture contributions to 6053 other pubs<br />
+<a href="/pubpictures/58162/" class="smallbutton">View all this pub's pictures</a>
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/58162/">Pub map</a><br /><a href="/pubreviews/58162/">Pub reviews (2)</a><br /><a href="/pubpictures/58162/">Pub pictures (1)</a><br /><a href="/core/pubaudit.php?id=58162" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Beacon Hotel, Aspley, Nottingham</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Aspley Lane</span><br />
+<span class="region">Aspley</span><br />
+
+<span class="town">Nottingham</span><br />
+<span class="postcode">NG8 5RX</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/aspley/nottinghamshire/">Aspley</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Beacon Hotel  <span class="h2note">(Average Rating: <span id="averagerating"><b>6</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review116002" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> left this review about The Beacon Hotel</h6>
+<p class="old">The Beacon is now the last remaining pub in Aspley located at the main Aspley lane.  The outside mock Tudor exterior is nice in an otherwise not so desirable area. Upon entering there is a one large room with lots of tables and chairs with a long bar running across the back wall. This is a typical no thrills estate pub that was very busy on a Thursday evening with older customers who were playing bingo but there was also a large mixture of other customers. Behind the main room is another large room with its own full sized bar. This room seems much larger because of a really impressive domed roof that came as a big surprise and is a genuinely impressive piece of architecture.  This room had more tables and chairs with pool and darts but was completely empty as everyone else was in the busier main room. This looks like it is probably rented out as a hire room as the main room will cater for the type of numbers this pub is used to attracting. Another really nice feature that was retained was stained glass beacons in the doors that you pass to get through to the back room that have quite rightfully been retained which I like very much. As with most of these type of estate pubs the beer selection was completely dire. There was one unclipped hand pull that looked like it hadn&rsquo;t been used in decades that the landlady then confirmed. To make matters worse Mild and Boddingtons had both recently been taken out so I was left with the great choice of John Smiths or Guinness. The Guinness was ok and cost &pound;3.20. Overall a pretty standard rough estate type pub frequented only by locals. No real reason to ever venture here but if you do ever find yourself in Aspley and in dire need of a pint go and take a look at the back room celling as you don&rsquo;t see rooms like that in pubs every day. Not the sort of place to make a special journey too.</p>
+<p class="Reviewer">On 10<sup>th</sup> March 2017 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 424 recommendations about 424 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review60760" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> left this review about The Beacon Hotel</h6>
+<p class="old">The Beacon is a decent sized stand alone pub that was probably built in the 30s when the new estates to the west of Nottingham started to spring up.<br />
+The pub has got a brewers tudor upper half giving it a fairly nice appearance for this area of Nottingham,once inside the pub had three different rooms we had a dink in the bar which was a fairly nice room the lounge also looked very smart.<br />
+This pub used to be a Kimberley tied house and there was one real ale on the bar this was Kimberley bitter and this was a decent drink.<br />
+I think this pub is still open but i dont know what beers are now on here.<br />
+<br />
+Pub first visited 16/10/1982<br />
+<br />
+Photo taken 1984</p>
+<p class="Reviewer">On 9<sup>th</sup> June 2012 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 6113 recommendations about 6113 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Beacon Hotel</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+</div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/58162/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.97290500000000, -1.21007700000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.97290500000000, -1.21007700000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Bulwell, 2.23 miles, 43 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Nottingham, 3.54 miles, 1 hr 8 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Ilkeston, 4.29 miles, 1 hr 22 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('_iibIxikFPgEUQMUwDmJgBeEO^w@xAaAfAa@Xu@Z{@Rg@@g@Ee@IqAm@a@[s@u@gAkBc@cAq@yBgBtBoAdAsBnAmAn@UWOCIHEXeGuAyBs@cCsA}JkGeDmBYUu@a@e@eA?k@Kg@KWUM]?m@b@gAHUA}@Ye@Uk@u@_@q@kAyAmCgCiAoAsDoDkC{AQUYi@_AqBSU]So@KmFKoAKoBCi@Ge@OmCiAuBg@{@AeCb@wAAaEo@W?e@Wm@KBqAE]F]CO_@Lu@KQKYk@D[NBNM^JDe@MG@GXJ', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('_iibIxikFPgEL}@`AmFTyAh@sFt@oNd@sLXuEHs@PeA\\qAvGmQpBgFdCeFb@eA\\yAtAqHFu@ZaBZwAVw@^eC^yDFsB?iB_@kQGgBv@{@hEcG~AuBxBkDRc@Jc@j@cBj@uBhAiHdAsFeCqVbEgDh@s@Vc@|BaHz@oB@BhFgBpAu@fDeCPETBbAoAfDwF|BmFhCaHlBwEX]\\u@Vi@p@oBPeAHSz@gLHs@`DwQRUZM^MNULY@OVc@NO`AeAtCwDt@{@|FqFrDuCrBkARa@DYFmBDYGOP_AGMCSCe@BK?OAQEGGuBI@Co@JFN@ZCfCy@CWDGDSJHJBlA_@tDuACQv@YCO', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('_iibIxikFKvE[`GOjBwAxOGEGAIJENBVNp@@fA@JFHEVAn@RzNPxGCzADjBX^r@hRX`FWLnEpYJrAl@pKNvBHdAFhB@dB?dHDnDXpIBxB?bDMbGExC?fC@~@VzDCZO^gCpBSTkCbEcAtBM`@Yn@[h@{@|@{AhAuBhAAl@[dDCv@SfUKdIoAzOGxC?dCJzIK`@OX_CdD_AxAkB|Fo@`ATdAZhDn@bFmBdQ[xAYTeAbAcA|BK@]\\oFxCiFrJa@b@JzAn@jGJvBHrD`@bCItCKnACl@c@~BqA|Fi@`BcB~B@LDLJHBTRl@HZNdA`@f@VNCR[Re@l@TZ^z@rBlFt@`BZfAv@xDpB|KzAjJHETlA?RC~@@b@J`@KNIb@TJVXPh@@LHVR~@`@fCZrC\\~@FIJPNH^`@`BbAK_@qAuDUYEACGY@]LWVg@R', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.97290500000000,-1.21007700000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=58162">View all updates for The Beacon Hotel, Nottingham</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        10<span class="sup">th</span> Mar 2017, 16:40
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> amended by <a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        21<span class="sup">st</span> Feb 2017, 19:25
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Real Ale : <span id="fac10158162">No</span> <span id="discdetail10158162" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 May 2014 by Dave McNally</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

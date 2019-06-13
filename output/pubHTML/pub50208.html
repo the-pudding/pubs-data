@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Maryburgh pub in Fort William, Highland, PH33 6AT : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Maryburgh" />
+  <meta name="keywords" content="The Maryburgh, 36 Caledonian Court High Street, Fort William, Highland, Fort William Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Maryburgh in Fort William" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/50001_50500/50208_e0c69db6.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/50208/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="56.81821800000000" />
+<meta property="og:longitude" content="-5.11049800000000" />
+<meta property="og:street-address" content="36 Caledonian Court High Street" />
+<meta property="og:locality" content="Fort William" />
+<meta property="og:region" content="Highland" />
+<meta property="og:postal-code" content="PH33 6AT" />
+<meta property="og:country-name" content="Scotland" />
+<meta property="og:description" content="Do you like The Maryburgh in Fort William? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Maryburgh the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/50208/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Maryburgh in Fort William" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Maryburgh " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/50001_50500/50208_e0c69db6.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/50208/" />
+<meta name="geo.position" content="56.81821800000000;-5.11049800000000" />
+<meta name="geo.placename" content="The Maryburgh in Fort William" />
+<meta name="geo.region" content="UK" />
+<title>The Maryburgh in Fort William : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":50208},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(50208);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 50208;var pubaddress = "36 Caledonian Court High Street";var pubname = "The Maryburgh";var pubpostcode = "PH33 6AT";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/scotland/" title="Pubs Galore : Scotland Page">Scotland</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/highland/" title="Pubs Galore : Highland Page">Highland</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/fort-william/highland/" title="Pubs Galore : Fort William Page">Fort William</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Maryburgh Page">The Maryburgh Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="ep55ccd5s2b3g7jmo7ncinjsv3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/50208/" class="indisplay"><img src="/images/display/50001_50500/50208_e0c69db6.jpg?w=2" alt="Picture of The Maryburgh" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Saturday, 18<sup>th</sup> June 2016<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/50208/" class="smallbutton">View all this pub's pictures</a> (5 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/50208/">Pub map</a><br /><a href="/pubreviews/50208/">Pub reviews (1)</a><br /><a href="/pubpictures/50208/">Pub pictures (6)</a><br /><a href="/core/pubaudit.php?id=50208" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Maryburgh, Fort William Town, Fort William</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">36 Caledonian Court High Street</span><br />
+
+
+<span class="town">Fort William</span><br />
+<span class="postcode">PH33 6AT</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/fort-william-town/highland/">Fort William Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Maryburgh  <span class="h2note">(Average Rating: <span id="averagerating"><b>10</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review97373" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=David1958">David Ross</a> left this review about The Maryburgh Inn</h6>
+<p class="old">Almost hidden, as it is, down a flight of steps in a narrow alleyway off the High Street, and being not very well signposted, this could easily go unnoticed on a wander through the town, but it would be extremely unfortunate if it did. Despite considerable competition from the other eight pubs nearby, this was, by some distance, my favourite pub in Fort William. It consists of a small main bar and a side room with a pool table. Both have stone walls, stone flagged floors, old fireplaces and wooden bench seating around the perimeters. An unusual feature in the bar is the old drinking well in the middle of the floor. At the bottom of this are coins thrown down by customers (although the top is now glass covered) and a, presumably fake, skeleton. Prices were very competitive, with a pint of Foster&#039;s lager costing only &pound;2.80. Tennent&#039;s, Amstel and Carlsberg lagers, Guinness, Belhaven Best and Strongbow cider are also on draught. With limited space, it gets busy and loud very easily, but the Maryburgh is not to be missed from any visit to Fort William pubs.</p>
+<p class="Reviewer">On 15<sup>th</sup> July 2015 
+  - rating: <b>10</b><br />
+  <span class="leftspace">[User has posted 769 recommendations about 683 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Maryburgh</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="183516735168500">Facebook - <a href="https://www.facebook.com/themaryburgh/" target="_blank" rel="nofollow">The Maryburgh Inn</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/50208/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([56.81821800000000, -5.11049800000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([56.81821800000000, -5.11049800000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Fort William, 0.25 miles, 4 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Banavie, 3.03 miles, 58 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Corpach, 3.63 miles, 1 hr 10 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('cixyIdde^kB{DGGiA}B_AwB}@iBcCqFHi@TOKs@Ci@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('cixyIdde^kB{DGGiA}B_AwB}@iBcCqFKIMcAGDYgD_AiHIWMEYJy@j@GoAUqCiB_OgAcDcAkCcCfEE`AaAjBqByEy@yAe@cBi@yB[oBSwBc@kKYFQ{DOkBIg@YgAw@aCiA_E{CcOc@}AWWq@Y[EQKQS{JaQk@{@wB}A}@]]GgBCg@BQCEQIB?HqEA?HI?AqEM_BuCkPSaAWo@[i@k@a@o@FwBbASBOEIKYq@IPKAYToDfGiLhT{AlCO~@DXQ\\YKwBxDwFfLiBpGy@rEgAdMs@|GHb@GZXh@Nb@Hf@D~@Ax@o@xHGPCTIE]oA?O\\mD', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('cixyIdde^kB{DGGiA}B_AwB}@iBcCqFKIMcAGDYgD_AiHIWMEYJy@j@GoAUqCiB_OgAcDcAkCcCfEE`AaAjBqByEy@yAe@cBi@yB[oBSwBc@kKYFQ{DOkBIg@YgAw@aCiA_E{CcOc@}AWWq@Y[EQKQS{JaQk@{@wB}A}@]]GgBCg@BQCEQIB?H_E@O`AKDCnBUvBWhBy@hE_CnKaClJKn@SlCM~DB`BFz@Hn@TnAhA|EDn@@tAMbBSv@eCpFEKgCvFLXGJ@TBLJFrArCBPTh@EJ\\v@yKtVtBxEoAnCIb@AfBDDGp@Wz@@f@AFwAlEGFQh@cCtHaGbXsBbLg@j@M`@Ud@QNOXQrAWr@EV@d@QjCCfA?hAMlNKHM?KXGFGSc@m@MBu@`BYf@ED[HKAH_BXs@Ju@BoA', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([56.81821800000000,-5.11049800000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=50208">View all updates for The Maryburgh, Fort William</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> Jun 2016, 01:56
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> Jun 2016, 01:56
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>CAMRA Discount : <span id="fac10250208">No</span> <span id="discdetail10250208" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 June 2016 by Quinno _</span></li><li>Karaoke : <span id="fac10650208">Yes</span> <span id="discdetail10650208" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 February 2015 by Dave McNally</span></li><li>Real Ale : <span id="fac10150208">No</span> <span id="discdetail10150208" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 June 2016 by Quinno _</span></li><li>Real Cider : <span id="fac11950208">No</span> <span id="discdetail11950208" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 June 2016 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11am - 1am</td></tr>
+<tr><td>Monday</td><td>11am - 1am</td></tr>
+<tr><td>Tuesday</td><td>11am - 1am</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>11am - 1am</td></tr>
+<tr><td>Thursday</td><td>11am - 1am</td></tr>
+<tr><td>Friday</td><td>11am - 1am</td></tr>
+<tr><td>Saturday</td><td>11am - 1am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84235/" class="List1">Sunny&#039;s</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 3 reviewer(s)" title="Pub has average rating of 7.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/50201/" class="List1">The Crofter</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/50204/" class="List1">Imperial Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54670/" class="List1">Volunteer Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 18 picture(s)" title="Pub has 18 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8.5 from 6 reviewer(s)" title="Pub has average rating of 8.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/50203/" class="List1">The Grog &amp; Gruel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 18 picture(s)" title="Pub has 18 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 7 reviewer(s)" title="Pub has average rating of 6 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54665/" class="List1">Ben Nevis</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/70481/" class="List1">Cobbs Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/78012/" class="List1">Tavern</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

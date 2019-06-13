@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Dun Cow pub in Durham, County Durham, DH1 3HN : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Dun Cow" />
+  <meta name="keywords" content="Dun Cow, 37  Old Elvet, Durham, County Durham, Durham Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Dun Cow in Durham" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/5501_6000/5519_f5e29082.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/5519/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="54.77497272862253" />
+<meta property="og:longitude" content="-1.56854959259033" />
+<meta property="og:street-address" content="37  Old Elvet" />
+<meta property="og:locality" content="Durham" />
+<meta property="og:region" content="County Durham" />
+<meta property="og:postal-code" content="DH1 3HN" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Dun Cow in Durham? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Dun Cow the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/5519/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Dun Cow in Durham" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Dun Cow " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/5501_6000/5519_f5e29082.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/5519/" />
+<meta name="geo.position" content="54.77497272862253;-1.56854959259033" />
+<meta name="geo.placename" content="Dun Cow in Durham" />
+<meta name="geo.region" content="UK" />
+<title>Dun Cow in Durham : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":5519},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(5519);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 5519;var pubaddress = "37  Old Elvet";var pubname = "Dun Cow";var pubpostcode = "DH1 3HN";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/county-durham/" title="Pubs Galore : County Durham Page">County Durham</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/durham/county-durham/" title="Pubs Galore : Durham Page">Durham</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Dun Cow Page">Dun Cow Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="3k9rl6djs1jf0fqbgpsa7o6cc2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/5519/" class="indisplay"><img src="/images/display/5501_6000/5519_f5e29082.jpg?w=2" alt="Picture of Dun Cow" /></a><br />  Image posted by <a href="/userinfo.php?name=Maldenman" class="indisplay">Malden man</a><br />
+  Submitted on Thursday, 4<sup>th</sup> June 2015<br />
+  With picture contributions to 1669 other pubs<br />
+<a href="/pubpictures/5519/" class="smallbutton">View all this pub's pictures</a> (12 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/5519/">Pub map</a><br /><a href="/pubreviews/5519/">Pub reviews (9)</a><br /><a href="/pubpictures/5519/">Pub pictures (13)</a><br /><a href="/core/pubaudit.php?id=5519" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Dun Cow, Durham Central, Durham</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">37  Old Elvet</span><br />
+
+
+<span class="town">Durham</span><br />
+<span class="postcode">DH1 3HN</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/durham-central/county-durham/">Durham Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Dun Cow  <span class="h2note">(Average Rating: <span id="averagerating"><b>8</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review124940" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> left this review about Dun Cow</h6>
+<p class="old">The Durham classic with a front snug bar accessed through a sliding door and a larger lounge room at the rear down the side alleyway. Unspoilt in the way of not having been messed about with for many years and retains a sort of 1970/80&#039;s feel. There is a yard with a smoking area at the back, and a few tables were stacked up which presumably are used somewhere when the weather is fine. The beers on offer at time of visit were Castle Eden, Black Sheep and Moorhouses White Witch, and still with the keg Trophy as mentioned below.</p>
+<p class="Reviewer">On 5<sup>th</sup> December 2017 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 1775 recommendations about 1734 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review105577" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> left this review about Dun Cow</h6>
+<p class="old">The Dun Cow is a really nice looking pub that is on an equally nice looking street.<br />
+Once inside the pub has two separate rooms,there is a small room to the front which has comfy bench seating,the rear room is larger and oblong shaped,it is carpeted and has comfy bench seating with chairs and small stools.<br />
+There were three real ales on the bar,i had a drink of Copper Dragon Golden Pippin which was a very nice drink,the other beer were Castle Eden and Black Sheep bitter,there was also Whitbread Trophy on keg and people were asking for it,a blast from the past.<br />
+The pub was very busy with both drinkers and diners,the food was very cheap with a corned beef pie coming in at &pound;2.95.<br />
+I would happily return here and also try the food on offer.<br />
+I quite liked this pub.<br />
+<br />
+Pub visited 19/3/2016</p>
+<p class="Reviewer">On 10<sup>th</sup> April 2016 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 6113 recommendations about 6113 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review97139" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about Dun Cow</h6>
+<p class="old">Historic old pub almost opposite the imposing red brick university building. Two rooms accessed via a side corridor, and in this corridor you can read about the legend of the Dun Cow (which sounds like a load of old cobblers to me). Star of the show is the carpeted and wood panelled front snug which has a slide door (woe betide anyone who doesn&rsquo;t close it behind them on a chilly day). Pretty small is the snug and it was already full at quarter past midday. The fireplace has been bricked over which is a shame. Next door down is the lounge which looks like two rooms knocked into one. To the right is a spartan whitewashed area whilst the left is more comfortable, set for informal dining and hosts a wood burning stove which was sadly unlit as it was pretty chilly. Five ales on, a house beer - Castle Eden - from Cameron&#039;s (very good nick) Cameron&#039;s Gold, Copper Dragon Golden Pippen and Black Sheep. Trophy Special on keg, not seen that for a while. Taciturn barmaid, I thought they prided themselves on their friendliness up this way? Seems like she was the daughter of the landlady, who was a lot better at serving customers. The mardy service excepted, I liked this one &ndash; but it is based around bagging a seat in the characterful front bar.</p>
+<p class="Reviewer">On 10<sup>th</sup> July 2015 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/5519/">View more reviews of Dun Cow (9)</a>
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=221">Real Ale trip</a> by <a rel="nofollow" href="/userinfo.php?name=Carman">Peter Carr</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Dun Cow</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+</div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/5519/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Al+10000">Alan Winfield</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([54.77497272862253, -1.56854959259033], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([54.77497272862253, -1.56854959259033]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Durham, 0.9 miles, 17 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Chester-le-Street, 6.71 miles, 2 hr 9 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Bishop Auckland, 11.32 miles, 3 hr 38 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('afimIvjqHsAxKs@dHQBGr@{AnI_@xCMn@}AhAm@Wa@[S]Si@g@YKJa@vCK`B@\\Dl@k@hMIj@KZ]^Fh@C?Ab@JH?RK`AOxA]dCKLk@QWc@WMSAQJUHSAMCARFZLNk@zB~AvAJ@@Kj@f@BIwCsC', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('afimIvjqHsAxKs@dHQBGr@{AnI_@xCMn@}AhAm@Wa@[S]Si@g@YKJa@vCK`B@\\Dl@c@tJGrAIj@KZ]^eAH_GfAkA^OPOVm@`Bg@nBOT}@rBwBlE]hAmErHcAnAk@j@eAdAuBfBE@w@Ka@ZQjBGNcBxBc@b@]oASBIFe@`AOZcAfAc@`@iAt@G?SZ_Az@gAjAiAXkCXWJ[TCBKb@AxAB^QEML}@PoEc@yF_@YIs@G}BD_@Ma@CiR[oEYqKmBQGuKmBkQaCaAAa@Je@^MT[NCQcAGYZ_@j@C?cBgAyAg@_CO{CLeKv@_Ep@iE|@oCbAgEhCgE`DiBzAsAr@_Bd@yARaDP{BFc@Ie@NiOd@]KIYS@?JCPSTsCdAyAb@k@Hi@?i@GSHOXI\\IFaCh@{Dp@wCLcCEs@KqFqACIOMoAs@u@WkBC[J{FqAaBk@cCcAsAy@kA_AgAiAkF}GiAmAo@aAoEsFoAcBOC{EeG}BoCE?IKiBwCe@_AaAkCUcASmAIy@GoBQGO[_@{B_BaO]kB[kAi@mAi@_Am@q@eAo@{Ao@{FiB_Bk@_Ay@yA{BO[UEu@e@Oj@kAgBu@sA{AuDq@sBO?GRwDj@oBv@wA[?r@_EFwF\\DzBIBGHAZWOOd@?R[`ACPIDQS_@n@ObCOJFNS\\c@`BBp@iH~B`@nGeBC{@PDt@IBBl@HCAGDA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('afimIvjqH@Gb@`@N^BRJh@Rd@NNND^BLjCTKj@C`@HPNPZPh@Ln@H|@RGtN~GfDtBfDrDZNn@f@xExCVuBn@^\\F`@Pz@hAdBpAp@^vAc@ZSFc@`Aa@l@C\\NHJHING?UDSLYbA{AHIx@KpAExAH~A?z@JzB\\nBb@bAr@l@ZjBXf@EjAFp@MXOfBAn@EPI~AsAn@a@nAW~@F\\IVa@^FJ`@LVTz@?f@R`@jCvBx@h@t@`@j@?bBUf@WRSJGVFTVRd@XhAHHlBxC~@bBBh@CxCNnEP~BNrAAnADlCD|@TxA~AjEh@lA^jAxArBZTp@FhAn@bA^n@PdBRhAd@TDJAJKHNJLdDB^FNFv@t@v@\\^\\`@l@z@|Ar@xAlAvCTx@rASnF}AVSh@El@QTStA]f@G~GsBTC|AQbBHrDZb@?pBZCVbCf@RIf@Jf@TR?LCPUPANDXV@`AIH|BpDfAfCl@`AEJLd@NBd@zATbAJR@TR@Lz@Tp@Xl@NLDTXVj@hAHpA?d@C`@KVZvA`EfOz@rDf@dDb@lDJrAb@tLHdBNzARfA\\lAp@zAv@lAl@dA`@`BZCj@Rh@DPfATb@HBX\\Rx@NrA~A|FfAfFrCvLrArEt@rDVhCThD`@bCf@nA~@rBpA`Bn@vAp@Kr@Zt@`BdAt@NXVP^p@z@|@Jf@@Z^bAPdAdAbBPt@Dh@f@fCvA~Dh@`APJj@nCPh@r@fA`@X|BZtDzC`FrFT~@EhDPbCVXH`ATJRYRLl@zAvH~TvH|NXrATrD?pBUd@s@j@Fl@r@WpBGjCJlBn@zB|CvAx@rAZjC[vFqCrFkEfFyC~@lFfAhFrCzGdAxBzDnExBlBj@dA|A|CrDtBfCF\\]jAUpAEzARn@XPXp@~ApEjETr@V|BfBq@p@uA~B{B`CqBrAcBb@[bAbGhAdCpB~DhCjB`HjBvHn@|VhEhNjAlv@dLjD?fBQnd@qTj@QjB_@j@ApANfABlA^vAx@xArAp@z@h@~@bChFn@dBbA|CdAlC~@xBp@pAl@~@bAhAlAz@E\\[EAFLP@J@tCG\\@z@Yt@OzAOSQjGf@\\p@hAxAhBvEnDx@Z_A~A`@nAC\\s@fDSp@e@jAEb@?r@Jb@P\\^Vh@d@r@|@~AhC@XW`AB~AJn@Bp@KZE\\Ef@Kf@Uj@@XE\\UZAXV~Af@xJ`@bESFFbAa@PCNDxCQJYFDh@Lp@XfAF|CJ?DTVFBx@EhCnCn@BV@v@E??XH@?HC?CFAhB@f@IPBF@pA`@?AeA', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([54.77497272862253,-1.56854959259033], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=5519">View all updates for Dun Cow, Durham</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        5<span class="sup">th</span> Dec 2017, 20:31
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        5<span class="sup">th</span> Dec 2017, 20:31
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac1185519">No</span> <span id="discdetail1185519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Bar Billiards : <span id="fac1075519">No</span> <span id="discdetail1075519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Beer Garden : <span id="fac1145519">Yes</span>  - <span id="discdetail1145519" class="discdetail" style="">small courtyard</span> -   <span class="Reviewer">last updated 05 December 2017 by Graham Coombs</span></li><li>CAMRA Discount : <span id="fac1025519">No</span> <span id="discdetail1025519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Car Park : <span id="fac1135519">No</span> <span id="discdetail1135519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Child Friendly : <span id="fac1215519">Yes</span> <span id="discdetail1215519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Darts : <span id="fac1115519">No</span> <span id="discdetail1115519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Dog Friendly : <span id="fac1055519">Yes</span> <span id="discdetail1055519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Hot Food : <span id="fac1035519">Yes</span> <span id="discdetail1035519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Jukebox : <span id="fac1125519">No</span> <span id="discdetail1125519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Karaoke : <span id="fac1065519">No</span> <span id="discdetail1065519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Live Music : <span id="fac1085519">No</span> <span id="discdetail1085519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Live TV Sports : <span id="fac1105519">No</span> <span id="discdetail1105519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Micropub : <span id="fac1225519">No</span> <span id="discdetail1225519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Pinball : <span id="fac1165519">No</span> <span id="discdetail1165519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Pool Table : <span id="fac1045519">No</span> <span id="discdetail1045519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Real Ale : <span id="fac1015519">Yes</span> <span id="discdetail1015519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Real Cider : <span id="fac1195519">No</span> <span id="discdetail1195519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li><li>Wheelchair Access : <span id="fac1205519">Yes</span> <span id="discdetail1205519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 May 2014 by Alan Hurdle</span></li><li>WiFi : <span id="fac1155519">Yes</span> <span id="discdetail1155519" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 July 2015 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 9 reviewer(s)" title="Pub has average rating of 7.5 from 9 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/5512/" class="List1">Court Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/5565/" class="List1">Royal County Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 9 from 11 reviewer(s)" title="Pub has average rating of 9 from 11 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/5591/" class="List1">The Victoria</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 2 reviewer(s)" title="Pub has average rating of 5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55369/" class="List1">The City</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 16 recommendation(s)" title="Pub has 16recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 15 reviewer(s)" title="Pub has average rating of 7 from 15 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55368/" class="List1">Half Moon Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8.5 from 3 reviewer(s)" title="Pub has average rating of 8.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/5597/" class="List1">The Woodman Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 5 reviewer(s)" title="Pub has average rating of 6 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/5572/" class="List1">Swan &amp; Three Cygnets</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/67500/" class="List1">The Boat Club</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

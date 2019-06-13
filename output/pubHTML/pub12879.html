@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The White Bear pub in Tewkesbury, Gloucestershire, GL20 5BU : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The White Bear" />
+  <meta name="keywords" content="The White Bear, Bredon Road, Tewkesbury, Gloucestershire, Tewkesbury Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The White Bear in Tewkesbury" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/12501_13000/12879_dbff591c.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/12879/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.99799310209298" />
+<meta property="og:longitude" content="-2.15370153372953" />
+<meta property="og:street-address" content="Bredon Road" />
+<meta property="og:locality" content="Tewkesbury" />
+<meta property="og:region" content="Gloucestershire" />
+<meta property="og:postal-code" content="GL20 5BU" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The White Bear in Tewkesbury? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The White Bear the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/12879/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The White Bear in Tewkesbury" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The White Bear " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/12501_13000/12879_dbff591c.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/12879/" />
+<meta name="geo.position" content="51.99799310209298;-2.15370153372953" />
+<meta name="geo.placename" content="The White Bear in Tewkesbury" />
+<meta name="geo.region" content="UK" />
+<title>The White Bear in Tewkesbury : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":12879},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(12879);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 12879;var pubaddress = "Bredon Road";var pubname = "The White Bear";var pubpostcode = "GL20 5BU";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/gloucestershire/" title="Pubs Galore : Gloucestershire Page">Gloucestershire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/tewkesbury/gloucestershire/" title="Pubs Galore : Tewkesbury Page">Tewkesbury</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The White Bear Page">The White Bear Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="ev14pjfga16n1e2gnd6htodbp7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/12879/" class="indisplay"><img src="/images/display/12501_13000/12879_dbff591c.jpg?w=1" alt="Picture of The White Bear" /></a><br />  Image posted by <a href="/userinfo.php?name=bcfczuluarmy" class="indisplay">Jonathan Wilde</a><br />
+  Submitted on Monday, 12<sup>th</sup> September 2016<br />
+  With picture contributions to 3997 other pubs<br />
+<a href="/pubpictures/12879/" class="smallbutton">View all this pub's pictures</a> (5 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/12879/">Pub map</a><br /><a href="/pubreviews/12879/">Pub reviews (3)</a><br /><a href="/pubpictures/12879/">Pub pictures (6)</a><br /><a href="/core/pubaudit.php?id=12879" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The White Bear, Tewkesbury Town, Tewkesbury</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Bredon Road</span><br />
+
+
+<span class="town">Tewkesbury</span><br />
+<span class="postcode">GL20 5BU</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/tewkesbury-town/gloucestershire/">Tewkesbury Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The White Bear  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review134003" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Mappiman">Ian Mapp</a> left this review about The White Bear</h6>
+<p>Ok - I wanted to really like it.   As other have said, a real pub vibe with a high number of well oiled patrons.  It was 5pm on a Sunday afternoon.<br />
+<br />
+Five real ales on and several ciders.  Most locals seemed to be on cider.   I went safe with a Salopian Oracle.  It looked dreadful.   I gently asked if it was OK and the barmaid asked Ron.  Ron said Yes.   I did not want to argue with Ron.<br />
+<br />
+Tried a second Uley Pigs Ear.  Much better.<br />
+<br />
+Visit blogged at http://bit.ly/2CBmDFM</p>
+<p class="Reviewer">On 22<sup>nd</sup> October 2018 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 517 recommendations about 512 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review49203" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Thuck+Phat">Thuck Phat</a> left this review about The White Bear Inn</h6>
+<p class="old">The White Bear is on the edge of Tewkesbury opposite a large Travis Perkins for navigation purposes.<br />
+The pub looks traditional from the outside but feels much more airy, light and modern than warm and cosy inside. It has flat screens, a modern pale floor and chrome and black bar stools as well as an inviting garden.<br />
+It&#039;s a friendly place and we were greeted at lunchtime by the landlord and most of the locals when we went in.<br />
+Four handpumps had on Bass, Northumberland Fog on the Tyne and Jolly Rogers and Cottage Morgan Plus 8. The Bass was top and the landlord says he gets through a barrel every two days or so it&#039;s a popular drink here. Fog on the Tyne was less good, possibly just the first one out that day, but Jolly Sailors slipped down well.<br />
+I&#039;d certainly return for the welcome and the Bass.</p>
+<p class="Reviewer">On 20<sup>th</sup> July 2011 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 663 recommendations about 662 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review49140" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a> left this review about The White Bear Inn</h6>
+<p class="old">This pub thoroughly deserves its 2011 GBG listing and my Bass was spot on.On entering the front door ,there is a modern stone floor and a seating area to the left with the bar to one side in the centre of the building.Beyond the bar is a pool table and this open plan area is bright with modern fixtures and flat screens.Upstairs there is a skittle alley and outside a good sized garden leading down to the River Avon.Inside there are several photos of the regular floods that have hit the pub over the years,while by the bar there is a complete set of Encyclopedia Brittanica no doubt used to settle pub quiz disputes before the advent of Google.<br />
+A really friendly community boozer,very good value and a welcoming old school guv&#039;nor mean that the White Bear will always get my custom when in Tewkesbury.<br />
+There is a modern housing development between The White Bear and Ye Olde Black Bear with the charming road name Twixbears .</p>
+<p class="Reviewer">On 19<sup>th</sup> July 2011 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1916 recommendations about 1916 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The White Bear</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The White Bear - <a href="http://www.famouswhitebear.co.uk" title="Submitted by:- Helen Iwanczuk" target="_blank">www.famouswhitebear.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="179948335496651">Facebook - <a href="https://www.facebook.com/tewkesburywhitebear/" target="_blank" rel="nofollow">White Bear</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/12879/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.99799310209298, -2.15370153372953], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.99799310209298, -2.15370153372953]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Ashchurch for Tewkesbury, 2.19 miles, 42 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Cheltenham Spa, 9.08 miles, 2 hr 55 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Pershore, 11.27 miles, 3 hr 37 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('wyj|HxrcLL^Tc@p@sELkANy@Vu@^{ArAj@DM@iHA}@j@yDTsCJmBB_CAyBKkD[qEyAiIM}@sAkMGmA}@oTe@{NbAGE}BLE@GHAA{@OcAEq@GaDnBKA]D[BoHOq@?k@L@@q@BQDoAAs@F_EHsABkEC[Om@o@mA?YV_JX_@Zo@To@Hw@C_@IkCKmBe@}GM_@A[DACWBK@YEoEIu@S{I?e@DWAk@SyFFUGqBMo@I{AEYIK?w@HU?SSyFCBGIYkDY[i@@SHUMeCBASE]Q?', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('wyj|HxrcLL^X?~CjAjAXh@Fh@Vf@ZRTFNLB`At@zAx@l@VZAHJ^NxBj@r@X\\FtBGAMpBe@DF`@?RCEuB@oABmAFUN_@NCjA?`Aq@XGPDP}Af@LpAyBN]ZWvHeDpAuHtAYl@Jp@Bd@K^Fn@r@~@Rf@Kt@]j@gA^q@Xu@|C{@`DcAb@EZ@`A@LFf@dAJFbACt@ShCGJPjBh@hB|@n@Nt@j@b@JFMNCTHTPJ?JMEIV[PGVPDKn@NbCRhDNdDz@~@I`KXrByAtFoD`D_BvAUvDu@pAJrF]~B_@lA]nASn@S@}ABs@Lq@dAcDnBoHfAsDvHmTpA_DlBsF`@m@f@_@p@_@XST]|AsEP_@TSlCmA|@{@hJgK^g@\\aAvBcM\\aCZ\\PFJEJUh@oB^qBVu@bMsBL?\\HpAAhAc@h@KN@pAK`BENHRB~Bm@n@Pj@l@JEFZRp@^p@bEvFhAjBnHfIr@h@LW`@e@Xm@Zc@^O\\GhAEb@Hp@Zd@S^{@V_B|@{KdAkYl@uJBIJGTDDCpAoOhClAX?PKbAmBNi@Ho@JmBFMFEv@Gd@IvAg@n@Ur@g@NQ~Am@x@KPOV@@RDDpCj@zB~@NCHOP_AHMNEj@Jl@VZBlD`Av@\\rJ`D`@wBPk@NEdAz@NDRo@AQPMnCy@Xu@PSPCvIzJvAl@|@d@hAF~B?lAOhCaApBUFGl@vBHPJKtQeBzHcDjCi@PJlAiHhAoFrC}KtCcNd@gBf@_BhA{CzBmHnB{Ft@P?d@VAj@RDFL[PI`APPmBBuAPB`An@^NhFnAtFpBx@b@FWByEPaBd@cCl@_BbBqDrAsBhAwBLC?INB~Az@|Ab@^]|AkBp@mAdL|JlA{ClAqCx@aCdBlBvAqDjAiC`AgBTq@HBf@ETHVNrExHlCaGfBbDlCzElA~ArAhApGeMt@{ARe@h@rATo@?KR_A', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('wyj|HxrcLZ`Ah@xB`@lAJRNNh@\\NTUx@Uf@oApB_AnAeCxCI_@[SILCJBTyF@c@k@}MiAs@QHU?a@Ii@a@kA_D}Fg@e@gIsJaCsBeCuAq@Ee@BYPwBoA_FmAMKWaAMSsCg@_Bi@eB[wAo@sCmDeB_CmBaCyCeBqEcDe@q@yBgBqCoBsDeBoBmAyAi@yAeAwAq@_BeAmBi@cCmAyBq@y@c@sBa@{GTuAg@sBi@}B{@yBYqBGe@nCo@o@}@u@g@Uu@Q[OWYO?ORKf@WxB]rAQ`@QJMYOGeAG}@Sg@Uy@q@i@]oAm@uEmBQOaBmBgBcCkB{BmCyCeCeCoB{AmDiBaAs@kD{BkAm@iBo@aAK[Sf@uDZaBbAsJ?m@Ee@s@aFOq@IGKBOJe@r@iCtAoF_@wDq@{LqDOSSiA}@yAiMmE[H{AoAgCuA][OGaC]}EGsCPaA?yBMm@Qo@EmAVIHMVMf@Ki@_@mAe@oAKK[GSD}@^_@?UM{@}@kBeBm@}@_AeCGIOGo@IgBDsD`@w@I]OqCkCg@o@IL[k@MDACSRAE]P?FaAxAaAz@GRg@f@a@JEAk@^a@H_BrASVWBi@p@a@PMJOU[eAu@qAsHuLMGK@]RSBgACa@BwAVUCSk@y@eD[eAUYa@KOSq@aB_@o@oC_G[W}@c@cBiBEAEYs@mB_@q@W_A]_ADWGw@QHSKa@iEoB|@cFnBaATwEIuD`@{AAANqDaAi@I}@?CJcDR{@@AQWCcBq@_@GqAHkCXo@Ek@WBCsBeBeAw@eCaBqAm@gH{BqAe@q@_@eCiAyCkBqLqI}BoCmA{Bq@yAi@w@a@a@aAYmEqBWIGBKsBMM{Bk@qAUkBk@e@I_@c@kEaDiBeA}@q@YCg@Jo@b@g@f@}@Ee@Ne@FmAQo@BsBQu@[q@EkABWINDqBkD}AaCmCaD_BsA_EgCE[Yg@Go@y@mCg@{@aByAm@{@[q@Me@_@aEeAqGEaAA}BiGo@[LKFm@eCs@_C_AeC{AaDcB}CmDmF[[Ni@w@_AaAiBY[w@m@ZaCRq@uA{AYg@Qi@McACs@N_C}B}@KH}@UWVWLy@mF_C_I_AqDSDM[yAaAuB}@gD_Bi@QmCmAYxAEr@oBI_ASsAs@}AqBgBgCsAcB_DwCgEsCgAi@F}@ICe@D{@Uy@GmDCaAYa@S}AkAS?OOa@UIUa@GK@i@Ci@BqHc@_FOsABk@AcAM_AUwBs@mAUEEI[QAGPGDIAoFc@mB[}@Wo@k@Sa@MCQuAIiBi@o@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.99799310209298,-2.15370153372953], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=12879">View all updates for The White Bear, Tewkesbury</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        24<span class="sup">th</span> Oct 2018, 09:33
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Mappiman">Ian Mapp</a> deleted by owner
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        24<span class="sup">th</span> Oct 2018, 09:33
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Mappiman">Ian Mapp</a> deleted by owner
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11812879">No</span> <span id="discdetail11812879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li><li>Bar Billiards : <span id="fac10712879">No</span> <span id="discdetail10712879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li><li>Beer Festivals : <span id="fac11712879">Yes</span> <span id="discdetail11712879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li><li>Beer Garden : <span id="fac11412879">Yes</span> <span id="discdetail11412879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li><li>CAMRA Discount : <span id="fac10212879">Yes</span>  - <span id="discdetail10212879" class="discdetail" style="">20p per pint Monday to Wednesday</span> -   <span class="Reviewer">last updated 04 April 2018 by ROB Camra</span></li><li>Car Park : <span id="fac11312879">Yes</span> <span id="discdetail11312879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li><li>Child Friendly : <span id="fac12112879">Yes</span> <span id="discdetail12112879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li><li>Darts : <span id="fac11112879">Yes</span> <span id="discdetail11112879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li><li>Dog Friendly : <span id="fac10512879">Yes</span> <span id="discdetail10512879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li><li>Function Room : <span id="fac12312879">No</span> <span id="discdetail12312879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li><li>Jukebox : <span id="fac11212879">Yes</span> <span id="discdetail11212879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li><li>Karaoke : <span id="fac10612879">Yes</span> <span id="discdetail10612879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 April 2014 by Dave McNally</span></li><li>Live Music : <span id="fac10812879">Yes</span> <span id="discdetail10812879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li><li>Live TV Sports : <span id="fac11012879">Yes</span>  - <span id="discdetail11012879" class="discdetail" style="">Terrestrial on my visit</span> -   <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li><li>Micropub : <span id="fac12212879">No</span> <span id="discdetail12212879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li><li>Pinball : <span id="fac11612879">No</span> <span id="discdetail11612879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li><li>Pool Table : <span id="fac10412879">Yes</span> <span id="discdetail10412879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 July 2011 by hondo .</span></li><li>Real Ale : <span id="fac10112879">Yes</span> <span id="discdetail10112879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 July 2013 by Dave McNally</span></li><li>Real Cider : <span id="fac11912879">Yes</span> <span id="discdetail11912879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li><li>Wheelchair Access : <span id="fac12012879">Yes</span> <span id="discdetail12012879" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li><li>WiFi : <span id="fac11512879">Yes</span>  - <span id="discdetail11512879" class="discdetail" style="">BT WiFi</span> -   <span class="Reviewer">last updated 12 September 2016 by Jonathan Wilde</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>10am - Midnight</td></tr>
+<tr><td>Monday</td><td>10am - Midnight</td></tr>
+<tr><td>Tuesday</td><td>10am - Midnight</td></tr>
+<tr><td>Wednesday</td><td>10am - Midnight</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>10am - Midnight</td></tr>
+<tr><td>Friday</td><td>10am - Midnight</td></tr>
+<tr><td>Saturday</td><td>10am - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/12867/" class="List1">The Boathouse</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 3 reviewer(s)" title="Pub has average rating of 6 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/12880/" class="List1">Tudor House Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/12856/" class="List1">The Anchor</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 4 reviewer(s)" title="Pub has average rating of 8 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/12869/" class="List1">The Nottingham Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/68259/" class="List1">Theoc House</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87610/" class="List1">The Cross House Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87134/" class="List1">Rosado Lounge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 3 reviewer(s)" title="Pub has average rating of 7 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/12857/" class="List1">Berkeley Arms</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

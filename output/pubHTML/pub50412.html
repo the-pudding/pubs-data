@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Marine Hotel pub in Stonehaven, Grampian, AB39 2JY : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Marine Hotel" />
+  <meta name="keywords" content="The Marine Hotel, Shore Head, Stonehaven, Grampian, Stonehaven Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Marine Hotel in Stonehaven" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/50001_50500/50412_3c8f2a45.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/50412/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="56.95970000000000" />
+<meta property="og:longitude" content="-2.20421000000000" />
+<meta property="og:street-address" content="Shore Head" />
+<meta property="og:locality" content="Stonehaven" />
+<meta property="og:region" content="Grampian" />
+<meta property="og:postal-code" content="AB39 2JY" />
+<meta property="og:country-name" content="Scotland" />
+<meta property="og:description" content="Do you like The Marine Hotel in Stonehaven? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Marine Hotel the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/50412/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Marine Hotel in Stonehaven" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Marine Hotel " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/50001_50500/50412_3c8f2a45.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/50412/" />
+<meta name="geo.position" content="56.95970000000000;-2.20421000000000" />
+<meta name="geo.placename" content="The Marine Hotel in Stonehaven" />
+<meta name="geo.region" content="UK" />
+<title>The Marine Hotel in Stonehaven : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":50412},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(50412);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 50412;var pubaddress = "Shore Head";var pubname = "The Marine Hotel";var pubpostcode = "AB39 2JY";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/scotland/" title="Pubs Galore : Scotland Page">Scotland</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/grampian/" title="Pubs Galore : Grampian Page">Grampian</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/stonehaven/grampian/" title="Pubs Galore : Stonehaven Page">Stonehaven</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Marine Hotel Page">The Marine Hotel Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="62eef19kto92eb5ucckgn7urc5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/50412/" class="indisplay"><img src="/images/display/50001_50500/50412_3c8f2a45.jpg?w=2" alt="Picture of The Marine Hotel" /></a><br />  Image posted by <a href="/userinfo.php?name=rpadam" class="indisplay">Just a quick pint, then I&#039;m off</a><br />
+  Submitted on Sunday, 21<sup>st</sup> April 2019<br />
+  With picture contributions to 5082 other pubs<br />
+<a href="/pubpictures/50412/" class="smallbutton">View all this pub's pictures</a> (14 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/50412/">Pub map</a><br /><a href="/pubreviews/50412/">Pub reviews (5)</a><br /><a href="/pubpictures/50412/">Pub pictures (15)</a><br /><a href="/core/pubaudit.php?id=50412" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Marine Hotel, Stonehaven Central, Stonehaven</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Shore Head</span><br />
+
+
+<span class="town">Stonehaven</span><br />
+<span class="postcode">AB39 2JY</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01569762155</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/stonehaven-central/grampian/">Stonehaven Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Marine Hotel  <span class="h2note">(Average Rating: <span id="averagerating"><b>9&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review138525" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about Marine Hotel</h6>
+<p>Harbour-side pub / restaurant with quite a plain fa&ccedil;ade but inside it has a traditional bar an a very attractive larger room off to the side.  As a Six&deg;North outlet, the elongated hooped fount for the 14 craft keg taps offers a modern touch, but the six handpumps are a welcome sight.  I went for the brewery&#039;s Chopper stout (&pound;3.50), but there was a good range of guest beers from Fyne Ales, Williams Bros, Orkney, Summer Wine and a Gypsy Hill / Boxcar collaboration.  Also has some benches out front for when the sun is shinning, and overall this is an excellent place for a pint and you can easily see how it won all the Camra awards on display.</p>
+<p class="Reviewer">On 22<sup>nd</sup> April 2019 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review31995" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=RogerB">Roger Button</a> left this review about Marine Hotel</h6>
+<p class="old">Built in 1884, the Marine Hotel occupies a prime spot overlooking the picturesque harbour and of the 50 or so pubs I visited around the area over a 2 week period, this was probably my favourite.<br />
+<br />
+The carved heads on the partly whitewashed exterior alledgedly come from the nearby Dunotter Castle which itself is worth a visit. The pub has 2 entrances, one for the first floor restaurant (that with hindsight I would certainly have made use of) and the other for the bars. The interior is a bit smaller than you would initially expect with the main bar being particularly cramped around the bar itself, one of the few criticisms I have of the place, and it was a bit tricky spotting what was available through the congregated bodies although the barman was quick to offer a guided tour of the pumps that I couldn&rsquo;t quite get a glimpse of. A collection of old pump clips are displayed on shallow shelving and various certificates endorse the pub&rsquo;s reputation. A large brewery mirror and a couple of flat screen TVs are also mounted in the main bar.<br />
+<br />
+The lounge bar (more of a term of convenience than a literal description) has quite a basic feel with solid exposed stone walls, tongue and grooved ceilings and a befitting harbouside theme with prominent lobster pots, fishing rods, netting and oars hanging from the rafters.<br />
+<br />
+The 6 ales available on my visit included 2 from Timothy Taylor (Landlord &amp; Golden Best), plus 4 local ales, Caledonian Deuchars, Houston Tartan Terror, Craigmill Summer Glow and Dunottar Ale, specially brewed for the pub by Inveralmond  Away from the ales there is an extensive selection of draught and bottled speciality beers and lagers as well as around 130 whiskies. Prices were far more reasonable than its close neighbour.<br />
+<br />
+There was a good mix of customers (and dogs) and a friendly atmosphere and despite being busy, a table was to hand. There are a few seats outside if the weather allows and it would be hard to tear yourself away from the harbour views. A highly recommended pub!</p>
+<p class="Reviewer">On 18<sup>th</sup> August 2010 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 1238 recommendations about 1232 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review17643" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=oldboots">Old Boots</a> left this review about Marine Hotel</h6>
+<p class="old">Old stone building on the harbour side next door but one to the Ship Inn for a short but high quality pub crawl. Two rooms with little in the way of a dividing wall, the bar counter is to the left with a good collection of changing ales from Inveralmond, Deeside, and Highland plus the mass market Deuchars and Yorkshire interloper Timmy Taylor&#039;s Landlord. Good quality European beers from De Konnick, Erdinger, Leffe, Hoegaarden plus two fruit beers, a framboise and a kreik, all on continental style fonts and served in appropriate glassware. British ales are served in lined glasses so don&#039;t be fooled into thinking you are getting a short measure.  Beer quality is generally good and I had no complaints about the service.  D&eacute;cor is tongue and groove in the bar and stone walled with fishing boat stuff in the area to the right, the furniture here is quite posh pine tables and chairs and is more of an eating area. There are also converted pews with integral lights! Customers in this part seemed to be a mix of middle aged local diners or outdoors type tourists, the atmosphere being a sort of posh bar that dresses down. The area by the bar counter seems to be mainly but not exclusively, the preserve of younger locals.<br />
+<br />
+</p>
+<p class="Reviewer">On 4<sup>th</sup> December 2009 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 1974 recommendations about 1855 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/50412/">View more reviews of The Marine Hotel (5)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Marine Hotel</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Marine Hotel, contains menus as well as beer, wine and whisky lists - <a href="http://www.marinehotelstonehaven.co.uk/" title="Submitted by:- hondo ." target="_blank">www.marinehotelstonehaven.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="730668897012611">Facebook - <a href="https://www.facebook.com/marinestonie/" target="_blank" rel="nofollow">The Marine Hotel</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/50412/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([56.95970000000000, -2.20421000000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([56.95970000000000, -2.20421000000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Stonehaven, 1.16 miles, 22 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Portlethen, 8.66 miles, 2 hr 47 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Laurencekirk, 14.38 miles, 4 hr 37 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('c}szIhomLMbAu@n@y@BOx@k@rAk@|@e@\\QIi@nBGb@Ex@wAHqAjG_BvLMIa@@@nDNh`@KFaCB?jBO`NU`A]lAOxA?jEBfAJxAr@|CkD~EgAtA_Af@QBeCCAh@iBq@KQg@`A', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('c}szIhomLD_@c@AgA_@UQm@}@YSQDIzAc@_Ay@uAGrKK^Q`@kApB]f@a@x@w@z@YDYE}@FuARqIV}GkAc@Tu@a@Di@wA_@{ByA_DkD}BcD_BsBkCeDk@qCaEnEEbC_@cB@s@q@oFw@gDWm@OHo@}AiA{AeGgEoC}CqCqF_DqJg@cAa@a@sBs@{AiA_Ac@iFeBi@K}BQc@KMIYe@Y}@uAmGmBaE_BaDqAeD_ByEaCkIk@iAg@m@k@_@o@Ys@KqBLwFE}A[cDkA_AE}Ci@Cd@gN{BQj@{@L]?yBmA_DGEgCuEq@oBc@{Bq@aFoBsEmCyCuBuBiBqBcCyC{CsAiAeRkRiA}@eAm@qAm@w@U{Ca@gBCqAF{@LiB^EHcALa@TK?kBd@cAL}@Do@EiAU{@_@q@e@i@u@WQY_@{@iBw@wBuCqKm@{A}@sB}@sAsAmA}CoAwAG}JT_F[oNeBkEo@sA]c@U_ACoBWqJ{BmGeCmCeCcFiGeEiIeDcHyBuFcBsEmC}GwCyGuEmFcCqBgGgB{F^aNhA}G}@kC{@uDeBqGgDgNoGwB{@{Bi@oCKmCDmAw\\@eAJkAvAaLHa@HAkJuGD_@DkAAiAGYKSEc@Se@{@i@a@lAMN?HUNkAcI_An@UuAQu@Qc@e@w@SSYSm@SFuCAm@CWMe@]]cBmASM_AWy@cAaA{@sAcA]Cg@VMs@Ok@UWmAaAKYD[Ms@c@[VuAIWKW{EgEs@_AQ@OQc@Uu@i@MHeA_ACSY{@USGSIMQGMOEWYUKFS@e@[UBAd@U~Ak@{A@EoDuC', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('c}szIhomLMbAu@n@y@BOx@Zz@Jp@Wn@Nr@E^DJ_CtGYzAJh@A|@_AxWh@ZDFL~AHt@FTl@rASRiBi@El@b@JbAt@Vh@F@HTCXCFNvARb@Rp@GZNn@\\r@t@bAf@`@f@j@f@x@~ArBh@ZX^^\\pA`CRv@^Zd@VZb@Rp@VHXMXE`@Vb@d@RDf@b@bAn@J^h@fAH@Zp@JEHFN^VVh@x@TTL@MXBpBLfA`@dBN`@nApBN^FAHP@f@Nv@`@fAr@l@`@I`AZMb@j@LdALdA@r@Fz@YZEv@DJBj@s@RENFZXJOOgDB]|CbD}ArGCbB@h@Hh@^hCXxA\\hA^bAf@hA^t@|AfCx@bARf@lBlBfB~BI`@tBjDz@bB~@vBr@pBfDxKdS~r@nHh[`Mnk@hFbX|P`nA|B~UbBhRbAvGvAfInCtIhL~[~BvHz@vD`Nls@d@~Cr@fGnAlMj@dF^|B`@|BrAxFp@`CjAnDlJzTlBdFpA`EtBvIjBzIzLnp@zDzMzC~HrFhKzHlNvD~IiAbCFTv@u@LJFl@P@P\\~@pDLnAp@|LLfFThGfBl_@\\jD^bCb@dEBj@ApAh@a@Fh@lAlHz@dEfAbE|FtPpDpJ|`@xgAtGlQtHbQjErIn@vApHvLdGzHjF`Hbf@~j@`Yx\\zAxBtDdGlGpMhCzE~BjDpBlCxChD~DhDhBtApFbDzBzAnCxBhEhE`FrGzd@vn@fAlB~AtCrAnCvAfDt@pBvExM|Lf\\zBlGzNz_@dBdDrEzHhUtUxNfNtC`CjFnDjBhApCzAhCnAnMhFJVDRCnBItAH~@nCdGpAxDtC`J~CtIbOtVjKrQx@fBM`@e@|CWv@eCbCuEbEiAqE?c@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([56.95970000000000,-2.20421000000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=50412">View all updates for The Marine Hotel, Stonehaven</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        22<span class="sup">nd</span> Apr 2019, 10:00
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        21<span class="sup">st</span> Apr 2019, 22:30
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Dog Friendly : <span id="fac10550412">Yes</span> <span id="discdetail10550412" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 August 2010 by Quinno _</span></li><li>Hot Food : <span id="fac10350412">Yes</span> <span id="discdetail10350412" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Real Ale : <span id="fac10150412">Yes</span> <span id="discdetail10150412" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 August 2010 by hondo .</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11am - Midnight</td></tr>
+<tr><td>Monday</td><td>11am - Midnight</td></tr>
+<tr><td>Tuesday</td><td>11am - Midnight</td></tr>
+<tr><td>Wednesday</td><td>11am - Midnight</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>11am - Midnight</td></tr>
+<tr><td>Friday</td><td>11am - 1am</td></tr>
+<tr><td>Saturday</td><td>11am - 1am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 3 reviewer(s)" title="Pub has average rating of 7.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/50415/" class="List1">Ship Inn</a></li>
+                    <li><img src="/images/icon-photo-grey.gif" alt="Pub has no pictures" title="Pub has no pictures" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/50420/" class="List1">The White Heather Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/70123/" class="List1">Queens Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/50411/" class="List1">The Hook &amp; Eye</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/50414/" class="List1">Number 44</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62608/" class="List1">The Market Bar</a></li>
+                    <li><img src="/images/icon-photo-grey.gif" alt="Pub has no pictures" title="Pub has no pictures" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62607/" class="List1">Dexter&#039;s Lounge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/50417/" class="List1">Trouper&#039;s</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

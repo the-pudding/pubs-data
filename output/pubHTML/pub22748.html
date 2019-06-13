@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Warwick Castle pub in W9, London (Central), W9 2PX : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Warwick Castle" />
+  <meta name="keywords" content="Warwick Castle, 6  Warwick Place, W9, London (Central), Little Venice, Maida Vale, Warwick Avenue, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Warwick Castle in W9" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/22501_23000/22748_60eb5f33.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/22748/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.52202222208249" />
+<meta property="og:longitude" content="-0.18385469913483" />
+<meta property="og:street-address" content="6  Warwick Place" />
+<meta property="og:locality" content="W9" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="W9 2PX" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Warwick Castle in W9? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Warwick Castle the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/22748/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Warwick Castle in W9" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Warwick Castle " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/22501_23000/22748_60eb5f33.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/22748/" />
+<meta name="geo.position" content="51.52202222208249;-0.18385469913483" />
+<meta name="geo.placename" content="Warwick Castle in W9" />
+<meta name="geo.region" content="UK" />
+<title>Warwick Castle in W9 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":22748},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(22748);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 22748;var pubaddress = "6  Warwick Place";var pubname = "Warwick Castle";var pubpostcode = "W9 2PX";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/w9/central-london/" title="Pubs Galore : W9 Page">W9</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Warwick Castle Page">Warwick Castle Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="kt4pukdd7dc9b8salfein28rq6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/22748/" class="indisplay"><img src="/images/display/22501_23000/22748_60eb5f33.jpg?w=2" alt="Picture of Warwick Castle" /></a><br />  Image posted by <a href="/userinfo.php?name=Arthurish" class="indisplay">Philip Carter</a><br />
+  Submitted on Saturday, 3<sup>rd</sup> September 2016<br />
+  With picture contributions to 1097 other pubs<br />
+<a href="/pubpictures/22748/" class="smallbutton">View all this pub's pictures</a> (4 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/22748/">Pub map</a><br /><a href="/pubreviews/22748/">Pub reviews (10)</a><br /><a href="/pubpictures/22748/">Pub pictures (5)</a><br /><a href="/core/pubaudit.php?id=22748" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Warwick Castle, W9</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">6  Warwick Place</span><br />
+
+
+<span class="town">W9</span><br />
+<span class="postcode">W9 2PX</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02072660921</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Metropolitan Pub Co (Greene King)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/little-venice/central-london/">Little Venice</a>, <a href="/areas/maida-vale/central-london/">Maida Vale</a>, <a href="/areas/warwick-avenue/central-london/">Warwick Avenue</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by Warwick Castle</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/WarwickCastleW9" target="_blank"><img src="https://pbs.twimg.com/profile_images/767689294001664001/gLynkiis_normal.jpg" alt="Warwick Castle Pub" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/WarwickCastleW9" target="_blank">Warwick Castle Pub</a></strong>
+Lemon and sugar all the way#pancaketuesday <a href='https://t.co/nzmsQz00Aj' target='_blank'>https://t.co/nzmsQz00Aj</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/WarwickCastleW9/status/963410430428401664">1:52 PM Feb 13th 2018</a> from <a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/WarwickCastleW9" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/WarwickCastleW9" target="_blank">Warwick Castle Pub</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Warwick Castle  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review138429" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> left this review about Warwick Castle</h6>
+<p>A Grade II-listed hostelry on CAMRA&#039;s London Regional Inventory of Pub Interiors, this is indeed a small and pretty former Charrington&rsquo;s pub, dating from the mid-19th century and rebuilt in 1867 in this attractive open mews, just a stone&rsquo;s throw from Little Venice&rsquo;s Grand Union Canal, presided over by a very friendly Northern Irish landlady.<br />
+On approach, one cannot but notice the oversized hanging lantern looming over the frontage. There is some limited table seating to the pavement which appears to be part of the pub&rsquo;s curtilage; there are two entrances, both with small lobbies, to what must once have been the public and private bars.<br />
+The central entrance gives way to a left-hand wainscoted room without bar but with a gas effect coal fire and simple dark wood furniture and a TV which sees little action. To the wall is a large sepia photograph in tiles of nearby Warwick Avenue as it was in yesteryear.<br />
+The right-hand entrance however, leads into a small vestibule with polychromatic tiling to the floor and a good display of leaded stained glass. The floor is modern bare boarded and wearing well. Three-quarter height, partly bare and partly pale grey painted tongue and groove panelling lines the walls up to the picture rail. The remaining wall height is textured and there&rsquo;s also a patterned ceiling, possibly Anaglypta, which jars somewhat with the ugly white - and completely unnecessary - office ceiling fan. The hanging lights do though have attractive glass shades. This barroom also benefits from a real log fire and d&eacute;cor which comprises a rustic long case clock to the wall, a Bass mirror and some prints illuminated with brass picture lights. Further embelishment includes two recent wall mounted autographed photos of Brad Pitt and Marion Cotillard due to Allied being filmed inside and out, the pub doubling as the Rose &amp; Cown. Entertainment includes the occasional bout of TV sport, irregular live keyboard music and a Wednesday quiz. There are also board games for the bored; background music plays but it&rsquo;s at an acceptable level, except when the Spanish [Inquisition] guitar music comes on.<br />
+The small, staple-shaped bar is an attractive all-wood affair: a jettied upper tier supported by faux corbels with carved scrollwork, Tudor rose bosses and deep field panelling. At the base, there&rsquo;s a three-piece brass footrail. The bar top features several circular brass blanking plates, but these are here to cover the holes vacated by the former &ndash; probably original &ndash; beer engines. The bar back too is worth a look as it&rsquo;s fairly ornate with some etched mirrorwork. What also appears to be etched are the picture windows with their very dinky stained, leaded side infill. Unfortunately, the patina is derived from stick-on transfers, probably to make them shatterproof.<br />
+Furniture is very conventional and solid though there are stools to the bar so that people can block it and one window bench is clad in extremely tatty green vinyl. The lavatories are very small indeed though there&rsquo;s nothing much the pub can do about that. It could though spend a little money to make them just a bit more inviting.<br />
+The crowd in here is drawn from across the spectrum, making for a very good mix.<br />
+There&rsquo;s food of the &lsquo;posh&rsquo; burgers, fish &lsquo;n&rsquo; chips and the like school of pub grub, along with a &lsquo;famous sausage board&rsquo;.<br />
+Very friendly service pulls the following ales: Greene King IPA, Sharp&rsquo;s Cornish Coaster, Truman&rsquo;s Swift and Sambrook&rsquo;s Wandle at a very reasonable &pound;4.10 a pint and perfectly serviceable.<br />
+All in, this is a very attractive pub where I could easily spend an evening when it&rsquo;s not too full, and there aren&rsquo;t dogs underfoot, but a little money spent, and a more adventurous choice of ales would raise the mark a notch. That said, this is certainly a must-visit if in W9 and makes for a great threesome combined with the Prince Alfred and Warrington.</p>
+<p class="Reviewer">On 17<sup>th</sup> April 2019 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 873 recommendations about 860 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review117464" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=%2Fian.mapp">Ian Mapp</a> left this review about Warwick Castle</h6>
+<p class="old">Going through an exterior make over at the moment.... all scaffolded up.<br />
+<br />
+Still open and interior as I remember it.  All wood paneling, big Bass mirrors and an ornate fireplace.<br />
+<br />
+Getting to the bar a challenge.  Which is a good thing to say, as means its popular.<br />
+<br />
+Trumans Swift was pretty average condition on latest visit.<br />
+<br />
+Blogged visit at http://bit.ly/2oErY9B</p>
+<p class="Reviewer">On 28<sup>th</sup> April 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 276 recommendations about 275 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review87888" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about Warwick Castle</h6>
+<p class="old">Tucked away down a pleasant little mews style side street, handy for both Warwick Avenue tube station and Little Venice, this is a smart, two room, Grade II listed pub. On approach you can&#039;t fail to miss the marvellous Victorian lamp with its huge elaborate bracket, and as you enter, you pass through an attractive lobby with a nice mosaic floor. You emerge into the right hand side of the pub with the servery along the left hand wall. There is a lot of nice dark wood in this room, notably on the bar counter and back, as well as the tongue and groove panels on the opposite wall. The front windows have some fine etched glass and a few nice stained panes, with a limited amount of seating underneath allowing you a closer look. Standard tables and chairs run down the right hand wall, passing a nice period fireplace and old pendulum clock as they go. A frieze runs around the top of the wall,s which have been decorated with a mix of old and more contemporary paintings plus the odd brewery mirror, whilst the ceiling is very decorative itself. A rear space, partly hidden behind a section of partitioning wall, has a couple more tables and modern wallpaper. To the left of the bar, there is a small lounge with limited seating around four or five tables in a compact, smart wood panelled room with a lovely, detailed fireplace. Music played unobtrusively throughout my stay and there was a good buzz from the locals who were in on my Sunday afternoon visit, despite many of them migrating out to the pavement at the front of the pub.<br />
+There were four ales available on this visit - Sambrooks Wandle, Sharps Doom Bar, Greene King IPA and Truman&#039;s Swift (&pound;3.70). I gave the latter a try and thought it was a perfectly passable pint served up by a friendly barman who was very patient dealing with a dithering group of tourists.<br />
+I found this place very relaxing and spent longer than I&#039;d intended supping my pint and reading my paper. It has a fine interior that perhaps gets overlooked when compared to some of Maida Vale&#039;s more ornate pubs, and offers good beer and a friendly welcome to boot. I&#039;d certainly be happy to make a return visit.</p>
+<p class="Reviewer">On 9<sup>th</sup> October 2014 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/22748/">View more reviews of Warwick Castle (10)</a>
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=1160">A stroll around the heritage interiors of W9</a> by <a rel="nofollow" href="/userinfo.php?name=Gann">Steve of N21</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Warwick Castle</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Warwick Castle, includes menu and wine list - <a href="http://www.capitalpubcompany.com/the-warwick-castle/" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">www.capitalpubcompany.com</a></li>
+			<li>Randomness Guide to London - <a href="http://london.randomness.org.uk/wiki.cgi?Warwick_Castle,_W9_2PX" title="Submitted by:- Kake Pugh" target="_blank">Warwick Castle entry</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="109143472446702">Facebook - <a href="https://www.facebook.com/WarwickCastleW9/" target="_blank" rel="nofollow">The Warwick Castle</a></li></ul><ul id="Custom2"><li class="twitlink" id="625626677">Twitter - <a href="https://twitter.com/WarwickCastleW9" target="_blank" rel="nofollow">Warwick Castle Pub</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/22748/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Strongers">Steve C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.52202222208249, -0.18385469913483], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.52202222208249, -0.18385469913483]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> London Paddington, 0.56 miles, 10 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> London Marylebone, 1.08 miles, 20 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Kilburn High Road, 1.42 miles, 27 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('_{myHl{b@`ApBd@mBFCt@f@@YFULcABwGAy@Bo@Hu@`@u@PGh@q@pDgFfBkDhAgBL\\^PDSr@yAl@nAL@DAXl@NYlBwC', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('_{myHl{b@o@eB}@aBv@}AVw@BQ|C}EZk@CE@QBIhAoBDUbAqBJYDc@EQLi@BwMH?LkQGQMCED_@kAGa@?s@[yBSg@K_@O[HIBWEIlAaBmB{GgAmEuDuQvAu@y@mESLYsD', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('_{myHl{b@o@eBqAaCcDpF_@ReA|@YBDd@Hb@sBpCOX}C`Fq@|@_CrDcFtN?V_@hAHTORKYcDpFKSAGE?eC}Bg@UKCoABgAGs@Ku@QUBoB`@MHEGQEKBCJe@]OCWFAGGMI@ONm@|@_@v@Yb@EXkEvEsBxBUPGAuIyFWU_Ai@UIG@w@z@o@wBE@o@uB', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.52202222208249,-0.18385469913483], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=22748">View all updates for Warwick Castle, W9</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        17<span class="sup">th</span> Apr 2019, 20:05
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> amended by <a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        17<span class="sup">th</span> Apr 2019, 20:04
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> amended by <a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11822748">No</span> <span id="discdetail11822748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 October 2014 by Quinno _</span></li><li>Bar Billiards : <span id="fac10722748">No</span> <span id="discdetail10722748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 August 2013 by Quinno _</span></li><li>Beer Festivals : <span id="fac11722748">No</span> <span id="discdetail11722748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 September 2015 by Tris C</span></li><li>Beer Garden : <span id="fac11422748">No</span> <span id="discdetail11422748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 October 2014 by Pub SignMan</span></li><li>CAMRA Discount : <span id="fac10222748">No</span> <span id="discdetail10222748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 October 2014 by Quinno _</span></li><li>Car Park : <span id="fac11322748">No</span> <span id="discdetail11322748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 August 2013 by Quinno _</span></li><li>Child Friendly : <span id="fac12122748">Yes</span> <span id="discdetail12122748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 August 2015 by Tris C</span></li><li>Darts : <span id="fac11122748">No</span> <span id="discdetail11122748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 October 2014 by Pub SignMan</span></li><li>Dog Friendly : <span id="fac10522748">Yes</span> <span id="discdetail10522748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 October 2014 by Pub SignMan</span></li><li>Function Room : <span id="fac12322748">Yes</span> <span id="discdetail12322748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 October 2015 by Tris C</span></li><li>Hot Food : <span id="fac10322748">Yes</span> <span id="discdetail10322748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 October 2014 by Quinno _</span></li><li>Jukebox : <span id="fac11222748">No</span> <span id="discdetail11222748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 October 2014 by Pub SignMan</span></li><li>Karaoke : <span id="fac10622748">No</span> <span id="discdetail10622748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 October 2014 by Quinno _</span></li><li>Live Music : <span id="fac10822748">Yes</span>  - <span id="discdetail10822748" class="discdetail" style="">Occasionally.</span> -   <span class="Reviewer">last updated 20 February 2017 by Tris C</span></li><li>Live TV Sports : <span id="fac11022748">Yes</span>  - <span id="discdetail11022748" class="discdetail" style="">Selected events.</span> -   <span class="Reviewer">last updated 20 February 2017 by Tris C</span></li><li>Micropub : <span id="fac12222748">No</span> <span id="discdetail12222748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 April 2015 by Tris C</span></li><li>Pinball : <span id="fac11622748">No</span> <span id="discdetail11622748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 October 2014 by Quinno _</span></li><li>Pool Table : <span id="fac10422748">No</span> <span id="discdetail10422748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 October 2014 by Quinno _</span></li><li>Quiz Night : <span id="fac10922748">Yes</span>  - <span id="discdetail10922748" class="discdetail" style="">Wednesdays.</span> -   <span class="Reviewer">last updated 06 April 2015 by Tris C</span></li><li>Real Ale : <span id="fac10122748">Yes</span> <span id="discdetail10122748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 October 2014 by Quinno _</span></li><li>Real Cider : <span id="fac11922748">No</span> <span id="discdetail11922748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 October 2014 by Pub SignMan</span></li><li>Wheelchair Access : <span id="fac12022748">No</span> <span id="discdetail12022748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 April 2015 by Tris C</span></li><li>WiFi : <span id="fac11522748">Yes</span> <span id="discdetail11522748" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 April 2015 by Tris C</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3.5 from 4 reviewer(s)" title="Pub has average rating of 3.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54685/" class="List1">Bridge House</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 26 picture(s)" title="Pub has 26 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 11 reviewer(s)" title="Pub has average rating of 7.5 from 11 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22729/" class="List1">The Prince Alfred</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85778/" class="List1">Real Ale</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 1 from 1 reviewer(s)" title="Pub has average rating of 1 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85945/" class="List1">Pergola</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 6 reviewer(s)" title="Pub has average rating of 4 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22740/" class="List1">The Waterway</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/75738/" class="List1">The Union</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 26 picture(s)" title="Pub has 26 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 10 reviewer(s)" title="Pub has average rating of 7.5 from 10 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22747/" class="List1">The Warrington Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 6 reviewer(s)" title="Pub has average rating of 5.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22745/" class="List1">The Hero of Maida</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

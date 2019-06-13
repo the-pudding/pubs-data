@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Fat Fox Inn pub in Watlington, Oxfordshire, OX49 5BU : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Fat Fox Inn" />
+  <meta name="keywords" content="The Fat Fox Inn, 13  Shirburn Street, Watlington, Oxfordshire, Watlington Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Fat Fox Inn in Watlington" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/31501_32000/31912_ce04fd45.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/31912/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.64563691151205" />
+<meta property="og:longitude" content="-1.00364506244659" />
+<meta property="og:street-address" content="13  Shirburn Street" />
+<meta property="og:locality" content="Watlington" />
+<meta property="og:region" content="Oxfordshire" />
+<meta property="og:postal-code" content="OX49 5BU" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Fat Fox Inn in Watlington? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Fat Fox Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/31912/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Fat Fox Inn in Watlington" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Fat Fox Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/31501_32000/31912_ce04fd45.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/31912/" />
+<meta name="geo.position" content="51.64563691151205;-1.00364506244659" />
+<meta name="geo.placename" content="The Fat Fox Inn in Watlington" />
+<meta name="geo.region" content="UK" />
+<title>The Fat Fox Inn in Watlington : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":31912},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(31912);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 31912;var pubaddress = "13  Shirburn Street";var pubname = "The Fat Fox Inn";var pubpostcode = "OX49 5BU";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/oxfordshire/" title="Pubs Galore : Oxfordshire Page">Oxfordshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/watlington/oxfordshire/" title="Pubs Galore : Watlington Page">Watlington</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Fat Fox Inn Page">The Fat Fox Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="pnidv03gdd4djup70hqs6imu62" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/31912/" class="indisplay"><img src="/images/display/31501_32000/31912_ce04fd45.jpg?w=2" alt="Picture of The Fat Fox Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=sheffield+hatter" class="indisplay">Will Larter</a><br />
+  Submitted on Monday, 7<sup>th</sup> May 2012<br />
+  With picture contributions to 8564 other pubs<br />
+<a href="/pubpictures/31912/" class="smallbutton">View all this pub's pictures</a> (2 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/31912/">Pub map</a><br /><a href="/pubreviews/31912/">Pub reviews (2)</a><br /><a href="/pubpictures/31912/">Pub pictures (3)</a><br /><a href="/core/pubaudit.php?id=31912" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Fat Fox Inn, Watlington Town, Watlington</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">13  Shirburn Street</span><br />
+
+
+<span class="town">Watlington</span><br />
+<span class="postcode">OX49 5BU</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01491613040</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/watlington-town/oxfordshire/">Watlington Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Fat Fox Inn</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/FatFox_Inn" target="_blank"><img src="https://pbs.twimg.com/profile_images/930818873800249344/nhzL5xDH_normal.jpg" alt="The Fat Fox Inn" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/FatFox_Inn" target="_blank">The Fat Fox Inn</a></strong>
+Join us at the Fat Fox Inn this Mothers Day&amp;lt;3
+Spoil your Mum with a delightful meal and Mum&#039;s get a free glass of P&hellip; <a href='https://t.co/KU0XwwWKmM' target='_blank'>https://t.co/KU0XwwWKmM</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/FatFox_Inn/status/970662539800530944">2:09 PM Mar 5th 2018</a> from <a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/FatFox_Inn" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/FatFox_Inn" target="_blank">The Fat Fox Inn</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Fat Fox Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>6</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review118804" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Komakino">Komakino .</a> left this review about The Fat Fox Inn</h6>
+<p class="old">An inn for the well-heeled - now the only pub on the B4009 which runs through the village when there used to be several. Brakspear Bitter and Oxford Gold the only options from four handpumps (one unclipped, one with Marstons 61 Deep reversed). This is a nice spot, and the food is good - there&#039;s also a drawing room-type area through a set of doors to the left they open up if busy. Not necessarily my cup of tea, but it still operates as a pub and with three left in the town, it still needs this option.</p>
+<p class="Reviewer">On 5<sup>th</sup> June 2017 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 940 recommendations about 940 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review95881" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Mappiman">Ian Mapp</a> left this review about The Fat Fox Inn</h6>
+<p class="old">Used it as a B&amp;B whilst walking the Ridgeway.<br />
+<br />
+Excellent food - they had a French Themed night on the day we were there and the breakfast was also superb.<br />
+<br />
+Busy on a Friday night, with foodies and drinkers outside. I had one pint of Brakspear with my meal, but wasn&#039;t feeling the love, so moved to Kronenbourg to match the mood.</p>
+<p class="Reviewer">On 7<sup>th</sup> June 2015 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 517 recommendations about 512 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Fat Fox Inn</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="114156932081349">Facebook - <a href="https://www.facebook.com/thefatfoxinn/" target="_blank" rel="nofollow">The Fat Fox</a></li></ul><ul id="Custom2"><li class="twitlink" id="3030368396">Twitter - <a href="https://twitter.com/FatFox_Inn" target="_blank" rel="nofollow">The Fat Fox Inn</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/31912/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=sheffield+hatter">Will Larter</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.64563691151205, -1.00364506244659], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.64563691151205, -1.00364506244659]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Saunderton, 9.83 miles, 3 hr 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Cholsey, 9.86 miles, 3 hr 10 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Princes Risborough, 9.96 miles, 3 hr 12 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('s`fzHh_cEJWqE{E}ImHwNoNtE{RvEiP|DsMnAkDpCaHpHoOdKmTZi@jBiCVe@aFwFaByBeAy@]}@Oo@?e@k@yBMaAWGCcBYiAsAiDqAaFOw@Bo@Nc@t@sDIy@gAoBk@wAoAqBoA@mAo@}Ae@}As@_A_AmA{Am@iE@s@oAaB]eAiAyEgAkF_AuGo@cDa@yF?uAIeAEyBIcAyAgLkA}NSYDIeA_A[oBg@Wm@iAo@eA}@c@@aBU_FRWXqBx@eCHwCOiC[}Aq@aEAyAo@oFOyCBkBQeCN{@Bi@E_B@eBDkBNmBDiGTgIL_NJeDBmDeBQIeDK{@Ya@m@e@gAiAMq@s@u@cAQWUc@YOWUIAc@S]k@a@MiAI[Ei@GmBEgJiCyScJ_UQi@A}AU_IIyAO}Ae@kBIw@Do@j@sBReA\\iDPkAx@mC^}AaBwBl@cG?SSoA?SXeARoBN}@sCmBEVIEN_AOoC?[XwE@o@IqADsBEOKQq@[WWEUGqAGWMGi@OTgBgAe@]EQIF{@EgCGUGH_@y@QmAScBK_@O[SUUMqAKUu@QgAaAaC_EqKCAE]GKB[gAy@cCwF_AeBQkEIiEEmBDgAUECiISaRKa@cCsP@a@EUcDsHmDcH_@_Am@cMKc@Ge@?gAHiCFcAd@sFHy@ViBFw@FoCNcDHsB@{EGmC[aGm@wGM}@Su@mDoKa@eBi@eDK{@GmAFOHk@?w@B[IM{AwKGu@wKaEw@u@wAqDmBaGcA_AmBgCgCwF}DsGAQrCkEg@cA}@sEHmDmB_FWeD_HwKeG{N{@{AxFoK}@oBoEwIrBeF|A{ChByCtCkC~LeMNIP_U@g@LG?ORkA@qAMmBKqCQcBu@sDCc@uDfFM[Zc@BFLQQe@MRBHw@dA', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('s`fzHh_cEJWn@p@d@n@\\j@HR@JQxAs@bDeAhIGB_CnEe@v@YRERjDvJvAvBnAlA?rAHlBDb@H`@t@tBh@jAn@~@h@l@l@j@xCzAzAdAbA`Ax@hA`@z@|@vB|@jC^nA\\|@jA~BdChEbAhArCzBhAtAn@bAj@tAr@`Db@hB|@`C|@zAjA`B|BpCfAlD`@pEf@vDz@|EhBxINd@Td@jD_Ch@Sn@Or@GfACb@KLOn@YZCr@FbBd@^D~AIf@Tb@Dh@QpAeAr@aAP]zIbF|ALPDbAfAlDzExBvDxBlDP^Jb@z@vArH~KvNbSXb@FVtC~DdCxC`F`D~Af@FzAPnUDzAFv@Jp@zHvY`AlCzAfDt@pAzAtBdBbD^|@P|@VjB`BhGP~@JfA?h@GbAOzAKhACz@?z@NzBLj@Nj@Zj@pB~BRd@Tz@XbBtBvEd@lA`A~CbBfGzMz]Hf@ApAx@j@e@vB`C`ChAvA~@pANZFV@d@CxCBbAFdATzB`AhHHfAV~FFdAN~Af@dE`AbKJ|ALvCHtAvAlNb@fF@t@EhF@n@JbB^tE~@lO~@hUHb@JXZ|KNnBUpC[|CQzAIlAB~@L~AJfBBlBArBGxA[bFtBdAwClRHNVLrEjB`DlAVB~@Gr@PZTFa@\\XNv@FNxBr@zBhAYvDxA\\D`@hElLrIlBlCDfADp@K`AFj@?\\a@dAtAd@b@f@PpDj@bFjAhCZ^FFFFrAVRZpHr@jLb@|D~@fFZdCHdAB~@MnESDIJGT?P@RNVm@bAe@bAFJF\\CVF`@Rt@|]xs@za@~z@v@hBJb@BbBLz@f@xBz@|BbCdFJZPHb@fBTJHAnBg@NQl@r@bDnC`@f@p@hAfAvAdAhAZT~@`@zIxC?t@FRA^Lt@p@`BFK@BBGCEj@{@CGaAxA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('s`fzHh_cEJWqE{E}ImHwNoNtE{RvEiP|DsMnAkDpCaHpHoOwBcDiAwByAqAsBmAcDiFs@yAuDcFyFeIw@w@_AqAg@_A}BsDo@}@}DoDmCgBoAyA_@q@eA_DWeA{CgIuCiGgC}Fo@iBgBuDg@i@s@e@}BkBwEoEsFqEsJeJoCcCsEaFkDoE{AcCsBcB}DyDcEoDmCyCcBaBgEcBaBiA_AmAy@sBcCoQc@cGaBcCq@aCuC_GaAsEi@qCeAaHqBuGqBcFiCwHeFwPaCqGoB_EyAqBqAoCaDwIgAuEoAeGaAcE}AcGcDyNuAcIwAaHm@cBkAuBgAkCaA{CaByEw@oAUw@_@oBYy@_AaAKk@gBmE]iAe@qBi@wDMg@O_@i@aAe\\_i@mOgVwMmUlAcCj@[^IMk@_@_AkC}CgEwDyBoC{AaBy@eA@IUe@AMI?s@Wq@K[_AmE_J_BqDkAqD_D{G]eAtAgCNgA?_Cg@}Bu@eBo@}B[mBYuDF_Bd@_B|AgCr@oBEeBWcDDyCz@cCn@kGJoCGkCm@cK`@cMGaBq@}CEs@@{CHeCRq@BiA?}B_@}DC}@DuDCkCNaEAu@S}CyDys@yCzDo@bAeApBMLMDSEMKgAsAe@UsCeAyCwBiCuBqAkAiByBc@_@qCuAiCeAKSEYQeCUiA_AiDwAcGuAcF]y@]m@m@_@s@YIK?ON}ACMGH_Dw@uB[]KsA}@e@Qg@GiB?mAN}@ZIXq@A?d@N?', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.64563691151205,-1.00364506244659], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=31912">View all updates for The Fat Fox Inn, Watlington</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        5<span class="sup">th</span> Jun 2017, 20:07
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Komakino">Komakino .</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        7<span class="sup">th</span> Jun 2015, 11:40
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Mappiman">Ian Mapp</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Real Ale : <span id="fac10131912">Yes</span> <span id="discdetail10131912" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 May 2014 by Dave McNally</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11:30am - 11:30pm</td></tr>
+<tr><td>Saturday</td><td>11:30am - 11:30pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31910/" class="List1">The Carriers Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83848/" class="List1">The Chequers</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

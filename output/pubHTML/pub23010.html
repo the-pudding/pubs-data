@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Silver Cross pub in SW1, London (Central), SW1A 2BX : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Silver Cross" />
+  <meta name="keywords" content="Silver Cross, 33  Whitehall, SW1, London (Central), Westminster, Whitehall, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Silver Cross in SW1" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/23001_23500/23010_24dc62ce.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/23010/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.50657887273498" />
+<meta property="og:longitude" content="-0.12707233428955" />
+<meta property="og:street-address" content="33  Whitehall" />
+<meta property="og:locality" content="SW1" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="SW1A 2BX" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Silver Cross in SW1? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Silver Cross the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/23010/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Silver Cross in SW1" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Silver Cross " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/23001_23500/23010_24dc62ce.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/23010/" />
+<meta name="geo.position" content="51.50657887273498;-0.12707233428955" />
+<meta name="geo.placename" content="Silver Cross in SW1" />
+<meta name="geo.region" content="UK" />
+<title>Silver Cross in SW1 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":23010},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(23010);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 23010;var pubaddress = "33  Whitehall";var pubname = "Silver Cross";var pubpostcode = "SW1A 2BX";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/SW1/central-london/" title="Pubs Galore : SW1 Page">SW1</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Silver Cross Page">Silver Cross Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="0lba2c72kgif819lphuio1srt6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/23010/" class="indisplay"><img src="/images/display/23001_23500/23010_24dc62ce.jpg?w=2" alt="Picture of Silver Cross" /></a><br />  Image posted by <a href="/userinfo.php?name=barty" class="indisplay">ALASTAIR BARTER</a><br />
+  Submitted on Sunday, 26<sup>th</sup> April 2015<br />
+  With picture contributions to 1638 other pubs<br />
+<a href="/pubpictures/23010/" class="smallbutton">View all this pub's pictures</a> (25 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/23010/">Pub map</a><br /><a href="/pubreviews/23010/">Pub reviews (7)</a><br /><a href="/pubpictures/23010/">Pub pictures (26)</a><br /><a href="/core/pubaudit.php?id=23010" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Silver Cross, SW1</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">33  Whitehall</span><br />
+
+
+<span class="town">SW1</span><br />
+<span class="postcode">SW1A 2BX</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Taylor Walker (Spirit Pubs)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/westminster/central-london/">Westminster</a>, <a href="/areas/whitehall/central-london/">Whitehall</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Silver Cross  <span class="h2note">(Average Rating: <span id="averagerating"><b>6</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review128392" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about Silver Cross</h6>
+<p class="old">Rather characterless &#039;olde London&#039; Greene King (ex-Taylor Walker) pub aimed squarely at the Trafalgar Square tourist market (successfully I guess, given that it is usually pretty busy).  The main bar area is quite large, but avoids a cavernous feel by being sub-divided into quite a few separate seating areas (with most being up a couple of steps from those sections nearer the two main doors).  There is also a substantial downstairs bar accessed by steps at either end, although this is often closed for private parties.  Even though only five of the eight handpumps in two banks on the main counter were in use, at least Hammerton N1 and Sambrook&#039;s Powerhouse Porter (&pound;4.90) were available in addition to the IPA, Band of Brothers pale and seasonal Scrum Down on this visit.</p>
+<p class="Reviewer">On 21<sup>st</sup> April 2018 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review127179" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> left this review about Silver Cross</h6>
+<p class="old">Very large and historic pub serving a range of Greene King ales plus the occasional guest. The area by the main bar feels a little confined due to the low ceilings and pillars but it opens out more behind and there is also a large downstairs bar. To the side there is a slightly quieter stooled area with a nice room behind with a splendid vaulted ceiling, which can be reserved for private use. Lots of dark woodwork and traditional furnishings throughout.</p>
+<p class="Reviewer">On 13<sup>th</sup> March 2018 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1775 recommendations about 1734 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review99450" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about Silver Cross</h6>
+<p class="old">This large Taylor Walker pub at the Trafalgar Square end of Whitehall stands on the site of a former brothel that was reputedly favoured by members of the Royal Family, although the current building only dates back to the early 1900&#039;s. The layout is somewhat haphazard, perhaps reflecting previous extensions into adjacent properties. The servery is located fairly centrally, with a room to the right that is effectively behind the bar and very much feels like an afterthought. Entering into the lower level front seating area, you find the usual dark floorboards and high tables and stools in a dimly lit space with a smattering of black and white photos to enliven the otherwise plain walls. The servery appears a little further back in a similarly bare boarded space with an angular dark wood bar counter, above which hang some nice lamps, and a bar back with decorative pub mirrors. Opposite is a reasonably tidy carpeted area, perhaps the cosiest spot in the pub, where you can find a curved padded banquette in the rear corner under an elaborate mirror and modern wallpaper. The room opens out significantly beyond the bar, where lots of standard tables and chairs can be found and where the smell of food was prevalent. The pub&#039;s location means it&#039;s a magnet for tourist groups and right on cue a large group of Chinese tourists piled in just as I was leaving.<br />
+There were four ales available on this visit, but the handpulls are sited at opposite ends of the bar, so you&#039;ll have to walk the full length to make sure you don&#039;t miss out on something exciting. Options on this visit were Hamerton N1, Greene King London Glory, Truman Runner and West Berkshire Mr Chubbs. Three real ciders were also available as part of a festival that happened to be taking place across the Taylor Walker estate. I gave the N1 a try and thought it was pretty average, which is also a good description of the service.<br />
+This pub clearly has a fairly interesting history but remains remarkably devoid of character and charm. The beer range was something of a saving grace but this really isn&#039;t the sort of place you&#039;re likely to want to spend long in, especially when you start to consider the superior options within a short walking distance.</p>
+<p class="Reviewer">On 17<sup>th</sup> September 2015 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/23010/">View more reviews of Silver Cross (7)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Silver Cross</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of Silver Cross - <a href="http://www.greeneking-pubs.co.uk/pubs/greater-london/silver-cross" title="Submitted by:- Graham Coombs" target="_blank">www.greeneking-pubs.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="226255034223980">Facebook - <a href="https://www.facebook.com/SilverCrossSW1/" target="_blank" rel="nofollow">The Silver Cross</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/23010/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.50657887273498, -0.12707233428955], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.50657887273498, -0.12707233428955]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> London Charing Cross, 0.26 miles, 5 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> London Waterloo, 1.03 miles, 19 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> London Blackfriars, 1.67 miles, 32 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('u{jyHlyWDf@i@Ps@HYEQSMEK@_@c@a@w@EBmBqEBEMYZu@?KM[vAiDHLDGDHLY', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('u{jyHlyWDf@t@Wr@k@TK{@aFfAm@cB_KGgASs@R}A[QCJ_BuABFVR`G{XJeArCaMr@_DHg@AOFC@IAI@g@NC?WRi@NuAHkAVcAN[TkAXi@@UlAyA]kAW^AEHK@DIJAEHK@DIJAEHK@DQRBV|AxDYp@BP', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('u{jyHlyWDf@t@Wr@k@j@Yt@[xCcAEs@BIOuBAeABu@x@kIRD@OJB@UhFz@z@BnEl@fAF@Ke@y@FYiI}G}LaIuQcRqGmjA@sI', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.50657887273498,-0.12707233428955], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=23010">View all updates for Silver Cross, SW1</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        21<span class="sup">st</span> Apr 2018, 10:30
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> amended by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        15<span class="sup">th</span> Mar 2018, 19:47
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> approved
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11823010">No</span> <span id="discdetail11823010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 September 2015 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10723010">No</span> <span id="discdetail10723010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 September 2015 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11423010">No</span> <span id="discdetail11423010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 September 2015 by Pub SignMan</span></li><li>CAMRA Discount : <span id="fac10223010">Yes</span>  - <span id="discdetail10223010" class="discdetail" style="">10% </span> -   <span class="Reviewer">last updated 03 February 2017 by ROB Camra</span></li><li>Car Park : <span id="fac11323010">No</span> <span id="discdetail11323010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 September 2015 by Pub SignMan</span></li><li>Child Friendly : <span id="fac12123010">Yes</span> <span id="discdetail12123010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 September 2015 by Pub SignMan</span></li><li>Darts : <span id="fac11123010">No</span> <span id="discdetail11123010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 September 2015 by Pub SignMan</span></li><li>Function Room : <span id="fac12323010">Yes</span> <span id="discdetail12323010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 September 2015 by Pub SignMan</span></li><li>Hot Food : <span id="fac10323010">Yes</span> <span id="discdetail10323010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 September 2015 by Pub SignMan</span></li><li>Jukebox : <span id="fac11223010">No</span> <span id="discdetail11223010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 September 2015 by Pub SignMan</span></li><li>Karaoke : <span id="fac10623010">No</span> <span id="discdetail10623010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 March 2018 by Graham Coombs</span></li><li>Live TV Sports : <span id="fac11023010">Yes</span> <span id="discdetail11023010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 March 2018 by Graham Coombs</span></li><li>Micropub : <span id="fac12223010">No</span> <span id="discdetail12223010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 September 2015 by Pub SignMan</span></li><li>Pinball : <span id="fac11623010">No</span> <span id="discdetail11623010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 September 2015 by Pub SignMan</span></li><li>Pool Table : <span id="fac10423010">No</span> <span id="discdetail10423010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 September 2015 by Pub SignMan</span></li><li>Real Ale : <span id="fac10123010">Yes</span> <span id="discdetail10123010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Real Cider : <span id="fac11923010">Yes</span> <span id="discdetail11923010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 September 2015 by Pub SignMan</span></li><li>Wheelchair Access : <span id="fac12023010">Yes</span> <span id="discdetail12023010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 March 2018 by Graham Coombs</span></li><li>WiFi : <span id="fac11523010">Yes</span> <span id="discdetail11523010" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 March 2018 by Graham Coombs</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - 11pm</td></tr>
+<tr><td>Saturday</td><td>11am - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 13 recommendation(s)" title="Pub has 13recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 13 reviewer(s)" title="Pub has average rating of 7 from 13 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22978/" class="List1">The Old Shades</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 5 reviewer(s)" title="Pub has average rating of 5.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23059/" class="List1">Walkers Of Whitehall</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 19 recommendation(s)" title="Pub has 19recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 19 reviewer(s)" title="Pub has average rating of 6 from 19 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22969/" class="List1">The Lord Moon of the Mall (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 21 picture(s)" title="Pub has 21 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 15 recommendation(s)" title="Pub has 15recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 15 reviewer(s)" title="Pub has average rating of 6 from 15 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22899/" class="List1">The Clarence</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 28 picture(s)" title="Pub has 28 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 7 reviewer(s)" title="Pub has average rating of 5.5 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22143/" class="List1">Sherlock Holmes</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 21 picture(s)" title="Pub has 21 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 11 reviewer(s)" title="Pub has average rating of 6.5 from 11 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64818/" class="List1">The Admiralty</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 5 reviewer(s)" title="Pub has average rating of 4.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22102/" class="List1">Halfway To Heaven</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 35 picture(s)" title="Pub has 35 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 14 recommendation(s)" title="Pub has 14recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 13 reviewer(s)" title="Pub has average rating of 7.5 from 13 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55874/" class="List1">The Ship &amp; Shovell</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

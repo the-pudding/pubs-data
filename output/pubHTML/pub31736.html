@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Head of the River pub in Oxford, Oxfordshire, OX1 4LB : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Head of the River" />
+  <meta name="keywords" content="The Head of the River, Folly Bridge, Oxford, Oxfordshire, Oxford Central, Abingdon Road, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Head of the River in Oxford" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/31501_32000/31736_ea57efc3.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/31736/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.74663895029318" />
+<meta property="og:longitude" content="-1.25588544774632" />
+<meta property="og:street-address" content="Folly Bridge" />
+<meta property="og:locality" content="Oxford" />
+<meta property="og:region" content="Oxfordshire" />
+<meta property="og:postal-code" content="OX1 4LB" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Head of the River in Oxford? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Head of the River the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/31736/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Head of the River in Oxford" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Head of the River " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/31501_32000/31736_ea57efc3.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/31736/" />
+<meta name="geo.position" content="51.74663895029318;-1.25588544774632" />
+<meta name="geo.placename" content="The Head of the River in Oxford" />
+<meta name="geo.region" content="UK" />
+<title>The Head of the River in Oxford : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":31736},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(31736);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 31736;var pubaddress = "Folly Bridge";var pubname = "The Head of the River";var pubpostcode = "OX1 4LB";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/oxfordshire/" title="Pubs Galore : Oxfordshire Page">Oxfordshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/oxford/oxfordshire/" title="Pubs Galore : Oxford Page">Oxford</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Head of the River Page">The Head of the River Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="em10g1273cd5as3k2l15lje950" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/31736/" class="indisplay"><img src="/images/display/31501_32000/31736_ea57efc3.jpg?w=2" alt="Picture of The Head of the River" /></a><br />  Image posted by <a href="/userinfo.php?name=Tris39" class="indisplay">Tris C</a><br />
+  Submitted on Wednesday, 31<sup>st</sup> August 2016<br />
+  With picture contributions to 2132 other pubs<br />
+<a href="/pubpictures/31736/" class="smallbutton">View all this pub's pictures</a> (15 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/31736/">Pub map</a><br /><a href="/pubreviews/31736/">Pub reviews (6)</a><br /><a href="/pubpictures/31736/">Pub pictures (16)</a><br /><a href="/core/pubaudit.php?id=31736" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Head of the River, Oxford</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Folly Bridge</span><br />
+
+
+<span class="town">Oxford</span><br />
+<span class="postcode">OX1 4LB</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Fuller's</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/oxford-central/oxfordshire/">Oxford Central</a>, <a href="/areas/abingdon-road/oxfordshire/">Abingdon Road</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Head of the River</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/HOTROXFORD" target="_blank"><img src="https://pbs.twimg.com/profile_images/842336022847455233/7ESrmSfE_normal.jpg" alt="Head of the River" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/HOTROXFORD" target="_blank">Head of the River</a></strong>
+When the weather gets cold, nothing feels better than a nice cup of<a href="http://twitter.com/search?q=%23coffee" target="_blank"> #coffee</a>..<a href="http://twitter.com/search?q=%23WinterIsHere" target="_blank"> #WinterIsHere</a> <a href='https://t.co/qc5EvvzjqZ' target='_blank'>https://t.co/qc5EvvzjqZ</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/HOTROXFORD/status/1067839535772590081">5:55 PM Nov 28th</a> from <a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/HOTROXFORD" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/HOTROXFORD" target="_blank">Head of the River</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Head of the River  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review134739" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about The Head of the River</h6>
+<p>Located, as it&rsquo;s name suggests, in a prominent position alongside the Thames, this is a large pub with plenty of outside seating on a terrace at the front as well as accommodation on the upper floors.<br />
+<br />
+Internally it&rsquo;s largely all one open plan room, although there is some partitioning and archways to break up the space a little. D&eacute;cor wise it is fairly rustic I suppose, but also managed to look a bit artificial as well, almost as though someone has gone to a lot of trouble to make it appear rustic. Flooring is a mixture of flagstone style tiling and wood strip, with some chequered tiling around the bar counter. There was a decent amount of exposed brick walling including some attractive archways to the upper level, with cream plasterwork and blue/grey wood panelling elsewhere. Large windows facing the river made the most of the attractive outlook and some of the wood partitioning consisted of shelving that had been filled with a large quantity of old books, miner&rsquo;s lamps and so on. A large exposed stone fireplace was an interesting feature, but appeared to be unused. <br />
+<br />
+Beers on tap were all from Fullers with their London Pride, HSB and the seasonal Red Fox whilst a fourth pump for Dark Star Hophead was presumably coming soon (or &ldquo;Wish you were beer&rdquo; as the small slate attached to the pump handle said). The solitary cider meanwhile was Cornish Orchard&rsquo;s Gold. Prices seemed steep with a pint and a half coming in at &pound;7.35, no doubt cashing in on the prime location.</p>
+<p class="Reviewer">On 16<sup>th</sup> November 2018 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review110262" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> left this review about The Head of the River</h6>
+<p class="old">I don&#039;t know when this pub opened as it&#039;s a warehouse conversion but it has been here since my one last visit, 23 years ago. Unchanged since the reviews below, this is indeed a large split level pub with much brick, both painted and bare. Furniture is conventional as well as button-wingbacked armchairs and leatherette banquettes; the floor is slate, covered with some kilims, the whole punctuated by muted music and friendly service. The overall effect is one of a hotel bar which is no surprise given that this is a hotel pub, except that I doubt other hotel pubs have run out of lavatory paper at just 7.30 pm; does no-one here check the lavs?<br />
+Ales: the standard Fuller&#039;s range with the addition of Shotover&#039;s Oxford Prospect at &pound;2.20 a half and ok, the high price being explained by the pub&#039;s tourist trap location.<br />
+The main draw of course is the idyllic location and in this respect it succeeds, but as mentioned below, enthusiasm wanes on a rainy or winter&#039;s day when the disincentive of the long slog here from the centre of Oxford is a bit of drag.<br />
+That said, on a hot summer&#039;s day there&#039;s no doubting that if you want a great riverside view, this pub gives good head.</p>
+<p class="Reviewer">On 3<sup>rd</sup> September 2016 
+  - rating: <b>4</b><br />
+  <span class="leftspace">[User has posted 873 recommendations about 860 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review100177" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Head of the River</h6>
+<p class="old">This split level Fullers pub has a peerless location on the banks of the Thames, adjacent to Folly&#039;s Bridge. There are probably more seats out on the expansive riverside patio than there are inside the pub, which is fair enough, as the views are certainly worth taking in over a pint or two. Numerous tables and chairs cover a deceptively large area which has an old crane as a centrepiece. Two entrances lead into a well kept interior. The lower, right hand door has a porch with some information boards inside, including one which explains the origins of the &#039;Oxford Eights&#039; - a regatta which takes place on the river outside. The servery runs along the back wall and is split level in the same way as the rest of the room. There is a mix of bare floorboards and quarry stone flooring throughout, with modern wallpaper providing a slightly contemporary slant on an otherwise conservative interior. Lots of comfy button backed banquettes and a fair bit of standard seating is available, with a lovely fireplace to the right of the bar acting as a focal point. Various old photos and items of local interest can be found throughout and are worth a bit of snooping through. There is also a nice first floor balcony outside, decorated with a wonderfully colourful display of flowers, although I couldn&#039;t figure out if customers were permitted up there.<br />
+Three Fullers ales - London Pride, ESB and Oliver&#039;s Island - were available alongside a guest from Prospect. I gave the Oliver&#039;s Island a try and thought it was okay but not in tip-top condition. Food is also available and the pub is a handy start/finish point for anyone wanting to enjoy a river cruise from any of the numerous companies that operate from Folly&#039;s Bridge.<br />
+If this pub were to be dropped just about anywhere else in Oxford, it would be a fairly unremarkable place but it is the prospect of supping a pint whilst watching inept folk trying their hand at punting on the river that makes the place a draw. Whether the pub stands up to repeat visits in inclement weather is another matter entirely.</p>
+<p class="Reviewer">On 7<sup>th</sup> October 2015 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/31736/">View more reviews of The Head of the River (6)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Head of the River</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Head of the River - <a href="http://www.headoftheriveroxford.co.uk/" title="Submitted by:- Tris C" target="_blank">www.headoftheriveroxford.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="126820657368924">Facebook - <a href="https://www.facebook.com/HeadOfTheRiverOxford/" target="_blank" rel="nofollow">The Head of the River</a></li></ul><ul id="Custom2"><li class="twitlink" id="2434133856">Twitter - <a href="https://twitter.com/HOTROXFORD" target="_blank" rel="nofollow">Head of the River</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/31736/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.74663895029318, -1.25588544774632], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.74663895029318, -1.25588544774632]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Oxford, 0.92 miles, 17 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Oxford Parkway, 4.17 miles, 1 hr 20 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Radley, 5.07 miles, 1 hr 37 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('qwyzHngtF[BIJEV@|Ai@L?|EEj@In@Mf@uAnDCr@}@vC{@jFm@xFQrCIrASEKjAg@~BIE{@`Dc@fAe@`Ag@p@WXu@b@qA`@sAZ@N}BJsCh@?TIDGP?HDjFEJ@LY?c@EMF@P[LEHFhAgATJhBI@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('qwyzHngtF[BIJEV@|Ai@Ly@EkERoGp@cCNu@PmBt@cCjAI@ICARIPqCpAiDzA_Bf@AQO}@iBZ}A|@iA^CWo@HmBb@uAZk@Bk@J{@Zg@ViCb@e@Du@EqDb@}CHoE\\QKu@HKVGD?LyDf@iHXkALiF|@gGxAkHz@eDd@yFxAgE|@_C`@iCr@yBt@_Dr@uGpBAIuPvE@N]Jg@BoDdAk@\\aItDyGjEEWuEvCM@GNIF_HvDcCv@KEeDp@y@BKDALUGIKOEI@IDa@l@CKGFuA^mDpA{F`C}A\\mCLw@Mo@Se@SEQQEIF}@WqAQ{@A_EBkE^aFxAqPpGkCr@_@NW{@Yi@UWSISC]HQLMPk@lAc@^sBj@W@CN[Ig@Nk@\\[p@e@h@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('qwyzHngtF[BIJEV@|Aj@GxHc@|@xP`HkBvEs@hGwAX]JNRc@\\MXDNVPFH?JE~AyBl@rAd@_@dDyA@IJEBDbDgAn@[g@sAvC_DbDsDbIsJhEuFJYzD}E`@m@b@{@DWGUd@YHKKwARUp@Q|Ci@jGk@vB]RMv@qAlBoBhJgWVy@?a@n@aDZNfATnCXhACt@XpAjAfBz@|BCd@L^VjBEhBm@n@_@|EcFr@tAd@hA`@\\^NPo@fEuD|BKtEoBd@o@pQaHtG_ALZFhAp@tBdI}AfJ{AjH}A\\nAjBe@xAWbBGj@IpFrEzEvFh@T~B|FhAJdATDVp@`@tAvAhBpBh@b@dA`@rD^`FvAjDf@fADpBILGxChAlHrDfC~AxAhAhAjAj@}Ct@aCp@qAdAuBl@oBp@iEj@aBbAgBjA_CPQ^SlA[f@@vBv@j@}Bd@S~@@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.74663895029318,-1.25588544774632], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=31736">View all updates for The Head of the River, Oxford</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        16<span class="sup">th</span> Nov 2018, 10:51
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        10<span class="sup">th</span> Nov 2018, 17:20
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11831736">Yes</span> <span id="discdetail11831736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2017 by ROB Camra</span></li><li>Bar Billiards : <span id="fac10731736">No</span> <span id="discdetail10731736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 May 2018 by Komakino .</span></li><li>Beer Festivals : <span id="fac11731736">No</span> <span id="discdetail11731736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2017 by ROB Camra</span></li><li>Beer Garden : <span id="fac11431736">Yes</span> <span id="discdetail11431736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2017 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10231736">No</span> <span id="discdetail10231736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2017 by ROB Camra</span></li><li>Car Park : <span id="fac11331736">No</span> <span id="discdetail11331736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2017 by ROB Camra</span></li><li>Child Friendly : <span id="fac12131736">Yes</span> <span id="discdetail12131736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2017 by ROB Camra</span></li><li>Darts : <span id="fac11131736">No</span> <span id="discdetail11131736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 May 2018 by Komakino .</span></li><li>Dog Friendly : <span id="fac10531736">Yes</span> <span id="discdetail10531736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2017 by ROB Camra</span></li><li>Function Room : <span id="fac12331736">No</span> <span id="discdetail12331736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 May 2018 by Komakino .</span></li><li>Hot Food : <span id="fac10331736">Yes</span> <span id="discdetail10331736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2017 by ROB Camra</span></li><li>Jukebox : <span id="fac11231736">No</span> <span id="discdetail11231736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 May 2018 by Komakino .</span></li><li>Karaoke : <span id="fac10631736">No</span> <span id="discdetail10631736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 May 2018 by Komakino .</span></li><li>Live Music : <span id="fac10831736">Yes</span> <span id="discdetail10831736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2017 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11031736">Yes</span> <span id="discdetail11031736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2017 by ROB Camra</span></li><li>Micropub : <span id="fac12231736">No</span> <span id="discdetail12231736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2017 by ROB Camra</span></li><li>Pinball : <span id="fac11631736">No</span> <span id="discdetail11631736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 May 2018 by Komakino .</span></li><li>Pool Table : <span id="fac10431736">No</span> <span id="discdetail10431736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 May 2018 by Komakino .</span></li><li>Quiz Night : <span id="fac10931736">No</span> <span id="discdetail10931736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 May 2018 by Komakino .</span></li><li>Real Ale : <span id="fac10131736">Yes</span> <span id="discdetail10131736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2017 by ROB Camra</span></li><li>Real Cider : <span id="fac11931736">No</span> <span id="discdetail11931736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2017 by ROB Camra</span></li><li>Wheelchair Access : <span id="fac12031736">No</span> <span id="discdetail12031736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2017 by ROB Camra</span></li><li>WiFi : <span id="fac11531736">Yes</span> <span id="discdetail11531736" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2017 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>8am - 10:30pm</td></tr>
+<tr><td>Monday</td><td>8am - 10:30pm</td></tr>
+<tr><td>Tuesday</td><td>8am - 10:30pm</td></tr>
+<tr><td>Wednesday</td><td>8am - 10:30pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>8am - 10:30pm</td></tr>
+<tr><td>Friday</td><td>8am - 11:30pm</td></tr>
+<tr><td>Saturday</td><td>8am - 11:30pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31714/" class="List1">The White House</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/58044/" class="List1">Caff&egrave; Ethos</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 5 reviewer(s)" title="Pub has average rating of 6 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31764/" class="List1">Old Tom</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 11 reviewer(s)" title="Pub has average rating of 7 from 11 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31676/" class="List1">St Aldates Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 35 picture(s)" title="Pub has 35 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 12 reviewer(s)" title="Pub has average rating of 7 from 12 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31667/" class="List1">The Bear</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83283/" class="List1">The House</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 18 picture(s)" title="Pub has 18 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 13 recommendation(s)" title="Pub has 13recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 10 reviewer(s)" title="Pub has average rating of 6.5 from 10 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31687/" class="List1">The Chequers</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 36 picture(s)" title="Pub has 36 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 15 recommendation(s)" title="Pub has 15recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 13 reviewer(s)" title="Pub has average rating of 7.5 from 13 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31671/" class="List1">The Royal Blenheim</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

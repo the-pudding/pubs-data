@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Brickyard pub in Hitchin, Hertfordshire, SG5 1JW : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Brickyard" />
+  <meta name="keywords" content="Brickyard, 24 Bancroft, Hitchin, Hertfordshire, Hitchin Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Brickyard in Hitchin" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/59001_59500/59388_7c24d815.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/59388/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.95041919365749" />
+<meta property="og:longitude" content="-0.27693405747414" />
+<meta property="og:street-address" content="24 Bancroft" />
+<meta property="og:locality" content="Hitchin" />
+<meta property="og:region" content="Hertfordshire" />
+<meta property="og:postal-code" content="SG5 1JW" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Brickyard in Hitchin? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Brickyard the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/59388/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Brickyard in Hitchin" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Brickyard " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/59001_59500/59388_7c24d815.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/59388/" />
+<meta name="geo.position" content="51.95041919365749;-0.27693405747414" />
+<meta name="geo.placename" content="Brickyard in Hitchin" />
+<meta name="geo.region" content="UK" />
+<title>Brickyard in Hitchin : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":59388},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(59388);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 59388;var pubaddress = "24 Bancroft";var pubname = "Brickyard";var pubpostcode = "SG5 1JW";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/hertfordshire/" title="Pubs Galore : Hertfordshire Page">Hertfordshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/hitchin/hertfordshire/" title="Pubs Galore : Hitchin Page">Hitchin</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Brickyard Page">Brickyard Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="8p8ddtv14kq85ijged3o1p0hv3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/59388/" class="indisplay"><img src="/images/display/59001_59500/59388_7c24d815.jpg?w=1" alt="Picture of Brickyard" /></a><br />  Image posted by <a href="/userinfo.php?name=Al+10000" class="indisplay">Alan Winfield</a><br />
+  Submitted on Sunday, 27<sup>th</sup> August 2017<br />
+  With picture contributions to 6053 other pubs<br />
+<a href="/pubpictures/59388/" class="smallbutton">View all this pub's pictures</a> (12 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/59388/">Pub map</a><br /><a href="/pubreviews/59388/">Pub reviews (3)</a><br /><a href="/pubpictures/59388/">Pub pictures (13)</a><br /><a href="/core/pubaudit.php?id=59388" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Brickyard, Hitchin Town, Hitchin</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">24 Bancroft</span><br />
+
+
+<span class="town">Hitchin</span><br />
+<span class="postcode">SG5 1JW</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01462440717</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/hitchin-town/hertfordshire/">Hitchin Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Brickyard  <span class="h2note">(Average Rating: <span id="averagerating"><b>7&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review121690" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> left this review about Brickyard</h6>
+<p class="old">The Brickyard is situated on a nice looking street in the middle of Hitchin.<br />
+Once inside the bar faces in a small L shaped room,there are tall tables and stools which were not tall enough for them at the front,the main bar area is up steps to the rear,the seating here is normal tables and small stools.<br />
+There are no real ales on the bar,i had a drink of keg Youngs London Stout which went down a treat,there was also Meantime Pale Ale on keg.<br />
+I sat outside where there are lots of tables and chairs,it was very pleasant sitting out here watching the world go by.<br />
+The awning above the outside seating still gave evidence of its old name The Sunrunner.<br />
+A pleasant pub despite the lack of any real ales.<br />
+<br />
+Pub visited 17/6/2017</p>
+<p class="Reviewer">On 28<sup>th</sup> August 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 6113 recommendations about 6113 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review54494" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a> left this review about The Sunrunner</h6>
+<p class="old">In what looks like a shop conversion ,this is an interesting real ale outlet.The front door opens into a bare boarded area full of circular pine tables and chairs,a tiled fireplace to the right and the bar staight ahead.To the left is a useful chalk board listing  the ale and cider selection while to the right another chalkboard describes the lunchtime food.The small island bar has six handpumps at the front and a further four serving the more interesting back bar through the door way ,which also contains an upright piano and a flat screen.This area is altogether more cosy than the cafe style feel of the front bar.There is a covered courtyard with some additional seating on the way to a seperate loo block,while there are metal tables and chairs to the front of the building which would be suitable for a fag if needed.<br />
+<br />
+The real ale selection is commendable with two house beers Potton Shannon IPA (&pound;2.45pp) and Doom Bar (&pound;3.20pp) with up to six rotating guests and a real cider(s) also on handpump.On my trip the guests were Slater Western American Pale Ale ,a very well kept 5%er,Slaters WhyKnot,Premium,and Griffin Black Magic Woman with a couple of handpulls unused.Guest are priced from &pound;3 up to &pound;3.65pp for the high APV&#039;s.Besides ale there are Belgian bottled beers,English country wines,a winter Pimms concoction ,Leffe lager and Guiness on keg.<br />
+The welcome was friendly and the musak was played at a reasonable volume with  an eclectic collection of tunes,from Dylan to Blur and beyond.There is a quiz on Sundays and live music on Wednesday,and although quiet on my lunchtime visit,I would imagine a good atmosphere is generated when busier.<br />
+<br />
+Not the cheapest spot in town but well kept ale,with several Locale brews, and a focus on wet led sales in the evening this is another good venue in Hitchin for the beer connisseur and a place I would happily return.Also well worth including on a crawl if taking in the other GBG 2012 listed pubs namely The Half Moon and The Nightingale.</p>
+<p class="Reviewer">On 8<sup>th</sup> December 2011 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 1916 recommendations about 1916 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review110608" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=trainman">train man</a> left this review about The Sunrunner</h6>
+<p class="old">Lots of handpumps (maybe 10?) but just a couple of bitters on ystdy lunch, fair comment made about limiting choice at quiet times to avoid wastage thru lack of throughpull. A little disappointed that having checked the pumpclips (&amp; been seen to do so) at both ends of the bar I still had to go back to ask if anyone was serving. Ended up with Hydes 1863 which was good. Front bar has attractive rounded bay windows &amp; I hope/presume it loses its coffee-shop ambience when busier. Pub stands opposite lovely old half-timbered building with a &quot;developer&#039;s&quot; sign hanging threateningly from its facade; I hope it gets preserved. Sunrunner looks great for beer, I would go back if ever in Hitchin again.</p>
+<p class="Reviewer">On 31<sup>st</sup> May 2007 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 411 recommendations about 410 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Brickyard</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of Brickyard - <a href="http://www.brickyard.co.uk" title="Submitted by:- Komakino ." target="_blank">www.brickyard.co.uk</a></li>
+          </ul>
+</div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/59388/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.95041919365749, -0.27693405747414], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.95041919365749, -0.27693405747414]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Hitchin, 0.74 miles, 14 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Letchworth, 3.45 miles, 1 hr 6 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Stevenage, 5.42 miles, 1 hr 44 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('{pa|Hz`u@]OVqBTaANcAB_@T[?IPmAEu@DGXAh@JPwAR?HO?UMs@eAuD{AeF}@iDm@kB[o@DMCQCCM@yB_Jo@oB}@qBgBiDaA_Bw@{@H_@@]Ey@r@{C@E\\o@Uw@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('{pa|Hz`u@]OVqBTaANcAB_@T[?IPmAEu@DGXAh@JPwAR?HO?UMs@eAuD{AeF}@iDm@kB[o@DMCQCCM@yB_Jo@oB}@qBgBiDaA_Bw@{@_@SUW]Os@gBw@cCa@}AYqDKeBFk@HUA[S]M_@c@sHOcBMk@{CoHaA{AE?YW}@}@U[u@w@e@o@D[s@mB]DwAgERa@gHkUSEGQg@iBCm@EUACSDGCmAiDQq@GOkAwB_@k@gDqGuAcCcAaBuDuEgBiBw@q@aAq@_A{AkCyEqCgGSk@i@aCAm@QeBYiBIMIB]}BsIzJgKcd@GAKIEIe@QH}@mOmEaFiAw@[UgBKHU[IXA^aFsAE^K?OLAL}MyDBUe@MKGMFCNWGMKIOCQ[NO@o@^Gg@BAO{@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('{pa|Hz`u@tBpAlBvAF]z@b@f@Xd@D`AqABQNa@Je@Ba@~Af@X_DHBJSP{Aj@Hj@cHLUb@yAZsA~@}FVqA?O`EqKn@~@zA`CxDsIXIjCxDnAqCtAyBxAoBbCoBnAiAPGLBJNrA_CJc@Do@AcHBoABq@Fs@TkA~@mDpCuIbDoHn@qBrAkGdAyF~@qGv@}C^gCN_BN{CHMd@cEb@aCj@cBlCmGz@iCd@oBb@sCl@eGLmDHcAECCIAK@IJG@aDFsCNsDNcBfAkHx@mKRgDBaA?eAEcDCoAByFAuA@y@LE^A`Dk@lAO`AaALmB@wB|DmCtEoBFDNSLYrAgDDK\\AfDu@x@YnAo@Cc@Pc@b@I`@Or@y@p@kANw@d@ZbB`@|@n@h@w@j@StD_@AOPB~B]p@Ur@w@l@iBPJv@eEd@_Bt@qBjAsBLu@fHqI\\UN_@Hs@FiAnBoMvA_Bt@o@nD_CXq@\\kAKcBNcAVcAt@cBr@uAJYHb@L^`AaAnCcDpAuBVi@Sq@KSTILKl@{B`ACdHsAxA[lHmBLpAJLlEoB`Am@jFgC`A[~B}@j@A|@Nj@`@HM@IEu@@QFMJI|@bARZh@h@\\BvAo@pFmCKeAnBu@R|A', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.95041919365749,-0.27693405747414], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=59388">View all updates for Brickyard, Hitchin</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        16<span class="sup">th</span> Sep 2018, 18:26
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=Komakino">Komakino .</a> approved
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        16<span class="sup">th</span> Sep 2018, 16:12
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=Komakino">Komakino .</a>
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11859388">No</span> <span id="discdetail11859388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Bar Billiards : <span id="fac10759388">No</span> <span id="discdetail10759388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Beer Festivals : <span id="fac11759388">No</span> <span id="discdetail11759388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Beer Garden : <span id="fac11459388">No</span> <span id="discdetail11459388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>CAMRA Discount : <span id="fac10259388">No</span> <span id="discdetail10259388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Car Park : <span id="fac11359388">No</span> <span id="discdetail11359388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Child Friendly : <span id="fac12159388">No</span>  - <span id="discdetail12159388" class="discdetail" style="">Over 21s only</span> -   <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Darts : <span id="fac11159388">No</span> <span id="discdetail11159388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Dog Friendly : <span id="fac10559388">No</span> <span id="discdetail10559388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Function Room : <span id="fac12359388">Yes</span> <span id="discdetail12359388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Hot Food : <span id="fac10359388">No</span> <span id="discdetail10359388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Jukebox : <span id="fac11259388">No</span> <span id="discdetail11259388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Karaoke : <span id="fac10659388">No</span> <span id="discdetail10659388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Live Music : <span id="fac10859388">No</span> <span id="discdetail10859388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Live TV Sports : <span id="fac11059388">No</span> <span id="discdetail11059388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Micropub : <span id="fac12259388">No</span> <span id="discdetail12259388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Pinball : <span id="fac11659388">No</span> <span id="discdetail11659388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Pool Table : <span id="fac10459388">No</span> <span id="discdetail10459388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Quiz Night : <span id="fac10959388">No</span> <span id="discdetail10959388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Real Ale : <span id="fac10159388">No</span> <span id="discdetail10159388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Real Cider : <span id="fac11959388">No</span> <span id="discdetail11959388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>Wheelchair Access : <span id="fac12059388">No</span> <span id="discdetail12059388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li><li>WiFi : <span id="fac11559388">Yes</span> <span id="discdetail11559388" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Komakino .</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 3 reviewer(s)" title="Pub has average rating of 4.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/76439/" class="List1">Hermitage Rd</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86934/" class="List1">Granello Lounge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 4 reviewer(s)" title="Pub has average rating of 7.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85024/" class="List1">Beer Shop</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 1 from 1 reviewer(s)" title="Pub has average rating of 1 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64248/" class="List1">Cafe Rouge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 2 reviewer(s)" title="Pub has average rating of 7.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14648/" class="List1">Venue</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 24 picture(s)" title="Pub has 24 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14597/" class="List1">The Cock</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 23 picture(s)" title="Pub has 23 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 2 reviewer(s)" title="Pub has average rating of 4 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14636/" class="List1">Rose &amp; Crown</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 29 picture(s)" title="Pub has 29 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 4 reviewer(s)" title="Pub has average rating of 7.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14650/" class="List1">The Victoria</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

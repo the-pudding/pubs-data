@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Lord Nelson pub in Bradenham (near Thetford), Norfolk, IP25 7RA : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Lord Nelson" />
+  <meta name="keywords" content="The Lord Nelson, 1 Hale Road, Bradenham, Thetford, Norfolk, , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Lord Nelson in Bradenham" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/pubslogo.gif" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/58731/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.64012200000000" />
+<meta property="og:longitude" content="0.83919800000000" />
+<meta property="og:street-address" content="1 Hale Road" />
+<meta property="og:locality" content="Bradenham" />
+<meta property="og:region" content="Norfolk" />
+<meta property="og:postal-code" content="IP25 7RA" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Lord Nelson in Bradenham? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Lord Nelson the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/58731/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Lord Nelson in Bradenham" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Lord Nelson " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/pubslogo.gif" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/58731/" />
+<meta name="geo.position" content="52.64012200000000;0.83919800000000" />
+<meta name="geo.placename" content="The Lord Nelson in Bradenham" />
+<meta name="geo.region" content="UK" />
+<title>The Lord Nelson in Bradenham (near Thetford) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":58731},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(58731);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 58731;var pubaddress = "1 Hale Road";var pubname = "The Lord Nelson";var pubpostcode = "IP25 7RA";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/norfolk/" title="Pubs Galore : Norfolk Page">Norfolk</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/thetford/norfolk/" title="Pubs Galore : Thetford Page">Thetford</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/bradenham/norfolk/" title="Pubs Galore : Bradenham Page">Bradenham</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Lord Nelson Page">The Lord Nelson Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="k9f95tk6bedmvqjn2rvjfu3qe1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/58731/" class="indisplay"><img src="/images/placeholder-pub.gif" alt="No current image posted for this pub" /></a><br />No current image posted for this pub<br /><a href="/pubpictures/58731/" class="smallbutton">view older pictures</a> (1 image)  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/58731/">Pub map</a><br /><a href="/pubreviews/58731/">Pub reviews (3)</a><br /><a href="/pubpictures/58731/">Pub pictures (1)</a><br /><a href="/core/pubaudit.php?id=58731" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Lord Nelson, Thetford</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">1 Hale Road</span><br />
+
+<span class="town">Bradenham</span><br />
+<span class="postaltown">Postal town: Thetford</span><br />
+<span class="postcode">IP25 7RA</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01362822111</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/bradenham/norfolk/">Bradenham</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Lord Nelson  <span class="h2note">(Average Rating: <span id="averagerating"><b>10</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review64257" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Samanthaoaks">Samantha Oaks</a> left this review about The Lord Nelson</h6>
+<p class="old">I recently discovered this pub on the way home from Swaffham. Bradenham is a little bit of the beaten track but it is definitely well worth a visit.<br />
+<br />
+To be honest as i was traveling home on my own from my parents i would ordinarily never stopped anywhere after dark but nature dictated a brief stop. I was amazed at the discovery i made. The pubs car park is very light which meant i felt really safe. The inside is really nice, light, fresh and most importantly clean. I found myself feeling very at home and the owners are a lovely young couple who it turns out recently got married at the pub. I spent the rest of the evening at the Nelson and am desperate to visit next week.<br />
+<br />
+A fantastic place for everybody and i would very much suggest it to anybody i meet. Sustainable for both groups and individuals alike.</p>
+<p class="Reviewer">On 10<sup>th</sup> October 2012 
+  - rating: <b>10</b><br />
+  <span class="leftspace">[User has posted 1 recommendations about 1 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review64254" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Jamescarol">James Carol</a> left this review about The Lord Nelson</h6>
+<p class="old">I must admit that i do not usually bother commenting on pubs and bars, as a general rule if i like a pub i visit it; if i dislike a pub i don&#039;t.<br />
+<br />
+I this rare occasion i felt that The Lord Nelson, Bradenham stood so far out from the crowd that i recently moved into the local area in order to be closer to my favorite little retreat.<br />
+<br />
+As career businessman and company director i find that the best way of relieving the stresses of work is to find the prefect retreat and with out a doubt. The Lord Nelson has to be Shangri-La.<br />
+<br />
+The Lord Nelson has been stunningly renovated into a stylish but classical feel with uninterrupted field views to the south of the building The atmosphere is lovely regardless of whether there are 2 people or 20. The owners are some of the most lovely and caring people you could meet who are always happy to talk to you or challenge you in a game or two. <br />
+<br />
+No Stupid TV&#039;s ruining the atmosphere just a lovely light background music with the chatter of people talking, socializing and making new friends.<br />
+<br />
+Yesterday i counted:<br />
+8 Draught Ales (All local breweries) &amp; 9 Bottled<br />
+2 Draught Stout (Guinness and a local One) &amp; Bottled Guinness<br />
+4 Draught Ciders, 10 Bottled &amp; apparently a new warm cider for winter<br />
+They have so many different spirits its really got to be tried.<br />
+<br />
+The kitchens are currently closed for a revamp and I can&#039;t wait until the restaurant opens in the next few weeks.<br />
+<br />
+Oh and little tip try a short they make called Mouth Wash. It is an experience like you can&#039;t imagine.<br />
+<br />
+I don&#039;t really know what else to say here but hopefully i will meet you all soon.</p>
+<p class="Reviewer">On 10<sup>th</sup> October 2012 
+  - rating: <b>10</b><br />
+  <span class="leftspace">[User has posted 1 recommendations about 1 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review62835" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=GSB">Andrew Clark</a> left this review about The Lord Nelson</h6>
+<p class="old">Lovely setting with great Buffys ale when available.<br />
+<br />
+Bickering staff spoil it but then it is a large family run pub.<br />
+<br />
+Good to kids and dogs too.<br />
+<br />
+No food, music or tv so little atmosphere.</p>
+<p class="Reviewer">On 19<sup>th</sup> August 2012 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 2 recommendations about 2 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Lord Nelson</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+</div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/58731/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.64012200000000, 0.83919800000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.64012200000000, 0.83919800000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Attleborough, 14.56 miles, 4 hr 41 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Wymondham, 15.22 miles, 4 hr 53 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Spooner Row, 16 miles, 5 hr 8 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ygh`Ie}bDg@D@wCR{FViFP{B^}Cf@}BNiAD_A@oCB_A`@uGX_HRiCBeCGuBe@}EM{B}@_NEyAAiCSyDGqDTeMPuFVuBVcAX{@lDsItCwFjBeEnB}CjCsDn@o@z@u@f@SvAa@tB{@jBYn@CfCo@nCmAtBmAfBaB`A}A~AiF|BkJlA}Fj@aDxAkD~AiH~AkGZaBLaBDmCJqNUs@Z[zAu@DKjAcCPw@DgAKcBg@}EDqAn@wENSL@FM?gAMwA[_BNmAlDeFNIgB{IOo@N}@P_CZaC|@eEb@iAp@q@x@[hCk@tEk@|@EfCD~C[pBWrCw@rBs@rAs@|@o@x@y@f@w@hAgCtCoIr@iB`DkG~C}FAWH{@a@iFAy@@iCFyFFu@bA}ENk@Zy@`@m@|@kAtB}Bh@e@b@Sh@Kh@BpEfBfJ}VrA}D`A{DnAqINq@h@qAfBsDp@}AZ_AnAoEZq@\\c@lBqAvBsBpDsC~DqBZUd@g@h@s@h@aAfAcB\\m@b@_ApAwEv@{BbAuB~@qAdFkFt@i@^EjAb@j@F~@IzA_@fCaAdAOj@NxB~@f@Jb@BdAMfFeBtBc@l@Gv@AlAJhAB`@Cb@KfEqBfA[v@Mv@AhAZbAn@pS|Ob[`WhUfVtBhBjH~F`B~ApElF^P`D`@lAH|MZrGJ|GPJwCCuDKyDQmCZMdJq@NILQH_@PgAZyA|Ogd@Xm@tBkDnDgFp@yAJa@hFa]LSpAeA~@i@~@[JQHQhC{NH[JSLIR@|@TNALQDYt@eI\\aFH{ANaCdAeId@uFLo@Nc@tA{CNc@Jk@Bq@AsDH}CHi@d@qABUCkBKkAKw@M{@PaAx@uBj@i@dA]r@EdBULOFY`@d@j@b@dAJxCMpEqPnEsD^MpBo\\b@oIIY^kHVeC|CdB~@uEtEzAFE?GAIEE@QtAuGNc@Q]Es@Aq@Bw@VkBX{CLu@~@aDj@aB\\wATeBLk@Vy@lAaDLm@Dg@kAY@WDOLKNaAl@kDtAcGJKJEXw@t@sAx@uBfAwAH[Ac@FOJ?vEaDTIlFEtCa@[s@Uq@lMiFzKiJx@kA|AkCVu@DuAHG?]Le@HEF@TODSLoAZPjBn@p@Hv@C|G|@v@DtAVfBj@\\Tp@aBHDJG\\c@T_@Na@@c@EWN_@lEuNnHsV`@aBZqBPwBH_CFyDToNJgCp@aGLwBTsLHmALw@\\}@hLoPxA}BGKBOAMNWGMJOJDPGN_@n@cAPQ\\w@BUCGTSHY?MJEt@eBHAX_Ah@oAp@iAr@m@pAs@tC}BxCqCMk@Ee@?m@FBNyB?MHCOaAJIUsCJCDuARyCHiAHc@hASbCMXBJA@ENBz@?NEtGgI|@oAFLV_@Ys@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ygh`Ie}bDg@D@wCR{FViFP{B^}Cf@}BNiAD_A@oCB_A`@uGX_HRiCBeCGuBe@}EM{B}@_NEyAAiCSyDGqDTeMPuFVuBVcAX{@lDsItCwFjBeEnB}CjCsDn@o@z@u@f@SvAa@tB{@jBYn@CfCo@nCmAtBmAfBaB`A}A~AiF|BkJlA}Fj@aDxAkD~AiH~AkGZaBLaBDmCJqNUs@Z[zAu@DKjAcCPw@DgAKcBg@}EDqAn@wENSL@FM?gAMwA[_BNmAlDeFNIgB{IOo@N}@P_CZaC|@eEb@iAp@q@x@[hCk@tEk@|@EfCD~C[pBWrCw@rBs@rAs@|@o@x@y@f@w@hAgCtCoIr@iB`DkG~C}FAWH{@a@iFAy@@iCFyFFu@bA}ENk@Zy@`@m@|@kAtB}Bh@e@b@Sh@Kh@BpEfBfJ}VrA}D`A{DnAqINq@h@qAfBsDp@}AZ_AnAoEZq@\\c@lBqAvBsBpDsC~DqBZUd@g@h@s@h@aAdBqCb@_ApAwEIOQs@kBgP]qCIaAGkBI_ByCs\\EeBFkGKeB{@uHwAoJKcAE{@?q@@i@PeB\\gBl@cAp@}AT{@D[JgABeAw@wYMyCO_Am@cC]eD[oIK}Ai@iEc@aCYqBMgBA{@?yAD{D?_@EYGWiCyF]qAs@iDiCeP{@sIG{A?iDBiBz@uPB}@ByB@_CC{C@sFBsBHqANsAbAgGVkC@yA?_FD]Ls@l@{BR_@TYd@]Z]Tw@|@}EBY@uGNaENoCNaBXyAh@kHL}BBsBRaES?CgCIiCQcE]}Lg@uMOiFKAEUNo@KiDRGIaDJADQKoEWcFQuFOqE?mABoA`A{KV{EJuB?wDG}DSsEu@wHoAyJWqCMcDC_I@MFM?O[AB}@S?fAqi@?SGYc@cBa@oBX_@r@i@v@u@vO_PbNkM~@_BlEiEdFgF|CyDrB{CzDeHdCiF~BeGzFgPVH~BeEnAoB~B_D]w@y@{As@w@^iAz@_DtA}FpAgGpAeId@kDb@}DZ}EZuGRsFeGASGi@c@FkRC_MBi@BYpA}ClB_GVqAHmEBs@Pw@Ri@T]lCyBvBmBf@i@^s@p@}AhFcMj@mAt@gAd@cA\\eAh@uBn@mDpAeJRgA~AqGNu@f@oEPmALo@vB_G|BiE\\gAXm@t@oAHUDYJL\\_@S{@?O@WL[F]?}AHk@JgCP}A@a@Co@Su@CO@[`@}CL]X]CGAWC_@TwAHaAAE[OAE`@cBnAgArDsDNJHGJa@t@y@Fc@LKGY`AoA\\O^oANo@N_@`@SFKd@a@z@kAh@aAhA{AbCoB`BmBp@Wd@_@fAoAjAaBbAiAxAiA`@Wj@Oj@_@n@i@`@G~@_@vAUXOf@u@VOX[Va@RKp@Cj@@TG\\DN^ZFHEOa@VQf@{@JY|@gDFOLMv@e@^u@Da@ASLcCC[R?`@PdAAz@^`@@JMJW?i@`@?PIb@_AVa@KU@wA\\ENINdAb@WVo@Nq@BiAX{ARyA`@wBFi@G_A]cAF}@QkCSqB?k@Dq@TeARSGO_@sBt@oDNc@Ra@PQCYOYFQFk@?o@TWPANLJ@FRNOk@kB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ygh`Ie}bDg@D@wCR{FViFP{B^}Cf@}BNiAD_A@oCB_A`@uGX_HRiCBeCGuBe@}EM{B}@_NEyAAiCSyDGqDTeMPuFVuBVcAX{@lDsItCwFjBeEnB}CjCsDn@o@z@u@f@SvAa@tB{@jBYn@CfCo@nCmAtBmAfBaB`A}A~AiF|BkJlA}Fj@aDxAkD~AiH~AkGZaBLaBDmCJqNUs@Z[zAu@DKjAcCPw@DgAKcBg@}EDqAn@wENSL@FM?gAMwA[_BNmAlDeFNIgB{IOo@N}@P_CZaC|@eEb@iAp@q@x@[hCk@tEk@|@EfCD~C[pBWrCw@rBs@rAs@|@o@x@y@f@w@hAgCtCoIr@iB`DkG~C}FAWH{@a@iFAy@@iCFyFFu@bA}ENk@Zy@`@m@|@kAtB}Bh@e@b@Sh@Kh@BpEfBfJ}VrA}D`A{DnAqINq@h@qAfBsDp@}AZ_AnAoEZq@\\c@lBqAvBsBpDsC~DqBZUd@g@h@s@h@aAfAcB\\m@b@_ApAwEv@{BbAuB~@qAdFkFt@i@^EjAb@j@F~@IzA_@fCaAdAOj@NxB~@f@Jb@BdAMfFeBtBc@l@Gv@AlAJhAB`@Cb@KfEqBfA[v@Mv@AhAZbAn@nJlHhAqCn@qAh@_BfAqS@iBNi@b@uBNm@Dm@?c@Ik@cAeAM]UmAAu@JgSCwBImBCeGD_DN{Cl@oIJ{BToBf@yAXeBRYLm@^cEhC{\\tAaP^gDp@oF`AmJh@_DxCcIdCqF~EkKG{@CaB@cCP_H?iBKaFg@kOG}B?}AFaDJwDFwARSZoAK]KUxAcHd@iABa@AsD`AYFM@i@Fa@^BVJ^VPBh@Or@Mp@EDg@Ha@JUOi@?}@`BkAHKFSDo@KIM_@My@tA}AhAiBf@_@n@ShAKp@DhB^h@NjBbA~QtKH@FAFM@YgAkDGu@QgE?mAFmAXqCXeBp@uCfAaEZ{Bf@qBbAqBpBkDlIyO\\g@ZS\\Gt@HpAz@NDLELIVgAPeAPsBFa@HSRO~EyBx@i@rAmBNI^B^Xj@X`BTdE|@HCFIBSOaD_@_QBaEHsDAyADs@BYJQNOzAe@PUH[D]?g@UmIAuFJyBh@yFDs@LkF?aBO}DO{BYcEeAeMIsAAeACsBHeDHkILkADkAAs@K}EOqCUiGHgDK}MvCa@v@Qt@UpAm@v@c@hAe@lAy@fAcAb@e@h@eA\\y@Ra@XY~@k@rAgAv@y@`As@dBkB|BsBbAu@hAs@tAcA{C_MWsANE@KAk@BKzLuC@Mg@aKLOhAu@|@y@f@]~AWhCeA|@UD@Hx@BFlCaAdAYHnACp@Oh@?RFJFFl@YdAOl@HdB@x@NdAFdEDJGLJF?@QdAI@NrCaAxCg@lAOfB?tGu@pFw@l@@|Fz@@UD[~Rgw@Jq@LsB`AoSVoEHQsDwNq@_Dq@gFqA_L}@uKGiA?WDqAAy@AS]_Bq@eBeAuBkDqG_BeCT}AzBsJh@iAHGHUPYZ]~AeAVWLa@BM@]Cs@[uBEeADuAFs@`Ngm@GEn@wCFJfBkINg@M[I?EI', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.64012200000000,0.83919800000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=58731">View all updates for The Lord Nelson, Bradenham</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        12<span class="sup">th</span> Dec 2012, 15:32
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Jamescarol">James Carol</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        10<span class="sup">th</span> Oct 2012, 23:18
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Samanthaoaks">Samantha Oaks</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Child Friendly : <span id="fac12158731">Yes</span> <span id="discdetail12158731" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2012 by David McNally</span></li><li>Dog Friendly : <span id="fac10558731">Yes</span> <span id="discdetail10558731" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2012 by David McNally</span></li><li>Hot Food : <span id="fac10358731">No</span> <span id="discdetail10358731" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2012 by David McNally</span></li><li>Jukebox : <span id="fac11258731">No</span> <span id="discdetail11258731" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2012 by David McNally</span></li><li>Live TV Sports : <span id="fac11058731">No</span> <span id="discdetail11058731" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2012 by David McNally</span></li><li>Real Ale : <span id="fac10158731">Yes</span> <span id="discdetail10158731" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2012 by David McNally</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

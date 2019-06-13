@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Pilot pub in Mumbles (near Swansea), West Glamorgan, SA3 4EL : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Pilot" />
+  <meta name="keywords" content="The Pilot, 726  Mumbles Road, Mumbles, Swansea, West Glamorgan, , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Pilot in Mumbles" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/46001_46500/46146_79329d56.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/46146/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.57149571878717" />
+<meta property="og:longitude" content="-3.98795502215955" />
+<meta property="og:street-address" content="726  Mumbles Road" />
+<meta property="og:locality" content="Mumbles" />
+<meta property="og:region" content="West Glamorgan" />
+<meta property="og:postal-code" content="SA3 4EL" />
+<meta property="og:country-name" content="Wales" />
+<meta property="og:description" content="Do you like The Pilot in Mumbles? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Pilot the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/46146/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Pilot in Mumbles" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Pilot " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/46001_46500/46146_79329d56.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/46146/" />
+<meta name="geo.position" content="51.57149571878717;-3.98795502215955" />
+<meta name="geo.placename" content="The Pilot in Mumbles" />
+<meta name="geo.region" content="UK" />
+<title>The Pilot in Mumbles (near Swansea) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":46146},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(46146);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 46146;var pubaddress = "726  Mumbles Road";var pubname = "The Pilot";var pubpostcode = "SA3 4EL";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/wales/" title="Pubs Galore : Wales Page">Wales</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/west-glamorgan/" title="Pubs Galore : West Glamorgan Page">West Glamorgan</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/swansea/west-glamorgan/" title="Pubs Galore : Swansea Page">Swansea</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/mumbles/west-glamorgan/" title="Pubs Galore : Mumbles Page">Mumbles</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Pilot Page">The Pilot Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="0cj30himld612ppb1spjdpege4" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/46146/" class="indisplay"><img src="/images/display/46001_46500/46146_79329d56.jpg?w=2" alt="Picture of The Pilot" /></a><br />  Image posted by <a href="/userinfo.php?name=rpadam" class="indisplay">Just a quick pint, then I&#039;m off</a><br />
+  Submitted on Friday, 11<sup>th</sup> August 2017<br />
+  With picture contributions to 5082 other pubs<br />
+<a href="/pubpictures/46146/" class="smallbutton">View all this pub's pictures</a> (5 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/46146/">Pub map</a><br /><a href="/pubreviews/46146/">Pub reviews (9)</a><br /><a href="/pubpictures/46146/">Pub pictures (6)</a><br /><a href="/core/pubaudit.php?id=46146" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Pilot, Swansea</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">726  Mumbles Road</span><br />
+
+<span class="town">Mumbles</span><br />
+<span class="postaltown">Postal town: Swansea</span><br />
+<span class="postcode">SA3 4EL</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 07897895511</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/mumbles/west-glamorgan/">Mumbles</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Pilot</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/pilotofmumbles" target="_blank"><img src="https://pbs.twimg.com/profile_images/475651877191680000/1VjOABTg_normal.jpeg" alt="thepilot" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/pilotofmumbles" target="_blank">thepilot</a></strong>
+What a line up! <a href='https://t.co/p8I9yXiR7S' target='_blank'>https://t.co/p8I9yXiR7S</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/pilotofmumbles/status/1136572379361153025">10:55 AM Jun 6th</a> from <a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/pilotofmumbles" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/pilotofmumbles" target="_blank">thepilot</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Pilot  <span class="h2note">(Average Rating: <span id="averagerating"><b>9</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review135205" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> left this review about The Pilot</h6>
+<p>This is a fairly innocuous looking seafront pub on the South Eastern edge of Mumbles. Inside it&#039;s something of a real ale Mecca which includes a small brewery at the rear. As noted below it&#039;s an L shaped room with the bar at the front and a slightly raised area at the rear. There is loads of boaty memorabilia around the walls. The brewery can be seen at the rear on the way to the Gents. There was a fair crowd in on my Thursday afternoon visit, possibly helped by the fact that other Mumbles pubs worth visiting are late openers.<br />
+I counted eight hand pumps which had a cider, three from their own brewery, Tenby Hang Ten, London Pride, Worthington White Shield and one unused. I tried the Pilot Gold (&pound;3.20), Revolver (&pound;3.20) &amp; Black Storm (&pound;3.40) and the Tenby beer (&pound;3.30). All were excellent.<br />
+I liked this pub and would happily return.</p>
+<p class="Reviewer">On 3<sup>rd</sup> December 2018 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 2121 recommendations about 2116 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review120583" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about The Pilot</h6>
+<p class="old">Attractive seafront pub, and home of the eponymous brewery.  Pleasantly traditional inside, with a compact &#039;L&#039;-shaped bar with an interesting stained-glass gantry above the counter and a mixture of nautical decor and old photographs of the former tramway, etc.  Limited seating at the front, and nearly all high stools and chairs at that (which won&#039;t suit everyone) but there is also a further raised seating area at the back with standard furniture.  Excellent choice of real ales and a cider from seven of eight handpumps, including their own Revolver (made with Delta hops, &pound;3.20) and Viper Vermont IPA.</p>
+<p class="Reviewer">On 30<sup>th</sup> July 2017 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review102614" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about Pilot Inn</h6>
+<p class="old">I last visited this pub in early 1999 during a crawl of the now seemingly defunct &#039;Mumbles Mile&#039; pub crawl, of which this was, for most participants, the final pub of the crawl. Returning over 16 years later - a period which has seen so many of its contemporaries close or converted into coffee shops, cafes etc... - it was reassuring to find the place much as I remembered it. In fact, the only significant changes I could detect were the signs advising large groups, such as stag and hen parties, to steer clear and a much improved ale range, thanks in part to the pub&#039;s own Pilot Brewery. Three of their beers were available on this visit - Pilot Gold, Black Storm and Black Revolver - alongside a varied selection of Weird Beard Mariana Trench and Little Things, Bass, Wells Bombardier and Hook Norton Old Hooky. At least one real cider was available on handpull, but a board listed a great many more cider options. I tried the Pilot Gold, which was a good session ale and kept in excellent condition. The bar area was packed on a Friday evening yet the friendly bar staff successfully served me over half a dozen punters&#039; heads and seemed well drilled in dealing with such crowds.<br />
+The pub is typical of many of the old Mumbles pubs, occupying a small seafront property with a compact L-shaped layout. The front part is a tile floored bar area with the servery directly opposite the front door. The bar has a nice dark wood counter, tongue and groove bar back and an eye catching back-lit stained glass canopy which depicts pleasant images of rural and urban life. To the left there are some high tables and stools under arched windows and a large board listing all of the beers, whilst over on the right hand side a few more tables and stools stand under bare brick walls with a drinking ledge running along one and a ship&#039;s wheel on display under a high shelf stacked with various bottles, glasses, tankards and the like. The room extends further back on this side, passing a series of ship&#039;s flags, a lovely low stone fireplace, a collection of board games and books, some CAMRA certificates, plenty of photos and paintings, a rack with the day&#039;s papers, a couple of tables and chairs, a stack of wood for a small burner and a most unusual old ship departures board. Eventually you reach a small rear raised seating area with more standard tables and chairs and a few low stools in an area with half panelled walls, local photos and info boards and a stained glass window with a ship&#039;s wheel image. A bar skittles table was propped up to the rear and I also noticed a shove ha&#039;penny board. No music was playing and there was a TV screen in one corner, but it remained off and didn&#039;t look like it got much, if any, use.<br />
+This is an excellent pub that has reacted to the loss of trade now that students no longer complete the Mile, by targeting the more discerning drinker and judging on this evidence, it has been very beneficial doing so. There are a few very good pubs in the Mumbles and this one might just be the best of the lot.</p>
+<p class="Reviewer">On 7<sup>th</sup> January 2016 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/46146/">View more reviews of The Pilot (9)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Pilot</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of Pilot Inn - <a href="http://www.thepilotofmumbles.co.uk/welcome/4568971475" title="Submitted by:- hondo ." target="_blank">www.thepilotofmumbles.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="528284380530863">Facebook - <a href="https://www.facebook.com/thepilotofmumbles/" target="_blank" rel="nofollow">The Pilot</a></li></ul><ul id="Custom2"><li class="twitlink" id="846262249">Twitter - <a href="https://twitter.com/pilotofmumbles" target="_blank" rel="nofollow">thepilot</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/46146/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=AlanH">Alan Hurdle</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.57149571878717, -3.98795502215955], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.57149571878717, -3.98795502215955]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Swansea, 6.09 miles, 1 hr 57 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Gowerton, 6.93 miles, 2 hr 13 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Llansamlet, 9.72 miles, 3 hr 7 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('mqwyHl{iWWtBIDe@nCIJQAiA`HAXe@rCGr@e@~BYbD?LQIcC|Gy@vCyAfE_ArBEEoBjCaBrAo@VuF`BgARe@Nc@T}@|@oBdCaChBoDp@s@BmMKaOgEqIc@_F{AoZwLyP_J{@Oy@WGMoBMe@c@Gd@QCOU_@QkBKsAi@e@i@[c@[kAc@aCQe@kAeE{BaEcEuGm@u@oB_DUSiBgDqEyG}B{DiD_Hc@HO?QA[mAMOoAcFeToy@Wq@[kARaAm@qC{BiL_D}PsAqLk@oFe@yHc@_GYH@TI@O{BU?QWu@qAw@}@}@g@_Be@ULOV]a@qAg@_@U_@e@kA_ACY{@qDwIaVaBgEs@aE}@}EK_@iAv@SDSC_@KKMMc@{I{_@Um@Q]QSDg@?QKs@MiDIsEAEUKcANeAFa@E]Om@m@{@k@[AsBQcC[aBi@q@k@k@s@_D}Ce@RG_@GSKKyAg@}EuC_Ay@IBSCkC}AB\\NRdElCbCjA`BbAjBbAxBtAd@`@vCfD', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('mqwyHl{iWWtBIDe@nCIJQAiA`HAXe@rCGr@e@~BYbD?LQIcC|Gy@vCyAfE_ArBEEoBjCaBrAo@VuF`BgARe@Nc@T}@|@oBdCaChBoDp@s@BmMKaOgEqIc@_F{AoZwLyP_J{@Oy@WGMoBMe@c@Gd@QCOU_@QkBKsAi@e@i@[c@P|@Cp@AlCAT@d@AbBw@pKy@~DsAzDeC`FwBlCwHlIeBzAaBlAOFaBj@cCd@aHz@g@JyBdAqAlAuA`CqBvFu@~CcCfHkCfHw@~Cu@vD]jDEhDF~CX~Er@nGRpD?jCQnEQrCEr@g@`Da@vBg@fBoAvCWXYj@yAhBq@bA}@nBQl@Qx@}BzHs@vAq@t@uCjEkJ|MiF`HcAdAcC`ByAt@cA`@qAXoBL{CIsB_@kBm@{Aw@{CuBiEcGo@mAsA{C_@k@}A{AuDyAiBCuCPaEf@iJz@kB`@yEv@yFh@oBZqBHmCD{EAwAIqE@iDI}FU{@o@a@E{@a@U[M`@WNyDLoC|@{AlA}@vAy@t@aBjAF`@wDdDoDrFiB`C}@z@K@Wm@k@x@]TwA_C_AsBGYBM', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('mqwyHl{iWWtBIDe@nCIJQAiA`HAXe@rCGr@e@~BYbD?LQIcC|Gy@vCyAfE_ArBEEoBjCaBrAo@VuF`BgARe@Nc@T}@|@oBdCaChBoDp@s@BmMKaOgEqIc@_F{AoZwLyP_J{@Oy@WGMoBMe@c@Gd@QCOU_@QkBKsAi@e@i@[c@[kAc@aCQe@kAeE{BaEcEuGm@u@oB_DUSiBgDqEyG}B{DiD_Hc@HO?QA[mAMOoAcFeToy@Wq@[kARaAm@qC{BiL_D}PsAqLk@oFe@yHc@_GYH@TI@O{BU?QWu@qAw@}@}@g@_Be@ULOV]a@qAg@_@U_@e@kA_ACY{@qDwIaVaBgEs@aE}@}EWcAqDcSIYm@oDwAeKq@qEKQP[Sq@i@HEQMG[BEAKSaAmNGYC]XkAAGPs@`@aBFUAOqBiBFkAMIDe@Sk@F[UaFCIy@h@eA\\uCt@cA@wFd@u@Iw@c@u@SaAIwAXsAJe@?g@K_Ag@y@cAaAsAg@{@}BoCo@c@{@[iCk@uE[kBA_FVyDGEDAXgBSgDUcA[aAGeCDYLUTU^GZD^Lf@CTYPe@B]cA]WUkADg@Ek@g@}BaB}FQSsAaFwDyFg@kAUGM?OFENA^GDQKKBKAOMEICO?a@DSHOkAgDa@s@k@m@i@WVaAsBuFsI{HoNgWaFqI{AqCeGuIwOcSiFsBmAiAmEyHaHiNeAwCY?eDuAMY?y@aAk@?UEQIKMAIDILQOgDyGSe@[Y_Dc@]Uo@w@o@aATeCNDVo@V_AvAyDR_Al@yAJ[Da@Bg@MwDGo@k@cCQ}@YoBGQV{ATe@f@k@BKAQo@sBu@_CA[Bs@?uBGkCCoBHwARwA@_@SwDe@a@[s@Mq@As@PgBCs@qA\\Gg@}@wBIy@g@uADe@e@]Qg@k@JEf@F@ARXp@FdA', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.57149571878717,-3.98795502215955], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=46146">View all updates for The Pilot, Mumbles</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        3<span class="sup">rd</span> Dec 2018, 09:18
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        12<span class="sup">th</span> Aug 2017, 00:54
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11846146">No</span> <span id="discdetail11846146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 January 2016 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10746146">No</span> <span id="discdetail10746146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 January 2016 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11446146">No</span> <span id="discdetail11446146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 January 2016 by Pub SignMan</span></li><li>Car Park : <span id="fac11346146">No</span> <span id="discdetail11346146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 January 2016 by Pub SignMan</span></li><li>Child Friendly : <span id="fac12146146">Yes</span> <span id="discdetail12146146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 January 2016 by Pub SignMan</span></li><li>Darts : <span id="fac11146146">No</span> <span id="discdetail11146146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 January 2016 by Pub SignMan</span></li><li>Dog Friendly : <span id="fac10546146">Yes</span> <span id="discdetail10546146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 January 2014 by Bucking Fastard</span></li><li>Hot Food : <span id="fac10346146">No</span> <span id="discdetail10346146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 January 2016 by Pub SignMan</span></li><li>Jukebox : <span id="fac11246146">No</span> <span id="discdetail11246146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 January 2016 by Pub SignMan</span></li><li>Karaoke : <span id="fac10646146">No</span> <span id="discdetail10646146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 January 2016 by Pub SignMan</span></li><li>Live TV Sports : <span id="fac11046146">No</span> <span id="discdetail11046146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 January 2016 by Pub SignMan</span></li><li>Micropub : <span id="fac12246146">No</span> <span id="discdetail12246146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 January 2016 by Pub SignMan</span></li><li>Pinball : <span id="fac11646146">No</span> <span id="discdetail11646146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 January 2016 by Pub SignMan</span></li><li>Pool Table : <span id="fac10446146">No</span> <span id="discdetail10446146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 January 2016 by Pub SignMan</span></li><li>Real Ale : <span id="fac10146146">Yes</span> <span id="discdetail10146146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 December 2012 by hondo .</span></li><li>Real Cider : <span id="fac11946146">Yes</span> <span id="discdetail11946146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 January 2016 by Pub SignMan</span></li><li>WiFi : <span id="fac11546146">Yes</span> <span id="discdetail11546146" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 January 2016 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 11pm</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - Midnight</td></tr>
+<tr><td>Saturday</td><td>12noon - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62307/" class="List1">The George</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85532/" class="List1">Mermaid</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83624/" class="List1">Mumbles Carlton Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/46154/" class="List1">Patricks with Rooms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66097/" class="List1">Bar 1887</a></li>
+                    <li><img src="/images/icon-photo-grey.gif" alt="Pub has no pictures" title="Pub has no pictures" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85403/" class="List1">Oyster Lounge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/46225/" class="List1">The Village Inn</a></li>
+                    <li><img src="/images/icon-photo-grey.gif" alt="Pub has no pictures" title="Pub has no pictures" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/46008/" class="List1">Castellamare</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

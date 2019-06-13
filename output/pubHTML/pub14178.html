@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Phoenix Inn pub in Twyford (near Winchester), Hampshire, SO21 1RF : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Phoenix Inn" />
+  <meta name="keywords" content="Phoenix Inn, High Street, Twyford, Winchester, Hampshire, , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Phoenix Inn in Twyford" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/14001_14500/14178_beeebe8e.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/14178/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.01718807473763" />
+<meta property="og:longitude" content="-1.31620844543841" />
+<meta property="og:street-address" content="High Street" />
+<meta property="og:locality" content="Twyford" />
+<meta property="og:region" content="Hampshire" />
+<meta property="og:postal-code" content="SO21 1RF" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Phoenix Inn in Twyford? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Phoenix Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/14178/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Phoenix Inn in Twyford" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Phoenix Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/14001_14500/14178_beeebe8e.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/14178/" />
+<meta name="geo.position" content="51.01718807473763;-1.31620844543841" />
+<meta name="geo.placename" content="Phoenix Inn in Twyford" />
+<meta name="geo.region" content="UK" />
+<title>Phoenix Inn in Twyford (near Winchester) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":14178},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(14178);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 14178;var pubaddress = "High Street";var pubname = "Phoenix Inn";var pubpostcode = "SO21 1RF";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/hampshire/" title="Pubs Galore : Hampshire Page">Hampshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/winchester/hampshire/" title="Pubs Galore : Winchester Page">Winchester</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/twyford/hampshire/" title="Pubs Galore : Twyford Page">Twyford</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Phoenix Inn Page">Phoenix Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="jmreq80mkn4mg6q7l809se6sp5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/14178/" class="indisplay"><img src="/images/display/14001_14500/14178_beeebe8e.jpg?w=2" alt="Picture of Phoenix Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Monday, 21<sup>st</sup> March 2016<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/14178/" class="smallbutton">View all this pub's pictures</a> (4 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/14178/">Pub map</a><br /><a href="/pubreviews/14178/">Pub reviews (4)</a><br /><a href="/pubpictures/14178/">Pub pictures (5)</a><br /><a href="/core/pubaudit.php?id=14178" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Phoenix Inn, Winchester</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">High Street</span><br />
+
+<span class="town">Twyford</span><br />
+<span class="postaltown">Postal town: Winchester</span><br />
+<span class="postcode">SO21 1RF</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01962713322</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/twyford/hampshire/">Twyford</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Phoenix Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>8</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review128830" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> left this review about Phoenix Inn</h6>
+<p class="old">With custom from motorists rather than pedestrians, the Phoenix has a rather dowdy street frontage with the entrance now in the rear off the car park, taking you into the toilet access behind the bar, which is a little strange. Once inside, there is one long opened-out room in a fairly traditional pub style, with a fair-sized bar. There is a garden area behind and also a skittle alley. Excellent range of ales still much as described below and in good form. Rather more worth stopping off at than it first appears.</p>
+<p class="Reviewer">On 8<sup>th</sup> May 2018 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 1783 recommendations about 1742 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review105331" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about Phoenix Inn</h6>
+<p class="old">Long L shaped Greene King pub with light green shades, exposed brick, light wood panelling, varnished herringbone flooring. Various black and white prints on the walls as well as an unusual feature, some hogs head ends. Dog friendly and a Wednesday quiz. Skittle alley to rear. Looks like a Local Heroes GK pub and the jolly landlord was taking full advantage with eight ales on; just three GK (OSH, St Edmunds and house rebadge) with some excellent guests &ndash; Bowman Swift One, Flowerpots Bitter, Dark Star Partridge, Red Cat American Brown and Weltons. The Flowerpots was in very good shape and the Red Cat was fine. Run well and I&rsquo;d be hoping to persuade Desmond to swing by again in the future.</p>
+<p class="Reviewer">On 3<sup>rd</sup> April 2016 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review102076" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about Phoenix Inn</h6>
+<p class="old">Looks a bit plain from the street, but the partly opened-out interior of this old Greene King pub retains a fair amount of character despite the various modernisations.  Mix of furniture in the lightly decorated bar, with the tables in the darker side room all full with those dining.  Also has a rear room which was being used for pre-Christmas lunches when I stopped by, and a small patio beer garden at one side.  Live music advertised.  Decent selection from the eight handpumps, ranging from the &#039;house&#039; ale and the inevitable IPA and Old Speckled Hen, via the seasonal Old Spirited Hen and Fireside to the local Itchen Valley Gold, Bowman Swift One and Flower Pots Bitter (&pound;3.80).  With a friendly welcome from the efficient bar staff, I liked it here.</p>
+<p class="Reviewer">On 12<sup>th</sup> December 2015 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/14178/">View more reviews of Phoenix Inn (4)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Phoenix Inn</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Phoenix, includes wine list and menu - <a href="http://www.thephoenixinn.co.uk" title="Submitted by:- Andy Ven" target="_blank">www.thephoenixinn.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="183275590325">Facebook - <a href="https://www.facebook.com/thephoenixinntwyford/" target="_blank" rel="nofollow">THE PHOENIX INN</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/14178/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Pangolin">Graham Coombs</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.01718807473763, -1.31620844543841], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.01718807473763, -1.31620844543841]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Shawford, 0.85 miles, 16 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Winchester, 4.01 miles, 1 hr 17 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Eastleigh, 4.26 miles, 1 hr 22 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('khkvHp``Gh@@BxBk@jFUtD_@^_@N}@Bo@CaATIVaAdBY~@o@jAs@`AiE\\_ANuBl@e@`@QVe@rAeA~D]fCGbAAh@Dn@Hf@Lx@bAvD@NSbB{@`EOjBl@PBg@_AY@Ez@V', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('khkvHp``GOAqCg@g@[eDyDQMs@Ww@Qe@DaAw@}CMqGbCKKiAMy@@cBJ_@OkDIYGw@k@QGk@AUDeE~AwA^a@FgCMgCQaAMWMwAr@iFvBkBRaGlA{Gz@yBh@uE`AsDf@?Vo@Rs@^y@n@cAdAw@dAI\\MAc@b@[_Ay@kBY_@yFjKkMjUsBQECEGUM[EsAk@s@EoDkAg@]]c@uA}@_Bc@yDaBkEwAOHs@|Ea@g@]UwDu@yBm@CGKA{AHmH{BM@GFHf@Dt@AXWzB_Bq@Ml@eAjAWBgNaEoBeAgBw@iDcAwFwBiBa@sCW}@xE{@o@Qz@IDY@Ib@[D}DeB@Ga@Q@Mq@[Gh@GCFs@mES[Uw@Z_@CwEcCqB}@IIADKGORo@c@i@UqAa@QDMIMr@KHIP_@pBg@pAMdC`@A?_@QC?GRB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('khkvHp``G~@@rAMlAx@dB~@nBh@rCj@hHd@vFr@~Ef@\\d@jBp@jBv@nCbA~ExBfBj@pEhAxAj@lFjCt@Vt@P|@DzDIv@?p@LvIb@jDZd@A~B]z@Fv@^fA|@v@TfBRzCn@|CABr@d@|@`ApAfAhAbD`BJZJdHFn@h@`Bh@~Cc@|@J?^Gd@a@@La@hB@NzBzCd@f@fEtDtBdChDlGjE^dCO^Bn@^pCdCVGxCl@rBf@Z@jDkA~BE|Bh@bA|@dA@x@HjCH~@h@z@Rt@DhBUf@bAj@z@~@~@~BlBdAl@|CrAbAXn@@~@IR@pFjApBf@r@VZXp@pBn@jAz@z@b@XhClAW~BT~AEbAJ^PTPHdD@Ab@lBFTPJDPUJA`@BNERc@ZYUxT?xBKLAFBLFBGnDBbCZ~L@`ACtBE|BCb@Nf@\\j@fAAAg@@UlAP', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.01718807473763,-1.31620844543841], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=14178">View all updates for Phoenix Inn, Twyford</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        8<span class="sup">th</span> May 2018, 12:30
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        8<span class="sup">th</span> May 2018, 11:52
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11814178">No</span> <span id="discdetail11814178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 May 2017 by ROB Camra</span></li><li>Bar Billiards : <span id="fac10714178">No</span> <span id="discdetail10714178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 April 2016 by Quinno _</span></li><li>Beer Festivals : <span id="fac11714178">No</span> <span id="discdetail11714178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 May 2017 by ROB Camra</span></li><li>Beer Garden : <span id="fac11414178">Yes</span> <span id="discdetail11414178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 May 2017 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10214178">Yes</span>  - <span id="discdetail10214178" class="discdetail" style="">10p per pint</span> -   <span class="Reviewer">last updated 03 May 2017 by ROB Camra</span></li><li>Car Park : <span id="fac11314178">Yes</span> <span id="discdetail11314178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 May 2017 by ROB Camra</span></li><li>Child Friendly : <span id="fac12114178">Yes</span> <span id="discdetail12114178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 May 2017 by ROB Camra</span></li><li>Darts : <span id="fac11114178">Yes</span> <span id="discdetail11114178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 May 2017 by ROB Camra</span></li><li>Function Room : <span id="fac12314178">Yes</span> <span id="discdetail12314178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 May 2017 by ROB Camra</span></li><li>Hot Food : <span id="fac10314178">Yes</span> <span id="discdetail10314178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 May 2017 by ROB Camra</span></li><li>Jukebox : <span id="fac11214178">No</span> <span id="discdetail11214178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 April 2016 by Quinno _</span></li><li>Karaoke : <span id="fac10614178">No</span> <span id="discdetail10614178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 April 2016 by Quinno _</span></li><li>Live Music : <span id="fac10814178">Yes</span>  - <span id="discdetail10814178" class="discdetail" style="">Occasional</span> -   <span class="Reviewer">last updated 03 May 2017 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11014178">No</span> <span id="discdetail11014178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 May 2017 by ROB Camra</span></li><li>Micropub : <span id="fac12214178">No</span> <span id="discdetail12214178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 May 2017 by ROB Camra</span></li><li>Pinball : <span id="fac11614178">No</span> <span id="discdetail11614178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 April 2016 by Quinno _</span></li><li>Pool Table : <span id="fac10414178">No</span> <span id="discdetail10414178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 April 2016 by Quinno _</span></li><li>Quiz Night : <span id="fac10914178">Yes</span>  - <span id="discdetail10914178" class="discdetail" style="">Occasional</span> -   <span class="Reviewer">last updated 03 May 2017 by ROB Camra</span></li><li>Real Ale : <span id="fac10114178">Yes</span> <span id="discdetail10114178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 May 2017 by ROB Camra</span></li><li>Real Cider : <span id="fac11914178">No</span> <span id="discdetail11914178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 May 2017 by ROB Camra</span></li><li>WiFi : <span id="fac11514178">Yes</span> <span id="discdetail11514178" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 May 2017 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8.5 from 2 reviewer(s)" title="Pub has average rating of 8.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14136/" class="List1">Bugle Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 3 reviewer(s)" title="Pub has average rating of 6 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/59876/" class="List1">The Bridge Inn</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

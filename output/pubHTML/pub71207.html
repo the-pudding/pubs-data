@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Revolution pub in Cheltenham, Gloucestershire, GL50 3PA : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Revolution" />
+  <meta name="keywords" content="Revolution, Clarence Parade, Cheltenham, Gloucestershire, Cheltenham Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Revolution in Cheltenham" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/71001_71500/71207_171ee088.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/71207/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.90053143958529" />
+<meta property="og:longitude" content="-2.07726878769688" />
+<meta property="og:street-address" content="Clarence Parade" />
+<meta property="og:locality" content="Cheltenham" />
+<meta property="og:region" content="Gloucestershire" />
+<meta property="og:postal-code" content="GL50 3PA" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Revolution in Cheltenham? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Revolution the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/71207/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Revolution in Cheltenham" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Revolution " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/71001_71500/71207_171ee088.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/71207/" />
+<meta name="geo.position" content="51.90053143958529;-2.07726878769688" />
+<meta name="geo.placename" content="Revolution in Cheltenham" />
+<meta name="geo.region" content="UK" />
+<title>Revolution in Cheltenham : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":71207},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(71207);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 71207;var pubaddress = "Clarence Parade";var pubname = "Revolution";var pubpostcode = "GL50 3PA";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/gloucestershire/" title="Pubs Galore : Gloucestershire Page">Gloucestershire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/cheltenham/gloucestershire/" title="Pubs Galore : Cheltenham Page">Cheltenham</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Revolution Page">Revolution Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="ul6e62nr3g039rcedkeu4m27n3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/71207/" class="indisplay"><img src="/images/display/71001_71500/71207_171ee088.jpg?w=1" alt="Picture of Revolution" /></a><br />  Image posted by <a href="/userinfo.php?name=bcfczuluarmy" class="indisplay">Jonathan Wilde</a><br />
+  Submitted on Saturday, 18<sup>th</sup> March 2017<br />
+  With picture contributions to 3997 other pubs<br />
+<a href="/pubpictures/71207/" class="smallbutton">View all this pub's pictures</a> (11 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/71207/">Pub map</a><br /><a href="/pubreviews/71207/">Pub reviews (3)</a><br /><a href="/pubpictures/71207/">Pub pictures (12)</a><br /><a href="/core/pubaudit.php?id=71207" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Revolution, Cheltenham Central, Cheltenham</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=hondo">hondo .</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Clarence Parade</span><br />
+
+
+<span class="town">Cheltenham</span><br />
+<span class="postcode">GL50 3PA</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01242234045</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/cheltenham-central/gloucestershire/">Cheltenham Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Revolution  <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review116125" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=hondo">hondo .</a> left this review about Revolution</h6>
+<p class="old">Church conversion I remember it in it&#039;s firkin days now a vodka bar. Interior as described by Oggwyn below.</p>
+<p class="Reviewer">On 13<sup>th</sup> March 2017 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 2564 recommendations about 2508 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review100595" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Oggwyn+Trench">Oggwyn Great</a> left this review about Revolution</h6>
+<p class="old">Large bar converted from a Church , the bar is to the right of the entrance , the interior is divided into seperate areas with some comfy seating by the entrance , high tables and stools in the middle , a raised area to the left and a mezzanine floor .<br />
+This is a Vodka bar aimed at the younger trendier end of the market in the evenings but in the day it is open to anyone , on my friday afternoon visit there were a few couples eating and a family also eating .<br />
+Large selection of Vodkas(30+) and other spirits , no real ales but plenty of lager on tap Amstel , Heinikein , Mahon ,San Miguel ,Peroni and Budweiser plus Aspalls and Magniers , bottled beers included Duvell , Camden , Chimay , Leffe , Boulavard and Verdett .<br />
+It is a decent conversion and worth a pop in for a quick drink , but the array of large speakers , spotlights and disco balls means its probally better going during the day if your over 30.</p>
+<p class="Reviewer">On 17<sup>th</sup> October 2015 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 740 recommendations about 637 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review42995" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Lady+Grey">Helen Iwanczuk</a> left this review about Revolution</h6>
+<p class="old">I suggest using a wide angle lens when photographing this pub, my efforts really don&#039;t do it justice. Being a Cheltonian, I can remember this place when it was Salem Baptist Church, It was beautifully converted to a pub (The Festival and Firkin) in the late 1990&#039;s. It has been quite a while since I have been inside, it was spectacular the last time I saw it. It&#039;s on my &quot;to do&quot; list.</p>
+<p class="Reviewer">On 14<sup>th</sup> March 2011 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 202 recommendations about 148 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Revolution</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official pages of the Revolution Bar in Cheltenham - <a href="http://www.revolution-bars.co.uk/cheltenham" title="Submitted by:- hondo ." target="_blank">www.revolution-bars.co.uk</a></li>
+          </ul>
+</div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/71207/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Lady+Grey">Helen Iwanczuk</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.90053143958529, -2.07726878769688], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.90053143958529, -2.07726878769688]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Cheltenham Spa, 1.19 miles, 22 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Gloucester, 8.84 miles, 2 hr 50 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Ashchurch for Tewkesbury, 9.14 miles, 2 hr 56 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('uxw{HvttKy@eAc@pDcB`EtDhEh@`@i@fDItADDDNATIPG@mBhNkAdJH`@JVKd@CdADxAf@pBVzA@Th@hBnArEd@dC|@xFX]nAlG^fDBd@bB`FtBdG~@tB`ApBB\\Pn@f@jA^rBE^QHDTOt@@DKf@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('uxw{HvttKtAhBzA`BzCtDRH\\FPICPxA~@f@d@hAtAtAlCL^V`@VDrB~BpC`EbArAZRLN@`@NJGRTLDLDP?RWn@V@PZdA~K`AxKThDFjBAfBP@@fBArEjAz@j@j@RV\\lAjAlJt@tB`AlB\\d@d@`AlDjLBVFdFC|@o@pHm@`EIxAJjDLnAHL?vBC|@M`Cy@`MGhAK`E?pF@xAD|@Ft@Jf@V|@r@pArChEp@`ClA|E^hAfAhCVRnAxAz@pAnB|BpDhDb@XJ\\LVPN`@x@Pj@Hj@JdBNHIdC?x@Bb@L|@Tl@h@vBTtAX`AFNGTv@nEAp@t@jFLlD@nFAxAIhBWpC_@xCPJKp@NFC^?j@XfMvCpMhFrQEXtBzA~EnL@PCPeCk@Ev@Cz@JdDHFbBxF`@~@CtAHx@Rx@b@hATrCBRL\\L|@L`BPdAH`@b@|@Xb@r@j@~@\\^B`@Nm@lRo@lJm@hIYhEE|@?x@LlBPl@|AfC\\r@Vn@d@dBl@`C\\`BLbAJrAL`DNr@Tl@dAjBj@r@tAnArB|A\\j@jAzB?RqAnIqBhHw@xEV\\ZZ`@ZvBnARPQd@oAhFSj@}EtIkBlE_@dASnAo@pBZrAhBhJ`CtKfB~KbAbF`D`MRhAJ~`@nCpW@~LyA\\qF|@oG~@c@@B~C[~@Cd@Dn@Hf@\\|@G^fBzDxA~DlAzCjF`KXv@V|@Pn@nA}Bv@s@fC|KdCnJj@zAZ^b@^n@PtBVjEnBTAV|EAZO~@lAr@hCfBqAzH[jCSnCKfDCpDFvCLpCrCdUUNBJf@UBLUHV`BvAxLJL\\gB~ATQrCM|CH`EVbGnAfQSPb@rE`@~GP~@Z`AzBrEFVAz@h@~@DQ`ArAp@nBt@b@AcAt@uACC', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('uxw{HvttKy@eAc@pDcB`Ei@lBa@vCOl@A|@IRsBxJKDQAe@hGAbBOBMJuFfIiDvEMJSqA]R}AjDSR}AxDS|@aAwAeAqAQ]uEdHg@~@uAbDm@g@gAnEmAaAs@hCQ\\MFiEwCMXIAcOhBo@JkAh@cAj@aAv@oDdDoBpBwAbBI^w@_@a@dBa@lAg@vA}DdIo@rBk@vCQ`@}AlBuBzAYF_ACIXw@~@g@lA{@rA}BjCi@^q@zASp@_@r@gBvAo@Xs@t@e@z@Wn@e@nBKTKJy@R{At@sDnDs@^sD|@eA`@Cn@eC~Jw@rBeB~CsAdDg@zBK|BIB}@rCGn@Ep@Gd@q@dAIDI?ORG?KN?XULQRe@`Am@|@c@ZaAXYXwBvDOr@?x@Bt@Sn@OEeA{@ODQj@a@vBsJaDw@]mDaA[Cm@Wk@KODILQ~@INOB{B_AqCk@EEASWAQNy@J_Bl@OPs@f@o@TwAf@e@Hw@FGDGLKlBIn@Oh@cAlBQJY?iCmAqAnOEBUEKFCHm@tJeAjY}@zKW~A_@z@e@Rq@[c@IiAD]F_@N[b@Yl@a@d@MVs@i@oHgIiAkBcEwF_@q@Sq@wC{Oe@qBa@oA]u@iAqAJ]De@GaAwAiEc@_Dm@eFMoBCqA_@cH@a@gFfCqCzBW@{@iDwSdFoGOgIyEuNTkLmAiCg@yDhDmBaOQiBG@w@p@aB|Ck@n@uA\\uAJsBSoEN_@wAmAFqB_@oBe@SBGaBG@c@UuCmCUIyAMwADICCb@CtAm@Iy@FkAR}FhHqCvAaBdAINcAoDQy@e@aEMi@KSMOYKeCFgAKkAO}FiAiC[sBAo@KyHyCgIcCwAi@}@?}BXU?KEOWCQOqEEa@IQKIOEeIj@gHv@s@D{@CcBYmBQwAs@wAuAQK[Mm@GaEDy@Vs@`@KaBOFGIYkDY[i@@SHUMeCBASE]Q?', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.90053143958529,-2.07726878769688], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=71207">View all updates for Revolution, Cheltenham</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        14<span class="sup">th</span> Dec 2018, 06:17
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Lady+Grey">Helen Iwanczuk</a> deleted by owner
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        14<span class="sup">th</span> Dec 2018, 06:16
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Lady+Grey">Helen Iwanczuk</a> deleted by owner
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11871207">No</span> <span id="discdetail11871207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Bar Billiards : <span id="fac10771207">No</span> <span id="discdetail10771207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Beer Festivals : <span id="fac11771207">No</span> <span id="discdetail11771207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Beer Garden : <span id="fac11471207">No</span> <span id="discdetail11471207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>CAMRA Discount : <span id="fac10271207">No</span> <span id="discdetail10271207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Car Park : <span id="fac11371207">No</span> <span id="discdetail11371207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Child Friendly : <span id="fac12171207">Yes</span>  - <span id="discdetail12171207" class="discdetail" style="">untill 7pm</span> -   <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Darts : <span id="fac11171207">No</span> <span id="discdetail11171207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Dog Friendly : <span id="fac10571207">No</span> <span id="discdetail10571207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Function Room : <span id="fac12371207">No</span> <span id="discdetail12371207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Hot Food : <span id="fac10371207">Yes</span> <span id="discdetail10371207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 March 2017 by hondo .</span></li><li>Jukebox : <span id="fac11271207">No</span> <span id="discdetail11271207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Karaoke : <span id="fac10671207">No</span> <span id="discdetail10671207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Live Music : <span id="fac10871207">Yes</span> <span id="discdetail10871207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Live TV Sports : <span id="fac11071207">No</span> <span id="discdetail11071207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Micropub : <span id="fac12271207">No</span> <span id="discdetail12271207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Pinball : <span id="fac11671207">No</span> <span id="discdetail11671207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Pool Table : <span id="fac10471207">No</span> <span id="discdetail10471207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Quiz Night : <span id="fac10971207">No</span> <span id="discdetail10971207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>Real Ale : <span id="fac10171207">No</span> <span id="discdetail10171207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 March 2017 by hondo .</span></li><li>Real Cider : <span id="fac11971207">No</span> <span id="discdetail11971207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 March 2017 by hondo .</span></li><li>Wheelchair Access : <span id="fac12071207">Yes</span> <span id="discdetail12071207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2015 by Oggwyn Great</span></li><li>WiFi : <span id="fac11571207">Yes</span> <span id="discdetail11571207" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 March 2017 by hondo .</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/60199/" class="List1">The Stable</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84939/" class="List1">The Clarence Social</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/12476/" class="List1">Yates&#039;s</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/74009/" class="List1">Cafe Rouge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/12412/" class="List1">The Prom Vaults</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 20 picture(s)" title="Pub has 20 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 9 recommendation(s)" title="Pub has 9recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 6 reviewer(s)" title="Pub has average rating of 7 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/69611/" class="List1">The Bank House (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 3 reviewer(s)" title="Pub has average rating of 7 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/12441/" class="List1">St Georges Vaults</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85039/" class="List1">Cosy Club</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

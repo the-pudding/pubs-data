@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Knavesmire pub in York, North Yorkshire, YO23 1ER : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Knavesmire" />
+  <meta name="keywords" content="The Knavesmire, Albemarle Road, York, North Yorkshire, Dringhouses, Clementhorpe, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Knavesmire in York" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/58501_59000/58602_c64eccb7bbce886ab80e79519cc3a50a.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/58602/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="53.94541220363682" />
+<meta property="og:longitude" content="-1.09311282634735" />
+<meta property="og:street-address" content="Albemarle Road" />
+<meta property="og:locality" content="York" />
+<meta property="og:region" content="North Yorkshire" />
+<meta property="og:postal-code" content="YO23 1ER" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Knavesmire in York? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Knavesmire the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/58602/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Knavesmire in York" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Knavesmire " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/58501_59000/58602_c64eccb7bbce886ab80e79519cc3a50a.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/58602/" />
+<meta name="geo.position" content="53.94541220363682;-1.09311282634735" />
+<meta name="geo.placename" content="The Knavesmire in York" />
+<meta name="geo.region" content="UK" />
+<title>The Knavesmire in York : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":58602},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(58602);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 58602;var pubaddress = "Albemarle Road";var pubname = "The Knavesmire";var pubpostcode = "YO23 1ER";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/north-yorkshire/" title="Pubs Galore : North Yorkshire Page">North Yorkshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/york/north-yorkshire/" title="Pubs Galore : York Page">York</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Knavesmire Page">The Knavesmire Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="du6uakkk9chve8reghnqk70p46" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/58602/" class="indisplay"><img src="/images/display/58501_59000/58602_c64eccb7bbce886ab80e79519cc3a50a.jpg?w=2" alt="Picture of The Knavesmire" /></a><br />  Image posted by <a href="/userinfo.php?name=ColinS" class="indisplay">Colin Spiller</a><br />
+  Submitted on Sunday, 29<sup>th</sup> June 2008<br />
+  With picture contributions to 680 other pubs<br />
+<a href="/pubpictures/58602/" class="smallbutton">View all this pub's pictures</a> (3 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/58602/">Pub map</a><br /><a href="/pubreviews/58602/">Pub reviews (3)</a><br /><a href="/pubpictures/58602/">Pub pictures (4)</a><br /><a href="/core/pubaudit.php?id=58602" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Knavesmire, York</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Albemarle Road</span><br />
+
+
+<span class="town">York</span><br />
+<span class="postcode">YO23 1ER</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/dringhouses/north-yorkshire/">Dringhouses</a>, <a href="/areas/clementhorpe/north-yorkshire/">Clementhorpe</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Knavesmire</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/Knavesmirepub" target="_blank"><img src="https://pbs.twimg.com/profile_images/478916577015132161/BEX7PleX_normal.jpeg" alt="Knavesmire Pub" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/Knavesmirepub" target="_blank">Knavesmire Pub</a></strong>
+#ovingtoncc
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/Knavesmirepub/status/881831042331680768">12:04 PM Jul 3rd 2017</a> from <a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/Knavesmirepub" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/Knavesmirepub" target="_blank">Knavesmire Pub</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Knavesmire  <span class="h2note">(Average Rating: <span id="averagerating"><b>8</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review136281" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a> left this review about The Knavesmire</h6>
+<p>As the previous reviewers mention this is a large pub and very handy for the racecourse. There were 4 cask beers on show Anglers Retreat from the Wold Top Brewery,Leeds Pale Ale,Hardy and Hanson&#039;s Olde Trip and Yankee from The Rooster Brewing Co. There is also a function room to the right of the bar plus a friendly dog.</p>
+<p class="Reviewer">On 22<sup>nd</sup> January 2019 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 1994 recommendations about 1960 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review99168" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> left this review about The Knavesmire</h6>
+<p class="old">Well-run and deceptively large pub hidden away in residential streets. There is a large bar with games, TV screens etc, a rectangular middle bar with more of a saloon feel, and a slightly strange area to the side useful for eating. A very good range of local brews in good condition, including some unusual ones - Cask Marque listed. Only a brief visit but definitely intend to come back.</p>
+<p class="Reviewer">On 10<sup>th</sup> September 2015 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 1783 recommendations about 1742 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review74242" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=hondo">hondo .</a> left this review about The Knavesmire</h6>
+<p class="old">A large John Barras pub very close to York racecourse. 2 real ales. Big screen,2 pool tables &amp; a dartboard. Edit 7/9/13 reported to have changed ownership</p>
+<p class="Reviewer">On 7<sup>th</sup> September 2013 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 2564 recommendations about 2508 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Knavesmire</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="twitlink" id="2617494641">Twitter - <a href="https://twitter.com/Knavesmirepub" target="_blank" rel="nofollow">Knavesmire Pub</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/58602/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=hondo">hondo .</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([53.94541220363682, -1.09311282634735], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([53.94541220363682, -1.09311282634735]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> York, 1.14 miles, 21 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Poppleton, 3.45 miles, 1 hr 6 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Ulleskelf, 12.29 miles, 3 hr 57 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('eeghIzntECc@sDh@wEtAgFnDsEt@gFbA_Bn@q@\\i@f@iAlC_B{B_A_BWFmCgEmB_DwEmJw@kAy@bBcArAk@rAWPW?oBq@{@g@Il@i@]oBa@Mt@CBQESb@?lAC??Tf@@dAN', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('eeghIzntECc@sDh@wEtAgFnDsEt@gFbA_Bn@q@\\i@f@iAlC}@qAGR[a@_A~B_CdFgALDxC?tFBlBAhAIv@Sx@Mz@IdA?|@DtACv@Gn@Ox@Qt@}@rCEGw@pCW`Ae@ZqBnCs@`D{@bAw@fAaEpGmFlGEBIC[^@FGTcEpFSDCDGLI^iAhB?RYd@HNwBbEiArB_B|BiDnESZe@bAo@dBi@vBUlAU`By@fIS`Ba@bBeBvFwBnHeJxYc@nAo@zAeDpGgBzDcCdHwF~RsAxFoA|FSdBQhCWlGGz@QhAUjAA~AB\\Ab@IXINa@zBGtAU~HM`Bo@lEq@b@UCYBgCj@oAf@iCjAiBfAEWBA@BDESmB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('eeghIzntEDbBDZbAdCrKoE@LTCJ\\CpAER@|@PnANd@^p@h@j@]rASdAKpAE|@AhAD`CHhALpAVxA^rAb@lAn@jAz@`AhAv@jA\\lN`CEzAEd@Y|CeAzJIJ@JUzBgAbIxIbIfA`AvEjDpCzB~E~DnAjAn@Nb@f@H?HET@LNTn@FFZJHH@NEl@I@?DpFvDdHnDNC@CZPzApAdAdALTHf@Pb@XXv@JTLtCpEF^AR[tB@NR`@JFP@bAQN?LH|A`Ej@fBfDjJ|@`DFd@f@hCzAtIVx@n@bDtBlNpAbI?\\l@zCxCxLnD~Vj@~FNxBNjCN|IFhTNpJPtEXnEHlCN@TrCZtFr@rMQN\\hD\\vDj@nIv@jIbDhZrCbVbAbIr@`Fz@tExAjGlA~D~AtEl@vANv@Rh@`@\\dBnDrAzBhB`CtKpJpApArAhB|G~LlBdD|DzILh@Xp@@LV@\\ZzFnL|A|D`B|FrAtFlAtF|AfJJ|@Nl@p@bCd@tB`A~ClCvFhDtGhDzIxCbJhB|EdAfC~A`DfFlJh@xAv@vAn@|@fDhGdBrDrA`E|@tDVfB|@`EvArFxEbPp@vCZfBJ|@RjAR`B`@xEjAfQJbCDrDGN?|@FRGxTIt@Hj@Ap@BpDFfQFA@|NAfKDzCThDHPXfDpAfIjAhGnA~FvAdHTlBTvCV|Ev@fFz@~KdB_Br@|CDF@HRx@xBwB~CfIDGb@pCBhAE\\MXOPBJv@dAKVVf@Ef@t@XvArBdAl@T`@lAmDr@iAl@uAj@u@vA}@Li@r@i@|@[hDk@t@Ir@SXWjAk@j@M~@JjDo@xC}@|AcA`A}@x@aAjD}Ct@e@rBo@x@QJMHOMsLG}@Ow@c@cAmA{A_@u@Ks@EqAPwARiAh@y@zAcB\\i@j@_Bb@eBB_B?}AC{AvAmNR{@~@aBR_AEcBYsDLcBt@oC`AcBh@[p@C|@F|@TbAChAg@nA_AtAuA`AmBnBsGbB}Dp@gAn@u@~@m@|AsAv@m@x@wAx@w@h@_@^y@p@qBR_@`AqDl@wAlAy@rAGxAOpA[dA_@PORa@b@uA~AfBb@TXOXTEs@?c@Hk@vGsOrAcCpAyChA{C`AgD~@oIrAyBdD{GxAyDpAuCTq@~@wJ^w@n@?v@Fj@NNRdCUJ@LJRdAZCVBFiCDc@HSVYBPWf@CdAb@ZCLtAv@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.94541220363682,-1.09311282634735], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=58602">View all updates for The Knavesmire, York</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        22<span class="sup">nd</span> Jan 2019, 23:21
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        22<span class="sup">nd</span> Jan 2019, 18:51
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11858602">No</span> <span id="discdetail11858602" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 December 2017 by ROB Camra</span></li><li>Beer Festivals : <span id="fac11758602">No</span> <span id="discdetail11758602" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 December 2017 by ROB Camra</span></li><li>Beer Garden : <span id="fac11458602">Yes</span> <span id="discdetail11458602" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 December 2017 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10258602">No</span> <span id="discdetail10258602" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 December 2017 by ROB Camra</span></li><li>Car Park : <span id="fac11358602">No</span> <span id="discdetail11358602" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 December 2017 by ROB Camra</span></li><li>Function Room : <span id="fac12358602">Yes</span> <span id="discdetail12358602" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 December 2017 by ROB Camra</span></li><li>Hot Food : <span id="fac10358602">No</span> <span id="discdetail10358602" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 December 2017 by ROB Camra</span></li><li>Live Music : <span id="fac10858602">No</span> <span id="discdetail10858602" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 December 2017 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11058602">Yes</span> <span id="discdetail11058602" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 December 2017 by ROB Camra</span></li><li>Micropub : <span id="fac12258602">No</span> <span id="discdetail12258602" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 December 2017 by ROB Camra</span></li><li>Real Ale : <span id="fac10158602">Yes</span> <span id="discdetail10158602" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 December 2017 by ROB Camra</span></li><li>Real Cider : <span id="fac11958602">No</span> <span id="discdetail11958602" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 December 2017 by ROB Camra</span></li><li>Wheelchair Access : <span id="fac12058602">Yes</span> <span id="discdetail12058602" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 December 2017 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/63074/" class="List1">St. Clement&#039;s Working Men&#039;s Club</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 1 reviewer(s)" title="Pub has average rating of 8 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/58607/" class="List1">The Winning Post</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 4 reviewer(s)" title="Pub has average rating of 6.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54328/" class="List1">The Mount</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 6 reviewer(s)" title="Pub has average rating of 6.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/43486/" class="List1">Bay Horse</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87337/" class="List1">The Crescent</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 4 reviewer(s)" title="Pub has average rating of 7.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56436/" class="List1">The Crystal Palace</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/43704/" class="List1">The Victoria Vaults</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 4 reviewer(s)" title="Pub has average rating of 6.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/43611/" class="List1">The Old Ebor</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

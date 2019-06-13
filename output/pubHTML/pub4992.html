@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Oxford pub in Redruth, Cornwall, TR15 2BQ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Oxford" />
+  <meta name="keywords" content="The Oxford, 28  Fore Street, Redruth, Cornwall, Redruth Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Oxford in Redruth" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/4501_5000/4992_3a93890d.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/4992/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="50.23345800000000" />
+<meta property="og:longitude" content="-5.22802500000000" />
+<meta property="og:street-address" content="28  Fore Street" />
+<meta property="og:locality" content="Redruth" />
+<meta property="og:region" content="Cornwall" />
+<meta property="og:postal-code" content="TR15 2BQ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Oxford in Redruth? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Oxford the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/4992/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Oxford in Redruth" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Oxford " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/4501_5000/4992_3a93890d.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/4992/" />
+<meta name="geo.position" content="50.23345800000000;-5.22802500000000" />
+<meta name="geo.placename" content="The Oxford in Redruth" />
+<meta name="geo.region" content="UK" />
+<title>The Oxford in Redruth : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":4992},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(4992);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 4992;var pubaddress = "28  Fore Street";var pubname = "The Oxford";var pubpostcode = "TR15 2BQ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/cornwall/" title="Pubs Galore : Cornwall Page">Cornwall</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/redruth/cornwall/" title="Pubs Galore : Redruth Page">Redruth</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Oxford Page">The Oxford Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="35hu42tpc70uqn3fri3a3abjs1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/4992/" class="indisplay"><img src="/images/display/4501_5000/4992_3a93890d.jpg?w=2" alt="Picture of The Oxford" /></a><br />  Image posted by <a href="/userinfo.php?name=gillhalfpint" class="indisplay">Gill Smith</a><br />
+  Submitted on Sunday, 24<sup>th</sup> July 2011<br />
+  With picture contributions to 190 other pubs<br />
+<a href="/pubpictures/4992/" class="smallbutton">View all this pub's pictures</a> (2 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/4992/">Pub map</a><br /><a href="/pubreviews/4992/">Pub reviews (2)</a><br /><a href="/pubpictures/4992/">Pub pictures (3)</a><br /><a href="/core/pubaudit.php?id=4992" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Oxford, Redruth Town, Redruth</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">28  Fore Street</span><br />
+
+
+<span class="town">Redruth</span><br />
+<span class="postcode">TR15 2BQ</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Punch Taverns</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/redruth-town/cornwall/">Redruth Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Oxford  <span class="h2note">(Average Rating: <span id="averagerating"><b>6</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review48896" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=gillhalfpint">Gill Smith</a> left this review about The Oxford Inn</h6>
+<p class="old">Called in a couple of days ago while waiting for a bus and found it to be a tidy town centre pub with decent ale, Sharps Doom Bar.  Large room and a games room off with pool table.</p>
+<p class="Reviewer">On 16<sup>th</sup> July 2011 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 1191 recommendations about 1117 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review11998" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=mutley1234">mark whatley</a> left this review about The Oxford Inn</h6>
+<p class="old">recently refurbished by punch taverns good town center pub busy at weekends and lunches are available</p>
+<p class="Reviewer">On 10<sup>th</sup> March 2009 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 4 recommendations about 4 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Oxford</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+</div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/4992/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([50.23345800000000, -5.22802500000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([50.23345800000000, -5.22802500000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Redruth, 0.16 miles, 3 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Camborne, 4.03 miles, 1 hr 17 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Perranwell, 6.33 miles, 2 hr 2 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('oerqHra|^GSlDgDIa@l@e@o@iAsAeB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('oerqHra|^Ld@v@vDHz@Jt@Tn@VfBTpA\\@r@`@r@z@|@~@r@`Ad@\\lBx@`DzD|CbDZUH?Lf@N^^Z\\v@r@zBbAzDf@jBXxBNx@NZt@r@FROfE@~Ah@pBVn@Pl@Br@NbANl@LnADlABhCTdANz@fBzEH^Hr@BtAPrC\\nJBhCDbBZ~FZzGVjChA~IZhBFDn@DJHtBzHv@dCl@hCJp@Hr@ZzBBTEZ?x@LfAZv@b@d@f@jAfBhHh@jABVARi@jAe@fF?t@RlADbAfC|E~@`Cn@bD?d@CHPDNTt@zBNbADz@RnBLp@f@~@j@l@jEhDh@R~@FRHTb@DnBH^lBxANXRz@VrBDtAGb@W~Ac@tA?PCT[x@]jAq@xCDNGjA@t@Vt@h@t@j@pAF?d@^DR^vE?`@MdAFp@I`Ab@bEFVp@x@d@I`CEpB@r@R~@@ZBC~BlBHVjA?`@B\\PbARj@Bb@?p@BVRn@LLHEd@bD?RNdALd@k@~AUb@i@^d@j@v@rAZr@vBjG|CnF|@rApBvBjB`DvAxBg@fCg@rAo@pAmCnDNXd@tC', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('oerqHra|^GSlDgDIa@l@e@|AaA^]xA_BvE{EtBkBxEkDfCyAlCwAhEuFxCgE|@yAXi@x@kB`AaB~EyGlCeDpBuCVi@FU@SLI@Y`Aw@zAmC~AaDZs@|CsIrAkDd@{AQ]Km@GoAHyCA_@XG^k@TMNUjAeEZsAPgAJYz@e@V_@Tq@Jq@AmD~@CNKFa@?i@E{@OuAi@qCIgAiAaC~B}GKq@@WGgBi@sDs@qBQk@o@gFA_@IeAQuDIg@L]Fk@A}@Dq@CeCA]DmDE]Mc@Dm@C_BM_CIyDA}@DaAAaAFUQw@GmAGWGMx@wCP[N_@bAuB~B}D|B_CfA{@x@_@pAmA`Ao@f@OBgAAgBC}@UoCu@wG[}De@iBUqBAm@@g@TkAfAeDR{@p@aFcA_Au@_AUo@c@e@m@]o@Qw@Gc@?]uA]aBiAcBeAcDcAiB_@kAUcF`@}FZkBT}CNu@z@sAR{@OuECmBGmFKqDy@{G_AiEg@wAo@sA_AkFS{B_@cBHoBIaBBaBCuBj@Sg@kH?}D{@}IIaGDuEFiAOoDQyCC}CLsCMaHIy@Z]h@Nd@WPWNONCY_Dm@mEmAqImBqLS_BWeDWmGAoALgAGg@Vq@\\c@jAoA|AuB|C{GTc@`B{Db@w@z@iB~AcCc@gG?q@NgC?sA_@yFI_CD}BTaDZmBJ_BBgA?gHG{BIs@]gAO{CIoJB_CPoGl@~A', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([50.23345800000000,-5.22802500000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=4992">View all updates for The Oxford, Redruth</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        22<span class="sup">nd</span> Nov 2015, 13:10
+      </div><div class="auditexp">Request to mark pub as open by <a rel="nofollow" href="/userinfo.php?name=ROBCamra">ROB Camra</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        22<span class="sup">nd</span> Nov 2015, 13:10
+      </div><div class="auditexp">Request to mark pub as open submitted by <a rel="nofollow" href="/userinfo.php?name=ROBCamra">ROB Camra</a>, with included notes: <span class="reason">Reopened under new management</span>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>CAMRA Discount : <span id="fac1024992">No</span> <span id="discdetail1024992" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 November 2015 by ROB Camra</span></li><li>Dog Friendly : <span id="fac1054992">Yes</span> <span id="discdetail1054992" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 November 2015 by ROB Camra</span></li><li>Live TV Sports : <span id="fac1104992">Yes</span> <span id="discdetail1104992" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 November 2015 by ROB Camra</span></li><li>Micropub : <span id="fac1224992">No</span> <span id="discdetail1224992" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 November 2015 by ROB Camra</span></li><li>Pool Table : <span id="fac1044992">Yes</span> <span id="discdetail1044992" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 November 2015 by ROB Camra</span></li><li>Real Ale : <span id="fac1014992">Yes</span> <span id="discdetail1014992" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 November 2015 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/4997/" class="List1">Red Lion</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/4987/" class="List1">Gaslights</a></li>
+                    <li><img src="/images/icon-photo-grey.gif" alt="Pub has no pictures" title="Pub has no pictures" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 10 from 1 reviewer(s)" title="Pub has average rating of 10 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84246/" class="List1">Knight&#039;s Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66556/" class="List1">West End Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/4999/" class="List1">Rose Cottage Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 10 from 1 reviewer(s)" title="Pub has average rating of 10 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65967/" class="List1">Collins Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/4989/" class="List1">Miners Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/5004/" class="List1">Trefusis Arms</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Foresters Inn pub in Nottingham, Nottinghamshire, NG1 3NL : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Foresters Inn" />
+  <meta name="keywords" content="Foresters Inn, 183 Huntingdon Street, Nottingham, Nottinghamshire, Nottingham Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Foresters Inn in Nottingham" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/71501_72000/71678_dc8b6ed1.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/71678/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.95763550000000" />
+<meta property="og:longitude" content="-1.14513160000000" />
+<meta property="og:street-address" content="183 Huntingdon Street" />
+<meta property="og:locality" content="Nottingham" />
+<meta property="og:region" content="Nottinghamshire" />
+<meta property="og:postal-code" content="NG1 3NL" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Foresters Inn in Nottingham? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Foresters Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/71678/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Foresters Inn in Nottingham" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Foresters Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/71501_72000/71678_dc8b6ed1.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/71678/" />
+<meta name="geo.position" content="52.95763550000000;-1.14513160000000" />
+<meta name="geo.placename" content="Foresters Inn in Nottingham" />
+<meta name="geo.region" content="UK" />
+<title>Foresters Inn in Nottingham : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":71678},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(71678);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 71678;var pubaddress = "183 Huntingdon Street";var pubname = "Foresters Inn";var pubpostcode = "NG1 3NL";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/nottinghamshire/" title="Pubs Galore : Nottinghamshire Page">Nottinghamshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/nottingham/nottinghamshire/" title="Pubs Galore : Nottingham Page">Nottingham</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Foresters Inn Page">Foresters Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="a66g6h87tdvfs0gtrg29ta2sg6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/71678/" class="indisplay"><img src="/images/display/71501_72000/71678_dc8b6ed1.jpg?w=2" alt="Picture of Foresters Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=Al+10000" class="indisplay">Alan Winfield</a><br />
+  Submitted on Monday, 1<sup>st</sup> November 2010<br />
+  With picture contributions to 6053 other pubs<br />
+<a href="/pubpictures/71678/" class="smallbutton">View all this pub's pictures</a> (4 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/71678/">Pub map</a><br /><a href="/pubreviews/71678/">Pub reviews (3)</a><br /><a href="/pubpictures/71678/">Pub pictures (5)</a><br /><a href="/core/pubaudit.php?id=71678" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Foresters Inn, Nottingham Central, Nottingham</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=Al+10000">Alan Winfield</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">183 Huntingdon Street</span><br />
+
+
+<span class="town">Nottingham</span><br />
+<span class="postcode">NG1 3NL</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/nottingham-central/nottinghamshire/">Nottingham Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Foresters Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>6</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review112670" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> left this review about Foresters Inn</h6>
+<p class="old">I had been looking forward to reviewing this place for a while but sadly this turned out to be a catastrophicly bad pub far worse than I could have ever foreseen. A former Shipstons pub that later became a rare Oakwell pub before the brewery closed in 2013. Now an indipendant free house that does sell real ale which was the cause of my initial attraction. Upon entering the thief is a main bar and two seppwrate large rooms with further seating and a pool table. The bar stretches between the front two rooms and is divided by a wall. A are boards floor and a modern style shiny stride wall paper give it a strange old with modern cheap Cover up that looks like there have been many cover ups over the years but nothing substantial, just tacky spruce up after spruce up. <br />
+<br />
+three hand pulls on the bar with two in operation on my visit, and was told a third is usually available on weekends. I opted for a pint of Alderhaw old copper and this was vinegar!! I asked the barman how long it had been on and was told &quot;not long&quot;!! so I instructed him to smell and taste it which he did but said he had a cold and could not  detect bad flavours but offers to change it!! just admit you fault and be graceful about It! I changed it for a Toll gate spooky dark IPA which was a very complex beer hat I thought tasted funny, after half a pint I realise that (not to the same extent) that this was too sour and vinegar but disguised by the halls and dark flavours and was u finishing early even at a cheap &pound;2.70 so was part half drank. Place completely empty on a Wednesday evening. Utterly disappointed with this place, a total lacklustre effort and all round crap pub, avoid!</p>
+<p class="Reviewer">On 10<sup>th</sup> November 2016 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 424 recommendations about 424 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review63769" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> left this review about Foresters Inn</h6>
+<p class="old">This pub is on a very busy road and close to the victoria shopping centre but the wrong side of it to attract shoppers.<br />
+The Foresters is a three roomed pub that is a locals pub,i went in the first room you come to there is another room at the back and if you go up a few steps from the bar there is another room there.<br />
+The pub was clean and well furnished and looked as though it had just been done up.<br />
+There were two real ales on the bar both from Barnsley brewery i had a drink of Barnsley bitter this was very nice and was only &pound;1.66 a pint the other beer was Oakwell mild.<br />
+There was irish music playing which i dont like and the barmaid was a man.<br />
+When i left here the few people that were in here said bye.<br />
+I was quite happy having a drink in here and would go in again.<br />
+<br />
+Photo of Foresters when a Shipstones house taken 1984</p>
+<p class="Reviewer">On 24<sup>th</sup> September 2012 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 6113 recommendations about 6113 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review51391" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Soup+Dragon">Soup Dragon</a> left this review about Foresters Inn</h6>
+<p class="old">A plain white rendered, yet tidy looking corner pub.<br />
+<br />
+The interior has three rooms, though I didn&rsquo;t see the small room up the stairs and the lounge, which was in a chocolate and cream decor had the lights turned out at my visit, so I saw little of that. The main bar room is accessed via the main door and the serving bar faces you. It is an L-shaped room in red and white walls and ceiling, with some patterned wallpaper and a wood floor. There wasn&rsquo;t much in the way of pictures on the walls or ephemera lying around. There was no TV that I saw and the music was general and at a decent level. The service was very friendly and the pub was populated by locals, some rather loud, as well as a nice lady we chatted to who was also doing some of the MILD trail pubs. <br />
+<br />
+Beer; Oakwell&rsquo;s Barnsley Bitter and their decent Dark MILD on handpull, with Oakwell Lager on keg along with the ubiquitous Guinness and Strongbow.<br />
+<br />
+The pub was fine and it was really nice to try Oakwells again after a year or so. Worth popping into for the change and one I would definitely go back to.</p>
+<p class="Reviewer">On 13<sup>th</sup> September 2011 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 3053 recommendations about 3048 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Foresters Inn</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+</div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/71678/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Al+10000">Alan Winfield</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.95763550000000, -1.14513160000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.95763550000000, -1.14513160000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Nottingham, 0.92 miles, 17 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Netherfield, 3.44 miles, 1 hr 6 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Carlton, 3.47 miles, 1 hr 6 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('qgfbIjs~EPh@l@q@vC|Dx@_Ap@o@xAiAZFFRHf@@v@lBu@bF}BHPBj@Dp@JZJDDMNMP@fBpAXNvAX`Bp@XHVBBK~@?r@Cf@[BRBLJ@lBDl@Gr@[x@u@BMDADKHC?IFa@DGJEV@zBO@ZbA@BbBPEJrCL`Cp@UCQv@YCO', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('qgfbIjs~EqBqGPWXs@PkBJcBBMgBo@_@U^}BH_Al@mLFUJBD}@dATDk@FMRDLCBGJ_AL}AWGRkEEyCCe@Im@y@mEU_BOiBGmAGeNZQO{@Fk@A_@l@i@Og@fDkGm@y@~AcDRk@B]?w@@Gh@w@j@gAtI{PmDeIk@uAI[c@s@yB}Ey@sAwDoFfGwRNYPQV[x@m@FMLk@FeA?{@CsAO_CKoAiBkNkBiSi@gDuAsHeC}KOaB?cCJyAXyBrAyIl@eDFq@?YKi@yAqDqGeOaBwDGGfByBLDVf@l@iAaAmB}@eC{@oAi@gAuBkFi@aBiAmE_@yBOkAIeArA_Bo@iB@ECC@KHc@oAmAGaBHGAuDD{B?ET??I[WGWiACDeCFm@@I', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('qgfbIjs~EqBqGPWXs@PkBJcBBMgBo@_@U^}BH_Al@mLFUJBD}@dATDk@FMRDLCBGJ_AL}AWGRkEEyCCe@Im@y@mEU_BOiBGmAGeNZQO{@Fk@A_@l@i@Og@fDkGm@y@~AcDRk@B]?w@@Gh@w@j@gAtI{PmDeIk@uAI[c@s@yB}Ey@sAwDoFfGwRNYPQV[x@m@FMLk@FeA?{@CsAO_CKoAiBkNkBiSi@gDuAsHeC}KOaB?cCJyAXyBrAyIl@eDFq@?YKi@yAqDqGeOaBwDGGvAgBy@yBg@yAyA_DuDoIiBqCYkAWq@_CaGs@yAaBqEqC{FaBuCwCgHYg@k@kBJQFLBE', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.95763550000000,-1.14513160000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=71678">View all updates for Foresters Inn, Nottingham</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        10<span class="sup">th</span> Nov 2016, 10:38
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> amended by <a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        10<span class="sup">th</span> Nov 2016, 10:37
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11871678">Yes</span> <span id="discdetail11871678" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 May 2019 by ROB Camra</span></li><li>Beer Festivals : <span id="fac11771678">No</span> <span id="discdetail11771678" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>Beer Garden : <span id="fac11471678">No</span> <span id="discdetail11471678" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10271678">Yes</span>  - <span id="discdetail10271678" class="discdetail" style="">20p per pint, 10p per half</span> -   <span class="Reviewer">last updated 24 May 2019 by ROB Camra</span></li><li>Car Park : <span id="fac11371678">No</span> <span id="discdetail11371678" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>Child Friendly : <span id="fac12171678">Yes</span> <span id="discdetail12171678" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 May 2019 by ROB Camra</span></li><li>Dog Friendly : <span id="fac10571678">Yes</span> <span id="discdetail10571678" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 May 2019 by ROB Camra</span></li><li>Function Room : <span id="fac12371678">Yes</span> <span id="discdetail12371678" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 May 2019 by ROB Camra</span></li><li>Hot Food : <span id="fac10371678">No</span> <span id="discdetail10371678" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 May 2019 by ROB Camra</span></li><li>Live Music : <span id="fac10871678">No</span> <span id="discdetail10871678" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11071678">No</span> <span id="discdetail11071678" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>Micropub : <span id="fac12271678">No</span> <span id="discdetail12271678" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 May 2019 by ROB Camra</span></li><li>Pinball : <span id="fac11671678">Yes</span> <span id="discdetail11671678" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 May 2019 by ROB Camra</span></li><li>Pool Table : <span id="fac10471678">Yes</span> <span id="discdetail10471678" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 May 2019 by ROB Camra</span></li><li>Real Ale : <span id="fac10171678">Yes</span> <span id="discdetail10171678" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 May 2019 by ROB Camra</span></li><li>Real Cider : <span id="fac11971678">Yes</span> <span id="discdetail11971678" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 May 2019 by ROB Camra</span></li><li>WiFi : <span id="fac11571678">Yes</span> <span id="discdetail11571678" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 May 2019 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/30907/" class="List1">The New Foresters</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31004/" class="List1">Newmarket Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31021/" class="List1">Old Dog &amp; Partridge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/78561/" class="List1">Bar De Nada</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 5 reviewer(s)" title="Pub has average rating of 6.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/30976/" class="List1">Lord Roberts</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 6 reviewer(s)" title="Pub has average rating of 5.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/76258/" class="List1">BrewDog</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/30826/" class="List1">Keogh&#039;s</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86991/" class="List1">Suede</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

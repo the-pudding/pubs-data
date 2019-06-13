@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Beehive pub in Henleaze, Bristol, Bristol (County), BS9 4QY : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Beehive" />
+  <meta name="keywords" content="The Beehive, Wellington Hill West, Bristol, Bristol (County), Henleaze, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Beehive in Bristol" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/1_500/242_95b7b2d8.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/242/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.49166219174183" />
+<meta property="og:longitude" content="-2.59596526622772" />
+<meta property="og:street-address" content="Wellington Hill West" />
+<meta property="og:locality" content="Bristol" />
+<meta property="og:region" content="Bristol (County)" />
+<meta property="og:postal-code" content="BS9 4QY" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Beehive in Bristol? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Beehive the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/242/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Beehive in Bristol" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Beehive " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/1_500/242_95b7b2d8.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/242/" />
+<meta name="geo.position" content="51.49166219174183;-2.59596526622772" />
+<meta name="geo.placename" content="The Beehive in Bristol" />
+<meta name="geo.region" content="UK" />
+<title>The Beehive in Henleaze, Bristol : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":242},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(242);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 242;var pubaddress = "Wellington Hill West";var pubname = "The Beehive";var pubpostcode = "BS9 4QY";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/bristol/" title="Pubs Galore : Bristol (County) Page">Bristol (County)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/bristol/bristol/" title="Pubs Galore : Bristol Page">Bristol</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Beehive Page">The Beehive Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="e4rmq7fqgntikjvrv7v8hnv2p1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/242/" class="indisplay"><img src="/images/display/1_500/242_95b7b2d8.jpg?w=1" alt="Picture of The Beehive" /></a><br />  Image posted by <a href="/userinfo.php?name=Blackthorn" class="indisplay">Blackthorn _</a><br />
+  Submitted on Monday, 2<sup>nd</sup> June 2014<br />
+  With picture contributions to 4300 other pubs<br />
+<a href="/pubpictures/242/" class="smallbutton">View all this pub's pictures</a> (14 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/242/">Pub map</a><br /><a href="/pubreviews/242/">Pub reviews (2)</a><br /><a href="/pubpictures/242/">Pub pictures (15)</a><br /><a href="/core/pubaudit.php?id=242" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Beehive, Henleaze, Bristol</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Wellington Hill West</span><br />
+
+
+<span class="town">Bristol</span><br />
+<span class="postcode">BS9 4QY</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01179490078</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/henleaze/bristol/">Henleaze</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Beehive  <span class="h2note">(Average Rating: <span id="averagerating"><b>5</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review83481" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about The Beehive</h6>
+<p class="old">A large and imposing brick built pub just down the road from Horfield Common, it looks as though it may be undergoing some refurbishment work at present with much of the car park in front of the pub fenced off and dug up. Inside it&rsquo;s very much a pub of two halves with a dated old bar to the right and a quite contemporary dining room to the left. A new looking sign outside describes it as a &ldquo;Bar &amp; Restaurant&rdquo;.  <br />
+<br />
+The bar to the right had a wood strip floor, brown vinyl bench seating around the perimeter, a tiled fire-place on one wall and a small TV stuck on the wall above it, although this was not in use on our visit. The paintwork was a mixture of cream and brown and an old hi-fi was playing a local radio station rather too loudly. The smart looking restaurant seemed somewhat at odds with the rest of the pub and this has a parquet wood floor, wood panelling on the walls lending something of a hotel drawing room feel and a couple of old leather sofa&rsquo;s at the rear as well as a couple more fire-places. Beyond this is a beer garden which usefully also has an outside bar, although there were no ales available here, just one cider and one lager. The garden itself looked rather tired and could clearly do with a bit of TLC. A giant Connect 4 game might have been an interesting distraction if it weren&rsquo;t&rsquo; for the fact that all the prices were missing.  <br />
+<br />
+Beers on tap were Doom Bar and Butcombe whilst the ciders were Aspall&rsquo;s Suffolk and Thatcher&rsquo;s Gold, the latter being somewhat past it&rsquo;s best.</p>
+<p class="Reviewer">On 2<sup>nd</sup> June 2014 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review76758" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a> left this review about The Beehive</h6>
+<p class="old">Now known just as the Beehive it&#039;s now been split to a Restaurant on the left and Bar on the right. The residential  development surrounding the pub which was seemingly threatening the pubs existence a while ago has landed it with a purpose built car park off the access road to the new houses where what was previously a no mans land area of is it the pubs car park or not.<br />
+<br />
+In the bar a selection of ales are available and it&#039;s a mix of tall tables and stools, standard tables and chairs and walled benches. <br />
+<br />
+In all this is a nice pub and the garden makes a pleasant retreat on a lovely summers day.<br />
+<br />
+28th July 2012 Blackboard outside asking for help to stop it becoming houses. Looking online the surrounding land has had planning granted for houses so guess the pub is the next target to maximize the site.</p>
+<p class="Reviewer">On 15<sup>th</sup> November 2013 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 354 recommendations about 335 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Beehive</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Beehive - <a href="http://www.beehivebristol.co.uk/" title="Submitted by:- Blackthorn _" target="_blank">www.beehivebristol.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="745439548826518">Facebook - <a href="https://www.facebook.com/BristolsBeehive/" target="_blank" rel="nofollow">Beehive Pub and Dining</a></li></ul><ul id="Custom2"><li class="twitlink" id="2827908052">Twitter - <a href="https://twitter.com/BristolsBeehive" target="_blank" rel="nofollow">Beehive Pub & Dining</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/242/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Conrad">Conrad Heard</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.49166219174183, -2.59596526622772], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.49166219174183, -2.59596526622772]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Redland, 2.07 miles, 39 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Montpelier, 2.09 miles, 40 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Filton Abbey Wood, 2.1 miles, 40 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('a}gyHt`zNHSP_@\\c@j@_@`EoBh@i@d@o@P_@lAsDfAnAdArA?AlCbDr@{ABQnA_CvBsEr@lBZjBvD|@RAxAu@v@u@TOTBJHNT@LrAm@VlBzB{Fh@f@fAr@T{@bA~AADTb@dAtDDFzNt@nBP\\F@K\\@nBe@dG`Bv@a@zAaB^I`Lk@xA@LEP@dD_@LINTxAy@`Bm@XSHj@t@jDn@jDhCbM|AzFj@g@@BCDBNFEPv@EDPt@HIYqA', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('a}gyHt`zNHSP_@\\c@j@_@`EoBh@i@d@o@P_@lAsDfAnAdArA?AlCbDr@{ABQnA_CvBsEr@lBZjBvD|@RAxAu@v@u@TOTBJHNT@LrAm@VlBzB{Fh@f@fAr@T{@bA~AADTb@dAtDDFzNt@nBP\\F@K\\@nBe@dG`Bv@a@zAaB^I`Lk@xA@LEP@dD_@LINTxAy@`Bm@XSVAnB}DD?j@HZJdANNALQIa@|@kHl@mDHm@LkA@_ALsB@Se@AIpAEADiA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('a}gyHt`zNHSP_@\\c@@o@RqD@u@@mCE}AIkBOuAaBkK_@mCOmBUwDIkE@iCPiDCWEIu@oH@[FFL[FIl@}BRaAzC_Q_BgAgCuAn@oDy@s@TmA?Oo@w@f@{AyAyAB]ASqBoHs@cCs@qC{BqHQc@T}DkDm@\\iHwBe@SK]GYEQHmMeCkA]qE_C_EcCQUGe@o@{@qLwM[hAz@x@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.49166219174183,-2.59596526622772], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=242">View all updates for The Beehive, Bristol</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        10<span class="sup">th</span> Mar 2018, 17:27
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        10<span class="sup">th</span> Mar 2018, 17:27
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac118242">No</span> <span id="discdetail118242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>Bar Billiards : <span id="fac107242">No</span> <span id="discdetail107242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>Beer Festivals : <span id="fac117242">No</span> <span id="discdetail117242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>Beer Garden : <span id="fac114242">Yes</span> <span id="discdetail114242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>CAMRA Discount : <span id="fac102242">No</span> <span id="discdetail102242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>Car Park : <span id="fac113242">Yes</span> <span id="discdetail113242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>Child Friendly : <span id="fac121242">Yes</span> <span id="discdetail121242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>Darts : <span id="fac111242">Yes</span> <span id="discdetail111242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>Hot Food : <span id="fac103242">Yes</span> <span id="discdetail103242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>Jukebox : <span id="fac112242">No</span> <span id="discdetail112242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>Karaoke : <span id="fac106242">No</span> <span id="discdetail106242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>Live Music : <span id="fac108242">No</span> <span id="discdetail108242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>Live TV Sports : <span id="fac110242">No</span> <span id="discdetail110242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>Micropub : <span id="fac122242">No</span> <span id="discdetail122242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2016 by Jonathan Wilde</span></li><li>Pinball : <span id="fac116242">No</span> <span id="discdetail116242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>Pool Table : <span id="fac104242">No</span> <span id="discdetail104242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>Quiz Night : <span id="fac109242">No</span> <span id="discdetail109242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2016 by Jonathan Wilde</span></li><li>Real Ale : <span id="fac101242">Yes</span> <span id="discdetail101242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 September 2013 by Dave McNally</span></li><li>Real Cider : <span id="fac119242">No</span> <span id="discdetail119242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>Wheelchair Access : <span id="fac120242">No</span> <span id="discdetail120242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li><li>WiFi : <span id="fac115242">Yes</span>  - <span id="discdetail115242" class="discdetail" style="">BT Wifi</span> -   <span class="Reviewer">last updated 29 May 2014 by Jonathan Wilde</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/237/" class="List1">The Bear &amp; Rugged Staff</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/444/" class="List1">The Gloucester Old Spot</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/719/" class="List1">The Wellington</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 4 reviewer(s)" title="Pub has average rating of 8 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83494/" class="List1">The Drapers Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/77390/" class="List1">Grounded</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86719/" class="List1">Bottles &amp; Books</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 1 reviewer(s)" title="Pub has average rating of 8 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/69862/" class="List1">Tinto Lounge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 2 reviewer(s)" title="Pub has average rating of 7.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/437/" class="List1">The Royal Oak</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

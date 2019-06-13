@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Bull pub in Highgate, N6, London (Greater), N6 4AB : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Bull" />
+  <meta name="keywords" content="The Bull, 13  North Hill, N6, London (Greater), Highgate, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Bull in N6" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/25001_25500/25471_72e3fed0.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/25471/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.57539928345734" />
+<meta property="og:longitude" content="-0.15088766813278" />
+<meta property="og:street-address" content="13  North Hill" />
+<meta property="og:locality" content="N6" />
+<meta property="og:region" content="London (Greater)" />
+<meta property="og:postal-code" content="N6 4AB" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Bull in N6? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Bull the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/25471/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Bull in N6" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Bull " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/25001_25500/25471_72e3fed0.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/25471/" />
+<meta name="geo.position" content="51.57539928345734;-0.15088766813278" />
+<meta name="geo.placename" content="The Bull in N6" />
+<meta name="geo.region" content="UK" />
+<title>The Bull in Highgate, N6 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":25471},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(25471);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 25471;var pubaddress = "13  North Hill";var pubname = "The Bull";var pubpostcode = "N6 4AB";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/greater-london/" title="Pubs Galore : London (Greater) Page">London (Greater)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/n6/greater-london/" title="Pubs Galore : N6 Page">N6</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Bull Page">The Bull Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="0jfqvctsf5k0afnjcan4lpa8q3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/25471/" class="indisplay"><img src="/images/display/25001_25500/25471_72e3fed0.jpg?w=2" alt="Picture of The Bull" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Tuesday, 13<sup>th</sup> September 2016<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/25471/" class="smallbutton">View all this pub's pictures</a> (20 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/25471/">Pub map</a><br /><a href="/pubreviews/25471/">Pub reviews (10)</a><br /><a href="/pubpictures/25471/">Pub pictures (21)</a><br /><a href="/core/pubaudit.php?id=25471" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Bull, Highgate, N6</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">13  North Hill</span><br />
+
+
+<span class="town">N6</span><br />
+<span class="postcode">N6 4AB</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02083410510</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/highgate/greater-london/">Highgate</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Bull</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/Bull_Highgate" target="_blank"><img src="https://pbs.twimg.com/profile_images/629315814261456896/c_xzv_1C_normal.jpg" alt="The Bull Highgate" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/Bull_Highgate" target="_blank">The Bull Highgate</a></strong>
+Join us for brunch from 9:30am-3pm each and every Saturday. Why not make it bottomless? Unlimited Gorgeous Brewery&hellip; <a href='https://t.co/rvUODeniHp' target='_blank'>https://t.co/rvUODeniHp</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/Bull_Highgate/status/1025721360696451073">1:33 PM Aug 4th</a> from <a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/Bull_Highgate" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/Bull_Highgate" target="_blank">The Bull Highgate</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Bull  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review125534" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a> left this review about The Bull</h6>
+<p class="old">Brewhouse and tap for the Gorgeous Brewery ,the pub has a large front terrace and an open plan interior with two wings either side of the front door,with the left side having an open kitchen at the rear while the right side has the bar,two curved banquettes and a table in a bay window and felt more like the drinking area.There is an upstairs function room which was hosting a noisy childrens party on my Saturday afternoon visit.Food doesn&#039;t dominate,while the 6 handpumps were drawing Gorgeous Gravedigger (decent vanilla stout 5% &pound;4),Glowfly,Geek Hunter and Greedy Guts with 2 pumps unused.There are also 10 keg taps split over two ends of the bar with some national brands but also some respected craft keg.The flatscreen were off ,and the pub atmosphere would tempt another visit if I wanted to tick off some Gorgeous brews but I found the pub functional without being exceptional.</p>
+<p class="Reviewer">On 7<sup>th</sup> January 2018 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 1916 recommendations about 1916 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review116677" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Mobyduck">moby duck</a> left this review about The Bull</h6>
+<p class="old">Decent looking Gastro pub with the advantage of having an in house micro brewery. Most of the floorspace was given over to tables dining in mind ,but there are areas around the bar you can happily perch up for a beer, of which there were five of their own,the Gorgeous Geek Hunter, extra pale ale at &pound; 3.90 was a decent first pint of the day, There was also a cider on handpump, Rosies Pig Hogfather, not as such a trad pub but it&#039;s certainly worth stopping off here.</p>
+<p class="Reviewer">On 4<sup>th</sup> April 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1202 recommendations about 1191 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review112093" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Bull</h6>
+<p class="old">An uphill yomp from the tube but worthwhile for the homebrew ale (London Brewing Co) available. In a hilly part of the capital, this building sits above the street level and the steps up might finish off the less fit pub-goer. The interior is pretty unremarkable, a knocked-through place. Left side is more for dining with the right more for drinking, though I suspect that later in the evening you might struggle to get a seat. Restrained gastro d&eacute;cor with a wood boarded floor, scrubbed tables, white and maroon colour scheme etc though the bay windows are pretty impressive and a nice place in which to sit. There is also a dining area upstairs. Worth checking out the nice front patio seating. Four ales on; Truman Rio Gold, three homebrews &ndash; Vista, Bitter (good nick) and IPA (excellent). Also Orchard Pig Philospher cider. Not bad in here, and worth a visit - beer quality rounds it up. 7.5</p>
+<p class="Reviewer">On 24<sup>th</sup> October 2016 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/25471/">View more reviews of The Bull (10)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Bull</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Bull, contains menus - <a href="http://thebullhighgate.co.uk" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">thebullhighgate.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="161564893915427">Facebook - <a href="https://www.facebook.com/bullhighgate/" target="_blank" rel="nofollow">The Bull, Highgate</a></li></ul><ul id="Custom2"><li class="twitlink" id="325011343">Twitter - <a href="https://twitter.com/Bull_Highgate" target="_blank" rel="nofollow">The Bull Highgate</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/25471/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=hondo">hondo .</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.57539928345734, -0.15088766813278], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.57539928345734, -0.15088766813278]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Upper Holloway, 1.36 miles, 26 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Crouch Hill, 1.65 miles, 31 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Gospel Oak, 1.8 miles, 34 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('yixyHhl\\|@u@z@k@|AkAXOn@KfBF`DZtEZ~@a@b@iAFi@l@{CNaA|@oIT}Ap@eFMEIWbAoEz@yBRGNa@^wAT]n@wBt@cBv@iCh@{BhDuHpAmCd@iAnBeGNETu@NAbAiDCUfAiDCQp@mB~@qDj@{Cz@yFb@sB\\HL]PT@ACC', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('yixyHhl\\|@u@dAs@e@sB@iAE{@UmBH@]c@Ua@s@eBaEsP~@sC?[CSBcAj@}AOaBNmAv@cCbAuDdAiFt@_Ff@wGHmCNiRCmA_AiKKgDAqI`@uFz@yHTsC\\s@?_CIg@@]JqEFsAPeAC_@jBiAbCiB^g@nAwB~@oBxAoDx@eCIKGO@CAC', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('yixyHhl\\|@u@z@k@|AkAXOn@KfBF`DZtEZ~@a@LN^e@PI|@kDRqA`@dBnCqBnFkE|BwA|Bo@\\ETLVBxCEzDO|DD`Dh@lD`B`@^d@i@`@_A|@nAJ^xApIjAfHbCwAlA{@tBcBEa@dFmF^f@^TTG~AdFlA`A|A{@xBmB|@|Dh@hDVbAGFQAWWE@EPe@~A', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.57539928345734,-0.15088766813278], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=25471">View all updates for The Bull, N6</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        7<span class="sup">th</span> Jan 2018, 00:08
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a> amended by <a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        6<span class="sup">th</span> Jan 2018, 22:01
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11825471">No</span> <span id="discdetail11825471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>Bar Billiards : <span id="fac10725471">No</span> <span id="discdetail10725471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>Beer Garden : <span id="fac11425471">Yes</span> <span id="discdetail11425471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10225471">No</span> <span id="discdetail10225471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>Car Park : <span id="fac11325471">Yes</span> <span id="discdetail11325471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 October 2014 by Pub SignMan</span></li><li>Child Friendly : <span id="fac12125471">Yes</span> <span id="discdetail12125471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>Darts : <span id="fac11125471">No</span> <span id="discdetail11125471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>Dog Friendly : <span id="fac10525471">Yes</span> <span id="discdetail10525471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>Function Room : <span id="fac12325471">Yes</span>  - <span id="discdetail12325471" class="discdetail" style="">From review</span> -   <span class="Reviewer">last updated 19 October 2014 by Dave McNally</span></li><li>Hot Food : <span id="fac10325471">Yes</span> <span id="discdetail10325471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>Jukebox : <span id="fac11225471">No</span> <span id="discdetail11225471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>Karaoke : <span id="fac10625471">No</span> <span id="discdetail10625471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>Live Music : <span id="fac10825471">No</span> <span id="discdetail10825471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>Live TV Sports : <span id="fac11025471">Yes</span> <span id="discdetail11025471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>Micropub : <span id="fac12225471">No</span> <span id="discdetail12225471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>Pinball : <span id="fac11625471">No</span> <span id="discdetail11625471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>Pool Table : <span id="fac10425471">No</span> <span id="discdetail10425471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>Quiz Night : <span id="fac10925471">Yes</span>  - <span id="discdetail10925471" class="discdetail" style="">Mondays </span> -   <span class="Reviewer">last updated 01 November 2013 by Quinno _</span></li><li>Real Ale : <span id="fac10125471">Yes</span> <span id="discdetail10125471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>Real Cider : <span id="fac11925471">Yes</span> <span id="discdetail11925471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li><li>Wheelchair Access : <span id="fac12025471">Yes</span>  - <span id="discdetail12025471" class="discdetail" style="">Disabled WC and baby changing.</span> -   <span class="Reviewer">last updated 31 March 2016 by Tris C</span></li><li>WiFi : <span id="fac11525471">Yes</span> <span id="discdetail11525471" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 October 2016 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 11:30pm</td></tr>
+<tr><td>Monday</td><td>12noon - 11:30pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11:30pm</td></tr>
+<tr><td>Wednesday</td><td>12noon - 11:30pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>12noon - 11:30pm</td></tr>
+<tr><td>Friday</td><td>12noon - Midnight</td></tr>
+<tr><td>Saturday</td><td>12noon - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 21 picture(s)" title="Pub has 21 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 8 reviewer(s)" title="Pub has average rating of 7 from 8 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/25481/" class="List1">The Wrestlers</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 7 reviewer(s)" title="Pub has average rating of 5.5 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/25475/" class="List1">The Red Lion &amp; Sun</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/25476/" class="List1">The Highgate Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 61 picture(s)" title="Pub has 61 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 11 reviewer(s)" title="Pub has average rating of 7 from 11 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/25474/" class="List1">The Gatehouse</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 7 reviewer(s)" title="Pub has average rating of 4 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55185/" class="List1">The Woodman</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 42 picture(s)" title="Pub has 42 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 9 recommendation(s)" title="Pub has 9recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 9 reviewer(s)" title="Pub has average rating of 7 from 9 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55183/" class="List1">Prince of Wales</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 39 picture(s)" title="Pub has 39 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 8 reviewer(s)" title="Pub has average rating of 6.5 from 8 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/25468/" class="List1">The Flask</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 42 picture(s)" title="Pub has 42 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 4 reviewer(s)" title="Pub has average rating of 6 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/25470/" class="List1">The Angel Inn</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

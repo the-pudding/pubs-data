@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Lyric pub in Soho, W1, London (Central), W1D 7LT : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Lyric" />
+  <meta name="keywords" content="The Lyric, 37  Great Windmill Street, W1, London (Central), Soho, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Lyric in W1" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/22001_22500/22307_5b6bdf59.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/22307/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.51127408697606" />
+<meta property="og:longitude" content="-0.13435319262499" />
+<meta property="og:street-address" content="37  Great Windmill Street" />
+<meta property="og:locality" content="W1" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="W1D 7LT" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Lyric in W1? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Lyric the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/22307/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Lyric in W1" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Lyric " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/22001_22500/22307_5b6bdf59.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/22307/" />
+<meta name="geo.position" content="51.51127408697606;-0.13435319262499" />
+<meta name="geo.placename" content="The Lyric in W1" />
+<meta name="geo.region" content="UK" />
+<title>The Lyric in Soho, W1 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":22307},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(22307);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 22307;var pubaddress = "37  Great Windmill Street";var pubname = "The Lyric";var pubpostcode = "W1D 7LT";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/w1/central-london/" title="Pubs Galore : W1 Page">W1</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Lyric Page">The Lyric Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="shtuca7g9m9f31q85ri9a445o2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/22307/" class="indisplay"><img src="/images/display/22001_22500/22307_5b6bdf59.jpg?w=2" alt="Picture of The Lyric" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Monday, 10<sup>th</sup> September 2018<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/22307/" class="smallbutton">View all this pub's pictures</a> (18 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/22307/">Pub map</a><br /><a href="/pubreviews/22307/">Pub reviews (15)</a><br /><a href="/pubpictures/22307/">Pub pictures (19)</a><br /><a href="/core/pubaudit.php?id=22307" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Lyric, Soho, W1</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">37  Great Windmill Street</span><br />
+
+
+<span class="town">W1</span><br />
+<span class="postcode">W1D 7LT</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02074340604</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/soho/central-london/">Soho</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Lyric</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/Lyricsoho" target="_blank"><img src="https://pbs.twimg.com/profile_images/3510712267/53edd1f245f6e4afc96a9eddc5c0124a_normal.jpeg" alt="The Lyric" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/Lyricsoho" target="_blank">The Lyric</a></strong>
+Today at The Lyric in cask: Big Smoke Solaris, Tiny Rebel Fubar, Big Hand Pendragon, Harvey&rsquo;s Old Ale...
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/Lyricsoho/status/971062903657979904">4:40 PM Mar 6th 2018</a> from <a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/Lyricsoho" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/Lyricsoho" target="_blank">The Lyric</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Lyric  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review134955" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Lyric</h6>
+<p class="old">Well, me and my chum decided to pop back and see if things had improved in the intervening five years since my excoriating dismissal of the place below. The interior looks to have been blandized a bit from what I remember, but is essentially similar. The range of ales remains and we were both drawn to the Titanic Plum Porter and Siren Craft, as, it appeared, were most of the other punters. We were quite impressed and decided to stay for another &ndash; a chance to fully bury the hatchet! &ndash; but sadly our following two beers were insipid dishwater. That&rsquo;s more like the Lyric I was expecting&hellip;I suspect this will be my last visit as there&rsquo;s a distinct Princess Louise feel about it, (a local CAMRA branch more interested in choice over quality and people who assume choice = good rather than actually appreciate how well a cask ale has been cellared). As the PL showed, there are more than enough of them to keep this place ticking over, whatever I might think.<br />
+<br />
+September 2013<br />
+A little pub situated round the back of Shaftesbury Avenue, which I had been tipped off about being yet another recent beer-centric conversion in the capital. Entrance is through an attractive Art Nouveau green/orange glazed-tiled entrance porch, complemented by appealing curved bay windows (inset wood with frosting). Inside is a pretty small single room bar with a dining area upstairs. Interior in brief: wood flooring, painted tongue-and-groove wood panelling, an old wooden beer barrel for table, collection of knick-knacks on high shelving plus some framed pics of various military personnel. Unusually, no piped music. Pub attractions included free WiFi and live Jazz on Sundays. At the bar - six eclectic ales, one proper cider (Gwent y Ddraig) plus an array cask keg and Camden bottles in the fridge. Cask priced by abv, &pound;3.50 through to &pound;4.20. The list of ales on the blackboard above the bar bore little reality to the pumps. I tried a couple of casks; the Milk St was fine though was clearly the first of the day and not pulled through. The Alley Cat tasted like an actual alley cat may have bathed in it. Pub offers a loyalty card, buy 9 pints get 10th free. Barmaid was busy plunging the errant dishwasher and failed to wash her hands before serving me. Overall, pretty disappointing and I felt like that this was less of a Damascene conversion to the cause of good beer and more a bit of bandwagon jumping. Rated 5</p>
+<p class="Reviewer">On 13<sup>th</sup> June 2018 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review119319" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about The Lyric</h6>
+<p class="old">Odd little pub, comprising a sparsely decorated &#039;L&#039;-shaped bar with a limited amount of furniture.  There is also an upstairs room; but, when the weather permits, most of the customers are either standing outside or using the tables in the small rear patio area.  On the plus side, the cask selection has improved considerably since my last visit nearly six years ago - I found a pretty decent selection from six of seven handpumps, ranging from Harvey&#039;s, Big Smoke Solaris, Redwell EPA and Truman&#039;s seasonal Budburst through to the 7.5% Bee Sting still perry.</p>
+<p class="Reviewer">On 25<sup>th</sup> June 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review118690" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a> left this review about The Lyric</h6>
+<p class="old">ORIGINAL REVIEW May 2016<br />
+I was impressed by this small street corner Soho pub.The entrance has some fine glazed tiling,the front windows are curved and mostly contain original etched glass and the wood fittings are pleasing and authentic.The interior has a small fireplace with a Sky flatscreen above and just a single table and chairs with a tun acting as another table to rest your beer.Wooden stools around the perimeter are the main seating option and there is a drinking ledge to the front of the pub.Good mirrors help to make the interior feel less cramped and there is a lot of room around the bar for service.<br />
+I was in afterwork on Friday in good weather ,so a lot of punters spill outside into a cordoned off section running along the pavement and behind the pub.Consequently you will be asked if you are drinking outside and will be issued with a plastic mug if so.I stayed inside with my glass pint,and it wasn&#039;t too crowded,in bad weather I may not have been so lucky.Sport is shown on the flatscreen but at a sensible muted volume so it doesn&#039;t impinge too much .There is a perilous descent to the gents while upstairs in signed Ladies and Dining Room ,but I didn&#039;t venture  to see if there was any room up there,and there was no obvious sign of food at the bar.<br />
+The focus on the pub is their beer selection (helpful chalk board above the bar) with 6 cask ales and a real cider ,besides 11 keg taps offering an interesting mix of craft beers,some at high ABV&#039;s.The real ale selection on my trip was Siren Craft Soundwave (&pound;4.20,very good, very reasonable price),Big Smoke Solaris Session,Seven Brothers Ruby Red Ale,Wild Weather Keyboard Warrior Brown Ale,Truman Swift and Zephyr.I went through the card and ale condition matched up to it&#039;s GBG 2016 listing,and I liked the mix of styles and strengths showing some thought had been given to the selection.The impressive pump clip display shows that quality micros will be found in here,and with pricing starting at &pound;3.80 this isn&#039;t a pub trying to rip off transient trade in a tourist hot spot.<br />
+The pub is opposite the Windmill Theatre,which these days has dispensed with the statuesque nudes and has become a seedy looking lap dancing club.The pub,however, is popular with a wide mix of customers and certainly attracts some good looking women,while the young bar staff are curtious and most efficient even when very busy.Classic rock standards played at a sensible volume enhances the atmosphere and ,given the ale range,for me this is firmly on the list for a revisit .It was a very pleasant surprise in this honey pot area.<br />
+<br />
+UPDATE<br />
+The interior is much the same but there had been a marked downturn on the ale selection.The six handpumps were drawing a real cider,two regulars in Big Smoke Solaris Session (very good nick but quickly ran out) and Truman Runner with guests of Signature Brew Session (a poor malty brew) and 3 Brewers Blond (ok condition but dull)with the sixth pump reversed throughout a busy Friday evening session.The inability to replace ales that had run out left a mundane selection ,all with low ABV&#039;s,and the distinct impression of slipping standards.A downgrade from me,despite a decent interior it&#039;s now just another West End boozer serving some real ale.</p>
+<p class="Reviewer">On 3<sup>rd</sup> June 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1916 recommendations about 1916 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/22307/">View more reviews of The Lyric (15)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Lyric</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Lyric - <a href="http://www.lyricsoho.co.uk/" title="Submitted by:- paulof horsham" target="_blank">www.lyricsoho.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="163454760486839">Facebook - <a href="https://www.facebook.com/lyricsoho/" target="_blank" rel="nofollow">The Lyric - Soho</a></li></ul><ul id="Custom2"><li class="twitlink" id="1005160927">Twitter - <a href="https://twitter.com/Lyricsoho" target="_blank" rel="nofollow">The Lyric</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/22307/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Tris39">Tris C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.51127408697606, -0.13435319262499], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.51127408697606, -0.13435319262499]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> London Charing Cross, 0.63 miles, 12 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> London Waterloo, 1.43 miles, 27 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> London Euston, 1.64 miles, 31 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('uxkyHbfYj@g@^MNQBKBJJJJAlB}AFYOyBo@_Ga@wB?Kd@sBNABEBOGWn@yAJALYZwD?_BZi@b@cALMn@S|@IPGZ@CwFPCDJd@i@MYZu@?KM[vAiDHLDGDHLY', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('uxkyHbfYj@g@^MNQBKBJJJJAlB}AFYOyBo@_Ga@wB?Kd@sBNABEBOGWn@yAJALYZwD?_BZi@b@cALMn@S\\ECuGlAAA{@c@qAd@s@Xm@rEsJ^OFg@\\sABFVR`G{XJeArCaMr@_DHg@AOFC@IAI@g@NC?WRi@NuAHkAVcAN[TkAXi@@UlAyA]kAW^AEHK@DIJAEHK@DIJAEHK@DQRBV|AxDYp@BP', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('uxkyHbfYqB~BeBuEg@}AWm@aAaBe@{A{IjF{@{EKEs@h@K?kBlAiG`FsA|AWWqAvAsAsECAI@iDpD}@yCc@f@kDiKqEfFkBsGwCbDiBjBKYKLCGIHSCWZQe@KLM_@CDEOABSk@BGMa@IHIWmAlA_DxCGSONI[GFMc@ORFX?LWEMIg@CWJ]^c@uAC?@Du@z@Og@sAtAQm@uAzA@NCBEMCD@BUV', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.51127408697606,-0.13435319262499], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=22307">View all updates for The Lyric, W1</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        26<span class="sup">th</span> Nov 2018, 23:23
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> amended by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        10<span class="sup">th</span> Sep 2018, 23:43
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11822307">No</span> <span id="discdetail11822307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Bar Billiards : <span id="fac10722307">No</span> <span id="discdetail10722307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Beer Festivals : <span id="fac11722307">No</span> <span id="discdetail11722307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Beer Garden : <span id="fac11422307">No</span> <span id="discdetail11422307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10222307">No</span> <span id="discdetail10222307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Car Park : <span id="fac11322307">No</span> <span id="discdetail11322307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Child Friendly : <span id="fac12122307">No</span> <span id="discdetail12122307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Darts : <span id="fac11122307">No</span> <span id="discdetail11122307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Dog Friendly : <span id="fac10522307">No</span> <span id="discdetail10522307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Function Room : <span id="fac12322307">No</span> <span id="discdetail12322307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Hot Food : <span id="fac10322307">Yes</span> <span id="discdetail10322307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Jukebox : <span id="fac11222307">No</span> <span id="discdetail11222307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Karaoke : <span id="fac10622307">No</span> <span id="discdetail10622307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Live Music : <span id="fac10822307">Yes</span> <span id="discdetail10822307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Live TV Sports : <span id="fac11022307">No</span> <span id="discdetail11022307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Micropub : <span id="fac12222307">No</span> <span id="discdetail12222307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Pinball : <span id="fac11622307">No</span> <span id="discdetail11622307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Pool Table : <span id="fac10422307">No</span> <span id="discdetail10422307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Real Ale : <span id="fac10122307">Yes</span> <span id="discdetail10122307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Real Cider : <span id="fac11922307">No</span> <span id="discdetail11922307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>WiFi : <span id="fac11522307">Yes</span> <span id="discdetail11522307" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>11am - 11:30pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11:30pm</td></tr>
+<tr><td>Wednesday</td><td>11am - 11:30pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>11am - 11:30pm</td></tr>
+<tr><td>Friday</td><td>11am - Midnight</td></tr>
+<tr><td>Saturday</td><td>11am - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64894/" class="List1">Be At One</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/79612/" class="List1">Sophie&#039;s</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/79603/" class="List1">Archer Street</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 5 reviewer(s)" title="Pub has average rating of 5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22365/" class="List1">St James Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 4 reviewer(s)" title="Pub has average rating of 5.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22230/" class="List1">Duke of Argyll</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22397/" class="List1">The White Horse</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22404/" class="List1">The Yard Bars</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64895/" class="List1">Jewel Bar</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

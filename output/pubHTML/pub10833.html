@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The George Hotel (JD Wetherspoon) pub in Hailsham, East Sussex, BN27 1AD : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The George Hotel (JD Wetherspoon)" />
+  <meta name="keywords" content="The George Hotel (JD Wetherspoon), 3 George Street, Hailsham, East Sussex, Hailsham Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The George Hotel (JD Wetherspoon) in Hailsham" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/10501_11000/10833_43887ab4.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/10833/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="50.86204004442252" />
+<meta property="og:longitude" content="0.25965392589569" />
+<meta property="og:street-address" content="3 George Street" />
+<meta property="og:locality" content="Hailsham" />
+<meta property="og:region" content="East Sussex" />
+<meta property="og:postal-code" content="BN27 1AD" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The George Hotel (JD Wetherspoon) in Hailsham? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The George Hotel (JD Wetherspoon) the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/10833/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The George Hotel (JD Wetherspoon) in Hailsham" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The George Hotel (JD Wetherspoon) " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/10501_11000/10833_43887ab4.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/10833/" />
+<meta name="geo.position" content="50.86204004442252;0.25965392589569" />
+<meta name="geo.placename" content="The George Hotel (JD Wetherspoon) in Hailsham" />
+<meta name="geo.region" content="UK" />
+<title>The George Hotel (JD Wetherspoon) in Hailsham : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":10833},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(10833);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 10833;var pubaddress = "3 George Street";var pubname = "The George Hotel (JD Wetherspoon)";var pubpostcode = "BN27 1AD";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/east-sussex/" title="Pubs Galore : East Sussex Page">East Sussex</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/hailsham/east-sussex/" title="Pubs Galore : Hailsham Page">Hailsham</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The George Hotel (JD Wetherspoon) Page">The George Hotel (JD Wetherspoon) Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="5a13b8bai9duisf3c8d5o3orh7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/10833/" class="indisplay"><img src="/images/display/10501_11000/10833_43887ab4.jpg?w=2" alt="Picture of The George Hotel (JD Wetherspoon)" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
+  Submitted on Wednesday, 30<sup>th</sup> June 2010<br />
+  With picture contributions to 20227 other pubs<br />
+<a href="/pubpictures/10833/" class="smallbutton">View all this pub's pictures</a> (11 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/10833/">Pub map</a><br /><a href="/pubreviews/10833/">Pub reviews (4)</a><br /><a href="/pubpictures/10833/">Pub pictures (12)</a><br /><a href="/core/pubaudit.php?id=10833" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The George Hotel (JD Wetherspoon), Hailsham Town, Hailsham</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">3 George Street</span><br />
+
+
+<span class="town">Hailsham</span><br />
+<span class="postcode">BN27 1AD</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01323445120</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">J D Wetherspoon</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/hailsham-town/east-sussex/">Hailsham Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The George Hotel (JD Wetherspoon)  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review72335" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> left this review about George Hotel (JD Wetherspoon)</h6>
+<p class="old">Visit 13th July 2013<br />
+<br />
+It was the same old problem on my visit today, there were FIVE pumps &quot;Available Soon&quot;!<br />
+<br />
+This meant that with the two GK usual suspects and Bateman&#039;s Yellabelly (which is a current guest), there were just two Sussex Beers on, Dark Star Partridge Best and American Pale Ale both of which were very well kept.<br />
+<br />
+5 out of 10 beers &quot;Available Soon&quot; is not just poor, but is completely unacceptable. I&#039;ve knocked the score down to 6 as a result.<br />
+<br />
+It&#039;s such a shame as this would be a really outstanding Spoons if they could sort the cellar out.<br />
+<br />
+<br />
+Visit 16th June 2013<br />
+<br />
+This place has changed on my last few visits. <br />
+<br />
+The good news is that apart from the two GK usual suspects, ALL of the guest ales are sourced from local Sussex microbreweries, typically Long Man, Franklin&#039;s, Dark Star, Turners and Hammerpot. An inspection of the empties outside confirms this. It&#039;s a Doombar and London Pride free zone!!<br />
+<br />
+The bad news is that it now in the pricier Spoons range, the Dark Star Art Of Darkness was &pound;2.35 while the Franklin&#039;s Citra IPA and Dark Star Summer Meltdown were &pound;2.65. Of course, this is still dead cheap for Sussex which has for years been well overpriced in my opinion. <br />
+The other down side is that they always seem to have some of the beers &quot;Available Soon&quot;. Today, at least half of them were in this status, which is a bit of a joke. If they could sort out this problem then it would be a permanent Sussex mini beer festival.</p>
+<p class="Reviewer">On 14<sup>th</sup> July 2013 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2121 recommendations about 2116 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review50390" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about George Hotel (JD Wetherspoon)</h6>
+<p class="old">Plodding in here to get a cheap beer after getting off the 1A, I wasn&rsquo;t necessarily expecting much from a town centre Wetherspoons but this one was a pleasant surprise. I gather this place has been open just over a year but even so the standard of interior furnishings and d&eacute;cor was remarkably high, one of the few JDW&rsquo;s to have some genuine character. The pub has two distinct sections; the front has dark wood panelling, booths and a raised area with some expensive-looking seating. The bar end at the rear has a larger, open effect, enhanced by a skylight. This end leads out onto a pleasant courtyard area where a number of people were enjoying the sunshine. Perhaps a let-down for me was the small guest ale range &ndash; only Dark Star Hophead, with the Adnams Bitter unavailable. My Hophead and the Ruddles County drunk by a co-crawlee came out well, no complaints. A couple of ciders also on the go on the pump (one being Mr Whiteheads), slightly unusual for a Spoons who usually only ever have Westons. Service was pretty good too, the staff looked reasonably happy to be there - no attempt to flog me extra nuts or crisps! Perhaps I look cheap.<br />
+<br />
+One of the better &lsquo;Spoons experiences, shame about the paucity of guest ales.</p>
+<p class="Reviewer">On 15<sup>th</sup> August 2011 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review37980" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Strongers">Steve C</a> left this review about George Hotel (JD Wetherspoon)</h6>
+<p class="old">This is a large Wetherspoons pub that was very busy with diners early on Saturday afternoon. It is much nicer than the average Spoons as the layout dictates that there is some tucked away seating and the usual characterless open plan format is not adhered to as it is in many JDW pubs. The usual food and drinks promotions are in place and there are ten hand pumps that were drawing an assortment of guest ales alongside the usual Ruddles and Abbot. The Guinness was good, but I did have a bit of a wait at the bar due to people to ordering food and the two bar staff on duty being in no rush to serve as a pretty girl was in situ. When I was served the manager/supervisor tried to flog me some crisps and nuts whilst looking straight through me, no thanks just what I asked for and have been waiting five minutes to receive please. There is some seating in a paved area out the back and there is some more seating along the side of the pub. There is also a disabled toilet and step free access through the front and side doors.<br />
+<br />
+Apart from the service I did like it in here and will return when next in the area as I didn&rsquo;t think that much of this pub&rsquo;s peers.<br />
+<br />
+QI: This pub was first recorded in 1817 when it was owned by the Bear Brewery, Lewes.</p>
+<p class="Reviewer">On 22<sup>nd</sup> November 2010 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 3386 recommendations about 3366 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/10833/">View more reviews of The George Hotel (JD Wetherspoon) (4)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The George Hotel (JD Wetherspoon)</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>George Hotel page at the Wetherspoon site - <a href="http://www.jdwetherspoon.co.uk/home/pubs/george-hotel" title="Submitted by:- Quinno _" target="_blank">www.jdwetherspoon.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="167330259986871">Facebook - <a href="https://www.facebook.com/GeorgeHotelHailsham/" target="_blank" rel="nofollow">The George Hotel Hailsham</a></li></ul><ul id="Custom2"><li class="twitlink" id="2727324362">Twitter - <a href="https://twitter.com/TheGeorge6284" target="_blank" rel="nofollow">The George Hotel</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/10833/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Strongers">Steve C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([50.86204004442252, 0.25965392589569], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([50.86204004442252, 0.25965392589569]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Polegate, 3.13 miles, 1 hr 0 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Pevensey & Westham, 5.34 miles, 1 hr 43 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Berwick (Sussex), 5.68 miles, 1 hr 49 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('m_muHcuq@T~@J~AZEd@AbB`@pAp@xAwCxA|CXLXj@bAj@bCq@Hl@@b@VBdASJMXG\\HfIcApFSrEBtCLhBLbC^fEhAnTzIz@VP@LGF@HXLApAv@~EfBbNnG`Cx@hR`FjGjB|HnBhDjAxJnCdGzAtC^fAP`CA|PNvAPbBt@^ZhA`@`Dd@~C~DFf@ZJNRvClEy@vDPPHj@Xn@nGJlAFn@F`AZ?aBC@@s@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('m_muHcuq@m@yBJy@\\u@`AuA^_@^]`BgA`B_AhAeAXi@TJxD~@`A\\hArAz@wB~D_E|@d@~@nAbB}CrAwD~@wBnBkDzAyAp@a@p@[xBg@rEmAxGwB`Ae@jBsAxBeChAeAjAw@bAw@^MR?D_As@sDEaASqBMoDBoAVeCb@cDTkABwBPgETwBn@iBz@aBx@kA|AgDUkBB{@Jm@xA{BzDcFf@_AjAqCr@oBj@qA^i@b@EfAi@vA_B^gAFo@Xa@xB_B^a@\\iDZcA`BuBt@uAz@mBnAqDd@iCp@u@\\qABgCEqCJwBF}C@uBQsBYcBw@mCe@wCSoCH{G`@^`AfFvHOvLb@zBXFOlAzAd@p@rC~BlChBh@b@wByApPmHdHsDlBk@fEyCjAaJlGeP`BqCt@w@Ii@Aq@RcAj@gAp@_A^w@hAqEj@kAjAuBtAyAnC_Cr@iA\\aAGKGoAp@kAzCuNEeAb@OJa@FC?JlAe@~As@MmC@mGFqAfAwHT]RCtAj@jCkVH[TWT?~Ca@bAg@b@[^E~@FDy@CW', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('m_muHcuq@T~@J~AHrBE`A\\^FZHf@RbCF`@NN`BfAZ\\xBxFtA|CHNt@x@HXfDrEh@l@|A|BpB|CUb@Md@w@hGZXpCzDnAdIxBxBqA`EM`AAp@D~A^p@`BFDV@f@EVi@`AC^tBxChAbAz@`@v@x@tBlA|D~C]tDJzEJtHHfB~HtP@HhAhCrBnG`@h@ZZDRMn@[dA_@|@e@x@_@^]Re@L{AX[PYT[b@}@|Aa@`@sBdBOf@Ip@@h@J\\b@dAZl@X`@n@l@pE`DNVL^Bd@GbCBt@Jp@Jb@l@dBPt@d@tC\\~Ab@`B`BbERt@Jl@Ft@^`BN\\l@p@`@XhBx@lCdBxAv@d@^bANhBbAB~@n@dHRtADlAE^dAp@\\\\cBvKq@zAg@dCp@z@g@|AuChEwCnMs@zBe@tEwC|Hy@~Ba@bC]zA{@z@]jAg@tDmApGyClNCd@aB|EW|@Cb@@|@C|@K`BWpAoBhGe@fAOlA]pB`BxIx@lJE~BbKfMbBhQp@lMTdB?ZNrAGv@JVXbCBx@IIAFJrA?zALzAJx@^dALt@lAfC|C~DlB`AnBl@J?WnBw@hChEpBbEjAlFpAvBn@rIxBdEpAa@|@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([50.86204004442252,0.25965392589569], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=10833">View all updates for The George Hotel (JD Wetherspoon), Hailsham</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        3<span class="sup">rd</span> Jan 2016, 14:40
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> deleted by <a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        3<span class="sup">rd</span> Jan 2016, 14:40
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> deleted by <a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11810833">No</span> <span id="discdetail11810833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Aqualung .</span></li><li>Bar Billiards : <span id="fac10710833">No</span> <span id="discdetail10710833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Aqualung .</span></li><li>Beer Festivals : <span id="fac11710833">Yes</span> <span id="discdetail11710833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Aqualung .</span></li><li>Beer Garden : <span id="fac11410833">Yes</span>  - <span id="discdetail11410833" class="discdetail" style="">Well, sort of!</span> -   <span class="Reviewer">last updated 06 August 2013 by Aqualung .</span></li><li>CAMRA Discount : <span id="fac10210833">No</span> <span id="discdetail10210833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 September 2013 by Aqualung .</span></li><li>Car Park : <span id="fac11310833">No</span> <span id="discdetail11310833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Aqualung .</span></li><li>Child Friendly : <span id="fac12110833">Yes</span> <span id="discdetail12110833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 September 2013 by Aqualung .</span></li><li>Darts : <span id="fac11110833">No</span> <span id="discdetail11110833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Aqualung .</span></li><li>Dog Friendly : <span id="fac10510833">No</span> <span id="discdetail10510833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Aqualung .</span></li><li>Hot Food : <span id="fac10310833">Yes</span> <span id="discdetail10310833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 July 2013 by Dave McNally</span></li><li>Jukebox : <span id="fac11210833">No</span> <span id="discdetail11210833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Aqualung .</span></li><li>Karaoke : <span id="fac10610833">No</span> <span id="discdetail10610833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Aqualung .</span></li><li>Live Music : <span id="fac10810833">No</span> <span id="discdetail10810833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Aqualung .</span></li><li>Live TV Sports : <span id="fac11010833">No</span> <span id="discdetail11010833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Aqualung .</span></li><li>Pinball : <span id="fac11610833">No</span> <span id="discdetail11610833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Aqualung .</span></li><li>Pool Table : <span id="fac10410833">No</span> <span id="discdetail10410833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Aqualung .</span></li><li>Quiz Night : <span id="fac10910833">Yes</span>  - <span id="discdetail10910833" class="discdetail" style="">Monday</span> -   <span class="Reviewer">last updated 15 September 2013 by Aqualung .</span></li><li>Real Ale : <span id="fac10110833">Yes</span> <span id="discdetail10110833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 July 2013 by Dave McNally</span></li><li>Real Cider : <span id="fac11910833">Yes</span> <span id="discdetail11910833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 September 2013 by Aqualung .</span></li><li>Wheelchair Access : <span id="fac12010833">Yes</span> <span id="discdetail12010833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 September 2013 by Aqualung .</span></li><li>WiFi : <span id="fac11510833">Yes</span> <span id="discdetail11510833" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 July 2013 by Dave McNally</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/60419/" class="List1">The Corn Exchange</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/10839/" class="List1">The Railway Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 4 reviewer(s)" title="Pub has average rating of 7 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/10835/" class="List1">Grenadier</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 9 from 4 reviewer(s)" title="Pub has average rating of 9 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/10836/" class="List1">Kings Head</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

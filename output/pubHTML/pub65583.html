@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Windsor Castle pub in Lye, Stourbridge, West Midlands, DY9 7DG : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Windsor Castle" />
+  <meta name="keywords" content="Windsor Castle, 7 Stourbridge Road, Stourbridge, West Midlands, Lye, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Windsor Castle in Stourbridge" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/65501_66000/65583_816e347c.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/65583/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.45840871264715" />
+<meta property="og:longitude" content="-2.11800366640091" />
+<meta property="og:street-address" content="7 Stourbridge Road" />
+<meta property="og:locality" content="Stourbridge" />
+<meta property="og:region" content="West Midlands" />
+<meta property="og:postal-code" content="DY9 7DG" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Windsor Castle in Stourbridge? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Windsor Castle the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/65583/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Windsor Castle in Stourbridge" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Windsor Castle " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/65501_66000/65583_816e347c.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/65583/" />
+<meta name="geo.position" content="52.45840871264715;-2.11800366640091" />
+<meta name="geo.placename" content="Windsor Castle in Stourbridge" />
+<meta name="geo.region" content="UK" />
+<title>Windsor Castle in Lye, Stourbridge : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":65583},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(65583);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 65583;var pubaddress = "7 Stourbridge Road";var pubname = "Windsor Castle";var pubpostcode = "DY9 7DG";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/west-midlands/" title="Pubs Galore : West Midlands Page">West Midlands</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/stourbridge/west-midlands/" title="Pubs Galore : Stourbridge Page">Stourbridge</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Windsor Castle Page">Windsor Castle Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="aln22qaiv5q2f3oh4ppbato9i0" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/65583/" class="indisplay"><img src="/images/display/65501_66000/65583_816e347c.jpg?w=2" alt="Picture of Windsor Castle" /></a><br />  Image posted by <a href="/userinfo.php?name=Wattie" class="indisplay">Walter Dunlop</a><br />
+  Submitted on Monday, 5<sup>th</sup> April 2010<br />
+  With picture contributions to 1519 other pubs<br />
+<a href="/pubpictures/65583/" class="smallbutton">View all this pub's pictures</a> (19 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/65583/">Pub map</a><br /><a href="/pubreviews/65583/">Pub reviews (13)</a><br /><a href="/pubpictures/65583/">Pub pictures (20)</a><br /><a href="/core/pubaudit.php?id=65583" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Windsor Castle, Lye, Stourbridge</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">7 Stourbridge Road</span><br />
+<span class="region">Lye</span><br />
+
+<span class="town">Stourbridge</span><br />
+<span class="postcode">DY9 7DG</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/lye/west-midlands/">Lye</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Windsor Castle  <span class="h2note">(Average Rating: <span id="averagerating"><b>8</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review116817" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about Windsor Castle</h6>
+<p class="old">Between 2004 and 2015, this large pub on the main road through Lye was the brewery tap for the Sadler&#039;s Brewery, which operated from an adjacent outbuilding until moving to a new premises close to the train station. Despite this demotion of sorts, the pub still showcases the brewery&#039;s wares and there was an extensive range of Sadler&#039;s beers available on my Saturday night visit, all detailed on a helpful blackboard to the side of the bar. The options on this occasion were Mud City Stout, Hop Bomb, Mellow Yellow, IPA, Worcester Sorcerer, Helihopper, Peaky Blinder and Gladstone, from which I decided to try the Mellow Yellow, which came in at &pound;3.40 a pint and was in very good shape, but not really one of my favourite Sadler&#039;s beers. <br />
+The pub is very different to the traditional brewery taps  that you can find across the Black Country, having been thoroughly refurbished to create a feel that is closer to gastro pub than proper boozer. You enter into a tile floored corridor with a number of seating areas off to either side. Each of these areas has plenty of pew and chair seating and I was surprised to find pretty much everyone in them was eating. The walls have been painted in neutral colours and are hop lined in places with various black and white photos, decorative mirrors and other such staple items of decor on show. The corridor emerges into the rear bar area with the servery along the back wall. This is a spacious flagstone floor space with high tables and chairs dotted around plus a drinking ledge under the front window. A TV screen was showing muted coverage of The Voice, which must be the most pointless use of a TV imaginable. The bar has a nice counter and pleasant hop-lined bar back with the aforementioned drinks boards to the left and an upright piano to the right under a few CAMRA awards. From here you can move through again to another room on the right hand side of the pub, set on a slightly lower level in a bare boarded space. This room had a lot of standard seating and very plain decor, with an almost echoey feel to it, which meant it was the least popular spot in the pub. <br />
+I was a little surprised with this place, which turned out to be very different to what I&#039;d had in mind. For a pub where arguably the beer is the main draw, the place didn&#039;t feel particularly well set up for drinkers, although the multiple room layout means it&#039;s probably possible to find somewhere to escape the diners at most times. With the new dedicated brewery bar just a short walk away and the fine beer range in the Shovel just up the road, this is no longer the essential stop off it once was, but it remains a great showcase for a good brewery and an integral part of the area&#039;s pub scene.</p>
+<p class="Reviewer">On 9<sup>th</sup> April 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review91982" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Mappiman">Ian Mapp</a> left this review about Windsor Castle</h6>
+<p class="old">First off, I never knew this was here.  25 years ago, I had my first curries at the Balti house over the road and never noticed this pub - or its subsequent change into a brewery tap house!<br />
+<br />
+For Xmas, I had a Virgin red letter day brewery tour voucher for this place and headed off on the train (station over the road) to attend.  The tour is excellent - very informative, and entertaining and you get a superb lunch afterwards.  Best Ploughmans I have ever had.<br />
+<br />
+And you get to taste the beers - I tried the peaky blinder (a black IPA) and the Worcesertshire Sourcery - both were excellent.<br />
+<br />
+Enjoyed the day and will be back as a more regular pint drinker next time.</p>
+<p class="Reviewer">On 9<sup>th</sup> February 2015 
+  - rating: <b>10</b><br />
+  <span class="leftspace">[User has posted 517 recommendations about 512 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review88580" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> left this review about Windsor Castle</h6>
+<p class="old">For a brewery tap I found this place rather odd as although it has a bar with ten pumps and seven Sadler&#039;s beers, apart from some stools at the bar and a few tall tables there is nowhere to sit and drink. All the tables in the small rooms off the bar area seemed to be set out for dining with knives and forks wrapped in serviettes placed on them. I couldn&#039;t get to see what the three guest ales were as there was a group of three people sitting at the bar, but I did see that one of them was Holden&#039;s Scary Face. <br />
+I went for two Sadler&#039;s beers the Hop Bomb (&pound;3.40) and Mud City Stout (&pound;3.70) both of which were in superb condition but rather expensive for the West Midlands. I ended up sitting by one of the tables with cutlery and then noticed one that had nothing on it so moved there. <br />
+It&#039;s worth coming here for the beer alone, but it would be more drinker friendly if they used numbered tables or gave out a wooden spoon with a number on for the food orders.</p>
+<p class="Reviewer">On 3<sup>rd</sup> November 2014 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2121 recommendations about 2116 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/65583/">View more reviews of Windsor Castle (13)</a>
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=477">Sedgley to Lye</a> by <a rel="nofollow" href="/userinfo.php?name=Andy+Ven">Andy Ven</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Windsor Castle</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Windsor Castle Inn and Brewery - <a href="http://www.sadlersales.co.uk/index.php/pubswindsor" title="Submitted by:- elizabeth mcgraw" target="_blank">www.sadlersales.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="1065012890192745">Facebook - <a href="https://www.facebook.com/thewindsorcastleinn/" target="_blank" rel="nofollow">Windsor Castle Inn</a></li></ul><ul id="Custom2"><li class="twitlink" id="90899770">Twitter - <a href="https://twitter.com/sadlersales" target="_blank" rel="nofollow">Sadler's Brewery</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/65583/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Ale+Monster">Ale Monster</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.45840871264715, -2.11800366640091], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.45840871264715, -2.11800366640091]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Lye (West Midlands), 0.15 miles, 2 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Stourbridge Junction, 1.24 miles, 23 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Stourbridge Junction, 1.24 miles, 23 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('oxd_Irt|KAeAg@@{AQeBy@MCAoC@eB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('oxd_Irt|KFt@hAhJdB~Jd@tCJlAh@{AhAbC|BrCzBfHPhADNVtAZUPWXe@b@|@Pj@Jx@L~ABzACtBzBr@?NbAK`Aa@x@{@x@lAPAt@|ApAGl@r@|AxB^c@n@zL^Cf@N\\X`ApA`@^Z@ZQPl@BENADJ@PTBJNBl@?h@@RHPHDdGD', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('oxd_Irt|KFt@hAhJdB~Jd@tCJlAh@{AhAbC|BrCzBfHPhADNVtAZUPWXe@b@|@Pj@Jx@L~ABzACtBzBr@?NbAK`Aa@x@{@x@lAPAt@|ApAGl@r@|AxB^c@n@zL^Cf@N\\X`ApA`@^Z@ZQPl@BENADJ@PTBJNBl@?h@@RHPHDdGD', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.45840871264715,-2.11800366640091], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=65583">View all updates for Windsor Castle, Stourbridge</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        9<span class="sup">th</span> Apr 2017, 12:00
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> Jun 2016, 16:03
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Delboy20">Delboy 20</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11865583">Yes</span> <span id="discdetail11865583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 April 2017 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10765583">No</span> <span id="discdetail10765583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 October 2013 by Quinno _</span></li><li>Beer Garden : <span id="fac11465583">Yes</span> <span id="discdetail11465583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 October 2014 by Aqualung .</span></li><li>CAMRA Discount : <span id="fac10265583">No</span> <span id="discdetail10265583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 October 2014 by Aqualung .</span></li><li>Car Park : <span id="fac11365583">Yes</span> <span id="discdetail11365583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 October 2014 by Aqualung .</span></li><li>Child Friendly : <span id="fac12165583">Yes</span> <span id="discdetail12165583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 October 2013 by Quinno _</span></li><li>Darts : <span id="fac11165583">No</span> <span id="discdetail11165583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 April 2017 by Pub SignMan</span></li><li>Dog Friendly : <span id="fac10565583">Yes</span> <span id="discdetail10565583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 April 2017 by Pub SignMan</span></li><li>Hot Food : <span id="fac10365583">Yes</span> <span id="discdetail10365583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 October 2013 by Quinno _</span></li><li>Jukebox : <span id="fac11265583">No</span> <span id="discdetail11265583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 April 2017 by Pub SignMan</span></li><li>Micropub : <span id="fac12265583">No</span> <span id="discdetail12265583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 April 2017 by Pub SignMan</span></li><li>Pinball : <span id="fac11665583">No</span> <span id="discdetail11665583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 October 2014 by Aqualung .</span></li><li>Pool Table : <span id="fac10465583">No</span> <span id="discdetail10465583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 April 2017 by Pub SignMan</span></li><li>Real Ale : <span id="fac10165583">Yes</span> <span id="discdetail10165583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 September 2011 by Alan Hurdle</span></li><li>Real Cider : <span id="fac11965583">Yes</span> <span id="discdetail11965583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 October 2014 by Aqualung .</span></li><li>Wheelchair Access : <span id="fac12065583">Yes</span> <span id="discdetail12065583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 October 2013 by Quinno _</span></li><li>WiFi : <span id="fac11565583">Yes</span> <span id="discdetail11565583" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 April 2017 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 11pm</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - Midnight</td></tr>
+<tr><td>Saturday</td><td>9am - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/38673/" class="List1">Railway Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 9 from 2 reviewer(s)" title="Pub has average rating of 9 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86722/" class="List1">Wheelie Thirsty</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83082/" class="List1">Sadler&#039;s Brewhouse &amp; Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 5 reviewer(s)" title="Pub has average rating of 8 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/38686/" class="List1">The Shovel Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/38642/" class="List1">Holly Bush</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83573/" class="List1">The Fox</a></li>
+                    <li><img src="/images/icon-photo-grey.gif" alt="Pub has no pictures" title="Pub has no pictures" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87841/" class="List1">Beat Ales Tap House</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/38658/" class="List1">The Hadcroft</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

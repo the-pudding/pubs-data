@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Railway pub in Billericay, Essex, CM12 9BE : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Railway" />
+  <meta name="keywords" content="The Railway, 1  High Street, Billericay, Essex, Billericay Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Railway in Billericay" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/11001_11500/11249_25b002125d8afc3cc3696d1915514e73.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/11249/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.62824753375085" />
+<meta property="og:longitude" content="0.41926145553589" />
+<meta property="og:street-address" content="1  High Street" />
+<meta property="og:locality" content="Billericay" />
+<meta property="og:region" content="Essex" />
+<meta property="og:postal-code" content="CM12 9BE" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Railway in Billericay? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Railway the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/11249/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Railway in Billericay" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Railway " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/11001_11500/11249_25b002125d8afc3cc3696d1915514e73.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/11249/" />
+<meta name="geo.position" content="51.62824753375085;0.41926145553589" />
+<meta name="geo.placename" content="The Railway in Billericay" />
+<meta name="geo.region" content="UK" />
+<title>The Railway in Billericay : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":11249},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(11249);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 11249;var pubaddress = "1  High Street";var pubname = "The Railway";var pubpostcode = "CM12 9BE";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/essex/" title="Pubs Galore : Essex Page">Essex</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/billericay/essex/" title="Pubs Galore : Billericay Page">Billericay</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Railway Page">The Railway Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="q2p8u8eltatumidab9640kfij5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/11249/" class="indisplay"><img src="/images/display/11001_11500/11249_25b002125d8afc3cc3696d1915514e73.jpg?w=2" alt="Picture of The Railway" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
+  Submitted on Friday, 24<sup>th</sup> July 2009<br />
+  With picture contributions to 20227 other pubs<br />
+<a href="/pubpictures/11249/" class="smallbutton">View all this pub's pictures</a> (18 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/11249/">Pub map</a><br /><a href="/pubreviews/11249/">Pub reviews (3)</a><br /><a href="/pubpictures/11249/">Pub pictures (19)</a><br /><a href="/core/pubaudit.php?id=11249" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Railway, Billericay Central, Billericay</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">1  High Street</span><br />
+
+
+<span class="town">Billericay</span><br />
+<span class="postcode">CM12 9BE</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01277652173</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/billericay-central/essex/">Billericay Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Railway  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review117711" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=lezford">Lester Ford</a> left this review about The Railway</h6>
+<p class="old">A Tuesday night visit to Billericay for football and a chance to tick this pub which is one of the three that appear in the 2017 GBG.<br />
+<br />
+5 ales on the hand pumps, several from the local area. During my 2 hour stay I had several very good pints of Mighty Oak&#039;s Squeezebox @ 4.0%, a nice golden ale that was well kept.<br />
+<br />
+Large front area where the bar is which filled up as I spent my time here, to the rear is a large open area with tables and chairs lining the sides.<br />
+<br />
+Also has a large back garden which acts as the smoking area. A thoroughly nice pub with a pleasant welcome from the bar staff, a decent tick from the guide.</p>
+<p class="Reviewer">On 3<sup>rd</sup> May 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 80 recommendations about 78 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review89890" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> left this review about The Railway</h6>
+<p class="old">As can be seen from the pictures this is a Gray&#039;s house. Gray&#039;s are a small Essex based pub company that once had their own brewery in Chelmsford and stocked Greene King ales after the brewery closed in the mid 1970s. <br />
+It&#039;s a red brick building on the South side of the bridge over the railway from the station.  <br />
+Inside it is a single room with the bar facing that curves around the area. The floor looked like it may be wood but I suspect was a laminate. <br />
+There are six pumps selling four beers which on my visit were GK IPA, Deuchar&#039;s IPA, Woodforde&#039;s Wherry and Lincoln Green Sherwood. I went for the Sherwood (&pound;3.30) which was a great pint in excellent condition and a new brewery to me.<br />
+Happily the days when Gray&#039;s houses just sold Greene King ales are long gone and from what I can recall this one is fairly typical of their pubs. Their sister pub the Coach and Horses gets the GBG entry but this one is well worth a look.</p>
+<p class="Reviewer">On 12<sup>th</sup> December 2014 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 2121 recommendations about 2116 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review1474" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+Inshearah">Al Inshearah</a> left this review about Railway Hotel</h6>
+<p class="old">Woo Yay another pub to stagger into once you come out of the Rising Sun on the opposite side. Much the same as my review of the Rising Sun, but I can&#039;t remember if they do toasties (but can&#039;t remember much by that that time either)</p>
+<p class="Reviewer">On 9<sup>th</sup> October 2006 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 40 recommendations about 40 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Railway</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="1512156135771143">Facebook - <a href="https://www.facebook.com/Railway-Hotel-1512156135771143/" target="_blank" rel="nofollow">Railway Hotel</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/11249/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=hophead">john mcgraw</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.62824753375085, 0.41926145553589], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.62824753375085, 0.41926145553589]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Billericay, 0.17 miles, 3 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Ingatestone, 4.2 miles, 1 hr 21 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Shenfield, 4.75 miles, 1 hr 31 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('qsbzHg|pAI@oAq@AUo@i@]n@Ob@ShAOjAhAf@A\\RJNFDY', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('qsbzHg|pAI@oAq@AUo@i@]n@Ob@ShAUdByCDcBOADg@[a@OEBMXQNSh@_CbECPg@x@K\\_AdBG?kC~E]d@YJO?w@e@O@UEaAq@KEGrC_H{@QhFGx@Gh@EPSAMGKQQOMXQ[EDi@Rg@h@YNMRm@l@MZs@t@mEtGeA\\aBS{AHg@CsDFCJiA^gAFeDcA{EiAw@c@sCiAe@Ac@dG^b@R?JTDn@P`PCZe@IMFQdBuAv@m@x@_AdBKfBNlC@lAHvBeBl@c@hDQ|JDd@UnFKhLqCeAeCKgD`@iOn@]NI\\Ah@NlHCrAe@tBgApGQ|AIjCa@tHW~B_HOkEh@oAHaCQk@LiAl@mEQAhAJpDEbBDpGQjAKPSe@q@_@qA_@kAk@iDsAg@OYA_ABo@UcAs@u@cAs@u@c@KWD]d@[Zi@^qCCgBHUHGN[~EWtAo@pC{@jCiCvG_@v@e@h@Kg@sDkIIm@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('qsbzHg|pAD?pB`@?x@Dj@|@lELhBFbAIzBLbDBjAd@pGZtDLb@l@rAJb@dDzGTp@l@p@^\\tA|@l@~@^v@R|@d@z@fCtCCVhAt@`DlCW|BQ|CUzBTp@L~AGdAO`ADdE[v@r@bCwBpAdApAb@rAGhJMlCqCfd@m@|d@y@bBZtB@fAg@fE_AhPOvDGlCK|Jc@jHs@xDgAhBQtAZvTkAHuBU}@cAKgBeB^yA`@s@Bk@Kw@HBh@?pBCtAXXdBjEv@r@Zf@lAzF^vDFpBHxAJ~@@vAJ\\\\NGpBkBzIANBPIdAHPWxF?^Nv@RPdANzBPCdGBhJEjOQ|Bq@nFGZaAfBQd@Ej@q@fLQ`MDdH|Ct@]lFy@rHu@hJo@nFsArFeAtCs@pAyAjBoDfD_BdB{@lAu@nAcBfEkAdDLzATlAPz@`@t@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.62824753375085,0.41926145553589], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=11249">View all updates for The Railway, Billericay</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        3<span class="sup">rd</span> May 2017, 14:53
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=lezford">Lester Ford</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        14<span class="sup">th</span> Dec 2014, 16:11
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11811249">No</span> <span id="discdetail11811249" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 December 2014 by Aqualung .</span></li><li>Bar Billiards : <span id="fac10711249">Yes</span> <span id="discdetail10711249" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 December 2014 by Aqualung .</span></li><li>Beer Garden : <span id="fac11411249">Yes</span> <span id="discdetail11411249" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 December 2014 by Aqualung .</span></li><li>CAMRA Discount : <span id="fac10211249">No</span> <span id="discdetail10211249" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 December 2014 by Aqualung .</span></li><li>Car Park : <span id="fac11311249">Yes</span> <span id="discdetail11311249" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 December 2014 by Aqualung .</span></li><li>Dog Friendly : <span id="fac10511249">Yes</span> <span id="discdetail10511249" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 December 2014 by Aqualung .</span></li><li>Hot Food : <span id="fac10311249">No</span> <span id="discdetail10311249" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 December 2014 by Aqualung .</span></li><li>Pool Table : <span id="fac10411249">No</span> <span id="discdetail10411249" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 December 2014 by Aqualung .</span></li><li>Real Ale : <span id="fac10111249">Yes</span> <span id="discdetail10111249" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 May 2014 by Dave McNally</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 11pm</td></tr>
+<tr><td>Monday</td><td>12noon - 10pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - Midnight</td></tr>
+<tr><td>Saturday</td><td>12noon - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/11243/" class="List1">Crown</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/63926/" class="List1">Bar Zero</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 5 reviewer(s)" title="Pub has average rating of 6.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/52374/" class="List1">The Blue Boar (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/77796/" class="List1">Harry&#039;s Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/11241/" class="List1">The Chequers</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 2 reviewer(s)" title="Pub has average rating of 7 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/11242/" class="List1">Coach &amp; Horses</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/52376/" class="List1">Red Lion</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66073/" class="List1">Cleavers</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

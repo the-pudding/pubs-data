@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Talbot pub in SE4, London (Greater), SE4 1QG : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Talbot" />
+  <meta name="keywords" content="The Talbot, 4  Tyrwhitt Road, SE4, London (Greater), Brockley, Lewisham, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Talbot in SE4" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/23501_24000/23908_371b83be.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/23908/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.46727846655260" />
+<meta property="og:longitude" content="-0.02355907472997" />
+<meta property="og:street-address" content="4  Tyrwhitt Road" />
+<meta property="og:locality" content="SE4" />
+<meta property="og:region" content="London (Greater)" />
+<meta property="og:postal-code" content="SE4 1QG" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Talbot in SE4? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Talbot the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/23908/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Talbot in SE4" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Talbot " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/23501_24000/23908_371b83be.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/23908/" />
+<meta name="geo.position" content="51.46727846655260;-0.02355907472997" />
+<meta name="geo.placename" content="The Talbot in SE4" />
+<meta name="geo.region" content="UK" />
+<title>The Talbot in SE4 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":23908},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(23908);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 23908;var pubaddress = "4  Tyrwhitt Road";var pubname = "The Talbot";var pubpostcode = "SE4 1QG";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/greater-london/" title="Pubs Galore : London (Greater) Page">London (Greater)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/se4/greater-london/" title="Pubs Galore : SE4 Page">SE4</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Talbot Page">The Talbot Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="fh817h62fk0co90kdr490h7hq3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/23908/" class="indisplay"><img src="/images/display/23501_24000/23908_371b83be.jpg?w=2" alt="Picture of The Talbot" /></a><br />  Image posted by <a href="/userinfo.php?name=Talbot" class="indisplay">Felix Pearce</a><br />
+  Submitted on Thursday, 11<sup>th</sup> March 2010<br />
+  <a href="/pubpictures/23908/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/23908/">Pub map</a><br /><a href="/pubreviews/23908/">Pub reviews (5)</a><br /><a href="/pubpictures/23908/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=23908" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Talbot, SE4</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">4  Tyrwhitt Road</span><br />
+
+
+<span class="town">SE4</span><br />
+<span class="postcode">SE4 1QG</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02086922665</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/brockley/greater-london/">Brockley</a>, <a href="/areas/lewisham/greater-london/">Lewisham</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Talbot  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review115286" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> left this review about The Talbot</h6>
+<p class="old">There were four ales on in here, which came as a pleasant surprise after already visiting several pubs in the area which did not serve real ale. The ales on were Fuller&#039;s Front Row, Harvey&#039;s Best, Salopian Shropshire Gold, and Brockley Pale Ale (&pound;2 a half). I didn&#039;t see any sign of food, but I was in after 3.0 PM and maybe they had stopped serving by then.<br />
+<br />
+Despite the remnants of Charrington&#039;s signage outside, there&#039;s nothing of heritage interest inside. It&#039;s now a thoroughly modernised pub. The walls up to dado level are painted a sort of indigo colour and cream above it; furnishings are mainly hard wooden recycled church chairs with mainly scrubbed light wood tables. Obviously there&#039;s a coffee machine on the bar counter, along with large jars of nuts and the like, as well as the now ubiquitous water container. Music was retro in the extreme - I recognised tracks by Buddy Holly and the Everly Brothers. There&#039;s also some bench seating outside.<br />
+<br />
+The beer choice was pretty good, but I didn&#039;t think that it was really a comfortable enough place for me to want to spend any length of time, although I&#039;m sure that it would suit many people down to the ground.</p>
+<p class="Reviewer">On 14<sup>th</sup> February 2017 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 2495 recommendations about 2415 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review87304" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Talbot</h6>
+<p class="old">I seem to have caught this place at exactly the wrong time, having visited not long after the pub changed ownership. This pub was, by all accounts, a bit of a dilapidated mess when the previous owners took it on, but they managed to turn things around and the pub appeared in recent editions of the Good Beer Guide as a result of their hard work. The current owners took over in August 2014 and my visit seems to have been timed during their redecorating phase, as all of the walls were painted white but had been left completely bare. Sadly, this left for a very bland, sterile feeling pub devoid of warmth or character, so one would hope that this gets addressed pretty quickly. The pub has a single room layout with the servery opposite the main front door and seating areas to either side. The room is bare boarded with an L-shaped servery which had a large coffee and tea making station at one end. Furniture is mostly scrubbed tables and standard chairs, with a few high tables and stools here and there. A few bits of CAMRA literature and flyers for local events were knocking about, but the lack of visual distraction was very, erm... distracting. There is a good amount of picnic bench seating out the front, but it&#039;s not the most pleasant spot you&#039;re likely to find. We had a good laugh watching one bloke have his bench invaded by the pub cat who seemed determined to position himself between the customer and his pint. The staff were very friendly and welcoming and obviously keen to make a good impression with their new enterprise. We were also afforded a warm welcome from the lovely pub dog. <br />
+Four handpulls were offering the choice of Clarence and Fredericks Cascadian Black, Brick Sir Thomas Gardyner, Harveys Best and Mighty Oak Sun Downer. I noticed a pretty good bottled beer range and my impressions were that the owners were keen to maintain their inherited reputation for good ale. My pint of the Brick enhanced that opinion and went down very well on a hot summer&#039;s afternoon.<br />
+This was clearly, at least I hope, a work in progress and merits a revisit to establish if it&#039;s going to emerge as the charming locals pub it could easily be transformed into. If the d&eacute;cor is to remain minimal, then it&#039;s possibly still worth a look for the beer range, but wouldn&#039;t merit more than a quick look before moving on. I&#039;ll be interested to see which way this one goes.</p>
+<p class="Reviewer">On 18<sup>th</sup> September 2014 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review41886" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about The Talbot</h6>
+<p class="old">Refurbished pub - formerly a Charrington house, as evidenced by the exterior signage - located a few minutes walk from St Johns station.  Looks fairly modern inside, with sparse decoration apart from one wall which has what seems to be a random collection of framed pictures.  A few plain wooden benches outside by the parking area.  Four real ales on handpump - Flowers IPA, Wadworth Bishop&#039;s Tipple, Doom Bar and Harveys (&pound;3.25, and served in the right glass).  Overall, one of the better places in the area.</p>
+<p class="Reviewer">On 18<sup>th</sup> February 2011 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/23908/">View more reviews of The Talbot (5)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Talbot</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Talbot - <a href="http://www.talbotpublichouse.com/" title="Submitted by:- Tris C" target="_blank">www.talbotpublichouse.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="397069870359412">Facebook - <a href="https://www.facebook.com/TalbotBrockley/" target="_blank" rel="nofollow">The Talbot</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/23908/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.46727846655260, -0.02355907472997], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.46727846655260, -0.02355907472997]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> St Johns (London), 0.24 miles, 4 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Lewisham, 0.61 miles, 11 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Brockley, 0.89 miles, 17 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('eecyHjqCq@a@]YeAiAi@Mu@lB{@u@i@jBA`@cA{@n@cAAKEIc@g@BM', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('eecyHjqCq@a@]Y^cAjBwDt@eBnB_HzFqQR{@Lm@NeAJqBBmAG{GE_@?g@GADu@CAIWBKIEGDEO{@j@kA|@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('eecyHjqCz@h@vAh@tCv@}@pM~G`CtIzFsAxGeAnGm@fEBxCTpGRjJ?b@o@`By@fAYDOECZ[CAP', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.46727846655260,-0.02355907472997], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=23908">View all updates for The Talbot, SE4</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        14<span class="sup">th</span> Feb 2017, 17:41
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        8<span class="sup">th</span> Feb 2017, 18:27
+      </div><div class="auditexp">Pub <a href="/pubmapaudit/23908/">map correction</a> submitted by <a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11823908">No</span> <span id="discdetail11823908" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2014 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10723908">No</span> <span id="discdetail10723908" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2014 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11423908">Yes</span> <span id="discdetail11423908" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 February 2017 by Rex Rattus</span></li><li>Car Park : <span id="fac11323908">No</span> <span id="discdetail11323908" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2014 by Pub SignMan</span></li><li>Darts : <span id="fac11123908">No</span> <span id="discdetail11123908" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2014 by Pub SignMan</span></li><li>Dog Friendly : <span id="fac10523908">Yes</span> <span id="discdetail10523908" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2014 by Pub SignMan</span></li><li>Hot Food : <span id="fac10323908">Yes</span> <span id="discdetail10323908" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2014 by Pub SignMan</span></li><li>Jukebox : <span id="fac11223908">No</span> <span id="discdetail11223908" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2014 by Pub SignMan</span></li><li>Live Music : <span id="fac10823908">Yes</span> <span id="discdetail10823908" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2014 by Pub SignMan</span></li><li>Live TV Sports : <span id="fac11023908">No</span> <span id="discdetail11023908" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2014 by Pub SignMan</span></li><li>Pinball : <span id="fac11623908">No</span> <span id="discdetail11623908" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2014 by Pub SignMan</span></li><li>Pool Table : <span id="fac10423908">No</span> <span id="discdetail10423908" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2014 by Pub SignMan</span></li><li>Real Ale : <span id="fac10123908">Yes</span> <span id="discdetail10123908" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 February 2017 by Rex Rattus</span></li><li>Real Cider : <span id="fac11923908">No</span> <span id="discdetail11923908" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2014 by Pub SignMan</span></li><li>WiFi : <span id="fac11523908">Yes</span> <span id="discdetail11523908" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2014 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>4pm - 11pm</td></tr>
+<tr><td>Tuesday</td><td>4pm - 11pm</td></tr>
+<tr><td>Wednesday</td><td>4pm - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>4pm - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - 11:59pm</td></tr>
+<tr><td>Saturday</td><td>12noon - 11:59pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23954/" class="List1">The Brookmill</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65216/" class="List1">The Rising Sun</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23965/" class="List1">Royal George</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23966/" class="List1">Royal Standard</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84693/" class="List1">The Full Nelson</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 10 from 1 reviewer(s)" title="Pub has average rating of 10 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54616/" class="List1">Star &amp; Garter</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54617/" class="List1">The Little Crown</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23951/" class="List1">The Birds Nest</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

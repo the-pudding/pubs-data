@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Tudor Rose pub in Coulsdon, Surrey, CR5 1EB : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Tudor Rose" />
+  <meta name="keywords" content="The Tudor Rose, 270 Coulsdon Road, Coulsdon, Surrey, Old Coulsdon, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Tudor Rose in Coulsdon" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/65001_65500/65455_192a9005.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/65455/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.30632458290434" />
+<meta property="og:longitude" content="-0.11964797973633" />
+<meta property="og:street-address" content="270 Coulsdon Road" />
+<meta property="og:locality" content="Coulsdon" />
+<meta property="og:region" content="Surrey" />
+<meta property="og:postal-code" content="CR5 1EB" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Tudor Rose in Coulsdon? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Tudor Rose the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/65455/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Tudor Rose in Coulsdon" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Tudor Rose " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/65001_65500/65455_192a9005.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/65455/" />
+<meta name="geo.position" content="51.30632458290434;-0.11964797973633" />
+<meta name="geo.placename" content="The Tudor Rose in Coulsdon" />
+<meta name="geo.region" content="UK" />
+<title>The Tudor Rose in Coulsdon : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":65455},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(65455);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 65455;var pubaddress = "270 Coulsdon Road";var pubname = "The Tudor Rose";var pubpostcode = "CR5 1EB";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/surrey/" title="Pubs Galore : Surrey Page">Surrey</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/coulsdon/surrey/" title="Pubs Galore : Coulsdon Page">Coulsdon</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Tudor Rose Page">The Tudor Rose Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="gpfh998mbapfa6avog8r2sfcn6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/65455/" class="indisplay"><img src="/images/display/65001_65500/65455_192a9005.jpg?w=2" alt="Picture of The Tudor Rose" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
+  Submitted on Tuesday, 6<sup>th</sup> December 2011<br />
+  With picture contributions to 20227 other pubs<br />
+<a href="/pubpictures/65455/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/65455/">Pub map</a><br /><a href="/pubreviews/65455/">Pub reviews (2)</a><br /><a href="/pubpictures/65455/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=65455" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Tudor Rose, Old Coulsdon, Coulsdon</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">270 Coulsdon Road</span><br />
+<span class="region">Old Coulsdon</span><br />
+
+<span class="town">Coulsdon</span><br />
+<span class="postcode">CR5 1EB</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01737553368</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Premium Country Pubs (Mitchells & Butlers)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/old-coulsdon/surrey/">Old Coulsdon</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Tudor Rose</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/TudorRosePub" target="_blank"><img src="https://pbs.twimg.com/profile_images/1337616265/Tudor_Rose_normal.png" alt="Tudor Rose Pub" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/TudorRosePub" target="_blank">Tudor Rose Pub</a></strong>
+I&#039;m dreaming of a wine Christmas... but when that runs out I&#039;ll move onto the red! 
+
+Make some great savings when p&hellip; <a href='https://t.co/jvYIFLV3vn' target='_blank'>https://t.co/jvYIFLV3vn</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/TudorRosePub/status/1066119210923888640">12:00 AM Nov 24th</a> from <a href="https://r4e-social-oauth.reputation.com/" rel="nofollow">Reputation.com-Social</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/TudorRosePub" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/TudorRosePub" target="_blank">Tudor Rose Pub</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Tudor Rose  <span class="h2note">(Average Rating: <span id="averagerating"><b>3</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review108449" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Tudor Rose</h6>
+<p class="old">This is a large roadside pub in the middle of Old Coulsdon which has decided to go down the high end gastro route, not that this was particularly apparent upon arrival. The main entrance takes you into the central part of the pub where the servery stands opposite, along the back wall. There is limited seating here, but lots of empty space for vertical drinking. You would imagine this would be superfluous to the needs of such a large pub, but a large group of locals shunned the numerous seating options in the rest of the pub in favour of standing around here, generally blocking the bar area. To the left is a two-part formal dining area complete with a sign asking you to wait to be seated. It seemed like a pretty dull area with cheap d&eacute;cor and pastel shaded walls throughout. The front half had arguably the nicer furnishings, but the rear section seemed brighter and airier and thus marginally preferable. A quick look at the menu and its surprisingly steep prices put to bed any thoughts I had of grabbing a bite to eat here, so I lumbered over to the right hand side of the pub, where a large lounge area can be found. Walls are again in pastel shades with part carpeted and part tiled flooring throughout and some weird bits of art on show that looked like roses had been stencilled onto wooden planks from old picnic benches. There were some comfy sofas and wicker chairs in this half of the pub and I was able to bag a seat near the end windows which looked out over a nice grassy pub garden, complete with intact picnic benches. A large Tudor Rose mural on the back wall, near the toilets, rounded out the d&eacute;cor and the overall ambiance was dealt a fatal blow thanks to the dreadful soundtrack that played for the duration of my stay.<br />
+After some careful manoeuvring through the unnecessary crowd at the bar, I found two ales available &ndash; Sharp&rsquo;s Doom Bar and St Austell Tribute &ndash; with a final handpull left unclipped. A very smiley barmaid served me a below average pint of the Tribute as I simultaneously noticed that all of the people around the bar were drinking lager.<br />
+Perhaps an early evening mid-week visit was not the best time to see this pub at its best. I can only presume it&rsquo;s a lot livelier at the weekend, when there is a good crowd of diners filling up the dining room. As it was, the place felt far too big to generate any kind of warmth or ambiance and I struggled to take any positives from the visit. Worth keeping in mind if you&rsquo;re in the area and fancy an expensive lunch, but this is another Coulsdon pub I won&rsquo;t be troubling again.</p>
+<p class="Reviewer">On 7<sup>th</sup> July 2016 
+  - rating: <b>4</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review35107" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=NickDavies">Nick Davies</a> left this review about The Tudor Rose</h6>
+<p class="old">A 30s mock Tudor roadhouse now open again after yet another refurbishment c/o M&amp;B.  It was a particularly dreadful Harvester, then the Ember Inns incarnation lasted all of a couple of years.  M&amp;B seem to be walking away from these hopeless brands that were so important to them once: so let&#039;s see what have we got now?  What we&#039;ve got is an identikit M&amp;B unbranded chain restaurant with no pretence of being a pub.  Done up quite tastefully to be honest but of course completely devoid of atmosphere, and managing to extract vast some of money (Eleven quid for burger and chips ffs) from the punters by convincing them that their mass produced meals are in fact freshly cooked by real chefs.  They were freshly cooked once, probably by work experience kids, in a factory on the M40.  If you don&#039;t believe me cut and paste something off their menu in to Google, &quot;Classic Burger, Gherkin, Mustard Mayo, Cheese, Relish and Frites&quot;  say, and see how many hits you get.  <br />
+<br />
+As for the beer, our hopes were raised by the presence of Purity Brewing Co&#039;s Ubo amongst the routine Doom Bar and Young&#039;s ordinary.  Pity it was awful condition, cloudy and sour but not surprising that the bar staff couldn&#039;t give a toss. <br />
+<br />
+Avoid.</p>
+<p class="Reviewer">On 3<sup>rd</sup> October 2010 
+  - rating: <b>2</b><br />
+  <span class="leftspace">[User has posted 450 recommendations about 442 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Tudor Rose</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Tudor Rose - <a href="http://www.tudorrosecoulsdon.co.uk/" title="Submitted by:- Nick Davies" target="_blank">www.tudorrosecoulsdon.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="761245793920321">Facebook - <a href="https://www.facebook.com/tudorrosecoulsdon/" target="_blank" rel="nofollow">The Tudor Rose, Coulsdon</a></li></ul><ul id="Custom2"><li class="twitlink" id="292526797">Twitter - <a href="https://twitter.com/TudorRosePub" target="_blank" rel="nofollow">Tudor Rose Pub</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/65455/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=NickDavies">Nick Davies</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.30632458290434, -0.11964797973633], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.30632458290434, -0.11964797973633]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Coulsdon South, 1.26 miles, 24 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Coulsdon Town, 1.62 miles, 31 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Kenley, 1.8 miles, 34 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('axcxHzgVcBz@I`@Ud@SNgAfG_@jA]n@L\\TDThFLJPrBBn@AXq@dCu@fC_@nBq@nCiBnDqM|]}@pBAXPbCqKxCeATi@n@m@b@I`@QNSJu@Lg@f@w@IWKs@`@lBbHWTO^k@?SZTNKd@WSGX_@S', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('axcxHzgVcBz@I`@Ud@SNgAfG_@jA]n@L\\TDThFLJPrBBn@AXq@dCu@fC_@nBq@nCiBnDqM|]}@pBAXPbCqKxCeATi@n@m@b@I`@QNSJu@Lg@f@w@IWKs@`@kCtBWr@o@~BqAjBwFkF}BkB[Gy@s@kCqCq@g@gAe@iAUeEB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('axcxHzgVcBz@I`@Ud@SNSYs@oBu@YmB{@]W_@e@_@s@{AaCgCwCgBaBoAqAgBkCiByBSOs@QoA@sCVsB@uDSc@O_AvAy@kBlBwCwBeHOQUEAIo@JmBGA_A_@]U_@Ws@Ie@KIUsBMwBa@_EEiAg@EeA[YQmB}Cc@}@q@kAe@_@_@G_@Do@P{@\\wAeAgAaFmCsC_@cBYgAuCiBa@g@]_AQ_@YKWAcBn@kA@c@]GUy@{@V_@j@}C', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.30632458290434,-0.11964797973633], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=65455">View all updates for The Tudor Rose, Coulsdon</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        7<span class="sup">th</span> Jul 2016, 22:02
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        6<span class="sup">th</span> Dec 2011, 18:25
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=hophead">john mcgraw</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11865455">No</span> <span id="discdetail11865455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 July 2016 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10765455">No</span> <span id="discdetail10765455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by Nick Davies</span></li><li>Beer Festivals : <span id="fac11765455">No</span> <span id="discdetail11765455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by Nick Davies</span></li><li>Beer Garden : <span id="fac11465455">Yes</span> <span id="discdetail11465455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by Nick Davies</span></li><li>CAMRA Discount : <span id="fac10265455">No</span> <span id="discdetail10265455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by Nick Davies</span></li><li>Car Park : <span id="fac11365455">Yes</span> <span id="discdetail11365455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by Nick Davies</span></li><li>Child Friendly : <span id="fac12165455">Yes</span> <span id="discdetail12165455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 July 2016 by Pub SignMan</span></li><li>Darts : <span id="fac11165455">No</span> <span id="discdetail11165455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by Nick Davies</span></li><li>Function Room : <span id="fac12365455">No</span> <span id="discdetail12365455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 July 2016 by Pub SignMan</span></li><li>Hot Food : <span id="fac10365455">Yes</span> <span id="discdetail10365455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by Nick Davies</span></li><li>Jukebox : <span id="fac11265455">No</span> <span id="discdetail11265455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by Nick Davies</span></li><li>Karaoke : <span id="fac10665455">No</span> <span id="discdetail10665455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by Nick Davies</span></li><li>Live Music : <span id="fac10865455">No</span> <span id="discdetail10865455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by Nick Davies</span></li><li>Live TV Sports : <span id="fac11065455">No</span> <span id="discdetail11065455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by Nick Davies</span></li><li>Micropub : <span id="fac12265455">No</span> <span id="discdetail12265455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 July 2016 by Pub SignMan</span></li><li>Pinball : <span id="fac11665455">No</span> <span id="discdetail11665455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by Nick Davies</span></li><li>Pool Table : <span id="fac10465455">No</span> <span id="discdetail10465455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by Nick Davies</span></li><li>Quiz Night : <span id="fac10965455">No</span> <span id="discdetail10965455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by Nick Davies</span></li><li>Real Ale : <span id="fac10165455">Yes</span> <span id="discdetail10165455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by Nick Davies</span></li><li>Real Cider : <span id="fac11965455">No</span> <span id="discdetail11965455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 July 2016 by Pub SignMan</span></li><li>Wheelchair Access : <span id="fac12065455">Yes</span> <span id="discdetail12065455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 July 2016 by Pub SignMan</span></li><li>WiFi : <span id="fac11565455">Yes</span> <span id="discdetail11565455" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 July 2016 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11am - 10:30pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - 11pm</td></tr>
+<tr><td>Saturday</td><td>11am - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

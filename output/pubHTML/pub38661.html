@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Old Cat pub in Wordsley, Stourbridge, West Midlands, DY8 5RT : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Old Cat" />
+  <meta name="keywords" content="The Old Cat, 110  High Street, Stourbridge, West Midlands, Wordsley, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Old Cat in Stourbridge" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/38501_39000/38661_1681fec7.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/38661/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.48068198643689" />
+<meta property="og:longitude" content="-2.16199323534966" />
+<meta property="og:street-address" content="110  High Street" />
+<meta property="og:locality" content="Stourbridge" />
+<meta property="og:region" content="West Midlands" />
+<meta property="og:postal-code" content="DY8 5RT" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Old Cat in Stourbridge? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Old Cat the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/38661/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Old Cat in Stourbridge" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Old Cat " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/38501_39000/38661_1681fec7.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/38661/" />
+<meta name="geo.position" content="52.48068198643689;-2.16199323534966" />
+<meta name="geo.placename" content="The Old Cat in Stourbridge" />
+<meta name="geo.region" content="UK" />
+<title>The Old Cat in Wordsley, Stourbridge : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":38661},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(38661);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 38661;var pubaddress = "110  High Street";var pubname = "The Old Cat";var pubpostcode = "DY8 5RT";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/west-midlands/" title="Pubs Galore : West Midlands Page">West Midlands</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/stourbridge/west-midlands/" title="Pubs Galore : Stourbridge Page">Stourbridge</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Old Cat Page">The Old Cat Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="e33fh6492v2jt42pkm944a2h01" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/38661/" class="indisplay"><img src="/images/display/38501_39000/38661_1681fec7.jpg?w=2" alt="Picture of The Old Cat" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
+  Submitted on Wednesday, 5<sup>th</sup> November 2014<br />
+  With picture contributions to 24007 other pubs<br />
+<a href="/pubpictures/38661/" class="smallbutton">View all this pub's pictures</a> (4 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/38661/">Pub map</a><br /><a href="/pubreviews/38661/">Pub reviews (3)</a><br /><a href="/pubpictures/38661/">Pub pictures (5)</a><br /><a href="/core/pubaudit.php?id=38661" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Old Cat, Wordsley, Stourbridge</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">110  High Street</span><br />
+<span class="region">Wordsley</span><br />
+
+<span class="town">Stourbridge</span><br />
+<span class="postcode">DY8 5RT</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Tenanted (Marstons)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/wordsley/west-midlands/">Wordsley</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Old Cat  <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review139490" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=turl">Old Peculiar</a> left this review about The Old Cat</h6>
+<p>Due to open (again) in June, after being closed for several months. Apparently it&#039;s a collaboration between two experienced pub managers, they&#039;ll have to do something special to bring the customers back in.</p>
+<p class="Reviewer">On 29<sup>th</sup> May 2019 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 92 recommendations about 87 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review12511" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="">Anonymous User</a> left this review about The Old Cat Inn</h6>
+<p class="old">The sign shown has been replaced</p>
+<p class="Reviewer">On 13<sup>th</sup> April 2009 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 0 recommendations about 0 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review4184" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=turl">Old Peculiar</a> left this review about The Old Cat Inn</h6>
+<p class="old">Very old pub, grade 2 listed. Banks&#039; on tap.</p>
+<p class="Reviewer">On 12<sup>th</sup> July 2007 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 92 recommendations about 87 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Old Cat</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="190417887729829">Facebook - <a href="https://www.facebook.com/theoldcatpub/" target="_blank" rel="nofollow">The Old Cat</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/38661/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=wac100">wayne colley</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.48068198643689, -2.16199323534966], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.48068198643689, -2.16199323534966]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Stourbridge Town, 2.12 miles, 40 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Stourbridge Junction, 2.88 miles, 55 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Lye (West Midlands), 3.39 miles, 1 hr 5 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('gdi_IvgeL?oAbCq@dAOj@OnE_D`AaAlAoBxByCfBgBvA_BnCaC|FyEh@Wf@MjAOzBa@RIrAe@pA[hAOjA[tB_@b@QxBi@fA[b@SbAo@dA}@\\q@lAsA|AoAvAmBhBkCZ_@z@o@t@[fAWhAIvBc@zA}@|@o@|As@dHqBlAg@z@M@N`AEnALRNJPNm@\\Q~@ODLZCvBq@vA{@t@m@lAmAXSPG@YIUESUqEPAVmBPo@FMf@g@n@y@`@^lCaCH_AXa@Y{@NIv@iBI_BGQLQOYX_@BHFI', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('gdi_IvgeL?oAbCq@dAOj@OnE_D`AaAlAoBxByCfBgBvA_BnCaC|FyEh@Wf@MjAOzBa@RIrAe@pA[hAOjA[tB_@b@QxBi@fA[b@SbAo@dA}@\\q@lAsA|AoAvAmBhBkCZ_@z@o@t@[fAWhAIvBc@zA}@|@o@|As@dHqBlAg@z@M@N`AEnALRNJPNm@\\Q~@ODLZCvBq@vA{@t@m@lAmAXSPG@Y^[H_@`B{C~AaCzAqB|@qAn@eAb@aA^k@BG^QR^h@{@?OUA`AmBx@}B|AkCrAiB`@c@jGqEtKaNt@]rBUGmFKsAm@sEQ_CMwCLK@ETBJNBl@?h@@RHPHDdGD', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('gdi_IvgeLAsCPMrFyNv@yALy@LkAHS`@wARa@LKC[t@YGw@v@Qj@JpAWv@W`As@h@e@j@]H@nC}CbCcDFDrA{BV}@n@yCDGvDyBLOr@wBJu@?g@IoBc@qFGoA@WNi@vC}C`B`LbKmFv@`D`Ao@Fm@Gu@AgADuABG_@aBHKf@O@QJI`@A|@y@N?JGLKFUPWPGh@uAHk@?i@MmAn@OdBw@t@i@xC}DnAuBpBoAYgDGaACw@?OJy@LW\\[tAu@oAkGa@iCYaC@q@F_@LUhAsA`BgEbA{@XQy@{DnAmAS{@bAOaAyDKi@IiAg@yBYsA?QL}@Mk@Q[oAeEpC{ChC{BE_A@e@nC{KdDvBtDjCdCwDAaBl@UIo@CqCI}AWkCc@aDUsCwAoLI{@BeASoC?WlAT~AHbB@d@DAoC@eB', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.48068198643689,-2.16199323534966], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=38661">View all updates for The Old Cat, Stourbridge</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        29<span class="sup">th</span> May 2019, 16:51
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=turl">Old Peculiar</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        29<span class="sup">th</span> May 2019, 16:47
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=turl">Old Peculiar</a> deleted by <a rel="nofollow" href="/userinfo.php?name=turl">Old Peculiar</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11838661">No</span> <span id="discdetail11838661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Bar Billiards : <span id="fac10738661">No</span> <span id="discdetail10738661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Beer Festivals : <span id="fac11738661">No</span> <span id="discdetail11738661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Beer Garden : <span id="fac11438661">Yes</span> <span id="discdetail11438661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Car Park : <span id="fac11338661">Yes</span> <span id="discdetail11338661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Child Friendly : <span id="fac12138661">Yes</span> <span id="discdetail12138661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Darts : <span id="fac11138661">Yes</span> <span id="discdetail11138661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Dog Friendly : <span id="fac10538661">Yes</span> <span id="discdetail10538661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Function Room : <span id="fac12338661">No</span> <span id="discdetail12338661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Jukebox : <span id="fac11238661">No</span> <span id="discdetail11238661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Karaoke : <span id="fac10638661">No</span> <span id="discdetail10638661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Live Music : <span id="fac10838661">Yes</span> <span id="discdetail10838661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Micropub : <span id="fac12238661">No</span> <span id="discdetail12238661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Pinball : <span id="fac11638661">No</span> <span id="discdetail11638661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Pool Table : <span id="fac10438661">No</span> <span id="discdetail10438661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Real Ale : <span id="fac10138661">Yes</span> <span id="discdetail10138661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Real Cider : <span id="fac11938661">No</span> <span id="discdetail11938661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>Wheelchair Access : <span id="fac12038661">No</span> <span id="discdetail12038661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li><li>WiFi : <span id="fac11538661">Yes</span> <span id="discdetail11538661" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 August 2018 by Old Peculiar</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 7 reviewer(s)" title="Pub has average rating of 8 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/38657/" class="List1">The New Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 5 reviewer(s)" title="Pub has average rating of 7 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/38670/" class="List1">The Queens Head</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/38680/" class="List1">The Rose &amp; Crown</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 1 reviewer(s)" title="Pub has average rating of 8 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/38638/" class="List1">The Glass Cutters Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 3 reviewer(s)" title="Pub has average rating of 8 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/38614/" class="List1">The Bird in Hand</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/38609/" class="List1">The Ashwood Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64350/" class="List1">Generous George</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/38647/" class="List1">The Lawnswood</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

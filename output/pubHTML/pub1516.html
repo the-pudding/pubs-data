@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Catherine Wheel pub in Newbury, Berkshire, RG14 5DB : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Catherine Wheel" />
+  <meta name="keywords" content="The Catherine Wheel, 35  Cheap Street, Newbury, Berkshire, Newbury Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Catherine Wheel in Newbury" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/1501_2000/1516_243bbeed.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/1516/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.40010928307925" />
+<meta property="og:longitude" content="-1.32321685552597" />
+<meta property="og:street-address" content="35  Cheap Street" />
+<meta property="og:locality" content="Newbury" />
+<meta property="og:region" content="Berkshire" />
+<meta property="og:postal-code" content="RG14 5DB" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Catherine Wheel in Newbury? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Catherine Wheel the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/1516/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Catherine Wheel in Newbury" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Catherine Wheel " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/1501_2000/1516_243bbeed.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/1516/" />
+<meta name="geo.position" content="51.40010928307925;-1.32321685552597" />
+<meta name="geo.placename" content="The Catherine Wheel in Newbury" />
+<meta name="geo.region" content="UK" />
+<title>The Catherine Wheel in Newbury : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":1516},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(1516);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 1516;var pubaddress = "35  Cheap Street";var pubname = "The Catherine Wheel";var pubpostcode = "RG14 5DB";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/berkshire/" title="Pubs Galore : Berkshire Page">Berkshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/newbury/berkshire/" title="Pubs Galore : Newbury Page">Newbury</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Catherine Wheel Page">The Catherine Wheel Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="jc0hdlmrf4c89fueh6e9drr657" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/1516/" class="indisplay"><img src="/images/display/1501_2000/1516_243bbeed.jpg?w=2" alt="Picture of The Catherine Wheel" /></a><br />  Image posted by <a href="/userinfo.php?name=PaulOfHorsham" class="indisplay">paulof horsham</a><br />
+  Submitted on Saturday, 9<sup>th</sup> August 2014<br />
+  With picture contributions to 1317 other pubs<br />
+<a href="/pubpictures/1516/" class="smallbutton">View all this pub's pictures</a> (16 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/1516/">Pub map</a><br /><a href="/pubreviews/1516/">Pub reviews (8)</a><br /><a href="/pubpictures/1516/">Pub pictures (17)</a><br /><a href="/core/pubaudit.php?id=1516" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Catherine Wheel, Newbury Central, Newbury</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">35  Cheap Street</span><br />
+
+
+<span class="town">Newbury</span><br />
+<span class="postcode">RG14 5DB</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01635569897</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/newbury-central/berkshire/">Newbury Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Catherine Wheel</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/cathwheelnew" target="_blank"><img src="https://pbs.twimg.com/profile_images/475730261661843456/2ekTVEsp_normal.jpeg" alt="The Catherine Wheel" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/cathwheelnew" target="_blank">The Catherine Wheel</a></strong>
+We have more<a href="http://twitter.com/search?q=%23BehindTheGate" target="_blank"> #BehindTheGate</a> music again tomorrow night (Wednesday). This time we have Grant Sharkey with support fr&hellip; <a href='https://t.co/hd9aoP2q0D' target='_blank'>https://t.co/hd9aoP2q0D</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/cathwheelnew/status/1138497747974348801">6:26 PM Jun 11th</a> from <a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/cathwheelnew" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/cathwheelnew" target="_blank">The Catherine Wheel</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Catherine Wheel  <span class="h2note">(Average Rating: <span id="averagerating"><b>7&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review135782" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Catherine Wheel</h6>
+<p>The Cath, under Warwick&rsquo;s management, has really become the premier ale and pub destination in Newbury. The ale range remains heavily local and invariably in good-to-excellent condition. There is now a tidy range of proper cider and large collection of craft beers and bottles, from the UK and overseas. There is latterly an impressive gin offering too. The latter means the pub tends to maintain a good balance of the genders and ages. This is now a pub that is not just the best in Newbury, but is up there with the very best in Berkshire.<br />
+<br />
+September 2015<br />
+Six local ales on the go usually and good quality is the norm in here. CAMRA discount available as stated below. Also an increasingly exciting bottled range from overseas in addition. Worth alighting the train for. Rated 8<br />
+<br />
+September 2014<br />
+Now re-refurbished and re-opened under the guidance of Warwick who had the Maiden Over in Reading. Has been opened-out a little inside but still retains distinct areas. There&rsquo;s a working fireplace which looks a good bet for the winter months. Interior d&eacute;cor is a sort of bluey version of battleship grey, which worked fairly well but not sure if the pub gets enough natural light to stop it looking slightly gloomy? Nice little garden off to the rear as well. Food currently limited to Pieminister pies. Five local ales and thirds are available (to a pint). My West Berks Chubbs was in good shape. Lots of potential here and in a town lacking a really good alehouse, this could turn into a winner. I&rsquo;ll be back. Rated 7<br />
+<br />
+Sept 2013 (as Jack O&#039; Newbury)<br />
+Closed on my Sunday sojourn. Intriguing castle-esque battlement fa&ccedil;ade. Couple of handpulls on the bar. Previously called Gordon&#039;s Bar.</p>
+<p class="Reviewer">On 15<sup>th</sup> November 2018 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review109491" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Thuck+Phat">Thuck Phat</a> left this review about The Catherine Wheel</h6>
+<p class="old">Another traditional town pub which has recently undergone refurbishment, in this case done with some sympathy.<br />
+The result is an area which feels like a pub, albeit a with a tidy and modern take, with wood floors, grey and white walls and a very plush smoking courtyard with all the essential fixtures including inset televisions and heaters.<br />
+There is an enormous selection of &#039;craft&#039; beer available both bottled - at least fifty across many nationalities - and on keg. <br />
+Cask choices on our visit were: Red Cat Prowler, Loddon Hoppit, WBB Good Old Boy, Catherine Wheel Ale (from the Longdog Brewery), Wild Weather Skadoosh Double IPA and a real cider. All standard, low strength beers apart from the Skadoosh at a knockout 11%. It really was very good.<br />
+I don&#039;t know if the inclusion of one strong ale is policy, I&#039;d hope so, but the Skadoosh and the friendly service would more than enough to tempt me into a revisit.</p>
+<p class="Reviewer">On 4<sup>th</sup> August 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 663 recommendations about 662 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review108763" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a> left this review about The Catherine Wheel</h6>
+<p class="old">A decent refurb has created an ale house vibe,and there are a few nooks and crannies around the interior which splits into a few sections.The paintwork is all Farrow &amp; Ball,but I like the way it&#039;s done.<br />
+There is a wide variety of bottled beers,craft keg usually featuring brews from Siren Craft and 6 handpumps.On my trip West Berks Good Old Boy,Loddon Hoppit,Winchester Prowler Pale ,a real cider and Wild Weather Skadoosh Double IPA 11% were available.The pub was only selling the Skadoosh by the schooner or third,but I had to try it and found it excellent ,complex yet drinkable for &pound;3 the two third.<br />
+Outside this rocket fuel,the range on my trip could be seen as pedestrian,but good luck to them for putting on an 11%er ,and for that very fact this is a pub I would try again when next in Newbury.</p>
+<p class="Reviewer">On 15<sup>th</sup> July 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1916 recommendations about 1916 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/1516/">View more reviews of The Catherine Wheel (8)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Catherine Wheel</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="705155856191555">Facebook - <a href="https://www.facebook.com/thecatherinewheelnewbury/" target="_blank" rel="nofollow">The Catherine Wheel</a></li></ul><ul id="Custom2"><li class="twitlink" id="2512680073">Twitter - <a href="https://twitter.com/cathwheelnew" target="_blank" rel="nofollow">The Catherine Wheel</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/1516/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=oldboots">Old Boots</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.40010928307925, -1.32321685552597], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.40010928307925, -1.32321685552597]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Newbury, 0.45 miles, 8 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Newbury Racecourse, 0.77 miles, 14 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Thatcham, 3.86 miles, 1 hr 14 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ebvxHfmaGKMDOXGTQv@k@t@aAHGJ?Jg@^e@p@y@bCiCFEJBThAP|AHpAZTCH|@MAb@]qII@^|J', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ebvxHfmaGKMGO@KQkECU?gAEoBKKI]A]Jg@NWn@m@`@i@x@eDj@{D\\k@Kk@Cm@HoBHsE@wDM{EQmCCwCf@eFj@aEy@yOrA[@|@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ebvxHfmaGKMGO@KQkECU?gAEoBKKI]A]Jg@NWn@m@`@i@x@eDj@{D\\k@Kk@Cm@HoBHsE@wDM{EQmCCwCf@eFj@aEy@yOSeCGmACeBE{JBmFO}JUyFMqII{AkAwAiAmAuAeADMaAg@BSBALDHCvEw\\f@}CdAeEt@uBb@s@nCoDb@s@b@}@`A_CdAaFf@gBFe@Nw@^e@dAeBd@iALc@Jm@FqAJ_Ab@yBTw@bCuF`@cAZ_Ax@aDfAkFt@kCR}@`@iCLcC?kBXwMRwEEMrEusBBwEAyAIqBmBuT_@}C{@_JS{AGOEe@mANCi@FAAKHCW_ELIN~B', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.40010928307925,-1.32321685552597], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=1516">View all updates for The Catherine Wheel, Newbury</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        29<span class="sup">th</span> Dec 2018, 22:09
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> amended by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        25<span class="sup">th</span> Aug 2016, 11:54
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=hondo">hondo .</a> deleted by <a rel="nofollow" href="/userinfo.php?name=hondo">hondo .</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac1181516">No</span> <span id="discdetail1181516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Bar Billiards : <span id="fac1071516">No</span> <span id="discdetail1071516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Beer Festivals : <span id="fac1171516">Yes</span> <span id="discdetail1171516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Beer Garden : <span id="fac1141516">Yes</span>  - <span id="discdetail1141516" class="discdetail" style="">side courtyard</span> -   <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>CAMRA Discount : <span id="fac1021516">Yes</span>  - <span id="discdetail1021516" class="discdetail" style="">20p per pint</span> -   <span class="Reviewer">last updated 16 February 2019 by ROB Camra</span></li><li>Car Park : <span id="fac1131516">No</span> <span id="discdetail1131516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Child Friendly : <span id="fac1211516">Yes</span> <span id="discdetail1211516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Darts : <span id="fac1111516">No</span> <span id="discdetail1111516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Dog Friendly : <span id="fac1051516">Yes</span> <span id="discdetail1051516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Function Room : <span id="fac1231516">No</span> <span id="discdetail1231516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Hot Food : <span id="fac1031516">Yes</span> <span id="discdetail1031516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Jukebox : <span id="fac1121516">No</span> <span id="discdetail1121516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Karaoke : <span id="fac1061516">No</span> <span id="discdetail1061516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Live Music : <span id="fac1081516">Yes</span> <span id="discdetail1081516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Live TV Sports : <span id="fac1101516">No</span> <span id="discdetail1101516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Micropub : <span id="fac1221516">No</span> <span id="discdetail1221516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Pinball : <span id="fac1161516">No</span> <span id="discdetail1161516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Pool Table : <span id="fac1041516">No</span> <span id="discdetail1041516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Real Ale : <span id="fac1011516">Yes</span> <span id="discdetail1011516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>Real Cider : <span id="fac1191516">Yes</span> <span id="discdetail1191516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li><li>WiFi : <span id="fac1151516">Yes</span> <span id="discdetail1151516" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 December 2018 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>12noon - Midnight</td></tr>
+<tr><td>Friday</td><td>12noon - 1:30am</td></tr>
+<tr><td>Saturday</td><td>12noon - 1:30am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1552/" class="List1">The Elephant at the Market</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 3 reviewer(s)" title="Pub has average rating of 4.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1518/" class="List1">Walkabout</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/80421/" class="List1">Corn Exchange</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 5 reviewer(s)" title="Pub has average rating of 7 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64937/" class="List1">The Hatchet Inn (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1549/" class="List1">Old Waggon &amp; Horses</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1535/" class="List1">The Globe Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/79150/" class="List1">La Tasca</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 2 reviewer(s)" title="Pub has average rating of 4 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1536/" class="List1">The Hogshead</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

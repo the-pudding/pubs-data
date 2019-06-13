@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Cross Keys pub in Nottingham, Nottinghamshire, NG1 2GJ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Cross Keys" />
+  <meta name="keywords" content="The Cross Keys, 15 Byard Lane, Nottingham, Nottinghamshire, Nottingham Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Cross Keys in Nottingham" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/58001_58500/58112_e9c6da37.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/58112/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.95202674171177" />
+<meta property="og:longitude" content="-1.14616692066193" />
+<meta property="og:street-address" content="15 Byard Lane" />
+<meta property="og:locality" content="Nottingham" />
+<meta property="og:region" content="Nottinghamshire" />
+<meta property="og:postal-code" content="NG1 2GJ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Cross Keys in Nottingham? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Cross Keys the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/58112/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Cross Keys in Nottingham" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Cross Keys " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/58001_58500/58112_e9c6da37.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/58112/" />
+<meta name="geo.position" content="52.95202674171177;-1.14616692066193" />
+<meta name="geo.placename" content="The Cross Keys in Nottingham" />
+<meta name="geo.region" content="UK" />
+<title>The Cross Keys in Nottingham : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":58112},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(58112);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 58112;var pubaddress = "15 Byard Lane";var pubname = "The Cross Keys";var pubpostcode = "NG1 2GJ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/nottinghamshire/" title="Pubs Galore : Nottinghamshire Page">Nottinghamshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/nottingham/nottinghamshire/" title="Pubs Galore : Nottingham Page">Nottingham</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Cross Keys Page">The Cross Keys Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="8221i1airjjf88ja4omlug6416" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/58112/" class="indisplay"><img src="/images/display/58001_58500/58112_e9c6da37.jpg?w=2" alt="Picture of The Cross Keys" /></a><br />  Image posted by <a href="/userinfo.php?name=traveller" class="indisplay">Jim Newell</a><br />
+  Submitted on Sunday, 10<sup>th</sup> March 2013<br />
+  With picture contributions to 5159 other pubs<br />
+<a href="/pubpictures/58112/" class="smallbutton">View all this pub's pictures</a> (9 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/58112/">Pub map</a><br /><a href="/pubreviews/58112/">Pub reviews (10)</a><br /><a href="/pubpictures/58112/">Pub pictures (10)</a><br /><a href="/core/pubaudit.php?id=58112" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Cross Keys, Nottingham Central, Nottingham</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">15 Byard Lane</span><br />
+
+
+<span class="town">Nottingham</span><br />
+<span class="postcode">NG1 2GJ</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01159417898</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/nottingham-central/nottinghamshire/">Nottingham Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Cross Keys</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/CrossKeysNottm" target="_blank"><img src="https://pbs.twimg.com/profile_images/3686476127/5d75ff89507b2d9a8f199779cd9a14fe_normal.jpeg" alt="The Cross Keys" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/CrossKeysNottm" target="_blank">The Cross Keys</a></strong>
+We have some specially crafted<a href="http://twitter.com/search?q=%23beer" target="_blank"> #beer</a> infused<a href="http://twitter.com/search?q=%23pies" target="_blank"> #pies</a> for our<a href="http://twitter.com/search?q=%23NCBW19" target="_blank"> #NCBW19</a> pie and pints event with<a href="http://twitter.com/NavigationAles" target="_blank"> @NavigationAles</a> tonight&hellip; <a href='https://t.co/ufPKjCWhDx' target='_blank'>https://t.co/ufPKjCWhDx</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/CrossKeysNottm/status/1138051922089435138">12:54 PM Jun 10th</a> from <a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/CrossKeysNottm" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/CrossKeysNottm" target="_blank">The Cross Keys</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Cross Keys  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review131287" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> left this review about The Cross Keys</h6>
+<p>I visited this pub completely at random having no idea what to expect. It&#039;s a split level single room with the main bar area at the top. The floor is wooden and it wasn&#039;t that busy on my Friday morning visit. There were some TV screens on but with the sound off.<br />
+There are two sets of three hand pumps that had four Navigation beers (Splendor, Rebel, New Dawn &amp; Saviour), Doom Bore and Fernandes Chinook. I went for the Fernandes beer (&pound;3.80) which was excellent but expensive. The beer quality was a real bonus on a hot day.<br />
+This place was better than I expected it to be from outside.</p>
+<p class="Reviewer">On 29<sup>th</sup> July 2018 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2121 recommendations about 2116 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review117081" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> left this review about The Cross Keys</h6>
+<p class="old">The Cross Keys was a Bass tied house when i first went in it with keg Bass products on the bar.<br />
+We visit this pub quite often,so i thought i would do an updated review.<br />
+Once inside there is a single L shaped room with the bar facing,the floor is carpeted and the seating comfy bench type and normal tables and chairs,the rear left side is down one step and seems to be popular with diners.<br />
+There were five real ales on the bar on my recent visit,i had a drink of Navigation Golden Anchor,which was a very nice drink,the other real ales were Navigation Apus,Navigation Britannia,Navigation New Dawn Pale and a guest beer Everards Tight Head.<br />
+A very pleasant pub to have a drink in and the food is also quite good here.<br />
+<br />
+Cross Keys first visited 1981<br />
+<br />
+Recent visit 18/2/2017</p>
+<p class="Reviewer">On 16<sup>th</sup> April 2017 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 6113 recommendations about 6113 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review114346" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> left this review about The Cross Keys</h6>
+<p class="old">Located on a busy main road in the heart of Town is the Cross Keys, a navigation brewery Pub that has always had a good following because of its location and gets very busy, especially weekends.  The pub is on two levels with the main bar in front of you as you enter with seating around it and further seating down a few steps on the lower level. The pub, although modernised over the years retains some nice original features and has the feel of a London corner boozer that has been modernised a bit and is quite a nice place to be.  Things go downhill when you get to the bar. Seven hand pulls available and a large number of navigation &ldquo;craft beers&rdquo; but obviously being a navigation pub all the hand pull were from the brewery except Doomber (WHY?!?!). A couple were not in use and still scared from my visit to their brewery tap before a football game a few hour before I reluctantly ordered the same beer, Brittaina Bitter at 10p more than their tap at &pound;2.80 but still a very good price for the centre of town&hellip;&hellip;.CRAP! Having given the benefit of the doubt at the Brewery tap there is now non longer an excuse, navigation make horrible beer and/or do not keep it in a very good condition. Many friends have said the same and although I never like to let instances such as this usually tarnish the reputation of a brewery in my mind I have decided that their offerings are poor. Past reviews have been relatively positive towards the beers on offer but these were several years ago, I can now only assume that the Brewery has gone through some drastic changes (much for the worse) as I will try my best in future to avoid Navigation beers and their pubs.really a 6.5</p>
+<p class="Reviewer">On 12<sup>th</sup> January 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 424 recommendations about 424 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/58112/">View more reviews of The Cross Keys (10)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Cross Keys</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Cross Keys, contains menu - <a href="http://www.crosskeysnottingham.co.uk/" title="Submitted by:- hondo ." target="_blank">www.crosskeysnottingham.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="202783506420963">Facebook - <a href="https://www.facebook.com/TheCrossKeysNottingham/" target="_blank" rel="nofollow">The Cross Keys - Nottingham</a></li></ul><ul id="Custom2"><li class="twitlink" id="321450730">Twitter - <a href="https://twitter.com/CrossKeysNottm" target="_blank" rel="nofollow">The Cross Keys</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/58112/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=hondo">hondo .</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.95202674171177, -1.14616692066193], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.95202674171177, -1.14616692066193]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Nottingham, 0.47 miles, 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Netherfield, 3.53 miles, 1 hr 8 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Carlton, 3.56 miles, 1 hr 8 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('aeebIpz~EAm@`Bp@XHVBBK~@?r@Cf@[BRBLJ@lBDl@Gr@[x@u@BMDADKHC?IFa@DGJEV@zBO@ZbA@BbBPEJrCL`Cp@UCQv@YCO', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('aeebIpz~EAm@QEGeD?YGsCV?l@OEqADk@FU?WMmB~@c@}@_JTKCKxBm@CYPGBI?OUiDEEAe@Gm@ESEENIJAFIMoAGcDOgI@SRWKe@E?f@kEfBcNBwAAqFz@Sh@[r@mA^iAHwCA_@EKEODu@KUkBkGeCgHiBmFeD}LwAuE~@}@rC{@MiBw@qGAGBBOASy@[y@Mo@O]KGSm@@O_@PSG]g@SgC_DkBj@eMgDy@WMUWgAsBMOQBWcDiBkNkBiSi@gDuAsHeC}KOaB?cCJyAXyBrAyIl@eDFq@?YKi@yAqDqGeOaBwDGGfByBLDVf@l@iAaAmB}@eC{@oAi@gAuBkFi@aBiAmE_@yBOkAIeArA_Bo@iB@ECC@KHc@oAmAGaBHGAuDD{B?ET??I[WGWiACDeCFm@@I', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('aeebIpz~EAm@QEGeD?YGsCV?l@OEqADk@FU?WMmB~@c@}@_JTKCKxBm@CYPGBI?OUiDEEAe@Gm@ESEENIJAFIMoAGcDOgI@SRWKe@E?f@kEfBcNBwAAqFz@Sh@[r@mA^iAHwCA_@EKEODu@KUkBkGeCgHiBmFeD}LwAuE~@}@rC{@MiBw@qGAGBBOASy@[y@Mo@O]KGSm@@O_@PSG]g@SgC_DkBj@eMgDy@WMUWgAsBMOQBWcDiBkNkBiSi@gDuAsHeC}KOaB?cCJyAXyBrAyIl@eDFq@?YKi@yAqDqGeOaBwDGGvAgBy@yBg@yAyA_DuDoIiBqCYkAWq@_CaGs@yAaBqEqC{FaBuCwCgHYg@k@kBJQFLBE', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.95202674171177,-1.14616692066193], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=58112">View all updates for The Cross Keys, Nottingham</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        29<span class="sup">th</span> Jul 2018, 18:00
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        16<span class="sup">th</span> Apr 2017, 16:34
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11858112">No</span> <span id="discdetail11858112" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>Bar Billiards : <span id="fac10758112">No</span> <span id="discdetail10758112" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>Beer Festivals : <span id="fac11758112">No</span> <span id="discdetail11758112" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>Beer Garden : <span id="fac11458112">No</span> <span id="discdetail11458112" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10258112">No</span>  - <span id="discdetail10258112" class="discdetail" style="">Discount no longer listed in Nottingham Drinker June/July 2014</span> -   <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>Car Park : <span id="fac11358112">No</span> <span id="discdetail11358112" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>Darts : <span id="fac11158112">No</span> <span id="discdetail11158112" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>Hot Food : <span id="fac10358112">Yes</span> <span id="discdetail10358112" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>Live Music : <span id="fac10858112">No</span> <span id="discdetail10858112" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11058112">Yes</span> <span id="discdetail11058112" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>Pinball : <span id="fac11658112">No</span> <span id="discdetail11658112" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>Pool Table : <span id="fac10458112">No</span> <span id="discdetail10458112" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>Real Ale : <span id="fac10158112">Yes</span> <span id="discdetail10158112" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>Real Cider : <span id="fac11958112">Yes</span> <span id="discdetail11958112" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li><li>WiFi : <span id="fac11558112">Yes</span> <span id="discdetail11558112" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2014 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>9am - 11pm</td></tr>
+<tr><td>Monday</td><td>9am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>9am - 11pm</td></tr>
+<tr><td>Wednesday</td><td>9am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>9am - Midnight</td></tr>
+<tr><td>Friday</td><td>9am - 1am</td></tr>
+<tr><td>Saturday</td><td>9am - 1am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 2 reviewer(s)" title="Pub has average rating of 5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31026/" class="List1">Daskino</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/78350/" class="List1">Baresca</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 6 reviewer(s)" title="Pub has average rating of 6.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82642/" class="List1">Junkyard</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 5 reviewer(s)" title="Pub has average rating of 7 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84222/" class="List1">The Herbert Kilpin</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/58119/" class="List1">All Bar One</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82749/" class="List1">Chemistry</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/78559/" class="List1">Belgo</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/78230/" class="List1">Nottingham Contempary</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

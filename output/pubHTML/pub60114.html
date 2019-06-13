@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The New Oxford pub in Salford, Manchester (Greater), M3 6DB : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The New Oxford" />
+  <meta name="keywords" content="The New Oxford, 11 Bexley Square, Salford, Manchester (Greater), Salford Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The New Oxford in Salford" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/60001_60500/60114_7c6f8220.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/60114/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="53.48371649708560" />
+<meta property="og:longitude" content="-2.25929438954927" />
+<meta property="og:street-address" content="11 Bexley Square" />
+<meta property="og:locality" content="Salford" />
+<meta property="og:region" content="Manchester (Greater)" />
+<meta property="og:postal-code" content="M3 6DB" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The New Oxford in Salford? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The New Oxford the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/60114/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The New Oxford in Salford" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The New Oxford " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/60001_60500/60114_7c6f8220.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/60114/" />
+<meta name="geo.position" content="53.48371649708560;-2.25929438954927" />
+<meta name="geo.placename" content="The New Oxford in Salford" />
+<meta name="geo.region" content="UK" />
+<title>The New Oxford in Salford : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":60114},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(60114);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 60114;var pubaddress = "11 Bexley Square";var pubname = "The New Oxford";var pubpostcode = "M3 6DB";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/greater-manchester/" title="Pubs Galore : Manchester (Greater) Page">Manchester (Greater)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/salford/greater-manchester/" title="Pubs Galore : Salford Page">Salford</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The New Oxford Page">The New Oxford Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="a8osd7iluae041qccdq4e4hl77" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/60114/" class="indisplay"><img src="/images/display/60001_60500/60114_7c6f8220.jpg?w=2" alt="Picture of The New Oxford" /></a><br />  Image posted by <a href="/userinfo.php?name=First+King" class="indisplay">Wynne Route</a><br />
+  Submitted on Thursday, 21<sup>st</sup> June 2018<br />
+  With picture contributions to 3464 other pubs<br />
+<a href="/pubpictures/60114/" class="smallbutton">View all this pub's pictures</a> (8 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/60114/">Pub map</a><br /><a href="/pubreviews/60114/">Pub reviews (7)</a><br /><a href="/pubpictures/60114/">Pub pictures (9)</a><br /><a href="/core/pubaudit.php?id=60114" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The New Oxford, Salford Central, Salford</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">11 Bexley Square</span><br />
+
+
+<span class="town">Salford</span><br />
+<span class="postcode">M3 6DB</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01618327082</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/salford-central/greater-manchester/">Salford Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The New Oxford</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/thenewoxfordpub" target="_blank"><img src="https://pbs.twimg.com/profile_images/1068138615857995777/yBYnoYMq_normal.jpg" alt="The New Oxford" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/thenewoxfordpub" target="_blank">The New Oxford</a></strong>
+A selection of our current ales .... a flavour for everyone!<a href="http://twitter.com/search?q=%23thenewoxford" target="_blank"> #thenewoxford</a><a href="http://twitter.com/search?q=%23bexleysquare" target="_blank"> #bexleysquare</a><a href="http://twitter.com/search?q=%23salford" target="_blank"> #salford</a>&hellip; <a href='https://t.co/S4P33AJnBO' target='_blank'>https://t.co/S4P33AJnBO</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/thenewoxfordpub/status/1138530717632217088">8:37 PM Jun 11th</a> from <a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/thenewoxfordpub" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/thenewoxfordpub" target="_blank">The New Oxford</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The New Oxford  <span class="h2note">(Average Rating: <span id="averagerating"><b>8&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review126446" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=RealAleRobUK">Rob Hunter</a> left this review about The New Oxford</h6>
+<p class="old">A decent pub and definitely has the best real ale selection in the area.  Plenty of different styles available so something for everyone to choose from.  There is also a giant blackboard listing their bottled offerings.<br />
+<br />
+The only downside is that it&#039;s difficult to get a seat when it&#039;s busy, and because they have so many pumps it can be difficult to take them all in, especially when people are crowded round the bar.  There is a separate blackboard listing the cask ales, but not sure if this is kept bang up to date as we struggled to locate some of the ones listed (we had already ordered by that point, but were just being nosey).<br />
+<br />
+Friendly staff and good beer choice - definitely worth a look.</p>
+<p class="Reviewer">On 13<sup>th</sup> February 2018 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 359 recommendations about 336 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review117152" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The New Oxford</h6>
+<p class="old">Located in Bexley Square, next to Salford Town Hall, the New Oxford is arguably the premier alehouse on either side of the Irwell. It certainly stakes a good claim thanks to what I think amounted to 18 hand pumps, although I may easily have miscounted. Ale options in the front bar on my recent visit were Beer Studio Mount Lublin, Wells Bombardier Pale Ale, Slaters Queen Bee, Bude Porthbud Pale Ale, Purple Moose Elderflower Ale, Green Duck Rain Dance, Tigertops Night Train, Empire Porter, Chadwicks Dark Side and Dorking Number One, with a load more on the pumps in the rear bar, all handily listed on boards opposite the bar. These boards also noted three cider options and a good keg range which included plenty of obscure Belgian beers - a feature of the pub, with many more Belgian offerings in bottled form. I tried a pint of the Rain Dance (&pound;3.30), served to me by a very friendly old school landlady and in pretty good shape - not always a given in pubs with so many handpulls. <br />
+It is perhaps fitting that the pub offers a large range of Belgian beers, given that the main bar feels a bit like a typical Belgian &#039;brown bar&#039;. A corner entrance takes you into a bare boarded L-shaped room with some nice checker tiling around the servery. The bar has a tongue and groove counter lined with comfy bar stools, a simple mirrored bar back and a lovely stained glass gantry. Smart banquette seating runs opposite the bar and along the back wall, supported by some wide, well padded low stools, whilst a couple of high tables and stools are squeezed into the far corner of the room. The walls have been painted red with white uppers, much of which has been covered by the inevitable pump clip collection and those aforementioned beer boards. A few bits of breweriana, an Irish rugby scarf and some posters for live sports coverage round out the decor, which is for the most part kept simple but effective. The rear bar has a kitchen serving hatch on the back wall, but beyond that I couldn&#039;t properly explore as the room was in darkness with some of the seating stacked up, although some customers did go in there towards the end of my stay. TV screens in both rooms were showing At The Races and Sky Sports News with music playing in the background. <br />
+This is a nice pub with friendly staff and locals and, of course, that beer line up. As beer exhibition pubs go, it certainly delivers and will no doubt be a big draw for real ale fans, beer tickers and Belgian beer aficionados, although whether it will appeal to anyone outside those niche groups is up for debate. I enjoyed my time here and would certainly like to visit again to give those handpulls a bit more of a workout.</p>
+<p class="Reviewer">On 18<sup>th</sup> April 2017 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review100881" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+Bundy">Al Bundy</a> left this review about The New Oxford</h6>
+<p class="old">A corker of a pub with about a billion handpumps spread over 2 rooms. A fantastic variety of ales to choose from and if you drink Belgian stuff you&#039;re in. Recommended.</p>
+<p class="Reviewer">On 29<sup>th</sup> October 2015 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 3273 recommendations about 3191 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/60114/">View more reviews of The New Oxford (7)</a>
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=513">Manchester crawl - January 2010</a> by <a rel="nofollow" href="/userinfo.php?name=gillhalfpint">Gill Smith</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The New Oxford</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The New Oxford - <a href="http://www.thenewoxford.com/" title="Submitted by:- Rob Hunter" target="_blank">www.thenewoxford.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="142930845871970">Facebook - <a href="https://www.facebook.com/thenewoxford/" target="_blank" rel="nofollow">The New Oxford</a></li></ul><ul id="Custom2"><li class="twitlink" id="1206042726">Twitter - <a href="https://twitter.com/thenewoxfordpub" target="_blank" rel="nofollow">The New Oxford</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/60114/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=AlanH">Alan Hurdle</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([53.48371649708560, -2.25929438954927], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([53.48371649708560, -2.25929438954927]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Salford Central, 0.25 miles, 4 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Manchester Victoria, 0.87 miles, 16 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Deansgate, 0.9 miles, 17 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('e`meItgxLp@ADF?i@\\@@oFCoBjAb@n@LLAPKHWB[ASe@uB_AkD', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('e`meItgxLp@ADF?i@J?DeFAwAG}BAgAG{AIkEU{BeA_IuAaGa@aC_@{Cu@eIe@oD_@uBCWBWKGg@eAaDaI{AEKe@CY_@iBKFG_@o@^yAaGRWHLV_@?AEI', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('e`meItgxLp@ADF?i@\\@@oFFWNOt@HVH^D\\K\\QjBwBt@{@dA_AT_@~DkEnAmAt@o@b@g@Ts@`DlAb@uEjIdDFk@pB{MdCfAb@yBtAr@Na@TCAYLCBS', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.48371649708560,-2.25929438954927], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=60114">View all updates for The New Oxford, Salford</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        8<span class="sup">th</span> Mar 2019, 18:41
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=RealAleRobUK">Rob Hunter</a> approved
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        8<span class="sup">th</span> Mar 2019, 15:57
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=RealAleRobUK">Rob Hunter</a>
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11860114">No</span> <span id="discdetail11860114" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2017 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10760114">No</span> <span id="discdetail10760114" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2017 by Pub SignMan</span></li><li>Beer Festivals : <span id="fac11760114">Yes</span> <span id="discdetail11760114" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 January 2012 by Will Larter</span></li><li>Beer Garden : <span id="fac11460114">No</span> <span id="discdetail11460114" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2017 by Pub SignMan</span></li><li>Car Park : <span id="fac11360114">No</span> <span id="discdetail11360114" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2017 by Pub SignMan</span></li><li>Dog Friendly : <span id="fac10560114">Yes</span> <span id="discdetail10560114" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2017 by Pub SignMan</span></li><li>Function Room : <span id="fac12360114">Yes</span> <span id="discdetail12360114" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2017 by Pub SignMan</span></li><li>Hot Food : <span id="fac10360114">Yes</span> <span id="discdetail10360114" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2017 by Pub SignMan</span></li><li>Karaoke : <span id="fac10660114">No</span> <span id="discdetail10660114" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2017 by Pub SignMan</span></li><li>Live TV Sports : <span id="fac11060114">Yes</span> <span id="discdetail11060114" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2017 by Pub SignMan</span></li><li>Micropub : <span id="fac12260114">No</span> <span id="discdetail12260114" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2017 by Pub SignMan</span></li><li>Pinball : <span id="fac11660114">No</span> <span id="discdetail11660114" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2017 by Pub SignMan</span></li><li>Pool Table : <span id="fac10460114">No</span> <span id="discdetail10460114" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2017 by Pub SignMan</span></li><li>Real Ale : <span id="fac10160114">Yes</span> <span id="discdetail10160114" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 January 2012 by Will Larter</span></li><li>Real Cider : <span id="fac11960114">Yes</span> <span id="discdetail11960114" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2017 by Pub SignMan</span></li><li>WiFi : <span id="fac11560114">Yes</span> <span id="discdetail11560114" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2017 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - Midnight</td></tr>
+<tr><td>Monday</td><td>12noon - Midnight</td></tr>
+<tr><td>Tuesday</td><td>12noon - Midnight</td></tr>
+<tr><td>Wednesday</td><td>12noon - Midnight</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>12noon - Midnight</td></tr>
+<tr><td>Friday</td><td>12noon - Midnight</td></tr>
+<tr><td>Saturday</td><td>12noon - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 6 reviewer(s)" title="Pub has average rating of 8 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/13145/" class="List1">The Kings Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 5 reviewer(s)" title="Pub has average rating of 6.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65162/" class="List1">The Egerton Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 6 reviewer(s)" title="Pub has average rating of 7.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/13160/" class="List1">Salford Arms Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66418/" class="List1">Cafe Rouge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2 from 1 reviewer(s)" title="Pub has average rating of 2 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66416/" class="List1">Slug &amp; Lettuce</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 5 reviewer(s)" title="Pub has average rating of 6.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83292/" class="List1">The Dockyard</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/13116/" class="List1">The Old Pint Pot</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86065/" class="List1">The Refinery</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

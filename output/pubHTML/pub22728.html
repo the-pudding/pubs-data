@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Windsor Castle pub in W8, London (Central), W8 7AR : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Windsor Castle" />
+  <meta name="keywords" content="Windsor Castle, 114  Campden Hill Road, W8, London (Central), Kensington, Holland Park, Campden Hill, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Windsor Castle in W8" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/22501_23000/22728_a3a976a0.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/22728/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.50629506138458" />
+<meta property="og:longitude" content="-0.19873023033142" />
+<meta property="og:street-address" content="114  Campden Hill Road" />
+<meta property="og:locality" content="W8" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="W8 7AR" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Windsor Castle in W8? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Windsor Castle the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/22728/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Windsor Castle in W8" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Windsor Castle " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/22501_23000/22728_a3a976a0.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/22728/" />
+<meta name="geo.position" content="51.50629506138458;-0.19873023033142" />
+<meta name="geo.placename" content="Windsor Castle in W8" />
+<meta name="geo.region" content="UK" />
+<title>Windsor Castle in W8 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":22728},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(22728);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 22728;var pubaddress = "114  Campden Hill Road";var pubname = "Windsor Castle";var pubpostcode = "W8 7AR";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/w8/central-london/" title="Pubs Galore : W8 Page">W8</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Windsor Castle Page">Windsor Castle Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="nhlf0ol4j8qe8i871ign558p33" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/22728/" class="indisplay"><img src="/images/display/22501_23000/22728_a3a976a0.jpg?w=2" alt="Picture of Windsor Castle" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Tuesday, 24<sup>th</sup> May 2011<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/22728/" class="smallbutton">View all this pub's pictures</a> (9 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/22728/">Pub map</a><br /><a href="/pubreviews/22728/">Pub reviews (10)</a><br /><a href="/pubpictures/22728/">Pub pictures (10)</a><br /><a href="/core/pubaudit.php?id=22728" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Windsor Castle, W8</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">114  Campden Hill Road</span><br />
+
+
+<span class="town">W8</span><br />
+<span class="postcode">W8 7AR</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02072438797</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Castle (Mitchells & Butlers)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/kensington/central-london/">Kensington</a>, <a href="/areas/holland-park/central-london/">Holland Park</a>, <a href="/areas/campden-hill/central-london/">Campden Hill</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by Windsor Castle</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/WindsorCastleW8" target="_blank"><img src="https://pbs.twimg.com/profile_images/956178127721582592/HBKe59-D_normal.jpg" alt="Windsor Castle" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/WindsorCastleW8" target="_blank">Windsor Castle</a></strong>
+#beergarden<a href="http://twitter.com/search?q=%23easterready" target="_blank"> #easterready</a><a href="http://twitter.com/search?q=%23heatwave" target="_blank"> #heatwave</a><a href="http://twitter.com/search?q=%23alfresco" target="_blank"> #alfresco</a><a href="http://twitter.com/search?q=%23shadeson" target="_blank"> #shadeson</a> <a href='https://t.co/mTdQs7rsd5' target='_blank'>https://t.co/mTdQs7rsd5</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/WindsorCastleW8/status/1118486385588101120">1:08 PM Apr 17th</a> from <a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/WindsorCastleW8" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/WindsorCastleW8" target="_blank">Windsor Castle</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Windsor Castle  <span class="h2note">(Average Rating: <span id="averagerating"><b>7&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review112253" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=hondo">hondo .</a> left this review about Windsor Castle</h6>
+<p class="old">Quirky bare boarded interior that&#039;s split into about 4 different sections mind your head if moving between them. 2 sets of 5 real ale taps mostly doubles.</p>
+<p class="Reviewer">On 27<sup>th</sup> October 2016 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 2564 recommendations about 2508 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review108716" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> left this review about Windsor Castle</h6>
+<p class="old">21st August 2015:<br />
+<br />
+By all accounts, this pub dates from the 1820s/30s and not the 1600s as claimed. Either way, it&#039;s a good 25 years since I was last in here and unsurprisingly, little if anything has changed. I did however consider that the interior seemed a little too old for the apparent date and indeed further research has elicited the fact that the - ahem - &#039;historic olde worlde&#039; interior actually dates back to a refurbishment undertaken in 1933. Indeed, I wouldn&#039;t actually be surprised if the entire building had been rebuilt at that time. Nevertheless it&#039;s an attractive pub with leaded lights punctuated by some classic red Charrington&#039;s lettering denoting bar names and degree of user accessibility.<br />
+Despite the passage of time, the place remains as rammed as I remember; you can barely turn round in here. It&#039;s still very gloomy in here but this adds to the historic olde worlde mid-1930s&#039; charm. Food is contemporary pub grub (&#039;posh&#039; burgers, fish and chips, etc.), but isn&#039;t gastro.<br />
+Blessed with a miracle, I bagged a table. Amazingly, there was another vacant table next to me with table mats smothered with ketchup; perhaps this is why no-one was sitting there? My table too was covered with empty glasses, coffee cups and used napkins for quite some time. I was also none taken with the fetid stench of concentrated coffee until I noticed that I was sitting next to the coffee machine.<br />
+Service was surprisingly swift and I was served a decent pint of Timothy Taylor&#039;s Landlord, though decent it should be at &pound;4.70 a pint.<br />
+Despite the ersatz interior this place is definitely worth a visit, but staff must do more to clear and clean the tables. Relocating the coffee factory to another area would be a good idea too - my laundry basket stank of coffee the next day!<br />
+<br />
+Updated:<br />
+<br />
+As above, tables remained uncleared with empty glasses or some filled with melting ice, a slice of lime and a drinking straw. Part of the floor is covered with red lino and there&#039;s a rather awful square section tubular steel gantry above the bar.<br />
+Ales: Adnam&#039;s Mosaic, Salopian&#039;s Hop Twister, Timothy Taylor&#039;s Landlord, Wadsworth&#039;s 6X and Old Dairy Brewery&#039;s Castle Shed Pale Ale which was really rather sour.<br />
+This pub may have a quaint interior but it needs to do much more in the service and ale quality departments if it wants to be considered as anything more than a venue for relieving tourists of their cash.</p>
+<p class="Reviewer">On 13<sup>th</sup> July 2016 
+  - rating: <b>4</b><br />
+  <span class="leftspace">[User has posted 873 recommendations about 860 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review91954" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a> left this review about Windsor Castle</h6>
+<p class="old">I like Quinno&#039;s comment below a lovely Heritage Pub in Poshville, as that does some it up. The pub has a country pub style theme to it, which I liked. The pub was busy on our Sunday afternoon visit and we found if you just want to pop in for a drink, you&#039;re fighting a losing battle. After a long wait, we did manage to get a Windsor and Eton Knight of the Garter. Then we had the problem of finding a seat and there wasn&#039;t enough room to stand, so we went out to the beer garden with a covered maquee. There were six ales to choose from and a large vessel of mulled wine on the bar, which smelt nice.</p>
+<p class="Reviewer">On 8<sup>th</sup> February 2015 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 2750 recommendations about 2750 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/22728/">View more reviews of Windsor Castle (10)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Windsor Castle</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Windsor Castle, contains menus - <a href="http://thewindsorcastlekensington.co.uk/" title="Submitted by:- elizabeth mcgraw" target="_blank">thewindsorcastlekensington.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="142165619159569">Facebook - <a href="https://www.facebook.com/thewindsorcastlekensington/" target="_blank" rel="nofollow">Windsor Castle</a></li></ul><ul id="Custom2"><li class="twitlink" id="619291223">Twitter - <a href="https://twitter.com/WindsorCastleW8" target="_blank" rel="nofollow">Windsor Castle</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/22728/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.50629506138458, -0.19873023033142], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.50629506138458, -0.19873023033142]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Kensington (Olympia), 1.01 miles, 19 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Shepherds Bush, 1.16 miles, 22 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> London Paddington, 1.72 miles, 33 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('gyjyHrye@~Ac@v@]lFuDIhHEzA~@dG^fDXv@dAdATjBnBmA^rBRKFTp@]BPJ\\JJP?TSXARLf@Ed@bDFj@B\\A\\BVJTl@^Tr@N`AJKbAxGKHn@tE`AW^JJXCjEObC?LFLFDLAv@gAzAtCY`@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('gyjyHrye@eC|@pD~RmItFf@vC`AtEhEbVrB~Ob@fEjAbK^`D?RI@KbA[nBC@ERUNLn@?z@BF`@LrAr@FJ@FAz@{AK@WJ@?Mk@C?GmAIQI[TBRi@T', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('gyjyHrye@IBkEqXqCn@q@J{Bd@c@AAMGM_@mDSHuAkLkKbDEKi@{Ci@wE_AT}@LWPQEYkAIKc@{Cc@mCSaH?sA_@_HYgEg@PKAUkAm@a@@IAk@GKSEOBCSa@HICMkASq@mAeCkJgSwApB}@aB{AaDMSBE_@y@x@mAL\\^PDSr@yAl@nAL@DAXl@NYlBwC', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.50629506138458,-0.19873023033142], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=22728">View all updates for Windsor Castle, W8</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        27<span class="sup">th</span> Oct 2016, 14:12
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=hondo">hondo .</a> amended by <a rel="nofollow" href="/userinfo.php?name=hondo">hondo .</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        27<span class="sup">th</span> Oct 2016, 13:47
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=hondo">hondo .</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11822728">No</span> <span id="discdetail11822728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 February 2015 by Tris C</span></li><li>Bar Billiards : <span id="fac10722728">No</span> <span id="discdetail10722728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 August 2015 by Tris C</span></li><li>Beer Festivals : <span id="fac11722728">No</span> <span id="discdetail11722728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 May 2018 by Komakino .</span></li><li>Beer Garden : <span id="fac11422728">Yes</span> <span id="discdetail11422728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 February 2015 by Tris C</span></li><li>CAMRA Discount : <span id="fac10222728">No</span> <span id="discdetail10222728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 May 2018 by Komakino .</span></li><li>Car Park : <span id="fac11322728">No</span> <span id="discdetail11322728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 February 2015 by Tris C</span></li><li>Child Friendly : <span id="fac12122728">Yes</span> <span id="discdetail12122728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 August 2015 by Tris C</span></li><li>Darts : <span id="fac11122728">No</span> <span id="discdetail11122728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 August 2015 by Tris C</span></li><li>Dog Friendly : <span id="fac10522728">Yes</span> <span id="discdetail10522728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 August 2015 by Tris C</span></li><li>Function Room : <span id="fac12322728">No</span> <span id="discdetail12322728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 May 2018 by Komakino .</span></li><li>Hot Food : <span id="fac10322728">Yes</span> <span id="discdetail10322728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 October 2016 by hondo .</span></li><li>Jukebox : <span id="fac11222728">No</span> <span id="discdetail11222728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 August 2015 by Tris C</span></li><li>Karaoke : <span id="fac10622728">No</span> <span id="discdetail10622728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 August 2015 by Tris C</span></li><li>Live Music : <span id="fac10822728">No</span> <span id="discdetail10822728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 August 2015 by Tris C</span></li><li>Live TV Sports : <span id="fac11022728">No</span> <span id="discdetail11022728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 August 2015 by Tris C</span></li><li>Micropub : <span id="fac12222728">No</span> <span id="discdetail12222728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 August 2015 by Tris C</span></li><li>Pinball : <span id="fac11622728">No</span> <span id="discdetail11622728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 August 2015 by Tris C</span></li><li>Pool Table : <span id="fac10422728">No</span> <span id="discdetail10422728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 August 2015 by Tris C</span></li><li>Quiz Night : <span id="fac10922728">No</span> <span id="discdetail10922728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 May 2018 by Komakino .</span></li><li>Real Ale : <span id="fac10122728">Yes</span> <span id="discdetail10122728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 October 2016 by hondo .</span></li><li>Real Cider : <span id="fac11922728">No</span> <span id="discdetail11922728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 May 2018 by Komakino .</span></li><li>Wheelchair Access : <span id="fac12022728">No</span>  - <span id="discdetail12022728" class="discdetail" style="">WCs upstairs.</span> -   <span class="Reviewer">last updated 13 July 2016 by Tris C</span></li><li>WiFi : <span id="fac11522728">Yes</span> <span id="discdetail11522728" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 October 2016 by hondo .</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - 11pm</td></tr>
+<tr><td>Saturday</td><td>12noon - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 5 reviewer(s)" title="Pub has average rating of 6 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22710/" class="List1">The Hillgate</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 9 reviewer(s)" title="Pub has average rating of 6.5 from 9 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22725/" class="List1">Uxbridge Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/68750/" class="List1">Gate</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 4 reviewer(s)" title="Pub has average rating of 5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24882/" class="List1">Prince Albert</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 18 picture(s)" title="Pub has 18 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/68589/" class="List1">The Kensington Wine Rooms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 27 picture(s)" title="Pub has 27 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 13 recommendation(s)" title="Pub has 13recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 10 reviewer(s)" title="Pub has average rating of 8 from 10 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22697/" class="List1">The Churchill Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/68609/" class="List1">Black &amp; Blue</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2 from 1 reviewer(s)" title="Pub has average rating of 2 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/68588/" class="List1">Kensington Place</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

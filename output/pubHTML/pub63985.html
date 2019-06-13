@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="First and Last pub in Sennen (near Penzance), Cornwall, TR19 7AD : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of First and Last" />
+  <meta name="keywords" content="First and Last, Sennen (A30), Sennen, Penzance, Cornwall, , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="First and Last in Sennen" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/63501_64000/63985_70b249f0.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/63985/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="50.07058218296706" />
+<meta property="og:longitude" content="-5.69518510185242" />
+<meta property="og:street-address" content="Sennen (A30)" />
+<meta property="og:locality" content="Sennen" />
+<meta property="og:region" content="Cornwall" />
+<meta property="og:postal-code" content="TR19 7AD" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like First and Last in Sennen? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make First and Last the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/63985/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="First and Last in Sennen" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about First and Last " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/63501_64000/63985_70b249f0.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/63985/" />
+<meta name="geo.position" content="50.07058218296706;-5.69518510185242" />
+<meta name="geo.placename" content="First and Last in Sennen" />
+<meta name="geo.region" content="UK" />
+<title>First and Last in Sennen (near Penzance) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":63985},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(63985);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 63985;var pubaddress = "Sennen (A30)";var pubname = "First and Last";var pubpostcode = "TR19 7AD";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/cornwall/" title="Pubs Galore : Cornwall Page">Cornwall</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/penzance/cornwall/" title="Pubs Galore : Penzance Page">Penzance</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/sennen/cornwall/" title="Pubs Galore : Sennen Page">Sennen</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : First and Last Page">First and Last Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="09ma8qkj5ffe49pceir2knq7m3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/63985/" class="indisplay"><img src="/images/display/63501_64000/63985_70b249f0.jpg?w=1" alt="Picture of First and Last" /></a><br />  Image posted by <a href="/userinfo.php?name=bcfczuluarmy" class="indisplay">Jonathan Wilde</a><br />
+  Submitted on Saturday, 16<sup>th</sup> September 2017<br />
+  With picture contributions to 3997 other pubs<br />
+<a href="/pubpictures/63985/" class="smallbutton">View all this pub's pictures</a> (9 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/63985/">Pub map</a><br /><a href="/pubreviews/63985/">Pub reviews (3)</a><br /><a href="/pubpictures/63985/">Pub pictures (10)</a><br /><a href="/core/pubaudit.php?id=63985" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">First and Last, Penzance</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Sennen (A30)</span><br />
+
+<span class="town">Sennen</span><br />
+<span class="postaltown">Postal town: Penzance</span><br />
+<span class="postcode">TR19 7AD</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01736871680</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/sennen/cornwall/">Sennen</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by First and Last</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/firstandlastinn" target="_blank"><img src="https://pbs.twimg.com/profile_images/848840075928580096/JTJwqJCT_normal.jpg" alt="First &amp; Last Inn" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/firstandlastinn" target="_blank">First &amp; Last Inn</a></strong>
+It&#039;s another sunny Sunday, and we&#039;re loving it! ☀️
+
+Finish the weekend in style, with a delicious Roast Dinner, as&hellip; <a href='https://t.co/qhtTgYw2fZ' target='_blank'>https://t.co/qhtTgYw2fZ</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/firstandlastinn/status/1127514845954420736">11:04 AM May 12th</a> from <a href="https://mobile.twitter.com" rel="nofollow">Twitter Web App</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/firstandlastinn" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/firstandlastinn" target="_blank">First &amp; Last Inn</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of First and Last  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review35288" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pub+Anorak">John Bonser</a> left this review about First and Last</h6>
+<p class="old">So called because of its proximity to Lands End - a mile or so away - The First and Last Inn is a roadside inn dating back to 1620.<br />
+<br />
+As you drive towards Lands End, the pub sign proclaims &quot; The Last Inn in England&quot; and, on the other side as you drive inland from Lands End, it says &hellip;.( well, work it out for yourselves ). The Cornish flag flies proudly from the roof top.<br />
+<br />
+The main bar room has the de rigeur ( for Cornwall anyway ) interior of dark low beams, much exposed stonework, subdued lighting and marine and nautical memorabilia.<br />
+<br />
+Various commemorative T shirts pinned to the ceiling reflect the fact that, over the years, groups of cyclists and walkers who have completed the John O&#039; Groats to Lands End journey have obviously been in here to celebrate their achievement and, no doubt, to rest their weary limbs.<br />
+<br />
+The principal item of note is &quot;Annie&#039;s Well&quot; - a glazed over entrance to a smugglers tunnel running to the cliffs. An information board tells us that this relates to Ann Treeve, a former landlady of the pub, who presided over local smuggling and wrecking operations. Eventually, she turned Queens Evidence and, as a reward (?), was staked out of Sennon beach and drowned by the incoming tide. Her body was laid out in the large upstairs room of the pub, prior to burial in an unmarked grave, for fear of retribution by grave robbers. At the front of the building, a large rusty anchor leans against the wall, but I didn&#039;t see anything to indicate from where it had originated.<br />
+<br />
+As well as the main bar area, there&#039;s a separate dining / restaurant area and, beyond that, a pool room. Most people however, seemed to be eating in the main bar area and, whilst still retaining something of a community feel, it is clear that passing trade from visitors to Lands End is a major earner.On my recent visit, a lunchtime special ( available between 12 and 2 ) was proving to be popular and good value.<br />
+<br />
+Reflecting the fact that the pub needs to pay its way long after the tourists have left for the day, the pub offers live music on Friday and Saturday nights, including on Friday 24th a band called Quijada - who, according to the flyer, are a &quot; 5 piece Cuban inspired local sensation&quot;.<br />
+<br />
+On my recent visit, on the 6 pumps, beers were Sharps Doom Bar, Skinners Ginger Tosser and Skinners Annie&#039;s Revenge. The latter is described as &quot;our very own ghostly brew&quot; and, if you&#039;ve been paying attention whilst reading, you&#039;ll understand the reference. All beers were priced at &pound; 2.60p which, given the location, seems very reasonable to me.<br />
+<br />
+If you&#039;re going to or coming back from Lands End, this strikes me as a very reasonable place to call in on for sustenance, of either the liquid or the food variety</p>
+<p class="Reviewer">On 5<sup>th</sup> October 2010 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 560 recommendations about 560 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review13086" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=bighair">James Joines</a> left this review about First and Last</h6>
+<p class="old">Real Ales and a food offering. Local beers including First &amp; Last brewed by St. Austell.<br />
+Beer garden.<br />
+#GBG 2009 listed#</p>
+<p class="Reviewer">On 6<sup>th</sup> May 2009 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 841 recommendations about 835 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review20425" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=RogerB">Roger Button</a> left this review about First and Last</h6>
+<p class="old">Situated a mile or so inland next to an acient church in a small hamlet near Lands End, only a purist would begrudge the pubs claim to being the first and last pub in England (there is a large hotel with a bar at Lands End itself but that is hardly in the spirit of things). Dating from 1620, the pub has been altered and expanded somewhat but has certainly not lost any of its old world charm or character. It certainly appears to be a popular watering hole for the Land End to John O Groaters judging by the commemorative t-shirts pinned to the pubs ceiling where the teams obviously gather to celenbrate their often commendable achievements.<br />
+<br />
+The large dimly lit main bar is characteristically gloomy and basic with low ceilings, flagstoned floors, soot encrusted walls by the open fires, lanterns, pew seats, farming instruments and plenty of old photos of local maritime and village life. The basic widescreen TV has a rather murky picture but to be honest, a TV is out of character for the bar. 6 hand pumps but only 2 operational on my visit &ndash; Doom Bar (&pound;2.60) and Skinnners Best (at &pound;2 a pint, great value). I dare say the selection is expanded during the summer months. Moving away from the bar is a pleasant and brighter dining area which doesn&#039;t intrude on the pub and beyond this, a separate pool room with darts and a TV. <br />
+<br />
+The most interesting feature is in the floor between the main bar and the dining room. &ldquo;Annie&#039;s Well&rdquo; is now illuminated and glazed over and hides a smugglers tunnel that runs to the nearby cliffs. Outside to the rear is a large smoker&#039;s shelter, a few benches and a sizeable car park.<br />
+<br />
+All in all, a pleasant surprise to find a place that could so easily have taken the tacky and cheap tourist approach that seems to typify much of the Lands End area but instead has retained much of its own intrinsic character.<br />
+</p>
+<p class="Reviewer">On 19<sup>th</sup> March 2009 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1238 recommendations about 1232 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for First and Last</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the First and Last Inn, contains menus and events listing - <a href="http://www.firstandlastinn.co.uk" title="Submitted by:- elizabeth mcgraw" target="_blank">www.firstandlastinn.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="twitlink" id="1446650216">Twitter - <a href="https://twitter.com/firstandlastinn" target="_blank" rel="nofollow">First & Last Inn</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/63985/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([50.07058218296706, -5.69518510185242], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([50.07058218296706, -5.69518510185242]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Penzance, 9.18 miles, 2 hr 57 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> St Erth, 14.82 miles, 4 hr 46 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Carbis Bay, 17.1 miles, 5 hr 30 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('clrpHzjwa@]C?yBgBaFm@uASw@[kHMoAeCuG{FsKoE{JI_@?]QQoBsF_AwC[o@}@mAQOcA|B_@dAa@bBy@zDW_@YWe@]i@i@oJwKeBiCWS_BcA_Ac@yDsAi@_@_@c@Ug@Oq@k@uD_@mBuAsGSc@UUWGg@@oAN[Eg@UeAu@]_@{A}C{@}Am@}Ag@eB{@sDi@wCk@wFg@gCWyAiBgRoAkSg@kE_AcHGaA@}@CcAIiCBi@Fa@z@mBX{@Jo@Bg@Ag@SsBAc@HmDX_GKgJMaAy@}CQeAEu@?m@BaEAw@Gw@Ks@S_A_@_Ac@q@W[o@c@k@SwA[YQi@q@m@_B]gAKs@Cs@?yBQgI@_BDcAPaBHwAFuEC{T@u@Di@h@mEFaBA_AKsCCqCL}HCkASeECyACsI?eBBs@NsCEe@Q_A]eA[o@oAuBi@qAgBoF{@{C_@cAeAiB}@kAm@eAs@yAYiASqAu@sDU_BO{@YaA_@kBg@mDwA}GKu@G}@s@kLGcEQcFA{AJ{EQ}ICeAMu@[{ASkAe@}FCsBc@mEIuBI[QYQKy@Ya@U[k@_@wAEg@@q@h@iDHaADoCHkBZkBb@aBZy@fCmEZ}@Lq@Jw@Du@E}AGm@Q}@Ws@[s@_@g@eDoDo@{@o@uAm@cBMy@Ey@AiACw@Io@g@kB]cAc@s@Ue@Mk@QmAc@iCq@eDi@cBo@eBgDmHuAoCy@qAgAwAw@yA_@oASiAM_AQ}@Y{@}@uBgC_Ho@cAe@_@{Aq@aBEc@Sq@c@iByA{@e@Ua@Gc@R{CBmBGkBMwEM_Co@qDaAcEm@uDQm@Yk@aDmDaAk@c@m@Wy@Ms@CeDKkCMeB[uAyGwPgAyCmBoEFUaDuGm@gAcBeBsA}BNo@Be@?}@C{@O{BCcAV?Pg@BYOsB?q@@eAOK[{@MACEAMGMgAk@GSg@QcCsASs@OIOv@sBcCkAy@]i@IYE[@gCFwAD{BIoCMqCOgCEE@M}@eEi@aE}@oEKo@QgBc@{FOmAr@[_@yFGc@Y{EIa@k@PGo@o@Z@s@G?CEUmAs@eC}@iCUe@_AsAc@c@gEwCf@eBCWMi@Em@Ag@?m@Ea@Sg@IEAk@y@`@[HQj@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('clrpHzjwa@]C?yBgBaFm@uASw@[kHMoAeCuG{FsKoE{JI_@?]QQoBsF_AwC[o@}@mAQOcA|B_@dAa@bBy@zDW_@YWe@]i@i@oJwKeBiCWS_BcA_Ac@yDsAi@_@_@c@Ug@Oq@k@uD_@mBuAsGSc@UUWGg@@oAN[Eg@UeAu@]_@{A}C{@}Am@}Ag@eB{@sDi@wCk@wFg@gCWyAiBgRoAkSg@kE_AcHGaA@}@CcAIiCBi@Fa@z@mBX{@Jo@Bg@Ag@SsBAc@HmDX_GKgJMaAy@}CQeAEu@?m@BaEAw@Gw@Ks@S_A_@_Ac@q@W[o@c@k@SwA[YQi@q@m@_B]gAKs@Cs@?yBQgI@_BDcAPaBHwAFuEC{T@u@Di@h@mEFaBA_AKsCCqCL}HCkASeECyACsI?eBBs@NsCEe@Q_A]eA[o@oAuBi@qAgBoF{@{C_@cAeAiB}@kAm@eAs@yAYiASqAu@sDU_BO{@YaA_@kBg@mDwA}GKu@G}@s@kLGcEQcFA{AJ{EQ}ICeAMu@[{ASkAe@}FCsBc@mEIuBI[QYQKy@Ya@U[k@_@wAEg@@q@h@iDHaADoCHkBZkBb@aBZy@fCmEZ}@Lq@Jw@Du@E}AGm@Q}@Ws@[s@_@g@eDoDo@{@o@uAm@cBMy@Ey@AiACw@Io@g@kB]cAc@s@Ue@Mk@QmAc@iCq@eDi@cBo@eBgDmHuAoCy@qAgAwAw@yA_@oASiAM_AQ}@Y{@}@uBgC_Ho@cAe@_@{Aq@aBEc@Sq@c@iByA{@e@Ua@Gc@R{CBmBGkBMwEM_Co@qDaAcEm@uDQm@Yk@aDmDaAk@c@m@Wy@Ms@CeDKkCMeB[uAyGwPgAyCmBoEFUaDuGm@gAcBeBsA}BNo@Be@?}@C{@O{BCcAV?Pg@BYOsB?q@@eAOK[{@MACEAMGMgAk@GSg@QcCsASs@OIOv@sBcCkAy@]i@IYE[@gCFwAD{BIoCMqCOgCEE@M}@eEi@aE}@oEKo@QgBc@{FOmAr@[_@yFGc@Y{EIa@k@PGo@o@Z@s@G?CEUmAs@eC}@iCUe@g@s@W_@c@c@aJkGAm@Bc@TeAyCwCeCoCaAwAmBkDy@kAQ_@_AcDISUYo@i@c@u@iBwH_AwEUgBKY]a@QDKEOQ_Aw@OB_Ax@s@p@_AhAmCyB{DaAMIaA{BcCG[y@cB_Ho@aBME_@D?i@Ee@_@eBGmAF}BAoCVgGpAeJBaAuAmI[sCy@gGe@eEkBiFc@k@SuABoBe@oFUgAc@q@y@{@_ByBiAeC[aB?SBeAGwAQ{@_BqKyAmFc@gAiAgD_C}DeA}@_@S[a@sAeCQ_B_@_A{BiDaEuFwHyIyBuBiCsBoGqLcA_C}AkFmA}C]a@s@_@SAk@u@M[K_@M_ACk@`@iHVaC|@sFGQQkE[cAM{@`@i@HS?[Ou@DKqAmEs@yC_AwCg@wAsAcCk@u@kGsGyBcB}@y@uEeFqAoA}@k@qGkCg@_@]]Yg@}AgDg@_Ay@mAqAyAk@c@oAy@{@e@_A]qDq@}@e@y@u@qDuEmEwEe@u@s@uAaCcGe@eAe@}@sBaDaBwC_AqA}@eAm@_Am@mAyDeJ_DmH}@iB{BeDg@aA_@_AUcAUcB[gDQ{@[mA}@wB{CkGsAgCw@qAkCyDuCuDeA{AJQd@g@s@uC', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('clrpHzjwa@]Cy@]c@]{DqAiB}@_Cw@c@Yc@_@s@oAk@w@}AmAa@m@[m@kA{C_@cAYmAu@FoB@Ic@MSYUcBaABSuEaC_@]UEQMQAOMa@u@WMe@QuAm@{Ba@SICBuAI_@QMVO|@QhCCP]\\OJa@t@YPOB_@CYIw@i@w@q@wAo@qAAUEYQMQ_Ai@[Ww@Am@I_CaAMU_A}@ISEWy@{@Wk@S}@A]@}@IeAOu@]y@B}@@_BNcCG_@g@vAiAd@iAn@yBR{AHYI_Ao@w@q@sAq@yAk@e@IWBoAJmAXO@MEIO_@{CoA_CKGG@q@r@UHmDxB}@^oAR{@d@aAr@_@^e@n@qI`A_E`BuDnBCCWBUJO@KAIGYs@KMIEaAEWMgAu@w@[kBi@MM[d@uExFoBdFeB`@]L_@?_@KYUQCUDu@l@G?c@OSNQDSA[S[OkAKaBC[[SGYc@Y@aAgBe@mBUa@@Oi@sBQEiBLm@M?IGCCDmCsAgI_@qEx@aGt@u@@oDu@M`@w@Gu@\\]FGT]^gAAwEfAa@EQIy@WWAYDqAK}@Wo@WSEY@}Cm@_@@KGq@mBa@g@Ua@_AuBYGa@Ck@Ow@m@MEc@DaAZ}@Pi@VYA_CY_@Sc@[]S@YAYe@wB{@cFs@kDQNAO@kAE_@KoCCK_@e@a@s@k@_DQe@yAuCa@Yc@c@u@uAY_Aw@aEOsB[c@i@kAIWFiAIg@u@l@mBn@eBlAIAw@XWiA[eEMcCQqBQw@Yk@c@s@Wo@Ka@a@[OcDBiDQgCAiAJk@Ze@F{@C]?[h@kHRyFcDe@i@WqAuAwAaAgDoCm@s@s@}Ai@o@_BGmA?SuD[uAAY[{BCg@S{@Qe@Sc@m@{@k@q@UKiAMwBuA?UW[e@]qAk@m@c@i@S[Cs@Yo@KeAs@e@Ke@?kDuAe@McAg@Am@AkKGyDCODU@_AI}GSsK]uCe@kBIQ]iB{@aGcDuKkAsDwAyCu@iEeA}GwBeLKiBi@gCe@eBk@eF@qAw@gDQmBcAoDq@y@iA}Ba@sACu@C}BeAcBwCcDcBsAyBo@}CkIeAcEiBgEsBoDq@qAgDgJ{AuCOMg@RUMaA_BmBeAu@kHl@aBLm@Bk@O]Ia@GsCEm@WeBe@_Ei@aBu@oB][c@S[[}@mA[s@o@eAg@aA_BqB_A}@uBgBe@s@SM_@Io@e@a@_@kAmAMa@]k@oAgAiCiCeB{AeA{Ai@}@qCuDa@]u@iA[[gAiBKYKe@MaAKeAmAsGLaA@mB?{@EiA?kCM{CV}Hb@kF`@uCNkC~@yLMkAk@gDo@eBiAiBa@uAl@sE^oBnAyC`@yDq@_I]wGXcFwCfBKGc@q@UeA_AoBo@aB?_@Qg@c@o@w@Su@m@c@y@wAu@aAiAy@oAu@uByBkDsAoDuAqFe@yCc@gAYeAq@_BO{@W{@k@sAQg@Wg@?IOBy@cF[gCc@iEs@oEY{CcAuHM}DYaEIi@Hk@ScH[}IM_B]iIa@mOKc@kGyKG_@u@_A]SiByCiBcEuCeFc@g@gAy@Dg@@eDRcBT_AQkC_AiDqCeIa@u@uBaAeCk@iHaAgFm@cBu@y@oAsBaJUwCi@kPIeDPyFMkEAaHKcB?kAu@aAmFyD[iBy@_AeB@wARkEuBWSi@w@Ek@Q[_Ay@c@i@Ju@d@sAj@{CLwAl@qFBk@Iq@Em@K]uAyBoBsAuBuAgAiBs@e@jFsCbAeAlAaCn@gADOBYAsAMeAkA}CiCsKUiCIqAAaDBeCH_APYXSZe@Lg@FkDCqCFwDa@kIIcD`@kGLiDIa@gDeMQu@Io@qBuBVaBB_BO{KHsETmBiBsAm@q@uBy@gAoAqAqE[yG`A_MEgBD_A\\kAVcB@mACiAUiAK_AByA{@eCMqAaCoCaA_BNS{AqBs@wAe@mAWWg@yBe@_E[}CYu@e@wBo@o@gAi@eAs@a@iA_AgBKg@C}@HgBCm@Ge@i@cBY_BIS?SU}@IM]Ym@gBsAiDUPUsE@[n@eAFo@S]Ka@?w@ZaAz@Kl@eCKOaAsAKUC][a@RGMeAUc@Ec@?]QcA_@gAGeAV_CZc@L}A?s@IAG\\C?@eBEGE`A', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([50.07058218296706,-5.69518510185242], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=63985">View all updates for First and Last, Sennen</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        16<span class="sup">th</span> Sep 2017, 22:51
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        16<span class="sup">th</span> Sep 2017, 22:51
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Hot Food : <span id="fac10363985">Yes</span> <span id="discdetail10363985" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Real Ale : <span id="fac10163985">Yes</span>  - <span id="discdetail10163985" class="discdetail" style="">Doombar</span> -   <span class="Reviewer">last updated 11 September 2013 by Dave McNally</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 5 reviewer(s)" title="Pub has average rating of 7.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64347/" class="List1">The Old Success</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Benjamin Huntsman (JD Wetherspoon) pub in Sheffield, South Yorkshire, S1 4HP : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Benjamin Huntsman (JD Wetherspoon)" />
+  <meta name="keywords" content="The Benjamin Huntsman (JD Wetherspoon), 12-18 Cambridge Street, Sheffield, South Yorkshire, Sheffield Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Benjamin Huntsman (JD Wetherspoon) in Sheffield" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/56001_56500/56326_d856fac7.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/56326/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="53.38005179738556" />
+<meta property="og:longitude" content="-1.47257566452026" />
+<meta property="og:street-address" content="12-18 Cambridge Street" />
+<meta property="og:locality" content="Sheffield" />
+<meta property="og:region" content="South Yorkshire" />
+<meta property="og:postal-code" content="S1 4HP" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Benjamin Huntsman (JD Wetherspoon) in Sheffield? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Benjamin Huntsman (JD Wetherspoon) the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/56326/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Benjamin Huntsman (JD Wetherspoon) in Sheffield" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Benjamin Huntsman (JD Wetherspoon) " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/56001_56500/56326_d856fac7.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/56326/" />
+<meta name="geo.position" content="53.38005179738556;-1.47257566452026" />
+<meta name="geo.placename" content="The Benjamin Huntsman (JD Wetherspoon) in Sheffield" />
+<meta name="geo.region" content="UK" />
+<title>The Benjamin Huntsman (JD Wetherspoon) in Sheffield : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":56326},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(56326);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 56326;var pubaddress = "12-18 Cambridge Street";var pubname = "The Benjamin Huntsman (JD Wetherspoon)";var pubpostcode = "S1 4HP";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/south-yorkshire/" title="Pubs Galore : South Yorkshire Page">South Yorkshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/sheffield/south-yorkshire/" title="Pubs Galore : Sheffield Page">Sheffield</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Benjamin Huntsman (JD Wetherspoon) Page">The Benjamin Huntsman (JD Wetherspoon) Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="u5puidi6i2gr0ou7b0c7cj3nl6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/56326/" class="indisplay"><img src="/images/display/56001_56500/56326_d856fac7.jpg?w=2" alt="Picture of The Benjamin Huntsman (JD Wetherspoon)" /></a><br />  Image posted by <a href="/userinfo.php?name=Al+Bundy" class="indisplay">Al Bundy</a><br />
+  Submitted on Friday, 11<sup>th</sup> March 2016<br />
+  With picture contributions to 3269 other pubs<br />
+<a href="/pubpictures/56326/" class="smallbutton">View all this pub's pictures</a> (9 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/56326/">Pub map</a><br /><a href="/pubreviews/56326/">Pub reviews (10)</a><br /><a href="/pubpictures/56326/">Pub pictures (10)</a><br /><a href="/core/pubaudit.php?id=56326" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Benjamin Huntsman (JD Wetherspoon), Sheffield Central, Sheffield</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">12-18 Cambridge Street</span><br />
+
+
+<span class="town">Sheffield</span><br />
+<span class="postcode">S1 4HP</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01142639500</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">J D Wetherspoon</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/sheffield-central/south-yorkshire/">Sheffield Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Benjamin Huntsman (JD Wetherspoon)  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review135848" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Benjamin Huntsman (JD Wetherspoon)</h6>
+<p>Another day, another Wetherspoons pub crosses my path. This is a fairly mid-size, city centre branch of the ubiquitous chain &ndash; so ubiquitous in fact, that there is another &lsquo;Spoons  just over the road! This one has a fairly deep room that extends much further than you&rsquo;d initially expect, carpeted throughout, with high tables and stools opposite the bar which runs down the right hand wall. Standard tables and chairs fill up much of the remaining space, whilst some decent banquettes skirt the perimeter, many formed into booths of various styles. A few somewhat chunky pillars run through the centre of the room, to break the space up quite effectively and avoid that &lsquo;drinking-barn&rsquo; feel you can often get in such places. The walls have been painted a mix of neutral shades or else left as exposed brick or stone, whilst the servery has a wood plank fronted counter and standard bar back underneath a large display area which houses all sorts of items including glassware, barrels, a stepladder and what appear to be various bits of old industrial machinery. The decor throughout is relatively creative by &lsquo;Spoons standards and includes a rather pleasing feature made from mirrors, various paintings and some framed knick-knacks &ndash; in fact, even the usual &lsquo;Spoons local information boards had been creatively presented, giving this pub something to make it stand out from countless other city centre &lsquo;Spoons across the UK.<br />
+This pub has ten handpulls in total, four of which were pouring the usual dull selection of &lsquo;Spoons regulars, but the remaining six were all in use for guest ales giving me plenty to choose from. Sadly, I visited during a work lunch break, so wasn&rsquo;t able to sample any, opting for a mug of tea and a panini &ndash; all dished up in the usual quick, no frills fashion.<br />
+I quite liked this place and thought as far as this sort of city centre, shop conversion goes, it was a pretty successful effort. The decor was just about as &lsquo;quirky&rsquo; as Wetherspoons is ever likely to get, the staff were pleasant and efficient and the beer range looked pretty tempting. There are tonnes of better pubs in town, but for that familiar &lsquo;Spoons feel, you can&rsquo;t really go wrong here.</p>
+<p class="Reviewer">On 2<sup>nd</sup> January 2019 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review115549" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> left this review about The Benjamin Huntsman (JD Wetherspoon)</h6>
+<p class="old">Unfortunately I turned up here on a Friday night when there was also some sort of fairground thingy going on North of here. It was packed and the upstairs bar even more so, I suppose if you&#039;re not drinking the larger selection of real ales at ground level it saves the journey up and down the stairs to visit the toilets. The staff were somehow or other coping well with the mayhem.<br />
+The place has been well described below but the only beers I can confirm that were on were Elland 1872 Porter, three boring Milestone rugby themed beers and Flipside Golden Scorpion. by the time I left when things were easing off a bit all I could see was the 1872 and the boring rugby beers. I managed to bag a table and stayed for a couple of 1872 Porters (&pound;2.75) which were excellent. <br />
+I would concur that this is a decent well run Spoons.</p>
+<p class="Reviewer">On 22<sup>nd</sup> February 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2121 recommendations about 2116 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review115220" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about The Benjamin Huntsman (JD Wetherspoon)</h6>
+<p class="old">Mostly unremarkable modern &#039;spoons, with a &#039;L&#039;-shaped main bar and an oddly high mezzanine level with another smaller servery (and a notional rear roof garden beyond).  The limited window space, industrial ventilation and generally dark decor don&#039;t really help the appeal either.  However, this is offset by an excellent selection of real ales from nine of ten handpumps on the main counter, including four dark beers appropriate to the season: Huntsman Stout from Chantry, B&ecirc;te Noir Hirisk Stout from Kelham Island, Stancil Porter (&pound;2.75) and the potent Imperial Coffee Stout from Little Critters.  The five additional handpumps upstairs were mostly duplicates, but Milestone Green Man was also available.</p>
+<p class="Reviewer">On 12<sup>th</sup> February 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/56326/">View more reviews of The Benjamin Huntsman (JD Wetherspoon) (10)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Benjamin Huntsman (JD Wetherspoon)</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official page of The Benjamin Huntsman - <a href="http://www.jdwetherspoon.co.uk/pubs/pub-details.php?PubNumber=721" title="Submitted by:- William Purnell" target="_blank">www.jdwetherspoon.co.uk</a></li>
+          </ul>
+</div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/56326/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=sheffield+hatter">Will Larter</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([53.38005179738556, -1.47257566452026], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([53.38005179738556, -1.47257566452026]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Sheffield, 0.54 miles, 10 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Darnall, 3.17 miles, 1 hr 1 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Meadowhall, 4.17 miles, 1 hr 20 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('oxxdIjq~GvEaB@[HMh@aIdAoD@K@YRc@w@uB}@wCBcBrEmOa@e@Yo@S}@KgAJ@@gACK?KIABaB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('oxxdIjq~GYHEJMSOkBMaAWaBSaALu@KI[Iq@_BaAsAyE{EM?k@gD_@kD?[@Od@oAA[EWi@_AKa@?iAE]BuDHiAV_CJi@PU@w@V_@Bc@NWGi@BqAYyAHMFY@[Gc@k@SUOGAEm@Y{@CW@[ZuBGCe@NOOGWIAKq@w@uHQs@Nc@o@iCE]IsABQJOaA{Cc@wAo@mBeBqFS}@Ku@Eu@AgDEa@Os@Xk@@UOi@s@uAGUCi@KiMrBGAkCIc@G}C_@sESmAJg@J?C{@?qEP?DgP@]_@@I_A]}@Ca@H]Pg@u@yAd@{BPcAd@gET{Ah@eCt@eCtAkDlDsE|A}BtA}C~@gCb@_BP{@pAwE\\cA\\o@bAgAFs@Mc@?i@M_AQ{@gCwJo@uAWo@k@k@b@kICaAwB{DGg@G_AKe@DK_BsBsByBo@_AUi@G?IGES?MQIgBkDiAu@bC{ONH\\yBQMTmADBKp@^RIn@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('oxxdIjq~GYHEJMSOkBMaAWaBSaALu@KI[Iq@_BaAsAyE{EM?k@gD_@kD?[@Od@oAOQ[g@OKS?MNMZMHKBY@yBKICIMCO@c@q@CMGW?u@KJeDm@@c@MCGWOkAiAOW]e@i@q@WQmCeDgCcD]a@qAiB{@o@cAs@yEuEmAw@oEqCoAk@a@Gu@BAaA{BuA?IIMIDCDkFeDwIaFOUCHw@c@s@c@o@k@w@W?OWK]UCGAq@W?MGENYe@{AyAwC_C}BsBKXa@?u@sAAHINK@oBuAO@IH_AcDw@aDw@uCgAsDeEeM_BuEcAcBu@}AUm@KJEA_@gA_@wACQKw@m@uBIIgAa@e@KMIi@gBAIOUwA}A@QEAMYeCcHIL@_BDu@\\aBKOAOHkCAsA[s@}A_DkBiDcBoDs@kA{CmEOGMDs@rAsEkMe@iAgW_]s@eAM[KWOgAWDi@AKDIJSeAGMQMe@y@g@{AUk@Og@MUcA{Di@mBS}@KWBS[eBC]UgAQ_CMwCIKKBIJGWWg@QONkA@o@_@iEQFQgBjAc@n@MfACl@D@OHWJOhA_@f@CDu@DsBx@gB', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.38005179738556,-1.47257566452026], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=56326">View all updates for The Benjamin Huntsman (JD Wetherspoon), Sheffield</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        2<span class="sup">nd</span> Jan 2019, 19:08
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        11<span class="sup">th</span> Aug 2017, 16:05
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sheffield+hatter">Will Larter</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11856326">No</span> <span id="discdetail11856326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Quinno _</span></li><li>Bar Billiards : <span id="fac10756326">No</span> <span id="discdetail10756326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Quinno _</span></li><li>Beer Festivals : <span id="fac11756326">Yes</span> <span id="discdetail11756326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Quinno _</span></li><li>Beer Garden : <span id="fac11456326">Yes</span>  - <span id="discdetail11456326" class="discdetail" style="">Garden terrace</span> -   <span class="Reviewer">last updated 06 August 2013 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10256326">No</span> <span id="discdetail10256326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Quinno _</span></li><li>Car Park : <span id="fac11356326">No</span> <span id="discdetail11356326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Quinno _</span></li><li>Child Friendly : <span id="fac12156326">Yes</span> <span id="discdetail12156326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by ROB Camra</span></li><li>Darts : <span id="fac11156326">No</span> <span id="discdetail11156326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Quinno _</span></li><li>Dog Friendly : <span id="fac10556326">No</span> <span id="discdetail10556326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Quinno _</span></li><li>Function Room : <span id="fac12356326">No</span> <span id="discdetail12356326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 February 2017 by Aqualung .</span></li><li>Hot Food : <span id="fac10356326">Yes</span> <span id="discdetail10356326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 July 2013 by Dave McNally</span></li><li>Jukebox : <span id="fac11256326">No</span> <span id="discdetail11256326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Quinno _</span></li><li>Karaoke : <span id="fac10656326">No</span> <span id="discdetail10656326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Quinno _</span></li><li>Live Music : <span id="fac10856326">No</span> <span id="discdetail10856326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Quinno _</span></li><li>Live TV Sports : <span id="fac11056326">No</span> <span id="discdetail11056326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Quinno _</span></li><li>Micropub : <span id="fac12256326">No</span> <span id="discdetail12256326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 February 2017 by Aqualung .</span></li><li>Pinball : <span id="fac11656326">No</span> <span id="discdetail11656326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Quinno _</span></li><li>Pool Table : <span id="fac10456326">No</span> <span id="discdetail10456326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Quinno _</span></li><li>Quiz Night : <span id="fac10956326">No</span> <span id="discdetail10956326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by ROB Camra</span></li><li>Real Ale : <span id="fac10156326">Yes</span> <span id="discdetail10156326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 July 2013 by Dave McNally</span></li><li>Real Cider : <span id="fac11956326">Yes</span> <span id="discdetail11956326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Quinno _</span></li><li>Wheelchair Access : <span id="fac12056326">Yes</span> <span id="discdetail12056326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by ROB Camra</span></li><li>WiFi : <span id="fac11556326">Yes</span> <span id="discdetail11556326" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 July 2013 by Dave McNally</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/57729/" class="List1">Yates&#039;s</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87080/" class="List1">Pitcher &amp; Piano</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 6 reviewer(s)" title="Pub has average rating of 6 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56327/" class="List1">Sheffield Water Works Company (Lloyds No 1)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87081/" class="List1">Turtle Bay</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 2 reviewer(s)" title="Pub has average rating of 3 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/43129/" class="List1">The Viper Rooms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/63370/" class="List1">Crystal</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/57726/" class="List1">Reflex / Flares</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/72480/" class="List1">Paris</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

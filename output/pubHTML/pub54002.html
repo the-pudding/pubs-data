@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Peasant pub in EC1, London (Central), EC1V 4PH : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Peasant" />
+  <meta name="keywords" content="The Peasant, 240 St. John Street, EC1, London (Central), Clerkenwell, Finsbury, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Peasant in EC1" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/54001_54500/54002_959c9b0c.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/54002/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.52579379667926" />
+<meta property="og:longitude" content="-0.10388195514679" />
+<meta property="og:street-address" content="240 St. John Street" />
+<meta property="og:locality" content="EC1" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="EC1V 4PH" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Peasant in EC1? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Peasant the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/54002/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Peasant in EC1" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Peasant " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/54001_54500/54002_959c9b0c.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/54002/" />
+<meta name="geo.position" content="51.52579379667926;-0.10388195514679" />
+<meta name="geo.placename" content="The Peasant in EC1" />
+<meta name="geo.region" content="UK" />
+<title>The Peasant in EC1 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":54002},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(54002);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 54002;var pubaddress = "240 St. John Street";var pubname = "The Peasant";var pubpostcode = "EC1V 4PH";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/ec1/central-london/" title="Pubs Galore : EC1 Page">EC1</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Peasant Page">The Peasant Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="4sk95pp0894no001muup53qic2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/54002/" class="indisplay"><img src="/images/display/54001_54500/54002_959c9b0c.jpg?w=2" alt="Picture of The Peasant" /></a><br />  Image posted by <a href="/userinfo.php?name=rpadam" class="indisplay">Just a quick pint, then I&#039;m off</a><br />
+  Submitted on Wednesday, 27<sup>th</sup> December 2017<br />
+  With picture contributions to 5082 other pubs<br />
+<a href="/pubpictures/54002/" class="smallbutton">View all this pub's pictures</a> (15 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/54002/">Pub map</a><br /><a href="/pubreviews/54002/">Pub reviews (9)</a><br /><a href="/pubpictures/54002/">Pub pictures (16)</a><br /><a href="/core/pubaudit.php?id=54002" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Peasant, EC1</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">240 St. John Street</span><br />
+
+
+<span class="town">EC1</span><br />
+<span class="postcode">EC1V 4PH</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/clerkenwell/central-london/">Clerkenwell</a>, <a href="/areas/finsbury/central-london/">Finsbury</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Peasant</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/ThePeasantEC1" target="_blank"><img src="https://pbs.twimg.com/profile_images/2481549874/qo5it98trdjlf7eenue8_normal.jpeg" alt="The Peasant" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/ThePeasantEC1" target="_blank">The Peasant</a></strong>
+Come in out of the rain and take part in our quiz night tonight! Book a table and there&rsquo;s 20% off food and you can&hellip; <a href='https://t.co/OzAdcBQPN9' target='_blank'>https://t.co/OzAdcBQPN9</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/ThePeasantEC1/status/1138019814742679552">10:47 AM Jun 10th</a> from <a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/ThePeasantEC1" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/ThePeasantEC1" target="_blank">The Peasant</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Peasant  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review128318" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> left this review about The Peasant</h6>
+<p class="old">This has an impressive interior space and much has been made of the George &amp; Dragon motifs, full mosaic floor and ornate ceiling; very fine they are indeed, sad though it is that the owners saw fit to change the name in 2001 to The Peasant.<br />
+As mentioned, there is also an interesting Truman&#039;s parapet to the bar back and a flame effect fire. What&#039;s also of interest is the footrest to the bar&#039;s perimeter. Typically polished brass, this is a double-barrelled affair with a slightly industrial appearance. This is because it is in fact an early radiator - clever! <br />
+A function room-cum-restaurant is upstairs and about half the tables at ground floor - the good ones, near the front window, where you would like to sit - are laid for dining. Furniture is fairly traditional with candles and flowers on the tables; muted music played.<br />
+The barmaid was friendly enough and served me with a decent pint of Hammerton&#039;s N7 at an increasingly reasonable &pound;4.30.<br />
+Certainly worth visiting if in the area and a better bet than the Blacksmith and The Toffeemaker up the road.</p>
+<p class="Reviewer">On 19<sup>th</sup> April 2018 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 874 recommendations about 860 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review127906" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Mobyduck">moby duck</a> left this review about The Peasant</h6>
+<p class="old">It was open this time and was welcome shelter from the Sunday afternoon rain. Being a Sunday it was very much food led with all the tables either taken or reserved. Quite a nice ornate interior as previously described,of interest is the mosaic floor though rather worn and tatty in places. Three ales on, Dark Star Hophead, Crouch Vale Brewers Gold and Hammerton N1 with a Bath Gem clip reversed on the remaining Handpump, the Hophead was in good shape. Probably worth another look, but not Sunday lunchtime, unless you are eating and have booked.<br />
+<br />
+November 2015<br />
+Aimed to come here Saturday evening and found the lights on but locked with a sign on the door saying closed for a private function,a wasted walk.</p>
+<p class="Reviewer">On 9<sup>th</sup> April 2018 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 1202 recommendations about 1191 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review125368" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about The Peasant</h6>
+<p class="old">Attractive corner pub with plenty of exterior detailing and plenty of interest inside.  The opened-out &#039;U&#039;-shaped bar benefits from large windows under a high ceiling, but the stand-out feature is a tiled panel showing St George on a horse slaying the dragon.  This harks back to the pub&#039;s former name, which can be found in the floor by what once have been a second entrance, a depiction in the mosaicked floor by one end of the counter and on the Truman&#039;s bar-back.  Furniture all suitably traditional, and a mix of decor ranging from Life magazine covers to Sex Pistols posters.  Restaurant indicated upstairs.  Getting ready for a Christmas closure, so only one of the four handpumps was operational, but the Bath Ales Barnsey was going for a bargain &pound;2.50 / pint.</p>
+<p class="Reviewer">On 29<sup>th</sup> December 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/54002/">View more reviews of The Peasant (9)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Peasant</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Peasant - <a href="http://www.thepeasant.co.uk/" title="Submitted by:- Tris C" target="_blank">www.thepeasant.co.uk</a></li>
+			<li>Randomness Guide to London - <a href="http://london.randomness.org.uk/wiki.cgi?Peasant,_EC1V_4PH" title="Submitted by:- Kake Pugh" target="_blank">Peasant entry</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="152840291403408">Facebook - <a href="https://www.facebook.com/pages/Upstairs-The-Peasant/152840291403408" target="_blank" rel="nofollow">Upstairs @ The Peasant</a></li></ul><ul id="Custom2"><li class="twitlink" id="628771794">Twitter - <a href="https://twitter.com/ThePeasantEC1" target="_blank" rel="nofollow">The Peasant</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/54002/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.52579379667926, -0.10388195514679], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.52579379667926, -0.10388195514679]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Farringdon (London), 0.45 miles, 8 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> City Thameslink, 0.85 miles, 16 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Old Street, 0.89 miles, 17 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('msnyHhhSB\\^J`@B@l@^Tx@HdBF|DXZ?n@W|@hBf@zAJDN@LEFDRCR`CVK|AaAn@m@r@sAFRXSFSf@]FFPOFPLO', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('msnyHhhSB\\^J`@Bp@Mp@a@dEgEv@q@lAu@~@[vBe@lFaB\\CNB|@Z~CRHEPUD?NKvBaBJ[FPJIJCLy@Za@RIDLHC`@\\P\\FXD\\VB@LxA`@~@V|D|AfATEtAP`D~AB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('msnyHhhSG}Ag@eFbAw@lAs@u@eATa@v@qBs@eEjA]u@gGUuA?_@Lg@_@mBQ_BTCq@_IlAg@UkCnCoA]qCo@eHu@iODAEuA`@yA[w@e@N', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.52579379667926,-0.10388195514679], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=54002">View all updates for The Peasant, EC1</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        5<span class="sup">th</span> May 2019, 19:15
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        5<span class="sup">th</span> May 2019, 19:15
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11854002">No</span> <span id="discdetail11854002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Bar Billiards : <span id="fac10754002">No</span> <span id="discdetail10754002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Beer Festivals : <span id="fac11754002">Yes</span>  - <span id="discdetail11754002" class="discdetail" style="">September</span> -   <span class="Reviewer">last updated 16 January 2014 by Rex Rattus</span></li><li>Beer Garden : <span id="fac11454002">No</span> <span id="discdetail11454002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Car Park : <span id="fac11354002">No</span> <span id="discdetail11354002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 January 2014 by Rex Rattus</span></li><li>Darts : <span id="fac11154002">No</span> <span id="discdetail11154002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 January 2014 by Rex Rattus</span></li><li>Function Room : <span id="fac12354002">Yes</span> <span id="discdetail12354002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2016 by Tris C</span></li><li>Hot Food : <span id="fac10354002">Yes</span> <span id="discdetail10354002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 March 2014 by hondo .</span></li><li>Jukebox : <span id="fac11254002">No</span> <span id="discdetail11254002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 January 2014 by Rex Rattus</span></li><li>Karaoke : <span id="fac10654002">No</span> <span id="discdetail10654002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Live Music : <span id="fac10854002">No</span> <span id="discdetail10854002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Live TV Sports : <span id="fac11054002">No</span> <span id="discdetail11054002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Micropub : <span id="fac12254002">No</span> <span id="discdetail12254002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Pinball : <span id="fac11654002">No</span> <span id="discdetail11654002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 January 2014 by Rex Rattus</span></li><li>Pool Table : <span id="fac10454002">No</span> <span id="discdetail10454002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 January 2014 by Rex Rattus</span></li><li>Real Ale : <span id="fac10154002">Yes</span> <span id="discdetail10154002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 March 2014 by hondo .</span></li><li>Wheelchair Access : <span id="fac12054002">No</span> <span id="discdetail12054002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>WiFi : <span id="fac11554002">Yes</span> <span id="discdetail11554002" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 25 picture(s)" title="Pub has 25 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 9 reviewer(s)" title="Pub has average rating of 7.5 from 9 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/53965/" class="List1">The Sekforde</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2 from 1 reviewer(s)" title="Pub has average rating of 2 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/53970/" class="List1">Simmons</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 2 reviewer(s)" title="Pub has average rating of 4.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23302/" class="List1">The Blacksmith &amp; the Toffeemaker</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 3 reviewer(s)" title="Pub has average rating of 6 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/53993/" class="List1">The Dovetail</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/53995/" class="List1">Artisan</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 31 picture(s)" title="Pub has 31 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 9 reviewer(s)" title="Pub has average rating of 6.5 from 9 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23288/" class="List1">The Crown Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/53969/" class="List1">The Real Greek Souvlaki &amp; Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 23 picture(s)" title="Pub has 23 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65008/" class="List1">Zetter</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

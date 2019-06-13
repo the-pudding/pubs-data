@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Linden Tree pub in Gloucester, Gloucestershire, GL1 5SN : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Linden Tree" />
+  <meta name="keywords" content="The Linden Tree, 73-75  Bristol Road, Gloucester, Gloucestershire, Gloucester Central, Gloucester Quays, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Linden Tree in Gloucester" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/12501_13000/12657_31c8cdd8.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/12657/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.85479209551554" />
+<meta property="og:longitude" content="-2.25286857787512" />
+<meta property="og:street-address" content="73-75  Bristol Road" />
+<meta property="og:locality" content="Gloucester" />
+<meta property="og:region" content="Gloucestershire" />
+<meta property="og:postal-code" content="GL1 5SN" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Linden Tree in Gloucester? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Linden Tree the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/12657/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Linden Tree in Gloucester" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Linden Tree " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/12501_13000/12657_31c8cdd8.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/12657/" />
+<meta name="geo.position" content="51.85479209551554;-2.25286857787512" />
+<meta name="geo.placename" content="The Linden Tree in Gloucester" />
+<meta name="geo.region" content="UK" />
+<title>The Linden Tree in Gloucester : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":12657},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(12657);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 12657;var pubaddress = "73-75  Bristol Road";var pubname = "The Linden Tree";var pubpostcode = "GL1 5SN";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/gloucestershire/" title="Pubs Galore : Gloucestershire Page">Gloucestershire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/gloucester/gloucestershire/" title="Pubs Galore : Gloucester Page">Gloucester</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Linden Tree Page">The Linden Tree Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="tbudbqtpl1pult2jmnm8ste4d2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/12657/" class="indisplay"><img src="/images/display/12501_13000/12657_31c8cdd8.jpg?w=1" alt="Picture of The Linden Tree" /></a><br />  Image posted by <a href="/userinfo.php?name=Blackthorn" class="indisplay">Blackthorn _</a><br />
+  Submitted on Friday, 30<sup>th</sup> September 2016<br />
+  With picture contributions to 4300 other pubs<br />
+<a href="/pubpictures/12657/" class="smallbutton">View all this pub's pictures</a> (13 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/12657/">Pub map</a><br /><a href="/pubreviews/12657/">Pub reviews (3)</a><br /><a href="/pubpictures/12657/">Pub pictures (14)</a><br /><a href="/core/pubaudit.php?id=12657" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Linden Tree, Gloucester</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">73-75  Bristol Road</span><br />
+
+
+<span class="town">Gloucester</span><br />
+<span class="postcode">GL1 5SN</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/gloucester-central/gloucestershire/">Gloucester Central</a>, <a href="/areas/gloucester-quays/gloucestershire/">Gloucester Quays</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Linden Tree  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review84861" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Babycham">Jane  Smith</a> left this review about The Linden Tree</h6>
+<p class="old">Pleasent pub with good food.</p>
+<p class="Reviewer">On 9<sup>th</sup> July 2014 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2 recommendations about 2 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review64189" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=oldboots">Old Boots</a> left this review about The Linden Tree</h6>
+<p class="old">A nice, multiroom, Wadsworth&#039;s pub quite a bit south of the city centre, it is much as Roger describes. It&#039;s GBG listed so the Waddy&#039;s is in the best Wadworth condition.  Largely inhabited by couples out for a drink on my early evening visit.  A very good suburban style pub in an area largely devoid of any kind of pub, so it gets my vote as well. Wadworth&#039;s range on pumps but a bonus on the barback it the form of three pins containing Titanic Anchor, a beer from the Isle of Wight and something unlabelled in the third.</p>
+<p class="Reviewer">On 8<sup>th</sup> October 2012 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 1974 recommendations about 1855 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review51392" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=RogerB">Roger Button</a> left this review about The Linden Tree</h6>
+<p class="old">The Georgian Grade II listed Linden Tree is about 10/15 minute walk from the city centre and whilst there isn&rsquo;t much around nearby, the pub alone is probably worth the walk. <br />
+<br />
+The interior is decpively spawling but there are several intimate nooks and crannies to be found. The carpeted front section is divided by an open fireplace and has low beamed ceilings and some exposed stonework. A few armchairs give it a comfy edge.  The main bar area is quite narrow with a small snug opposite but it opens up again at the rear where there is a flat screen TV, some bookshelves and a full size skittle alley. A decent sized patio can be found at the front although it is a busy road.<br />
+<br />
+The beers are mainly Wadworths with 6 ales on handpump (6X, Henry&rsquo;s IPA, Horizon, Strong In The Arm, Bishops Tipple and Farmer&rsquo;s Glory) as well as 3 guest ales direct from casks racked behind the bar (Island Yachtsmans Ale, Ruddles County and Butcombe Bitter on my visit). The collection of previous pump clips behind the bar is quite impressive.<br />
+<br />
+The pub has been run by the same people for over 10 years so there is an element of stability and we found the service very friendly and efficient. Despite it looking a bit of a downmarket area, the ambience was quite relaxed and civilized on our Saturday evening visit. We were initially drawn to the pub for its reasonably priced accommodation which was comfortable enough and very good value. The included cooked breakfast was as good as anything else you will find in town. <br />
+<br />
+Despite its slightly off the beaten track position, this is one of the better pubs for beer tourists but it should be noted that it closes between 12.30pm and 6pm midweek so plan ahead to avoid a wasted walk.</p>
+<p class="Reviewer">On 13<sup>th</sup> September 2011 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1238 recommendations about 1232 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Linden Tree</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Linden Tree - <a href="http://www.lindentreegloucester.co.uk/" title="Submitted by:- Jonathan Wilde" target="_blank">www.lindentreegloucester.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="144235232284718">Facebook - <a href="https://www.facebook.com/pages/The-Linden-Tree/144235232284718" target="_blank" rel="nofollow">The Linden Tree</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/12657/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.85479209551554, -2.25286857787512], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.85479209551554, -2.25286857787512]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Gloucester, 1.13 miles, 21 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Cheltenham Spa, 8.91 miles, 2 hr 52 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Stonehouse, 9.41 miles, 3 hr 1 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('_|n{H`_wLOv@gDgDgCyBgAo@YUmDaBy@[YEKIMSCUB?BuDBUj@}Ce@Yq@ZuCiCgAq@OZGMmA_AcDuCiAw@gBcAUCi@c@wBwCaAyAoCkDU]?SHg@qB_DTo@|@kDqAwBSc@IDCKICq@iAw@_BOSWQE]E{@EMt@uACC', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('_|n{H`_wLOv@gDgDgCyBgAo@YUmDaBy@[YEKIMSCUB?BuDBUj@}Ce@Yq@ZuCiCgAq@OZGMmA_AcDuCiAw@gBcAUCi@c@wBwCaAyAoCkDU]?SHg@qB_DTo@|@kDqAwBSc@IDCKICq@iAw@_BOSWQE]_Ai@q@oBaAsAEPi@_A@{@GW{BsE[aAQ_Aa@_Hc@sERQoAgQWcGIaEL}CPsC_BU]fBKMwAyLWaBTICMg@TCKTOsCeUMqCGwCBqDJgDRoCZkCpA{HiCgBmAs@N_A@[W}EU@kEoBuBWo@Qc@_@[_@k@{AeCoJgC}Kw@r@oA|Bi@mBYw@kFaKmA{CyA_EgB{DF_@]}@Ig@Eo@Be@Z_AC_DRAN?nG_ApF}@xA]A_MoCqWK_a@SiAaDaMcAcFgB_LaCuKiBiJ[sAn@qBRoA^eAjBmE|EuIRk@nAiFPe@SQwBoAa@[[[W]v@yEpBiHpAoI?SkA{B]k@sB}AuAoAk@s@eAkBUm@Os@MaDKsAMcA]aBm@aCe@eBWo@]s@}AgCQm@MmB?y@D}@XiEl@iIn@mJl@mRa@O_@C_A]s@k@Yc@c@}@Ia@QeAMaBM}@M]CSUsCc@iASy@Iy@BuAa@_AcByFIGKeDB{@Dw@dCj@BQAQ_FoLuB{ADYiFsQwCqMYgM?k@B_@OGJq@QK^yCVqCHiB@yAAoFMmDu@kF@q@w@oEFUGOYaAg@mCW_AUm@EUKkA?y@HeCOIKeBIk@Qk@a@y@QOMWK]c@YqDiDoB}B{@qAoAyAWSgAiC_@iAmA}Eq@aCsCiEs@qAW}@Kg@Gu@E}@AyAI?wBuBOYC@Jb@[ZIa@OhAWWQMcAYCRe@UkAcCGk@oAmDGSyEc@T{DYG@MHDBA@GDyBEgCIM?YBA@IKuAQ{@DWGKsAyDsCmGwFaNTo@?KR_A', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('_|n{H`_wLbDuRtClApB`AxBjA|CxBhB~AfAgDl@l@jRrHxBnC`DhBrFpAt@@vK~AxMvCvARd@@lAINFPTLj@lDc@N??BFABRtH|B@^FPHHH@JCHKDOxEgDhBQbIxFt@BjGqBxBi@`Ae@zAkBtAjE^]^e@dAcAV?XHbAxAb@h@HGhCzDs@zApCpE~@D|CuAZLJLvAbCrAfBhBnCx@{@\\i@Vb@LZVSNWb@z@^jAXUpAcBPYn@S^AtAXf@^h@LNKNg@X[x@C`@T^ETZFl@Pt@VZ`Bx@hA^\\Ap@Dn@Z~@x@j@`A`@|AdA`GAZETRLl@fDdCs@rEi@LBjCdDVa@LABTCFAP@LHL^XnBnBbBrBPZf@rAVb@TLPET@NLRl@NNrAb@xD`BLEHMNHB\\JLlB|@FATTTd@l@i@H?d@V|@HRAdAZPNJT`CxAz@Xp@?j@q@pAsDtAiFr@d@\\\\hB|@lATfD`^|A~NR`COVuEhB@b@nBM|JqDjCc@pBCpAKdVyGdEsBjBw@|B}@nBa@d@U\\UXUn@{@Z}@l@yBTw@l@l@f@^^HTBhDQtABxA\\~HzEnB|ApD~FpAdAdBt@zD|DrEbCfFv@ZJhAVvB]tAkAbAW|@L`DnATwBJg@^e@lATb@?RMrKrCdD{CxAeBl@cBv@gCbAkFb@]hBI|H_AtA]r@?j@Ql@q@rAq@VOvAkAx@eBTqAHgBEmDDgBJ{BNsBp@_DScAr@k@hAFnFkEZVt@|@DBvAd@l@HbCt@bBfBZfAZd@JVAV@LFRFtAd@jAbAz@hAHnAXdB|Ax@h@x@z@xAj@hAXlCHfEzAbCfAf@@Bf@pCK`DCbAyB|@g@~BvFFbAv@^xAh@rB`@tGfB|IfMhBpCxBtA@v@Et@bAb@lAp@XBpA@^D`@JPP\\h@ZSRENBxBtA^uAAwAlC`ApDtBLRFKNXKP', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.85479209551554,-2.25286857787512], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=12657">View all updates for The Linden Tree, Gloucester</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        16<span class="sup">th</span> Oct 2016, 13:10
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a> approved
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        16<span class="sup">th</span> Oct 2016, 12:53
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a>
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11812657">Yes</span> <span id="discdetail11812657" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 October 2016 by Jonathan Wilde</span></li><li>Bar Billiards : <span id="fac10712657">No</span> <span id="discdetail10712657" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 October 2016 by Jonathan Wilde</span></li><li>Beer Garden : <span id="fac11412657">Yes</span> <span id="discdetail11412657" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 October 2016 by Jonathan Wilde</span></li><li>CAMRA Discount : <span id="fac10212657">No</span> <span id="discdetail10212657" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 October 2016 by Jonathan Wilde</span></li><li>Car Park : <span id="fac11312657">No</span> <span id="discdetail11312657" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 October 2016 by Jonathan Wilde</span></li><li>Hot Food : <span id="fac10312657">Yes</span> <span id="discdetail10312657" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 October 2016 by Jonathan Wilde</span></li><li>Live TV Sports : <span id="fac11012657">Yes</span> <span id="discdetail11012657" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 October 2016 by Jonathan Wilde</span></li><li>Micropub : <span id="fac12212657">No</span> <span id="discdetail12212657" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 October 2016 by Jonathan Wilde</span></li><li>Pinball : <span id="fac11612657">No</span> <span id="discdetail11612657" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 October 2016 by Jonathan Wilde</span></li><li>Quiz Night : <span id="fac10912657">Yes</span>  - <span id="discdetail10912657" class="discdetail" style="">First Sunday of every month</span> -   <span class="Reviewer">last updated 16 October 2016 by Jonathan Wilde</span></li><li>Real Ale : <span id="fac10112657">Yes</span> <span id="discdetail10112657" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Real Cider : <span id="fac11912657">No</span> <span id="discdetail11912657" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 October 2016 by Jonathan Wilde</span></li><li>Wheelchair Access : <span id="fac12012657">No</span> <span id="discdetail12012657" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 October 2016 by Jonathan Wilde</span></li><li>WiFi : <span id="fac11512657">Yes</span>  - <span id="discdetail11512657" class="discdetail" style="">Requires code</span> -   <span class="Reviewer">last updated 16 October 2016 by Jonathan Wilde</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86891/" class="List1">Beefeater Gloucester (Quayside)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/12598/" class="List1">Baker Street</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/12710/" class="List1">Coal</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 3 reviewer(s)" title="Pub has average rating of 7 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83817/" class="List1">Brewhouse &amp; Kitchen</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82269/" class="List1">TGI Fridays</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81061/" class="List1">Portivo Lounge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 23 picture(s)" title="Pub has 23 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/12661/" class="List1">The Nelson Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 4 reviewer(s)" title="Pub has average rating of 7.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82875/" class="List1">Tank</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

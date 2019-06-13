@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Albert Inn pub in Totnes, Devon, TQ9 5AD : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Albert Inn" />
+  <meta name="keywords" content="The Albert Inn, 32  Bridgetown, Totnes, Devon, Totnes Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Albert Inn in Totnes" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/9001_9500/9253_03db2139c69bb23ccc9100c10dee2b38.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/9253/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="50.43039301330759" />
+<meta property="og:longitude" content="-3.67975849818231" />
+<meta property="og:street-address" content="32  Bridgetown" />
+<meta property="og:locality" content="Totnes" />
+<meta property="og:region" content="Devon" />
+<meta property="og:postal-code" content="TQ9 5AD" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Albert Inn in Totnes? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Albert Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/9253/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Albert Inn in Totnes" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Albert Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/9001_9500/9253_03db2139c69bb23ccc9100c10dee2b38.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/9253/" />
+<meta name="geo.position" content="50.43039301330759;-3.67975849818231" />
+<meta name="geo.placename" content="The Albert Inn in Totnes" />
+<meta name="geo.region" content="UK" />
+<title>The Albert Inn in Totnes : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":9253},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(9253);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 9253;var pubaddress = "32  Bridgetown";var pubname = "The Albert Inn";var pubpostcode = "TQ9 5AD";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/devon/" title="Pubs Galore : Devon Page">Devon</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/totnes/devon/" title="Pubs Galore : Totnes Page">Totnes</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Albert Inn Page">The Albert Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="5kdmm206p7vlvlfa4gd0di1ov7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/9253/" class="indisplay"><img src="/images/display/9001_9500/9253_03db2139c69bb23ccc9100c10dee2b38.jpg?w=2" alt="Picture of The Albert Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=The+Bamber" class="indisplay">Phil Gayton</a><br />
+  Submitted on Thursday, 5<sup>th</sup> June 2008<br />
+  <a href="/pubpictures/9253/" class="smallbutton">View all this pub's pictures</a> (5 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/9253/">Pub map</a><br /><a href="/pubreviews/9253/">Pub reviews (3)</a><br /><a href="/pubpictures/9253/">Pub pictures (6)</a><br /><a href="/core/pubaudit.php?id=9253" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Albert Inn, Totnes Town, Totnes</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">32  Bridgetown</span><br />
+
+
+<span class="town">Totnes</span><br />
+<span class="postcode">TQ9 5AD</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/totnes-town/devon/">Totnes Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Albert Inn</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/Albert_Totnes" target="_blank"><img src="https://pbs.twimg.com/profile_images/1806153846/image_normal.jpg" alt="Albert Inn Totnes" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/Albert_Totnes" target="_blank">Albert Inn Totnes</a></strong>
+<a href='https://t.co/u4Robt5wul' target='_blank'>https://t.co/u4Robt5wul</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/Albert_Totnes/status/992496762740006912">9:10 PM May 4th 2018</a> from <a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/Albert_Totnes" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/Albert_Totnes" target="_blank">Albert Inn Totnes</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Albert Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>9&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review20956" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Gann">Steve of N21</a> left this review about The Albert Inn</h6>
+<p class="old">Excellent traditional small pub which I guess is largely overlooked by tourists, as it is half way up a hill across the bridge to the other side of the Totnes town centre. But this is a gem of a pub and you should search it out if visiting Totnes.<br />
+The Albert (which is named after Albert Einstein for some local reason that my wife did explain to me but I have now forgotten) is home to the Bridgetown Brewery, which opened about a year ago and is resident out back of the pub. It brews two ales - Albert Ale at 3.8% and Real Ale Activity, which is 4.8%, and a Stout (Rockfish Oyster Stout) at 4.6%. Tried them all and the Albert Ale was more to my taste. It also had Dartmoor Jail Ale during the week I visited<br />
+It&rsquo;s a two bar pub but you could easily miss this fact as the &lsquo;lounge bar&rsquo; is tucked away with its own door around the back. This would be a real shame as this back bar is a superb snug and is full of dusty old stuff like the back bars used to be. For example there is an extensive collection of old snuffboxes displayed on the beam above the jump.<br />
+Also found a bar billiards table in the alley way to the garden and toilets and had to relive my youth, even though the Landlord explained that someone had walked off with two of the mushrooms.<br />
+Knowledgeable and friendly Landlord and an interesting mix of colourful locals who were more than happy for you to join in with their conversations.<br />
+So to conclude, The Albert is a throwback to the days when pubs were social drinking houses for the local community. It&rsquo;s a gem. If you visit Totnes, don&rsquo;t miss it...</p>
+<p class="Reviewer">On 28<sup>th</sup> October 2009 
+  - rating: <b>10</b><br />
+  <span class="leftspace">[User has posted 1577 recommendations about 1528 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review14035" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=AudreyW">Audrey Williams</a> left this review about The Albert Inn</h6>
+<p class="old">Enjoyed a great pint, well worth a visit if you&#039;re in the  neighbourhood!</p>
+<p class="Reviewer">On 21<sup>st</sup> July 2009 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 3 recommendations about 3 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review8388" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=The+Bamber">Phil Gayton</a> left this review about The Albert Inn</h6>
+<p class="old">Only Free House left in Totnes - and it shows!  In my opinion the best pub in town.<br />
+<br />
+Now a brew pub - currently brewing 2 ales, Albert Ale @ 3.8% and Real Ale Ativity @ 4.8%</p>
+<p class="Reviewer">On 30<sup>th</sup> June 2008 
+  - rating: <b>10</b><br />
+  <span class="leftspace">[User has posted 2 recommendations about 2 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Albert Inn</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="149156745124910">Facebook - <a href="https://www.facebook.com/TheAlbertInnTotnes/" target="_blank" rel="nofollow">Albert Inn</a></li></ul><ul id="Custom2"><li class="twitlink" id="483923693">Twitter - <a href="https://twitter.com/Albert_Totnes" target="_blank" rel="nofollow">Albert Inn Totnes</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/9253/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([50.43039301330759, -3.67975849818231], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([50.43039301330759, -3.67975849818231]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Totnes, 0.72 miles, 13 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Paignton, 6.05 miles, 1 hr 56 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Torquay, 7.58 miles, 2 hr 26 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('}txrHdumUR??lDB|@ATeAxIM?EQMIa@C[Fe@d@Yf@g@H_AB]HS?YLEHe@d@]r@e@l@IB_@p@_AtBIGGAGBKJc@HKp@ArAE^KFm@C[lEcBpPy@mA_@[E@W[MLq@oA', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('}txrHdumUR?OoCPEl@a@BBNKAMl@o@cAsBRe@Fe@b@eADU`@e@l@RZ_@VqAYQiA{Cu@eC@STcAAkBGs@SaAOKWHOb@YPY@a@Qy@iAoAiCw@{CCWEuBDqGGkCMc@u@g@UGv@gHIiUeCgDeC}BSCa@oBC}@OQYiAkAuDyAuL}@aFeAaFa@uAg@_AiGyFgBq@m@}@e@oAYw@g@gB_@gAKSq@y@[WQU_CaFaAgCUw@i@mC?SDk@@k@Ac@Gc@{AmGU_BmAiDMg@g@}CMsACq@CaHWcHMeI?_BPsHTqEFaC?cBM{DSeDCeA@}@L{BRkCL{DH{JnAgDd@cB|@qCh@}BLmAAqAG{Au@aHi@wDa@sDCiALy@t@aD`AyEr@eAz@aB|@sCjAyCz@gDlAiDfBiGdBuEh@FYoAJwE?sASsBo@_D_@aAc@Q]WVi@Ca@M_ASgD@eCMcD_@mDPmCj@aEP]XgAVkBNuA`@cAj@}BFaBxAaGVuAQy@L{@~@qCNiAJsAEe@I[}@oBWaAKw@]_BA_@Jg@q@Yi@e@M[A{@La@p@mAj@wANg@f@uC~AsFBy@XUTa@VYI[LIKs@@QVmBX{B@OA[XAf@RCOa@eE_@_DjAs@`A{@|@iA~AwCzAsAeBuIOi@o@oBgA}FMsBGuB?mBbAcOMMGOI}Cv@eA@IF}@AgAoAKXyIOcE?_@y@IMkBGWCY?_@B]HKGO?e@AQGMGEYFj@eHPeBPH?SLKFi@ND', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('}txrHdumUR?OoCPEl@a@BBNKAMl@o@cAsBRe@Fe@b@eADU`@e@l@RZ_@VqAYQiA{Cu@eC@STcAAkBGs@SaAOKWHOb@YPY@a@Qy@iAoAiCw@{CCWEuBDqGGkCMc@u@g@UGv@gHIiUeCgDeC}BSCa@oBC}@OQYiAkAuDyAuL}@aFeAaFa@uAg@_AiGyFgBq@m@}@e@oAYw@g@gB_@gAKSq@y@[WQU_CaFaAgCUw@i@mC?SDk@@k@Ac@Gc@{AmGU_BmAiDMg@g@}CMsACq@CaHWcHMeI?_BPsHTqEFaC?cBM{DSeDCeA@}@L{BRkCL{DH{JnAgDd@cB|@qCh@}BLmAAqAG{AQeBc@{Di@wDa@sDCiALy@t@aD`AyEoBqBuAcCsBoEsBiDwCmGGmAYuBOmBS]k@}Ak@_@iBy@iAu@]e@a@gA_AgBe@gAeAqBc@s@wByBGw@Us@iA_BEMi@Uq@k@s@a@qCsA_AgAyCiCKC[Y_AwGc@mBMa@a@k@w@g@qAa@iCeAy@cAM[qAkFi@kCkBmFwDiFm@oAmAaDyA{CsB_DQy@I?IIAYFKm@{CKg@E_BDQ@a@CWIQe@q@Wm@Ee@SwCCuCFkCb@kDNk@VmB_@WGSBwG[qDu@kE_@wDg@aEaBoESiAAgAIOMGa@EYY]{@qB{K[eCi@aF{AqKa@mHSwAYiAQqAOcBDcMMcGw@mMg@mNe@wDWcAOWm@]{B@kA^iAK[Ms@iA_@]Cg@@g@\\oA~@oCNo@LgCl@i@T_@T_APcBNqBFiCRg@|@gDv@iB`@m@@[z@iED]LqCE_@EkAGk@iAqCGs@Jy@FKdA}@RYb@BFi@SOmAkBs@wBGYWoBEyAA_CK@@g@YcDCGUuAUi@XAVT|AFPCpCs@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([50.43039301330759,-3.67975849818231], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=9253">View all updates for The Albert Inn, Totnes</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        31<span class="sup">st</span> Dec 2015, 23:02
+      </div><div class="auditexp">Pub <a href="/pubmapaudit/9253/">map correction</a> submitted by <a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        31<span class="sup">st</span> Dec 2015, 23:02
+      </div><div class="auditexp">Pub <a href="/pubmapaudit/9253/">map correction</a> submitted by <a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Bar Billiards : <span id="fac1079253">Yes</span> <span id="discdetail1079253" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 October 2009 by David McNally</span></li><li>Real Ale : <span id="fac1019253">Yes</span> <span id="discdetail1019253" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 June 2008 by Will Larter</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - Midnight</td></tr>
+<tr><td>Saturday</td><td>12noon - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/74887/" class="List1">Waterside</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 2 reviewer(s)" title="Pub has average rating of 7.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/9265/" class="List1">Royal Seven Stars Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/9263/" class="List1">Lord Nelson Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 1 reviewer(s)" title="Pub has average rating of 8 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/9268/" class="List1">The Steam Packet Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/9259/" class="List1">The Dartmouth Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/9271/" class="List1">Watermans Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/80373/" class="List1">King William IV</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/80374/" class="List1">The Barrel House</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

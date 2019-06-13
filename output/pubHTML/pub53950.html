@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Guy Fawkes Hotel pub in York, North Yorkshire, YO1 7HP : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Guy Fawkes Hotel" />
+  <meta name="keywords" content="The Guy Fawkes Hotel, 25 High Petergate, York, North Yorkshire, York Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Guy Fawkes Hotel in York" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/53501_54000/53950_5b7a4d55.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/53950/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="53.96165787319451" />
+<meta property="og:longitude" content="-1.08309745788574" />
+<meta property="og:street-address" content="25 High Petergate" />
+<meta property="og:locality" content="York" />
+<meta property="og:region" content="North Yorkshire" />
+<meta property="og:postal-code" content="YO1 7HP" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Guy Fawkes Hotel in York? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Guy Fawkes Hotel the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/53950/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Guy Fawkes Hotel in York" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Guy Fawkes Hotel " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/53501_54000/53950_5b7a4d55.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/53950/" />
+<meta name="geo.position" content="53.96165787319451;-1.08309745788574" />
+<meta name="geo.placename" content="The Guy Fawkes Hotel in York" />
+<meta name="geo.region" content="UK" />
+<title>The Guy Fawkes Hotel in York : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":53950},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(53950);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 53950;var pubaddress = "25 High Petergate";var pubname = "The Guy Fawkes Hotel";var pubpostcode = "YO1 7HP";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/north-yorkshire/" title="Pubs Galore : North Yorkshire Page">North Yorkshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/york/north-yorkshire/" title="Pubs Galore : York Page">York</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Guy Fawkes Hotel Page">The Guy Fawkes Hotel Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="ongl6fqak27d3skbqp7n1nbdt6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/53950/" class="indisplay"><img src="/images/display/53501_54000/53950_5b7a4d55.jpg?w=2" alt="Picture of The Guy Fawkes Hotel" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
+  Submitted on Tuesday, 16<sup>th</sup> November 2010<br />
+  With picture contributions to 24007 other pubs<br />
+<a href="/pubpictures/53950/" class="smallbutton">View all this pub's pictures</a> (18 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/53950/">Pub map</a><br /><a href="/pubreviews/53950/">Pub reviews (13)</a><br /><a href="/pubpictures/53950/">Pub pictures (19)</a><br /><a href="/core/pubaudit.php?id=53950" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Guy Fawkes Hotel, York Central, York</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">25 High Petergate</span><br />
+
+
+<span class="town">York</span><br />
+<span class="postcode">YO1 7HP</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01904466674</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/york-central/north-yorkshire/">York Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Guy Fawkes Hotel</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/guyfawkesyork" target="_blank"><img src="https://pbs.twimg.com/profile_images/532852321349169152/89KEenH0_normal.jpeg" alt="Guy Fawkes Inn" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/guyfawkesyork" target="_blank">Guy Fawkes Inn</a></strong>
+It was a beautiful day here today. Spring is definitely on the way!
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/guyfawkesyork/status/842080279439257600">6:29 PM Mar 15th 2017</a> from <a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/guyfawkesyork" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/guyfawkesyork" target="_blank">Guy Fawkes Inn</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Guy Fawkes Hotel  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review101971" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> left this review about The Guy Fawkes Hotel</h6>
+<p class="old">what a huge shame!!<br />
+<br />
+There is pricing yourself high for the tourists as many York pubs do but this place is taking the absolute mickey, i shall not be returning! At &pound;4.10 for a pint of Timothy Taylor Boltmaker this place is the most expensive pint of regular ale in York bar none, an absolute joke, needless to say the Thatchers cider was &pound;4.30, this is criminal. This is a crying shame as their selection is very good and the building has a great atmosphere with nice seating in the back which is candle lit. I will not be returning and highly recommend others don&#039;t as voting with your feet is the only way to tackle these things or before youknow it every pub in york will think this is reasonable, highly not impressed!!!</p>
+<p class="Reviewer">On 6<sup>th</sup> December 2015 
+  - rating: <b>4</b><br />
+  <span class="leftspace">[User has posted 424 recommendations about 424 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review94368" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Strongers">Steve C</a> left this review about The Guy Fawkes Hotel</h6>
+<p class="old">The Guy Fawkes was very busy with tourists during my recent Saturday afternoon visit. The interior consists of a bar area to the left of the entrance and a seating area to the right where punters are overlooked by a big knight. At the rear is some more seating where I managed to find some space to escape the cackling and barging of a drunken hen party. There was some background music playing and I noted that there are no televisions.<br />
+<br />
+The bar is stocked with premium draught and six hand pumps were drawing cask ale. Apparently Guy Fawkes was born here in 1570, hence the name of the pub and the fact that the food (around a &pound;12 average for a main) all has Guy Fawkes related monikers.<br />
+<br />
+This is a historic pub, but it was too busy to properly enjoy. I imagine that the nature of the beast changes during the week so if I find myself in the area at a quieter time I will pop back in for a better nose around.</p>
+<p class="Reviewer">On 19<sup>th</sup> April 2015 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 3386 recommendations about 3366 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review70235" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=hondo">hondo .</a> left this review about The Guy Fawkes Hotel</h6>
+<p class="old">Bar and restaurant with accommodation available. 6 real ales. Live music advertised</p>
+<p class="Reviewer">On 18<sup>th</sup> May 2013 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 2564 recommendations about 2508 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/53950/">View more reviews of The Guy Fawkes Hotel (13)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Guy Fawkes Hotel</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="285763488102789">Facebook - <a href="https://www.facebook.com/GuyFawkesInnYork/" target="_blank" rel="nofollow">Guy Fawkes Inn</a></li></ul><ul id="Custom2"><li class="twitlink" id="532174501">Twitter - <a href="https://twitter.com/guyfawkesyork" target="_blank" rel="nofollow">Guy Fawkes Inn</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/53950/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=hondo">hondo .</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([53.96165787319451, -1.08309745788574], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([53.96165787319451, -1.08309745788574]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> York, 0.58 miles, 11 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Poppleton, 3.37 miles, 1 hr 5 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Hammerton, 9.21 miles, 2 hr 57 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('skjhI~orE}@`C~BbHx@~Bj@lARZpBxBtAxBtAxD`@`A~@jCDNAXCLMRMlAXFrApD@PSx@`@bAWh@M^?`@IL?|AC??Tf@@dAN', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('skjhI~orE}@`C~BbHx@~Bj@lAXb@GRYh@Qj@Cb@HdAH`@NNL@L\\@VUt@IHJtADJIj@EDCF@RIV?TOV@RBNKNGT?T@HDDBNc@bD[`C]hD?`@`Bx@E\\?l@CFo@lGQfA_@`B{@`DH?g@rB{A`KsArEy@pCaA`Gs@|Ea@|CAVYnBA^IHe@bDxCr@BrHGdHBz@yDhAFvA?LBB@`Ag@vAIp@Nx@RjAPrBIHbAtEr@|CX|@I`@?JvAjFVlA@JE\\@NLXYl@o@dBi@vBUlAU`By@fIS`Ba@bBeBvF}@dDkEhNwFhQo@zAeDpGgBzDcCdHwF~RsAxFoA|FSdBQhCWlGGz@QhAUjAA~AB\\Ab@IXINa@zBGtAU~HM`Bo@lEq@b@UCYBgCj@oAf@iCjAiBfAEWBA@BDESmB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('skjhI~orE}@`C~BbHx@~Bj@lAXb@GRYh@Qj@Cb@HdAH`@NNL@L\\@VUt@IHJtADJIj@EDCF@RIV?TOV@RBNKNGT?T@HDDBNc@bD[`C]hD?`@`Bx@E\\?l@CFo@lGQfA_@`B{@`DH?g@rB{A`KsArEy@pCaA`Gs@|Ea@|CAVYnBA^IHe@bDxCr@BrHGdHBz@yDhAFvA?LBB@`Ag@vAIp@Nx@RjAPrBIHbAtEr@|CX|@I`@?JvAjFVlA@JE\\@NLXYl@o@dBi@vBUlAU`By@fIS`Ba@bBeBvF}@dDkEhNwFhQo@zAeDpGgBzDcCdHwF~RsAxFoA|FSdBQhCWlGGz@QhAUjAHj@@hADVHPOXG~@KJa@nAO`DC|BEnBE~@g@tDUnAC^SlA]b@Y~BgGnl@WrCUbEMxDG`F@le@GvGGrCWjG?vBLpFBlBEnB]|FInBCvA?rDGjBSdCYrBgEbWiExVcJfl@{BlOUfCkAnPUlCWnB{@jF_M|r@wBfMo@fDo@vC_ArD{@zC]x@kCzESr@Y`BaIhl@a@rCk@bDoEhT{@vDcBxG}@~DoCrMkCtNiFvTaCjReAfHeCfNsFxYw@~DoA~FYbBYbC[rB{BrK]xBe@hEPr@~@xOHxB?zAGvBKhBm@dDgCpEOdOw@f]s@~Se@jLQnDdJ~D\\f@dAvE`BdF', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.96165787319451,-1.08309745788574], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=53950">View all updates for The Guy Fawkes Hotel, York</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        6<span class="sup">th</span> Dec 2015, 20:03
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> amended by <a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        6<span class="sup">th</span> Dec 2015, 20:03
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11853950">Yes</span> <span id="discdetail11853950" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 April 2014 by Alan Hurdle</span></li><li>Bar Billiards : <span id="fac10753950">No</span> <span id="discdetail10753950" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 April 2015 by Steve C</span></li><li>Beer Garden : <span id="fac11453950">Yes</span> <span id="discdetail11453950" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 April 2014 by Alan Hurdle</span></li><li>Car Park : <span id="fac11353950">No</span> <span id="discdetail11353950" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 April 2015 by Steve C</span></li><li>Child Friendly : <span id="fac12153950">Yes</span> <span id="discdetail12153950" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 April 2015 by Steve C</span></li><li>Darts : <span id="fac11153950">No</span> <span id="discdetail11153950" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 April 2015 by Steve C</span></li><li>Hot Food : <span id="fac10353950">Yes</span> <span id="discdetail10353950" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 April 2014 by Alan Hurdle</span></li><li>Live Music : <span id="fac10853950">Yes</span> <span id="discdetail10853950" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 April 2015 by Steve C</span></li><li>Live TV Sports : <span id="fac11053950">No</span> <span id="discdetail11053950" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 April 2015 by Steve C</span></li><li>Micropub : <span id="fac12253950">No</span> <span id="discdetail12253950" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 April 2015 by Steve C</span></li><li>Pinball : <span id="fac11653950">No</span> <span id="discdetail11653950" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 April 2015 by Steve C</span></li><li>Pool Table : <span id="fac10453950">No</span> <span id="discdetail10453950" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 April 2015 by Steve C</span></li><li>Real Ale : <span id="fac10153950">Yes</span> <span id="discdetail10153950" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>WiFi : <span id="fac11553950">Yes</span> <span id="discdetail11553950" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 April 2014 by Alan Hurdle</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 11pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - Midnight</td></tr>
+<tr><td>Saturday</td><td>11am - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 22 picture(s)" title="Pub has 22 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 8 reviewer(s)" title="Pub has average rating of 7.5 from 8 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/72245/" class="List1">House of the Trembling Madness</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 26 picture(s)" title="Pub has 26 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 13 recommendation(s)" title="Pub has 13recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 8 reviewer(s)" title="Pub has average rating of 6.5 from 8 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/43721/" class="List1">Ye Olde Starre Inne</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66565/" class="List1">Evil Eye Lounge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/58585/" class="List1">Macumba</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85805/" class="List1">The Botanist</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 3 reviewer(s)" title="Pub has average rating of 4 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/58601/" class="List1">Kennedy&#039;s</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 21 picture(s)" title="Pub has 21 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 4 reviewer(s)" title="Pub has average rating of 8 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/43722/" class="List1">York Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81371/" class="List1">Banyan Bar</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

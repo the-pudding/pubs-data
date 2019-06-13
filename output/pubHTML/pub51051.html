@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Dickens pub in Perth, Tayside, PH2 8NY : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Dickens" />
+  <meta name="keywords" content="Dickens, 189  South Street, Perth, Tayside, Perth Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Dickens in Perth" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/51001_51500/51051_b81de20d.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/51051/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="56.39534527999626" />
+<meta property="og:longitude" content="-3.43417972326279" />
+<meta property="og:street-address" content="189  South Street" />
+<meta property="og:locality" content="Perth" />
+<meta property="og:region" content="Tayside" />
+<meta property="og:postal-code" content="PH2 8NY" />
+<meta property="og:country-name" content="Scotland" />
+<meta property="og:description" content="Do you like Dickens in Perth? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Dickens the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/51051/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Dickens in Perth" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Dickens " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/51001_51500/51051_b81de20d.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/51051/" />
+<meta name="geo.position" content="56.39534527999626;-3.43417972326279" />
+<meta name="geo.placename" content="Dickens in Perth" />
+<meta name="geo.region" content="UK" />
+<title>Dickens in Perth : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":51051},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(51051);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 51051;var pubaddress = "189  South Street";var pubname = "Dickens";var pubpostcode = "PH2 8NY";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/scotland/" title="Pubs Galore : Scotland Page">Scotland</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/tayside/" title="Pubs Galore : Tayside Page">Tayside</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/perth/tayside/" title="Pubs Galore : Perth Page">Perth</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Dickens Page">Dickens Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="ssog0l01hbfgdi467e5sn40bc0" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/51051/" class="indisplay"><img src="/images/display/51001_51500/51051_b81de20d.jpg?w=2" alt="Picture of Dickens" /></a><br />  Image posted by <a href="/userinfo.php?name=barty" class="indisplay">ALASTAIR BARTER</a><br />
+  Submitted on Saturday, 30<sup>th</sup> May 2015<br />
+  With picture contributions to 1638 other pubs<br />
+<a href="/pubpictures/51051/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/51051/">Pub map</a><br /><a href="/pubreviews/51051/">Pub reviews (4)</a><br /><a href="/pubpictures/51051/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=51051" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Dickens, Perth Central, Perth</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">189  South Street</span><br />
+
+
+<span class="town">Perth</span><br />
+<span class="postcode">PH2 8NY</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01738625646</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/perth-central/tayside/">Perth Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Dickens  <span class="h2note">(Average Rating: <span id="averagerating"><b>9</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review105036" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=colin58">Colin Walker</a> left this review about Dickens</h6>
+<p class="old">There are over 100 Malt &amp; Premium Whiskies On offer such as<br />
+<br />
+Beauty &amp; The Beast<br />
+Glenmorangie 10y (Delicate) &amp; Ardbeg lOy (Sophisticated) &pound;6.50<br />
+<br />
+NORTH &amp; SOUTH<br />
+Highland Park 12y (Orkney) &amp; Bladnoch By (Wigtown)&pound;6.50<br />
+<br />
+EAST &amp; WEST<br />
+Glenkinchie 12y (Edinburgh) &amp; Auchentoshan 12y (Glasgow)&pound;6.25<br />
+<br />
+NEAREST &amp; DEAREST<br />
+Glenturret &amp; Highland Park 40y (Top of our range) &pound;43.95<br />
+<br />
+THE DALMORE RIVERS<br />
+Dalmore Tay, Dalmore Spey, Dalmore Dee &amp; Dalmore Tweed &pound;12.95<br />
+ <br />
+GLORIOUS GLENFIDDICH<br />
+Glenfiddich 12y (Pear &amp; Oak), Glenfiddich 15y (Citrus &amp; Spice) &amp; Glenfiddich 18y (Complex &amp; Sexy) &pound;11.25<br />
+<br />
+A CASTE OF SCOTLAND (A dram from query region)<br />
+1*Highland Malt,1*IsIsy Malt, 1*Speyside Malt, 1*Lowland Malt &amp; 1*Campbeltown Malt &pound;18.95<br />
+<br />
+PREMIUM SELECTION<br />
+Glenfarclas 30yrs 43% &pound;14.50<br />
+Macallan 25yrs 43% &pound;23.50<br />
+Glenmorangie 25yrs 43% &pound;11.95<br />
+Glenturret 29yrs 55.6% &pound;16.50<br />
+Highland Park 40yrs 48.3% &pound;35.00<br />
+ <br />
+HIGHLAND<br />
+Ben Nevis 10yrs 46% &pound;3.50<br />
+Glenfarclas 10yrs 40% &pound;3.50<br />
+Glenfarclas 105 60% &pound;4.50<br />
+Highland Park (Mc) 8yrs 40% &pound;3.50<br />
+Highland Park 12yrs 40% &pound;3.50<br />
+Highland Park 18yrs 43% &pound;4.95<br />
+Highland Park 25yrs 48.1% &pound;11.95<br />
+Glenglassaugh (Mc) 20yrs 40% &pound;4.25<br />
+Blair Athol 12yrs 43% &pound;3.50<br />
+Tullibardine 16yrs 40% &pound;4.95<br />
+Scapa 16yrs 40% &pound;3.50<br />
+Ardmore 46% &pound;3.50<br />
+Cu Dhub 40% &pound;3.50<br />
+Balvenie Single Barrel 15yrs 47.8% &pound;4.25<br />
+Balvenie Signature 12yrs 40% &pound;3.50<br />
+Balvenie Double Wood 12yrs 40% &pound;3.50<br />
+Clynelish 14yrs 46% &pound;3.50<br />
+Aberlour 10yrs 40% &pound;3.50<br />
+Edradour 10yrs 40% &pound;3.50<br />
+Royal Lochnagar 12yrs 40% &pound;3.50<br />
+North-Port-Brechin (cc) 26yrs 43% &pound;4.25<br />
+Dalwhinnie 15yrs 43% &pound;3.50<br />
+Glengoyne 10yrs 40% &pound;3.50, <br />
+Glenturret 10yrs 40% &pound;3.50 <br />
+Glenfiddich 12yrs 40% &pound;3.50 <br />
+Glenfiddich 15yrs 40% &pound;4.25 <br />
+Glenfiddich 18yrs 40% &pound;4.75 <br />
+Macallan Fine Oak 10yrs 40% &pound;3.75 <br />
+Macallan Fine Oak 15yrs 43% &pound;4.50 <br />
+Macallan Fine Oak 21yrs 43% &pound;10.50 <br />
+Macallan Gold 40% &pound;3.75 <br />
+Macallan 10yrs 40% &pound;2.65 <br />
+Macallan 18yrs 43% &pound;6.50 <br />
+Speymalt Macallan 9yrs 43% &pound;3.75 <br />
+Glenmorangie 10yrs 40% &pound;3.50 <br />
+Glenmorangie Nectar 46% &pound;4.00 <br />
+Glenmorangie Quinta Rubin 46% &pound;3.50 <br />
+Glenmorangie Lasanta 46% &pound;3.50 <br />
+Glenmorangie Signet 46% &pound;6.75 <br />
+Glenmorangie Rare 18yrs 43% &pound;8.25 <br />
+Dalmore 12yrs 40% &pound;3.50 <br />
+Dalmore Grand Reserva 40% &pound;3.25 <br />
+Dalmore 15yrs 40% &pound;4.25 <br />
+Dalmore 18yrs 43% &pound;4.95 <br />
+Dalmore Tay 40% &pound;3.95 <br />
+Dalmore Spey 40% &pound;3.95 <br />
+Dalmore Dee 40% &pound;3.95 <br />
+Dalmore Tweed 40% &pound;3.95 <br />
+Dalmore King Alexander 40% &pound;9.95 <br />
+Fettercairn 12yrs 40% &pound;2.65 <br />
+Fettercaim Fior 42% &pound;3.95 <br />
+Tomatin 12yrs 40% &pound;3.95 <br />
+Oban 14yrs 43% &pound;5.50 <br />
+Stronachie 12yrs 43% &pound;3.50 <br />
+Aberfeldy 12yrs 40% &pound;3.50 <br />
+Old Pulteney 12yrs 40% &pound;3.50 <br />
+Glendronach 12yrs 40% &pound;3.50 <br />
+Glen Garioch 8yrs 40% &pound;2.65 <br />
+Glen Garioch 15yrs 43% &pound;3.25 <br />
+Deanston 12yrs 46.3% &pound;3.50 <br />
+     <br />
+LOWLAND AGE <br />
+Rosebank (cc) 17yrs 43% &pound;3.25 <br />
+Bladnoch (1991) (cc) 16yrs 40% &pound;2.65 <br />
+Bladnoch 8yrs 40% &pound;3.50 <br />
+Auchentoshan 12yrs 40% &pound;3.50 <br />
+Auchentoshan 3 Wood 43% &pound;3.75 <br />
+Glenkinchie 12yrs 43% &pound;3.75 <br />
+     <br />
+CAMBELTOWN <br />
+Glen Scotia 12yrs 40% &pound;3.50 <br />
+Springbank 10yrs 46% &pound;3.50 <br />
+Springbank 15yrs 46% &pound;3.75 <br />
+Longrow 14yrs 46% &pound;4.95 <br />
+     <br />
+ISLAY AGE ABV PRICE <br />
+Ardbeg 10yrs 46% &pound;3.75 <br />
+Ardbeg Uigeadail 52.2% &pound;5.50 <br />
+Ardbeg Corryvreckan 57.1% &pound;6.75 <br />
+As We Get It 8yrs &pound;4.50 <br />
+Bowmore 12yrs 40% &pound;3.55 <br />
+Bowmore 1yrs5 43% &pound;3.75 <br />
+Bowmore 18yrs 43% &pound;6.50 <br />
+Bunnahabhain (Mc) 16yrs 43% &pound;4.25 <br />
+Bunnahabhain 12yrs 46.3% &pound;3.50 <br />
+Bunnahabhain 18yrs 46.3% &pound;5.95 <br />
+Caol Ila 12yrs 43% &pound;3.75 <br />
+Caol Ila 18yrs 43% &pound;5.95 <br />
+Caol Ila (cc) 12yrs 43% &pound;3.75 <br />
+Lagavulin 16yrs 43% &pound;4.50 <br />
+Laphroaig 10yrs 40% &pound;3.50 <br />
+Laphroaig 18yrs 48% &pound;6.50 <br />
+Bruichladdich Octomore 5yrs&pound;6.95 <br />
+Smokehead 43% &pound;4.50 <br />
+Tomintoul 10yrs 40% &pound;3.50 <br />
+  <br />
+SPEYSIDE <br />
+Tamdhu 40% &pound;2.65 <br />
+Tamdhu 18yrs 43% &pound;3.75 <br />
+Tomintoul 10yrs 40% &pound;2.65 <br />
+Benriach (cc) 20yrs 43% &pound;3.50 <br />
+Cardhu 12yrs 40% &pound;3.50 <br />
+Glenrothes 43% &pound;3.50 <br />
+Cragganmore 12yrs 40% &pound;3.50 <br />
+Benromach 40% &pound;3.50 <br />
+Benromach 10yrs 43% &pound;2.65 <br />
+Benromach Peatsmoke 46% &pound;2.65 <br />
+Benromach Organic 43% &pound;2.65 <br />
+Linkwood 12yrs 43% &pound;4.25 <br />
+Knockando 12yrs 43% &pound;3.50 <br />
+Longmom 12yrs 40% &pound;3.50 <br />
+Longmorn 12yrs 40% &pound;2.65 <br />
+Pittyvaich 12yrs 43% &pound;4.95 <br />
+Smiths Glenlivet 15yrs 40% &pound;3.75 <br />
+The Glenlivet 12yrs 40% &pound;3.50 <br />
+Allt-a-Bhainne (cc) 16yrs 43% &pound;3.75 <br />
+Mortlach 15 43% &pound;4.95 <br />
+The Singleton 12yrs 40% &pound;3.50 <br />
+Glenmoray 40% &pound;2.65 <br />
+Glen Grant 40% &pound;3.50 <br />
+Glen Elgin 12yrs 43% &pound;3.75 <br />
+  <br />
+ISLANDS <br />
+Tobermory 10yrs 46.3% &pound;3.50 <br />
+Tobermory 15yrs 46.3% &pound;4.95 <br />
+Jura 10yrs 40% &pound;3.50 <br />
+Jura Superstition 43% &pound;3.50 <br />
+Jura 200 21yrs 44% &pound;8.50 <br />
+Ledaig 10yrs 46.3% &pound;3.50 <br />
+Talisker 10yrs 45.8% &pound;3.50 <br />
+Talisker 57 North 57% &pound;5.95 <br />
+Arran 10yrs 46% &pound;3.50 <br />
+Arran(cc) 1998 43% &pound;3.75</p>
+<p class="Reviewer">On 26<sup>th</sup> March 2016 
+  - rating: <b>10</b><br />
+  <span class="leftspace">[User has posted 674 recommendations about 668 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review89572" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=David1958">David Ross</a> left this review about Dickens</h6>
+<p class="old">Across the road from the Robert Burns Lounge, the Dickens might be named in honour of one of England&rsquo;s, rather than Scotland&rsquo;s, best loved writers. There doesn&rsquo;t appear to be any particular literary connection, however, although the quaint, dimly lit, high ceilinged bar room, with its numerous recesses, could be considered vaguely Dickensian. Old beer barrels supplement tables and chairs and bar stools as places to drink at. It is clearly dog-friendly, with three dogs, all with different owners, roaming around at the same time. Guinness cost &pound;3.40 a pint and McEwan&rsquo;s Export, Belhaven Best, Tennent&rsquo;s lager and Magners cider are also on draught. In addition, there is an impressive and exotic whisky menu, with malts from Japan, India, Sweden and Africa (it doesn&rsquo;t say which country), in addition to about 50 Scottish ones.</p>
+<p class="Reviewer">On 30<sup>th</sup> November 2014 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 769 recommendations about 683 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review36204" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=roundhouse">I L</a> left this review about Dickens</h6>
+<p class="old">A Victorian turreted pub  on the corner of a crossroads in the centre of Perth. Inside the high ceiling bar has a number of small dividing screens with curved high back upholstered seating around each table. Numerous single malt whisky containers are dotted about at high level together with other whisky related paraphanalia. The back of the bar has a huge range of malts to chose from. There is on hand pump which had Inveralmond Brewery Independence ale in good condition on our visit. Background music is played at a reasonably loud but not too annoying level. Worth calling in on the way to or from the Greyfriars pub.</p>
+<p class="Reviewer">On 17<sup>th</sup> October 2010 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 287 recommendations about 284 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/51051/">View more reviews of Dickens (4)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Dickens</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="194352734077832">Facebook - <a href="https://www.facebook.com/Dickens-Bar-194352734077832/" target="_blank" rel="nofollow">Dickens Bar</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/51051/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=hondo">hondo .</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([56.39534527999626, -3.43417972326279], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([56.39534527999626, -3.43417972326279]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Perth, 0.45 miles, 8 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Dunkeld & Birnam, 14.67 miles, 4 hr 43 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Gleneagles, 17.07 miles, 5 hr 29 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('quewItv}SAh@f@@MRATvAhK~@hAvBj@dDfAp@`@~@hANFJx@j@YHr@`@Or@GAs@BMqAoBIU?[N`@p@bA', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('quewItv}SAh@kGFgERiALmGVyFbJWVgSbVULwDn@iOvBIZ{@?{Bf@MVMFMA{@P?^Gb@Ul@[Tw@PRlDFvI@vDFpFk@JaCPgBBk@GkAHOVm@@[L?dBq@DIb@g@@@zC_@@kAtFCf@k@DMBILEP?XHbNG~@WrAwBlDW`@QN@bFKDDf@j@~AVbAeB|CqCfGiInNi@hACb@IPQH_AbAk@fAy@|@cB`AkAXy@He@RQVSt@E\\O^Q\\[VkBlAmErBsEhA}WtFiCz@sCpAK_AQD}ChBuNzMaG`FsBz@mFnA{CVaFQ}@e@Aj@u[yE{De@gCOaIAgDP_E^wHrAmRdE_IxBeOrE{O`GeKbDmJbC}RfE_EzAwAt@_CtAsBrAgB|AcCbCsBfCmQfSuEjEmT|RaFzEcChCcC`DoC|DiK|O_@d@uBiD{A_@gHaAuBEgB_@wBUaCAoBtAcBaAuAm@_AXaBjCuBfByBtBs@`Bu@pGe@XeBZaBvBiB|@}B`CwAjGcBjB_BxC{@hB{C`DyAbA}BhBqBzE{@`CFfKzAdB`BhCSp@]Zs@TqBd@a@RSx@{BtCUVu@CUlCKp@@~@SLWTQEUAyC`BkExCiAlA}@l@iHpCwFhC{Bz@aChAcHxCs@Twz@vOwK~Bc@PkFzFwM|M]Nc@?qd@sHgJcBu@D}C{AbAjOFxAuAbRMbCCz@?hCN~GA^VzHLvBTfB`@bCdAlFb@pCTrBBfAAn@Kx@[xB[hB[lCk@zJwBo@BdEDzAH`Bt@rHs@rG]fDIzD_@|HKtDYxEYbISrBm@~B]hAM~@m@lByBzBeA|Ae@f@iArI[bBg@nASX_AM}@PeBn@u@`@kBq@gADk@Nw@~@s@`@c@AoAmCa@I_@\\i@Fu@_@w@AWJQ^kAW[S[o@o@}Bc@mAs@gA_Am@OEQF_@^mBfDc@bBu@zBc@XkABCEmD?eBtCi@lCsBxA_AnBc@t@k@`Bk@l@gA|@]j@eBOmAm@yBt@kDpCaC|@yBdDwAnANgCEwBa@u@CKBc@aDtG_DzFq@`BsA`F_BzH]tBIzDm@jDUd@u@|CgAbC[|@cAdEGl@?f@Bb@G`@CPSPo@zB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('quewItv}SSrO]rb@HADIrCtBBZFFP?TTCPSf@E`@CrAJ?JRFb@?p@KpAKNQJNdCJz@TjAj@xBdCxK`@JDrAl@pDG`@F@zAlHh@lDf@jDn@hH?h@eCvq@Ep@qBfMpB\\Q~EGd@SnFHRbF~@IlBHjOfBO`C]`@H^\\Zn@\\x@^zAXbBPtAFjAB~@SnEn@p@R^L|AFFF_@RPTM\\l@?Jr@rA\\`@p@`@o@dHEbEJX@RAVGTKPQ`B@fKEtC[vKOrE@b@F^L^zAhCJ`@P|Fb@jLh@|JxAfPr@|FbAtH~C`Rp@tC|@lC`DhHlBpDhBrCpF|GjErG|CnHjAvE~A|IFCpCtOtR~kAhEfXrFj[xAzHVQ`@IVThApDzAtCdAfAt@TlCCdAL\\RV^JX`F~Wj@jB`AlBtAvAfA`D|@pEfCfNh@x@bS`Ud@p@DN@ROpAfL`H|GrF`BzAbBjBlBlCz@rAzBpEl@tA`Mt[nApDo@dAbDtO`@zBlAhJdAjKFnCaAbPAjDFxBXvBj@zA|@|AnAr@rB?dG_@bEe@`CCfAFvBnA`ChBjAlCr@pA`B~Dz@fCrD`T~AjHNnALdDXbWTlGBvEKhFW~Fw@vG_BzKyAtVe@xHQtBAtCbAvEhIhG`KbH`PrOrAvBzArDdEzKjErKnDvHnAfIXbJd@dIhBlInEpJnDpIiC`EcFbCkCrBq@vAbDbUhB|EbFbIpQnZ\\u@hG_ApB_BjIeI|CpEbBvGzAE|@fBnEfKzEhJdA|BjD`J\\zAbA~Kl@zEdAdEbAcAZ}AjA}AtBbAvGzFxCnAjBo@hF`GjDvEnAnArEbBv@lAzAhA@rEv@dIc@Cy@{@MdAfAbA`GnD`H|ElEzK`AtFb@|GVtL]bBoBwBUt@lBzBz@jAr@vAdEdOrBpJ~@pHXrALVtBpIZ~APfAP`CZtChAlIfDvPvA|GxKkUl@wBj@j@jB?xCd@ALbANt@BdAk@TFTjBrA`F`@tBrArD@TG^MVJhBH~BZxBRjCnAhCdAjDnAbBLZf@l@DXDKP~Cb@hDn@rG|AlI`@~E`DrQDrAVx@Lz@x@rLz@fHp@`ETYbB?~@tChK~b@fEtO`DpKfAdDdCnIwBvKvB|AIZf@\\xB`A~Bh@fAx@pAjBnGpH~BpBfEpCD]b@TR{ALSvAO\\WhAiA\\k@R{@~@i@bJK', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([56.39534527999626,-3.43417972326279], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=51051">View all updates for Dickens, Perth</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        11<span class="sup">th</span> Feb 2018, 22:27
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        11<span class="sup">th</span> Feb 2018, 20:11
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Dog Friendly : <span id="fac10551051">Yes</span> <span id="discdetail10551051" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2014 by Quinno _</span></li><li>Real Ale : <span id="fac10151051">Yes</span> <span id="discdetail10151051" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 October 2010 by Will Larter</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11am - 0:30am</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>11am - 0:30am</td></tr>
+<tr><td>Friday</td><td>11am - 0:30am</td></tr>
+<tr><td>Saturday</td><td>11am - 0:30am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/75992/" class="List1">The Robert Burns Lounge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 1 reviewer(s)" title="Pub has average rating of 8 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/51038/" class="List1">Bee Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/51043/" class="List1">The Caledonian</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/75991/" class="List1">That Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 2 reviewer(s)" title="Pub has average rating of 7.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/71180/" class="List1">The Green Room</a></li>
+                    <li><img src="/images/icon-photo-grey.gif" alt="Pub has no pictures" title="Pub has no pictures" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/51094/" class="List1">Thistle Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 2 reviewer(s)" title="Pub has average rating of 8 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/51083/" class="List1">The Royal Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/75989/" class="List1">The Place</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

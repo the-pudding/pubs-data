@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Royal Oak pub in Attleborough, Nuneaton, Warwickshire, CV11 4JY : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Royal Oak" />
+  <meta name="keywords" content="The Royal Oak, The Square, Nuneaton, Warwickshire, Attleborough, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Royal Oak in Nuneaton" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/37001_37500/37137_ec1b81e1.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/37137/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.51361575897190" />
+<meta property="og:longitude" content="-1.45562410354614" />
+<meta property="og:street-address" content="The Square" />
+<meta property="og:locality" content="Nuneaton" />
+<meta property="og:region" content="Warwickshire" />
+<meta property="og:postal-code" content="CV11 4JY" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Royal Oak in Nuneaton? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Royal Oak the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/37137/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Royal Oak in Nuneaton" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Royal Oak " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/37001_37500/37137_ec1b81e1.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/37137/" />
+<meta name="geo.position" content="52.51361575897190;-1.45562410354614" />
+<meta name="geo.placename" content="The Royal Oak in Nuneaton" />
+<meta name="geo.region" content="UK" />
+<title>The Royal Oak in Attleborough, Nuneaton : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":37137},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(37137);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 37137;var pubaddress = "The Square";var pubname = "The Royal Oak";var pubpostcode = "CV11 4JY";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/warwickshire/" title="Pubs Galore : Warwickshire Page">Warwickshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/nuneaton/warwickshire/" title="Pubs Galore : Nuneaton Page">Nuneaton</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Royal Oak Page">The Royal Oak Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="mn2fplob5cot9p0s84m6j4rgp2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/37137/" class="indisplay"><img src="/images/display/37001_37500/37137_ec1b81e1.jpg?w=2" alt="Picture of The Royal Oak" /></a><br />  Image posted by <a href="/userinfo.php?name=sheffield+hatter" class="indisplay">Will Larter</a><br />
+  Submitted on Sunday, 23<sup>rd</sup> February 2014<br />
+  With picture contributions to 8564 other pubs<br />
+<a href="/pubpictures/37137/" class="smallbutton">View all this pub's pictures</a> (1 more image)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/37137/">Pub map</a><br /><a href="/pubreviews/37137/">Pub reviews (2)</a><br /><a href="/pubpictures/37137/">Pub pictures (2)</a><br /><a href="/core/pubaudit.php?id=37137" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Royal Oak, Attleborough, Nuneaton</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">The Square</span><br />
+<span class="region">Attleborough</span><br />
+
+<span class="town">Nuneaton</span><br />
+<span class="postcode">CV11 4JY</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/attleborough/warwickshire/">Attleborough</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Royal Oak  <span class="h2note">(Average Rating: <span id="averagerating"><b>8</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review80826" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Soup+Dragon">Soup Dragon</a> left this review about The Royal Oak</h6>
+<p class="old">A little, detached Victorian GBG pub, with patio area at the front and deceptively nice garden at the back. Sadly, the exterior of the pub has been rendered in cream and has modern, unsympathetic windows, but hey, keeps you warmer in winter. The pub has a bar room at the front and a the passage that leads to the raised lounge area appears to have once been a snug (maybe an outdoor later. The raised lounge is, as Will states, served by a hatch that makes you feel like Zeus looking-down from Olympus at the people in the bar! The bar has a few mounted footy shirts and is in cream and red. The lounge is in the traditional cream and wood walls and ceiling and has red bench seats. There are a few bottles and general bits of ephemera dotted about and a few general pictures on the walls. There was a small fireplace and an incongruous TV with golf on, as wellas there being no music. The service was very friendly and the clientele was leaning to the mature. Beer; usual tap stuff with GK IPA, Abbot, Spekky Hen, Tim Taylor (also ran dry!) and a good pint of Bass. A reall nice pub, with a more traditional interior than exterior. Nip in, you wont regret it.</p>
+<p class="Reviewer">On 19<sup>th</sup> March 2014 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 3053 recommendations about 3048 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review80449" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=sheffield+hatter">Will Larter</a> left this review about The Royal Oak</h6>
+<p class="old">A very friendly and welcoming village local, with half a dozen hand pumps. These are arrayed along the bar in the front room, and there is also a drinking corridor leading to a raised back room which has a serving hatch. It was very busy on our Saturday lunchtime visit, but we felt at home straight away, to the extent that we returned after Luton&#039;s game at the nearby Liberty Way stadium to have one for the road. The atmosphere remained convivial, with only the occasional polite request to move out of the way when I inadvertently blocked anyone&#039;s view of the rugby on the TV. The beer quality was excellent: I had Bass before the game and was looking forward to Timothy Taylors Landlord after, but the barrel had been drunk dry. Other beers seen on the bar were Greene King Old Speckled Hen and IPA, so nothing special in terms of variety and choice, but for quality and atmosphere this pub is unrivalled in the area.</p>
+<p class="Reviewer">On 6<sup>th</sup> March 2014 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 2309 recommendations about 2199 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Royal Oak</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+</div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/37137/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=realalefan">Paul Brett</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.51361575897190, -1.45562410354614], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.51361575897190, -1.45562410354614]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Nuneaton, 1.23 miles, 23 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Bermuda Park, 1.43 miles, 27 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Bedworth, 3.24 miles, 1 hr 2 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ypo_Ifh{GLJK|A?x@DfCK@_@w@IRN^[n@Ks@s@`@GLAPPbBc@N_BXuBA_@EQIKXg@h@{BvAc@N{@XgFJo@RQLuA`BwArB{EhIISeEyEMAkJ`Fg@RMqAsBfBw@x@IJKvAQ^FRQDKCM\\k@|@m@j@mAx@QIQHa@m@_CjECIf@}@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ypo_Ifh{GLJJ@TIJO`@w@j@aBjBfCP\\^lALjAN`D`@`A\\c@v@q@h@]f@c@J\\~Au@|@HfBY\\Hh@~Dx@|GLCPFHLFVlAW`CkA~AhLVMrAE|CF`@Fh@EN`C@~@HnACLUH|B|ZlC}@dAh@?b@NUVRhAxCJ~AQbBa@~Bd@pCh@~DHpCCzD', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ypo_Ifh{GLJJ@TIJO`@w@j@aBhA_ERLRBvCk@f@OjBItCZLFHSLELFHPFt@AJTBJC~EcChBk@bAUrBSfCQbDi@h@KPI^AbA]vEmBpAo@TS\\AjIyDdAm@Vk@DQHKHq@AoB~@KhBeCRLHRPCnDl@`CXdBLV?j@QbGcCjAY`AClAHBXFCF^r@`CzAnDRdAN~ACfAQzCFj@HVXl@j@f@\\Hl@Dd@Hb@R`@TPPTHlAlCbBdDb@jATlAVz@APDd@|BdM^`BHz@HJ@CAGTO|@mBTr@hAlGdCmBhD~PBAJD@HETv@vDjDmCr@Un@Ef@Bb@Tj@`@X^p@pAPb@jBrHrDcBJRHBPInAzClA}AzAw@d@Yv@m@d@SZG^FTNVX^p@XjANpAFLJBrASj@@PjFFRJBZEf@UNO`ABG`BcBb@?DF?', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.51361575897190,-1.45562410354614], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=37137">View all updates for The Royal Oak, Nuneaton</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        19<span class="sup">th</span> Mar 2014, 14:48
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Soup+Dragon">Soup Dragon</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        6<span class="sup">th</span> Mar 2014, 12:12
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=sheffield+hatter">Will Larter</a> amended by <a rel="nofollow" href="/userinfo.php?name=sheffield+hatter">Will Larter</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11837137">No</span> <span id="discdetail11837137" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2018 by ROB Camra</span></li><li>Beer Festivals : <span id="fac11737137">No</span> <span id="discdetail11737137" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2018 by ROB Camra</span></li><li>Beer Garden : <span id="fac11437137">Yes</span> <span id="discdetail11437137" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2018 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10237137">No</span> <span id="discdetail10237137" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2018 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11037137">Yes</span> <span id="discdetail11037137" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2018 by ROB Camra</span></li><li>Micropub : <span id="fac12237137">No</span> <span id="discdetail12237137" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2018 by ROB Camra</span></li><li>Real Ale : <span id="fac10137137">Yes</span> <span id="discdetail10137137" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2018 by ROB Camra</span></li><li>Real Cider : <span id="fac11937137">No</span> <span id="discdetail11937137" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2018 by ROB Camra</span></li><li>WiFi : <span id="fac11537137">Yes</span> <span id="discdetail11537137" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 May 2018 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81512/" class="List1">The Wine Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/37094/" class="List1">The Fox Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/37069/" class="List1">Attleborough Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81511/" class="List1">The Fuzzy Duck</a></li>
+                    <li><img src="/images/icon-photo-grey.gif" alt="Pub has no pictures" title="Pub has no pictures" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/37080/" class="List1">Toby Carvery Cedar Tree at Nuneaton</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81500/" class="List1">Crows Nest</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/37091/" class="List1">Arches</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/37124/" class="List1">Popworld</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Magpie pub in Bishopsgate, EC2, London (Central), EC2M 4TP : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Magpie" />
+  <meta name="keywords" content="The Magpie, 12  New Street, EC2, London (Central), Bishopsgate, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Magpie in EC2" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/23001_23500/23430_9bdab972.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/23430/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.51711536990883" />
+<meta property="og:longitude" content="-0.07898569107056" />
+<meta property="og:street-address" content="12  New Street" />
+<meta property="og:locality" content="EC2" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="EC2M 4TP" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Magpie in EC2? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Magpie the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/23430/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Magpie in EC2" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Magpie " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/23001_23500/23430_9bdab972.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/23430/" />
+<meta name="geo.position" content="51.51711536990883;-0.07898569107056" />
+<meta name="geo.placename" content="The Magpie in EC2" />
+<meta name="geo.region" content="UK" />
+<title>The Magpie in Bishopsgate, EC2 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":23430},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(23430);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 23430;var pubaddress = "12  New Street";var pubname = "The Magpie";var pubpostcode = "EC2M 4TP";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/ec2/central-london/" title="Pubs Galore : EC2 Page">EC2</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Magpie Page">The Magpie Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="roqs62sf5o3n8b6h10tiv01un5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/23430/" class="indisplay"><img src="/images/display/23001_23500/23430_9bdab972.jpg?w=2" alt="Picture of The Magpie" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
+  Submitted on Sunday, 5<sup>th</sup> November 2017<br />
+  With picture contributions to 24007 other pubs<br />
+<a href="/pubpictures/23430/" class="smallbutton">View all this pub's pictures</a> (14 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/23430/">Pub map</a><br /><a href="/pubreviews/23430/">Pub reviews (13)</a><br /><a href="/pubpictures/23430/">Pub pictures (15)</a><br /><a href="/core/pubaudit.php?id=23430" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Magpie, Bishopsgate, EC2</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">12  New Street</span><br />
+
+
+<span class="town">EC2</span><br />
+<span class="postcode">EC2M 4TP</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02079293889</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Nicholsons (Mitchells & Butlers)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/bishopsgate/central-london/">Bishopsgate</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Magpie  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review126144" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about The Magpie</h6>
+<p class="old">A Nicholson&#039;s house, and like most City pubs either heaving or totally deserted depending on the time of day.  Not much seating in the &#039;L&#039;-shaped bar with dark traditional and decor, with most space required for &#039;vertical drinking&#039; during the busy periods.  Efficient staff.  Nicholson&#039;s.  Nine of ten handpumps in operation on this visit, with real ales including NPA, Pride, Hobsons Champion Mild, Trawlerboys Best Bitter from Green Jack Brewery, IVB Pride of the Valley and Robinson&#039;s Trooper (&pound;4.85).</p>
+<p class="Reviewer">On 28<sup>th</sup> January 2018 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review109907" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> left this review about The Magpie</h6>
+<p class="old">An atmospheric little lane close to Liverpool Street Station and fairly typical of the Nicholson&#039;s brand with bare boards, lots of dark wood panelling and a fairly large and eclectic ale selection, much reduced since previous reviews.<br />
+Heritage has given way to a marble/granite bar top which looks like it belongs in a kitchen and unfortunately, there&#039;s a games machine. There&#039;s a dining room upstairs and muted music played.<br />
+What really lets the formula down though was the prevalence of some locals who swore to point that one could be forgiven for thinking that one had stumbled into a dockers&#039; pub in E14; rarely have I heard such awful language - there&#039;s no way I&#039;d come here on a date.<br />
+Ales: Nicholson&#039;s Bitter, Sharp&#039;s Doom Bar, a reversed clip, St. Austell&#039;s Cornish Best and Exmoor&#039;s Silver Stallion at just &pound;2.15 a half and a decent drop too.<br />
+This isn&#039;t a bad pub but I won&#039;t be returning until the foul-mouthed dross is expelled, otherwise I&#039;d have given the place at least another point.</p>
+<p class="Reviewer">On 19<sup>th</sup> August 2016 
+  - rating: <b>3</b><br />
+  <span class="leftspace">[User has posted 874 recommendations about 860 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review100965" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Maldenman">Malden man</a> left this review about The Magpie</h6>
+<p class="old">This is a fairly compact L-shaped Nicholson&#039;s establishment situated at the end of a lane opposite Liverpool Street station. Wood panelled walls, a fireplace to one side and a backlit shelving arrangement in a cabinet featuring books, glasses and gin bottles. Otherwise decor consists of a large Nicholson&#039;s mirror plus the usual B&amp;W photos of the area in yesteryear. A framed display explains that the pub is on the site of a former ambulance station which featured an electric ambulance.<br />
+There are nine handpumps here, in two banks on each side of the central L-shaped bar, Saturday had a choice of Brain&#039;s Rev James plus Bread of Heaven, Truman&#039;s Runner, Doom Bar, Deucher&#039;s IPA, Great Heck Cleaveland Brown (&pound;4.15), Ilkley Rosa Ostara, Hobgoblin and Nicholson&#039;s Pale Ale. Service was friendly and I was offered a taster when I turned my nose up at the Rosa Ostara which is brewed with rose petals.<br />
+A very nice pub on a quiet Saturday afternoon, I doubt it is the same place post work in the week. Seating mainly at high tables and ledges but the place is small and I suppose they need to maximise the space. There is apparently another area upstairs but this was not immediately obvious.</p>
+<p class="Reviewer">On 1<sup>st</sup> November 2015 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1678 recommendations about 1655 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/23430/">View more reviews of The Magpie (13)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Magpie</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Randomness Guide to London - <a href="http://london.randomness.org.uk/wiki.cgi?Magpie,_EC2M_4TP" title="Submitted by:- Kake Pugh" target="_blank">Magpie entry</a></li>
+			<li>Official pages of the Magpie, contains menus and cask ale details - <a href="http://www.nicholsonspubs.co.uk/themagpiebishopsgatelondon/" title="Submitted by:- hondo ." target="_blank">www.nicholsonspubs.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="1426780304247038">Facebook - <a href="https://www.facebook.com/The-Magpie-1426780304247038/" target="_blank" rel="nofollow">The Magpie</a></li></ul><ul id="Custom2"><li class="twitlink" id="260420018">Twitter - <a href="https://twitter.com/Walrus_Monument" target="_blank" rel="nofollow">Walrus & Carpenter</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/23430/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Strongers">Steve C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.51711536990883, -0.07898569107056], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.51711536990883, -0.07898569107056]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> London Liverpool Street, 0.17 miles, 3 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> London Fenchurch Street, 0.53 miles, 10 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Moorgate, 0.54 miles, 10 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('w|lyH|kNVNcAfEi@bBMMG\\GrAKr@AAEZIESbBGCOI', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('w|lyH|kNVNBYHi@n@^@Gt@d@j@}AB@FQfBpCdCuErAqC\\w@pBgCPz@NMLJDNbAOjBEr@LTHn@f@pApAH@f@OBWDAMhA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('w|lyH|kNVNcAfEi@bBMMG\\TTcAbIJDBJ?B?DD@Gb@B@CRZNAFj@Zo@`HTXCJFJ]jEM?QFYRMZKh@Cb@QGEh@BdAP~@NXLJYdD_Aa@MbAB@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.51711536990883,-0.07898569107056], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=23430">View all updates for The Magpie, EC2</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        19<span class="sup">th</span> Nov 2018, 23:33
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        19<span class="sup">th</span> Nov 2018, 23:33
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11823430">No</span> <span id="discdetail11823430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2014 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10723430">No</span> <span id="discdetail10723430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2014 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11423430">No</span> <span id="discdetail11423430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2014 by Pub SignMan</span></li><li>Car Park : <span id="fac11323430">No</span> <span id="discdetail11323430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2014 by Pub SignMan</span></li><li>Darts : <span id="fac11123430">No</span> <span id="discdetail11123430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2014 by Pub SignMan</span></li><li>Hot Food : <span id="fac10323430">Yes</span> <span id="discdetail10323430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 October 2015 by hondo .</span></li><li>Jukebox : <span id="fac11223430">No</span> <span id="discdetail11223430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2014 by Pub SignMan</span></li><li>Karaoke : <span id="fac10623430">No</span> <span id="discdetail10623430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2016 by Tris C</span></li><li>Live Music : <span id="fac10823430">No</span> <span id="discdetail10823430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2016 by Tris C</span></li><li>Micropub : <span id="fac12223430">No</span> <span id="discdetail12223430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2016 by Tris C</span></li><li>Pinball : <span id="fac11623430">No</span> <span id="discdetail11623430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2014 by Pub SignMan</span></li><li>Pool Table : <span id="fac10423430">No</span> <span id="discdetail10423430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2014 by Pub SignMan</span></li><li>Real Ale : <span id="fac10123430">Yes</span> <span id="discdetail10123430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 October 2015 by hondo .</span></li><li>Real Cider : <span id="fac11923430">Yes</span> <span id="discdetail11923430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2014 by Pub SignMan</span></li><li>Wheelchair Access : <span id="fac12023430">No</span>  - <span id="discdetail12023430" class="discdetail" style="">Women&#039;s WCs upstairs.</span> -   <span class="Reviewer">last updated 19 August 2016 by Tris C</span></li><li>WiFi : <span id="fac11523430">Yes</span> <span id="discdetail11523430" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 October 2015 by hondo .</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>Closed</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>11am - Midnight</td></tr>
+<tr><td>Thursday</td><td>11am - Midnight</td></tr>
+<tr><td>Friday</td><td>11am - Midnight</td></tr>
+<tr><td>Saturday</td><td>12noon - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 21 picture(s)" title="Pub has 21 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 6 reviewer(s)" title="Pub has average rating of 6 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54159/" class="List1">The Astronomer</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 4 reviewer(s)" title="Pub has average rating of 6.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84041/" class="List1">Pitt Cue</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86394/" class="List1">London Cocktail Club</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85859/" class="List1">Anise</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 32 picture(s)" title="Pub has 32 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 11 reviewer(s)" title="Pub has average rating of 5.5 from 11 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23412/" class="List1">Dirty Dicks</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66331/" class="List1">Devonshire Terrace</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85628/" class="List1">Old Bengal Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 34 picture(s)" title="Pub has 34 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 18 recommendation(s)" title="Pub has 18recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 16 reviewer(s)" title="Pub has average rating of 6.5 from 16 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23453/" class="List1">Woodins Shades</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

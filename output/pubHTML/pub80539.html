@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Stable pub in Bristol, Bristol (County), BS1 5UH : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Stable" />
+  <meta name="keywords" content="The Stable, The Waterfront, Canons Road, Bristol, Bristol (County), Bristol Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Stable in Bristol" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/80501_81000/80539_23ce3f56.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/80539/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.45153150000000" />
+<meta property="og:longitude" content="-2.59809760000000" />
+<meta property="og:street-address" content="The Waterfront, Canons Road" />
+<meta property="og:locality" content="Bristol" />
+<meta property="og:region" content="Bristol (County)" />
+<meta property="og:postal-code" content="BS1 5UH" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Stable in Bristol? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Stable the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/80539/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Stable in Bristol" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Stable " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/80501_81000/80539_23ce3f56.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/80539/" />
+<meta name="geo.position" content="51.45153150000000;-2.59809760000000" />
+<meta name="geo.placename" content="The Stable in Bristol" />
+<meta name="geo.region" content="UK" />
+<title>The Stable in Bristol : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":80539},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(80539);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 80539;var pubaddress = "The Waterfront, Canons Road";var pubname = "The Stable";var pubpostcode = "BS1 5UH";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/bristol/" title="Pubs Galore : Bristol (County) Page">Bristol (County)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/bristol/bristol/" title="Pubs Galore : Bristol Page">Bristol</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Stable Page">The Stable Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="fplkig99fqaltr64639n7i45a1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/80539/" class="indisplay"><img src="/images/display/80501_81000/80539_23ce3f56.jpg?w=2" alt="Picture of The Stable" /></a><br />  Image posted by <a href="/userinfo.php?name=Perry" class="indisplay">Graham Mason</a><br />
+  Submitted on Monday, 1<sup>st</sup> September 2014<br />
+  With picture contributions to 11805 other pubs<br />
+<a href="/pubpictures/80539/" class="smallbutton">View all this pub's pictures</a> (11 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/80539/">Pub map</a><br /><a href="/pubreviews/80539/">Pub reviews (2)</a><br /><a href="/pubpictures/80539/">Pub pictures (12)</a><br /><a href="/core/pubaudit.php?id=80539" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Stable, Bristol Central, Bristol</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=Blackthorn">Blackthorn _</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">The Waterfront, Canons Road</span><br />
+
+
+<span class="town">Bristol</span><br />
+<span class="postcode">BS1 5UH</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/bristol-central/bristol/">Bristol Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Stable</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/_TheStable" target="_blank"><img src="https://pbs.twimg.com/profile_images/1098706299540385792/3WIZ1esw_normal.jpg" alt="The Stable" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/_TheStable" target="_blank">The Stable</a></strong>
+We&rsquo;ve been experimenting
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/_TheStable/status/1138473695398309888">4:50 PM Jun 11th</a> from <a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/_TheStable" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/_TheStable" target="_blank">The Stable</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Stable  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review89897" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Stable</h6>
+<p class="old">Part of a small chain of bars specialising in cider, pizza and pies, this place opened in the summer of 2013 in one of the prime Harbourside units, making it an inevitably popular weekend destination. The place operates more as a restaurant, so is best avoided by drinkers at peak dining times, but the range of ciders make it an interesting prospect if you can time your visit well. You enter to the right side of the unit, passing a large cart wheel to emerge into a large room with an open kitchen to the right and the servery along the rear wall. Long canteen style benches are arranged in formal rows through the main body of the room, creating a somewhat chaotic and messy environment as staff tried to get to vacated spots to clear the tables. The d&eacute;cor is pretty dull, with a tiled floor and lots of exposed pipes running around the ceiling - nothing you haven&#039;t seen hundreds of times before. Over to the left there is a raised seating area with slightly comfier looking seating and the room extends a little to the rear here, where it might be possible to bag a relatively peaceful spot. The large windows at the front allow you to enjoy watching the crowds pass by, but there is plenty of people watching to be done inside, with large groups stuffing their faces with pizza and pie, creating a raucous environment on our Saturday evening visit. A few picnic benches are available outside, should the weather permit al-fresco drinking.<br />
+The raison d&#039;etre here is the cider, which comes in plentiful supply. The bar back has a series of cubby holes into which numerous boxes of cider are stored, with plenty more available on handpull or keg tap. A board behind the bar listed 20 different cider options in all, but with the keg and bottle options I suspect that was just the tip of the proverbial iceberg. A few bottled beers were available alongside on real ale - a house beer from St Austell called Stable Drop Pale Ale. I sampled this but found it in pretty terrible shape, presumably the result of low turnover. We tried some cider as well and thankfully it was much better.<br />
+This is an interesting concept for a chain and may have just caught the current wave of enthusiasm for &#039;real&#039; cider at just the right time, although I guess it&#039;s always been pretty popular in these parts. The location is a mixed blessing and means it&#039;s best avoided at the weekend but I imagine the place will do very well and it makes an interesting &#039;alternative&#039; to consider.</p>
+<p class="Reviewer">On 13<sup>th</sup> December 2014 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review72667" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about The Stable</h6>
+<p class="old">A new addition to Bristol&rsquo;s waterfront in a building that at one time housed the Chicago Rock cafe, this is now a Pizza/Pies/Cider venue according to it&rsquo;s strapline, although going on the choice of cider offered I think Cider/Pizza/Pies would be more appropriate. <br />
+<br />
+It&rsquo;s a large, open bar with bi-folding glass doors all along the front giving good views across the water, and there are also a few benches out on the quay side. Seating is mostly chunky wood canteen style tables with church candles on and in addition to this there were a couple of red leather benches on a raised area to the left and a few old beer barrels dotted around  that you could rest your pint on. The open kitchen is on the right where you can see the chefs hard at work. At the back is an exposed brick wall giving a somewhat rustic feels to the place whilst the flooring is small orange tiles.<br />
+<br />
+The food offering as previously mentioned consists mostly of pizzas and pies and there were menus on all the tables as well as options chalked up on numerous large blackboards. Most of the pizzas looked to be around the &pound;10 mark with many of the choices being somewhat more unusual than the ubiquitous Meat Feasts and such like and had local names such as Avonmouth Angler and Portishead Piggy. We enjoyed what we had and would happily return, although whether I would want to go as far as a pizza for pudding (hazelnut, chocolate and mascarpone) I&rsquo;m not entirely sure.    <br />
+<br />
+Ciders are the real star of the show here though, and the menu proudly proclaims that there are 60+ available. Over half of these are on draught or bag in box which means that they have a far better selection than established cider house such as The Apple and The Orchard. It will be interesting to see if this range is maintained. Ciders on draught were Symonds Founders Reserve, Dorset Draft and Dorset Dabinett from the Purbeck Cider Company, Thatcher&rsquo;s Copper Press, Weston&rsquo;s Old Rosie, Sandford&rsquo;s Devon Red, Lilley&rsquo;s Fire Dancer and Bee Sting Pear cider. In addition to this there were 26 (yes, twenty six!) boxes racked up behind the bar and numerous bottles as well. If cider&rsquo;s not your thing, there was also St. Austell&rsquo;s Proper Job for the beer drinkers.<br />
+<br />
+All in all this seems to be a welcome and interesting addition to Bristol&rsquo;s bar scene and well worth a visit.</p>
+<p class="Reviewer">On 24<sup>th</sup> July 2013 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Stable</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Stable - <a href="http://stablepizza.com/locations/the-stable-bristol/" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">stablepizza.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="271852923860">Facebook - <a href="https://www.facebook.com/StableRestaurants/" target="_blank" rel="nofollow">The Stable</a></li></ul><ul id="Custom2"><li class="twitlink" id="90627678">Twitter - <a href="https://twitter.com/_TheStable" target="_blank" rel="nofollow">The Stable</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/80539/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Blackthorn">Blackthorn _</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.45153150000000, -2.59809760000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.45153150000000, -2.59809760000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Bristol Temple Meads, 1.01 miles, 19 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Bedminster, 1.2 miles, 23 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Clifton Down, 1.24 miles, 23 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('_c`yHtlzNfG`A@S^{BXwHb@gN?KLkED]b@kGHkDFa@QI@wAb@}LHkDGa@ROA_@FAPMRm@PY@uAMWR}BJ[Vo@IKL[Q[LYwBiGQMoA{DJ]Q[N_@vAd@p@L@u@[Ai@K', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('_c`yHtlzNfG`A@S^{B@YtD\\HsBAm@nBMZ@JFdA@tArFvAhGx@e@xBh@@OzBx@TmBBY|@HFCDMFqBBSLWx@KNOGQK_D@mBT?HYp@`@zCl@f@@XCb@s@RMvAsCHHL?XWbA}@d@Sl@A^Jb@XDCvCUFQNLHNf@qAS}@Si@g@Xq@sBEDg@eB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('_c`yHtlzNa@EEbBHFCNk@[SCSBOJUb@?l@C^Gj@O|@m@tBWr@a@x@sOrTIFY`@Sb@[|Ck@jCeC|GqAtC[f@{@v@k@NYBMF{PkAu@AkBTCHKBEE}HxB}EzAVhALz@?@GDZrCEDAO', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.45153150000000,-2.59809760000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=80539">View all updates for The Stable, Bristol</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        13<span class="sup">th</span> Jan 2017, 21:42
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        13<span class="sup">th</span> Jan 2017, 21:42
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a>
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11880539">No</span> <span id="discdetail11880539" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 December 2014 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10780539">No</span> <span id="discdetail10780539" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 July 2013 by Blackthorn _</span></li><li>Beer Garden : <span id="fac11480539">Yes</span> <span id="discdetail11480539" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 December 2014 by Pub SignMan</span></li><li>Car Park : <span id="fac11380539">No</span> <span id="discdetail11380539" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 July 2013 by Blackthorn _</span></li><li>Child Friendly : <span id="fac12180539">Yes</span> <span id="discdetail12180539" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 December 2014 by Pub SignMan</span></li><li>Darts : <span id="fac11180539">No</span> <span id="discdetail11180539" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 July 2013 by Blackthorn _</span></li><li>Dog Friendly : <span id="fac10580539">Yes</span> <span id="discdetail10580539" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 December 2014 by Pub SignMan</span></li><li>Hot Food : <span id="fac10380539">Yes</span> <span id="discdetail10380539" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 July 2013 by Blackthorn _</span></li><li>Jukebox : <span id="fac11280539">No</span> <span id="discdetail11280539" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 December 2014 by Pub SignMan</span></li><li>Micropub : <span id="fac12280539">No</span> <span id="discdetail12280539" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 March 2016 by Blackthorn _</span></li><li>Pinball : <span id="fac11680539">No</span> <span id="discdetail11680539" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 July 2013 by Blackthorn _</span></li><li>Pool Table : <span id="fac10480539">No</span> <span id="discdetail10480539" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 July 2013 by Blackthorn _</span></li><li>Real Ale : <span id="fac10180539">Yes</span> <span id="discdetail10180539" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 July 2013 by Blackthorn _</span></li><li>Real Cider : <span id="fac11980539">Yes</span> <span id="discdetail11980539" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 August 2013 by Blackthorn _</span></li><li>WiFi : <span id="fac11580539">Yes</span> <span id="discdetail11580539" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 December 2014 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/71196/" class="List1">Watershed</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54428/" class="List1">Mackenzies</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/71174/" class="List1">No. 1 Harbourside</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/80555/" class="List1">Under the Stars</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54431/" class="List1">BSB</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54434/" class="List1">Za Za Bazaar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 3 reviewer(s)" title="Pub has average rating of 6 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56791/" class="List1">Pitcher &amp; Piano</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 4 reviewer(s)" title="Pub has average rating of 6 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54712/" class="List1">Smoke &amp; Mirrors</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

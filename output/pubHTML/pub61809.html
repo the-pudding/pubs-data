@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Ashton pub in Long Ashton (near Bristol), Bristol (County), BS41 9LX : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Ashton" />
+  <meta name="keywords" content="The Ashton, Ashton Road, Long Ashton, Bristol, Bristol (County), , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Ashton in Long Ashton" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/61501_62000/61809_6c99553e.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/61809/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.43915630649855" />
+<meta property="og:longitude" content="-2.63507058895493" />
+<meta property="og:street-address" content="Ashton Road" />
+<meta property="og:locality" content="Long Ashton" />
+<meta property="og:region" content="Bristol (County)" />
+<meta property="og:postal-code" content="BS41 9LX" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Ashton in Long Ashton? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Ashton the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/61809/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Ashton in Long Ashton" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Ashton " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/61501_62000/61809_6c99553e.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/61809/" />
+<meta name="geo.position" content="51.43915630649855;-2.63507058895493" />
+<meta name="geo.placename" content="The Ashton in Long Ashton" />
+<meta name="geo.region" content="UK" />
+<title>The Ashton in Long Ashton (near Bristol) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":61809},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(61809);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 61809;var pubaddress = "Ashton Road";var pubname = "The Ashton";var pubpostcode = "BS41 9LX";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/bristol/" title="Pubs Galore : Somerset Page">Somerset</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/bristol/bristol/" title="Pubs Galore : Bristol Page">Bristol</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/long-ashton/somerset/" title="Pubs Galore : Long Ashton Page">Long Ashton</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Ashton Page">The Ashton Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="lhgnbccucdthd6b20gkua1t1e5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/61809/" class="indisplay"><img src="/images/display/61501_62000/61809_6c99553e.jpg?w=1" alt="Picture of The Ashton" /></a><br />  Image posted by <a href="/userinfo.php?name=bcfczuluarmy" class="indisplay">Jonathan Wilde</a><br />
+  Submitted on Wednesday, 29<sup>th</sup> April 2015<br />
+  With picture contributions to 3997 other pubs<br />
+<a href="/pubpictures/61809/" class="smallbutton">View all this pub's pictures</a> (17 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/61809/">Pub map</a><br /><a href="/pubreviews/61809/">Pub reviews (2)</a><br /><a href="/pubpictures/61809/">Pub pictures (18)</a><br /><a href="/core/pubaudit.php?id=61809" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Ashton, Bristol</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Ashton Road</span><br />
+
+<span class="town">Long Ashton</span><br />
+<span class="postaltown">Postal town: Bristol</span><br />
+<span class="postcode">BS41 9LX</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01275392245</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Premium Country Pubs (Mitchells & Butlers)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/long-ashton/somerset/">Long Ashton</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Ashton  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review110198" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about The Ashton</h6>
+<p class="old">Since my previous review, this pub has been completely gutted by a massive fire which left only the walls standing. It&rsquo;s now been open for a year or so after being rebuilt and renamed. First impressions are quite good and they&rsquo;ve clearly spent a bit of money on it with white gravel beds around the car park and a pleasant patio area with uplighters in the floor, decent patio furniture and a large cauldron that could perhaps be used for barbecues, although currently seemed to be more of a giant ashtray.<br />
+<br />
+Inside it is inevitably quite contemporary being a new build, but they&rsquo;ve done a decent job of it and thankfully avoided the current trend for the stripped back industrial look. It&rsquo;s a good size internally and a little more open plan than previously. To the left is a good sized room with floor to ceiling windows to make the most of the views over Ashton Court estate and a large, central free hanging chimney clad in wood with some sort of fire pit beneath. Flooring throughout the pub was tiling of one sort or another and included quarry, flagstones and slate among others. To the right of the bar counter was a glass display rack of spirit and champagne bottles. Down a couple of steps was a long room running along the front of the pub which was perhaps more intended for dining. A dual aspect fire-place was at one end of the room and the usual exposed filament light bulbs hung from the chunky pine ceiling. Some exposed stone walling ran along one side with wood panelling on the other. A smaller room was through an archway with a large brick fire-place and cast iron chimney hood.   <br />
+<br />
+The menu offered a good selection of dishes and included your usual pub grub options such as burger, fish &amp; chips, chicken &amp; ham pie, etc., as well as a few more adventurous dishes. Prices were perhaps a little more than your usual pub fare though, with most of the main courses being anywhere from around &pound;11 to &pound;20+. My prawn, crab and chorizo linguine was tasty enough if a little on the sweet side, but not really worth &pound;13.50.<br />
+<br />
+Beers on tap were Butcombe, Tribute and Ubu Purity, whilst the solitary cider was Mortimer&rsquo;s Orchard.</p>
+<p class="Reviewer">On 1<sup>st</sup> September 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review34789" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about The Dovecote</h6>
+<p class="old">Large food led pub right next to the Ashton Court estate. Lots of different areas, some more geared towards dining, but still space to sit and have a pint, including some comfy sofas and old leather armchairs. Also a conservatory and a patio/garden with a nice outlook.<br />
+<br />
+Although this is a chain, it somehow manages to pull off the local pub feel better than most chains do. It seems to be under new management, with several signs around saying that Sharon and her team welcome you to their pub. There&#039;s several interesting old pencil drawings of the locality, including Long Ashton as it was many years ago.  There&#039;s a &ldquo;fantastic new menu&rdquo; which whilst we didn&#039;t try it, looked quite reasonable; a good compromise between your very basic pub grub and being too restauranty. There was also a specials blackboard to tempt you as you went in.<br />
+<br />
+The name was changed a few years ago from The Smyth Arms which seemed a bit unnecessary, but there is a genuine dovecote next to the pub which was a nice touch. Barmaid was very friendly &ndash; I queried if they had any other ciders on draft, and whilst they didn&#039;t, she went to great lengths to tell me about a new one that they are due to get. Loos are a bit of a hike, it&#039;s like being in a Wetherspoons.<br />
+<br />
+Beers on this occasion were Brain&#039;s Rev. James, Tribute and Butcombe. A notice proclaimed the guest as being 6X, but I couldn&#039;t see any evidence of this on the bar. The solitary cider was Blackthorn.</p>
+<p class="Reviewer">On 16<sup>th</sup> May 2010 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Ashton</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Ashton - <a href="http://www.theashtonbristol.co.uk/" title="Submitted by:- Blackthorn _" target="_blank">www.theashtonbristol.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="141617702562599">Facebook - <a href="https://www.facebook.com/The-Dovecote-141617702562599/" target="_blank" rel="nofollow">The Dovecote</a></li></ul><ul id="Custom2"><li class="twitlink" id="1530995666">Twitter - <a href="https://twitter.com/TheDovecoteVI" target="_blank" rel="nofollow">The Dovecote</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/61809/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Blackthorn">Blackthorn _</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.43915630649855, -2.63507058895493], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.43915630649855, -2.63507058895493]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Parson Street, 1.63 miles, 31 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Bedminster, 2.21 miles, 42 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Clifton Down, 2.57 miles, 49 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('iu}xHbtaOOgCM{FAgB@wEOaBcDuKMCg@JIoAMk@Qg@O[]WIUAKBMh@w@C[]cBOSQq@o@e@@SAiBdBaABGFAAs@@Sf@_@DUt@i@dBwAxBuBj@u@Pk@tAkDZo@`@g@LCFKBWJSTWZG\\SXWdB_AZWo@cB^SDo@VcALWVYVQv@K|@[t@o@Xi@b@`@r@}CCQBSFKHCH@C[@c@P}BDMNG?u@b@yFLm@@Q@QIm@@eBFCJg@Z}@tAkCPk@NaAD_AM]p@wCJcAMQCM@S?i@IcAHSeA{DC_@L?@[FQf@k@Nf@@C^nA', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('iu}xHbtaOOgCM{FAgB@wEOaBcDuKMCg@JIoAMk@Qg@O[]WIUAKBMh@w@C[]cBOSQq@o@e@@SAiBdBaABGCqAIUEEYGGECIAQJqAAE\\_@GqCKiA@KMoBSC[qAKs@y@cCY{Ao@wAMID[AOSsAEIG?SJCw@Qu@eB{AGsA@w@CEHQEGCOIKGUA]?aADkBRqBb@yB^yATu@`AkC`@{@tA_CnDuHj@wAXgBB]PsF@qA?aBk@eHaBeMy@eFi@_EC]Ak@QQM[YkA|CsCk@wDfD_Cp@w@MiCIS`@s@Vq@QWNe@@Q?Yc@yEEUf@qAS}@Si@g@Xq@sBEDg@eB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('iu}xHbtaOOgCM{FAgB@wEOaBcDuKMCg@JIoAMk@Qg@O[]WIUAKBMh@w@C[]cBOSQq@o@e@JUDc@?e@_@_CQ?ELo@@aAAc@McDyBiG{Dq@g@gAeAkCsCKCwCgDGSIHU}BE]A}@@m@IIKi@YaDLISDsAQ@G_A]uBQ?HuAOcEgAWWOYEY?YMHG?GGI[Hu@k@CmAHMCUMQYi@{AoBqB?u@GKMHqAq@u@i@i@K_@@Ww@MO?XKCW[C]E@?PoBQcB@kBM{A[EI]h@k@s@MZSTSFuBIiB[eBk@yAy@QWU^IUWGkAFsFDiK}B]oAo@uC}EmQ}EzAVhALz@?@GDZrCEDAO', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.43915630649855,-2.63507058895493], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=61809">View all updates for The Ashton, Long Ashton</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> Dec 2017, 13:28
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> Dec 2017, 13:28
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11861809">No</span> <span id="discdetail11861809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li><li>Bar Billiards : <span id="fac10761809">No</span> <span id="discdetail10761809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li><li>Beer Garden : <span id="fac11461809">Yes</span> <span id="discdetail11461809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li><li>CAMRA Discount : <span id="fac10261809">No</span> <span id="discdetail10261809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li><li>Car Park : <span id="fac11361809">Yes</span> <span id="discdetail11361809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li><li>Child Friendly : <span id="fac12161809">Yes</span> <span id="discdetail12161809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li><li>Darts : <span id="fac11161809">No</span> <span id="discdetail11161809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li><li>Hot Food : <span id="fac10361809">Yes</span> <span id="discdetail10361809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Jukebox : <span id="fac11261809">No</span> <span id="discdetail11261809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li><li>Karaoke : <span id="fac10661809">No</span> <span id="discdetail10661809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li><li>Live Music : <span id="fac10861809">No</span> <span id="discdetail10861809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li><li>Live TV Sports : <span id="fac11061809">No</span> <span id="discdetail11061809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li><li>Micropub : <span id="fac12261809">No</span> <span id="discdetail12261809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li><li>Pinball : <span id="fac11661809">No</span> <span id="discdetail11661809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li><li>Pool Table : <span id="fac10461809">No</span> <span id="discdetail10461809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li><li>Quiz Night : <span id="fac10961809">No</span> <span id="discdetail10961809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li><li>Real Ale : <span id="fac10161809">Yes</span> <span id="discdetail10161809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Wheelchair Access : <span id="fac12061809">Yes</span> <span id="discdetail12061809" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li><li>WiFi : <span id="fac11561809">Yes</span>  - <span id="discdetail11561809" class="discdetail" style="">O2 Wi-Fi</span> -   <span class="Reviewer">last updated 07 March 2017 by Jonathan Wilde</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 1 reviewer(s)" title="Pub has average rating of 8 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/216/" class="List1">The Angel Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83327/" class="List1">Sports Bar &amp; Pizzeria</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

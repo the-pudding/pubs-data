@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Market Tavern pub in Tenbury Wells, Worcestershire, WR15 8BL : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Market Tavern" />
+  <meta name="keywords" content="The Market Tavern, Market Square, Tenbury Wells, Worcestershire, Tenbury Wells Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Market Tavern in Tenbury Wells" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/42001_42500/42369_a51b170e.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/42369/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.31050041335193" />
+<meta property="og:longitude" content="-2.59537355952455" />
+<meta property="og:street-address" content="Market Square" />
+<meta property="og:locality" content="Tenbury Wells" />
+<meta property="og:region" content="Worcestershire" />
+<meta property="og:postal-code" content="WR15 8BL" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Market Tavern in Tenbury Wells? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Market Tavern the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/42369/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Market Tavern in Tenbury Wells" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Market Tavern " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/42001_42500/42369_a51b170e.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/42369/" />
+<meta name="geo.position" content="52.31050041335193;-2.59537355952455" />
+<meta name="geo.placename" content="The Market Tavern in Tenbury Wells" />
+<meta name="geo.region" content="UK" />
+<title>The Market Tavern in Tenbury Wells : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":42369},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(42369);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 42369;var pubaddress = "Market Square";var pubname = "The Market Tavern";var pubpostcode = "WR15 8BL";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/worcestershire/" title="Pubs Galore : Worcestershire Page">Worcestershire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/tenbury-wells/worcestershire/" title="Pubs Galore : Tenbury Wells Page">Tenbury Wells</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Market Tavern Page">The Market Tavern Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="pkfcadf8m2igsti4jr6dhg4vm5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/42369/" class="indisplay"><img src="/images/display/42001_42500/42369_a51b170e.jpg?w=2" alt="Picture of The Market Tavern" /></a><br />  Image posted by <a href="/userinfo.php?name=sheffield+hatter" class="indisplay">Will Larter</a><br />
+  Submitted on Saturday, 5<sup>th</sup> August 2017<br />
+  With picture contributions to 8564 other pubs<br />
+<a href="/pubpictures/42369/" class="smallbutton">View all this pub's pictures</a> (2 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/42369/">Pub map</a><br /><a href="/pubreviews/42369/">Pub reviews (0)</a><br /><a href="/pubpictures/42369/">Pub pictures (3)</a><br /><a href="/core/pubaudit.php?id=42369" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Market Tavern, Tenbury Wells Central, Tenbury Wells</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Market Square</span><br />
+
+
+<span class="town">Tenbury Wells</span><br />
+<span class="postcode">WR15 8BL</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/tenbury-wells-central/worcestershire/">Tenbury Wells Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Market Tavern  <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div style="line-height:1.3;margin:5px 15px;text-align:center;"><b>Currently no reviews of this pub.</b><br />
+Be the first to write a recommendation on this pub and let everyone know why they should visit.</div>
+
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Market Tavern</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="115234945200056">Facebook - <a href="https://www.facebook.com/Market-Tavern-115234945200056/" target="_blank" rel="nofollow">Market Tavern</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/42369/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.31050041335193, -2.59537355952455], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.31050041335193, -2.59537355952455]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Ludlow, 8.24 miles, 2 hr 39 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Leominster, 9.58 miles, 3 hr 5 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Craven Arms, 16.27 miles, 5 hr 14 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('k{g~Ht{yNO[c@v@K`@w@f@qBz@C?c@o@MEyCA?s@BOFKVORSVc@CEEgAIyA_Dv@C?w@T?BsAZqA[[EOHIn@B@q@vFSh@wA~CiAzBO^I`@Ab@?l@JrBNtBT`BFZNb@^~@T`@FLAFPb@t@jF`@|B^dA`ArBb@xAv@lENp@~BpIFBt@dDfAfGr@|ETzB?PLnBHPZJh@pBPb@n@`AIRRXJXLRJn@HK@RC^Md@sDlDMDQCM`BqDf^IdB?xBB~@LjANbAl@bC~@vCvAnDx@bCNn@^rBj@hFYR_AxBa@f@gDxDgFhF{AjBMj@UdBMh@sAbEo@hBq@rCa@tCWzDMpCWjCUnBOvBAbCLtGM~ASpAcAlBu@vCo@rAcAlAgA~@a@nAIlAUlBk@d@wAPqB`@{Cx@iBpAeC`CsAl@eC@{@Jw@l@k@HeFsAeAAs@Ls@d@gHpGeAhAoChD[XoBvCyChFaGxLs@nCIr@Ar@Mr@k@pB{@zBmBbIMxF]bIm@fK{BfKaBvIo@fBo@tEiArG]`B_BlCkBzDk@z@kAdAgBvDcCzDgF|IiBdCqBrBqBfDwAj@w@b@{AnJoB`Kg@vDm@jIaAtEc@lAqCzBkCzAu@RGMmAzCoB|Dc@Zy@LqCTc@L[V}@bAkA`BaA~As@h@kAVaA@qAgAoAq@YFg@j@cAzAm@jAiAfCuAfCiB|B}BzBqA|@y@jAu@jAy@`AsFdKcBhDw@dDSjAKv@SBY]oAEwFb@cAG[j@i@lCi@Ik@@yGjAwAH_A?{AWmCj@cBR[RoB|A}@hA{AlCaAbC}BpG]p@cAzAkAzA}EhDWbAa@|Ba@`DO`BAx@@b@L|DW`E_@vEKbBm@OQMy@MKFCREp@y@xAgAgAI\\Yv@c@t@YX}Al@iA`Ag@n@Me@BA', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('k{g~Ht{yNb@~@VLVDjCR?~@Bt@NdDT`Bb@vBZdAj@pATXh@XXVh@~Bh@~ApCnDf@dAn@fBp@zAzDlHr@vBf@rBZ|BFx@PVpD~Hn@x@p@XJPFh@D|@DRLZLFlABzBf@fClHfAjFhAdEr@lAx@fF^@|Ac@Z@`GzLlA`Et@xDrD_@tHiBfGZl@Q`@a@rEuGlB{BvDeC`D}BR]`DsHbBzCdA`Bn@lA\\f@`@\\tAb@~AZh@Rl@^n@j@^l@|@lBX^zDrDp@|@l@~@|@vBZ`AHj@JxCFf@Cd@V~ATh@NNNDTd@t@dA\\n@Tz@JfADxBBbHH|A^|CbAvFb@pA~@pA|AlBbA~An@n@|Av@hI~FrD|E`@l@l@Zn@HlAQ|@An@Nd@^VbAFv@Cz@YxCW|BClABpAHjBLhAZtAzEjNdAvCpAbEf@nAl@~@pAhAp@~@hBfF~@|Cn@dBh@nBl@zDXfAvAfGj@vFVtBhAhFlAlI~@fF`AzCdAzBTr@z@hErDvHj@zAr@zDf@hBl@jBjAjCh@rBtBhGdA`B|BxDlHzNnDlNlAjC|@~B`Bn@tAPtBf@`GjAfHpE~CvChDfCdIrD`BxAl@rCp@tGInDTbEPjHP`FJ`Hp@vE|DpIn@jCvA~Ix@fDx@dC|@fExBhFZjAVC~@z@fBpB~BnDlAl@XTr@jAZZbCfAbFhC~Bl@z@d@dAb@JPTr@v@~EhAlGf@|Ed@bDDn@n@bEvD|Rv@nGZrCJr@SFVhCnBvOVdBh@|Bl@fBVn@jEfIzAbENlAMN@hAPpBAfCXxCD~@@lC\\|DRtAPx@tCtK|@hGAPNLANvCbCpBdCz@zB|BvHVdAFd@DTDHNDLPR`@nAhD\\w@x@^tBInGoBnJ{Bb@DlAMxAo@z@cAp@jB_@r@EBRjAIFMbCG^TX^c@zBi@Bm@CaC', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('k{g~Ht{yNO[c@v@K`@w@f@qBz@C?c@o@MEyCA?s@BOFKVORSVc@CEEgAIyA_Dv@C?w@T?BsAZqA[[EOHIn@B@q@vFIGWz@sAnC_AdBYp@Ih@Cr@Bz@YVoAf@cCp@M?IGsAaBSMY?MFBrGDz@V~D@rCG^]hAa@nBa@p@k@p@uAlCUVa@Zc@h@Yd@}FrKKT[zAQf@MDyDDiAF{@?s@Ki@?a@\\e@t@}@x@yApB}@bAa@jBsBvCsA`@}AdGe@fE_BpCoA|D{@nGy@nBSx@U~Dg@jBkAnAcEnCaAxAa@bBGtA?pKyA|A}Ah@kB~CqBv@yDv@r@xIl@hCL|F{BpITfH_FhIyA|DyB`Ds@~CTvMEfCMlDSlAu@\\q@l@_AJ{ACoANcAG]@g@x@y@|@{AtAg@RMPGt@NrFAPEVoAhCQl@M|@u@|DYl@q@ZeATYAm@[_BeAoAQmAAwBm@yD~CuDpJwGrU_FzHmA|B{CvGi@tE}@tDaCvC}AViIzJcFdEcBh@cAj@m@pCJFd@l@j@|ENv@b@|A^`Ir@C~@l@LPVjAx@v@\\B[|BTbJTbFzA~CiB~DeAxAe@lCMVIm@}A`AaGlBoOxFgAv@Uj@Mf@MvBU@eBdAe@NU@_@EMDoCzDsD~EOv@DlAqAxLEn@e@Ng@Te@^Yf@aApCkB~EaE`H}AtC@Dy@hB[jAYrB[pC?vA@tAXfEHtDEtA]~EKCCb@HxAFLBXCTAJOT]nAo@jJgG}Ac@C[DaBj@]ZiB|BmApBJ~BMvA}AtGM`BCfAYHyAzBeArAUn@Q`ASzAKpAm@dD]CUWMKiBsBOISCCl@m@vBo@|AoAjCSp@{CzKyAzFgBpGGb@E~AGlCAHOpDGEAhIJvM@dEKb@w@z@m@~@Jl@vAbDEVBvAHNAdBEx@MdAQ~@Wx@KTAn@DRIF_@|GKr@oAdG{A~I}@xDWrAq@|EYbAaAhCiAhCSl@Yj@KNMLq@FIDIAWRaBtDi@`AyBlDOPyAlAwCrCq@v@SH_Ep@YR_A^mAp@k@d@q@~@w@rAgBzB_BzBuB~CuEjIkBrCKZYlCc@OeE}@g@G{@RcB{@cBm@y@UF|@HzFE|@yB|KmDxNuB~F?`BEp@c@lB]v@yBnJ_@pBM^DN}CnNm@nD{BvKSb@gAzDe@`AgChEu@dBm@dB]hBQrAQxBw@xHm@rJOfBo@tD{@rEq@dEiArF}@jFUlAM`Aa@vF}@~QOfIG|GIhCGdAm@nFGzEe@pKUfCe@`D}@rDs@lBWrAs@dDiD~IoB|DwHhGaBvCiBbBiBlDuCtG}AzGMhAQhAk@nBeA`DAP?LFZdBxCHp@g@NgAj@g@`@g@h@m@t@iElHkClDoIxHq@p@yBpCaJdOyDbHwDfHq@bAqDyEuAVmFpCe@~@GfFKfBw@tDWx@GvALlCDxB]lA}BfCyBtAgNpHJv@s@p@gCzA}CnAcBReDXgFNaCd@eBb@iF~BeChBoBpB}EvGsCrCW}@kAfAoCj@iEdCmBbAwA\\SfAa@xA[X]f@Q@WMSBYf@Gh@i@Ta@t@Oj@m@YInBgAhDm@tCiBtA?RCDIBFbAFjDq@@{@VqAfAwDbEo@wBA@O_@Oq@kDr@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.31050041335193,-2.59537355952455], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=42369">View all updates for The Market Tavern, Tenbury Wells</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        5<span class="sup">th</span> Aug 2017, 19:47
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sheffield+hatter">Will Larter</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        5<span class="sup">th</span> Aug 2017, 19:47
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sheffield+hatter">Will Larter</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Real Ale : <span id="fac10142369">Yes</span> <span id="discdetail10142369" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 May 2014 by Dave McNally</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11am - 10pm</td></tr>
+<tr><td>Monday</td><td>Closed</td></tr>
+<tr><td>Tuesday</td><td>8am - 2pm</td></tr>
+<tr><td>Wednesday</td><td>8am - 2pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>8am - 2pm</td></tr>
+<tr><td>Friday</td><td>8am - 2pm</td></tr>
+<tr><td>Saturday</td><td>10am - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/42368/" class="List1">Kings Head Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/42377/" class="List1">The Vaults</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/71892/" class="List1">Crow Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/42371/" class="List1">Pembroke House</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/71893/" class="List1">Bridge Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/68041/" class="List1">The Rose &amp; Crown</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

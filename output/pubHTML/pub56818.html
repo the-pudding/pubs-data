@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Gig House pub in Wokingham, Berkshire, RG40 2LD : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Gig House" />
+  <meta name="keywords" content="The Gig House, 2 The Plaza, Denmark Street, Wokingham, Berkshire, Wokingham Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Gig House in Wokingham" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/56501_57000/56818_398fba4a.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/56818/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.40939220586824" />
+<meta property="og:longitude" content="-0.83603382110596" />
+<meta property="og:street-address" content="2 The Plaza, Denmark Street" />
+<meta property="og:locality" content="Wokingham" />
+<meta property="og:region" content="Berkshire" />
+<meta property="og:postal-code" content="RG40 2LD" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Gig House in Wokingham? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Gig House the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/56818/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Gig House in Wokingham" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Gig House " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/56501_57000/56818_398fba4a.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/56818/" />
+<meta name="geo.position" content="51.40939220586824;-0.83603382110596" />
+<meta name="geo.placename" content="The Gig House in Wokingham" />
+<meta name="geo.region" content="UK" />
+<title>The Gig House in Wokingham : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":56818},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(56818);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 56818;var pubaddress = "2 The Plaza, Denmark Street";var pubname = "The Gig House";var pubpostcode = "RG40 2LD";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/berkshire/" title="Pubs Galore : Berkshire Page">Berkshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/wokingham/berkshire/" title="Pubs Galore : Wokingham Page">Wokingham</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Gig House Page">The Gig House Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="u1f5tvqre5nnq5l4b2i8o3ogd7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/56818/" class="indisplay"><img src="/images/display/56501_57000/56818_398fba4a.jpg?w=2" alt="Picture of The Gig House" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
+  Submitted on Monday, 20<sup>th</sup> June 2016<br />
+  With picture contributions to 20227 other pubs<br />
+<a href="/pubpictures/56818/" class="smallbutton">View all this pub's pictures</a> (14 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/56818/">Pub map</a><br /><a href="/pubreviews/56818/">Pub reviews (4)</a><br /><a href="/pubpictures/56818/">Pub pictures (15)</a><br /><a href="/core/pubaudit.php?id=56818" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Gig House, Wokingham Town, Wokingham</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">2 The Plaza, Denmark Street</span><br />
+
+
+<span class="town">Wokingham</span><br />
+<span class="postcode">RG40 2LD</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01189123130</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Lloyds No. 1 (J D Wetherspoon)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/wokingham-town/berkshire/">Wokingham Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Gig House  <span class="h2note">(Average Rating: <span id="averagerating"><b>4&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review135753" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Gig House</h6>
+<p>No longer a Wetherspoons, apparently due to a rent hike for the complex. Now owned by Stonegate, who acquired a number of other Timbo cast-offs from recent years. Very little has changed here, and indeed you&rsquo;d be forgiven for thinking that you have walked into Giggles as was &ndash; except for the absolute dearth of customers, almost dead on our Friday afternoon visit. Three pumps all, clipped with Bond Brews. One of them turned out to be unavailable, the second was a rank liquid which was taken back and taken off. The final one - Best of British &ndash; had an aspiratored, zombie-like feel. The future looks bleak here, which is a shame.<br />
+<br />
+February 2015<br />
+New signage but no other changes. Six ales on though only two of any interest - if you&rsquo;re lucky. Hit and miss on the quality front, often violently so. Usual long wait at the bar, just one person on most times. Could be so much better with a bit of effort; and with Wokingham&#039;s pub scene so moribund they&#039;re missing an open goal. Rated 4<br />
+<br />
+May 2011<br />
+A Lloyds No.1 variant of Wetherspoons, this place always threatens to be a worthwhile visit but is often let down by inconsistent beer quality and availability. Usually busy during the day and early evening with the usual combo of mums with pushchairs and OAPs, both there to get some cheap food and beer. After getting busy for an hour around 7pm, it then tends to empty out in the evening as the hordes of young drinkers head towards the bright lights of Reading. As you enter you&#039;re staring at a huge uninterrupted floorspace - grab your beer and head over to the far end, where some more pleasant seating is to be found. In a small town rich with pubs, this one should only be the crawl list for a cheap dinner. Rated 4</p>
+<p class="Reviewer">On 1<sup>st</sup> November 2018 
+  - rating: <b>3</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review113585" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Mobyduck">moby duck</a> left this review about The Gig House (Lloyds No. 1)</h6>
+<p class="old">I had intended to stop in here for a breakfast before the mid-day cut off point with 15 minutes to spare, It soon became apparent after waiting 5 minutes with several people ahead of me I was pushing my luck, just one girl serving so not her fault but its the same old JDW problem.Beers on were GK IPA and Abbot,Loddon Hoppit and Hallabualo and Hogs Back TEA, so not very inspiring. The whole experience was rather poor.</p>
+<p class="Reviewer">On 9<sup>th</sup> December 2016 
+  - rating: <b>3</b><br />
+  <span class="leftspace">[User has posted 1202 recommendations about 1191 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review98319" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> left this review about The Gig House (Lloyds No. 1)</h6>
+<p class="old">The name of this pub has nothing to do with live bands but the fact that it is built on the site of and old brewery where &quot;gigs&quot; were stored that the dray horses pulled to deliver the beer. It opened in 2004, presumably just after the whole area had been built. Inside it&#039;s one large room with modern fittings that is rather dark. It&#039;s a Lloyds but there was no music playing. The pub was virtually deserted on my Friday afternoon visit so there was no problem getting served, if anything the staff were queuing to serve me!<br />
+There are only six hand pumps and three being taken up by the two GK beers and London Pride, this left just Wild Weather Big Muddy, Ringwood Old Thumper and Loddon Hullabaloo. The Big Muddy was a Manager&#039;s Special at &pound;1.99 but nevertheless I went for the Old Thumper (&pound;2.35), one I&#039;ve avoided since they watered it down. It was in first class condition. I suspect that I came here on one of it&#039;s good days as it was a lot better than I was expecting, but that doesn&#039;t detract from the dull modern decor and the limited choice of ales.</p>
+<p class="Reviewer">On 10<sup>th</sup> August 2015 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2121 recommendations about 2116 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/56818/">View more reviews of The Gig House (4)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Gig House</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official page of The Gig House - <a href="http://www.jdwetherspoon.co.uk/pubs/pub-details.php?PubNumber=5148" title="Submitted by:- elizabeth mcgraw" target="_blank">www.jdwetherspoon.co.uk</a></li>
+          </ul>
+</div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/56818/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.40939220586824, -0.83603382110596], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.40939220586824, -0.83603382110596]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=56818">View all updates for The Gig House, Wokingham</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        28<span class="sup">th</span> Dec 2018, 20:34
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> amended by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        16<span class="sup">th</span> Dec 2018, 17:52
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11856818">No</span> <span id="discdetail11856818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Bar Billiards : <span id="fac10756818">No</span> <span id="discdetail10756818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Beer Festivals : <span id="fac11756818">No</span> <span id="discdetail11756818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Beer Garden : <span id="fac11456818">No</span>  - <span id="discdetail11456818" class="discdetail" style="">Limited seating out front</span> -   <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10256818">No</span> <span id="discdetail10256818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Car Park : <span id="fac11356818">No</span> <span id="discdetail11356818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Child Friendly : <span id="fac12156818">Yes</span> <span id="discdetail12156818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Darts : <span id="fac11156818">No</span> <span id="discdetail11156818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Dog Friendly : <span id="fac10556818">No</span> <span id="discdetail10556818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Function Room : <span id="fac12356818">No</span> <span id="discdetail12356818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Hot Food : <span id="fac10356818">Yes</span> <span id="discdetail10356818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Jukebox : <span id="fac11256818">No</span> <span id="discdetail11256818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Karaoke : <span id="fac10656818">No</span> <span id="discdetail10656818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Live Music : <span id="fac10856818">No</span> <span id="discdetail10856818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Live TV Sports : <span id="fac11056818">No</span> <span id="discdetail11056818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Micropub : <span id="fac12256818">No</span> <span id="discdetail12256818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Pinball : <span id="fac11656818">No</span> <span id="discdetail11656818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Pool Table : <span id="fac10456818">No</span> <span id="discdetail10456818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Quiz Night : <span id="fac10956818">No</span> <span id="discdetail10956818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Real Ale : <span id="fac10156818">Yes</span> <span id="discdetail10156818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Real Cider : <span id="fac11956818">No</span> <span id="discdetail11956818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>Wheelchair Access : <span id="fac12056818">Yes</span> <span id="discdetail12056818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li><li>WiFi : <span id="fac11556818">Yes</span> <span id="discdetail11556818" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 December 2018 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1978/" class="List1">The Crispin</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 2 reviewer(s)" title="Pub has average rating of 3 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1984/" class="List1">The Raglan</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 3 reviewer(s)" title="Pub has average rating of 5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1992/" class="List1">Roebuck</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1981/" class="List1">The Dukes Head</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 3 reviewer(s)" title="Pub has average rating of 7 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/61663/" class="List1">Broad Street Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 2 reviewer(s)" title="Pub has average rating of 3 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1989/" class="List1">The Red Lion</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85847/" class="List1">Sedero Lounge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 4 reviewer(s)" title="Pub has average rating of 7 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1987/" class="List1">The Queens Head</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

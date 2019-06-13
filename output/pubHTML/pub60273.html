@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Woolpack pub in Beverley, East Riding of Yorkshire, HU17 8EN : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Woolpack" />
+  <meta name="keywords" content="The Woolpack, 37 Westwood Road, Beverley, East Riding of Yorkshire, Beverley Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Woolpack in Beverley" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/60001_60500/60273_c1bc0cc1.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/60273/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="53.84100859773126" />
+<meta property="og:longitude" content="-0.43743073940277" />
+<meta property="og:street-address" content="37 Westwood Road" />
+<meta property="og:locality" content="Beverley" />
+<meta property="og:region" content="East Riding of Yorkshire" />
+<meta property="og:postal-code" content="HU17 8EN" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Woolpack in Beverley? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Woolpack the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/60273/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Woolpack in Beverley" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Woolpack " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/60001_60500/60273_c1bc0cc1.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/60273/" />
+<meta name="geo.position" content="53.84100859773126;-0.43743073940277" />
+<meta name="geo.placename" content="The Woolpack in Beverley" />
+<meta name="geo.region" content="UK" />
+<title>The Woolpack in Beverley : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":60273},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(60273);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 60273;var pubaddress = "37 Westwood Road";var pubname = "The Woolpack";var pubpostcode = "HU17 8EN";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/east-riding-of-yorkshire/" title="Pubs Galore : East Riding of Yorkshire Page">East Riding of Yorkshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/beverley/east-riding-of-yorkshire/" title="Pubs Galore : Beverley Page">Beverley</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Woolpack Page">The Woolpack Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="81ourj6vdidr58aaomc6p5el00" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/60273/" class="indisplay"><img src="/images/display/60001_60500/60273_c1bc0cc1.jpg?w=2" alt="Picture of The Woolpack" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Monday, 27<sup>th</sup> August 2018<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/60273/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/60273/">Pub map</a><br /><a href="/pubreviews/60273/">Pub reviews (6)</a><br /><a href="/pubpictures/60273/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=60273" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Woolpack, Beverley Town, Beverley</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">37 Westwood Road</span><br />
+
+
+<span class="town">Beverley</span><br />
+<span class="postcode">HU17 8EN</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01482867095</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Tenanted (Marstons)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/beverley-town/east-riding-of-yorkshire/">Beverley Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Woolpack</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/Woolpack_inn" target="_blank"><img src="https://pbs.twimg.com/profile_images/378800000855221879/013ca2f68899dd03abbc2c090dbc067a_normal.jpeg" alt="The Woolpack" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/Woolpack_inn" target="_blank">The Woolpack</a></strong>
+We&#039;ve got plenty of spaces left for food today, call us on 01482 867095 and get booked in to cure them hangovers
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/Woolpack_inn/status/883984053732614144">10:39 AM Jul 9th 2017</a> from <a href="http://www.facebook.com/twitter" rel="nofollow">Facebook</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/Woolpack_inn" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/Woolpack_inn" target="_blank">The Woolpack</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Woolpack  <span class="h2note">(Average Rating: <span id="averagerating"><b>8</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review132458" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Woolpack</h6>
+<p class="old">A pleasant little pub in the picturesque backstreets of Beverley. The hanging baskets and wooden bench outside makes it look immediately inviting. Entering through a colourful stained glass door via a number of punters who had spilled out onto the pavement - it was absolutely rammed on my Sunday afternoon visit with diners, so much so I couldn&#039;t find a seat for ages and missed seeing the little snug. An upmarket country pub ambience, with traditional furniture and homely red and gold fabric bench seating. A Marstons pub with three of their expanded portfolio on (Jennings Cocker Hoop, Snecklifter and Thwaites Wainwright) alongside Pedigree, which bore no resemblance to those listed on the blackboard above the bar &ndash; the turnover of beer was pretty ferocious on my visit and there was almost no room to get to it to change the names. My half of Cocker Hoop was in very good shape. It&#039;s a good little stop but time your visit well, as I struggled to feel relaxed in the throng &ndash; I suspect my score of 7.5 would be higher otherwise.</p>
+<p class="Reviewer">On 1<sup>st</sup> April 2018 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review109619" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=sheffield+hatter">Will Larter</a> left this review about The Woolpack Inn</h6>
+<p class="old">Away from the town centre, Beverley has some pleasant back streets and this pleasant back street local. It&#039;s hard to tell how old the house is, and it is not clear how much of the interior is original, but I spent a relaxing half hour here. On the beer front, there&#039;s quite a choice, considering all the beers are from Marstons: four were Jennings beers - Sneck Lifter, Cocker Hoop, Bitter and Golden Best - the bitter had clearly gone off, but it was swiftly changed for the Golden Best, which was in good condition. The others were Banks&#039;s Sunbeam, Wychwood Hobgoblin and Marstons EPA. I assume it had been a busy afternoon, as there were more staff than customers - in fact, at one stage I was the only one. The bitter had only gone &quot;off&quot; because the barrel had been drunk dry, so they must be getting plenty of drinkers in at other times to keep seven hand pumps ticking over. Definitely worth the walk from the town centre.<br />
+<br />
+Date of visit: 31st July 2016</p>
+<p class="Reviewer">On 9<sup>th</sup> August 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2309 recommendations about 2199 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review105363" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a> left this review about The Woolpack Inn</h6>
+<p class="old">This pub is definitely worth the short walk from town. The pub consists of one main room, with a small bar on the right hand side. Also on the right of entry is a cosy snug with fireplace. The main room also has a fireplace and was lit on our visit. The main room is half carpeted and half timber flooring, the banquette was finished in a floral patterned fabric, which was very much in keeping with this country style pub. Six ales on handpump, so we went for the Ringwood Mauler which was in great shape.</p>
+<p class="Reviewer">On 4<sup>th</sup> April 2016 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 2750 recommendations about 2750 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/60273/">View more reviews of The Woolpack (6)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Woolpack</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="391679727571670">Facebook - <a href="https://www.facebook.com/The-Woolpack-Inn-at-Beverley-391679727571670/" target="_blank" rel="nofollow">The Woolpack Inn at Beverley</a></li></ul><ul id="Custom2"><li class="twitlink" id="1648401012">Twitter - <a href="https://twitter.com/Woolpack_inn" target="_blank" rel="nofollow">The Woolpack</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/60273/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=hondo">hondo .</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([53.84100859773126, -0.43743073940277], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([53.84100859773126, -0.43743073940277]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Beverley, 0.76 miles, 14 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Arram, 3.99 miles, 1 hr 17 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Cottingham, 5.75 miles, 1 hr 51 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('syrgIfmtAcBcHAQFQjAk@}@{GGGoAeINSuAeDFQ`@sALo@TaC`@oDQoE@[Jg@fA{CDWHm@FgBHo@RkAb@cAsBgD]}@JoBU{@Xi@ToAQAOJQ??B{AJ', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('syrgIfmtAcBcHAQWAm@TgBlAuFqOQZwAsD_@gBy@aCUUwBxBqBbCIOS@MPGT]TkDfFcCjCUNmCpAmG|Ba@JcBr@gA\\iCjAs@Vw@kFWXe@r@QHSEQKOm@K_A[AaA_@}Bi@{EiBuAYi@AIPIl@KMQKa@Gm@@YDELG@KMe@?QOo@AMT@JeAH]_@WCQkAU{@OWOOu@B?_EK?wJwXyBgHeCqHaDpDuCzCQb@eUJuBCI}AKu@G]SOq@iHgHQw@Gi@YmBYeGwBeBg@iD{A{@Gw@U}@U}@g@aAPyBr@gAGsBe@qBPmAb@y@T}@JgAT{LfJ}Ea@qBh@g@?_@eD_AqNa@_DQ}BYkCSEGTw@dAY`A{@zEc@pCc@|Ec@nIp@tCHGL@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('syrgIfmtAcBcHAQFQ|GgDrOiGJ]@c@fAV`@n@HBjB|A`ClAn@RdAB`ASjCw@pAy@Xm@BYDKFeA[{ETMAc@\\Y^UrAXh@_ANc@RU\\Mb@GPMZy@VSj@C`AZX]\\QfB`@^A~@c@Rk@`A]h@i@Pw@zBcCD_@pAwBzAmBdA}BxC{Eh@o@rBsBvBoDPShAHLEtAeCD?DMN[jDmCxIqHdBMZWAS@YHOTQ~B[hA]v@c@d@c@V_@Jc@J}HFyAp@gDPWf@Qf@^vApBd@nAbBhFv@lCjCvJTpAHZh@p@pBrLFj@JLL?x@a@hAUbAKrAGvAOnDWlDKf@Lx@h@bBdBTN^BjAEf@N`@^zBlDXTxE|ARJJ^Bl@BXPBTIf@^n@r@LTFf@Lf@VJ`ANj@?z@c@r@k@~AcBr@a@d@FVCp@g@XMj@l@Lc@l@_A`@e@XKfDrFr@rAvA~DVX~@q@f@s@~BaCn@]pAc@bBiCh@iA^a@n@a@T]Ha@?i@QgBAc@L]LQ`@Q\\W@WNBpBoAdG}EnBwAnBqAx@iAdJ~@jFzAzAj@`CbBtBzB`DdC~@x@PDXAnAeEnBqHb@gBXaBf@oDb@yABAb@wBZy@bA_APgAMu@Ei@KaDfAInDE@kATsCLoEAaLS{FtA[N[NuBF_BJo@Rm@h@u@Pj@RdANb@\\LB]`@DDDBe@@{BJqA@_@ASOm@rAsGHA?a@NO?]~AUpAk@r@I?NFC@R', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.84100859773126,-0.43743073940277], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=60273">View all updates for The Woolpack, Beverley</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        28<span class="sup">th</span> Aug 2018, 20:43
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        27<span class="sup">th</span> Aug 2018, 18:42
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11860273">No</span> <span id="discdetail11860273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>Bar Billiards : <span id="fac10760273">No</span> <span id="discdetail10760273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>Beer Festivals : <span id="fac11760273">No</span> <span id="discdetail11760273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>Beer Garden : <span id="fac11460273">No</span> <span id="discdetail11460273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10260273">No</span> <span id="discdetail10260273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>Car Park : <span id="fac11360273">No</span> <span id="discdetail11360273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>Dog Friendly : <span id="fac10560273">Yes</span> <span id="discdetail10560273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>Function Room : <span id="fac12360273">No</span> <span id="discdetail12360273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>Hot Food : <span id="fac10360273">Yes</span> <span id="discdetail10360273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>Jukebox : <span id="fac11260273">No</span> <span id="discdetail11260273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>Karaoke : <span id="fac10660273">No</span> <span id="discdetail10660273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>Live Music : <span id="fac10860273">No</span> <span id="discdetail10860273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>Live TV Sports : <span id="fac11060273">No</span> <span id="discdetail11060273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>Micropub : <span id="fac12260273">No</span> <span id="discdetail12260273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>Pinball : <span id="fac11660273">No</span> <span id="discdetail11660273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>Pool Table : <span id="fac10460273">No</span> <span id="discdetail10460273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>Real Ale : <span id="fac10160273">Yes</span> <span id="discdetail10160273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li><li>Real Cider : <span id="fac11960273">Yes</span> <span id="discdetail11960273" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2018 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/77147/" class="List1">The Beverley Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 1 reviewer(s)" title="Pub has average rating of 8 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62383/" class="List1">The Rose and Crown</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 3 reviewer(s)" title="Pub has average rating of 7 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/60269/" class="List1">Royal Standard Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/77148/" class="List1">Panizzi</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/80705/" class="List1">Lucia</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84353/" class="List1">Bird &amp; Beer</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 5 reviewer(s)" title="Pub has average rating of 6.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62373/" class="List1">The Cross Keys (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62371/" class="List1">The Beaver</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

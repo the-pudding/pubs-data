@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Globe pub in Dunstable, Bedfordshire, LU6 1LS : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Globe" />
+  <meta name="keywords" content="The Globe, 43  Winfield Street, Dunstable, Bedfordshire, Dunstable Town Centre, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Globe in Dunstable" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/1001_1500/1127_3ec87429.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/1127/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.88830581406172" />
+<meta property="og:longitude" content="-0.52674293518066" />
+<meta property="og:street-address" content="43  Winfield Street" />
+<meta property="og:locality" content="Dunstable" />
+<meta property="og:region" content="Bedfordshire" />
+<meta property="og:postal-code" content="LU6 1LS" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Globe in Dunstable? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Globe the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/1127/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Globe in Dunstable" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Globe " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/1001_1500/1127_3ec87429.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/1127/" />
+<meta name="geo.position" content="51.88830581406172;-0.52674293518066" />
+<meta name="geo.placename" content="The Globe in Dunstable" />
+<meta name="geo.region" content="UK" />
+<title>The Globe in Dunstable : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":1127},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(1127);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 1127;var pubaddress = "43  Winfield Street";var pubname = "The Globe";var pubpostcode = "LU6 1LS";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/bedfordshire/" title="Pubs Galore : Bedfordshire Page">Bedfordshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/dunstable/bedfordshire/" title="Pubs Galore : Dunstable Page">Dunstable</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Globe Page">The Globe Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="gau30qu17nsnbsbfoka1aklgn1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/1127/" class="indisplay"><img src="/images/display/1001_1500/1127_3ec87429.jpg?w=2" alt="Picture of The Globe" /></a><br />  Image posted by <a href="/userinfo.php?name=sheffield+hatter" class="indisplay">Will Larter</a><br />
+  Submitted on Tuesday, 18<sup>th</sup> March 2014<br />
+  With picture contributions to 8564 other pubs<br />
+<a href="/pubpictures/1127/" class="smallbutton">View all this pub's pictures</a> (13 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/1127/">Pub map</a><br /><a href="/pubreviews/1127/">Pub reviews (6)</a><br /><a href="/pubpictures/1127/">Pub pictures (14)</a><br /><a href="/core/pubaudit.php?id=1127" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Globe, Dunstable Town Centre, Dunstable</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">43  Winfield Street</span><br />
+
+
+<span class="town">Dunstable</span><br />
+<span class="postcode">LU6 1LS</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01582512300</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/dunstable-town-centre/bedfordshire/">Dunstable Town Centre</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Globe  <span class="h2note">(Average Rating: <span id="averagerating"><b>9</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review136953" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=gillhalfpint">Gill Smith</a> left this review about The Globe</h6>
+<p>Called into this 2019 Good Beer Guide pub, and what a sight along the bar with an array of cask beers. It is a B&amp;T pub and there were 3 of their beers on, plus Clearwater Mariners, Trumans Zephyr, Oxford Craft Beer (Shotover) Triploid, Brunswick Offilers Nut Brown, Bath Frosty Hare. Colchester Brass Monkey and Everards Tiger. It is a true locals pub too, and would be great to live close to.  Lovely atmosphere and good service for the 20 of us that turned up.  We sampled and enjoyed 5 of the beers on offer.</p>
+<p class="Reviewer">On 18<sup>th</sup> February 2019 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 1191 recommendations about 1117 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review111226" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Maldenman">Malden man</a> left this review about The Globe</h6>
+<p class="old">A rather unprepossessing looking place on approaching, situated on a backstreet corner and with the pub sign missing from its bracket although the Banks and Taylor signage give some clue as to what lies within. <br />
+Once inside there is an elongated L-shaped space with boarded flooring, a partially deep red ceiling, wainscoted walls and a front wood burning stove set in an old fireplace. The bar is in the front corner, stretching along to the side. At first you see three pumps but several more are to be found along the side offering an exceptional range. Yesterday found Everard&#039;s Tiger, Rockhopper Pale, from B&amp;T there were Little Sheff, Black Squirrel, Shefford Bitter and Shefford Pale Ale, additionally Evan Evans Jester, Batemans XXXB, Bude Summerleaze Golden Ale, something called Blazing Saddles, couldn&#039;t read the brewery plus a couple more I didn&#039;t record as well as a perry from Cornish Orchards and a cider. Milton Cyclops had appeared when we returned for a last one before the journey home. A very good line up indeed and most beers enjoyed by our group of four. One turned up vinegary but was changed without any fuss or question, always a good sign.<br />
+The bar has a huge number of CAMRA awards displayed above the gantry and throughout the pub high shelves display beer bottles and hundreds of pump clips. Shelves contain beer related books including various editions of the GBG.<br />
+There is a bit of a beaten up sofa down the far end but generally seating is traditional with cushioned benches and chairs at tables for four with some larger reclaimed dining tables too. Decor includes plenty of breweriana such as mirrors and old brewery advertisements, Fremlins, Bass, Greenalls amongst others. A shelf has a range of trophies with ironically placed clips beneath for the likes of Fosters, Guinness Extra Cold, John Smith&#039;s Smooth and more.<br />
+There is a usable dartboard right at the far end beyond a recessed area which may be a storage space or may be part of the pub, unsure on that one. An outdoor area to the rear remains unvisited. The gents&#039; facilities have framed short jokey phrases and ditties above the urinals.<br />
+Easily the best of the pubs we visited in Dunstable and certainly deserving of the title &quot;Destination Pub&quot;, do not miss this one if in town.</p>
+<p class="Reviewer">On 2<sup>nd</sup> October 2016 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 1678 recommendations about 1655 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review81025" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=sheffield+hatter">Will Larter</a> left this review about The Globe</h6>
+<p class="old">Impossible to fault this excellent pub with its great atmosphere, friendly service and stupendous beer selection. The d&eacute;cor is not the smartest, but it&#039;s in keeping with the informal feel of the place. There&#039;s ordinary pub furniture, supplemented by a slightly battered leather sofa and a few upturned barrels, bare floorboards and plenty of breweriana on the walls - I noted a Batemans map, a Wethered&#039;s mirror and a Simonds tin sign - and there&#039;s a huge collection of beer bottles on a high shelf that seems to run endlessly round the whole pub, and more used pump clips than you could count. The Banks &amp; Taylor beers are on the short side of the bar which is the first thing you see on entering, the guest ales being spread along the longer side. B&amp;T Shefford Bitter is just &pound;2.80 a pint and there are filled rolls available for just &pound;1. A good friend of mine died last year and we held his wake in the Globe - a fitting send off that he would have heartily approved.</p>
+<p class="Reviewer">On 23<sup>rd</sup> March 2014 
+  - rating: <b>10</b><br />
+  <span class="leftspace">[User has posted 2309 recommendations about 2199 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/1127/">View more reviews of The Globe (6)</a>
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=1246">Bedfordshire</a> by <a rel="nofollow" href="/userinfo.php?name=trainman">train man</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Globe</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Globe with a very comprehensive real ale listing - <a href="http://www.globe-pub.co.uk" title="Submitted by:- elizabeth mcgraw" target="_blank">www.globe-pub.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="161816787246606">Facebook - <a href="https://www.facebook.com/theglobedunstable/" target="_blank" rel="nofollow">The Globe, Dunstable</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/1127/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Maldenman">Malden man</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.88830581406172, -0.52674293518066], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.88830581406172, -0.52674293518066]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Leagrave, 4.29 miles, 1 hr 22 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Luton, 5.17 miles, 1 hr 39 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Harlington (Beds), 6.45 miles, 2 hr 4 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('}lu{HzyeBXn@dFcJ|AuD}BcH~@oAzCwEF[xAuBqA}DC{@FkAEyBe@oB[aCGcAYwBQm@~@iAPoQJqIKBh@_AVy@Be@F_A@cCLyCD}BdAcGbAiOCwLsAuRcEaPoCuIqAsGmAuKWyIA_YAe@MeDEUOyEYgEKoLNqN^{JDeDFeXDwFCkA?_Bg@??XkA^?sHuCB_MI_G[U|@It@gC_Ac@YiAsAe@y@u@eBkTfMoBiB?UKaB{@DUI[i@g@gAcBgEg@u@WWkAm@Qc@y@eDoB~@Is@c@DOGmCKYwEIs@Qq@cIqMeAyAQOU@MJCOISS\\Q[NU', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('}lu{HzyeBXn@dFcJ|AuD}BcH~@oAzCwEF[xAuBqA}DC{@FkAEyBe@oB[aCGcAYwBQm@~@iAPoQJqIKBh@_AVy@Be@F_A@cCLyCD}BdAcGbAiOCwLsAuRcEaPoCuIqAsGmAuKWyIA_YAe@MeDEUOyEYgEKoLNqN^{JDeDFeXDwFCkA?{CA{DJwq@BeDWA?YIUBiBCABk@L?FyAZBTkFbAyR`Fgp@d@aFpBkPrC_SnCeQlEmW`BcJXiC`@}EBwDAiDBwAC_E@wVEkBAoIC?k@YaBk@Io@rAgP', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('}lu{HzyeB}CmG|AmC}@eBMM_L_AqKiDm@Om@AyJ_CWAa@J_BfBMFoBi@m@Y}@i@gB_BqBOiDoJLYBU?QCOq@cCKSWOk@FQCOUaBuFeAbAm@{@SKy@m@a@EgAn@[Cm@e@KM[PiBtAkB|@Oq@Wc@_AhAYMYUe@BCyCQ}@KMiBaCsDeEm@]{CGyC]y@CqDT_ACi@_@gAoAm@u@u@m@k@[sB{@_@[cAmBqAkDyAsEq@cCLO{@_Cs@uA}@uAkF}Eg@q@u@{AgEcK{[iFQtHiAGNaIyHmAsFm@eA[kCIW|@m@TqDl@c@YuAf@e@k@e@kGMBmAqC[a@{@sEaAwCyAd@m@_BAYkAeFKQoCx@KEGSMgDQQg@Kw@?wBd@cFj@mSAiFEk@\\aBJGc@S_@gg@c@uW@aUM?kBB{@iIJkD?qEG}Kw@AYcBoJ[e@w@R?sAw@cCQ?k@`@]iBo@wBgCzCoBvBQP_@NgAN]IaB}@YCUDg@ROLLb@j@pF^pF@rBCb@~ABFDBLbAC', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.88830581406172,-0.52674293518066], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=1127">View all updates for The Globe, Dunstable</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        24<span class="sup">th</span> Mar 2019, 23:50
+      </div><div class="auditexp">Pub <a href="/pubmapaudit/1127/">map correction</a> submitted by <a rel="nofollow" href="/userinfo.php?name=Maldenman">Malden man</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> Feb 2019, 18:54
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=gillhalfpint">Gill Smith</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Bar Billiards : <span id="fac1071127">No</span> <span id="discdetail1071127" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 July 2013 by Will Larter</span></li><li>Car Park : <span id="fac1131127">No</span> <span id="discdetail1131127" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 July 2013 by Will Larter</span></li><li>Child Friendly : <span id="fac1211127">Yes</span> <span id="discdetail1211127" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 February 2019 by Gill Smith</span></li><li>Dog Friendly : <span id="fac1051127">Yes</span> <span id="discdetail1051127" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 February 2019 by Gill Smith</span></li><li>Function Room : <span id="fac1231127">Yes</span> <span id="discdetail1231127" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 February 2019 by Gill Smith</span></li><li>Jukebox : <span id="fac1121127">No</span> <span id="discdetail1121127" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 July 2013 by Will Larter</span></li><li>Live Music : <span id="fac1081127">Yes</span> <span id="discdetail1081127" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 February 2019 by Gill Smith</span></li><li>Live TV Sports : <span id="fac1101127">No</span> <span id="discdetail1101127" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 July 2013 by Will Larter</span></li><li>Pinball : <span id="fac1161127">No</span> <span id="discdetail1161127" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 July 2013 by Will Larter</span></li><li>Pool Table : <span id="fac1041127">No</span> <span id="discdetail1041127" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 July 2013 by Will Larter</span></li><li>Real Ale : <span id="fac1011127">Yes</span> <span id="discdetail1011127" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Real Cider : <span id="fac1191127">Yes</span> <span id="discdetail1191127" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 February 2019 by Gill Smith</span></li><li>Wheelchair Access : <span id="fac1201127">Yes</span> <span id="discdetail1201127" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 February 2019 by Gill Smith</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 11pm</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - Midnight</td></tr>
+<tr><td>Saturday</td><td>12noon - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1120/" class="List1">The Wheatsheaf</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 4 reviewer(s)" title="Pub has average rating of 8 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1158/" class="List1">The Victoria</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1143/" class="List1">The Old Sugar Loaf</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 1 from 1 reviewer(s)" title="Pub has average rating of 1 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65598/" class="List1">The Bank</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 3 reviewer(s)" title="Pub has average rating of 7 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/63053/" class="List1">The Gary Cooper (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/79161/" class="List1">The Pheasant Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2 from 1 reviewer(s)" title="Pub has average rating of 2 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/72891/" class="List1">Old Palace Bar@The Old Palace Lodge Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1161/" class="List1">The White Swan Inn</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

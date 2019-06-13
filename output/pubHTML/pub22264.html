@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Green Man pub in Fitzrovia, W1, London (Central), W1W 7EP : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Green Man" />
+  <meta name="keywords" content="Green Man, 36  Riding House Street, W1, London (Central), Fitzrovia, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Green Man in W1" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/22001_22500/22264_34f3f76d.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/22264/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.51894465279720" />
+<meta property="og:longitude" content="-0.13951241970062" />
+<meta property="og:street-address" content="36  Riding House Street" />
+<meta property="og:locality" content="W1" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="W1W 7EP" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Green Man in W1? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Green Man the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/22264/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Green Man in W1" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Green Man " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/22001_22500/22264_34f3f76d.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/22264/" />
+<meta name="geo.position" content="51.51894465279720;-0.13951241970062" />
+<meta name="geo.placename" content="Green Man in W1" />
+<meta name="geo.region" content="UK" />
+<title>Green Man in Fitzrovia, W1 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":22264},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(22264);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 22264;var pubaddress = "36  Riding House Street";var pubname = "Green Man";var pubpostcode = "W1W 7EP";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/w1/central-london/" title="Pubs Galore : W1 Page">W1</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Green Man Page">Green Man Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="hj9d2nq6s68shp7hnqg4cgd9e5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/22264/" class="indisplay"><img src="/images/display/22001_22500/22264_34f3f76d.jpg?w=2" alt="Picture of Green Man" /></a><br />  Image posted by <a href="/userinfo.php?name=rpadam" class="indisplay">Just a quick pint, then I&#039;m off</a><br />
+  Submitted on Monday, 24<sup>th</sup> December 2018<br />
+  With picture contributions to 5082 other pubs<br />
+<a href="/pubpictures/22264/" class="smallbutton">View all this pub's pictures</a> (22 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/22264/">Pub map</a><br /><a href="/pubreviews/22264/">Pub reviews (5)</a><br /><a href="/pubpictures/22264/">Pub pictures (23)</a><br /><a href="/core/pubaudit.php?id=22264" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Green Man, Fitzrovia, W1</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">36  Riding House Street</span><br />
+
+
+<span class="town">W1</span><br />
+<span class="postcode">W1W 7EP</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02075809087</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Castle (Mitchells & Butlers)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/fitzrovia/central-london/">Fitzrovia</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by Green Man</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/GreenManW1" target="_blank"><img src="https://pbs.twimg.com/profile_images/872052302047309824/VUZu3B_z_normal.jpg" alt="Green Man Fitzrovia" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/GreenManW1" target="_blank">Green Man Fitzrovia</a></strong>
+The Green Man will be closed all day Monday and will reopen at 7pm on Tuesday next week (26th and 27th) so we can g&hellip; <a href='https://t.co/T7QtHCuB2n' target='_blank'>https://t.co/T7QtHCuB2n</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/GreenManW1/status/976844542900137984">3:34 PM Mar 22nd 2018</a> from <a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/GreenManW1" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/GreenManW1" target="_blank">Green Man Fitzrovia</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Green Man  <span class="h2note">(Average Rating: <span id="averagerating"><b>5&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review128017" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=london+calling">john gray</a> left this review about Green Man</h6>
+<p class="old">Very football oriented pub but nice enough.Very busy. GK-yardbird and Hogsback-tea on cask.Small and intimate with upstairs area as well.</p>
+<p class="Reviewer">On 13<sup>th</sup> April 2018 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 886 recommendations about 874 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review111733" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> left this review about Green Man</h6>
+<p class="old">I reckon that this pub must have improved a bit since the previous reviewer&#039;s visit over a year ago. There were three ales on - Doom Bar, Darkstar Hophead and Purity UBU. I had a pint of the UBU which was in excellent condition, but at what I regard as an overly expensive - even for London - price of &pound;4.55 a pint. Main menu meals are from &pound;11 upwards (chicken, ham hock pie, red wine jus + seasonal veg) to the sirloin steak +++ at &pound;14.75. Sunday lunch is &pound;14.50, and there was a Wednesday meal advertised giving you a burger (loads to choose from) and drink for &pound;11. The drinks included Doom Bar, but didn&#039;t say if it was a pint or a half.<br />
+<br />
+This one retains plenty of original heritage feautures. They included what looked like a Lincrusta ceiling, Victorian bar counter, some etched/cut glass glazing, tiled flooring on the left that would have led to a separate room on the left. The slightly more elaborate fielded panelling around on the left of the bar counter indicates a room division. The best feature for me is the surviving glazed screening at the back that would have separated the rooms at the front from what would probably been the lounge at the back.<br />
+<br />
+The pub is now fairly modernised, being bare-boarded with a few normal tables and chairs at the front, and the inevitable tall tables/tall stools along the side. The room at the back on the left beyond the surviving screenwork looks a more elegant and lounge-like area, perhaps more for relaxation than dining. There was some music playing, but not too loudly, whcich was quite &quot;retro&quot;, including Chuck Berry and his contemporaries from the 50s and 60s. I also spotted board games on a shelf by the front window, surrounding a vase of flowers. I thought it was a friendly enough little pub at lunchtime, which seemed to be catering for young professionals lunching.</p>
+<p class="Reviewer">On 16<sup>th</sup> October 2016 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2495 recommendations about 2415 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review99527" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about Green Man</h6>
+<p class="old">An unremarkable pub popular with University of Westminster staff. Fairly bare and scruffy interior which is quite small. Three on ales on; Purity UBU (cloudy), Summer Lightning (had bits in it) and Doom Bar. Camden and Meantime on keg which I was forced to switch to. Useless barman wouldn&rsquo;t know a decent pint if it hit him between the eyes. Quite a lot of cider though if the state of it is on-par with the ale I wouldn&#039;t bother getting excited. Avoid this sorry excuse for a pub when there are places like the Golden Eagle and Masons within a few minutes stroll.</p>
+<p class="Reviewer">On 12<sup>th</sup> July 2015 
+  - rating: <b>3</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/22264/">View more reviews of Green Man (5)</a>
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=1222">London W1 Crawl, 26/03/16</a> by <a rel="nofollow" href="/userinfo.php?name=Komakino">Komakino .</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Green Man</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Green Man - <a href="http://www.thegreenmanw1.co.uk" title="Submitted by:- Steve C" target="_blank">www.thegreenmanw1.co.uk</a></li>
+			<li>Randomness Guide to London - <a href="http://london.randomness.org.uk/wiki.cgi?Green_Man,_W1W_7ES" title="Submitted by:- Kake Pugh" target="_blank">Green Man entry</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="562431493774030">Facebook - <a href="https://www.facebook.com/GreenManW1/" target="_blank" rel="nofollow">The Green Man - Castle Pubs</a></li></ul><ul id="Custom2"><li class="twitlink" id="415665028">Twitter - <a href="https://twitter.com/GreenManW1" target="_blank" rel="nofollow">Green Man Fitzrovia</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/22264/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Strongers">Steve C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.51894465279720, -0.13951241970062], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.51894465279720, -0.13951241970062]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> London Euston, 1.01 miles, 19 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> London Charing Cross, 1.2 miles, 23 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> London Marylebone, 1.4 miles, 26 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ehmyHngZMJwD_IGBoDlEWi@{EwNoCvC[_AGAWy@CGaDiLuBvBI[sBrByC}Ky@v@GSONI[GFMc@ORFX?LWEMIg@CWJ]^c@uAC?@Du@z@Og@sAtAQm@uAzA@NCBEMCD@BUV', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ehmyHngZMJbAvBvBwEtCcGrAuA|D{B|KoIFClE}DD@v@m@JMBKhAkAh@_@~@s@XItEcDYkCa@wB?Kd@sBNABEBOGWn@yAJALYZwD?_BZi@b@cALMn@S|@IPGZ@CwFPCDJd@i@MYZu@?KM[vAiDHLDGDHLY', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ehmyHngZMJbAvBLZFXrA|L@Fx@r@uAlDLMPGRVBZAPT|BiBp@hBbRh@|Fy@Xf@jFK?s@\\WjCMNGTWlHEfB@V}FjCARFp@`BhQcDnAPlBoFjBqBx@LlAd@~DGHEZGHXlCsDrAG^?VHbA', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.51894465279720,-0.13951241970062], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=22264">View all updates for Green Man, W1</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        24<span class="sup">th</span> Dec 2018, 22:40
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        24<span class="sup">th</span> Dec 2018, 22:40
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11822264">No</span> <span id="discdetail11822264" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 July 2015 by Quinno _</span></li><li>Bar Billiards : <span id="fac10722264">No</span> <span id="discdetail10722264" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 July 2015 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10222264">No</span> <span id="discdetail10222264" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 July 2015 by Quinno _</span></li><li>Car Park : <span id="fac11322264">No</span> <span id="discdetail11322264" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 July 2015 by Quinno _</span></li><li>Darts : <span id="fac11122264">No</span> <span id="discdetail11122264" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 July 2015 by Quinno _</span></li><li>Hot Food : <span id="fac10322264">Yes</span> <span id="discdetail10322264" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 July 2015 by Quinno _</span></li><li>Karaoke : <span id="fac10622264">No</span> <span id="discdetail10622264" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 July 2015 by Quinno _</span></li><li>Micropub : <span id="fac12222264">No</span> <span id="discdetail12222264" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 July 2015 by Quinno _</span></li><li>Pinball : <span id="fac11622264">No</span> <span id="discdetail11622264" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 July 2015 by Quinno _</span></li><li>Pool Table : <span id="fac10422264">No</span> <span id="discdetail10422264" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 July 2015 by Quinno _</span></li><li>Real Ale : <span id="fac10122264">Yes</span> <span id="discdetail10122264" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 July 2015 by Quinno _</span></li><li>Real Cider : <span id="fac11922264">Yes</span> <span id="discdetail11922264" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 July 2015 by Quinno _</span></li><li>WiFi : <span id="fac11522264">Yes</span> <span id="discdetail11522264" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 July 2015 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 9pm</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - 11pm</td></tr>
+<tr><td>Saturday</td><td>12noon - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 23 picture(s)" title="Pub has 23 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 7 reviewer(s)" title="Pub has average rating of 7.5 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22293/" class="List1">The Kings Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 28 picture(s)" title="Pub has 28 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 9 recommendation(s)" title="Pub has 9recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 9 reviewer(s)" title="Pub has average rating of 5.5 from 9 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22221/" class="List1">Crown &amp; Sceptre</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/67765/" class="List1">The Riding House</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 31 picture(s)" title="Pub has 31 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 8 reviewer(s)" title="Pub has average rating of 6 from 8 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22292/" class="List1">King &amp; Queen</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65804/" class="List1">Bellaria</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84033/" class="List1">Percy &amp; Founders</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65843/" class="List1">Vino Latinos</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 23 picture(s)" title="Pub has 23 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 6 reviewer(s)" title="Pub has average rating of 6.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22406/" class="List1">Yorkshire Grey</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Strongroom pub in Shoreditch, EC2, London (Central), EC2A 3SQ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Strongroom" />
+  <meta name="keywords" content="Strongroom, 120-124 Curtain Road, EC2, London (Central), Shoreditch, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Strongroom in EC2" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/67001_67500/67050_7501f093.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/67050/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.52600800000000" />
+<meta property="og:longitude" content="-0.08013800000000" />
+<meta property="og:street-address" content="120-124 Curtain Road" />
+<meta property="og:locality" content="EC2" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="EC2A 3SQ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Strongroom in EC2? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Strongroom the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/67050/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Strongroom in EC2" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Strongroom " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/67001_67500/67050_7501f093.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/67050/" />
+<meta name="geo.position" content="51.52600800000000;-0.08013800000000" />
+<meta name="geo.placename" content="Strongroom in EC2" />
+<meta name="geo.region" content="UK" />
+<title>Strongroom in Shoreditch, EC2 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":67050},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(67050);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 67050;var pubaddress = "120-124 Curtain Road";var pubname = "Strongroom";var pubpostcode = "EC2A 3SQ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/ec2/central-london/" title="Pubs Galore : EC2 Page">EC2</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Strongroom Page">Strongroom Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="fbm7imkvptsingi89dh5sp9g02" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/67050/" class="indisplay"><img src="/images/display/67001_67500/67050_7501f093.jpg?w=2" alt="Picture of Strongroom" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
+  Submitted on Friday, 29<sup>th</sup> September 2017<br />
+  With picture contributions to 20227 other pubs<br />
+<a href="/pubpictures/67050/" class="smallbutton">View all this pub's pictures</a> (20 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/67050/">Pub map</a><br /><a href="/pubreviews/67050/">Pub reviews (2)</a><br /><a href="/pubpictures/67050/">Pub pictures (21)</a><br /><a href="/core/pubaudit.php?id=67050" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Strongroom, Shoreditch, EC2</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">120-124 Curtain Road</span><br />
+
+
+<span class="town">EC2</span><br />
+<span class="postcode">EC2A 3SQ</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02074265103</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/shoreditch/central-london/">Shoreditch</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by Strongroom</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/StrongroomBar" target="_blank"><img src="https://pbs.twimg.com/profile_images/1110227666802786306/Edalt8-__normal.png" alt="Strongroom Bar" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/StrongroomBar" target="_blank">Strongroom Bar</a></strong>
+Free gig on a Saturday, what more do you want! Come down and see<a href="http://twitter.com/CarnivalsBand" target="_blank"> @CarnivalsBand</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/StrongroomBar/status/1138853214483374089">about 4 hours ago</a> from <a href="https://about.twitter.com/products/tweetdeck" rel="nofollow">TweetDeck</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/StrongroomBar" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/StrongroomBar" target="_blank">Strongroom Bar</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Strongroom  <span class="h2note">(Average Rating: <span id="averagerating"><b>6</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review107149" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about Strongroom Bar</h6>
+<p class="old">Located in the heart of creative Shoreditch, this is a large split-level bar and kitchen attached to the famous Strongroom Recording Studios which have produced albums for the likes of Radiohead, The Prodigy and The Arctic Monkeys and also oversaw the recording of such classics as The Anfield Rap and Spitting Image&#039;s &#039;The Chicken Song&#039;. The pub is accessed via an alleyway off Curtain Road, which leads into a smart courtyard with plenty of outdoor seating, much of which was covered. The bar entrance is to the left and you&#039;re immediately pitched onto a staircase with steps leading up or down to different bars. I headed upstairs initially, where I found a compact area with a nice decorative modern servery to the rear, whitewashed brick walls and some simple seating arrangements. Some large Pilsner Urquell &#039;brewery fresh&#039; tanks provided the room&#039;s main focal point and there was an open kitchen at the far end where a nice patterned wall covering provides some visual stimulation beyond the usual exposed ceiling pipes and wires. The stairs leading down to the lower bar initially bring you into a large open room with a tiled floor, table football and a few sofas in small clusters. Aside from this, the space offers very little, with some colourfully painted walls and loads of empty room for people to stand. It struck me that the area might perhaps be used for live music performances, but there was no sign of a stage, so I&#039;m not convinced this is the case. A few more steps to the rear lead you down into the main bar where a mix of sofas, padded chests and standard chairs fill the rectangular room which has large windows to the rear looking out to the street behind. A compact servery stands in one corner under large chef&#039;s lamps and exposed brick walls. There are some interesting artworks on show throughout the pub, including some from Jamie Reid who is of course famous for his sleeve designs for The Sex Pistols. As you might expect from such a venue, there was an excellent indie soundtrack playing throughout my visit. <br />
+The pub offers three handpulled ales, but these are split between the two bars, so I ended up with a pint of Howling Hops XX Pale (&pound;4.00) before discovering that Howling Hops Ruby Red and Tiny Rebel Beat Box were available in the lower bar. The keg range had a few unusual choices including more Howling Hops beers and Urban Orchard cider. My beer was in good shape and the staff seemed friendly enough for such a venue.<br />
+I only ended up here because I arrived too early for a gig at the nearby Old Blue Last and needed to kill a bit of time somewhere, but it turned out to be a good move, as I enjoyed some well kept ale in an interesting building with an even more interesting history. The place does feel a bit vast and impersonal in places, but I thought both bars had their plus points and the courtyard would make a good summer drinking spot. I can definitely see me popping in to see what beers they have on here in the future.</p>
+<p class="Reviewer">On 25<sup>th</sup> May 2016 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review88697" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=hondo">hondo .</a> left this review about Strongroom Bar</h6>
+<p class="old">Bar,kitchen and recording studios. An eclectic interior  spread over different levels and rooms with bare boarded flooring exposed brickwork and artwork displayed. Courtyard area as well. 3 real ales and an interesting keg selection including Pilsner urquell unpasteurised.</p>
+<p class="Reviewer">On 6<sup>th</sup> November 2014 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 2564 recommendations about 2508 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Strongroom</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Strongroom Bar - <a href="http://www.strongroom.com/#/bar/4524841291" title="Submitted by:- elizabeth mcgraw" target="_blank">www.strongroom.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="twitlink" id="81589529">Twitter - <a href="https://twitter.com/StrongroomBar" target="_blank" rel="nofollow">Strongroom Bar</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/67050/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.52600800000000, -0.08013800000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.52600800000000, -0.08013800000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Old Street, 0.37 miles, 7 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Shoreditch High Street, 0.43 miles, 8 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Hoxton, 0.53 miles, 10 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ctnyHzsN@d@a@?TvE?d@GzA?bA@nDFZc@lASx@FZAlA@r@RpB?VKNl@hDINHd@Bb@CVKZp@hAZI', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ctnyHzsN@d@l@AMgEn@KFE?{BIg@l@CAwAG}AhAYlCUnA?d@BHGHBA[D?BQ@OJ?B_GMAAsAx@J?i@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ctnyHzsN@d@a@?CSIaCSsH{A?wABsAIcEOoA[gBs@oCq@_BSJaGcC?', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.52600800000000,-0.08013800000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=67050">View all updates for Strongroom, EC2</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        10<span class="sup">th</span> Dec 2017, 16:19
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=hophead">john mcgraw</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        10<span class="sup">th</span> Dec 2017, 16:19
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=hophead">john mcgraw</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11867050">No</span> <span id="discdetail11867050" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 May 2016 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10767050">No</span> <span id="discdetail10767050" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 May 2016 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11467050">Yes</span> <span id="discdetail11467050" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 May 2016 by Pub SignMan</span></li><li>Car Park : <span id="fac11367050">No</span> <span id="discdetail11367050" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 May 2016 by Pub SignMan</span></li><li>Darts : <span id="fac11167050">No</span> <span id="discdetail11167050" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 May 2016 by Pub SignMan</span></li><li>Hot Food : <span id="fac10367050">Yes</span> <span id="discdetail10367050" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2014 by hondo .</span></li><li>Live Music : <span id="fac10867050">Yes</span> <span id="discdetail10867050" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2014 by hondo .</span></li><li>Micropub : <span id="fac12267050">No</span> <span id="discdetail12267050" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 May 2016 by Pub SignMan</span></li><li>Pinball : <span id="fac11667050">No</span> <span id="discdetail11667050" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 May 2016 by Pub SignMan</span></li><li>Pool Table : <span id="fac10467050">No</span> <span id="discdetail10467050" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 May 2016 by Pub SignMan</span></li><li>Real Ale : <span id="fac10167050">No</span> <span id="discdetail10167050" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2018 by Rex Rattus</span></li><li>Real Cider : <span id="fac11967050">No</span> <span id="discdetail11967050" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 May 2016 by Pub SignMan</span></li><li>Wheelchair Access : <span id="fac12067050">No</span> <span id="discdetail12067050" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 May 2016 by Pub SignMan</span></li><li>WiFi : <span id="fac11567050">Yes</span> <span id="discdetail11567050" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2014 by hondo .</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 26 picture(s)" title="Pub has 26 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 11 recommendation(s)" title="Pub has 11recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 10 reviewer(s)" title="Pub has average rating of 7 from 10 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23390/" class="List1">The Barley Mow</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 3 reviewer(s)" title="Pub has average rating of 4.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64556/" class="List1">Blues Kitchen</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64562/" class="List1">Hoxton Pony</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85719/" class="List1">Callooh Callay</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64558/" class="List1">Far Rockaway</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64566/" class="List1">Brindisa</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 20 picture(s)" title="Pub has 20 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64557/" class="List1">Old St. Records</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 27 picture(s)" title="Pub has 27 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 6 reviewer(s)" title="Pub has average rating of 5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23394/" class="List1">Bricklayers Arms</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Rose &amp; Crown pub in Summertown, Oxford, Oxfordshire, OX2 6LX : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Rose &amp; Crown" />
+  <meta name="keywords" content="The Rose &amp; Crown, 14  North Parade Avenue, Oxford, Oxfordshire, Summertown, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Rose &amp; Crown in Oxford" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/31501_32000/31793_c79684a7.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/31793/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.76468599861642" />
+<meta property="og:longitude" content="-1.26166418194771" />
+<meta property="og:street-address" content="14  North Parade Avenue" />
+<meta property="og:locality" content="Oxford" />
+<meta property="og:region" content="Oxfordshire" />
+<meta property="og:postal-code" content="OX2 6LX" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Rose &amp; Crown in Oxford? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Rose &amp; Crown the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/31793/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Rose &amp; Crown in Oxford" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Rose &amp; Crown " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/31501_32000/31793_c79684a7.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/31793/" />
+<meta name="geo.position" content="51.76468599861642;-1.26166418194771" />
+<meta name="geo.placename" content="The Rose &amp; Crown in Oxford" />
+<meta name="geo.region" content="UK" />
+<title>The Rose &amp; Crown in Summertown, Oxford : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":31793},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(31793);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 31793;var pubaddress = "14  North Parade Avenue";var pubname = "The Rose & Crown";var pubpostcode = "OX2 6LX";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/oxfordshire/" title="Pubs Galore : Oxfordshire Page">Oxfordshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/oxford/oxfordshire/" title="Pubs Galore : Oxford Page">Oxford</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Rose &amp; Crown Page">The Rose &amp; Crown Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="rn1mf4forf9tbcg3n3upoc5qu6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/31793/" class="indisplay"><img src="/images/display/31501_32000/31793_c79684a7.jpg?w=2" alt="Picture of The Rose &amp; Crown" /></a><br />  Image posted by <a href="/userinfo.php?name=sheffield+hatter" class="indisplay">Will Larter</a><br />
+  Submitted on Friday, 22<sup>nd</sup> July 2016<br />
+  With picture contributions to 8564 other pubs<br />
+<a href="/pubpictures/31793/" class="smallbutton">View all this pub's pictures</a> (10 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/31793/">Pub map</a><br /><a href="/pubreviews/31793/">Pub reviews (8)</a><br /><a href="/pubpictures/31793/">Pub pictures (11)</a><br /><a href="/core/pubaudit.php?id=31793" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Rose &amp; Crown, Summertown, Oxford</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">14  North Parade Avenue</span><br />
+
+
+<span class="town">Oxford</span><br />
+<span class="postcode">OX2 6LX</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/summertown/oxfordshire/">Summertown</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Rose & Crown</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/RoseandcrownPH" target="_blank"><img src="https://pbs.twimg.com/profile_images/644502218075471872/067_8bTi_normal.jpg" alt="Rose &amp; Crown, Oxford" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/RoseandcrownPH" target="_blank">Rose &amp; Crown, Oxford</a></strong>
+Sunday (tonight) Jazz Inn the Courtyard 7 - 9pm <a href='https://t.co/gM5f4iTVAE' target='_blank'>https://t.co/gM5f4iTVAE</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/RoseandcrownPH/status/1137709479917699072">2:14 PM Jun 9th</a> from <a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/RoseandcrownPH" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/RoseandcrownPH" target="_blank">Rose &amp; Crown, Oxford</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Rose & Crown  <span class="h2note">(Average Rating: <span id="averagerating"><b>8</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review132485" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> left this review about The Rose &amp; Crown</h6>
+<p>An excellent largely eclectic traditional pub in Summertown, one of Oxford&#039;s most desirable residential areas and visited for the first time as part of our PuG tour in July 2016, but since revisited several times.<br />
+Well described below, the staff are friendly and the pub has a very courteous old-school landlord now owner (Andrew), since 1983. Lavatories, which have certainly seen better days, are the outhouse variety which is traditional and there&#039;s a garden with a retractable gazebo roof, intertwined with a flourishing grape vine. On one Sunday visit, an acoustic guitar and mandolin band piped up at gone 10.30 and I&#039;ve since learnt that the pub has a Sunday to Thursday 12.00 am licence with a 1.00 am licence on Fridays and Saturdays - outstanding, a pub where people are treated like adults! Note though: last entry is 11.00 pm each day.<br />
+Clients are a mix of American academics to genteel locals. Food ranges from fairly basic to slightly upmarket pub grub and homemade pork pies are sold at the bar. To the rear are one or two little rooms that warrant exploration. The front bar features an upright piano and attractive Art Deco fireplace surround; the floor&#039;s quarry tiles are in fact textured lino; the ATM machine isn&#039;t attractive though and seems a little pointless given that contactless card transactions are the norm here.<br />
+Ales: as below, but more recently Adnams Southwold, Shotover&#039;s Oxford Scholar, Hook Norton&#039;s Old Hooky and Hop Back&#039;s Citra at a very pricey &pound;4.30 a pint (this is Summertown) and very moreish it was too.<br />
+This is a superb pub and is indeed a must-visit if in the city, especially when combined with the Gardener&#039;s Arms (Plantation Road, not the one across the road) and the Victoria. The age restriction on children and dog ban are the cherry on the cake.</p>
+<p class="Reviewer">On 29<sup>th</sup> August 2018 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 873 recommendations about 860 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review127370" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Thuck+Phat">Thuck Phat</a> left this review about The Rose &amp; Crown</h6>
+<p class="old">An interesting, original and quirky boozer which is attractive both inside and out.<br />
+It also comes complete with a peacock of a governor and friendly, easy on the eye bar staff.<br />
+The clientele felt much more gown than town on our visit and the atmosphere was learned and civilised without being too dreary.<br />
+In fact the interior, split into various small rooms, was cramped and not especially comfortable on a Wednesday evening visit. How do they cope on Friday?<br />
+Beers on were Prescott Spring Season, Old Hooky, Adnams Southwold and Shotover Oxford Scholar. A pedestrian range and all that we tried was, at best, indifferent.<br />
+An interesting place in which to drink expensive, substandard beer.</p>
+<p class="Reviewer">On 22<sup>nd</sup> March 2018 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 663 recommendations about 662 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review109637" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Gann">Steve of N21</a> left this review about The Rose &amp; Crown</h6>
+<p class="old">Another fine pub in the Jericho area of Oxford. An enticing exterior gives way to a traditional pub interior as well described below. The small enclosed garden area outback is well worth a look, especially for the small additional room right at the end that apparently is the building where the landlords son lives and the downstairs room can be rented out for meetings, get togethers e.t.c.<br />
+Adnams Southwold Bitter,Box Steam Tunnel Vision, Shotover Scholar, and Hook Norton Old Hooky were the four beers available for our visit and the Tunnel Vission was very passable.<br />
+Another very good pub in this area.</p>
+<p class="Reviewer">On 10<sup>th</sup> August 2016 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 1577 recommendations about 1528 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/31793/">View more reviews of The Rose &amp; Crown (8)</a>
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=1223">Jericho and beyond.</a> by <a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Rose &amp; Crown</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Rose &amp; Crown - <a href="http://roseandcrownoxford.com/" title="Submitted by:- paulof horsham" target="_blank">roseandcrownoxford.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="168648353155223">Facebook - <a href="https://www.facebook.com/Roseandcrownph/" target="_blank" rel="nofollow">The Rose and Crown</a></li></ul><ul id="Custom2"><li class="twitlink" id="863085469">Twitter - <a href="https://twitter.com/RoseandcrownPH" target="_blank" rel="nofollow">Rose & Crown, Oxford</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/31793/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.76468599861642, -1.26166418194771], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.76468599861642, -1.26166418194771]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Oxford, 1.18 miles, 22 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Oxford Parkway, 2.87 miles, 55 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Islip, 5.38 miles, 1 hr 43 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('eh}zHjluF`CfOi@XtA~Hr@hCvBfGt@fCpAlGNDQvEr@Bd@Ih@FZ?h@OXD^E\\Bj@TT@vA_@tAABGF??OhAAnEWnAUjD}Aj@_@`@a@NEHGb@u@T?HEj@LNLF\\?ZLP?DXArAAFGBMF}A^DjASFx@BHJ?bB[Dn@`ASJhBI@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('eh}zHjluFg@_DiF|@gGxAkHz@eDd@yFxAgE|@_C`@iCr@yBt@_Dr@uGpBAIuPvE@N]Jg@BoDdAk@\\aItDyGjEEWuEvCM@GNIF_HvDcCv@KEeDp@y@BKDALUGIKOEI@IDa@l@CKGFuA^mDpA{F`C}A\\mCLw@Mo@Se@SEQQEIF}@WqAQ{@A_EBkE^aFxAqPpGkCr@_@NW{@Yi@UWSISC]HQLMPk@lAc@^sBj@W@CN[Ig@Nk@\\[p@e@h@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('eh}zHjluFg@_DiF|@gGxAkHz@eDd@yFxAgE|@_C`@iCr@yBt@_Dr@uGpBAIuPvE@N]Jg@Bo@kHeCuOeInEaBoKs@W_@?]F_Af@S{AKKsI@k@Eo@SqCq@sChACMsAl@qAr@sA|AEXErAKA?ERBNyDZyD^mDuFiDo@g@u@YmN{EKQ}BGuDAiGeAgLeBqG[MBo@Cw@UmD{Aa@CkAqCyCsAcCqBK{@eDsMkB{EaAgImBeNeBuNe@f@GBGRKTi@z@WRc@Ng@FeCSM@IDoAvA]X[PaATWBSEYQkC{DoAuAwBiDQ]COq@_@uDiDeC{AsB}Aw@e@aC}@_Ei@gBXSQgEb@yCfA_AsDWIYS_FaF_FqFS@yCI}@O}@uBW{@u@h@qA^[PIHGXBvBER@PAdAIxB}@^s@P_D`@uAd@y@^A_AIY[v@a@l@o@l@aAr@cAuAwAuDSUk@UYb@Zf@DHGJ_@q@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.76468599861642,-1.26166418194771], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=31793">View all updates for The Rose &amp; Crown, Oxford</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        29<span class="sup">th</span> Aug 2018, 19:43
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> amended by <a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        29<span class="sup">th</span> Aug 2018, 19:42
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> amended by <a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11831793">No</span> <span id="discdetail11831793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2015 by Quinno _</span></li><li>Bar Billiards : <span id="fac10731793">No</span> <span id="discdetail10731793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2015 by Quinno _</span></li><li>Beer Garden : <span id="fac11431793">Yes</span> <span id="discdetail11431793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2015 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10231793">Yes</span>  - <span id="discdetail10231793" class="discdetail" style="">20p per pint &amp; 10p per half Sunday - Thursday</span> -   <span class="Reviewer">last updated 18 September 2015 by Quinno _</span></li><li>Car Park : <span id="fac11331793">No</span> <span id="discdetail11331793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2015 by Quinno _</span></li><li>Child Friendly : <span id="fac12131793">Yes</span>  - <span id="discdetail12131793" class="discdetail" style="">No under 18s after 5.00 pm.</span> -   <span class="Reviewer">last updated 23 July 2016 by Tris C</span></li><li>Darts : <span id="fac11131793">No</span> <span id="discdetail11131793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2015 by Quinno _</span></li><li>Dog Friendly : <span id="fac10531793">No</span>  - <span id="discdetail10531793" class="discdetail" style="">Pets prohibited.</span> -   <span class="Reviewer">last updated 23 July 2016 by Tris C</span></li><li>Function Room : <span id="fac12331793">Yes</span> <span id="discdetail12331793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 September 2017 by Tris C</span></li><li>Hot Food : <span id="fac10331793">Yes</span> <span id="discdetail10331793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2015 by Quinno _</span></li><li>Jukebox : <span id="fac11231793">No</span> <span id="discdetail11231793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2015 by Quinno _</span></li><li>Karaoke : <span id="fac10631793">No</span> <span id="discdetail10631793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2015 by Quinno _</span></li><li>Live Music : <span id="fac10831793">Yes</span>  - <span id="discdetail10831793" class="discdetail" style="">Sundays.</span> -   <span class="Reviewer">last updated 29 August 2018 by Tris C</span></li><li>Live TV Sports : <span id="fac11031793">No</span> <span id="discdetail11031793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2015 by Quinno _</span></li><li>Micropub : <span id="fac12231793">No</span> <span id="discdetail12231793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2015 by Quinno _</span></li><li>Pinball : <span id="fac11631793">No</span> <span id="discdetail11631793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2015 by Quinno _</span></li><li>Pool Table : <span id="fac10431793">No</span> <span id="discdetail10431793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2015 by Quinno _</span></li><li>Quiz Night : <span id="fac10931793">No</span> <span id="discdetail10931793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 July 2016 by Tris C</span></li><li>Real Ale : <span id="fac10131793">Yes</span> <span id="discdetail10131793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2015 by Quinno _</span></li><li>Real Cider : <span id="fac11931793">No</span> <span id="discdetail11931793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2015 by Quinno _</span></li><li>Wheelchair Access : <span id="fac12031793">No</span>  - <span id="discdetail12031793" class="discdetail" style="">Highly impractical.</span> -   <span class="Reviewer">last updated 11 September 2017 by Tris C</span></li><li>WiFi : <span id="fac11531793">Yes</span> <span id="discdetail11531793" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 September 2015 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11am - 11pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - 11pm</td></tr>
+<tr><td>Saturday</td><td>11am - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31723/" class="List1">Gardeners Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31794/" class="List1">The Royal Oak</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 7 reviewer(s)" title="Pub has average rating of 8 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31724/" class="List1">The Gardeners Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/73835/" class="List1">Browns Oxford</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31704/" class="List1">Duke of Cambridge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/80442/" class="List1">Caf&eacute; Rouge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82223/" class="List1">Freud</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 4 reviewer(s)" title="Pub has average rating of 6.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31744/" class="List1">Jude the Obscure</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

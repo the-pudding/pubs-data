@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Grey Horse pub in Balerno, Lothian, EH14 7EH : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Grey Horse" />
+  <meta name="keywords" content="Grey Horse, 22  Main Street, Balerno, Lothian, Balerno Village, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Grey Horse in Balerno" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/50501_51000/50712_86cb5f97.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/50712/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="55.88401158636326" />
+<meta property="og:longitude" content="-3.33899885416031" />
+<meta property="og:street-address" content="22  Main Street" />
+<meta property="og:locality" content="Balerno" />
+<meta property="og:region" content="Lothian" />
+<meta property="og:postal-code" content="EH14 7EH" />
+<meta property="og:country-name" content="Scotland" />
+<meta property="og:description" content="Do you like Grey Horse in Balerno? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Grey Horse the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/50712/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Grey Horse in Balerno" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Grey Horse " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/50501_51000/50712_86cb5f97.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/50712/" />
+<meta name="geo.position" content="55.88401158636326;-3.33899885416031" />
+<meta name="geo.placename" content="Grey Horse in Balerno" />
+<meta name="geo.region" content="UK" />
+<title>Grey Horse in Balerno : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":50712},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(50712);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 50712;var pubaddress = "22  Main Street";var pubname = "Grey Horse";var pubpostcode = "EH14 7EH";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/scotland/" title="Pubs Galore : Scotland Page">Scotland</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/lothian/" title="Pubs Galore : Lothian Page">Lothian</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/balerno/lothian/" title="Pubs Galore : Balerno Page">Balerno</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Grey Horse Page">Grey Horse Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="i5fodiuosh0t1m5qcajsdkot00" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/50712/" class="indisplay"><img src="/images/display/50501_51000/50712_86cb5f97.jpg?w=2" alt="Picture of Grey Horse" /></a><br />  Image posted by <a href="/userinfo.php?name=djm" class="indisplay">David Myles</a><br />
+  Submitted on Sunday, 20<sup>th</sup> December 2009<br />
+  With picture contributions to 765 other pubs<br />
+<a href="/pubpictures/50712/" class="smallbutton">View all this pub's pictures</a> (4 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/50712/">Pub map</a><br /><a href="/pubreviews/50712/">Pub reviews (2)</a><br /><a href="/pubpictures/50712/">Pub pictures (5)</a><br /><a href="/core/pubaudit.php?id=50712" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Grey Horse, Balerno Village, Balerno</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">22  Main Street</span><br />
+
+
+<span class="town">Balerno</span><br />
+<span class="postcode">EH14 7EH</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01314492888</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/balerno-village/lothian/">Balerno Village</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Grey Horse  <span class="h2note">(Average Rating: <span id="averagerating"><b>10</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review84848" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=colin58">Colin Walker</a> left this review about Gray Horse Inn</h6>
+<p class="old">The Grey Horse in 2007 has featured in the Campaign for Real Ale&rsquo;s (CAMRA) Good Beer Guide and south-west Edinburgh&rsquo;s real ale pub. There is mostly 5 real ales on offer with 3 regular ones of Caledonian&rsquo;s Deuchars IPA, Morland&rsquo;s Old Speckled Hen and Inveralmond Brewery&rsquo;s Ossian. In the public bar there are poems, pictures of local history and recent social events on the walls. The lounge being a bit more quieter, serves coffees, teas and bar meals. There is also a beer garden. Bar meals are served in the lounge bar and also in the beer garden, when the weather permits! Check out http://www.letitblaw.org/ for further inforamtion about the sign  cemented into the outside wall of the inn.</p>
+<p class="Reviewer">On 8<sup>th</sup> July 2014 
+  - rating: <b>10</b><br />
+  <span class="leftspace">[User has posted 674 recommendations about 668 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review66712" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=hondo">hondo .</a> left this review about Gray Horse Inn</h6>
+<p class="old">Traditional bar and lounge serving 4 real ales and food. Live music advertised.</p>
+<p class="Reviewer">On 19<sup>th</sup> January 2013 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 2564 recommendations about 2508 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Grey Horse</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Grey Horse Inn - <a href="http://greyhorsebalerno.com/" title="Submitted by:- David Myles" target="_blank">greyhorsebalerno.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="219313614827012">Facebook - <a href="https://www.facebook.com/greyhorsebalerno/" target="_blank" rel="nofollow">The Grey Horse Inn, Balerno</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/50712/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Edmon">William Purnell</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([55.88401158636326, -3.33899885416031], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([55.88401158636326, -3.33899885416031]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Curriehill, 1.78 miles, 34 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Wester Hailes, 3.92 miles, 1 hr 15 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Edinburgh Park, 4.53 miles, 1 hr 27 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('izatI~bkSw@tAC|AeAlCOIMLY[kBo@cCo@aEmB_Ai@?YGc@{AkCwAcEc@iAa@}AYgBG{CFs@G_BQt@IaCOeBYwBsAeHc@`@uEpHoAaF_AkCg@}@W[s@e@gAe@k@a@oB{EaAgD[^y@LcB_AI?c@XQm@E{@Mg@E_AHsAOIa@E]Hw@fAOJOw@]_A}AgCWu@[oC_@cBMaAe@oEMm@iAoCMk@Is@UgDMs@Mm@Qg@cAyBQk@}@}AIp@wEdAQK}@uBADL^ABO_@GL', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('izatI~bkSTYEo@Ks@aAu@KOIcAr@MCq@LeCEmBa@uDiAmHkC{CaBcEm@y@kEqHKqDq@mFkE}NkAePiCcQSWc@J]UaI__@wCqK}G}Qo@}A{@cAa@a@mA~AQDIEcBkAHiABiAKk@IaACMKQCwBKqBo@sEg@yCeDcOy@gDMu@IcAEuAKuHEq@K{@Q}@YaA_@kAi@qAiAyBwCmGk@uA]cAi@cCWy@Uk@g@y@w@eAq@}AU}@O{@u@_IUkB_@eBUy@iBcEU}@S_ACo@EOuAqAMGw@{AUYOBWRTp@sA|AwGdHa@LyAi@S?kAcF_BdBGc@GK_AJ]mDCMIKO@mAd@KQy@Z_BoRcA^a@XgA_E}ByHGJMYQHcAbDaA{@u@tCQE{BpIqAnF]hAa@dAo@lAe@b@Du@u@oEWREf@wAnAYoB?CT|ACBa@kC', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('izatI~bkSTYEo@Ks@aAu@KOIcAr@MCq@LeCEmBa@uDiAmHkC{CaBcEm@y@kEqHKqDq@mFkE}NkAePiCcQSWc@J]UaI__@wCqK}G}Qo@}A{@cAa@a@mA~AQDIEcBkAcBLWIKVRjESEOcBMmCk@FaBEa@Fk@VRhAu@j@iIxCgAn@AOqAh@c@C_@KWHc@f@_@sBi@L{GdCyElBcEzAyEtB@LeAPyCKcBUwAa@yRl@uANEb@_@~@UVyAbAeCV_B\\yDdAuCv@c@XONiAtBWTiDtBa@iCuCsGc@OQXMH]?SOu@ALqCPq@Fs@UsO]wGc@iEcCsJ[Wo@CKMG_@i@y@Wu@Mk@M[CMDe@CcBKoAMgAQu@o@m@EKCgAEQQSQGMHQ`@o@d@yXlOn@tIw@^OGiFtBKNgA^Dn@KPOBCc@o@NAKDA?Eu@R?BDA@JJC??', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([55.88401158636326,-3.33899885416031], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=50712">View all updates for Grey Horse, Balerno</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        9<span class="sup">th</span> Jul 2014, 08:51
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=colin58">Colin Walker</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        8<span class="sup">th</span> Jul 2014, 22:34
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=colin58">Colin Walker</a> amended by <a rel="nofollow" href="/userinfo.php?name=colin58">Colin Walker</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11850712">No</span> <span id="discdetail11850712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2013 by David Myles</span></li><li>Bar Billiards : <span id="fac10750712">No</span> <span id="discdetail10750712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2013 by David Myles</span></li><li>Beer Festivals : <span id="fac11750712">Yes</span>  - <span id="discdetail11750712" class="discdetail" style="">August</span> -   <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Beer Garden : <span id="fac11450712">Yes</span> <span id="discdetail11450712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by David Myles</span></li><li>CAMRA Discount : <span id="fac10250712">No</span> <span id="discdetail10250712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2013 by David Myles</span></li><li>Car Park : <span id="fac11350712">No</span> <span id="discdetail11350712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2013 by David Myles</span></li><li>Child Friendly : <span id="fac12150712">Yes</span>  - <span id="discdetail12150712" class="discdetail" style="">Until 9pm in lounge</span> -   <span class="Reviewer">last updated 12 January 2014 by David Myles</span></li><li>Darts : <span id="fac11150712">Yes</span> <span id="discdetail11150712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2013 by David Myles</span></li><li>Dog Friendly : <span id="fac10550712">Yes</span> <span id="discdetail10550712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by David Myles</span></li><li>Hot Food : <span id="fac10350712">Yes</span> <span id="discdetail10350712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2013 by David Myles</span></li><li>Jukebox : <span id="fac11250712">No</span> <span id="discdetail11250712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2013 by David Myles</span></li><li>Karaoke : <span id="fac10650712">No</span> <span id="discdetail10650712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2013 by David Myles</span></li><li>Live Music : <span id="fac10850712">Yes</span> <span id="discdetail10850712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2013 by David Myles</span></li><li>Live TV Sports : <span id="fac11050712">No</span> <span id="discdetail11050712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2013 by David Myles</span></li><li>Micropub : <span id="fac12250712">No</span> <span id="discdetail12250712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2018 by David Myles</span></li><li>Pinball : <span id="fac11650712">No</span> <span id="discdetail11650712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by David Myles</span></li><li>Pool Table : <span id="fac10450712">No</span> <span id="discdetail10450712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2013 by David Myles</span></li><li>Quiz Night : <span id="fac10950712">Yes</span> <span id="discdetail10950712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2013 by David Myles</span></li><li>Real Ale : <span id="fac10150712">Yes</span> <span id="discdetail10150712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2013 by David Myles</span></li><li>Real Cider : <span id="fac11950712">No</span> <span id="discdetail11950712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2013 by David Myles</span></li><li>Wheelchair Access : <span id="fac12050712">Yes</span> <span id="discdetail12050712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2013 by David Myles</span></li><li>WiFi : <span id="fac11550712">Yes</span> <span id="discdetail11550712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2013 by David Myles</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12 - 11pm</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - 0:30am</td></tr>
+<tr><td>Saturday</td><td>12noon - 0:30am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

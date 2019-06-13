@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Royal Oak pub in Greenfield, Holywell, Clwyd, CH8 7QB : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Royal Oak" />
+  <meta name="keywords" content="Royal Oak, Greenfield Road, Holywell, Clwyd, Greenfield, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Royal Oak in Holywell" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/51501_52000/51994_4aff3685.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/51994/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="53.28012354066053" />
+<meta property="og:longitude" content="-3.22001874446869" />
+<meta property="og:street-address" content="Greenfield Road" />
+<meta property="og:locality" content="Holywell" />
+<meta property="og:region" content="Clwyd" />
+<meta property="og:postal-code" content="CH8 7QB" />
+<meta property="og:country-name" content="Wales" />
+<meta property="og:description" content="Do you like Royal Oak in Holywell? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Royal Oak the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/51994/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Royal Oak in Holywell" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Royal Oak " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/51501_52000/51994_4aff3685.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/51994/" />
+<meta name="geo.position" content="53.28012354066053;-3.22001874446869" />
+<meta name="geo.placename" content="Royal Oak in Holywell" />
+<meta name="geo.region" content="UK" />
+<title>Royal Oak in Greenfield, Holywell : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":51994},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(51994);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 51994;var pubaddress = "Greenfield Road";var pubname = "Royal Oak";var pubpostcode = "CH8 7QB";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/wales/" title="Pubs Galore : Wales Page">Wales</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/clwyd/" title="Pubs Galore : Clwyd Page">Clwyd</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/holywell/clwyd/" title="Pubs Galore : Holywell Page">Holywell</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Royal Oak Page">Royal Oak Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="7a2qei3gottv4qs2nllacvhm07" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/51994/" class="indisplay"><img src="/images/display/51501_52000/51994_4aff3685.jpg?w=2" alt="Picture of Royal Oak" /></a><br />  Image posted by <a href="/userinfo.php?name=AlanH" class="indisplay">Alan Hurdle</a><br />
+  Submitted on Friday, 2<sup>nd</sup> August 2013<br />
+  With picture contributions to 747 other pubs<br />
+<a href="/pubpictures/51994/" class="smallbutton">View all this pub's pictures</a>
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/51994/">Pub map</a><br /><a href="/pubreviews/51994/">Pub reviews (0)</a><br /><a href="/pubpictures/51994/">Pub pictures (1)</a><br /><a href="/core/pubaudit.php?id=51994" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Royal Oak, Greenfield, Holywell</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Greenfield Road</span><br />
+
+
+<span class="town">Holywell</span><br />
+<span class="postcode">CH8 7QB</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01352331582</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/greenfield/clwyd/">Greenfield</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Royal Oak  <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div style="line-height:1.3;margin:5px 15px;text-align:center;"><b>Currently no reviews of this pub.</b><br />
+Be the first to write a recommendation on this pub and let everyone know why they should visit.</div>
+
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Royal Oak</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="730209710394725">Facebook - <a href="https://www.facebook.com/RoyalOakGreenfield/" target="_blank" rel="nofollow">The Royal Oak</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/51994/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=AlanH">Alan Hurdle</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([53.28012354066053, -3.22001874446869], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([53.28012354066053, -3.22001874446869]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Flint, 5.29 miles, 1 hr 42 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Neston, 13.86 miles, 4 hr 27 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> West Kirby, 21.32 miles, 6 hr 51 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ehedI`|sREDG]KFf@`BhF~JzArAvA~An@bAp@v@^H^ErC{@X@|B~A^LdBHPAHGFOD_@Ey@@WFK\\c@BI?}AFo@@u@Lq@Tg@z@kClBiEPYj@k@LITMYaD?_@NSJa@FiA^cCbA_Gv@iFr@wABcBFwAHRJx@XQLg@VyAXcAHqBHe@x@qCTmALwAReDj@aDBy@~@eDDeEPuAv@oBl@oBbD_RXw@Jk@Em@Ma@y@u@k@s@Ug@G}@B}@jBkO^qEd@cCRkDTqBzA_I`AeH~B{KPuAByAXiAPWb@iAwB{DoC{Je@cCa@aBE]Ee@QyLBaAIsBIe@[eAEW?QLy@z@kE?wBZcB@gAEoAcBoOUeANKLYRG\\LAYVq@B_@|Bz@V@LcAjB}Dh@LRQJFFNx@s@VZJNBNpAaBjAmB\\a@`FaHzBmD\\s@b@qA^yAf@iB^gBPsANqBOo@zBeGNUX_AF][}@Yk@a@mAmBkByA}@[k@nAaCtF{NzA}FpCsFbA}CDU?OXs@j@cBvBwFjA}ELOl@iBzCcIj@sAd@gBrMu^fFmMTWN_@KOpBqDl@oAx@cClCmHOYbBuD|@iBiA}BhCcGjA_D', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ehedI`|sREDG]KFf@`BhF~JzArAvA~An@bAp@v@^H^ErC{@X@|B~A^LdBHPAHGFOD_@Ey@@WFK\\c@BI?}AFo@@u@Lq@Tg@z@kClBiEPYj@k@LITMYaD?_@NSJa@FiA^cCbA_Gv@iFr@wABcBFwAHRJx@XQLg@VyAXcAHqBHe@x@qCTmALwAReDj@aDBy@~@eDDeEPuAv@oBl@oBbD_RXw@Jk@Em@Ma@y@u@k@s@Ug@G}@B}@jBkO^qEd@cCRkDTqBzA_I`AeH~B{KPuAByAXiAPWb@iAwB{DoC{Je@cCa@aBE]Ee@QyLBaAIsBIe@[eAEW?QLy@z@kE?wBZcB@gAEoAcBoOUeANKLYRG\\LAYVq@B_@|Bz@V@LcAjB}Dh@LRQJFFNx@s@VZJNBNpAaBjAmB\\a@`FaHzBmD\\s@b@qA^yAf@iB^gBPsANqBOo@zBeGNUX_AF][}@Yk@a@mAmBkByA}@[k@nAaCtF{NzA}FpCsFbA}CDU?OXs@j@cBvBwFjA}ELOl@iBzCcIj@sAd@gBrMu^fFmMTWN_@KOpBqDl@oAjDuJbBkE^y@pCmF`AwAvAcCBBLCtAkCIQrCkGrAkDjAiDdCaIzAkFv@cDz@_DjC}Hh@kA~EeJdA_CtBuDb@_ArBcHXw@Tc@\\e@jE_EzAgC~AqCt@cBXc@`@YLEEQCU@UFSHKLCHcEZuBrAmGpBsLvD{REUBYn@{Cz@wCj@yAj@gAbCeEl@iAx@}Br@mCZ}A`@kDZsG`@FL}CZqEv@gFb@qB|AyEnBaFhBoHbDiQlHke@XeCReCL{BFyBBaCGgGiBem@_AoZSyDSsB[oBw@{DcAgDoAuCmB{CsBsB{BwAyFwBgAeA{Ai@{AGkJkDy@c@y@k@cA}@}@eAwAaCqAmCMu@Gw@I\\OVQLS@SGQSKYG_@e@Bu@IKDIRG`@a@lFGPe@\\ByCAUGIoKwDuJyCs{@yYq@EqChBmAvAq@b@o@Zg@NkDVa@CmGuAcIScIN}BNaCV[]KEiA`@}CvAoAdAu@tAcC~Fi@vBy@fFQz@u@jCeFdPgAvBaBfBkDjFe@r@iAjAqIpJwB~AmAp@w@p@mBhBuAzAaCp@]XsA|Ao@jAm@|AY|@]x@MLaAh@u@L{B~@g@b@o@XKHWd@Yv@OJO?MsA@oCe@G[Ki@c@OEODiAdAa@Jy@?o@LUHuAx@y@sBm@Rs@wDg@Xq@Rq@Jm@G}@WCXITQVe@f@]V_Cz@K^EfAiCUoE`AKHwAp@S_Ao@{AiBkD_A{AuAoA[a@a@Yy@^]Zc@{A]{@KV_@Zc@_BKEWX_@Ng@J_CP}@Pi@qFOgB]{Bc@h@g@d@DLJI@DMH?BFEDJYR', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ehedI`|sREDG]KFf@`BhF~JzArAvA~An@bAp@v@^H^ErC{@X@|B~A^LdBHPAHGFOD_@Ey@@WFK\\c@BI?}AFo@@u@Lq@Tg@z@kClBiEPYj@k@LITMYaD?_@NSJa@FiA^cCbA_Gv@iFr@wABcBFwAHRJx@XQLg@VyAXcAHqBHe@x@qCTmALwAReDj@aDBy@~@eDDeEPuAv@oBl@oBbD_RXw@Jk@Em@Ma@y@u@k@s@Ug@G}@B}@jBkO^qEd@cCRkDTqBzA_I`AeH~B{KPuAByAXiAPWb@iAwB{DoC{Je@cCa@aBE]Ee@QyLBaAIsBIe@[eAEW?QLy@z@kE?wBZcB@gAEoAcBoOUeANKLYRG\\LAYVq@B_@|Bz@V@LcAjB}Dh@LRQJFFNx@s@VZJNBNpAaBjAmB\\a@`FaHzBmD\\s@b@qA^yAf@iB^gBPsANqBOo@zBeGNUX_AF][}@Yk@a@mAmBkByA}@[k@nAaCtF{NzA}FpCsFbA}CDU?OXs@j@cBvBwFjA}ELOl@iBzCcIj@sAd@gBrMu^fFmMTWN_@KOpBqDl@oAjDuJbBkE^y@pCmF`AwAvAcCBBLCtAkCIQrCkGrAkDjAiDdCaIzAkFv@cDz@_DjC}Hh@kA~EeJdA_CtBuDb@_ArBcHXw@Tc@\\e@jE_EzAgC~AqCt@cBXc@`@YLEEQCU@UFSHKLCHcEZuBrAmGpBsLvD{REUBYn@{Cz@wCj@yAj@gAbCeEl@iAx@}Br@mCZ}A`@kDZsG`@FL}CZqEv@gFb@qB|AyEnBaFhBoHbDiQlHke@XeCReCL{BFyBBaCGgGiBem@_AoZSyDSsB[oBw@{DcAgDoAuCmB{CsBsB{BwAyFwBgAeA{Ai@{AGkJkDy@c@y@k@cA}@}@eAwAaCqAmCMu@Gw@I\\OVQLS@SGQSKYG_@e@Bu@IKDIRG`@a@lFGPe@\\ByCAUGIoKwDuJyCs{@yYq@EqChBmAvAq@b@o@Zg@NkDVa@CmGuAcIScIN}BNaCV[]KEiA`@}CvAoAdAu@tAcC~Fi@vBy@fFQz@u@jCeFdPgAvBaBfBkDjFe@r@iAjAqIpJwB~AmAp@w@p@mBhBuAzAaCp@]XsA|Ao@jAm@|AY|@]x@MLaAh@u@L{B~@g@b@o@XKHWd@Yv@OJO?@FEHi@t@s@v@yB|AsAd@c@n@cAhCwAlC}BzEa@xBKRkAx@oChAk@f@a@l@oAx@iAtAKRId@QHqDdDsAtAGAwDxC_ErB{@x@OZMEaA{Bk@aAyDzCqClBM@_E|EgDbC^pCc@ZKj@aAd@mEnCaD~Bw@n@}D|DeGtFw@z@yAlAuAp@_BrAqBvB}CxFq@bAc@j@c@XKBg@X}A|@aAx@s@`As@fAoBzBeApAu@vAw@jAQ@a@z@uCoHoC}HOVUOs@jB_AtBiA~BiDdFoSbVgAvAqC|CiCnCiCtByEfDiDhC_LbIwA|@oCvBgA`ACHANj@dB@RANEFg@DgAAYPyCdEiG`K{JpPqA~@uHlO}F`N}C`HFHeH~OAZaAdCqAhCeDxH_MtXy@bBCXyDhJqD~H}GhOQxBS~@s@~@kAlAeExI}E|K[XmAvBM`@a@z@Gp@CJcA~B}@bC_@h@eBlDsE~KaAx@wDpIum@fuAoAlCeLrWwJdTeBfDWJg@d@e@pAOl@SP{B`DwB`CwAhBMd@DZ?fCBZ?LGL_@VoApAOGc@|@iFpEqCzCYLu@t@OKaBnAw@Z}@b@oAM_@[k@SeAEg@R]\\a@dAKd@Uf@{DfCCQeJ`FWBa@E}@JyBbByBzAmD`BaMrFM~IsAG?HgA@GL]A?E}@@@y@cA`@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.28012354066053,-3.22001874446869], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=51994">View all updates for Royal Oak, Holywell</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        28<span class="sup">th</span> Jan 2015, 14:59
+      </div><div class="auditexp">Request to mark pub as open by <a rel="nofollow" href="/userinfo.php?name=ROBCamra">ROB Camra</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        28<span class="sup">th</span> Jan 2015, 14:59
+      </div><div class="auditexp">Request to mark pub as open submitted by <a rel="nofollow" href="/userinfo.php?name=ROBCamra">ROB Camra</a>, with included notes: <span class="reason">Reopened according to Vale Of Clwyd CAMRA</span>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Beer Festivals : <span id="fac11751994">No</span> <span id="discdetail11751994" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 January 2015 by ROB Camra</span></li><li>Beer Garden : <span id="fac11451994">Yes</span> <span id="discdetail11451994" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 January 2015 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10251994">No</span> <span id="discdetail10251994" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 January 2015 by ROB Camra</span></li><li>Car Park : <span id="fac11351994">Yes</span> <span id="discdetail11351994" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 January 2015 by ROB Camra</span></li><li>Child Friendly : <span id="fac12151994">Yes</span> <span id="discdetail12151994" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 January 2015 by ROB Camra</span></li><li>Dog Friendly : <span id="fac10551994">Yes</span> <span id="discdetail10551994" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 January 2015 by ROB Camra</span></li><li>Hot Food : <span id="fac10351994">Yes</span>  - <span id="discdetail10351994" class="discdetail" style="">Evenings only except Sunday</span> -   <span class="Reviewer">last updated 28 January 2015 by ROB Camra</span></li><li>Karaoke : <span id="fac10651994">Yes</span> <span id="discdetail10651994" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2015 by Dave McNally</span></li><li>Live Music : <span id="fac10851994">No</span> <span id="discdetail10851994" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 January 2015 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11051994">No</span> <span id="discdetail11051994" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 January 2015 by ROB Camra</span></li><li>Pool Table : <span id="fac10451994">Yes</span> <span id="discdetail10451994" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 January 2015 by ROB Camra</span></li><li>Quiz Night : <span id="fac10951994">Yes</span>  - <span id="discdetail10951994" class="discdetail" style="">Wednesday</span> -   <span class="Reviewer">last updated 28 January 2015 by ROB Camra</span></li><li>Real Ale : <span id="fac10151994">Yes</span> <span id="discdetail10151994" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 January 2015 by ROB Camra</span></li><li>Real Cider : <span id="fac11951994">No</span> <span id="discdetail11951994" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 January 2015 by ROB Camra</span></li><li>WiFi : <span id="fac11551994">Yes</span> <span id="discdetail11551994" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 January 2015 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 11pm</td></tr>
+<tr><td>Monday</td><td>4pm - 11pm</td></tr>
+<tr><td>Tuesday</td><td>4pm - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>4pm - 11pm</td></tr>
+<tr><td>Thursday</td><td>4pm - 11pm</td></tr>
+<tr><td>Friday</td><td>4pm - 1am</td></tr>
+<tr><td>Saturday</td><td>12noon - 1am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/79836/" class="List1">Talacre Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 4 reviewer(s)" title="Pub has average rating of 6.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/74647/" class="List1">The Market Cross (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/79837/" class="List1">Boars Head</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/51989/" class="List1">The Old Wine Vaults</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/51992/" class="List1">Red Lion</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/79874/" class="List1">Feathers Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/51972/" class="List1">Abbots Arms</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

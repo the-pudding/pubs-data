@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Royal Oak pub in Prestbury (near Cheltenham), Gloucestershire, GL52 3DL : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Royal Oak" />
+  <meta name="keywords" content="The Royal Oak, 43  The Burgage, Prestbury, Cheltenham, Gloucestershire, , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Royal Oak in Prestbury" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/12001_12500/12427_be023aad.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/12427/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.91534806859055" />
+<meta property="og:longitude" content="-2.04909406745912" />
+<meta property="og:street-address" content="43  The Burgage" />
+<meta property="og:locality" content="Prestbury" />
+<meta property="og:region" content="Gloucestershire" />
+<meta property="og:postal-code" content="GL52 3DL" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Royal Oak in Prestbury? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Royal Oak the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/12427/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Royal Oak in Prestbury" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Royal Oak " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/12001_12500/12427_be023aad.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/12427/" />
+<meta name="geo.position" content="51.91534806859055;-2.04909406745912" />
+<meta name="geo.placename" content="The Royal Oak in Prestbury" />
+<meta name="geo.region" content="UK" />
+<title>The Royal Oak in Prestbury (near Cheltenham) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":12427},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(12427);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 12427;var pubaddress = "43  The Burgage";var pubname = "The Royal Oak";var pubpostcode = "GL52 3DL";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/gloucestershire/" title="Pubs Galore : Gloucestershire Page">Gloucestershire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/cheltenham/gloucestershire/" title="Pubs Galore : Cheltenham Page">Cheltenham</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/prestbury/gloucestershire/" title="Pubs Galore : Prestbury Page">Prestbury</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Royal Oak Page">The Royal Oak Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="7hbiakdritjehttp6pkugd33t7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/12427/" class="indisplay"><img src="/images/display/12001_12500/12427_be023aad.jpg?w=2" alt="Picture of The Royal Oak" /></a><br />  Image posted by <a href="/userinfo.php?name=Lady+Grey" class="indisplay">Helen Iwanczuk</a><br />
+  Submitted on Tuesday, 29<sup>th</sup> November 2011<br />
+  With picture contributions to 791 other pubs<br />
+<a href="/pubpictures/12427/" class="smallbutton">View all this pub's pictures</a> (11 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/12427/">Pub map</a><br /><a href="/pubreviews/12427/">Pub reviews (3)</a><br /><a href="/pubpictures/12427/">Pub pictures (12)</a><br /><a href="/core/pubaudit.php?id=12427" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Royal Oak, Cheltenham</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">43  The Burgage</span><br />
+
+<span class="town">Prestbury</span><br />
+<span class="postaltown">Postal town: Cheltenham</span><br />
+<span class="postcode">GL52 3DL</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01242522344</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/prestbury/gloucestershire/">Prestbury</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Royal Oak</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/TheRoyalOakInn1" target="_blank"><img src="https://pbs.twimg.com/profile_images/845564849031667713/Knay3fg6_normal.jpg" alt="The Royal Oak Inn" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/TheRoyalOakInn1" target="_blank">The Royal Oak Inn</a></strong>
+The Royal Oak is a thriving community driven pub in the heart of the Cotswolds &amp;amp; the closest pub to Cheltenham Race&hellip; <a href='https://t.co/25lkfd2baY' target='_blank'>https://t.co/25lkfd2baY</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/TheRoyalOakInn1/status/1121416125969989638">3:10 PM Apr 25th</a> from <a href="http://www.facebook.com/twitter" rel="nofollow">Facebook</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/TheRoyalOakInn1" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/TheRoyalOakInn1" target="_blank">The Royal Oak Inn</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Royal Oak  <span class="h2note">(Average Rating: <span id="averagerating"><b>8</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review85253" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a> left this review about The Royal Oak</h6>
+<p class="old">The pub has the look of a countryside local,yet it is situated in a smart northern suburb of Cheltenham near the racecourse.The entrance opens on two doors,restaurant right ,bar left.We weren&#039;t eating so into the bar it was,with it&#039;s polished wood floor,wooden clad bar,fitted bench seating and some low cross beams.A wood burner stool opposite the bar,it felt smart but traditional with no tv,muzak,machine distractions.Horse brasses completed the rustic feel.<br />
+There were 5 handpumps drawing TT Landlord,Severn Vale Luverley Jub&#039;lee,Salopian Oracle,fff Citra Sonic (on good form) and Thatchers Heritage Cider.A decent selection.A board described the lunchtime specials  with mains ranging from &pound;9-&pound;12,so I guess you can eat in the bar if you wish.Another board described future events at the pub,an acoustic night,cider &amp; cheese festival,Belgian night so this pub is more than a food orientated establishment,a local atmosphere is generated.<br />
+Worthy of it&#039;s GBG listing,I would definitely revisit and maybe try the food as well next time.</p>
+<p class="Reviewer">On 20<sup>th</sup> July 2014 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 1916 recommendations about 1916 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review70644" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Gann">Steve of N21</a> left this review about The Royal Oak</h6>
+<p class="old">Really pleasant Cotswold stone pub in the village of Prestbury just north of Cheltenham, which is well described by John below, and nothing additional to add for the description of the pub.<br />
+As we were staying in the north of Cheltenham we decided to do a circular walk through Pittville Park to the pump room, and then along into Prestbury to take this one in as a half way stop before returning to the east side of Cheltenham and it was a great way to spend a couple of hours.<br />
+As described it is very much a food led pub with a menu which firmly sits above standard pub fare in the restaurant bracket, for which it scores highly on trip advisor. And, apart from a couple of old boys in the snug and us two out in the garden, everyone else had come to eat. <br />
+But we had dropped in for the beer and in this respect we were not disappointed.<br />
+Four ale pumps and one additional for Thatchers Heritage cider and the ales on were Salopian Oracle, TT Landlord, Dickensian Brewery Martin Guzzlewit and one named after pub landlord Robin Carter which apparently is his first beer released under his newly-founded Tivoli Beer Company, which he hopes to develop into a micro-brewery, but is currently brewed by one of the local Cheltenham breweries although I&rsquo;m not sure which one.<br />
+We tried them all whilst here and they were all in good condition , and the Landlords own pint was a decent golden ale and a good session beer if we had had time to stay around and have more.</p>
+<p class="Reviewer">On 31<sup>st</sup> May 2013 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 1577 recommendations about 1528 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review52754" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pub+Anorak">John Bonser</a> left this review about The Royal Oak</h6>
+<p class="old">In the village of Prestbury, a mile or so outside Cheltenham, is The Royal Oak, an attractive looking Cotswold stone building. The pub apparently dates back to 1849. Outside, we see the now familiar &ldquo;West Country Ales 1760 &ndash; Best in the West &ldquo; ceramic tiled logo and, on the right hand side, some attractive etched windows.<br />
+<br />
+It&rsquo;s a 2 bar pub with a drinkers snug bar on the left and a dedicated dining room on the right. The bar features a parquet floor, honey coloured walls, an open fire and plenty of horse brasses on the dark oak beams. Reflecting the proximity of Cheltenham racecourse &ndash; it&rsquo;s apparently the nearest pub &ndash; there&rsquo;s several horse racing prints. Note also the photograph of the famous former cricketer, Tom Graveney, being presented to Prince Philip and the Queen before a Test Match. Tom Graveney was, apparently, once the landlord here and is still a regular, although there was no sign of him on my recent Sunday afternoon visit. The Burgage &ndash; the street in which the pub is situated &ndash; is reputedly one of the most haunted streets in England. One small area of the pub is named as Prestbury Ghost Corner, the home of Prestbury Independent State Society, whose highlighted initials act as a timely reminder not to take them seriously. In summary, it&rsquo;s a pleasant traditional interior with no music or other distractions and something of a slightly upmarket feel to it.<br />
+<br />
+The restaurant is highly regarded. Food is a definite step up from normal pub food and prices reflect this.<br />
+<br />
+At the back, a pleasant garden leads to an annexed building &ndash; &ldquo;The Pavilion&rdquo; &ndash; which is used for live music and various functions. On my visit, a post christening party was in progress and the baby concerned was bawling and screeching for all it was worth, making sure that everyone was in no doubt that this was his day.<br />
+<br />
+4 pumps ( one for cider ) were serving TT Landlord, Youngs Ordinary and Purity Mad Goose Pale Ale, the latter being in splendid form - &pound; 3.30p. A blackboard lists forthcoming beers. The pub is a CAMRA Good Beer Guide regular.<br />
+<br />
+This pub is well worth seeking out &ndash; it&rsquo;s a short bus ride from Cheltenham</p>
+<p class="Reviewer">On 21<sup>st</sup> October 2011 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 560 recommendations about 560 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Royal Oak</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Royal Oak, includes a menu, accommodation details and current real ale list - <a href="http://www.royal-oak-prestbury.co.uk" title="Submitted by:- elizabeth mcgraw" target="_blank">www.royal-oak-prestbury.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="139399666104874">Facebook - <a href="https://www.facebook.com/royaloakprestbury/" target="_blank" rel="nofollow">Royal Oak</a></li></ul><ul id="Custom2"><li class="twitlink" id="402620471">Twitter - <a href="https://twitter.com/TheRoyalOakInn1" target="_blank" rel="nofollow">The Royal Oak Inn</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/12427/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.91534806859055, -2.04909406745912], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.91534806859055, -2.04909406745912]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Cheltenham Spa, 3.06 miles, 59 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Ashchurch for Tewkesbury, 8.36 miles, 2 hr 41 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Gloucester, 10.8 miles, 3 hr 28 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('}uz{HzdoKj@E`BEbE?C|@GXU^y@t@KTK~@IhBIn@sA`HIv@rAh@NBCr@HdF@fBKbHVA|BDbBAXFp@nAJ^b@|BLRN@nChEjFjP\\p@~@dArDpDdB|@~JbCt@FTIPMN|@p@pC`DtJDALFBD@HARCHbA`E|AhHZ`Ab@`Ai@pCFDoAhGh@X]dP`Bv@Uz@HFCFzCvBF^Az@IdAxAdASfA]rCWrA`@d@AtBFnC`@hG@fBIxA[~DA`@?`ABd@NxARp@MN@FGpAGd@RRBfALFBPHAN\\NKR@j@j@nBhC|@~AJJh@hBnArEd@dC|@xFX]nAlG^fDBd@bB`FtBdG~@tB`ApBB\\Pn@f@jA^rBE^QHDTOt@@DKf@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('}uz{HzdoK_AJ_AEcAQcAIiEeAiC?_EaAeAa@eDg@CMUWgC}As@qAeCiBqAeB[s@?e@_@SGMcIyDmAWu@FuAKwCcAsAgAeAo@u@Um@Ig@BEjCD`@mATcAs@Kp@ITW\\_A@m@EOGSb@e@v@YPPlDiBXAe@i@K}@c@c@KgAOcAIcAFqAf@mAp@EFgB~@yChCkArAa@bAa@lB_@vCAdBI?iGpKcGhB}Wa@YxLcAGeBSiHoBu@@IEGP_AbJg@pBc@hAe@bAq@`A[NMRgDbGUj@Y|@UUiAk@YlAQTi@JAJUTQZWPkCz@LhAq@Nq@Zu@`@m@p@k@r@aAfBUl@Kf@Q`DAhABTGJWFILETBxAGR@zAkACkBWYfC]Bc@d@c@\\a@T@RI@_@n@[fAe@S_AK]Pw@Ac@s@s@~@wAvAuA?aCZmE~@uC|@uD|A}CfBu@`As@l@u@Vk@Fq@CoAVkKpA_BTDfAHbAN|@Xn@D\\C^@VVn@h@`A@R`B~a@AlAH@K~IF`J`AvPDxCDtEl@GoE`O_I`@I~AAdAb@nI?`@E\\MVcPvSWR?JcKhVSX{IjZsAbDU\\mH|EGCe@hCy@|CQl@]n@Mj@NjEDjF@bCE`HiGQcF|FS]q@oDOMe@CgA@uAVaBJWDYPGRGdDB`BAREROLgG|BOHOPIVKSMOYKeCFsC[}FiAiC[sBAo@KyHyCgIcCwAi@}@?}BXU?KEGGGOCQOqEEa@IQKIOEeIj@gHv@s@D{@CcBYmBQwAs@wAuAQK[Mm@GaEDy@Vs@`@KaBOFGIYkDY[i@@SHUMeCBASE]Q?', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('}uz{HzdoKj@E`BEbE?C|@GXU^y@t@KTK~@IhBIn@sA`HIv@rAh@NBCr@HdF@fBKbHVA|BDbBAXFp@nAJ^b@|BLRN@nChEjFjP\\p@~@dArDpDdB|@~JbCt@FTIPMN|@p@pC`DtJDALFBD@HARCHbA`E|AhHZ`Ab@`Ai@pCFDYtAxGnFpEtD[~@pBdBAN`@b@JZMTCNFPzArBfE`FfF`HLHLH`AhAdF`HXzAS\\In@At@VDrB~BpC`EbArAZRLN@`@NJGRTLDLDP?RWn@V@PZdA~K`AxKThDFjBAfBP@@fBArEjAz@j@j@RV\\lAjAlJt@tB`AlB\\d@d@`AlDjLBVFdFC|@o@pHm@`EIxAJjDLnAHL?vBC|@M`Cy@`MGhAK`E?pF@xAD|@Ft@Jf@V|@r@pArChEp@`ClA|E^hAfAhCVRnAxAz@pAnB|BpDhDb@XJ\\LVPN`@x@Pj@Hj@JdBNHIdC?x@Bb@L|@Tl@h@vBTtAX`AFNGTv@nEAp@t@jFLlD@nFAxAIhBWpC_@xCPJKp@NFC^?j@XfMvCpMhFrQEXtBzA~EnL@PCPeCk@Ev@Cz@JdDHFbBxF`@~@CtAHx@Rx@b@hATrCBRL\\L|@L`BPdAH`@b@|@Xb@r@j@~@\\^B`@Nm@lRo@lJm@hIYhEE|@?x@LlBPl@|AfC\\r@Vn@d@dBl@`C\\`BLbAJrAL`DNr@Tl@dAjBj@r@tAnArB|A\\j@jAzB?RqAnIqBhHw@xEV\\ZZ`@ZvBnARPQd@oAhFSj@}EtIkBlE_@dASnAo@pBZrAhBhJ`CtKfB~KbAbF`D`MRhAJ~`@nCpW@~LyA\\qF|@oG~@c@@B~C[~@Cd@Dn@Hf@\\|@G^fBzDxA~DlAzCjF`KXv@V|@Pn@nA}Bv@s@fC|KdCnJj@zAZ^b@^n@PtBVjEnBTAV|EAZO~@lAr@hCfBqAzH[jCSnCKfDCpDFvCLpCrCdUUNBJf@UBLUHV`BvAxLJL\\gB~ATQrCM|CH`EVbGnAfQSPb@rE`@~GP~@Z`AzBrEFVAz@h@~@DQ`ArAp@nBt@b@AcAt@uACC', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.91534806859055,-2.04909406745912], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=12427">View all updates for The Royal Oak, Prestbury</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        27<span class="sup">th</span> Apr 2018, 09:38
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        27<span class="sup">th</span> Apr 2018, 09:38
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11812427">No</span> <span id="discdetail11812427" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 July 2017 by Jonathan Wilde</span></li><li>Bar Billiards : <span id="fac10712427">No</span> <span id="discdetail10712427" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 July 2017 by Jonathan Wilde</span></li><li>Beer Garden : <span id="fac11412427">Yes</span> <span id="discdetail11412427" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 April 2014 by Alan Hurdle</span></li><li>Car Park : <span id="fac11312427">Yes</span> <span id="discdetail11312427" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 April 2014 by Alan Hurdle</span></li><li>Child Friendly : <span id="fac12112427">Yes</span>  - <span id="discdetail12112427" class="discdetail" style="">Time restrictions apply depending on age and location in pub</span> -   <span class="Reviewer">last updated 11 July 2017 by Jonathan Wilde</span></li><li>Dog Friendly : <span id="fac10512427">No</span> <span id="discdetail10512427" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 July 2017 by Jonathan Wilde</span></li><li>Function Room : <span id="fac12312427">Yes</span>  - <span id="discdetail12312427" class="discdetail" style="">According to Twitter</span> -   <span class="Reviewer">last updated 21 July 2015 by Dave McNally</span></li><li>Hot Food : <span id="fac10312427">Yes</span> <span id="discdetail10312427" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Jukebox : <span id="fac11212427">No</span> <span id="discdetail11212427" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 July 2017 by Jonathan Wilde</span></li><li>Live TV Sports : <span id="fac11012427">No</span> <span id="discdetail11012427" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 July 2017 by Jonathan Wilde</span></li><li>Micropub : <span id="fac12212427">No</span> <span id="discdetail12212427" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 July 2017 by Jonathan Wilde</span></li><li>Pinball : <span id="fac11612427">No</span> <span id="discdetail11612427" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 July 2017 by Jonathan Wilde</span></li><li>Pool Table : <span id="fac10412427">No</span> <span id="discdetail10412427" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 July 2017 by Jonathan Wilde</span></li><li>Real Ale : <span id="fac10112427">Yes</span> <span id="discdetail10112427" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Real Cider : <span id="fac11912427">Yes</span> <span id="discdetail11912427" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 April 2014 by Alan Hurdle</span></li><li>Wheelchair Access : <span id="fac12012427">Yes</span>  - <span id="discdetail12012427" class="discdetail" style="">Small step in and toilets in function room</span> -   <span class="Reviewer">last updated 11 July 2017 by Jonathan Wilde</span></li><li>WiFi : <span id="fac11512427">Yes</span> <span id="discdetail11512427" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 July 2017 by Jonathan Wilde</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - 11pm</td></tr>
+<tr><td>Saturday</td><td>11am - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 3 reviewer(s)" title="Pub has average rating of 8 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/12408/" class="List1">The Plough Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/12318/" class="List1">The Beehive</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

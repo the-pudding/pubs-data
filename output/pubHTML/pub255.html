@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Black Castle pub in Brislington, Bristol, Bristol (County), BS4 3BD : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Black Castle" />
+  <meta name="keywords" content="Black Castle, Bath Road, Bristol, Bristol (County), Brislington, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Black Castle in Bristol" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/1_500/255_ea649ca2.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/255/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.44330870404713" />
+<meta property="og:longitude" content="-2.56086587905884" />
+<meta property="og:street-address" content="Bath Road" />
+<meta property="og:locality" content="Bristol" />
+<meta property="og:region" content="Bristol (County)" />
+<meta property="og:postal-code" content="BS4 3BD" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Black Castle in Bristol? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Black Castle the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/255/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Black Castle in Bristol" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Black Castle " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/1_500/255_ea649ca2.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/255/" />
+<meta name="geo.position" content="51.44330870404713;-2.56086587905884" />
+<meta name="geo.placename" content="Black Castle in Bristol" />
+<meta name="geo.region" content="UK" />
+<title>Black Castle in Brislington, Bristol : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":255},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(255);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 255;var pubaddress = "Bath Road";var pubname = "Black Castle";var pubpostcode = "BS4 3BD";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/bristol/" title="Pubs Galore : Bristol (County) Page">Bristol (County)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/bristol/bristol/" title="Pubs Galore : Bristol Page">Bristol</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Black Castle Page">Black Castle Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="89anov465s3j4uptpq11sn7jg3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/255/" class="indisplay"><img src="/images/display/1_500/255_ea649ca2.jpg?w=1" alt="Picture of Black Castle" /></a><br />  Image posted by <a href="/userinfo.php?name=Al+10000" class="indisplay">Alan Winfield</a><br />
+  Submitted on Friday, 27<sup>th</sup> October 2017<br />
+  With picture contributions to 6053 other pubs<br />
+<a href="/pubpictures/255/" class="smallbutton">View all this pub's pictures</a> (5 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/255/">Pub map</a><br /><a href="/pubreviews/255/">Pub reviews (5)</a><br /><a href="/pubpictures/255/">Pub pictures (6)</a><br /><a href="/core/pubaudit.php?id=255" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Black Castle, Brislington, Bristol</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Bath Road</span><br />
+<span class="region">Brislington</span><br />
+
+<span class="town">Bristol</span><br />
+<span class="postcode">BS4 3BD</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Flaming Grill (Spirit Pubs)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/brislington/bristol/">Brislington</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Black Castle  <span class="h2note">(Average Rating: <span id="averagerating"><b>5</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review123709" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> left this review about Black Castle</h6>
+<p class="old">The Black Castle looks like its name suggests a Black Castle.<br />
+Once inside there is a large L shaped room with the bar to the rear,the floor is bare boarded,the seating is normal tables and chairs and tall tables and chairs,there are two pool tables to the front left.<br />
+I presume this is a Greene King tied house,there were two real ales on the bar,i had a drink of GK IPA,which was a decent enough drink,the other real ale was GK London Glory.<br />
+Food seems to be a big draw here,but you can sit anywhere.<br />
+The background music was crap.<br />
+<br />
+Pub visited 29/7/2017</p>
+<p class="Reviewer">On 28<sup>th</sup> October 2017 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 6113 recommendations about 6113 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review70399" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about The Black Castle</h6>
+<p class="old">A very unusual pub, looking exactly like a black castle as it&rsquo;s name suggests. I believe that it was built originally as a folly by the local Lord of the manor when this was still part of the countryside outside of Bristol. Unfortunately despite it&rsquo;s interesting appearance from the outside, it is now located in the middle of a supermarket car park and inside it&rsquo;s a very bland, corporate affair with no interesting features whatsoever other than a couple of arched doorways and windows.<br />
+<br />
+It&rsquo;s a large, U-shape building, and the courtyard in the centre of the &ldquo;U&rdquo; is still pleasant enough, although not quite as attractive as I remember it from my youth when there was a pond and fountains illuminated by coloured underwater lighting. Once you&rsquo;re inside though, you might as well be in a Brewer&rsquo;s Fayre, Premier Inn or any of the other bland chain pubs that blight our landscape. The left hand leg of the &ldquo;U&rdquo; is more the bar area and this had rather cheap looking laminate flooring, whilst most of the rest of the pub was carpeted and taken up by diners.<br />
+<br />
+The bar area has a couple of (orange?) pool tables at one end as well as a pinball machine. Paintwork was a mixture of khaki green, cream and mustard which actually looked better than it sounds. A number of old black and white prints of Bristol were on the walls, as well as some arty black and white close-up photo&rsquo;s of golf, darts and pool. There were also a couple of plasma&rsquo;s dotted about which I think may have been showing sports of some sort.<br />
+<br />
+Service at the bar was somewhat slow with only one person serving initially and a number of people ordering food and paying by card. A pile of at least a hundred empty glasses at the end of the bar indicated that they are either understaffed or disorganised. I didn&rsquo;t inspect the menu, but it appeared to be very much the cheap and cheerful sizzling variety, and there were a number of meal deals on every single day of the week such a steak nights, burger night, great big combo nights and even pudding nights.<br />
+<br />
+As might be expected, beer choice was not extensive with Bombardier being the sole offering. Ciders were Blackthorn and Strongbow.</p>
+<p class="Reviewer">On 24<sup>th</sup> May 2013 
+  - rating: <b>4</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review53693" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=honsec">Pete Yeates</a> left this review about The Black Castle</h6>
+<p class="old">The picture was taken on 12th June 2007 from the side of the Sainsbury&#039;s store. The view in the picture is what the public would have seen in &quot;Junction Road&quot; (without the hedges) which was an industrial estate that was re-developed to build the nearby supermarket.<br />
+<br />
+Currently (November 2011) the Pub will be be undergoing a refurbishment and should re-open early December with a more food orientated theme.</p>
+<p class="Reviewer">On 18<sup>th</sup> November 2011 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 100 recommendations about 93 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/255/">View more reviews of Black Castle (5)</a>
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=164">Pubs in Brislington</a> by <a rel="nofollow" href="/userinfo.php?name=honsec">Pete Yeates</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Black Castle</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Black Castle page at the Flaming Grill site - <a href="http://www.flaminggrillpubs.com/pub/castle-bristol/p1458/" title="Submitted by:- Blackthorn _" target="_blank">www.flaminggrillpubs.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="1454470158198436">Facebook - <a href="https://www.facebook.com/Black-Castle-Flaming-Grill-1454470158198436/" target="_blank" rel="nofollow">Black Castle - Flaming Grill</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/255/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Dave+M">Dave McNally</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.44330870404713, -2.56086587905884], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.44330870404713, -2.56086587905884]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Bristol Temple Meads, 1.53 miles, 29 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Lawrence Hill, 1.53 miles, 29 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Bedminster, 1.82 miles, 35 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('qn~xHnbsNLTR`C^MdAg@r@g@DNJKJ\\CNDRA`@DVAd@WfEk@~Hy@xGSfCEv@ER?b@@VCvA?bCBxCHzDXtHDlB?`CEbAG`FEjAIbAOtA]~A{@~C}AjEOXeAtA{@x@EQ}@j@oBnAcAz@c@b@uBzCkCvEq@vAs@pAMJGRQEAPgBrDe@fAwBiGQMoA{DJ]Q[N_@vAd@p@L@u@[Ai@K', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('qn~xHnbsNc@o@AKa@u@u@Xq@wAs@PCB?H[BAM?cAM\\OPUDQCQMO]CYA[IRQPyCvBGQq@\\OAh@[AKYyA@CMw@So@kAqAq@M_@DaFjDqAPyAk@}BcDU~Am@xAgAk@MAmChEORg@TWoDy@TgB@qC`AUVWPgAb@}Af@eC\\?ImFbBZ`Ds@l@AI{@d@UDOP[Lg@^k@b@sAlA_@PShK{@\\O?MWAW?SPsBh@N@E_Bg@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('qn~xHnbsNLTR`C^MdAg@r@g@DNJKJ\\CNDRA`@DVAd@WfEk@~Hy@xGSfCEv@ER?b@@VCvA?bCBxCHzDXtHDlB?`CFjA?lACtAKvCI~@]bCYjARPj@`CbArF@ZC^O@H~CBAFrBJ\\_@H@JpCvLb@vAcAjBRV^RrCJATWxH@f@J|ADpBBlCCXY~HDFz@rGBxDRdBJbBR~@JTH??NjAtMELS}@Si@g@Xq@sBEDg@eB', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.44330870404713,-2.56086587905884], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=255">View all updates for Black Castle, Bristol</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        28<span class="sup">th</span> Oct 2017, 18:04
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        27<span class="sup">th</span> Oct 2017, 18:11
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac118255">No</span> <span id="discdetail118255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 December 2015 by Jonathan Wilde</span></li><li>Bar Billiards : <span id="fac107255">No</span> <span id="discdetail107255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 December 2015 by Jonathan Wilde</span></li><li>Beer Festivals : <span id="fac117255">No</span> <span id="discdetail117255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 December 2015 by Jonathan Wilde</span></li><li>Beer Garden : <span id="fac114255">Yes</span> <span id="discdetail114255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 December 2015 by Jonathan Wilde</span></li><li>CAMRA Discount : <span id="fac102255">Yes</span>  - <span id="discdetail102255" class="discdetail" style="">10%</span> -   <span class="Reviewer">last updated 30 May 2018 by ROB Camra</span></li><li>Car Park : <span id="fac113255">Yes</span> <span id="discdetail113255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2013 by Blackthorn _</span></li><li>Child Friendly : <span id="fac121255">Yes</span> <span id="discdetail121255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 December 2015 by Jonathan Wilde</span></li><li>Darts : <span id="fac111255">Yes</span> <span id="discdetail111255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 December 2015 by Jonathan Wilde</span></li><li>Function Room : <span id="fac123255">No</span>  - <span id="discdetail123255" class="discdetail" style="">Is big enough to have a function in a wing</span> -   <span class="Reviewer">last updated 03 December 2015 by Jonathan Wilde</span></li><li>Hot Food : <span id="fac103255">Yes</span> <span id="discdetail103255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 December 2015 by Jonathan Wilde</span></li><li>Jukebox : <span id="fac112255">No</span> <span id="discdetail112255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 December 2015 by Jonathan Wilde</span></li><li>Karaoke : <span id="fac106255">No</span> <span id="discdetail106255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 December 2015 by Jonathan Wilde</span></li><li>Live Music : <span id="fac108255">No</span> <span id="discdetail108255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 December 2015 by Jonathan Wilde</span></li><li>Live TV Sports : <span id="fac110255">Yes</span> <span id="discdetail110255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 May 2013 by David McNally</span></li><li>Micropub : <span id="fac122255">No</span> <span id="discdetail122255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 December 2015 by Jonathan Wilde</span></li><li>Pinball : <span id="fac116255">Yes</span> <span id="discdetail116255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 May 2013 by David McNally</span></li><li>Pool Table : <span id="fac104255">Yes</span> <span id="discdetail104255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 May 2013 by David McNally</span></li><li>Quiz Night : <span id="fac109255">Yes</span>  - <span id="discdetail109255" class="discdetail" style="">Thursday&#039;s</span> -   <span class="Reviewer">last updated 28 April 2017 by Jonathan Wilde</span></li><li>Real Ale : <span id="fac101255">Yes</span> <span id="discdetail101255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 May 2013 by David McNally</span></li><li>Real Cider : <span id="fac119255">No</span> <span id="discdetail119255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2013 by Blackthorn _</span></li><li>Wheelchair Access : <span id="fac120255">Yes</span> <span id="discdetail120255" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 December 2015 by Jonathan Wilde</span></li><li>WiFi : <span id="fac115255">Yes</span>  - <span id="discdetail115255" class="discdetail" style="">The Cloud </span> -   <span class="Reviewer">last updated 03 December 2015 by Jonathan Wilde</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11pm - 11pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - 11pm</td></tr>
+<tr><td>Saturday</td><td>11am - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/629/" class="List1">The Sandringham</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 2 reviewer(s)" title="Pub has average rating of 4.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/80025/" class="List1">Grounded</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 2 reviewer(s)" title="Pub has average rating of 7 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/63255/" class="List1">Bocabar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/80668/" class="List1">The Lodekka</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 3 reviewer(s)" title="Pub has average rating of 5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/458/" class="List1">The Knowle</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/673/" class="List1">Charlie&#039;s</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/597/" class="List1">The Rhubarb Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 3 reviewer(s)" title="Pub has average rating of 7 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/382/" class="List1">The George</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

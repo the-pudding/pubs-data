@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Plough pub in Chelmsford, Essex, CM1 1HY : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Plough" />
+  <meta name="keywords" content="The Plough, 28  Duke Street, Chelmsford, Essex, Chelmsford Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Plough in Chelmsford" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/11001_11500/11431_a3c664d8.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/11431/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.73643647302625" />
+<meta property="og:longitude" content="0.46808025529481" />
+<meta property="og:street-address" content="28  Duke Street" />
+<meta property="og:locality" content="Chelmsford" />
+<meta property="og:region" content="Essex" />
+<meta property="og:postal-code" content="CM1 1HY" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Plough in Chelmsford? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Plough the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/11431/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Plough in Chelmsford" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Plough " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/11001_11500/11431_a3c664d8.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/11431/" />
+<meta name="geo.position" content="51.73643647302625;0.46808025529481" />
+<meta name="geo.placename" content="The Plough in Chelmsford" />
+<meta name="geo.region" content="UK" />
+<title>The Plough in Chelmsford : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":11431},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(11431);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 11431;var pubaddress = "28  Duke Street";var pubname = "The Plough";var pubpostcode = "CM1 1HY";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/essex/" title="Pubs Galore : Essex Page">Essex</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/chelmsford/essex/" title="Pubs Galore : Chelmsford Page">Chelmsford</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Plough Page">The Plough Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="4e3rm94m996s7rcetpvcf0k7r3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/11431/" class="indisplay"><img src="/images/display/11001_11500/11431_a3c664d8.jpg?w=2" alt="Picture of The Plough" /></a><br />  Image posted by <a href="/userinfo.php?name=fat_beer_badger" class="indisplay">adam bell</a><br />
+  Submitted on Sunday, 8<sup>th</sup> April 2012<br />
+  With picture contributions to 933 other pubs<br />
+<a href="/pubpictures/11431/" class="smallbutton">View all this pub's pictures</a> (42 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/11431/">Pub map</a><br /><a href="/pubreviews/11431/">Pub reviews (6)</a><br /><a href="/pubpictures/11431/">Pub pictures (43)</a><br /><a href="/core/pubaudit.php?id=11431" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Plough, Chelmsford Central, Chelmsford</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">28  Duke Street</span><br />
+
+
+<span class="town">Chelmsford</span><br />
+<span class="postcode">CM1 1HY</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01245250145</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Oak Tree (Mitchells & Butlers)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/chelmsford-central/essex/">Chelmsford Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Plough  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review94588" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Maldenman">Malden man</a> left this review about The Plough</h6>
+<p class="old">A nice looking building with a tile hung mansard roof, inside however is not quite as characterful as it could be, having been madeover to some degree. There are three separate areas, linked together inside, and a nice sunny rear garden. The main larger area with the bar has a flagged floor of some age, other areas are boarded. D&eacute;cor has a few framed bits and bobs, there are a few fireplaces, one with a wood burner, not needed on a warm day. Lots of chalkboards offer this and that deals, the beers were arranged on two banks of eight handpumps which got us a bit giddy initially until we found that they were not only doubled up but offered a dull selection of mostly regional nationals. Old Speckled Hen, Bombardier, Doom Bar, GK IPA, Adnam&#039;s Bitter, Draught Bass, Cameron&#039;s 150. One reversed, couldn&#039;t see it but likely to be Pride I&#039;d wager. I went naturally for the Cameron&#039;s 150, it wasn&#039;t good, sweet and cloying.<br />
+As a building not too bad but they have sold out a bit and it really could be so much better. Hugely better pubs very close by.</p>
+<p class="Reviewer">On 26<sup>th</sup> April 2015 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 1678 recommendations about 1655 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review91160" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> left this review about The Plough</h6>
+<p class="old">This was an Ind Coope house years ago but is now part of the Mitchell &amp; Butler &quot;Oak Tree&quot; chain whatever that is. Inside it has wooden floorboards and is one single room with a central bar. The wooden tables all had menus on with food prices that looked good value. <br />
+The bar had two banks of eight hand pumps which seemed great until it became apparent that the beers were all doubled up. Things got worse when it was apparent that all of the beers were from mainstream regional brewers. They were Black Sheep Bitter, Wadworth&#039;s 6X, Pedigree, Thwaite&#039;s Nutty Black, Doom Bore, Greene King IPA, Adnam&#039;s Bitter and London Pride. I thought I would rub salt in the wound by going for my personal Bete Noire Sharp&#039;s Doom Bore. It was everything I expected it to be, sweet, brown and boring although it was in good condition and was relatively cheap (&pound;2.60).  Although it was cheap the local Spoons are cheaper and I had a local brew in one that was vastly superior to any of the beers here. There are plenty of pubs in Chelmsford with a more interesting beer selection. I certainly wouldn&#039;t bother to return. <br />
+I was short changed by 10p which loses it another rating point.</p>
+<p class="Reviewer">On 18<sup>th</sup> January 2015 
+  - rating: <b>3</b><br />
+  <span class="leftspace">[User has posted 2121 recommendations about 2116 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review61044" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a> left this review about The Plough</h6>
+<p class="old">A gem of a pub next door to the station. Good service even when busy, and a great choice of ales. I went for the Thornbridge Frank As Appollo and Kirkstall Pale Ale.</p>
+<p class="Reviewer">On 17<sup>th</sup> June 2012 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 2750 recommendations about 2750 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/11431/">View more reviews of The Plough (6)</a>
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=762">Chelmsford 23.12.10</a> by <a rel="nofollow" href="/userinfo.php?name=gillhalfpint">Gill Smith</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Plough</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official pages of the Plough at the Nicholsons site - <a href="http://www.nicholsonspubs.co.uk/theploughchelmsford/" title="Submitted by:- elizabeth mcgraw" target="_blank">www.nicholsonspubs.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="twitlink" id="470286766">Twitter - <a href="https://twitter.com/ThePlough_Cford" target="_blank" rel="nofollow">Plough of Chelmsford</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/11431/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Aqualung">Aqualung .</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.73643647302625, 0.46808025529481], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.73643647302625, 0.46808025529481]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Chelmsford, 0.13 miles, 2 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Ingatestone, 6.74 miles, 2 hr 10 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Hatfield Peverel, 6.85 miles, 2 hr 12 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('mwwzHylzA|AzDDGqAcDm@kB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('mwwzHylzAJTCZBT\\x@JHX`@HXn@`AZl@zAvC`AzAjA_DBAj@r@j@Z`Ft@V@@HHDDCd@z@h@~AZbARbAB`@tBGNBFCxCGHb@LXpClDRH?HHR|@tA\\\\`@TdG`Bl@VPPfAfCVb@l@b@nBj@BCh@aEL[HCH_A`@kC^HpHbAj@Nb@Nb@Vl@l@\\n@@XDT^hAJTVVRZf@vAb@t@DKBDGRH@?JVbBF|@DPhAnCx@~AjC`El@hAhBtIP~@N`BBTPx@b@XHLDh@DLB\\E`@JIP?lA\\Bh@~@TVA?JVD`Ad@ZVd@Rx@t@v@nAhAzAPb@VZjIdNXh@~@|AVXJd@b@t@NJnB`DbB`CJ?BH?FMp@HhA`@?LHLVP~@HPd@NTPRRn@zAf@f@z@b@xB`Cb@Z\\NSzAdAH~Ar@t@l@pBnBhAlAVPR?XKrAyAPEL@n@~BL\\PVVBXTh@\\l@lAhCzAj@n@nADPEV[pUjW~PnP|AtBpA`CfA`DZxAVxAf@fHPdANr@x@hCDNHNJFJ@LCPSF]\\K\\A~@RxAb@b@ZDVLJF@JIZ@ZNzEdJ|FdMfFpNvAtEbArDh@vBlAfIt@pFj@b@fE~A`Bd@r@n@x@jAXzAbBjBdE|FZC^FfB~@^XJRfAE^@d@ILn@@vBJfE@pAKz@yAhIk@|Dc@jB~@x@dCzCtA`CfBxCvBxCnAtA~GzGtDrCp@n@v@bAd@v@bC|ErAnB~ArBrAjBx@rAzBdEbGpLxCrF`AdCzC~GTWJ?j@RLHNE`@a@LGf@CP@~@ZrD`BL?TF@RRBRJhAlAVPxC~@j@vAH?DX', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('mwwzHylzAJTCZBT\\x@KCEUISOQFm@b@aC\\_BJo@_@S_@[}@sA]w@Uk@Ok@YwAG_A@oCNuGBoE?}CF_FHoCHkA]c@_@SKOEc@@OFULcAcCiAEB]cBWMOSEKCa@COKWMMBKO_AMGCg@G@Ew@G@EYOWKg@UWyAe@cA_@eAo@_@_AoAwG{@d@kB_Jg@wC_CoKcBiIm@oBU}@e@oCy@_DGMr@_DqHiXyCyJc@uAgD}IsAmCBU@UC]Me@Om@Iw@GaA?{DO_AEUC[@_@D[L]LsA@[Co@Y{@i@}@aBgBk@aAwAcEg@u@M?GGIQGcBYsAk@oBq@gAQc@Oo@Sa@Fc@GKMAcByD{AyEeBcE_HsQsAaEO{@_@mA[OkAUWQk@w@Y[k@_@s@SmBQoBiBASBi@RsA\\oAJW|@g@BGI{BMg@SSIOI]Go@A{@k@kBOOw@sC}CgKeEyO}Hi\\yAwGEHu@yCs@cDwB}I}CaNoAeF{Jic@mB}H}AyFYyAoEeReDcMwCyMgBmHu@qCq@kDo@kFeEyZaE{[W}BmAyIcB{MKwAs@mIy@aGq@}FKoAW{C_ByNcBsR[gD}@}H{@mFa@uBsAgGQTk@rAW`@_DbDo@`@cDpAq@`@y@p@KNKPqBhDECN_@AASNISQHKY', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.73643647302625,0.46808025529481], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=11431">View all updates for The Plough, Chelmsford</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        11<span class="sup">th</span> May 2015, 22:13
+      </div><div class="auditexp">Pub <a href="/pubmapaudit/11431/">map correction</a> submitted by <a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        11<span class="sup">th</span> May 2015, 22:13
+      </div><div class="auditexp">Pub <a href="/pubmapaudit/11431/">map correction</a> submitted by <a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11811431">No</span> <span id="discdetail11811431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2013 by john mcgraw</span></li><li>Bar Billiards : <span id="fac10711431">No</span> <span id="discdetail10711431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2013 by john mcgraw</span></li><li>Beer Festivals : <span id="fac11711431">No</span> <span id="discdetail11711431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 January 2015 by Aqualung .</span></li><li>Beer Garden : <span id="fac11411431">Yes</span> <span id="discdetail11411431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2013 by john mcgraw</span></li><li>CAMRA Discount : <span id="fac10211431">No</span> <span id="discdetail10211431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2013 by john mcgraw</span></li><li>Car Park : <span id="fac11311431">No</span> <span id="discdetail11311431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2013 by john mcgraw</span></li><li>Child Friendly : <span id="fac12111431">Yes</span> <span id="discdetail12111431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2013 by john mcgraw</span></li><li>Darts : <span id="fac11111431">No</span> <span id="discdetail11111431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2013 by john mcgraw</span></li><li>Hot Food : <span id="fac10311431">Yes</span> <span id="discdetail10311431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2013 by john mcgraw</span></li><li>Jukebox : <span id="fac11211431">No</span> <span id="discdetail11211431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2013 by john mcgraw</span></li><li>Karaoke : <span id="fac10611431">No</span> <span id="discdetail10611431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2013 by john mcgraw</span></li><li>Live Music : <span id="fac10811431">No</span> <span id="discdetail10811431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2013 by john mcgraw</span></li><li>Live TV Sports : <span id="fac11011431">Yes</span> <span id="discdetail11011431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2013 by john mcgraw</span></li><li>Micropub : <span id="fac12211431">No</span> <span id="discdetail12211431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 April 2015 by john mcgraw</span></li><li>Pinball : <span id="fac11611431">No</span> <span id="discdetail11611431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2013 by john mcgraw</span></li><li>Pool Table : <span id="fac10411431">No</span> <span id="discdetail10411431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2013 by john mcgraw</span></li><li>Real Ale : <span id="fac10111431">Yes</span> <span id="discdetail10111431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Real Cider : <span id="fac11911431">Yes</span> <span id="discdetail11911431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 June 2015 by john mcgraw</span></li><li>Wheelchair Access : <span id="fac12011431">Yes</span> <span id="discdetail12011431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2013 by john mcgraw</span></li><li>WiFi : <span id="fac11511431">Yes</span> <span id="discdetail11511431" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 November 2013 by john mcgraw</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 39 picture(s)" title="Pub has 39 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 5 reviewer(s)" title="Pub has average rating of 8 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54533/" class="List1">Railway Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 9.5 from 7 reviewer(s)" title="Pub has average rating of 9.5 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/77354/" class="List1">The Ale House</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85486/" class="List1">Grand Central</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 18 picture(s)" title="Pub has 18 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 4 reviewer(s)" title="Pub has average rating of 6.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/11448/" class="List1">Royal Steamer</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 20 picture(s)" title="Pub has 20 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 9 from 1 reviewer(s)" title="Pub has average rating of 9 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66775/" class="List1">Barista</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 31 picture(s)" title="Pub has 31 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 4 reviewer(s)" title="Pub has average rating of 7.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/11451/" class="List1">The Ship</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/67007/" class="List1">The Cellar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 31 picture(s)" title="Pub has 31 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 4 reviewer(s)" title="Pub has average rating of 6.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/11439/" class="List1">The Golden Fleece</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

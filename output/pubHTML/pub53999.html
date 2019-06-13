@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Harlequin pub in EC1, London (Central), EC1R 1UY : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Harlequin" />
+  <meta name="keywords" content="The Harlequin, 27 Arlington Way, EC1, London (Central), Clerkenwell, Angel, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Harlequin in EC1" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/53501_54000/53999_3345ba9e.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/53999/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.52983807978935" />
+<meta property="og:longitude" content="-0.10623369940572" />
+<meta property="og:street-address" content="27 Arlington Way" />
+<meta property="og:locality" content="EC1" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="EC1R 1UY" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Harlequin in EC1? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Harlequin the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/53999/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Harlequin in EC1" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Harlequin " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/53501_54000/53999_3345ba9e.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/53999/" />
+<meta name="geo.position" content="51.52983807978935;-0.10623369940572" />
+<meta name="geo.placename" content="The Harlequin in EC1" />
+<meta name="geo.region" content="UK" />
+<title>The Harlequin in EC1 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":53999},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(53999);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 53999;var pubaddress = "27 Arlington Way";var pubname = "The Harlequin";var pubpostcode = "EC1R 1UY";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/ec1/central-london/" title="Pubs Galore : EC1 Page">EC1</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Harlequin Page">The Harlequin Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="7ia7220r6rimdrvqsahd6e8if0" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/53999/" class="indisplay"><img src="/images/display/53501_54000/53999_3345ba9e.jpg?w=2" alt="Picture of The Harlequin" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
+  Submitted on Wednesday, 27<sup>th</sup> September 2017<br />
+  With picture contributions to 24007 other pubs<br />
+<a href="/pubpictures/53999/" class="smallbutton">View all this pub's pictures</a> (11 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/53999/">Pub map</a><br /><a href="/pubreviews/53999/">Pub reviews (3)</a><br /><a href="/pubpictures/53999/">Pub pictures (12)</a><br /><a href="/core/pubaudit.php?id=53999" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Harlequin, EC1</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">27 Arlington Way</span><br />
+
+
+<span class="town">EC1</span><br />
+<span class="postcode">EC1R 1UY</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/clerkenwell/central-london/">Clerkenwell</a>, <a href="/areas/angel/central-london/">Angel</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Harlequin</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/louiliebas" target="_blank"><img src="https://pbs.twimg.com/profile_images/1057698194673594373/1zw0Qu2j_normal.jpg" alt="EasterIsland man" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/louiliebas" target="_blank">EasterIsland man</a></strong>
+Happy Bank Holiday ! <a href='https://t.co/MMSSj0B0OQ' target='_blank'>https://t.co/MMSSj0B0OQ</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/louiliebas/status/1034129570105098240">6:24 PM Aug 27th</a> from <a href="http://twitter.com/#!/download/ipad" rel="nofollow">Twitter for iPad</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/louiliebas" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/louiliebas" target="_blank">EasterIsland man</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Harlequin  <span class="h2note">(Average Rating: <span id="averagerating"><b>5&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review116061" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=london+calling">john gray</a> left this review about Harlequin</h6>
+<p class="old">Quaint sort of single room pub with lots of wood panelling.Could get to like this pub as it had a nice feel to it.Shame but they are a freehouse and in their wisdom have decided to choose from amongst the nearly 2000 British breweries the joy that is Doombar.Not for me.</p>
+<p class="Reviewer">On 11<sup>th</sup> March 2017 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 886 recommendations about 874 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review104086" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> left this review about Harlequin</h6>
+<p class="old">Closed at weekends, this is an unpretentious little pub around the back of Sadler&#039;s Wells theatre, which we had yet to visit.<br />
+<br />
+It&#039;s a simple, small place with bare boards, eclectic mixed furniture, a flame effect fire, piano at rear and lots of t and g panelling. Fairly quiet on our visit, we encountered the tail end of a quiz and the attendees seemed a friendly, youngish professional bunch. The staff were friendly and my pint of Timothy Taylor&#039;s Landlord (&pound;4.20) was good.<br />
+<br />
+I&#039;d probably give this pub at least two extra points but the one ale and restricted opening times are a hindrance. Additionally, the gent&#039;s lav is just a single crapper cubicle, no urinal. Nevertheless, it&#039;s far better than the awful Old Red Lion up the road and I will definitely return when in the area.</p>
+<p class="Reviewer">On 1<sup>st</sup> March 2016 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 874 recommendations about 860 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review39673" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=RogerB">Roger Button</a> left this review about Harlequin</h6>
+<p class="old">A Free House since 1848 according to the board outside, the Harlequin was a fairly regular haunt for me some years ago when I worked in the area but a couple of recent return visits have left me with mixed impressions.<br />
+<br />
+The pub is fine in itself, a basic back street pub set in a small, homely terrace of Dickensian shops just off the bustling Islington Angel main drag. The basic furnishings are suited to the bare floors and simple brick fireplace although there is a single sofa to the rear next to an upright piano. Archive posters for nearby the Sadlers Wells Theatre line the walls along with old photos of the area and there is a selection of board games. I didn&rsquo;t spot any TV but I do recall there being a small basic TV until recently. The door to the gents also leads to a small enclosed patio although it would hardly be a suntrap with the towering walls surrounding.<br />
+<br />
+What really sets the pub back for me are the astronomical beer prices &ndash; far higher than most places in the area. There are 3 hand pumps with Speckled Hen, Landlord and 1 that was unused on my recent visit. About 18 months ago I had a woeful pint of Black Sheep which was a hefty &pound;3.40 at the time. My latest visit found me coughing up &pound;3.70 for and admittedly much better quality pint of Landlord (which was also topped up without any prompting).<br />
+<br />
+I really do like the pub and if the prices were more reasonable I would use the place far more frequently but until I win the lottery, visits will have to remain sporadic.</p>
+<p class="Reviewer">On 7<sup>th</sup> January 2011 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1238 recommendations about 1232 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Harlequin</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of Harlequin - <a href="http://harlequinpub.co.uk/" title="Submitted by:- Tris C" target="_blank">harlequinpub.co.uk</a></li>
+			<li>Randomness Guide to London - <a href="http://london.randomness.org.uk/wiki.cgi?Harlequin,_EC1R_1UY" title="Submitted by:- Kake Pugh" target="_blank">Harlequin entry</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="64036936209">Facebook - <a href="https://www.facebook.com/The-Harlequin-64036936209/" target="_blank" rel="nofollow">The Harlequin</a></li></ul><ul id="Custom2"><li class="twitlink" id="309079174">Twitter - <a href="https://twitter.com/louiliebas" target="_blank" rel="nofollow">EasterIsland man</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/53999/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Tris39">Tris C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.52983807978935, -0.10623369940572], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.52983807978935, -0.10623369940572]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Farringdon (London), 0.8 miles, 15 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> London Kings Cross, 0.97 miles, 18 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Old Street, 1.04 miles, 20 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('sloyHzwSvBp@`@C^YJWv@t@dBvAr@t@lAhAJQpC\\BEZ\\DOFK\\[BGPBDGlAm@hD}BdAcAHA`@L`@Or@r@`@l@zA}BMu@Ai@DQN[d@g@d@rAp@tCd@Yz@_@|AaAn@m@r@sAFRXSFSf@]FFPOFPLO', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('sloyHzwSg@QsAM?ZFNl@xFA@BZKJGTOnA?p@GBRxBeBf@KHCD]BoBr@YFZpFP`EpBjl@D^Bd@NrFDL@?FhEJ^Kd@OX?ZIBA\\Dp@WDAvAAb@YA?CmDI', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('sloyHzwSg@QsAMCKEKQ}@KDQ}@EGSmBo@gAOEm@[Jm@CQfBwKHKF[?ONkAvAeIvAkJnGc`@tEyVFUd@w@`@]`Ao@bA]t@K?NLDTVX{AZI', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.52983807978935,-0.10623369940572], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=53999">View all updates for The Harlequin, EC1</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        10<span class="sup">th</span> Sep 2018, 22:41
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        10<span class="sup">th</span> Sep 2018, 22:41
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11853999">No</span> <span id="discdetail11853999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Bar Billiards : <span id="fac10753999">No</span> <span id="discdetail10753999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Beer Festivals : <span id="fac11753999">No</span> <span id="discdetail11753999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Beer Garden : <span id="fac11453999">No</span> <span id="discdetail11453999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 March 2016 by Tris C</span></li><li>Car Park : <span id="fac11353999">No</span> <span id="discdetail11353999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Darts : <span id="fac11153999">No</span> <span id="discdetail11153999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Hot Food : <span id="fac10353999">No</span> <span id="discdetail10353999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 March 2016 by Tris C</span></li><li>Jukebox : <span id="fac11253999">No</span> <span id="discdetail11253999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Karaoke : <span id="fac10653999">No</span> <span id="discdetail10653999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Live Music : <span id="fac10853999">No</span> <span id="discdetail10853999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Live TV Sports : <span id="fac11053999">No</span> <span id="discdetail11053999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Micropub : <span id="fac12253999">No</span> <span id="discdetail12253999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Pinball : <span id="fac11653999">No</span> <span id="discdetail11653999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Pool Table : <span id="fac10453999">No</span> <span id="discdetail10453999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>Quiz Night : <span id="fac10953999">Yes</span>  - <span id="discdetail10953999" class="discdetail" style="">Mondays 8.00 pm.</span> -   <span class="Reviewer">last updated 01 March 2016 by Tris C</span></li><li>Real Ale : <span id="fac10153999">Yes</span> <span id="discdetail10153999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 January 2011 by Alan Hurdle</span></li><li>Wheelchair Access : <span id="fac12053999">No</span> <span id="discdetail12053999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 February 2016 by Tris C</span></li><li>WiFi : <span id="fac11553999">Yes</span> <span id="discdetail11553999" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 August 2013 by David McNally</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23357/" class="List1">The Shakespeares Head</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23319/" class="List1">The Pearl &amp; Feather</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 9 reviewer(s)" title="Pub has average rating of 6 from 9 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/53972/" class="List1">The Old Red Lion</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 11 reviewer(s)" title="Pub has average rating of 7 from 11 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/68487/" class="List1">Brewhouse &amp; Kitchen</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 14 recommendation(s)" title="Pub has 14recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 12 reviewer(s)" title="Pub has average rating of 5.5 from 12 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/53947/" class="List1">The Angel (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 2 reviewer(s)" title="Pub has average rating of 4.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23302/" class="List1">The Blacksmith &amp; the Toffeemaker</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 4 reviewer(s)" title="Pub has average rating of 6 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54008/" class="List1">The Castle</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 3 reviewer(s)" title="Pub has average rating of 5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23341/" class="List1">Coin Laundry</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

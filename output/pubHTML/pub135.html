@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Redan Inn pub in Chilcompton (near Radstock), Somerset, BA3 4HA : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Redan Inn" />
+  <meta name="keywords" content="The Redan Inn, Frys Well, Chilcompton, Radstock, Somerset, , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Redan Inn in Chilcompton" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/1_500/135_7e95ede5.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/135/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.26059806605937" />
+<meta property="og:longitude" content="-2.50353871163941" />
+<meta property="og:street-address" content="Frys Well" />
+<meta property="og:locality" content="Chilcompton" />
+<meta property="og:region" content="Somerset" />
+<meta property="og:postal-code" content="BA3 4HA" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Redan Inn in Chilcompton? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Redan Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/135/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Redan Inn in Chilcompton" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Redan Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/1_500/135_7e95ede5.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/135/" />
+<meta name="geo.position" content="51.26059806605937;-2.50353871163941" />
+<meta name="geo.placename" content="The Redan Inn in Chilcompton" />
+<meta name="geo.region" content="UK" />
+<title>The Redan Inn in Chilcompton (near Radstock) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":135},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(135);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 135;var pubaddress = "Frys Well";var pubname = "The Redan Inn";var pubpostcode = "BA3 4HA";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/somerset/" title="Pubs Galore : Somerset Page">Somerset</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/radstock/somerset/" title="Pubs Galore : Radstock Page">Radstock</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/chilcompton/somerset/" title="Pubs Galore : Chilcompton Page">Chilcompton</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Redan Inn Page">The Redan Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="p5nmebcb1jnfl85fll3as80br1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/135/" class="indisplay"><img src="/images/display/1_500/135_7e95ede5.jpg?w=2" alt="Picture of The Redan Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=fat_beer_badger" class="indisplay">adam bell</a><br />
+  Submitted on Thursday, 4<sup>th</sup> June 2015<br />
+  With picture contributions to 933 other pubs<br />
+<a href="/pubpictures/135/" class="smallbutton">View all this pub's pictures</a> (7 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/135/">Pub map</a><br /><a href="/pubreviews/135/">Pub reviews (0)</a><br /><a href="/pubpictures/135/">Pub pictures (8)</a><br /><a href="/core/pubaudit.php?id=135" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Redan Inn, Radstock</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Frys Well</span><br />
+
+<span class="town">Chilcompton</span><br />
+<span class="postaltown">Postal town: Radstock</span><br />
+<span class="postcode">BA3 4HA</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/chilcompton/somerset/">Chilcompton</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Redan Inn  <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div style="line-height:1.3;margin:5px 15px;text-align:center;"><b>Currently no reviews of this pub.</b><br />
+Be the first to write a recommendation on this pub and let everyone know why they should visit.</div>
+
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Redan Inn</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Redan Inn - <a href="http://www.theredaninn.co.uk" title="Submitted by:- Blackthorn _" target="_blank">www.theredaninn.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="462841347134767">Facebook - <a href="https://www.facebook.com/TheRedanInn/" target="_blank" rel="nofollow">The Redan Inn</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/135/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.26059806605937, -2.50353871163941], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.26059806605937, -2.50353871163941]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Frome, 10.03 miles, 3 hr 13 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Oldfield Park, 11.29 miles, 3 hr 38 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Bath Spa, 11.72 miles, 3 hr 46 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('wyzwH~~gNV@TGb@Sg@cDUy@a@cAOUbAwAJa@~@iArAcCzAsBbJgP`BeGp@iGzBkK`@m@l@_DtBvATwBBy@@sCEw@K}@YgAv@YTE|CNOwACy@Ao@P_B`@_DNg@FiADsFMuBe@qCLIm@iFASqBiFc@eAs@y@i@aBdA{BTeACeBEmASiABYAa@U{BQm@|CiBCy@BQDBdAGbAs@tAqDVcI?_@Gc@F]~BeCx@m@v@]~AiBHW^BvFSzBq@VAVBBM?eBCiAg@yGYmABQS]KYKe@Gy@@eDLkE@iADA^oApDcQ^mAh@aAdAgEl@{Ct@cDRuAj@yBBu@Hy@Aq@CEx@o@GkA?sAG_DAaBFc@PuCTwLLa@[cHu@eFKO?KLg@xAwIfAyJDONsBVcBB[AWWuBC[C_FFu@?UEcBWsC@yCt@MhAcAr@wFCkEg@k@_B?MKE[EaAS_DOaFAw@KkC?gBLyC^_DTmAX{@Zo@~A{Bh@wAb@}APuAAy@Po@\\aBh@mDBc@FYSwF?}FD}@J_A`@sAXuB`@uDFyA@gAk@aUOiCAm@Bi@JeAh@yDTwBb@_Gb@uHN}AFYl@}CtCyPT}@t@gBSg@MoCKqEA_BHeFL_E@{ACsE?yEToGh@wKdAuRLgAj@aEHYHKdAq@NSxA}C`@s@`@mAC[@_AIcDEaASgBQuBIuEGUaAgD_CkF_@wASoAGsHg@gFUsEIyEIqIOwFDyQUgIIyBO}BIuB@i@NwGFa@d@_AHBf@Yp@m@nAgCR[FQCK_@kAwAsBCO?S\\gB@a@Wu@YgA[oCQ}B?kAn@}AZk@HCl@e@|CcDPEtAoE`AgEr@sA~A_CvC}C~AuC^iA?WCKlAi@t@Ol@WH_@b@gAt@eAz@mBZaALoAd@oCDMJId@Iz@EZ@@MVy@TgADcANaI|@gNRuFXgDBq@ImCCiBb@}Bl@{BjBmGf@yANC?aBFcDj@cOT_CjAsHX}CBq@Ac@HGHOLm@d@iCVeBXcAZs@IUGu@GWs@uB]aBI}A@wAd@mHJA\\}@`@o@Ni@\\m@`AiCMOXcBPJx@eDDYj@sDd@gBl@uAD_@JcBJ_ARe@HKIOkAgASWeAqBBUQo@Ig@R_EHKt@gHPmC~@cDFD`@uBxA_Bu@yCb@Y|@Rb@Rj@F', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('wyzwH~~gNqBSiBrAAGKFGEiAwCeBuCcB{B}@aA{ByAgBy@_Dy@oCYIRq@CyB]iBc@H_AAWyCkQWaAwB_G_BoGq@gBKFaBtJkAzEWv@iCmDeJqLmCmEsByDi@yASK}CiGaCuDi@e@_@c@a@QuB_CcAi@{@{@eB{BuB{BWS}@qA[_@{@_@QSgAm@a@]MYc@aCEmAKWOWWOGAQOi@qAAWF_@?[m@q@y@mAaDwCoEuFOJoA]oBk@i@DaAR{BbBQBMkAEmAGU}FcOg@sAEq@Mi@YiDG_@g@cFQsC@UFO@OIsBm@cGUcBg@_BKmAs@}BUIU?g@]KOGB}@aCi@g@KOeBmEOSKEAe@CcL@s@XcEu@m@y@cAISeB{A[ImAsB}@u@_BcA{AKmI{GMF_@OGOgGkF{BU{@Uo@eAi@oAq@{@K?]XAIGGoAm@{AkA_B_AmA_@]]MSCi@Q?gDmF{DeHBWwBkDcJeS}Ny\\yMyY}@gDq@}BOSUQYIWQKY_BeDeC_GeAqCgCgF{DoIaDvE{CzEqAjAAKq@aBgBi@I@M`@KNg@@UIOOqA[q@EkA?u@e@WWcBiCqCwA{CoAELCAaFYiBm@kEe@uJLGHIC]CS@OHQZe@h@e@Pm@Bc@CeDa@y@UsEuBYU}@_AeAo@SUuB}EIG[DKOY{@KQQMm@Q_@Ee@By@PS@SEu@c@cHgGsCsCyEkFkCsDqA{A[YYMcB_@uE{BcBgBg@sAyIvAwX^e@]q@LwD`A_BiCuKyOc@gAm@wCUiBcA_GYmAyBgHcBiB_DmEuDmEaEeDaE}AyAu@cB_@oFc@qASkMwEgFcCk@g@q@Om@YcG_ESWUQa@Iu@I]MQKKUWcAOmAs@eAWMK@}At@]HGAm@kASMOSi@wBCSi@aAIGAIYIS@Cc@uBiB]Qi@CYi@A?Me@KUc@W_@@MPCb@eGaBsDmAPKAOBMlB_Aw@oADM@e@CSmDyMGMYKM?mAwECBe@mAgEcUOkBgBGMDQTGRARYAq@wCoBqGIe@OPOk@gBsEoAyBDIHmA~@}BwAiB[k@wAwCk@_Ai@m@gA_A]c@kCsA}Aq@iDsA^qGAOEKo@u@EK?OSG@qAH}AE@Cb@AAKlBCALiC', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('wyzwH~~gNqBSiBrAAGKFGEiAwCeBuCcB{B}@aA{ByAgBy@_Dy@oCYIRq@CyB]iBc@H_AAWyCkQWaAwB_G_BoGq@gBKFaBtJkAzEWv@iCmDeJqLmCmEsByDi@yASK}CiGaCuDi@e@_@c@a@QuB_CcAi@{@{@eB{BuB{BWS}@qA[_@{@_@QSgAm@a@]MYc@aCEmAKWOWWOGAQOi@qAAWF_@?[m@q@y@mAaDwCoEuFOJoA]oBk@i@DaAR{BbBQBMkAEmAGU}FcOg@sAEq@Mi@YiDG_@g@cFQsC@UFO@OIsBm@cGUcBg@_BKmAs@}BUIU?g@]KOGB}@aCi@g@KOeBmEOSKEAe@CcL@s@XcEu@m@y@cAISeB{A[ImAsB}@u@_BcA{AKmI{GMF_@OGOgGkF{BU{@Uo@eAi@oAq@{@K?]XAIGGoAm@{AkA_B_AmA_@]]MSCi@Q?gDmF{DeHBWwBkDcJeS}Ny\\yMyY}@gDq@}BOSUQYIWQKY_BeDeC_GeAqCgCgF{DoIU\\cCmFNaAFO{@cEoAuHS{@yAiIc@qBg@eBkAqBeD{GcA_Bu@cA{CqDwCgEa@c@cDwBqEcC_@Wa@[QA{BkA?UE_@M]UJ[DYEGHmBo@k@[mAcA_AmA_@DcBy@_HqEoD_DwAkCwAeDKw@ORQCs@u@_FeD}@s@y@Oa@i@i@wAy@s@w@c@IQk@JS?m@QyAo@q@Os@Gm@BaCb@@SZa@DKAMa@g@[k@_BkAiDc@gCoCkBQgDwFsBuFsQqPqJkI{CwCwCqE}GqGiB{@?OmAkCYkA]uCWsAm@iCMkAD_BOaAE_Bc@wDCyCK[I}@Ga@Wg@Ai@IOu@s@k@kBg@_As@cCY}AEm@?m@PeC@mA[{B@QJM_EiB}FuDUKmBg@qAGu@??o@}@Yg@]}@[e@?_A^IJ_@o@uAkBiAgBeE{IiD}HsDuHU{@Aa@C[IQEENUEKUDMA[_@wC}Hw@{BQy@U[u@e@QOAQoEeEm@u@oAeB{HwLo@{@mCcCCJu@q@kCsBg@[i@SuAMgECwBe@oBO[iAC]e@?ASq@cBsA{CQo@Qs@m@sD_BeKGCIQKRMBwA{GQgAMQA_@CMIYu@kDGa@ImAG_@EGMAc@W[_AUQg@M_A]q@KO?[JSHOT]BiBx@W\\ERMgAIa@]{@e@{@CAwAp@{@T_Bn@Ee@{@r@Yf@GAMMIe@G@?EC??FsBHKE?|@ULHb@IDBJa@VSF?@TECIQu@My@S}@GDc@aBY}AFFbAlDb@tB', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.26059806605937,-2.50353871163941], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=135">View all updates for The Redan Inn, Chilcompton</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        13<span class="sup">th</span> Nov 2015, 15:54
+      </div><div class="auditexp">Request to mark pub as open by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        13<span class="sup">th</span> Nov 2015, 13:59
+      </div><div class="auditexp">Request to mark pub as open submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a>, with included notes: <span class="reason">Now re-opened and run by the same team behind The Bird in Hand in Long Ashton and The Pump House in Hotwells.</span>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac118135">Yes</span> <span id="discdetail118135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 November 2015 by Jonathan Wilde</span></li><li>Bar Billiards : <span id="fac107135">No</span> <span id="discdetail107135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 April 2014 by Jonathan Wilde</span></li><li>Beer Festivals : <span id="fac117135">No</span> <span id="discdetail117135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 April 2014 by Jonathan Wilde</span></li><li>Beer Garden : <span id="fac114135">Yes</span> <span id="discdetail114135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 April 2014 by Jonathan Wilde</span></li><li>Car Park : <span id="fac113135">Yes</span> <span id="discdetail113135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 April 2014 by Jonathan Wilde</span></li><li>Child Friendly : <span id="fac121135">Yes</span> <span id="discdetail121135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 April 2014 by Jonathan Wilde</span></li><li>Dog Friendly : <span id="fac105135">Yes</span> <span id="discdetail105135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 April 2014 by Jonathan Wilde</span></li><li>Hot Food : <span id="fac103135">Yes</span> <span id="discdetail103135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 November 2015 by Jonathan Wilde</span></li><li>Jukebox : <span id="fac112135">No</span> <span id="discdetail112135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 April 2014 by Jonathan Wilde</span></li><li>Karaoke : <span id="fac106135">No</span> <span id="discdetail106135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 November 2015 by Jonathan Wilde</span></li><li>Live Music : <span id="fac108135">Yes</span> <span id="discdetail108135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 April 2014 by Jonathan Wilde</span></li><li>Micropub : <span id="fac122135">No</span> <span id="discdetail122135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 November 2015 by Jonathan Wilde</span></li><li>Pinball : <span id="fac116135">No</span> <span id="discdetail116135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 April 2014 by Jonathan Wilde</span></li><li>Pool Table : <span id="fac104135">Yes</span> <span id="discdetail104135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 April 2014 by Jonathan Wilde</span></li><li>Real Ale : <span id="fac101135">Yes</span> <span id="discdetail101135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 April 2014 by Jonathan Wilde</span></li><li>Real Cider : <span id="fac119135">Yes</span> <span id="discdetail119135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 April 2014 by Jonathan Wilde</span></li><li>Wheelchair Access : <span id="fac120135">No</span> <span id="discdetail120135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 April 2014 by Jonathan Wilde</span></li><li>WiFi : <span id="fac115135">No</span> <span id="discdetail115135" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 April 2014 by Jonathan Wilde</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>8:45am - 10:30pm</td></tr>
+<tr><td>Monday</td><td>8:45am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>8:45am - 11pm</td></tr>
+<tr><td>Wednesday</td><td>8:45am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>8:45am - 11pm</td></tr>
+<tr><td>Friday</td><td>8:45am - 11pm</td></tr>
+<tr><td>Saturday</td><td>8:45am - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/156/" class="List1">The Somerset Wagon</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/95/" class="List1">The Kings Arms</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

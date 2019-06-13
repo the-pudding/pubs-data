@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Victoria Inn pub in Llanbedr, Gwynedd, LL45 2LD : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Victoria Inn" />
+  <meta name="keywords" content="Victoria Inn, Sam Hir, Llanbedr, Gwynedd, Llanbedr Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Victoria Inn in Llanbedr" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/67001_67500/67229_9f216b40.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/67229/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.82048467697351" />
+<meta property="og:longitude" content="-4.10067915916443" />
+<meta property="og:street-address" content="Sam Hir" />
+<meta property="og:locality" content="Llanbedr" />
+<meta property="og:region" content="Gwynedd" />
+<meta property="og:postal-code" content="LL45 2LD" />
+<meta property="og:country-name" content="Wales" />
+<meta property="og:description" content="Do you like Victoria Inn in Llanbedr? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Victoria Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/67229/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Victoria Inn in Llanbedr" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Victoria Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/67001_67500/67229_9f216b40.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/67229/" />
+<meta name="geo.position" content="52.82048467697351;-4.10067915916443" />
+<meta name="geo.placename" content="Victoria Inn in Llanbedr" />
+<meta name="geo.region" content="UK" />
+<title>Victoria Inn in Llanbedr : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":67229},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(67229);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 67229;var pubaddress = "Sam Hir";var pubname = "Victoria Inn";var pubpostcode = "LL45 2LD";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/wales/" title="Pubs Galore : Wales Page">Wales</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/gwynedd/" title="Pubs Galore : Gwynedd Page">Gwynedd</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/llanbedr2/gwynedd/" title="Pubs Galore : Llanbedr Page">Llanbedr</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Victoria Inn Page">Victoria Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="mmmat42fmb9dj29m0p19su6b13" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/67229/" class="indisplay"><img src="/images/display/67001_67500/67229_9f216b40.jpg?w=1" alt="Picture of Victoria Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=Aqualung" class="indisplay">Aqualung .</a><br />
+  Submitted on Sunday, 9<sup>th</sup> June 2013<br />
+  With picture contributions to 1729 other pubs<br />
+<a href="/pubpictures/67229/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/67229/">Pub map</a><br /><a href="/pubreviews/67229/">Pub reviews (4)</a><br /><a href="/pubpictures/67229/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=67229" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Victoria Inn, Llanbedr Central, Llanbedr</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=Rick88">Richard Sharman</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Sam Hir</span><br />
+
+
+<span class="town">Llanbedr</span><br />
+<span class="postcode">LL45 2LD</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/llanbedr-central/gwynedd/">Llanbedr Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Victoria Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review88147" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> left this review about Victoria Inn</h6>
+<p class="old">There have been a few changes since my last visit 18 months ago. The Double Hop has been replaced by the inferior Trooper which is just a gimmick. <br />
+Despite decreases in duty prices have risen by 10p a pint so the Unicorn is now &pound;2.90 and the seasonal beer is &pound;3.00 a pint.<br />
+The Unicorn this time was bland and thin. The seasonal beer was South Island a pale beer with New World hops which although decent enough was thin and tasteless compared to what the new micros and even Adnams produce at a similar strength.<br />
+Once again no local people seem to drink in here and the superior settle bar remains unused as the staff don&#039;t even bother to man it. <br />
+I&#039;m knocking the score back down to 6.<br />
+<br />
+Visit April 2013<br />
+<br />
+On visiting this pub again last week I must say that the beer was in much better nick so my score has gone from 6 to 8. I tried all three beers, the Hoptimus, Unicorn and Double Hop. The Hoptimus was outstanding. The prices have risen in the last 6 months and the Unicorn is &pound;2.80 and the other two &pound;2.90. I can&#039;t see how this can be justified in the current economic climate and few locals seem to use this place, presumably because they can&#039;t afford it.<br />
+<br />
+The settle bar didn&#039;t appear to be used at all on my visits.<br />
+<br />
+Visit October 2012<br />
+<br />
+This is a Robinson&#039;s pub that in my opinion has seen better days and is simply relying on a main road location beside the Afon Artro in a beautiful village. <br />
+<br />
+Three handpumps are now contained in the Lounge Bar only, the Public Settle bar having just a multiple keg dispenser. None of the three beers were in anything other than reasonable condition. It would seem they use a similar cooling method to Wetherspoons to chill the beer between the cellar and the pump. Personally I don&#039;t mind this but I&#039;m sure many people would regard them as being too cold. The Robbie&#039;s Best (aka Unicorn) was priced at &pound;2.65 and the Double Hop was &pound;2.85. I didn&#039;t catch the price of the Seasonal Green Bullet but the prices are higher than I&#039;m used to paying in London (obviously not Central London).<br />
+<br />
+I tried the fish and chips, which was described as a fillet of cod in a beer batter plus peas and chips. <br />
+<br />
+The chips were OK but almost certainly not freshly prepared from scratch, the fish was rather paltry, definitely frozen and something you would expect from the cheaper end of supermarket own brand products. The peas consisted of a boat containing tinned mushy peas that can be bought for 15p in Sainsbury&#039;s.<br />
+<br />
+If this had cost a similar sort of price as Spoons charge it wouldn&#039;t be too bad but it was &pound;9.50, a price at which you would expect to get something that required at least some effort.<br />
+If you&#039;re in Llanbedr and want to eat go to the Ty Mawr a few minutes walk away or visit the village shop to get frozen and tinned stuff to cook yourself.<br />
+<br />
+I first visited this pub some forty years ago and it&#039;s a shame to see it not realising it&#039;s full potential.</p>
+<p class="Reviewer">On 19<sup>th</sup> October 2014 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2121 recommendations about 2116 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review31638" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about Victoria Inn</h6>
+<p class="old">Excellent Robinsons pub, offering something to all types of customers.  The younger village residents tend to meet in the small Settle (public) bar, named after a venerable piece of furniture, with its old stone-flagged floor and dartboard.  Older customers seem to prefer the larger lounge bar which has been extended to form a dining area.  Outside there is a large covered terrace (with heating and lighting) and a very pleasant beer garden and childrens play area for the odd day when it happens not to be raining in North Wales!  Three real ales - Unicorn, Double Hop and a first class Bizzy Bee Summer Ale at &pound;2.60.</p>
+<p class="Reviewer">On 12<sup>th</sup> August 2010 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review15033" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Mick+Boyes">Michael Boyes</a> left this review about Victoria Inn</h6>
+<p class="old">A good village pub with a selection of Robinsons real ale. A great pub grub menu, very good value! Also the pub has accommodation. Well worth a visit if you are in the area. Can get very busy in the early evening.</p>
+<p class="Reviewer">On 9<sup>th</sup> September 2009 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 55 recommendations about 55 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/67229/">View more reviews of Victoria Inn (4)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Victoria Inn</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Victoria Inn, contains menu - <a href="http://www.victoriainnllanbedr.co.uk" title="Submitted by:- Richard Sharman" target="_blank">www.victoriainnllanbedr.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="7890855974">Facebook - <a href="https://www.facebook.com/thevicinnwales/" target="_blank" rel="nofollow">The Victoria Inn</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/67229/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.82048467697351, -4.10067915916443], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.82048467697351, -4.10067915916443]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Llanbedr, 0.49 miles, 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Pensarn (Gwynedd), 0.82 miles, 15 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Llandanwg, 1.93 miles, 37 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('}nkaIn|_XHGVKXAH@A`@FjEOfDk@pIYtAiAhBkA|AQ`@I\\Cd@?|@DbAL`AV|@|@hAnDjDDJ@LCf@[pB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('}nkaIn|_Xa@f@aBrCoA~Aq@l@q@ZmB\\oCtBiCpAaCv@gAVSHQLuA~A}ArBoRbW}BnDw@dARj@BVCJYV', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('}nkaIn|_Xa@f@aBrCoA~Aq@l@q@ZmB\\oCtBiCpAaCv@gAVSHQLuA~A}ArBoRbW}BnDw@dARj@BVDl@D`DWz@_AbBeCfHa@LuAzAsAt@Ol@`@xALxAPnDP^r@pEf@xDDdBI~HW|BBh@VlARLBf@w@pKM|CqB^oACKNUNUBKFKRs@AQEEKAeAGSIu@MMg@Qa@A}ABg@Ii@UgC_B]IwBGe@OYQf@q@MLMGVU', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.82048467697351,-4.10067915916443], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=67229">View all updates for Victoria Inn, Llanbedr</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        8<span class="sup">th</span> Mar 2015, 14:29
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        8<span class="sup">th</span> Mar 2015, 13:46
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11867229">Yes</span> <span id="discdetail11867229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 August 2013 by Aqualung .</span></li><li>Bar Billiards : <span id="fac10767229">No</span> <span id="discdetail10767229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 August 2013 by Aqualung .</span></li><li>Beer Festivals : <span id="fac11767229">No</span> <span id="discdetail11767229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 August 2013 by Aqualung .</span></li><li>Beer Garden : <span id="fac11467229">Yes</span> <span id="discdetail11467229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 August 2013 by Aqualung .</span></li><li>CAMRA Discount : <span id="fac10267229">No</span> <span id="discdetail10267229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2014 by Aqualung .</span></li><li>Car Park : <span id="fac11367229">Yes</span> <span id="discdetail11367229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 July 2013 by Aqualung .</span></li><li>Child Friendly : <span id="fac12167229">Yes</span> <span id="discdetail12167229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2014 by Aqualung .</span></li><li>Darts : <span id="fac11167229">Yes</span> <span id="discdetail11167229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 July 2013 by Aqualung .</span></li><li>Hot Food : <span id="fac10367229">Yes</span> <span id="discdetail10367229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 July 2013 by Aqualung .</span></li><li>Jukebox : <span id="fac11267229">No</span> <span id="discdetail11267229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2014 by Aqualung .</span></li><li>Karaoke : <span id="fac10667229">No</span> <span id="discdetail10667229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 August 2013 by Aqualung .</span></li><li>Live Music : <span id="fac10867229">No</span> <span id="discdetail10867229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 August 2013 by Aqualung .</span></li><li>Live TV Sports : <span id="fac11067229">No</span> <span id="discdetail11067229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 August 2013 by Aqualung .</span></li><li>Pinball : <span id="fac11667229">No</span> <span id="discdetail11667229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 August 2013 by Aqualung .</span></li><li>Pool Table : <span id="fac10467229">No</span> <span id="discdetail10467229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 August 2013 by Aqualung .</span></li><li>Quiz Night : <span id="fac10967229">Yes</span> <span id="discdetail10967229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 August 2013 by Aqualung .</span></li><li>Real Ale : <span id="fac10167229">Yes</span> <span id="discdetail10167229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 July 2013 by Aqualung .</span></li><li>Real Cider : <span id="fac11967229">No</span> <span id="discdetail11967229" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2013 by Aqualung .</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo-grey.gif" alt="Pub has no pictures" title="Pub has no pictures" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86965/" class="List1">Hafan Artro</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 3 reviewer(s)" title="Pub has average rating of 7.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66249/" class="List1">Ty Mawr Hotel</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

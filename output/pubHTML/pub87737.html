@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Botanist pub in Bath, Somerset, BA1 1BZ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Botanist" />
+  <meta name="keywords" content="The Botanist, 46A Milsom Place, Bath, Somerset, Bath Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Botanist in Bath" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/87501_88000/87737_2ead3a482f60ff9596767c26184043be.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/87737/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.38362723177610" />
+<meta property="og:longitude" content="-2.36074818650820" />
+<meta property="og:street-address" content="46A Milsom Place" />
+<meta property="og:locality" content="Bath" />
+<meta property="og:region" content="Somerset" />
+<meta property="og:postal-code" content="BA1 1BZ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Botanist in Bath? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Botanist the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/87737/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Botanist in Bath" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Botanist " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/87501_88000/87737_2ead3a482f60ff9596767c26184043be.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/87737/" />
+<meta name="geo.position" content="51.38362723177610;-2.36074818650820" />
+<meta name="geo.placename" content="The Botanist in Bath" />
+<meta name="geo.region" content="UK" />
+<title>The Botanist in Bath : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":87737},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(87737);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 87737;var pubaddress = "46A Milsom Place";var pubname = "The Botanist";var pubpostcode = "BA1 1BZ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/somerset/" title="Pubs Galore : Somerset Page">Somerset</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/bath/somerset/" title="Pubs Galore : Bath Page">Bath</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Botanist Page">The Botanist Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="o9le2ijnjtcn8gevao787si264" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/87737/" class="indisplay"><img src="/images/display/87501_88000/87737_2ead3a482f60ff9596767c26184043be.jpg?w=1" alt="Picture of The Botanist" /></a><br />  Image posted by <a href="/userinfo.php?name=Blackthorn" class="indisplay">Blackthorn _</a><br />
+  Submitted on Saturday, 18<sup>th</sup> May 2019<br />
+  With picture contributions to 4300 other pubs<br />
+<a href="/pubpictures/87737/" class="smallbutton">View all this pub's pictures</a> (3 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/87737/">Pub map</a><br /><a href="/pubreviews/87737/">Pub reviews (1)</a><br /><a href="/pubpictures/87737/">Pub pictures (4)</a><br /><a href="/core/pubaudit.php?id=87737" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Botanist, Bath Central, Bath</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=Blackthorn">Blackthorn _</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">46A Milsom Place</span><br />
+
+
+<span class="town">Bath</span><br />
+<span class="postcode">BA1 1BZ</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/bath-central/somerset/">Bath Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Botanist  <span class="h2note">(Average Rating: <span id="averagerating"><b>5</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review139314" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about The Botanist</h6>
+<p>A recent opening in the popular Milsom Place development, this occupies the site that was formerly the short lived Confessional cocktail bar in the basement and the Burger &amp; Lobster restaurant on the ground floor. I debated whether to mark The Confessional as open, but since this is a larger establishment occupying more of the building, I opted for a new entry.<br />
+<br />
+A narrow entrance hallway with plenty of foliage hanging from the ceiling then opens out in to an impressive octagonal room with high ceilings, mezzanine balcony and an octagonal roof window. The central bar counter, which was also octagonal, had a large tree growing in the middle of it, and the foliage theme continued with numerous pot plants dotted around the room. Flooring was black and white tiling around the bar counter, with dark wood strip elsewhere, whilst the walls at ground level were clad in very pale wooden boards. Higher up, and around the edge of the balcony, was some quite intricately carved plasterwork. There appeared to be some sections of exposed brickwork, and although I didn&rsquo;t inspect this closely, from a distance I suspect it was just brick effect wallpaper. A semi open kitchen was off to one side with dark green glazed tiling, and a number of cabinets were around the perimeter of the room containing more botanicals and glassware.      <br />
+<br />
+There did not appear to be any real ales on offer, although there were four keg fonts on the bar. What these were offering though is anyone&rsquo;s guess, they weren&rsquo;t labelled and there was no chalkboard or similar as far as I could ascertain. The menu listed a surprisingly decent collection of bottled beers though, including some from local micro&rsquo;s. They also had Sheppy&rsquo;s cider which went down very well. Service at the bar was quite slow, firstly it was difficult to get to with punters sitting at stools all around the perimeter, and when you did get there the bar staff were spending most of their time making cocktails.    <br />
+<br />
+This certainly is not your traditional pub, but more of a bar / restaurant no doubt aimed at a younger demographic than myself, although to be fair there was quite a mixed age range in on our Saturday afternoon visit. The architecture is certainly quite impressive and I may well return to sample the food, but it&rsquo;s not somewhere I&rsquo;m likely to return to just for a pint.</p>
+<p class="Reviewer">On 20<sup>th</sup> May 2019 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Botanist</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Botanist - <a href="http://thebotanist.uk.com/locations/bath" title="Submitted by:- Blackthorn _" target="_blank">thebotanist.uk.com</a></li>
+          </ul>
+</div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/87737/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.38362723177610, -2.36074818650820], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.38362723177610, -2.36074818650820]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=87737">View all updates for The Botanist, Bath</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        20<span class="sup">th</span> May 2019, 08:48
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> amended by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        20<span class="sup">th</span> May 2019, 08:47
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11887737">No</span> <span id="discdetail11887737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2019 by Blackthorn _</span></li><li>Bar Billiards : <span id="fac10787737">No</span> <span id="discdetail10787737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2019 by Blackthorn _</span></li><li>Car Park : <span id="fac11387737">No</span> <span id="discdetail11387737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2019 by Blackthorn _</span></li><li>Child Friendly : <span id="fac12187737">Yes</span> <span id="discdetail12187737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 May 2019 by Blackthorn _</span></li><li>Darts : <span id="fac11187737">No</span> <span id="discdetail11187737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2019 by Blackthorn _</span></li><li>Hot Food : <span id="fac10387737">Yes</span> <span id="discdetail10387737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2019 by Blackthorn _</span></li><li>Jukebox : <span id="fac11287737">No</span> <span id="discdetail11287737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2019 by Blackthorn _</span></li><li>Live TV Sports : <span id="fac11087737">No</span> <span id="discdetail11087737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2019 by Blackthorn _</span></li><li>Micropub : <span id="fac12287737">No</span> <span id="discdetail12287737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2019 by Blackthorn _</span></li><li>Pinball : <span id="fac11687737">No</span> <span id="discdetail11687737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2019 by Blackthorn _</span></li><li>Pool Table : <span id="fac10487737">No</span> <span id="discdetail10487737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2019 by Blackthorn _</span></li><li>Real Ale : <span id="fac10187737">No</span> <span id="discdetail10187737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 May 2019 by Blackthorn _</span></li><li>Real Cider : <span id="fac11987737">No</span> <span id="discdetail11987737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 May 2019 by Blackthorn _</span></li><li>Wheelchair Access : <span id="fac12087737">Yes</span> <span id="discdetail12087737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 May 2019 by Blackthorn _</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/76814/" class="List1">Tasting Rooms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 21 picture(s)" title="Pub has 21 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 13 recommendation(s)" title="Pub has 13recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 13 reviewer(s)" title="Pub has average rating of 7.5 from 13 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55744/" class="List1">The Old Green Tree</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55750/" class="List1">Belushi&#039;s</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 21 picture(s)" title="Pub has 21 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 2 reviewer(s)" title="Pub has average rating of 3 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/151/" class="List1">Saracens Head</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 11 recommendation(s)" title="Pub has 11recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 11 reviewer(s)" title="Pub has average rating of 6.5 from 11 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/187/" class="List1">Volunteer Riflemans Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55754/" class="List1">Sam Wellers</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 18 picture(s)" title="Pub has 18 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 9 recommendation(s)" title="Pub has 9recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 9 reviewer(s)" title="Pub has average rating of 7.5 from 9 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/182/" class="List1">Pig &amp; Fiddle</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/76809/" class="List1">Bonghy Bo</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Signal pub in Forest Hill, SE23, London (Greater), SE23 3HE : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Signal" />
+  <meta name="keywords" content="The Signal, 7  Devonshire Road, SE23, London (Greater), Forest Hill, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Signal in SE23" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/24001_24000/24000_3fafc6db7841836ffc278443e6c8cbf2.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/24000/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.43939000000000" />
+<meta property="og:longitude" content="-0.05396400000000" />
+<meta property="og:street-address" content="7  Devonshire Road" />
+<meta property="og:locality" content="SE23" />
+<meta property="og:region" content="London (Greater)" />
+<meta property="og:postal-code" content="SE23 3HE" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Signal in SE23? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Signal the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/24000/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Signal in SE23" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Signal " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/24001_24000/24000_3fafc6db7841836ffc278443e6c8cbf2.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/24000/" />
+<meta name="geo.position" content="51.43939000000000;-0.05396400000000" />
+<meta name="geo.placename" content="The Signal in SE23" />
+<meta name="geo.region" content="UK" />
+<title>The Signal in Forest Hill, SE23 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":24000},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(24000);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 24000;var pubaddress = "7  Devonshire Road";var pubname = "The Signal";var pubpostcode = "SE23 3HE";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/greater-london/" title="Pubs Galore : London (Greater) Page">London (Greater)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/se23/greater-london/" title="Pubs Galore : SE23 Page">SE23</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Signal Page">The Signal Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="fcnoklnaen133is5n98u422ge0" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/24000/" class="indisplay"><img src="/images/display/24001_24000/24000_3fafc6db7841836ffc278443e6c8cbf2.jpg?w=2" alt="Picture of The Signal" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
+  Submitted on Tuesday, 3<sup>rd</sup> March 2009<br />
+  With picture contributions to 20227 other pubs<br />
+<a href="/pubpictures/24000/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/24000/">Pub map</a><br /><a href="/pubreviews/24000/">Pub reviews (2)</a><br /><a href="/pubpictures/24000/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=24000" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Signal, Forest Hill, SE23</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">7  Devonshire Road</span><br />
+
+
+<span class="town">SE23</span><br />
+<span class="postcode">SE23 3HE</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02082912225</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/forest-hill/greater-london/">Forest Hill</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Signal</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/the_HOB" target="_blank"><img src="https://pbs.twimg.com/profile_images/1312269814/Murrell_s_pub_pics_001_normal.jpg" alt="The HOB Forest Hill" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/the_HOB" target="_blank">The HOB Forest Hill</a></strong>
+Got married in NY, took 2 friends, had 2 mates over there, none of them knew we were to be wed, asked no money off&hellip; <a href='https://t.co/LcYvUCveOY' target='_blank'>https://t.co/LcYvUCveOY</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/the_HOB/status/1034415003292639234">1:18 PM Aug 28th</a> from <a href="http://twitter.com/#!/download/ipad" rel="nofollow">Twitter for iPad</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/the_HOB" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/the_HOB" target="_blank">The HOB Forest Hill</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Signal  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review107414" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> left this review about The Signal</h6>
+<p class="old">The Signal is a decent sized pub with a slight curved frontage,the pub is right outside Forest Hill train station,so very handy for me after a cock up in my travel plans.<br />
+Once inside there is a single room which runs the width of the pub,the bar faces on entry,the room is bare boarded and the seating a mix of tall tables and chairs a few posher looking chairs and normal tables and chairs,the room is on two levels due to the slight hill it is on.<br />
+There were three real ales on the bar,i had a drink of Brick Sir Thomas Gardyner which went down very well after a prolonged journey down here,the other beers were Doom Bar and Brixton Reliance Pale Ale.<br />
+There was some decent background music playing and the pub was fairly busy on my early Saturday dinner visit.<br />
+I thought this was a decent enough pub to start another South East London crawl.<br />
+<br />
+Pub visited 14/5/2016</p>
+<p class="Reviewer">On 3<sup>rd</sup> June 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 6113 recommendations about 6113 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review103544" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> left this review about The Signal</h6>
+<p class="old">There were three ales on in here - Clarkshaw&#039;s Gorgon&#039;s Alive! (&pound;2 a half), Ringwood Razor Black, and Brixton Brewery APA. All worth a punt I reckon, but I went for the Gorgon&#039;s Alive! which was in great nick and possibly the only beer with an exclamation mark in its name. Bit like Westward Ho! perhaps. This is the sort of place that surely does food, but there were no menus on the tables in the downstairs bar area. I did spot a chalkboard outside advertising plaice as the special of the day, plus I guess the food operation must be upstairs as I saw a sign at the bottom of the stairs pointing up to Georgi&#039;s Bar Rotisserie &amp; Grill. Not investigated obviously.<br />
+<br />
+The bar area downstairs is a fairly large affair, obviously stretching along the length of the pub - the width of the pub can be judged by the photographs. There is a trio of armchairs surrounding the fireplace on the right, a couple of tall tables/tall stools in a corner, but furnishings are predominantly normal tables and chairs. There were a couple of old school desks posing as tables though. There was a table by the entrance bearing magazines and leaflets and the like; a piano; several large coloured glass jars on ledges as decorative features; and most unusual of all was a large wooden Pinochio puppet sitting atop the stillion. This is the sort of lounge-like place that wouldn&#039;t have any games machines or others of their ilk, but it did have a TV on showing a rolling news channel, but muted in favour of the 70s and 80s soul music being played.<br />
+<br />
+This is the sort of place that&#039;s meant to look a bit different from the norm, and I reckon they achieve that. It&#039;s not the sort of traditional pub of the sort I favour, but all in all it&#039;s a reasonable enough place in which to stop off for a pint. The real ale selection was good even if there were only three on - none of the usual suspects were present. It has of course lost any original heritage features it would once have had, but it&#039;s still worth a visit. It was very quiet during my midweek lunchtime visit - just me and a lady with her child in there - but no doubt it gets busier in the evenings.</p>
+<p class="Reviewer">On 16<sup>th</sup> February 2016 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2495 recommendations about 2415 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Signal</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Signal - <a href="http://hippoinns.com/where-are-we/" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">hippoinns.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="twitlink" id="280433860">Twitter - <a href="https://twitter.com/the_HOB" target="_blank" rel="nofollow">The HOB Forest Hill</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/24000/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.43939000000000, -0.05396400000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.43939000000000, -0.05396400000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Forest Hill, 0.25 miles, 4 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Honor Oak Park, 0.97 miles, 18 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Sydenham, 1.05 miles, 20 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('aw}xHznIg@?a@F{@ASOMWG[G_BDcAJu@~Bq@r@hBKl@WGALrBZ', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('aw}xHznIg@?a@F{@ASOMWG[G_B?[Dg@p@aFq@IyECsCe@a@_@Qm@?{BwLyJ?sDkAA[CoCsAmBu@iB_AoBuAkB{ACRKNOF_HgDMnBMRCN', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('aw}xHznIRDj@^V@\\J`B~@lAf@JoAL}@Xo@p@DdA?VLlDFNSfAARM`CKjFs@Gw@GkFzA[tBmB|AaAj@Bn@JlCxBXd@n@xAb@n@tHbAbBn@p@\\jFxAItBBPGl@b@N', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.43939000000000,-0.05396400000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=24000">View all updates for The Signal, SE23</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        3<span class="sup">rd</span> Jun 2016, 15:21
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        1<span class="sup">st</span> Jun 2016, 17:26
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11824000">No</span> <span id="discdetail11824000" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 October 2015 by ROB Camra</span></li><li>Beer Festivals : <span id="fac11724000">No</span> <span id="discdetail11724000" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 October 2015 by ROB Camra</span></li><li>Beer Garden : <span id="fac11424000">Yes</span>  - <span id="discdetail11424000" class="discdetail" style="">Yard to rear</span> -   <span class="Reviewer">last updated 20 October 2015 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10224000">No</span> <span id="discdetail10224000" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 October 2015 by ROB Camra</span></li><li>Car Park : <span id="fac11324000">No</span> <span id="discdetail11324000" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 October 2015 by ROB Camra</span></li><li>Child Friendly : <span id="fac12124000">Yes</span> <span id="discdetail12124000" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 October 2015 by ROB Camra</span></li><li>Function Room : <span id="fac12324000">Yes</span> <span id="discdetail12324000" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 October 2015 by ROB Camra</span></li><li>Hot Food : <span id="fac10324000">Yes</span> <span id="discdetail10324000" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 October 2015 by ROB Camra</span></li><li>Live Music : <span id="fac10824000">Yes</span> <span id="discdetail10824000" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 October 2015 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11024000">No</span> <span id="discdetail11024000" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 October 2015 by ROB Camra</span></li><li>Micropub : <span id="fac12224000">No</span> <span id="discdetail12224000" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 October 2015 by ROB Camra</span></li><li>Real Ale : <span id="fac10124000">Yes</span> <span id="discdetail10124000" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 October 2015 by ROB Camra</span></li><li>Real Cider : <span id="fac11924000">No</span> <span id="discdetail11924000" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 October 2015 by ROB Camra</span></li><li>WiFi : <span id="fac11524000">Yes</span> <span id="discdetail11524000" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 October 2015 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 2 reviewer(s)" title="Pub has average rating of 4 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65861/" class="List1">The Dartmouth Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 8 reviewer(s)" title="Pub has average rating of 7 from 8 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/63578/" class="List1">The Capitol (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 2 reviewer(s)" title="Pub has average rating of 7 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/76680/" class="List1">Sylvan Post</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23998/" class="List1">Bird In Hand</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 4 reviewer(s)" title="Pub has average rating of 6.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65859/" class="List1">All Inn One</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24002/" class="List1">The Railway Telegraph</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24321/" class="List1">The Bricklayers Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24324/" class="List1">Fox&#039;s</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

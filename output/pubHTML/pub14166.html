@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The King Alfred pub in Winchester, Hampshire, SO23 7DJ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The King Alfred" />
+  <meta name="keywords" content="The King Alfred, Saxon Road, Winchester, Hampshire, Winchester North, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The King Alfred in Winchester" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/14001_14500/14166_6d1babea.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/14166/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.06957650680330" />
+<meta property="og:longitude" content="-1.31330986011881" />
+<meta property="og:street-address" content="Saxon Road" />
+<meta property="og:locality" content="Winchester" />
+<meta property="og:region" content="Hampshire" />
+<meta property="og:postal-code" content="SO23 7DJ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The King Alfred in Winchester? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The King Alfred the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/14166/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The King Alfred in Winchester" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The King Alfred " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/14001_14500/14166_6d1babea.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/14166/" />
+<meta name="geo.position" content="51.06957650680330;-1.31330986011881" />
+<meta name="geo.placename" content="The King Alfred in Winchester" />
+<meta name="geo.region" content="UK" />
+<title>The King Alfred in Winchester : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":14166},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(14166);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 14166;var pubaddress = "Saxon Road";var pubname = "The King Alfred";var pubpostcode = "SO23 7DJ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/hampshire/" title="Pubs Galore : Hampshire Page">Hampshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/winchester/hampshire/" title="Pubs Galore : Winchester Page">Winchester</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The King Alfred Page">The King Alfred Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="k36n6stit7f50pr3edaonasp50" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/14166/" class="indisplay"><img src="/images/display/14001_14500/14166_6d1babea.jpg?w=2" alt="Picture of The King Alfred" /></a><br />  Image posted by <a href="/userinfo.php?name=Pangolin" class="indisplay">Graham Coombs</a><br />
+  Submitted on Tuesday, 8<sup>th</sup> May 2018<br />
+  With picture contributions to 2588 other pubs<br />
+<a href="/pubpictures/14166/" class="smallbutton">View all this pub's pictures</a> (2 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/14166/">Pub map</a><br /><a href="/pubreviews/14166/">Pub reviews (4)</a><br /><a href="/pubpictures/14166/">Pub pictures (3)</a><br /><a href="/core/pubaudit.php?id=14166" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The King Alfred, Winchester North, Winchester</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Saxon Road</span><br />
+
+
+<span class="town">Winchester</span><br />
+<span class="postcode">SO23 7DJ</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01962854370</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Greene King</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/winchester-north/hampshire/">Winchester North</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The King Alfred  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review128826" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> left this review about The King Alfred</h6>
+<p class="old">A locals&#039; pub, but not in the usual meaning of the term, this being the rather select Hyde area of Winchester. The interior, which extends round an island bar, is fitted out as an Edwardian drawing room, with furnishings and d&eacute;cor to match. It also boasts one of the poshest bar billiards areas that I have seen, in its own little alcove. Very civilised, if you are in that frame of mind. Ales from the wider Greene King range and condition seemed good; now Cask Marque accredited. There are some pavement tables at the front, with a beer garden behind.</p>
+<p class="Reviewer">On 8<sup>th</sup> May 2018 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 1783 recommendations about 1742 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review117225" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The King Alfred</h6>
+<p class="old">Yet another GK pub in the area, though this one does sport a rather original style: large etched glass windows, dark green walls, muted sodium lighting, lots of framed prints and a wood floor covered with rugs - quite the cosy Victoriana. Along with the clientele it felt very upper-middle class. Apparently it has been refitted in the recent past to much disdain but I thought it was alright, based on this being my inaugural visit. Ale-wise we were stuck with the less-than-mesmerising prospect of GK brews; Old Golden Hen (not brilliant), IPA and Morland Original (fine). If you&rsquo;ve got all day in Winchester it&rsquo;s worth putting this on the list for curiosity value.</p>
+<p class="Reviewer">On 1<sup>st</sup> February 2017 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review70094" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Gann">Steve of N21</a> left this review about King Alfred</h6>
+<p class="old">This was the second nearest pub to our hotel after the Hyde Tavern so had to pop in for a Sunday afternoon pint as we made it back to the hotel, despite is being a GK house.<br />
+It is situated in the back streets of the residential Hyde area of Winchester and takes a bit of finding but was worth it for a pint. Very good looking pub from the outside, festooned in hanging baskets.<br />
+Internally it is a double sectioned bar area and then a separate dining room behind and as Old Boots mentions, a nice all wood, slightly Victoriana decor which is pleasant enough but does come across as a bit identikit and plastic.<br />
+But still rather this than sterile bland gastro and was comfortable to sit inside or outside as there is a nice covered terrace  and an  extensive beer garden and child-friendly play area out the back.<br />
+Lots of people were in for the Sunday roasts and the food looked good, but we didn&rsquo;t try it so cannot really confirm. <br />
+There are three pumps on each bar section and as mentioned it is a GK house, so two of these were Abbott and one marked King Alfred Bitter at 3.9% which we took to be either Hardy &amp; Hansons Bitter or Morlands original. But the other had Timothy Taylor Golden Best which was well kept.<br />
+Also it&rsquo;s a functioning B&amp;B with rooms over the pub and scores very highly on Trip advisor for the accommodation.</p>
+<p class="Reviewer">On 14<sup>th</sup> May 2013 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 1577 recommendations about 1528 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/14166/">View more reviews of The King Alfred (4)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The King Alfred</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="600116803493286">Facebook - <a href="https://www.facebook.com/KingAlfredWinchester/" target="_blank" rel="nofollow">The King Alfred</a></li></ul><ul id="Custom2"><li class="twitlink" id="344718756">Twitter - <a href="https://twitter.com/KingAlfredPub" target="_blank" rel="nofollow">The King Alfred Pub</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/14166/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Pangolin">Graham Coombs</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.06957650680330, -1.31330986011881], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.06957650680330, -1.31330986011881]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Winchester, 0.49 miles, 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Shawford, 3.69 miles, 1 hr 11 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Chandlers Ford, 7.39 miles, 2 hr 22 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('wouvHhn_GP?LzAJr@f@bBTl@v@ZOnESxBENjAxAxA~BXn@DRnBGd@?l@HCH@D?JIPNPMr@KHIP_@pBg@pAMdC`@A?_@QC?GRB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('wouvHhn_GP?bBj@ZVr@^DJDBP`@Cf@~@T?JDb@HLD^CbAzAJ~Ab@nANn@RdAh@Td@RHP@p@E`Ck@j@D|ExBd@V?Jr@\\JF@FALLFCTBFALnAb@|LjFx@XAHb@HW|BrCVhB`@vFvBhDbAfBv@nBdAfN`EVCdAkALm@xJfEzKzCxDrAzGrBCR~EvAjA`@BQbHzBFc@DD?LFFhAXfQlF|Bv@lBz@d@Hl@Ih@?RCb@vA@d@DNTPhEEnAVfF~AbQrF@DIDpNpFpBn@fDt@\\@NT\\BtDJ|Db@V?pAGd@ExCe@NGCk@JiAHULYd@a@`@Qf@]b@e@bB}BzA{AJMHSH]ZmEl@PBg@_AY@Ez@V', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('wouvHhn_GP?bBj@ZVr@^DJDBP`@Cf@~@T?JDb@HLD^CbAzAJ~Ab@nANn@RdAh@Td@RHP@p@E`Ck@j@D|ExBd@V?Jr@\\JF@FALLFCTBFALnAb@|LjFx@XAHb@HW|BrCVhB`@vFvBhDbAfBv@nBdAfN`EVCdAkALm@xJfEzKzCxDrAzGrBCR~EvAjA`@BQbHzBFc@DD?LFFhAXfQlF|Bv@lBz@d@Hl@Ih@?RCb@vA@d@DNTPhEEnAVfF~AbQrF@DIDpNpFpBn@fDt@\\@NT\\BtDJ|Db@V?pAGd@ExCe@NGt@?`@Jf@Z|@bA|AzApCrBtAx@dDlC~@bA~DbGl@b@dD|AlK|FhB|@`BbAdTnLbCvAbC|AnCrAxAf@h@\\X?\\HnFpBhAh@nAt@t@r@X\\NXP`BRz@Pf@l@jAZd@zClDp@`Ar@lAd@p@TONNxGxIBGj@v@FBFAFBHPDTtGrIb@d@|CrDj@v@nA|BJ`@Rb@tBhEt@|Br@`CVj@RNh@JrA@?Z`AD\\`@I`@aA|CId@?XGx@@ZhApElBzGr@lBvDhHrF~J`C`DzJvLdBfCpFhJvBtClAnBxCpH~AlEdBlGfBtHnCdJv@bBWxAU~@S`D|HlJfB|BqAjFJh@pAM\\WXp@n@{@JXNULXORJVOV', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.06957650680330,-1.31330986011881], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=14166">View all updates for The King Alfred, Winchester</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        8<span class="sup">th</span> May 2018, 12:27
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        8<span class="sup">th</span> May 2018, 11:49
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11814166">Yes</span> <span id="discdetail11814166" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 April 2017 by Quinno _</span></li><li>Bar Billiards : <span id="fac10714166">Yes</span> <span id="discdetail10714166" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 May 2018 by Graham Coombs</span></li><li>Beer Festivals : <span id="fac11714166">Yes</span> <span id="discdetail11714166" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 May 2018 by Graham Coombs</span></li><li>Beer Garden : <span id="fac11414166">Yes</span> <span id="discdetail11414166" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 April 2017 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10214166">No</span> <span id="discdetail10214166" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 April 2017 by Quinno _</span></li><li>Child Friendly : <span id="fac12114166">Yes</span> <span id="discdetail12114166" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 April 2017 by Quinno _</span></li><li>Dog Friendly : <span id="fac10514166">Yes</span> <span id="discdetail10514166" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 April 2017 by Quinno _</span></li><li>Hot Food : <span id="fac10314166">Yes</span> <span id="discdetail10314166" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 April 2017 by Quinno _</span></li><li>Karaoke : <span id="fac10614166">No</span> <span id="discdetail10614166" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 April 2017 by Quinno _</span></li><li>Live TV Sports : <span id="fac11014166">Yes</span> <span id="discdetail11014166" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 April 2017 by Quinno _</span></li><li>Micropub : <span id="fac12214166">No</span> <span id="discdetail12214166" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 April 2017 by Quinno _</span></li><li>Pinball : <span id="fac11614166">No</span> <span id="discdetail11614166" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 April 2017 by Quinno _</span></li><li>Pool Table : <span id="fac10414166">No</span> <span id="discdetail10414166" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 April 2017 by Quinno _</span></li><li>Quiz Night : <span id="fac10914166">Yes</span>  - <span id="discdetail10914166" class="discdetail" style="">Weds</span> -   <span class="Reviewer">last updated 22 April 2017 by Quinno _</span></li><li>Real Ale : <span id="fac10114166">Yes</span> <span id="discdetail10114166" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 April 2017 by Quinno _</span></li><li>Real Cider : <span id="fac11914166">No</span> <span id="discdetail11914166" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 April 2017 by Quinno _</span></li><li>WiFi : <span id="fac11514166">Yes</span> <span id="discdetail11514166" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 April 2017 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 8 reviewer(s)" title="Pub has average rating of 7.5 from 8 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14163/" class="List1">The Hyde Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14197/" class="List1">The Mucky Duck</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 9 recommendation(s)" title="Pub has 9recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 7 reviewer(s)" title="Pub has average rating of 7.5 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14133/" class="List1">The Albion</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 8 reviewer(s)" title="Pub has average rating of 6 from 8 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56865/" class="List1">The Old Gaolhouse (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14165/" class="List1">Jolly Farmer</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87437/" class="List1">Turtle Bay</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85804/" class="List1">Overdraft</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 6 reviewer(s)" title="Pub has average rating of 5.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14186/" class="List1">Royal Oak</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

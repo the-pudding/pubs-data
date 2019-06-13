@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Angel pub in Andover, Hampshire, SP10 1ND : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Angel" />
+  <meta name="keywords" content="The Angel, 95  High Street, Andover, Hampshire, Andover Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Angel in Andover" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/13001_13500/13257_e53cfd8b.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/13257/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.20926754439977" />
+<meta property="og:longitude" content="-1.47896265029715" />
+<meta property="og:street-address" content="95  High Street" />
+<meta property="og:locality" content="Andover" />
+<meta property="og:region" content="Hampshire" />
+<meta property="og:postal-code" content="SP10 1ND" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Angel in Andover? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Angel the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/13257/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Angel in Andover" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Angel " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/13001_13500/13257_e53cfd8b.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/13257/" />
+<meta name="geo.position" content="51.20926754439977;-1.47896265029715" />
+<meta name="geo.placename" content="The Angel in Andover" />
+<meta name="geo.region" content="UK" />
+<title>The Angel in Andover : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":13257},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(13257);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 13257;var pubaddress = "95  High Street";var pubname = "The Angel";var pubpostcode = "SP10 1ND";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/hampshire/" title="Pubs Galore : Hampshire Page">Hampshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/andover/hampshire/" title="Pubs Galore : Andover Page">Andover</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Angel Page">The Angel Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="om14r44vn5flr3phf4kejgmeu5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/13257/" class="indisplay"><img src="/images/display/13001_13500/13257_e53cfd8b.jpg?w=2" alt="Picture of The Angel" /></a><br />  Image posted by <a href="/userinfo.php?name=Pangolin" class="indisplay">Graham Coombs</a><br />
+  Submitted on Friday, 3<sup>rd</sup> August 2018<br />
+  With picture contributions to 2588 other pubs<br />
+<a href="/pubpictures/13257/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/13257/">Pub map</a><br /><a href="/pubreviews/13257/">Pub reviews (5)</a><br /><a href="/pubpictures/13257/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=13257" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Angel, Andover Central, Andover</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">95  High Street</span><br />
+
+
+<span class="town">Andover</span><br />
+<span class="postcode">SP10 1ND</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/andover-central/hampshire/">Andover Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Angel  <span class="h2note">(Average Rating: <span id="averagerating"><b>5&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review131473" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> left this review about The Angel</h6>
+<p>Very old pub but a bit run down and rather needing a bit of tlc. The front room is laid up for eating, with most of the action taking place in the central bar area, with a small room behind just big enough for a pool table. There is a courtyard area on the way in, and a separate patio garden at the back. Draught beers were St Austell Liquid Sunshine, Robinsons Dizzy Blonde and OSH.</p>
+<p class="Reviewer">On 3<sup>rd</sup> August 2018 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 1775 recommendations about 1734 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review120772" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Mobyduck">moby duck</a> left this review about The Angel</h6>
+<p class="old">It&#039;s a nice looking, obviously old pub, suitably described by ETA below,the lower order primates were reasonably well behaved,but it was just past mid-day, maybe a few hours later it might have become more boisterous.Three hand pumps and three beers, Old Speckled Hen, Greene King Barmy Army and thankfully St Austell Liquid Sunshine which was in really good nick. I found at the time of my visit this to be one of the better pubs in Andover, this doesn&#039;t say a lot for Andover though.</p>
+<p class="Reviewer">On 5<sup>th</sup> August 2017 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 1202 recommendations about 1191 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review115084" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=ETA">E TA</a> left this review about The Angel</h6>
+<p class="old">Andover&#039;s oldest surviving building, dating from the 15th Century, this former inn has been a coaching inn, hotel and restaurant over the years, and it&#039;s now a town centre pub which also serves food and coffee to shoppers during the morning.  A small courtyard garden is mainly used by smokers, while inside there are two bars at different levels.  Stone floors, exposed structural timbers and inglenook fireplaces provide architectural interest.  As a pub it feels wasted and under-exploited &ndash; it&#039;s rowdy, and the locals utterly fail to appreciate the gem they have.  We found people inhere hostile and utterly uncouth, although the staff were much friendlier and maybe a bit embarrassed  about the lower-order primates to which Quinno, below, refers.  They run regular karaoke nights on Fridays, and roast lunches are available on Sundays.  The beer was actually better than expected &ndash; GK IPA, Old Speckled Hen and Magellan were in pretty good shape and rather enjoyable.  I&#039;d be happy to come back for the architectural charm and the beer quality, I&#039;d include in a crawl, but the unangelic morons would put me off staying here too long.</p>
+<p class="Reviewer">On 6<sup>th</sup> February 2017 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 2299 recommendations about 2279 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/13257/">View more reviews of The Angel (5)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Angel</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+</div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/13257/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Pangolin">Graham Coombs</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.20926754439977, -1.47896265029715], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.20926754439977, -1.47896265029715]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Andover, 0.75 miles, 14 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Grateley, 7.41 miles, 2 hr 23 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Whitchurch (Hants), 7.49 miles, 2 hr 24 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('}xpwH~y_Hg@Ly@b@AtAC?A|AJzARzBDn@CPMp@B|@gARF~AHb@Y`@w@Z@f@PbAT|@^rBDFr@rCEBDFyApBF@v@~CBlAEpBI~@uCdMeAvDGHOB?VE?ATWv@SJe@d@IXUXXx@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('}xpwH~y_Hg@Ly@b@AtAC?A|AJzARzBDn@CPMp@B|@gARF~AHb@Y`@w@Z@f@PbAT|@^rBDFr@rCEBDFyApBF@v@~CBlAEpBI~@uCdMeAvDGHOBA|@FvAFJjCxAn@dCv@pDvA|Fz@vAYvDVFANbATfEzA\\ZHNLv@UxFOfBg@hEu@hEDTe@~BGd@GCq@~FF@cBbOuBbT_EvVP|Bf@dC`@bCe@zBEn@BXzAfDLJX?Fd@F\\DHz@~@`@`Ab@|AdAnEBREh@\\v@T`A`@nBfAvEdA~DlAhEdA`DzA|EjApEfA`Gv@nFn@hHDn@?|@E\\\\n@AVBbAHp@v@bEjExSz@pE`BxFhFrRPd@bJvQh@`Cl@rFh@dDlAfFRpCJ~@vBbKf@~@~AxGdAvFhAtFbBfE~AvDp@fBVtARvBXjGxBbK|XblA~AhFtAdId@dJjAzGDFvE~P~Qd]dHzGpLbUtCfMzAfCn@d@zCtAvBfD~AjBjApBrAbElDjHBHZzFFLfBr@RdDCNs@vASnC|EdFpE~FjCxGn@jCzEzb@vAbLj@SJ\\ALVhC', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('}xpwH~y_HLC?IC?IuAc@{Cz@m@VuAIYEgCE[?Os@qNOu@e@uKGy@k@sEs@}DAo@M}@QYhFyEW_BI{@o@cJU}EUiDOo@@g@OcFIaAKUa@wJ?AgA{OMiAc@}AImAWaJg@uKO?gS{YmOqTa@}A{AyE}BaJoAiFeBiGkC}HqEaJ{@oAoAqAaAy@iK}MQq@Ky@Gg@?i@C]EOOGa@NoAkEe@gAo@gBYuBoEsSmEkQw@uDWiBgAcLyBmMwCwRkA_F{BmL}BqO{A_JwBcNaBmMsBsQiAoSy@kT]{HSwAa@{BW_Ai@y@kByE[aAc@gA{FaJa@u@]y@WaA_AqIi@cD]iA{AyDsDuKa@_Be@eCKs@IeAGoCKsHEq@Ec@I[BiDHkEf@mOd@{HTsET}A`@uAbDuHvCoC~FqGn@]rAiAhKmPjEqGz@{Ad@qClAgFhAgELeABsAA}@IeAMkASeAKSCm@HIAUMaC]sDMi@ISg@w@Um@Io@K_@lDcH^_ANe@qHoAb@mDgBy@}AeBsEuAsB{DOkA@i@a@IIC[]s@mAqByDSs@G_@?k@o@LOJSUS_@_@E', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.20926754439977,-1.47896265029715], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=13257">View all updates for The Angel, Andover</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        3<span class="sup">rd</span> Aug 2018, 18:56
+      </div><div class="auditexp">Pub <a href="/pubmapaudit/13257/">map correction</a> submitted by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        3<span class="sup">rd</span> Aug 2018, 18:56
+      </div><div class="auditexp">Pub <a href="/pubmapaudit/13257/">map correction</a> submitted by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11813257">No</span> <span id="discdetail11813257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2016 by E TA</span></li><li>Bar Billiards : <span id="fac10713257">No</span> <span id="discdetail10713257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2016 by E TA</span></li><li>Beer Festivals : <span id="fac11713257">No</span> <span id="discdetail11713257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2016 by E TA</span></li><li>Beer Garden : <span id="fac11413257">Yes</span> <span id="discdetail11413257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 August 2018 by Graham Coombs</span></li><li>CAMRA Discount : <span id="fac10213257">No</span> <span id="discdetail10213257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2016 by E TA</span></li><li>Car Park : <span id="fac11313257">No</span> <span id="discdetail11313257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2016 by E TA</span></li><li>Child Friendly : <span id="fac12113257">No</span> <span id="discdetail12113257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2016 by E TA</span></li><li>Darts : <span id="fac11113257">No</span> <span id="discdetail11113257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 August 2018 by Graham Coombs</span></li><li>Function Room : <span id="fac12313257">No</span> <span id="discdetail12313257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2016 by E TA</span></li><li>Hot Food : <span id="fac10313257">Yes</span> <span id="discdetail10313257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2016 by E TA</span></li><li>Jukebox : <span id="fac11213257">Yes</span> <span id="discdetail11213257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2016 by E TA</span></li><li>Karaoke : <span id="fac10613257">Yes</span>  - <span id="discdetail10613257" class="discdetail" style="">Fridays</span> -   <span class="Reviewer">last updated 15 November 2016 by E TA</span></li><li>Live TV Sports : <span id="fac11013257">Yes</span> <span id="discdetail11013257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 August 2018 by Graham Coombs</span></li><li>Micropub : <span id="fac12213257">No</span> <span id="discdetail12213257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2016 by E TA</span></li><li>Pinball : <span id="fac11613257">No</span> <span id="discdetail11613257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2016 by E TA</span></li><li>Pool Table : <span id="fac10413257">Yes</span> <span id="discdetail10413257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 August 2018 by Graham Coombs</span></li><li>Real Ale : <span id="fac10113257">Yes</span> <span id="discdetail10113257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 January 2012 by hondo .</span></li><li>Real Cider : <span id="fac11913257">No</span> <span id="discdetail11913257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 November 2016 by E TA</span></li><li>Wheelchair Access : <span id="fac12013257">Yes</span> <span id="discdetail12013257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 August 2018 by Graham Coombs</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 2 reviewer(s)" title="Pub has average rating of 4.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/13270/" class="List1">The Globe</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 6 reviewer(s)" title="Pub has average rating of 5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56871/" class="List1">The John Russell Fox (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 5 reviewer(s)" title="Pub has average rating of 5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/69849/" class="List1">The Redbridge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/13287/" class="List1">The White Hart</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/13274/" class="List1">The Lardicake</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/13268/" class="List1">Foresters Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 5 reviewer(s)" title="Pub has average rating of 6.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/13286/" class="List1">Town Mills</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86736/" class="List1">The Rockhouse</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

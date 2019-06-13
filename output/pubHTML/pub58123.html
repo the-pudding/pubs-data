@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Kean&#039;s Head pub in Nottingham, Nottinghamshire, NG1 1QA : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Kean&#039;s Head" />
+  <meta name="keywords" content="The Kean&#039;s Head, 46 St Mary&#039;s Gate, Nottingham, Nottinghamshire, Nottingham Central, Lace Market, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Kean&#039;s Head in Nottingham" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/58001_58500/58123_8c2a7f72.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/58123/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.95132378179243" />
+<meta property="og:longitude" content="-1.14401042461395" />
+<meta property="og:street-address" content="46 St Mary&#039;s Gate" />
+<meta property="og:locality" content="Nottingham" />
+<meta property="og:region" content="Nottinghamshire" />
+<meta property="og:postal-code" content="NG1 1QA" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Kean&#039;s Head in Nottingham? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Kean&#039;s Head the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/58123/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Kean&#039;s Head in Nottingham" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Kean&#039;s Head " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/58001_58500/58123_8c2a7f72.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/58123/" />
+<meta name="geo.position" content="52.95132378179243;-1.14401042461395" />
+<meta name="geo.placename" content="The Kean&#039;s Head in Nottingham" />
+<meta name="geo.region" content="UK" />
+<title>The Kean&#039;s Head in Nottingham : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":58123},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(58123);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 58123;var pubaddress = "46 St Mary's Gate";var pubname = "The Kean's Head";var pubpostcode = "NG1 1QA";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/nottinghamshire/" title="Pubs Galore : Nottinghamshire Page">Nottinghamshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/nottingham/nottinghamshire/" title="Pubs Galore : Nottingham Page">Nottingham</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Kean&#039;s Head Page">The Kean&#039;s Head Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="thj415te6hskqmbq42h0df51p5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/58123/" class="indisplay"><img src="/images/display/58001_58500/58123_8c2a7f72.jpg?w=2" alt="Picture of The Kean&#039;s Head" /></a><br />  Image posted by <a href="/userinfo.php?name=sheffield+hatter" class="indisplay">Will Larter</a><br />
+  Submitted on Saturday, 12<sup>th</sup> September 2015<br />
+  With picture contributions to 8564 other pubs<br />
+<a href="/pubpictures/58123/" class="smallbutton">View all this pub's pictures</a> (13 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/58123/">Pub map</a><br /><a href="/pubreviews/58123/">Pub reviews (10)</a><br /><a href="/pubpictures/58123/">Pub pictures (14)</a><br /><a href="/core/pubaudit.php?id=58123" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Kean&#039;s Head, Nottingham</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">46 St Mary&#039;s Gate</span><br />
+
+
+<span class="town">Nottingham</span><br />
+<span class="postcode">NG1 1QA</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01159474052</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/nottingham-central/nottinghamshire/">Nottingham Central</a>, <a href="/areas/lace-market/nottinghamshire/">Lace Market</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Kean's Head</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/keanshead" target="_blank"><img src="https://pbs.twimg.com/profile_images/957546569527644160/DbS193GQ_normal.jpg" alt="The Kean&#039;s Head" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/keanshead" target="_blank">The Kean&#039;s Head</a></strong>
+We need your Vote! Help us secure our place in 2020&#039;s Good Beer Guide
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/keanshead/status/1138853473460662272">about 7 hours ago</a> from <a href="https://about.twitter.com/products/tweetdeck" rel="nofollow">TweetDeck</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/keanshead" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/keanshead" target="_blank">The Kean&#039;s Head</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Kean's Head  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review127197" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=427scr">Mark Davey</a> left this review about The Keans Head</h6>
+<p class="old">March 2018. Still at it. Fantastic gin collection.<br />
+<br />
+February 2016. Still here, still selling really good beer and food. Keep it up boys and girls.<br />
+<br />
+I have been in here several times since 2012 and I can report no real change. Keep it up Castle Rock. Still my favourite wife friendly pub in the city, however competition is growing almost on a daily basis.<br />
+<br />
+Original review 25/06/12.<br />
+<br />
+My favourite city centre watering hole when out shopping with the Mrs. Small brick faced single room with a bar at the end. can get crowded at times but is off the beaten track for most shoppers and is great for lunch. Usually 3 Castle Rock brews on the bar, this time including Harvest Pale, Preservation and the special Diamond Reign. Couple of guests on the bar plus some fizzy lager on tap. I had the most excellent ham eggs and chips whilst the Mrs had a brie butty and chips. the food was excellent, as was the beer. Very attentive staff, only too happy to help. Good wine list for the ladies and I am told, a most acceptible new Zealand Sauv. Toilets are very clean as is the rest of the pub. Good disabled access, however, due to it&#039;s location, there is no parking to speak of. Real Ale Ray obviously had a bad experience but I will be back again and again.</p>
+<p class="Reviewer">On 15<sup>th</sup> March 2018 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 292 recommendations about 276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review115892" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> left this review about The Keans Head</h6>
+<p class="old">A castle rock pub usually stands for a fantastic pub experience but I have to say this is a rare example of theirs that I would brand as good but not great. Some reasons for this are the limited space available as it is simply one large square room with a bar that runs along the back wall meaning everything is open plan which I am not as keen on.  Secondly being in the middle of town it is more hustle and bustle than their suburban pubs attraction night time weekend drinker types which is fine but as nice as the more chilled out clientele of their quieter pubs. Lastly the selection of beer is not as good as their other pubs. Baring that in mind there is still six hand pulls available as well as numerous keg craft beers and a decent whiskey selection. Their beer is also extremely well kept with there always available Harvest pale (&pound;3.00) being one of the best examples of this beer I have had.  However it must be said that this is probably the most expensive castle rock pub with the guests on my visit being all starting at &pound;3.50 which is on the pricey side for Nottingham. On my visit Hardknot   Brewery was heavily featured making me think they might have had a tap takeover. Beers available were Hardknot catalyst (&pound;3.50) Dark energy (&pound;4.00) and Newons Downfall (&pound;4.50!!) as well as Urban Huntsmans the Islander (&pound;3.60) and Castle Rocks Traffic Street Special Rat Race (&pound;3.60). This pub is still worth a visit if in town as the beer quality is fantastic, just not the sort of place you would want to stay all night.<br />
+<br />
+Update March 2017**<br />
+<br />
+Was told by the snardiest bar man ever that I knew nothing about beer for requesting a sparkler with  my beer (I personally like beer served with one) as all the pumps had no sparkler attached only to be told that i was wasting his beer as only beer that is not in perfect condition requires a sparkler. I think i laughed all the way to the next pub.</p>
+<p class="Reviewer">On 7<sup>th</sup> March 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 424 recommendations about 424 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review107287" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> left this review about The Keans Head</h6>
+<p class="old">This pub was opened about 21 years ago and it is in a nice setting opposite St Marys church.<br />
+This is a small pub with a squareish room and the bar facing you as you enter,it is a Castle Rock tied house and there are about 7 real ales on the bar with three or four from castle rock and the others guest micro brewery beers.<br />
+When we come in here we usually have a drink of Harvest Pale which is always very nice,seats are hard to come by because the pub is so small but if you do get a seat i think this is a really nice pub to have a few drinks in.<br />
+The pub also does food which looks very nice and not the microwave type food.<br />
+This pub is well worth a visit and its close to the gallerys of justice and about 4 mins walk from Lace Market tram stop.<br />
+This is a pub we visit whenever in Nottingham on our most recent visit we had a drink of Harvest Pale which was on top form as usual,the other beers on the bar were Castle Rock Snow White /Preservation,Traffic Street Guns of Naverone 10.3% &pound;4 a half and one from Hop Craft.<br />
+Still one of my favourite Nottingham pubs that i will visit often.<br />
+<br />
+Pub first visited 15/12/1995<br />
+<br />
+Recent visit 7/5/2016</p>
+<p class="Reviewer">On 30<sup>th</sup> May 2016 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 6113 recommendations about 6113 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/58123/">View more reviews of The Kean&#039;s Head (10)</a>
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=1112">Nottingham Alternative Crawl</a> by <a rel="nofollow" href="/userinfo.php?name=427scr">Mark Davey</a><br />
+<a href="/crawl/viewcrawl.php?crawl=1018">&quot;Child Friendly&quot; pubs in central Nottingham</a> by <a rel="nofollow" href="/userinfo.php?name=sheffield+hatter">Will Larter</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Kean&#039;s Head</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official pages of the Keans Head, contains menu, beer and wine lists - <a href="http://www.castlerockbrewery.co.uk/site/?page_id=22" title="Submitted by:- Michael Boyes" target="_blank">www.castlerockbrewery.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="825465120802198">Facebook - <a href="https://www.facebook.com/thekeanshead/" target="_blank" rel="nofollow">Kean's Head</a></li></ul><ul id="Custom2"><li class="twitlink" id="464670232">Twitter - <a href="https://twitter.com/keanshead" target="_blank" rel="nofollow">The Kean's Head</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/58123/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=sheffield+hatter">Will Larter</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.95132378179243, -1.14401042461395], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.95132378179243, -1.14401042461395]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Nottingham, 0.51 miles, 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Netherfield, 3.41 miles, 1 hr 5 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Carlton, 3.44 miles, 1 hr 6 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('y`ebIvl~ExAe@EfAG|@MlA]vBZVF`@d@\\VDRERFNUDO@d@DRxC]FE`BSDADKHC?IFa@DGJEV@zBO@ZbA@BbBPEJrCL`Cp@UCQv@YCO', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('y`ebIvl~ExAe@?a@I}Bb@UJM@K?uDAm@Ii@u@iE]JCYPGBI?OUiDEEAe@Gm@ESEENIJAFIMoAGcDOgI@SRWKe@E?f@kEfBcNBwAAqFz@Sh@[r@mA^iAHwCA_@EKEODu@KUkBkGeCgHiBmFeD}LwAuE~@}@rC{@MiBw@qGAGBBOASy@[y@Mo@O]KGSm@@O_@PSG]g@SgC_DkBj@eMgDy@WMUWgAsBMOQBWcDiBkNkBiSi@gDuAsHeC}KOaB?cCJyAXyBrAyIl@eDFq@?YKi@yAqDqGeOaBwDGGfByBLDVf@l@iAaAmB}@eC{@oAi@gAuBkFi@aBiAmE_@yBOkAIeArA_Bo@iB@ECC@KHc@oAmAGaBHGAuDD{B?ET??I[WGWiACDeCFm@@I', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('y`ebIvl~ExAe@?a@I}Bb@UJM@K?uDAm@Ii@u@iE]JCYPGBI?OUiDEEAe@Gm@ESEENIJAFIMoAGcDOgI@SRWKe@E?f@kEfBcNBwAAqFz@Sh@[r@mA^iAHwCA_@EKEODu@KUkBkGeCgHiBmFeD}LwAuE~@}@rC{@MiBw@qGAGBBOASy@[y@Mo@O]KGSm@@O_@PSG]g@SgC_DkBj@eMgDy@WMUWgAsBMOQBWcDiBkNkBiSi@gDuAsHeC}KOaB?cCJyAXyBrAyIl@eDFq@?YKi@yAqDqGeOaBwDGGvAgBy@yBg@yAyA_DuDoIiBqCYkAWq@_CaGs@yAaBqEqC{FaBuCwCgHYg@k@kBJQFLBE', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.95132378179243,-1.14401042461395], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=58123">View all updates for The Kean&#039;s Head, Nottingham</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        15<span class="sup">th</span> Mar 2018, 13:48
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=427scr">Mark Davey</a> amended by <a rel="nofollow" href="/userinfo.php?name=427scr">Mark Davey</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        7<span class="sup">th</span> Mar 2017, 17:56
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> amended by <a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11858123">No</span> <span id="discdetail11858123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Bar Billiards : <span id="fac10758123">No</span> <span id="discdetail10758123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Beer Festivals : <span id="fac11758123">No</span> <span id="discdetail11758123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Beer Garden : <span id="fac11458123">No</span> <span id="discdetail11458123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10258123">Yes</span>  - <span id="discdetail10258123" class="discdetail" style="">Whatpub say yes, but it isn&#039;t listed in Nottingham Drinker February 2017</span> -   <span class="Reviewer">last updated 04 February 2017 by ROB Camra</span></li><li>Car Park : <span id="fac11358123">No</span> <span id="discdetail11358123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Darts : <span id="fac11158123">No</span> <span id="discdetail11158123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Dog Friendly : <span id="fac10558123">Yes</span> <span id="discdetail10558123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Function Room : <span id="fac12358123">No</span> <span id="discdetail12358123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Hot Food : <span id="fac10358123">Yes</span> <span id="discdetail10358123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Jukebox : <span id="fac11258123">No</span> <span id="discdetail11258123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Karaoke : <span id="fac10658123">No</span> <span id="discdetail10658123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Live Music : <span id="fac10858123">No</span> <span id="discdetail10858123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11058123">No</span> <span id="discdetail11058123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Micropub : <span id="fac12258123">No</span> <span id="discdetail12258123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Pinball : <span id="fac11658123">No</span> <span id="discdetail11658123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Pool Table : <span id="fac10458123">No</span> <span id="discdetail10458123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Quiz Night : <span id="fac10958123">No</span> <span id="discdetail10958123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Real Ale : <span id="fac10158123">Yes</span> <span id="discdetail10158123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Real Cider : <span id="fac11958123">Yes</span> <span id="discdetail11958123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>Wheelchair Access : <span id="fac12058123">Yes</span> <span id="discdetail12058123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li><li>WiFi : <span id="fac11558123">Yes</span> <span id="discdetail11558123" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 November 2015 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - 0:30am</td></tr>
+<tr><td>Saturday</td><td>11am - 0:30am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 4 reviewer(s)" title="Pub has average rating of 7 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/58111/" class="List1">Cock &amp; Hoop</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86994/" class="List1">Saint Bar @ Lace Market Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 4 reviewer(s)" title="Pub has average rating of 7 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81495/" class="List1">Annie&#039;s Burger Shack and Freehouse</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 2 reviewer(s)" title="Pub has average rating of 5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86295/" class="List1">Lacemakers Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86996/" class="List1">Brass Monkey</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 6 reviewer(s)" title="Pub has average rating of 5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/58128/" class="List1">The Head of Steam</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86998/" class="List1">The Lacehouse</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 4 reviewer(s)" title="Pub has average rating of 6 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/58133/" class="List1">Pitcher &amp; Piano</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

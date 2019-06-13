@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Clarence pub in Mayfair, W1, London (Central), W1S 4LB : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Clarence" />
+  <meta name="keywords" content="The Clarence, 4  Dover Street, W1, London (Central), Mayfair, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Clarence in W1" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/22001_22500/22242_c5edcd36.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/22242/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.50778421653757" />
+<meta property="og:longitude" content="-0.14141410589218" />
+<meta property="og:street-address" content="4  Dover Street" />
+<meta property="og:locality" content="W1" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="W1S 4LB" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Clarence in W1? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Clarence the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/22242/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Clarence in W1" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Clarence " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/22001_22500/22242_c5edcd36.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/22242/" />
+<meta name="geo.position" content="51.50778421653757;-0.14141410589218" />
+<meta name="geo.placename" content="The Clarence in W1" />
+<meta name="geo.region" content="UK" />
+<title>The Clarence in Mayfair, W1 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":22242},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(22242);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 22242;var pubaddress = "4  Dover Street";var pubname = "The Clarence";var pubpostcode = "W1S 4LB";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/w1/central-london/" title="Pubs Galore : W1 Page">W1</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Clarence Page">The Clarence Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="nau2d7urmkfir44j0p5kd8khe6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/22242/" class="indisplay"><img src="/images/display/22001_22500/22242_c5edcd36.jpg?w=2" alt="Picture of The Clarence" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Monday, 10<sup>th</sup> September 2018<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/22242/" class="smallbutton">View all this pub's pictures</a> (14 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/22242/">Pub map</a><br /><a href="/pubreviews/22242/">Pub reviews (13)</a><br /><a href="/pubpictures/22242/">Pub pictures (15)</a><br /><a href="/core/pubaudit.php?id=22242" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Clarence, Mayfair, W1</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">4  Dover Street</span><br />
+
+
+<span class="town">W1</span><br />
+<span class="postcode">W1S 4LB</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Nicholsons (Mitchells & Butlers)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/mayfair/central-london/">Mayfair</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Clarence</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/TheClarenceW1" target="_blank"><img src="https://pbs.twimg.com/profile_images/805107760429989888/PgWQhHl3_normal.jpg" alt="The Clarence Mayfair" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/TheClarenceW1" target="_blank">The Clarence Mayfair</a></strong>
+It&#039;s amazing the people you meet at the Clarence
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/TheClarenceW1/status/1124094072497504257">12:31 AM May 3rd</a> from <a href="https://r4e-social-oauth.reputation.com/" rel="nofollow">Reputation.com-Social</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/TheClarenceW1" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/TheClarenceW1" target="_blank">The Clarence Mayfair</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Clarence  <span class="h2note">(Average Rating: <span id="averagerating"><b>6</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review134971" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Clarence</h6>
+<p class="old">Long, narrow and anodyne Nicholsons in neutral tones with the standard corporate tick boxes, including the wide but safe range of ales. I could smell the Tribute coming, it was that bad. My replacement of Tim Taylor Landlord was fine, however my companion&rsquo;s pint of Ghost Ship didn&rsquo;t pass muster. Not much to recommend it on this showing which is a surprise as Nicholsons are usually safe bets in the capital.</p>
+<p class="Reviewer">On 13<sup>th</sup> June 2018 
+  - rating: <b>4</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review109086" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=danny+o%27revey">Danny O&#039;Revey</a> left this review about The Clarence</h6>
+<p class="old">Rather plain version of a Nicholsons, light neutral walls. Close to Picadilly &amp; The Ritz. The beer is well kept but its a totally uninteresting building &amp; bland offering.</p>
+<p class="Reviewer">On 25<sup>th</sup> July 2016 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 1177 recommendations about 1154 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review108422" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Clarence</h6>
+<p class="old">Just around the corner from the swanky Ritz and easily reached from Green Park tube station this is a decent sized Nicholson&#039;s pub in a building that lacks the charm of many of this chain&#039;s London based pubs. That&#039;s not to say the pub doesn&#039;t have an interesting history - it started life as the Coach and Horses as far back as the 1720&#039;s, before changing its name in reference to the Duke of Clarence. Sadly numerous refits over the years have left little of historical interest on show, with the interior having been badly butchered, to leave a disjointed and unusual layout. You enter either down a passageway along the right hand wall or through an opened out front section which looks out to a cordoned off section of pavement, jam packed with suits on my post-work mid-week visit. Some remarkably bland walls and bare boards characterise this space, mitigated slightly by comfy leather seating (banquettes, pouffes, high stools), serving small tables and a drinking ledge down the left hand wall. A few bits adorn the walls, such as plain mirrors and old photos, whilst an ancient looking telephone was also a notable addition to the d&eacute;cor, but there was no escaping the fact that this was an interminably dull space, so it was a relief to move through to the main bar area, shielded from the front room by a sizable section of partitioning wall. The servery is to the left and boasts a nice curved counter and modern mirrored bar back all done in dark wood. Some nice tiled flooring around the bar gives way to chunky modern floorboards, with standard eating available opposite the servery and high tables and stools beyond the end of the bar. Some decent wood panelling makes the rear part of the room the most pleasing part of the pub, once you pass the obligatory TV showing muted news coverage. To the right is a set of shelves labelled &#039;Beer Library&#039;, although books were in the minority, with bottles, photos, tap and spiles, jugs and other such breweriana on show under some hops and tankards that hung from above. The rest of the d&eacute;cor in this rear section was devoted to the poet Wordsworth, for reasons I wasn&#039;t fully able to figure out. Various pictures, quotes and samples of his poetry covered the end wall, but the effect was somewhat lost by the modern pop soundtrack that played in the background. <br />
+A typically good Nicholson&#039;s range prevailed at the bar, with options on this visit comprising Nicholson&#039;s Pale Ale, Goddard&#039;s Ale of Wight, Off the Wall Koma, Fullers Past Masters Oatmeal Porter, Adnams Broadside, Woodfordes Nelson&#039;s Revenge and Navigation Golden Anchor. A pleasant barman served me a pretty good pint of the Golden Anchor which I took to the back of the pub to sup in peace away from the boisterous suited masses.<br />
+I normally view Nicholson&#039;s pubs as a safe bet for a good pint in proper pub-like surrounds - something that can never be taken for granted in central London, but this place was a bit of a let-down, with only the far end of the pub offering any kind of comfort and refuge. It might be worth a look away from the peak post-work hours, but I was a little disappointed with this one.</p>
+<p class="Reviewer">On 6<sup>th</sup> July 2016 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/22242/">View more reviews of The Clarence (13)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Clarence</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official pages of the Clarence, contains menu and real ale details - <a href="http://www.nicholsonspubs.co.uk/theclarencemayfairlondon" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">www.nicholsonspubs.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="twitlink" id="807043448">Twitter - <a href="https://twitter.com/TheClarenceW1" target="_blank" rel="nofollow">The Clarence Mayfair</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/22242/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Strongers">Steve C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.50778421653757, -0.14141410589218], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.50778421653757, -0.14141410589218]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> London Charing Cross, 0.96 miles, 18 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> London Victoria, 1.08 miles, 20 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> London Victoria, 1.08 miles, 20 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('kbkyHnsZh@i@REfBgBy@yCjCoC_AiDlBiBeCuJ[gBLW@_@COd@a@Qu@TUa@yAr@s@aE_PKk@LeCZaHGAI_@BABS?eAEu@OoAK_@IUOAACCm@NUmBqEFIMYZu@?KM[vAiDHLDGDHLY', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('kbkyHnsZh@i@fAvCn@nAdBeBxA}@hAV`Ak@z@f@NGJFJRZP^Qx@KhBH`A@|@Bp@Hn@Hd@Il@D?WjBsBjAiA`@g@F[lBx@l@FBXDVdCfINZrBzAn@Vr@d@dG|DrAp@?OPB@GTVz@d@PiAd@Vj@]TkAhAp@DURGAHl@`@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('kbkyHnsZh@i@fAvCn@nAdBeBxA}@hAV`Ak@z@f@NGJFJRZP^Qx@KhBH`A@|@Bp@Hn@Hd@Il@D?WjBsBjAiA`@g@F[lBx@l@FBXDVdCfINZrBzAn@Vr@d@dG|DrAp@?OPB@GTVz@d@PiAd@Vj@]TkAhAp@DURGAHl@`@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.50778421653757,-0.14141410589218], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=22242">View all updates for The Clarence, W1</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        27<span class="sup">th</span> Nov 2018, 21:13
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        10<span class="sup">th</span> Sep 2018, 23:39
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11822242">No</span> <span id="discdetail11822242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Bar Billiards : <span id="fac10722242">No</span> <span id="discdetail10722242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Beer Festivals : <span id="fac11722242">No</span> <span id="discdetail11722242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Beer Garden : <span id="fac11422242">No</span> <span id="discdetail11422242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10222242">No</span> <span id="discdetail10222242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Car Park : <span id="fac11322242">No</span> <span id="discdetail11322242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Child Friendly : <span id="fac12122242">No</span> <span id="discdetail12122242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Darts : <span id="fac11122242">No</span> <span id="discdetail11122242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Dog Friendly : <span id="fac10522242">No</span> <span id="discdetail10522242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Function Room : <span id="fac12322242">No</span> <span id="discdetail12322242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Hot Food : <span id="fac10322242">Yes</span> <span id="discdetail10322242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Jukebox : <span id="fac11222242">No</span> <span id="discdetail11222242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Karaoke : <span id="fac10622242">No</span> <span id="discdetail10622242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Live Music : <span id="fac10822242">No</span> <span id="discdetail10822242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Live TV Sports : <span id="fac11022242">No</span> <span id="discdetail11022242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Micropub : <span id="fac12222242">No</span> <span id="discdetail12222242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Pinball : <span id="fac11622242">No</span> <span id="discdetail11622242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Pool Table : <span id="fac10422242">No</span> <span id="discdetail10422242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Quiz Night : <span id="fac10922242">No</span> <span id="discdetail10922242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 February 2018 by Komakino .</span></li><li>Real Ale : <span id="fac10122242">Yes</span> <span id="discdetail10122242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Real Cider : <span id="fac11922242">No</span> <span id="discdetail11922242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li><li>Wheelchair Access : <span id="fac12022242">No</span> <span id="discdetail12022242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 February 2018 by Komakino .</span></li><li>WiFi : <span id="fac11522242">Yes</span> <span id="discdetail11522242" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2018 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86401/" class="List1">Rivoli Bar @The Ritz Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 9 reviewer(s)" title="Pub has average rating of 6.5 from 9 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22359/" class="List1">The Kings Head</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 7 reviewer(s)" title="Pub has average rating of 6 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22260/" class="List1">The Goat Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 18 picture(s)" title="Pub has 18 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 7 reviewer(s)" title="Pub has average rating of 6 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54754/" class="List1">The Blue Posts</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/78688/" class="List1">Novikov</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 2 reviewer(s)" title="Pub has average rating of 5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64418/" class="List1">Henry&#039;s</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66179/" class="List1">Fifty9</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64573/" class="List1">Mr Foggs Tavern</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

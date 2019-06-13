@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Mr Fox pub in Croydon, London (Greater), CR0 1RJ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Mr Fox" />
+  <meta name="keywords" content="Mr Fox, 34 Surrey Street, Croydon, London (Greater), Croydon Town Centre, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Mr Fox in Croydon" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/64501_65000/64635_261a9033.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/64635/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.37339307525609" />
+<meta property="og:longitude" content="-0.10146094362062" />
+<meta property="og:street-address" content="34 Surrey Street" />
+<meta property="og:locality" content="Croydon" />
+<meta property="og:region" content="London (Greater)" />
+<meta property="og:postal-code" content="CR0 1RJ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Mr Fox in Croydon? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Mr Fox the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/64635/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Mr Fox in Croydon" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Mr Fox " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/64501_65000/64635_261a9033.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/64635/" />
+<meta name="geo.position" content="51.37339307525609;-0.10146094362062" />
+<meta name="geo.placename" content="Mr Fox in Croydon" />
+<meta name="geo.region" content="UK" />
+<title>Mr Fox in Croydon : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":64635},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(64635);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 64635;var pubaddress = "34 Surrey Street";var pubname = "Mr Fox";var pubpostcode = "CR0 1RJ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/greater-london/" title="Pubs Galore : London (Greater) Page">London (Greater)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/croydon/greater-london/" title="Pubs Galore : Croydon Page">Croydon</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Mr Fox Page">Mr Fox Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="5mj3o37f69l6pjbqkbj0chcn83" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/64635/" class="indisplay"><img src="/images/display/64501_65000/64635_261a9033.jpg?w=2" alt="Picture of Mr Fox" /></a><br />  Image posted by <a href="/userinfo.php?name=Cole2020" class="indisplay">Cole Solem</a><br />
+  Submitted on Monday, 20<sup>th</sup> May 2019<br />
+  <a href="/pubpictures/64635/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/64635/">Pub map</a><br /><a href="/pubreviews/64635/">Pub reviews (3)</a><br /><a href="/pubpictures/64635/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=64635" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Mr Fox, Croydon Town Centre, Croydon</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=Perry">Graham Mason</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">34 Surrey Street</span><br />
+
+
+<span class="town">Croydon</span><br />
+<span class="postcode">CR0 1RJ</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/croydon-town/greater-london/">Croydon Town Centre</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by Mr Fox</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/Tequila_Mock" target="_blank"><img src="https://pbs.twimg.com/profile_images/1034014916523503616/Aq8veohy_normal.jpg" alt="Tequila Mockingbird" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/Tequila_Mock" target="_blank">Tequila Mockingbird</a></strong>
+SW Londons favourite cocktail bars!
+
+To get in contact visit our website - link in bio.
+
+Check out our instagram - <a href='https://t.co/2dpYgNJzqB' target='_blank'>https://t.co/2dpYgNJzqB</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/Tequila_Mock/status/1128662372606988291">3:04 PM May 15th</a> from <a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/Tequila_Mock" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/Tequila_Mock" target="_blank">Tequila Mockingbird</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Mr Fox  <span class="h2note">(Average Rating: <span id="averagerating"><b>5&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review139335" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Cole2020">Cole Solem</a> left this review about Mr Fox</h6>
+<p>Mr Fox is a new cocktail pub in Surrey Street. It has a wide variety of cocktails and craft beers.  It now offers food such as rotisserie chicken, burgers, vegan burgers, etc.<br />
+<br />
+It has been massively improved and hopes to put the venue&#039;s history in the past to help improve Croydon and bring more people into Surrey Street. It has two shuffleboard tables and is dog friendly! <br />
+<br />
+Great look, great vibe, great food &amp; drink.</p>
+<p class="Reviewer">On 20<sup>th</sup> May 2019 
+  - rating: <b>10</b><br />
+  <span class="leftspace">[User has posted 1 recommendations about 1 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review108996" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about SLVR</h6>
+<p class="old">This place only opens from 22:00 onwards on Friday and Saturday nights, so is a rather dubious entry on this website. The place has been through various guises over recent years, having been an Irish themed bar called Jim Thompsons before switching to the current club style venue through incarnations as Vintage and Rehab. It doesn&#039;t look very welcoming on approach - all of the windows are blacked out and there is a general scruffiness to its external appearance. Inside, it&#039;s all shiny surfaces and low level lighting with pounding music and a cocktail menu - nothing like a pub really. They had Tuborg larger on draught the last time I was here plus various bottled options. Prices weren&#039;t as horrific as I&#039;d anticipated. The venue is split level, with the ground floor space offering a lounge to the right, bar in the centre and a dancefloor replete with large mirrors to the left and rear. Stairs lead down to a cosier second bar with a big pillar in the middle of the dancefloor and a servery along the back wall. <br />
+<br />
+All in all, not much to recommend here unless you&#039;re looking for a new late night venue following the demise of the equally depressing Tiger Tiger. It&#039;s not really a pub and the low rating reflects this.</p>
+<p class="Reviewer">On 21<sup>st</sup> July 2016 
+  - rating: <b>1</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review93046" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Strongers">Steve C</a> left this review about SLVR</h6>
+<p class="old">SLVR is open from 21:00 until 04:00 on Fridays and Saturdays. It is closed for the rest of the week because it is a club where young people go at the weekend to do young people weekend things. <br />
+<br />
+There is free entry for two hours from when it opens until 23:00, which is the only reason I can see for it being included on this website.</p>
+<p class="Reviewer">On 8<sup>th</sup> March 2015 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 3386 recommendations about 3366 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Mr Fox</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of Mr Fox - <a href="http://www.mrfoxcroydon.co.uk/" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">www.mrfoxcroydon.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="1220143738133314">Facebook - <a href="https://www.facebook.com/mrfoxcroydon/" target="_blank" rel="nofollow">Mr Fox Croydon</a></li></ul><ul id="Custom2"><li class="twitlink" id="2186585720">Twitter - <a href="https://twitter.com/Tequila_Mock" target="_blank" rel="nofollow">Tequila Mockingbird</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/64635/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Cole2020">Cole Solem</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.37339307525609, -0.10146094362062], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.37339307525609, -0.10146094362062]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> East Croydon, 0.53 miles, 10 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> West Croydon, 0.6 miles, 11 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> South Croydon, 0.94 miles, 18 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('{xpxH~xRy@f@UsBE?SuBFi@IEEKm@yFYmDYsDL_@EgAo@wIWLEi@]oCOiBYgAe@eEO_AUl@m@TQGEBICIXG@OA', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('{xpxH~xRy@f@UsBO@EBCHQyB@]gGzBkB|@e@?y@Ri@f@{EzB_@?MHAH_Av@MIQWg@gAMOs@_@aCaAKMW{@E@Dn@BNEThB|@\\T', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('{xpxH~xRvBoAnCuAB]h@CfCo@`A[YoIfC]dBq@bCWz@Qt@[xCq@p@UhBSX?bBd@t@HZA~G{Bg@mFDQfB_@Ge@tAs@`@OTFPNLWBi@@_E', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.37339307525609,-0.10146094362062], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=64635">View all updates for Mr Fox, Croydon</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        20<span class="sup">th</span> May 2019, 18:12
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        20<span class="sup">th</span> May 2019, 18:12
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a>
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11864635">No</span> <span id="discdetail11864635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>Bar Billiards : <span id="fac10764635">No</span> <span id="discdetail10764635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>Beer Festivals : <span id="fac11764635">Yes</span> <span id="discdetail11764635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>Beer Garden : <span id="fac11464635">Yes</span> <span id="discdetail11464635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>CAMRA Discount : <span id="fac10264635">No</span> <span id="discdetail10264635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 June 2017 by ROB Camra</span></li><li>Car Park : <span id="fac11364635">No</span> <span id="discdetail11364635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>Child Friendly : <span id="fac12164635">Yes</span> <span id="discdetail12164635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>Darts : <span id="fac11164635">No</span> <span id="discdetail11164635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>Dog Friendly : <span id="fac10564635">Yes</span> <span id="discdetail10564635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>Function Room : <span id="fac12364635">Yes</span> <span id="discdetail12364635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>Hot Food : <span id="fac10364635">Yes</span> <span id="discdetail10364635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>Jukebox : <span id="fac11264635">No</span> <span id="discdetail11264635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>Live Music : <span id="fac10864635">Yes</span> <span id="discdetail10864635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>Live TV Sports : <span id="fac11064635">No</span> <span id="discdetail11064635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>Micropub : <span id="fac12264635">No</span> <span id="discdetail12264635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>Pinball : <span id="fac11664635">No</span> <span id="discdetail11664635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>Pool Table : <span id="fac10464635">No</span> <span id="discdetail10464635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>Real Ale : <span id="fac10164635">No</span> <span id="discdetail10164635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 June 2017 by ROB Camra</span></li><li>Real Cider : <span id="fac11964635">No</span> <span id="discdetail11964635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 June 2017 by ROB Camra</span></li><li>Wheelchair Access : <span id="fac12064635">Yes</span> <span id="discdetail12064635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li><li>WiFi : <span id="fac11564635">Yes</span> <span id="discdetail11564635" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 May 2019 by Cole Solem</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - Midnight</td></tr>
+<tr><td>Monday</td><td>4pm - Midnight</td></tr>
+<tr><td>Tuesday</td><td>4pm - Midnight</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>4pm - Midnight</td></tr>
+<tr><td>Thursday</td><td>4pm - 1am</td></tr>
+<tr><td>Friday</td><td>12noon - 2:30am</td></tr>
+<tr><td>Saturday</td><td>12noon - 2:30am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 10 reviewer(s)" title="Pub has average rating of 8 from 10 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54142/" class="List1">Dog &amp; Bull</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86467/" class="List1">Art &amp; Craft CR0</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2.5 from 2 reviewer(s)" title="Pub has average rating of 2.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54156/" class="List1">Turtle Bay</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 9 recommendation(s)" title="Pub has 9recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 8 reviewer(s)" title="Pub has average rating of 4.5 from 8 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54157/" class="List1">The Milan Bar (Lloyds No 1)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3.5 from 2 reviewer(s)" title="Pub has average rating of 3.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/80331/" class="List1">Matthews Yard</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2 from 2 reviewer(s)" title="Pub has average rating of 2 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/35579/" class="List1">Dice</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 4 reviewer(s)" title="Pub has average rating of 4 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54149/" class="List1">Market Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/76838/" class="List1">Bad Apple</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

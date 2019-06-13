@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Victors pub in Sunderland, Tyne &amp; Wear, SR1 3QA : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Victors" />
+  <meta name="keywords" content="Victors, Low Row, Sunderland, Tyne &amp; Wear, Sunderland Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Victors in Sunderland" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/56001_56500/56342_2217a484.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/56342/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="54.90571902847351" />
+<meta property="og:longitude" content="-1.38970613479614" />
+<meta property="og:street-address" content="Low Row" />
+<meta property="og:locality" content="Sunderland" />
+<meta property="og:region" content="Tyne &amp; Wear" />
+<meta property="og:postal-code" content="SR1 3QA" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Victors in Sunderland? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Victors the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/56342/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Victors in Sunderland" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Victors " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/56001_56500/56342_2217a484.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/56342/" />
+<meta name="geo.position" content="54.90571902847351;-1.38970613479614" />
+<meta name="geo.placename" content="Victors in Sunderland" />
+<meta name="geo.region" content="UK" />
+<title>Victors in Sunderland : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":56342},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(56342);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 56342;var pubaddress = "Low Row";var pubname = "Victors";var pubpostcode = "SR1 3QA";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/tyne-wear/" title="Pubs Galore : Tyne &amp; Wear Page">Tyne &amp; Wear</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/sunderland/tyne-wear/" title="Pubs Galore : Sunderland Page">Sunderland</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Victors Page">Victors Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="pdfbea2i5djcrsm3hq9mqh1db6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/56342/" class="indisplay"><img src="/images/display/56001_56500/56342_2217a484.jpg?w=2" alt="Picture of Victors" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
+  Submitted on Wednesday, 16<sup>th</sup> May 2018<br />
+  With picture contributions to 24007 other pubs<br />
+<a href="/pubpictures/56342/" class="smallbutton">View all this pub's pictures</a> (4 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/56342/">Pub map</a><br /><a href="/pubreviews/56342/">Pub reviews (7)</a><br /><a href="/pubpictures/56342/">Pub pictures (5)</a><br /><a href="/core/pubaudit.php?id=56342" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Victors, Sunderland Central, Sunderland</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Low Row</span><br />
+
+
+<span class="town">Sunderland</span><br />
+<span class="postcode">SR1 3QA</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01915689910</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/sunderland-central/tyne-wear/">Sunderland Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Victors  <span class="h2note">(Average Rating: <span id="averagerating"><b>5&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review136988" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=RealAleRobUK">Rob Hunter</a> left this review about Victors</h6>
+<p>I have been in before when it was a Wetherspoons, and subsequently when it changed ownership.  However I recently paid a visit which was the first since its change of name, and apparently has also had a refurb.  The basic layout is pretty much the same though.<br />
+<br />
+Four hand pulls for cask ale at the bar, at the time of my visit last month one of these was unclipped, another was clipped but turned round, leaving Double Maxim and Sonnet 43 Abolition.  The Abolition was &pound;1.25 for a half, so very reasonable.<br />
+<br />
+Being January, they did a half price food deal if you sign up for a loyalty card, meaning I got a steak at a bargain price that was too good to pass up.<br />
+<br />
+Friendly service.  There are better real ale pubs nearby but I&#039;m glad to have visited.</p>
+<p class="Reviewer">On 20<sup>th</sup> February 2019 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 359 recommendations about 336 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review107462" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> left this review about The Lambton Worm (JD Wetherspoon)</h6>
+<p class="old">This is a rambling Spoons set in the ground floor of a modern building. Unusually, especially as it isn&#039;t a Lloyds it has BT &amp; Sky Sports but luckily nothing was going on when I was here. I came here on an evening when it was still light but overcast and the interior lighting was terrible, it really was unacceptably gloomy. I don&#039;t suppose they&#039;ll do anything about it as this is one of the new ones on the third list of closures announced in May 2016.<br />
+The bar has three sets of three hand pumps which after a lot of effort in the darkness I discovered had two available soon, the JDW Trio of Doom, Big Lamp Lamplight &amp; Keelman Brown, Sonnet 43 Impressment APA and Ringwood Fortyniner. I went for the Impressment APA which was excellent value at &pound;1.99 and in good nick. The poor lighting and the Sport channels let this one down for me.</p>
+<p class="Reviewer">On 5<sup>th</sup> June 2016 
+  - rating: <b>4</b><br />
+  <span class="leftspace">[User has posted 2121 recommendations about 2116 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review104537" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Lambton Worm (JD Wetherspoon)</h6>
+<p class="old">This is a large, modern Wetherspoons bar in the heart of the city, looking very much like one of their Lloyd&#039;s bars, although I saw no signage to this effect. You enter into a vast carpeted main room with floor to ceiling windows along two sides doing their best to brighten a surprisingly dingy interior. Rows of high tables and stools run through the centre of the room with some nice curved banquette booths backing onto the raised family seating area behind. This upper space also offers a selection of compact booths, each with a mirror inside, as well as some standard seating options. The servery runs along the rear wall and has a large and rather unexpected sculpture of the eponymous worm opposite. I was unfamiliar with the Lambton Worm, but the usual &#039;Spoons info boards are there to explain that it is a part of local folklore, forming a story/song about a local lad who skipped church to fish in the Wear, where he caught a worm which then wrecked havoc on the local community. A final run of seating can be found down a passage that runs past the right hand end of the bar and it is back here that you can read the full &#039;Song of Lambton Worm&#039;. TV screens were showing a live non-league football fixture which no-one seemed to be watching and there were a few modern art prints on the walls as well as a set of bookshelves in a rear corner. <br />
+I counted eight handpulls which offered three &#039;Spoons regulars and three guests, with a cider also available and a final pump left unused. I tried an international brew called Stone Amber Ale, which was very nice and served to me by a very friendly and helpful barman.<br />
+I hoped this place might be a bit more interesting than the average Wetherspoons, but I found it fairly non-descript and were it not for the worm statue I suspect I&#039;d have trouble distinguishing it from other modern &#039;Spoons of this type. I thought the beer quality and service were the plus points here, but Sunderland is blessed with many far more interesting pubs that deserve your attention ahead of this generic experience.</p>
+<p class="Reviewer">On 14<sup>th</sup> March 2016 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/56342/">View more reviews of Victors (7)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Victors</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of Victors - <a href="http://www.victorsbar.co.uk/" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">www.victorsbar.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="2310772222480951">Facebook - <a href="https://www.facebook.com/victorssunderland/" target="_blank" rel="nofollow">Victors</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/56342/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([54.90571902847351, -1.38970613479614], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([54.90571902847351, -1.38970613479614]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Sunderland, 0.34 miles, 6 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> St Peters, 0.59 miles, 11 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Seaburn, 2.16 miles, 41 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('}wbnIjknG`Ag@j@O[wCMqCa@iFODASLG]kGGy@M@[iHAOWw@ASWDEoA', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('}wbnIjknG_A^e@eF[uC[mAqAuACQOuBI@a@iGMkCQL{Ab@ACMDQb@G[MDKcAm@wDQ[iAc@{LnABjA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('}wbnIjknG_A^e@eF[uC[mAqAuACQOuBI@a@iGMkCQL{Ab@ACMDQb@G[MDKcAm@wDQ[iAc@{LnAwAJ?YWGqB@oCUAl@En@OJm@FiBc@aBy@Qg@UUM}@e@D?JGXE`@u@tBOXyB`I]o@g@gA_@s@MEi@j@K?MUe@cBMEkALoG`I{EbCeJfEmBv@}EbBMaEqFtBy@}I{Aj@q@@GyB{QdG]TYwAS{BqBfA', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([54.90571902847351,-1.38970613479614], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=56342">View all updates for Victors, Sunderland</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        20<span class="sup">th</span> Feb 2019, 12:40
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=RealAleRobUK">Rob Hunter</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        22<span class="sup">nd</span> Jan 2019, 23:26
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Beer Festivals : <span id="fac11756342">No</span> <span id="discdetail11756342" class="discdetail" style=""></span>  <span class="Reviewer">last updated 31 March 2017 by Aqualung .</span></li><li>Beer Garden : <span id="fac11456342">No</span> <span id="discdetail11456342" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 June 2015 by Quinno _</span></li><li>Car Park : <span id="fac11356342">No</span> <span id="discdetail11356342" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 March 2016 by Pub SignMan</span></li><li>Function Room : <span id="fac12356342">No</span> <span id="discdetail12356342" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 March 2016 by Pub SignMan</span></li><li>Micropub : <span id="fac12256342">No</span> <span id="discdetail12256342" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 June 2015 by Quinno _</span></li><li>Real Ale : <span id="fac10156342">No</span> <span id="discdetail10156342" class="discdetail" style=""></span>  <span class="Reviewer">last updated 31 March 2017 by Aqualung .</span></li><li>Real Cider : <span id="fac11956342">No</span> <span id="discdetail11956342" class="discdetail" style=""></span>  <span class="Reviewer">last updated 31 March 2017 by Aqualung .</span></li><li>Wheelchair Access : <span id="fac12056342">Yes</span> <span id="discdetail12056342" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 June 2015 by Quinno _</span></li><li>WiFi : <span id="fac11556342">Yes</span> <span id="discdetail11556342" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 June 2015 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11am - 11pm</td></tr>
+<tr><td>Monday</td><td>Closed</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - 2am</td></tr>
+<tr><td>Saturday</td><td>10am - 2am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/77842/" class="List1">The Establishment</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/71232/" class="List1">Revolution</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/77859/" class="List1">Greens</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86202/" class="List1">The Rabbit</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 30 picture(s)" title="Pub has 30 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 9.5 from 4 reviewer(s)" title="Pub has average rating of 9.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/5821/" class="List1">The Dun Cow</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/5803/" class="List1">Vesta Tilleys</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8.5 from 6 reviewer(s)" title="Pub has average rating of 8.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/5756/" class="List1">Fitzgeralds</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/77841/" class="List1">The Terrace</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

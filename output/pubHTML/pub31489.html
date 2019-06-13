@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Bell pub in Bicester, Oxfordshire, OX26 6LP : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Bell" />
+  <meta name="keywords" content="The Bell, 84  Sheep Street, Bicester, Oxfordshire, Bicester Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Bell in Bicester" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/31001_31500/31489_0987e54b.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/31489/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.89938023731515" />
+<meta property="og:longitude" content="-1.15233466029167" />
+<meta property="og:street-address" content="84  Sheep Street" />
+<meta property="og:locality" content="Bicester" />
+<meta property="og:region" content="Oxfordshire" />
+<meta property="og:postal-code" content="OX26 6LP" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Bell in Bicester? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Bell the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/31489/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Bell in Bicester" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Bell " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/31001_31500/31489_0987e54b.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/31489/" />
+<meta name="geo.position" content="51.89938023731515;-1.15233466029167" />
+<meta name="geo.placename" content="The Bell in Bicester" />
+<meta name="geo.region" content="UK" />
+<title>The Bell in Bicester : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":31489},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(31489);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 31489;var pubaddress = "84  Sheep Street";var pubname = "The Bell";var pubpostcode = "OX26 6LP";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/oxfordshire/" title="Pubs Galore : Oxfordshire Page">Oxfordshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/bicester/oxfordshire/" title="Pubs Galore : Bicester Page">Bicester</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Bell Page">The Bell Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="7jfosqvhkorc27qakbblp6jie1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/31489/" class="indisplay"><img src="/images/display/31001_31500/31489_0987e54b.jpg?w=2" alt="Picture of The Bell" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Wednesday, 25<sup>th</sup> October 2017<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/31489/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/31489/">Pub map</a><br /><a href="/pubreviews/31489/">Pub reviews (4)</a><br /><a href="/pubpictures/31489/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=31489" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Bell, Bicester Central, Bicester</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">84  Sheep Street</span><br />
+
+
+<span class="town">Bicester</span><br />
+<span class="postcode">OX26 6LP</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Punch Taverns</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/bicester-central/oxfordshire/">Bicester Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Bell  <span class="h2note">(Average Rating: <span id="averagerating"><b>5&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review123738" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Bell</h6>
+<p class="old">A former Hobgoblin and you can tell. Internally it&rsquo;s two long narrow rooms in a rectangle round an island bar. The left side had pool and pinball. The right side is the &lsquo;rock&rsquo; part of the pub - flagstone floor, undressed rough stone, dark and a general dingy music vibe including the jukebox. Decent rear garden. Friendly locals in situ. Live music advertised. Three pumps with three ales on; Wye Valley HPA (warm and sweetcorn tasting), Hobgoblin and Box Steam Sandcaskale (fine), both served in a Guinness glass. It was worth looking in but I expected more on the beer quality and attention front given it&rsquo;s GBG listed. 6.5</p>
+<p class="Reviewer">On 29<sup>th</sup> October 2017 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review112133" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> left this review about The Bell</h6>
+<p class="old">The Bell is the only pub in Bicester listed in the 2017 Good Beer Guide. Inside it appears to be old with a low beamed ceiling, wooden floors and flagstones around the bar. on the right is an area with a Pool and Pinball Table while the left side is the main bar area with a mix of tables benches and stools. There is a stage at the end of this side as it&#039;s a music venue on Friday and Saturday nights. A poster advertising the &quot;Shot Of The Week&quot; seemed an odd thing to see in a GBG listed pub. Their was a heavy Rock soundtrack playing in the background. The place was virtually empty on my Thursday afternoon visit. <br />
+There are only three hand pumps which as this was once a Hobgoblin included that, Wye Valley Butty Bach and XT 6. I went for the XT 6 (&pound;3.90) which is their Red Ale and was in good nick but expensive. <br />
+I really didn&#039;t think their was anything special about this place and wouldn&#039;t return.</p>
+<p class="Reviewer">On 25<sup>th</sup> October 2016 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 2121 recommendations about 2116 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review83193" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about The Bell</h6>
+<p class="old">After a period as the Hobgoblin, this place has presumably reverted to what was its original name.  Attractive stone fa&ccedil;ade, and retaining a twin-bar layout inside.  Some rustic wooden furniture in the notional &#039;lounge&#039; side, and just a pool table and no proper seating on the other.  Limited decor throughout.  Just one of the two handpumps was working when I visited, offering an OK pint of Broadside (&pound;3.25).</p>
+<p class="Reviewer">On 25<sup>th</sup> May 2014 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/31489/">View more reviews of The Bell (4)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Bell</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+</div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/31489/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Blackthorn">Blackthorn _</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.89938023731515, -1.15233466029167], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.89938023731515, -1.15233466029167]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Bicester North, 0.59 miles, 11 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Bicester Village, 1.11 miles, 21 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Islip, 7.33 miles, 2 hr 21 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('qqw{Hn``FaAkCqC}JwBcHuD{JuAkD_CtI{@p@Ab@I`@{BtGb@f@U|@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('qqw{Hn``FDVvAgBfAxCNYb@a@h@cAb@xBZjATc@Z_@HEHGVl@nAo@z@_@b@bCDf@?f@bBNx@TC|@DPnAXXSX}@n@Eh@DlBh@nEtDDT@n@l@d@tCbBj@}CXyBJaC\\{B~@kEeB_Ak@a@@W`AgBoC{CRq@yAiBeC{C', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('qqw{Hn``FDVvAgBfAxCNYb@a@h@cAb@xBZjATc@Z_@HEHGVl@nAo@z@_@b@bCDf@?f@D@F\\LEl@r@Fj@IdAxD`Bc@dBh@^a@vAtA`Ac@lA`Ap@rClC`ArA}@jEe@pDAf@FbAjCvDd@`@PKv@}BLFKh@RJGx@Df@Nl@T^`@b@pA|@j@f@XBPQd@h@EX?LhJrJl@\\|@v@?b@@HPLhHdJ~AjBjAhBr@vA`DjEjDjF\\r@`DpFlNbYfRt`@n@CGd@CVB`@L\\@\\zN|ZrJ~R^YZgAH`@Pf@t@hAtNm@h@fRJz@Pz@Xr@T\\r@r@ZNb@H^@xC]`@A`@Ff@P`@ZX\\Tb@~BtFP_@f@|AFA`CnBd@ZnI~DrB|AbWhMpMnBzFhLbJdHzPpTtCvElBtDzIrIvEdJ\\h@|FpBjFvB`@h@nFdGv@r@h@I`H|CRFUrD`UpH\\GpItFXJBJ`@Cj@d@h@fAVWTh@JJD?bNvK@JdA~CbC`HnL|LbNlO@VHPtHrCX|BLR`@fDH\\`@fAr@|Bb@rCm@x@ALPpBEp@Mb@[v@a@l@o@l@aAr@cAuAwAuDSUk@UYb@Zf@DHGJ_@q@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.89938023731515,-1.15233466029167], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=31489">View all updates for The Bell, Bicester</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        3<span class="sup">rd</span> Nov 2017, 23:20
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        3<span class="sup">rd</span> Nov 2017, 22:04
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11831489">No</span> <span id="discdetail11831489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Bar Billiards : <span id="fac10731489">No</span> <span id="discdetail10731489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Beer Festivals : <span id="fac11731489">No</span> <span id="discdetail11731489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Beer Garden : <span id="fac11431489">Yes</span> <span id="discdetail11431489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10231489">No</span> <span id="discdetail10231489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Car Park : <span id="fac11331489">No</span> <span id="discdetail11331489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Child Friendly : <span id="fac12131489">No</span> <span id="discdetail12131489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Darts : <span id="fac11131489">Yes</span> <span id="discdetail11131489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Function Room : <span id="fac12331489">No</span> <span id="discdetail12331489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Hot Food : <span id="fac10331489">No</span> <span id="discdetail10331489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Jukebox : <span id="fac11231489">Yes</span> <span id="discdetail11231489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Karaoke : <span id="fac10631489">No</span> <span id="discdetail10631489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Live Music : <span id="fac10831489">Yes</span> <span id="discdetail10831489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Live TV Sports : <span id="fac11031489">No</span> <span id="discdetail11031489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Micropub : <span id="fac12231489">No</span> <span id="discdetail12231489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Pinball : <span id="fac11631489">Yes</span> <span id="discdetail11631489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Pool Table : <span id="fac10431489">Yes</span> <span id="discdetail10431489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Quiz Night : <span id="fac10931489">Yes</span>  - <span id="discdetail10931489" class="discdetail" style="">Mon</span> -   <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Real Ale : <span id="fac10131489">Yes</span> <span id="discdetail10131489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Real Cider : <span id="fac11931489">No</span> <span id="discdetail11931489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li><li>Wheelchair Access : <span id="fac12031489">Yes</span> <span id="discdetail12031489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 October 2016 by Aqualung .</span></li><li>WiFi : <span id="fac11531489">Yes</span> <span id="discdetail11531489" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 October 2017 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 3 reviewer(s)" title="Pub has average rating of 6 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/57972/" class="List1">The Saxon</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31478/" class="List1">The Angel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 5 reviewer(s)" title="Pub has average rating of 5.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31494/" class="List1">The Penny Black (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31507/" class="List1">The White Hart</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 4 reviewer(s)" title="Pub has average rating of 7 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31496/" class="List1">Jacobs Plough</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 3 reviewer(s)" title="Pub has average rating of 4.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/57971/" class="List1">The Kings Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 2 reviewer(s)" title="Pub has average rating of 5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31493/" class="List1">Littlebury Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/57973/" class="List1">White Horse</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

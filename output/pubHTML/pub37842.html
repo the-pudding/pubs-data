@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Sacks of Potatoes pub in Birmingham, West Midlands, B4 7ER : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Sacks of Potatoes" />
+  <meta name="keywords" content="Sacks of Potatoes, 10  Gosta Green, Birmingham, West Midlands, Birmingham Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Sacks of Potatoes in Birmingham" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/37501_38000/37842_54b72a17.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/37842/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.48742805197502" />
+<meta property="og:longitude" content="-1.88823019014353" />
+<meta property="og:street-address" content="10  Gosta Green" />
+<meta property="og:locality" content="Birmingham" />
+<meta property="og:region" content="West Midlands" />
+<meta property="og:postal-code" content="B4 7ER" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Sacks of Potatoes in Birmingham? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Sacks of Potatoes the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/37842/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Sacks of Potatoes in Birmingham" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Sacks of Potatoes " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/37501_38000/37842_54b72a17.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/37842/" />
+<meta name="geo.position" content="52.48742805197502;-1.88823019014353" />
+<meta name="geo.placename" content="Sacks of Potatoes in Birmingham" />
+<meta name="geo.region" content="UK" />
+<title>Sacks of Potatoes in Birmingham : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":37842},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(37842);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 37842;var pubaddress = "10  Gosta Green";var pubname = "Sacks of Potatoes";var pubpostcode = "B4 7ER";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/west-midlands/" title="Pubs Galore : West Midlands Page">West Midlands</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/birmingham/west-midlands/" title="Pubs Galore : Birmingham Page">Birmingham</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Sacks of Potatoes Page">Sacks of Potatoes Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="8v84e3as4hp5gsrmlkkjp2ckm7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/37842/" class="indisplay"><img src="/images/display/37501_38000/37842_54b72a17.jpg?w=2" alt="Picture of Sacks of Potatoes" /></a><br />  Image posted by <a href="/userinfo.php?name=rpadam" class="indisplay">Just a quick pint, then I&#039;m off</a><br />
+  Submitted on Friday, 22<sup>nd</sup> September 2017<br />
+  With picture contributions to 5082 other pubs<br />
+<a href="/pubpictures/37842/" class="smallbutton">View all this pub's pictures</a> (5 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/37842/">Pub map</a><br /><a href="/pubreviews/37842/">Pub reviews (9)</a><br /><a href="/pubpictures/37842/">Pub pictures (6)</a><br /><a href="/core/pubaudit.php?id=37842" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Sacks of Potatoes, Birmingham Central, Birmingham</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">10  Gosta Green</span><br />
+
+
+<span class="town">Birmingham</span><br />
+<span class="postcode">B4 7ER</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01215035811</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/birmingham-central/west-midlands/">Birmingham Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Sacks of Potatoes  <span class="h2note">(Average Rating: <span id="averagerating"><b>8</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review122959" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about Sacks of Potatoes</h6>
+<p class="old">Right by Aston University, but a proper pub rather than just a student bar.  Partly opened-out, with various different seating areas on slightly different levels in an overall &#039;L&#039; shape.  Anonymous furniture and decor, but it also has some tables out front and a small rear terrace.  Various food offers and weekly programme of events.  Six real ales - including two each from Wye Valley and Holden&#039;s (Dark Mild and Golden Glow, &pound;3.10 less 10% Camra discount) plus Shropshire Gold and Oakham Citra - and three Lilley&#039;s ciders on handpump.</p>
+<p class="Reviewer">On 7<sup>th</sup> October 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review106935" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about Sacks Of Potatoes</h6>
+<p class="old">One of two pubs situated on the Aston University campus, this is by far the more traditional of the two, with none of the trappings of student pubs except, perhaps, for a reasonably priced menu. The pub has a clearly defined multiple room layout which has now sadly been opened out into one long, lopsided U-shaped room with a large seating area to the left. In the centre of the pub is the L-shaped servery with its dark wood counter, pub mirror bar back and attractive stained glass canopy. The front section opposite the bar is bare boarded with some high tables and stools under the beautiful stained glass windows which looked particularly good in the bright Spring sunshine. Lots of nice framed photos of the local area have been displayed to good effect in this space. To the left there is a carpeted open area next to the bar with a few tables and standard chairs and a nice nook to the rear with a single table under a shelving unit housing a wine bottle display. Further to the left you&#039;ll find a raised seating area which is obscured from the bar by a nice mirrored partitioning screen. Plusher seating options can be found up here, with well upholstered stools and smart banquettes under modern wallpaper and some fancy art works. An arch leads through to a nice front lounge with a large inglenook fireplace and views out across the campus. To the right of the bar is a cosy looking lounge with more comfy seating and some interesting pictures on the walls, set on a lower level to the main bar area and I think this might arguably be the best spot to grab a seat for a quiet pint. A map of the UK was hung near the bar and showed where many of the breweries featured in the pub are located, although the geographical accuracy of this is certainly up for debate. A TV screen was showing muted news coverage and a dreary soundtrack played throughout my visit, which detracted from the overall feel, as did the countless blackboards detailing food, drinks and events, which gave the place a bit of a corporate feel.<br />
+The map next to the bar hinted that some good brewers are represented here and the line up on this visit backed that up with Salopian Shropshire Gold, Taylors Landlord, Black Sheep Bitter, Woods Pot O&#039; Gold and Kelham Island Pale Rider all available and Oakham JHB due to come on. I had a very enjoyable pint of the Shropshire Gold and was very pleased when the barmaid prompted me for a CAMRA card which entitled me to a 10% discount.<br />
+This is a pretty decent pub in a highly unpromising location . There are lots of nice features here and the place maintains a broad appeal without to much compromise, making it a very good option should you find yourself in this, otherwise underserved, part of the city.</p>
+<p class="Reviewer">On 18<sup>th</sup> May 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review105977" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Thuck+Phat">Thuck Phat</a> left this review about Sacks Of Potatoes</h6>
+<p class="old">Unusually sited amongst the modern building of Aston University is this traditional Victorian gem overlooking a green.<br />
+Some traditional touches remain such the exquisite leaded, stained glass windows at the front, Victorian style wallpaper, original arches and fireplace and plenty of dark wood. It makes for a comfortable place for a pint and food is also popular with the only drawback for me being the various muted screens showing rolling news and providing an unwelcome distraction.<br />
+The welcome was friendly and chatty in typical Brum style and a 10% CAMRA discount offered without question. There was an interesting mix of customers on our Saturday lunchtime visit with student and locals all enjoying a pint. Mind the soap dispenser in the Gents though as a squirt in the eye from it led to exclamations of &#039;Merde&#039; and &#039;Putain&#039; from one user who may not have been local.<br />
+Six handpumps had on only three beers alongside three coming next signs. Those present were Salopian Oracle, Backyard Blonde and Silhill Blonde Star. All good with the Oracle standing out but all around 4% and pale so the choice was limited.<br />
+I liked it here a lot, would happily return and would be more generous on the score if all six handpumps were offering a wider range.</p>
+<p class="Reviewer">On 21<sup>st</sup> April 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 663 recommendations about 662 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/37842/">View more reviews of Sacks of Potatoes (9)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Sacks of Potatoes</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of Sacks Of Potatoes - <a href="http://www.sacksofpotatoes.co.uk/" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">www.sacksofpotatoes.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="123650317671914">Facebook - <a href="https://www.facebook.com/SacksOfPotatoes/" target="_blank" rel="nofollow">Sacks of Potatoes</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/37842/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.48742805197502, -1.88823019014353], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.48742805197502, -1.88823019014353]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Birmingham Moor Street, 0.7 miles, 13 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Birmingham Snow Hill, 0.75 miles, 14 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Duddeston, 0.93 miles, 17 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('_mj_IvwoJNVl@tAFHH@f@h@T^zBxCRABNFr@xBhFXl@V@XEb@D`BUtDG\\QbA{@`AwBNi@LRFMTZFGHUN@zAzA\\CDEDLFHFP`EpDpCvBPCd@`@FSDBBMAANk@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('_mj_IvwoJNVl@tAFHH@f@h@T^zBxCRABNFr@xBhFXl@V@XEb@D`BUDr@RCH~DhAx@aB~DnA|BVt@XdAb@jBXKTJ?`@IB?PBJn@r@FV@v@FVBb@gAhBARDhAFL^OBLIJ[?ARGBeCbD', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('_mj_IvwoJa@q@BSoAaBnEiH}@cB]_Ag@{@Iu@?Gv@s@Kk@GFIg@[VWFUIqAkKhBqAFkAB_BBs@Cw@JiCp@OY_J@[AoNi@a@yC{Es@oASe@GYA}@H{DNqB', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.48742805197502,-1.88823019014353], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=37842">View all updates for Sacks of Potatoes, Birmingham</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        13<span class="sup">th</span> Dec 2017, 22:47
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        13<span class="sup">th</span> Dec 2017, 22:18
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11837842">No</span> <span id="discdetail11837842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2016 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10737842">No</span> <span id="discdetail10737842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2016 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11437842">Yes</span> <span id="discdetail11437842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2016 by Pub SignMan</span></li><li>CAMRA Discount : <span id="fac10237842">Yes</span>  - <span id="discdetail10237842" class="discdetail" style="">10%</span> -   <span class="Reviewer">last updated 06 June 2016 by ROB Camra</span></li><li>Car Park : <span id="fac11337842">Yes</span> <span id="discdetail11337842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2016 by Pub SignMan</span></li><li>Child Friendly : <span id="fac12137842">Yes</span> <span id="discdetail12137842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 April 2014 by Bucking Fastard</span></li><li>Darts : <span id="fac11137842">No</span> <span id="discdetail11137842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2016 by Pub SignMan</span></li><li>Function Room : <span id="fac12337842">No</span> <span id="discdetail12337842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2016 by Pub SignMan</span></li><li>Hot Food : <span id="fac10337842">Yes</span> <span id="discdetail10337842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 April 2014 by Bucking Fastard</span></li><li>Jukebox : <span id="fac11237842">No</span> <span id="discdetail11237842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2016 by Pub SignMan</span></li><li>Karaoke : <span id="fac10637842">Yes</span> <span id="discdetail10637842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 November 2014 by Dave McNally</span></li><li>Live TV Sports : <span id="fac11037842">Yes</span> <span id="discdetail11037842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2016 by Pub SignMan</span></li><li>Micropub : <span id="fac12237842">No</span> <span id="discdetail12237842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2016 by Pub SignMan</span></li><li>Pinball : <span id="fac11637842">No</span> <span id="discdetail11637842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2016 by Pub SignMan</span></li><li>Pool Table : <span id="fac10437842">No</span> <span id="discdetail10437842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2016 by Pub SignMan</span></li><li>Real Ale : <span id="fac10137842">Yes</span> <span id="discdetail10137842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Real Cider : <span id="fac11937842">No</span> <span id="discdetail11937842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2016 by Pub SignMan</span></li><li>Wheelchair Access : <span id="fac12037842">Yes</span> <span id="discdetail12037842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2016 by Pub SignMan</span></li><li>WiFi : <span id="fac11537842">Yes</span> <span id="discdetail11537842" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 May 2016 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 11pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - 11pm</td></tr>
+<tr><td>Saturday</td><td>11am - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 4 reviewer(s)" title="Pub has average rating of 5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55573/" class="List1">Gosta Green</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 20 picture(s)" title="Pub has 20 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 5 reviewer(s)" title="Pub has average rating of 7.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/37969/" class="List1">The Woodman</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/37729/" class="List1">Eagle &amp; Ball</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 2 reviewer(s)" title="Pub has average rating of 7 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56228/" class="List1">Scruffy Murphy&#039;s</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 3 reviewer(s)" title="Pub has average rating of 7.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/37530/" class="List1">The Eagle &amp; Tun</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 7 reviewer(s)" title="Pub has average rating of 6.5 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/37568/" class="List1">The Crown</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 16 recommendation(s)" title="Pub has 16recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 10 reviewer(s)" title="Pub has average rating of 8 from 10 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/37517/" class="List1">The Bull</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/37508/" class="List1">The Britannia</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

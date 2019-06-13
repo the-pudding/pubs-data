@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Ostrich Inn pub in Bristol, Bristol (County), BS1 6TJ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Ostrich Inn" />
+  <meta name="keywords" content="The Ostrich Inn, Lower Guinea Street, Bristol, Bristol (County), Bristol Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Ostrich Inn in Bristol" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/501_1000/534_7d3a008f.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/534/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.44787392504333" />
+<meta property="og:longitude" content="-2.59390583680533" />
+<meta property="og:street-address" content="Lower Guinea Street" />
+<meta property="og:locality" content="Bristol" />
+<meta property="og:region" content="Bristol (County)" />
+<meta property="og:postal-code" content="BS1 6TJ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Ostrich Inn in Bristol? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Ostrich Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/534/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Ostrich Inn in Bristol" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Ostrich Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/501_1000/534_7d3a008f.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/534/" />
+<meta name="geo.position" content="51.44787392504333;-2.59390583680533" />
+<meta name="geo.placename" content="The Ostrich Inn in Bristol" />
+<meta name="geo.region" content="UK" />
+<title>The Ostrich Inn in Bristol : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":534},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(534);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 534;var pubaddress = "Lower Guinea Street";var pubname = "The Ostrich Inn";var pubpostcode = "BS1 6TJ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/bristol/" title="Pubs Galore : Bristol (County) Page">Bristol (County)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/bristol/bristol/" title="Pubs Galore : Bristol Page">Bristol</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Ostrich Inn Page">The Ostrich Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="np7vnqv26l3va1re1df2gpmad7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/534/" class="indisplay"><img src="/images/display/501_1000/534_7d3a008f.jpg?w=2" alt="Picture of The Ostrich Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Friday, 1<sup>st</sup> February 2019<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/534/" class="smallbutton">View all this pub's pictures</a> (16 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/534/">Pub map</a><br /><a href="/pubreviews/534/">Pub reviews (6)</a><br /><a href="/pubpictures/534/">Pub pictures (17)</a><br /><a href="/core/pubaudit.php?id=534" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Ostrich Inn, Bristol Central, Bristol</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Lower Guinea Street</span><br />
+
+
+<span class="town">Bristol</span><br />
+<span class="postcode">BS1 6TJ</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/bristol-central/bristol/">Bristol Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Ostrich Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>7&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review136523" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Ostrich Inn</h6>
+<p>Now owned by Butcombe Brewery, this is a wonderfully located pub on the wharfside and close enough to be walkable from the city centre but far enough away to not be crowded and therefore have the feel of a local. Looks like two buildings knocked through via an open doorway into three distinct sections. To the left down a step is a seating area with blue paint and varnished wood plank walls, along with a restrained selection of nautical paraphernalia. The mid-section is the bar and to the right is a quasi-lounge, all lit by a fake but (decent quality and feel) sodium style lighting. Interestingly I did not note the skeleton in a cave mentioned below, so the point made about it not being well-presented is quite valid! Outside is a large dockside seating area which I imagine is a pretty big draw in the summer months. Six pumps doubled up with three ales available; Butcombe Rare Breed, Butcombe Gold (very good nick) and Liberation Ale from Jersey. Imbibed to a classic rock soundtrack at a sensible volume, which kind of fitted. I really enjoyed this one and it&#039;s worth seeking out as part of an extended Bristol crawl. 7.5</p>
+<p class="Reviewer">On 1<sup>st</sup> February 2019 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review116150" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about Ostrich Inn</h6>
+<p class="old">A popular pub if slightly off the beaten track, the main attraction here is definitely the large outside seating area. It has a square footage several times bigger than the  pub itself, and being adjacent to the river and a lock gets packed on warm sunny evenings. It&rsquo;s also one of the stopping off points for the various booze cruises that sail around the docks. Unfortunately though it loses the sun quite early due to the tall buildings nearby, so it can get a little chilly unless it&rsquo;s a really warm day. There is a good view across the water to The Thekla, Mud Dock, etc.<br />
+<br />
+Internally, it&rsquo;s split in to three rooms and is quite traditional in terms of d&eacute;cor with some wood panelling on the walls, grey and cream paintwork elsewhere, and a wood strip floor. It&rsquo;s got quite a cosy ambience with candles on all the tables, low sofas and light fittings that are designed to look like old oil lamps. A small TV was up in one corner, but the volume was off so this was not too intrusive. An interesting feature is a small cave entrance in one corner which contains the torso of a skeleton along with a few other implements. Oddly though, this has not been lit which seems a bit of a missed opportunity. <br />
+<br />
+Beers on tap were Rev James and Black Sheep, whilst a third pump for Smuggler&rsquo;s Brew appeared to have run out. Ciders meanwhile were Thatcher&rsquo;s Gold and Symonds Founders Reserve.</p>
+<p class="Reviewer">On 14<sup>th</sup> March 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review56978" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Maldenman">Malden man</a> left this review about Ostrich Inn</h6>
+<p class="old">Dating from 1745, the Ostrich has a splendid quayside location with great views of the waterfront and uses this to its advantage with a huge outdoor seating area. I imagine this is a very popular spot in summer, but it was far too chilly and windy during my recent visit for anyone to make use of it. The main door leads into the bar area which is straight ahead, the floor is wooden in here but two flanking areas either side are carpeted, the left hand side up a step. Decor is mainly of the nautical variety, with model boats, lobster pots, framed knots, a sailor&#039;s hat and even a fishing rod on display. Additionally there is a large tin sign advertising Woodbine cigarettes. The right hand room has a gated cave in the far corner, there are plenty of these cut into the sandstone around here. A standard pub style food menu is served all day.<br />
+There were are fair few handpumps but unfortunately only one to choose from, being St Austell Tribute, which was in good nick. This was repeated over three of the pumps, a couple of others had a reversed Hobgoblin clip. Perhaps I was unlucky with my timing.</p>
+<p class="Reviewer">On 22<sup>nd</sup> February 2012 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 1678 recommendations about 1655 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/534/">View more reviews of The Ostrich Inn (6)</a>
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=547">Circular Walk of the Floating Harbour - Bristol</a> by <a rel="nofollow" href="/userinfo.php?name=Gann">Steve of N21</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Ostrich Inn</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="twitlink" id="611792253">Twitter - <a href="https://twitter.com/TheOstrichBris" target="_blank" rel="nofollow">The Ostrich Inn</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/534/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Blackthorn">Blackthorn _</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.44787392504333, -2.59390583680533], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.44787392504333, -2.59390583680533]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Bristol Temple Meads, 0.76 miles, 14 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Bedminster, 0.87 miles, 16 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Parson Street, 1.45 miles, 28 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('el_yHtsyNq@AGa@MCGOGa@HAEoLF}AKCe@mASEDm@[s@I]?IOCFy@?oAIaC@GYeKB@DqCPY@uAMWR}BJ[Vo@IKL[Q[LYwBiGQMoA{DJ]Q[N_@vAd@p@L@u@[Ai@K', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('el_yHtsyN|@@NBEIC_@H_CFaAN{Ap@mDNiBhCZ`@PHHHXTT@JN?n@l@BZ^EJMTMNBHFNVd@fBFPRZPWRc@d@wAnEdFbA`AADrAbB@JhBl@LB?KrBj@bBLDGR\\`AhAv@p@HNf@qAS}@Si@g@Xq@sBEDg@eB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('el_yHtsyNj@@?~AL^lClEv@|BDKRh@FLAPDN`@dBJn@RtBBfAEhBKlArBt@TmBBY|@HFERPAPtFb@DWDKHEJ?JHvEnElAn@TRVZVv@|CsC\\|Br@|BnBtDpApCb@x@FFv@@XLfDnGJ`@D?VHPNtDtEDRDA~AqBr@rApC|FJL@FHD`@Rn@TlCt@n@T^ADZT?@[FQf@k@Nf@@C^nA', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.44787392504333,-2.59390583680533], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=534">View all updates for The Ostrich Inn, Bristol</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        1<span class="sup">st</span> Feb 2019, 18:51
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> amended by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        1<span class="sup">st</span> Feb 2019, 18:50
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac118534">No</span> <span id="discdetail118534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Bar Billiards : <span id="fac107534">No</span> <span id="discdetail107534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Beer Festivals : <span id="fac117534">No</span> <span id="discdetail117534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Beer Garden : <span id="fac114534">Yes</span> <span id="discdetail114534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>CAMRA Discount : <span id="fac102534">No</span> <span id="discdetail102534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Car Park : <span id="fac113534">No</span> <span id="discdetail113534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Child Friendly : <span id="fac121534">Yes</span> <span id="discdetail121534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Darts : <span id="fac111534">No</span> <span id="discdetail111534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Dog Friendly : <span id="fac105534">Yes</span> <span id="discdetail105534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Function Room : <span id="fac123534">No</span> <span id="discdetail123534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Hot Food : <span id="fac103534">Yes</span> <span id="discdetail103534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Jukebox : <span id="fac112534">No</span> <span id="discdetail112534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Karaoke : <span id="fac106534">No</span> <span id="discdetail106534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Live Music : <span id="fac108534">No</span> <span id="discdetail108534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Live TV Sports : <span id="fac110534">No</span> <span id="discdetail110534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Micropub : <span id="fac122534">No</span> <span id="discdetail122534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Pinball : <span id="fac116534">No</span> <span id="discdetail116534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Pool Table : <span id="fac104534">No</span> <span id="discdetail104534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Real Ale : <span id="fac101534">Yes</span> <span id="discdetail101534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Real Cider : <span id="fac119534">No</span> <span id="discdetail119534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>Wheelchair Access : <span id="fac120534">No</span> <span id="discdetail120534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li><li>WiFi : <span id="fac115534">Yes</span> <span id="discdetail115534" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 February 2019 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/73522/" class="List1">Thekla</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 7 reviewer(s)" title="Pub has average rating of 7.5 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/391/" class="List1">The Golden Guinea</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85153/" class="List1">Riverstation</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85098/" class="List1">Severn Shed</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/52931/" class="List1">The Hole in the Wall</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/71267/" class="List1">Mud Dock</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 5 reviewer(s)" title="Pub has average rating of 6 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/61841/" class="List1">The Little Grosvenor</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/478/" class="List1">The Louisiana</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Old Mill Inn pub in Pitlochry, Tayside, PH16 5BH : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Old Mill Inn" />
+  <meta name="keywords" content="The Old Mill Inn, Mill Lane, Pitlochry, Tayside, Pitlochry Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Old Mill Inn in Pitlochry" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/51001_51500/51125_71dddc78.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/51125/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="56.70358400000000" />
+<meta property="og:longitude" content="-3.73439900000000" />
+<meta property="og:street-address" content="Mill Lane" />
+<meta property="og:locality" content="Pitlochry" />
+<meta property="og:region" content="Tayside" />
+<meta property="og:postal-code" content="PH16 5BH" />
+<meta property="og:country-name" content="Scotland" />
+<meta property="og:description" content="Do you like The Old Mill Inn in Pitlochry? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Old Mill Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/51125/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Old Mill Inn in Pitlochry" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Old Mill Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/51001_51500/51125_71dddc78.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/51125/" />
+<meta name="geo.position" content="56.70358400000000;-3.73439900000000" />
+<meta name="geo.placename" content="The Old Mill Inn in Pitlochry" />
+<meta name="geo.region" content="UK" />
+<title>The Old Mill Inn in Pitlochry : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":51125},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(51125);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 51125;var pubaddress = "Mill Lane";var pubname = "The Old Mill Inn";var pubpostcode = "PH16 5BH";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/scotland/" title="Pubs Galore : Scotland Page">Scotland</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/tayside/" title="Pubs Galore : Tayside Page">Tayside</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/pitlochry/tayside/" title="Pubs Galore : Pitlochry Page">Pitlochry</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Old Mill Inn Page">The Old Mill Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="6ajup4irprnjufokdihascj7o3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/51125/" class="indisplay"><img src="/images/display/51001_51500/51125_71dddc78.jpg?w=2" alt="Picture of The Old Mill Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Saturday, 16<sup>th</sup> January 2016<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/51125/" class="smallbutton">View all this pub's pictures</a> (8 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/51125/">Pub map</a><br /><a href="/pubreviews/51125/">Pub reviews (4)</a><br /><a href="/pubpictures/51125/">Pub pictures (9)</a><br /><a href="/core/pubaudit.php?id=51125" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Old Mill Inn, Pitlochry Central, Pitlochry</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Mill Lane</span><br />
+
+
+<span class="town">Pitlochry</span><br />
+<span class="postcode">PH16 5BH</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01796474020</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/pitlochry-central/tayside/">Pitlochry Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Old Mill Inn</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/TheOldMillInn" target="_blank"><img src="https://pbs.twimg.com/profile_images/972057476463030273/N5UmCUTS_normal.jpg" alt="The Old Mill Inn" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/TheOldMillInn" target="_blank">The Old Mill Inn</a></strong>
+It&#039;s definitely a soup kind of day here in Pitlochry.  How about our delicious Cullen Skink? A traditional Scottish&hellip; <a href='https://t.co/9gWElX1Sbe' target='_blank'>https://t.co/9gWElX1Sbe</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/TheOldMillInn/status/1135541009738158082">2:37 PM Jun 3rd</a> from <a href="http://instagram.com" rel="nofollow">Instagram</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/TheOldMillInn" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/TheOldMillInn" target="_blank">The Old Mill Inn</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Old Mill Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>9</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review115413" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=David1958">David Ross</a> left this review about The Old Mill Inn</h6>
+<p class="old">Picturesquely situated up a semi-pedestrianised alleyway, beside a stream with the old mill wheel still in place, this is probably my favourite Pitlochry pub (Moulin village excepted). There is an outdoor seating area which, being midwinter, was understandably deserted. Inside is a commodious bar/lounge with a large bar top which makes for quick service. It was very busy on both the Friday and Saturday nights I visited, with live music on both. The local Strathbraan Brewery&#039;s Head East and Due South ales were on hand pump (both at &pound;3.95 a pint), as was Cromarty Brewery&#039;s Kowabunga. Also on draught were Tennent&#039;s, Peroni, St. Mungo, Dead Pony Club and Old Mill House lagers, Guinness, Belhaven Best, Aspall Suffolk cider and something called &quot;Over Easy.&quot; The Old Mill vies with the Coach House across the road for the title of the most popular and liveliest pub in town, but scores more highly in my book by virtue of having a more attractive interior and location.</p>
+<p class="Reviewer">On 18<sup>th</sup> February 2017 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 769 recommendations about 683 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review103030" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Old Mill Inn</h6>
+<p class="old">Situated just off the main road in a nice little semi-circular mews-like area. You can hear running water from the river as you approach and also can see an old mill wheel mounted by the entrance. Inside is a large modern L shaped place with quite a loungey feel - carpet, heavy tartan curtains, brown shades (almost &ndash; but not quite &ndash; hotel bar). Client&egrave;le quite comfy, middle-class types and a friendly atmosphere too. Mute football on the TV and live gigs advertised. Two ales (pub is GBG 2016 listed), GK Golden Hen and Dark Island (a bit past its best but drinkable) and expensive. Possibly the nicest pub toilets in the county, modern and spotless. Whilst the beer selection was so-so, it felt like a decent place to drink in.</p>
+<p class="Reviewer">On 25<sup>th</sup> January 2016 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review96015" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=colin58">Colin Walker</a> left this review about The Old Mill Inn</h6>
+<p class="old">The Old Inn is a Winner of Inn of the Year at the 2014 Scottish Hotel Awards and sit just 30 metres from the main road through Pitlochry. The bar and restaurant area combined are very comfortable and the view of the mill wheel and the river is very picturesque. The place is open from 8am all week and food is served all day until 9pm and drinks are served all day until late. There is at various times live music and acts on, so check out http://www.oldmillevents.co.uk/#/. Also check out http://www.theoldmillpitlochry.co.uk/</p>
+<p class="Reviewer">On 11<sup>th</sup> June 2015 
+  - rating: <b>10</b><br />
+  <span class="leftspace">[User has posted 674 recommendations about 668 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/51125/">View more reviews of The Old Mill Inn (4)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Old Mill Inn</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="101789751198">Facebook - <a href="https://www.facebook.com/oldmillinn/" target="_blank" rel="nofollow">The Old Mill Inn - Pitlochry</a></li></ul><ul id="Custom2"><li class="twitlink" id="341986981">Twitter - <a href="https://twitter.com/TheOldMillInn" target="_blank" rel="nofollow">The Old Mill Inn</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/51125/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([56.70358400000000, -3.73439900000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([56.70358400000000, -3.73439900000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Pitlochry, 0.17 miles, 3 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Blair Atholl, 7.79 miles, 2 hr 30 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Dunkeld & Birnam, 13.74 miles, 4 hr 25 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('o|ayI|jxUGd@N~@Nb@]vB|AbA|AjALuA`@CH}@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('o|ayI|jxUGd@N~@Nb@cAtGuBcAe@Yw@IAl@M`AGNKL{@b@{B~BGPEj@Ah@Bl@LtA{CgCo@]]Gk@C_@Di@LGJU}@Wa@OM}@?g@u@kBr@yBm@yBV}ApEyAxFaCvHeFSqEnC?d@IbAqAfEmDrJ{@xCf@xBe@v@HdCKlDuAvGiBtAkCvBqBjEkAjBMhI[~D}@vGcAbEoAzBuAzB}@lBuBnDqBtH]bAo@l@o@|@o@|BqDfCaF~E_@C]m@_@_Ag@@S^@p@RbAElA{@bBmAnC_EtFyCnC]UeAcAYViA|FkAlE[bAy@UaAl@}HrCu@EqDwAiF_CyAmBsFmDgCeBsAc@Ef@Pj@EFS@C\\Hj@C`@tChBlBdAuBYGD]h@QQWM_Gw@_AWmAQwADi@PsEh@iGbAaDx@iBrAyA|AsAnBGRMRQnAAv@PnDBlAG@GzB]|E]zCSlAWlA]t@mBrBi@x@]t@Qv@KpAz@v@`@LbAp@pAf@RL~@dAJ~@AhAMfC\\hDCzAObAyA~AYl@Ov@o@zBuAjCo@rBy@|GYjBc@rB[dAg@lA_FhGk@hAa@fA{@zDq@pByAtEoD`Mi@bC_AnGqAlMO~@s@pD[xBIzA@rECx@Kh@g@xBIj@@b@PpABr@El@Oj@aA`CaBvDUd@o@dBiAfEs@xB{@jBs@~@Yd@s@`CoApC_@`@e@J_AAi@Ri@h@cEhHkBxBIVGp@D|EGp@Qr@s@dBIj@BjBf@~LBxDCbAUtBB|@RzCG`Ek@tR}@xFIvBIxAY~BOhDE~HIjEGhAE^}@nB{AbJoAtEkA|Fk@~Bi@h@a@pAaBdIm@tAe@jBStA?bC{BpLAfCqBsAe@pBg@dBq@i@qA_B_DiDMAcBb@UzIDO@OWA@ZC`A', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('o|ayI|jxUD[v@YVb@lBuGz@oDtBgKl@b@FIXDNeAjA_Nf@gFZaCb@}BHo@Dq@pA[dAa@bDkBz@w@|@uAx@aCR_ANeALmAJcCH{JQi@Ae@@e@Ti@FaB^qEp@kDXaA^aAd@eAj@aAtAeBxBqBpImGtBgAxBs@t@Ix@@jAT`CTh@AZK|@i@b@e@r@{ANm@x@{Dr@_F~@gEz@aDt@sBv@kBdPq[`Py[hWcg@tHeNnVea@rAqBvAeCx\\}f@~AoBbB_B~AgAtAs@xDeAlAKvA?bDTtJvAvD`@jCQtBArBLvAKrC_@vCk@pBi@O_BdDuA\\Yt@aAbAmBfC}DHIP?RLVeAh@_AtAkAr@w@|@qAv@w@|@UR[hB^b@Bx@qApAaCtAgE|GkUvBoE`D{ExDkE|BwFrB{Gd@aCzMaTnIeFjI_IbIuM`@sAlA{@fIoNrEyFj@i@jBZvFZz@SPOxCyEj@cArAeBpHu@PaAt@}CrCgIhB}C?u@|BuFhCwCfAYz@Hn@f@|C|CzAPpASdFmFjHsEfEeCpFwBGmBD[JQXUdAa@nBBbEZrFiA~@CfHyCVa@PGIc@h@oADa@B_A^sFb@_Bh@oCRc@R?n@o@Pw@?qBUsBPcDMcBLeCMuC@mBIsJTe@\\Nj@@dAOvAs@XEX@f@Xj@Pd@?d@IxAk@xAU`DY~AA|AK`@@hDh@nBNnA?nAUjC^zA^b@@x@Cf@MhB`@r@GXMT?x@Rb@FjBS`HaArAq@lD{BfEaDlAwAv@qAROfC_Ax@a@hA]O}@Us@Eg@@_@X[VMd@e@Re@j@qCd@qAf@aCHeAPm@`AwAn@]j@ETOHa@@y@My@[y@cBkBoAcCqAsAiEySq@gA]cB]oAx@q@tAwGvFyI~AiFdA_AzA}@j@gAF]j@a@zAsCnEaD~@gDrAeBlEpCpAhBbBlBhARfBcAjC{DjAaE|@aB`DaEvDaE~AuBHsAYe@_AQS_@@cAJu@dA[~BaBdBn@zCnFt@PtAiAfBOXIPD\\In@o@^g@JYZCj@DvCOZHf@l@rB`BRDf@Xd@k@zAs@^Et@Th@Dv@Vt@~@P^`@Hj@Kj@o@b@w@n@YhBEd@]`@m@f@]n@O`BG|A]lAKL|F`A~HRXRiAdAqCdAmBpCwDfAqBnCmIh@kAz@{@|@i@f@OjEk@rBK|@OtBM|Ng@?UbBI~@uBfAuAd@eFL_Ab@uF^cCZmA^aAd@y@Rm@@S`@_@Zs@Ts@Nu@`@ZjAFnBMh@X~A|AJa@h@s@ZoA', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([56.70358400000000,-3.73439900000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=51125">View all updates for The Old Mill Inn, Pitlochry</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        8<span class="sup">th</span> Oct 2018, 11:30
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Wattie">Walter Dunlop</a>
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> Feb 2017, 15:53
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=David1958">David Ross</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11851125">Yes</span> <span id="discdetail11851125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Bar Billiards : <span id="fac10751125">No</span> <span id="discdetail10751125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Beer Garden : <span id="fac11451125">Yes</span> <span id="discdetail11451125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 October 2013 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10251125">No</span> <span id="discdetail10251125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Car Park : <span id="fac11351125">Yes</span> <span id="discdetail11351125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Child Friendly : <span id="fac12151125">Yes</span> <span id="discdetail12151125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Darts : <span id="fac11151125">No</span> <span id="discdetail11151125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Hot Food : <span id="fac10351125">Yes</span> <span id="discdetail10351125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Karaoke : <span id="fac10651125">No</span> <span id="discdetail10651125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Live TV Sports : <span id="fac11051125">Yes</span> <span id="discdetail11051125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Micropub : <span id="fac12251125">No</span> <span id="discdetail12251125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Pinball : <span id="fac11651125">No</span> <span id="discdetail11651125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Pool Table : <span id="fac10451125">No</span> <span id="discdetail10451125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Real Ale : <span id="fac10151125">Yes</span> <span id="discdetail10151125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Real Cider : <span id="fac11951125">Yes</span> <span id="discdetail11951125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Wheelchair Access : <span id="fac12051125">Yes</span> <span id="discdetail12051125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>WiFi : <span id="fac11551125">Yes</span> <span id="discdetail11551125" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 2 reviewer(s)" title="Pub has average rating of 8 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/51120/" class="List1">The Coach House @ Fisher&#039;s Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/51122/" class="List1">Mckays Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/51130/" class="List1">Macnabs Bar @ Scotland&#039;s Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/71800/" class="List1">Drummonds</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64486/" class="List1">The Auld Smiddy Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85002/" class="List1">Fisherman&#039;s Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/51134/" class="List1">Westlands Of Pitlochry</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81657/" class="List1">Pitlochry Festival Theatre Bar</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

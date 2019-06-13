@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Fox &amp; Pheasant pub in Stoke Poges (near Slough), Berkshire, SL2 4EZ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Fox &amp; Pheasant" />
+  <meta name="keywords" content="The Fox &amp; Pheasant, Gerrards Cross Road, Stoke Poges, Slough, Berkshire, , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Fox &amp; Pheasant in Stoke Poges" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/70001_70500/70378_aa93e521.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/70378/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.56169600000000" />
+<meta property="og:longitude" content="-0.58415800000000" />
+<meta property="og:street-address" content="Gerrards Cross Road" />
+<meta property="og:locality" content="Stoke Poges" />
+<meta property="og:region" content="Berkshire" />
+<meta property="og:postal-code" content="SL2 4EZ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Fox &amp; Pheasant in Stoke Poges? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Fox &amp; Pheasant the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/70378/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Fox &amp; Pheasant in Stoke Poges" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Fox &amp; Pheasant " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/70001_70500/70378_aa93e521.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/70378/" />
+<meta name="geo.position" content="51.56169600000000;-0.58415800000000" />
+<meta name="geo.placename" content="The Fox &amp; Pheasant in Stoke Poges" />
+<meta name="geo.region" content="UK" />
+<title>The Fox &amp; Pheasant in Stoke Poges (near Slough) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":70378},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(70378);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 70378;var pubaddress = "Gerrards Cross Road";var pubname = "The Fox & Pheasant";var pubpostcode = "SL2 4EZ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/berkshire/" title="Pubs Galore : Buckinghamshire Page">Buckinghamshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/slough/berkshire/" title="Pubs Galore : Slough Page">Slough</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/stoke-poges/buckinghamshire/" title="Pubs Galore : Stoke Poges Page">Stoke Poges</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Fox &amp; Pheasant Page">The Fox &amp; Pheasant Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="p8p9qgfmv31lidl6lolh5f3li1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/70378/" class="indisplay"><img src="/images/display/70001_70500/70378_aa93e521.jpg?w=2" alt="Picture of The Fox &amp; Pheasant" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Tuesday, 8<sup>th</sup> September 2015<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/70378/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/70378/">Pub map</a><br /><a href="/pubreviews/70378/">Pub reviews (1)</a><br /><a href="/pubpictures/70378/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=70378" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Fox &amp; Pheasant, Slough</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=Anna81">Anna Tickle</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Gerrards Cross Road</span><br />
+
+<span class="town">Stoke Poges</span><br />
+<span class="postaltown">Postal town: Slough</span><br />
+<span class="postcode">SL2 4EZ</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01753662047</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/stoke-poges/buckinghamshire/">Stoke Poges</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Fox & Pheasant  <span class="h2note">(Average Rating: <span id="averagerating"><b>4</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review99343" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Fox &amp; Pheasant</h6>
+<p class="old">TARDIS place, bloody huge once you get beyond the main bar. Modern interior, done up relatively well with the stand-out being a nice tiled bar back with inset fridge. Large garden with wooded overlook. Toilets pure comedy, the hand dryer coming on whenever (and wherever) you stood by the sink. Football on the TV. Three ales on; Bombardier, a dire and returned Marstons cricket-theme beer and a pretty poor Doom Bar as replacement. Some better keg choices. All fur coat and no knickers, this one.</p>
+<p class="Reviewer">On 14<sup>th</sup> September 2015 
+  - rating: <b>4</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Fox &amp; Pheasant</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official pages of the Fox &amp; Pheasant, contains menus and wine list - <a href="http://www.greatbritishcarvery.co.uk/our-pubs/fox-and-pheasant" title="Submitted by:- hondo ." target="_blank">www.greatbritishcarvery.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="1683085765265839">Facebook - <a href="https://www.facebook.com/The-fox-and-pheasant-1683085765265839/" target="_blank" rel="nofollow">The fox and pheasant</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/70378/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.56169600000000, -0.58415800000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.56169600000000, -0.58415800000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Gerrards Cross, 2.61 miles, 50 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Slough, 3.89 miles, 1 hr 15 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Denham Golf Club, 4.16 miles, 1 hr 20 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('yruyH`bqB@_AgCIgCUmP{DyEiCoAaAyBaA_EYeAe@aBiA{ByCoCqEkByE{@gBiAcDmA_Ey@{BwCoFeA{BaEeUaB}JMe@_DcJmCoEyGyGLe@?k@CgAU{C]_BwD{IU}@UQEOAWISm@eAgCaGgBiFYb@EKcBdCGKcBYuFuAwBUcBIwBq@U[Si@q@^Mb@{GwGwDmEWVe@XsBnH', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('yruyH`bqB@_AtDLrE\\lSl@jD?t`@zAfKz@rDLrEv@xHrFdCtBtDvBnCXCl@pE`CrC`AhCr@z@h@jEzDdFpDZD`@CdMm@nBsAhQ`@zCQrCGx@Bp@Lr@FNR^J`AChB^hAd@dFr@~Aj@RV@o@^eINgBt@N`HBtL?nQIhBN|Bh@jCjAlAfAvAdBnAj@nB~Ar@qClAdAV^XRtA}HHs@~Bf@XAT_@lAd@Pb@]xD\\LEZGCEd@f@NDc@F@b@aFGA]tD', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('yruyH`bqB@_AgBGzBoHxA{GaAoPCuB`@oI~Guq@HgBH{DWoJm@oHuAmAkCqG{@wCFyAMe@iBuDA_@FiAESoByHcCeIaBsCe@q@wAyAwAeBfAcEHm@D{BGw@S_A[cAWkAu@iFScAWw@m@{AYiAwAiH_AyCWmAsB_G[eA[o@Qi@Mm@JcCJcAAy@Iw@Q{@[qBSq@e@{@}@wAQ]M]QgBKq@Uu@aA_A_@c@cAo@aB{@i@a@k@[wBs@m@GyAJsOhCYGKMMa@Co@t@wFMGd@_EFoAn@kOTaDW_@JSGs@RWf@gDjAaHJeAVgA~@sGSsC?YFIFm@JU}GmAkEyBm@a@_A{@f@}HR_C@UEQGI}AQ{A]uAOUGGGAQ@u@AmAMwA[yAKU_@i@mBkBmAs@a@o@IWDc@{Bg@iABs@e@eApD[x@mAHKJCTI|A', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.56169600000000,-0.58415800000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=70378">View all updates for The Fox &amp; Pheasant, Stoke Poges</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        14<span class="sup">th</span> Sep 2015, 22:11
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> amended by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        14<span class="sup">th</span> Sep 2015, 22:11
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11870378">No</span> <span id="discdetail11870378" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2015 by Quinno _</span></li><li>Bar Billiards : <span id="fac10770378">No</span> <span id="discdetail10770378" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2015 by Quinno _</span></li><li>Beer Garden : <span id="fac11470378">Yes</span> <span id="discdetail11470378" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2015 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10270378">No</span>  - <span id="discdetail10270378" class="discdetail" style="">20p per pint. CAMRA Angle Summer 2014</span> -   <span class="Reviewer">last updated 14 September 2015 by Quinno _</span></li><li>Car Park : <span id="fac11370378">Yes</span> <span id="discdetail11370378" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2015 by Quinno _</span></li><li>Child Friendly : <span id="fac12170378">Yes</span> <span id="discdetail12170378" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2015 by Quinno _</span></li><li>Hot Food : <span id="fac10370378">Yes</span> <span id="discdetail10370378" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2015 by Quinno _</span></li><li>Karaoke : <span id="fac10670378">No</span> <span id="discdetail10670378" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2015 by Quinno _</span></li><li>Live TV Sports : <span id="fac11070378">Yes</span> <span id="discdetail11070378" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2015 by Quinno _</span></li><li>Micropub : <span id="fac12270378">No</span> <span id="discdetail12270378" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2015 by Quinno _</span></li><li>Pinball : <span id="fac11670378">No</span> <span id="discdetail11670378" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2015 by Quinno _</span></li><li>Pool Table : <span id="fac10470378">No</span> <span id="discdetail10470378" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2015 by Quinno _</span></li><li>Real Ale : <span id="fac10170378">Yes</span> <span id="discdetail10170378" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2015 by Quinno _</span></li><li>Real Cider : <span id="fac11970378">No</span> <span id="discdetail11970378" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2015 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

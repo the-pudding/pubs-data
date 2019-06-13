@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Greyfriars Bobby pub in Edinburgh, Lothian, EH1 2QE : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Greyfriars Bobby" />
+  <meta name="keywords" content="Greyfriars Bobby, 34  Candlemaker Row, Edinburgh, Lothian, Old Town, Edinburgh Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Greyfriars Bobby in Edinburgh" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/48501_49000/48952_4d66c634.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/48952/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="55.94686288480748" />
+<meta property="og:longitude" content="-3.19150418043137" />
+<meta property="og:street-address" content="34  Candlemaker Row" />
+<meta property="og:locality" content="Edinburgh" />
+<meta property="og:region" content="Lothian" />
+<meta property="og:postal-code" content="EH1 2QE" />
+<meta property="og:country-name" content="Scotland" />
+<meta property="og:description" content="Do you like Greyfriars Bobby in Edinburgh? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Greyfriars Bobby the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/48952/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Greyfriars Bobby in Edinburgh" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Greyfriars Bobby " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/48501_49000/48952_4d66c634.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/48952/" />
+<meta name="geo.position" content="55.94686288480748;-3.19150418043137" />
+<meta name="geo.placename" content="Greyfriars Bobby in Edinburgh" />
+<meta name="geo.region" content="UK" />
+<title>Greyfriars Bobby in Edinburgh : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":48952},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(48952);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 48952;var pubaddress = "34  Candlemaker Row";var pubname = "Greyfriars Bobby";var pubpostcode = "EH1 2QE";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/scotland/" title="Pubs Galore : Scotland Page">Scotland</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/lothian/" title="Pubs Galore : Lothian Page">Lothian</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/edinburgh/lothian/" title="Pubs Galore : Edinburgh Page">Edinburgh</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Greyfriars Bobby Page">Greyfriars Bobby Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="1o6al4r8h9osg7dpq8lqcb5oj6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/48952/" class="indisplay"><img src="/images/display/48501_49000/48952_4d66c634.jpg?w=1" alt="Picture of Greyfriars Bobby" /></a><br />  Image posted by <a href="/userinfo.php?name=Blackthorn" class="indisplay">Blackthorn _</a><br />
+  Submitted on Monday, 1<sup>st</sup> April 2019<br />
+  With picture contributions to 4300 other pubs<br />
+<a href="/pubpictures/48952/" class="smallbutton">View all this pub's pictures</a> (19 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/48952/">Pub map</a><br /><a href="/pubreviews/48952/">Pub reviews (8)</a><br /><a href="/pubpictures/48952/">Pub pictures (20)</a><br /><a href="/core/pubaudit.php?id=48952" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Greyfriars Bobby, Edinburgh</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">34  Candlemaker Row</span><br />
+
+
+<span class="town">Edinburgh</span><br />
+<span class="postcode">EH1 2QE</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01312258328</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Nicholsons (Mitchells & Butlers)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/old-town/lothian/">Old Town</a>, <a href="/areas/edinburgh-central/lothian/">Edinburgh Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Greyfriars Bobby  <span class="h2note">(Average Rating: <span id="averagerating"><b>7&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review134530" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=colin58">Colin Walker</a> left this review about Greyfriars Bobby&#039;s Bar</h6>
+<p>Greyfriars Bobby sits uphill from the Grassmarket range of pubs. On draught there is a choice of Aspall, Innus &amp; Gunn Lager, Guinness, San Miguel, Caledonian Three Hop, Lager, Holyrood Pale Ale, Tennent&rsquo;s lager, Peroni. There is a choice of ales from at the time of visiting Inveralmond Ossian Ale &pound;4.20, Eden Mill Shipwreck IPA &pound;4.80, Top Out Nelson Sauvin &pound;4.30, Top Out Altbier - A German classic with a Scottish twist &pound;4.50.</p>
+<p class="Reviewer">On 6<sup>th</sup> November 2018 
+  - rating: <b>10</b><br />
+  <span class="leftspace">[User has posted 674 recommendations about 668 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review103040" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about Greyfriars Bobby&#039;s Bar</h6>
+<p class="old">One of Edinburgh&rsquo;s many pubs named after historical celebrities, a dog in this case (look it up&hellip;). With the aforementioned&rsquo;s grave ten yards away and a neat bronze statue over the road depicting said canine, he&rsquo;s quite some character. The pub itself looks quite grand from outside but is sadly a fairly standard affair within, though as a Nicholson house it has a higher level of general d&eacute;cor than the average. Three levelled interior, the most characterful part is the dip to right of the bar which sports a large semi-circular rear banquette. There&rsquo;s another of these banquettes in the small main bar area with Greyfriars Bobby etched into mirrored bar back. The largest area off to left, a 3/4 dark wood panelled place that is mainly inhabited by the dining classes. Five ales on and a good selection for the chain; Ilkley Rosa (very good nick), Broughton Hopopotamus (excellent shape), W&amp;E Conqueror, Stewart 80/- and St Austell Nicholson Pale. Given you get the tourist tick of the Bobby statue and grave within a 30 yard radius, this is one worth doing for a canine hat trick and a decent beer to boot.</p>
+<p class="Reviewer">On 25<sup>th</sup> January 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review85863" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Gann">Steve of N21</a> left this review about Greyfriars Bobby&#039;s Bar</h6>
+<p class="old">Another of Nicholson&rsquo;s Edinburgh pubs and although I primarily walked to Greyfriars Kirkyard to visit the pub, yes I had to stroke the dogs nose and get myself photographed doing so (well I was in tourist mode). <br />
+As mentioned below the true story of Greyfrairs Bobby may not be in line with the version sold to Hollywood and the now commonly believed truth is that it was probably a stray who made a home for himself in the kirkyard. But even so that&rsquo;s still a lot closer than some fictional loch dwelling monster peddled by the Scottish tourist board to entice unsuspecting tourists to the most boring stretch of still water to be experience in this fine landscaped country..  <br />
+Oops sorry, rant over, back to the pub. Inside you find a series of sections stepping downwards with the bar at the upper end and then a number of comfortable seating areas to the dining area at its far end.<br />
+We didn&rsquo;t eat in this one, but the standard Nicholson&rsquo;s food menu was available and the majority of people in had come for that reason.<br />
+Yes its primarily there to service the tourist trade and sell them food , but at least now there are five real ale pumps with offerings from the Nicholson&rsquo;s summer list and my pint of Broughton Brewers gold was perfectly fine.</p>
+<p class="Reviewer">On 5<sup>th</sup> August 2014 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 1577 recommendations about 1528 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/48952/">View more reviews of Greyfriars Bobby (8)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Greyfriars Bobby</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official pages of The Greyfriars Bobbys Bar, contains menu and real ale details - <a href="http://www.nicholsonspubs.co.uk/thegreyfriarsbobbysbarcandlemakerrowedinburgh" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">www.nicholsonspubs.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="346208428740853">Facebook - <a href="https://www.facebook.com/greyfriarsbobbybarofficial/" target="_blank" rel="nofollow">Greyfriars Bobby's Bar - Official</a></li></ul><ul id="Custom2"><li class="twitlink" id="1614589033">Twitter - <a href="https://twitter.com/Greyfriar_Bobby" target="_blank" rel="nofollow">Greyfriars Bobby Pub</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/48952/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=hondo">hondo .</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([55.94686288480748, -3.19150418043137], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([55.94686288480748, -3.19150418043137]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Edinburgh, 0.53 miles, 10 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Haymarket, 1.14 miles, 21 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Slateford, 2.98 miles, 57 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ecntIbinRNQE]m@\\]iCQw@kA_JGYgAd@EHqAj@?Jc@Hy@\\a@cEIE}CnAAM_B^DU[g@MeBoHrC', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ecntIbinRiAtAYz@eAzEMZDZEjCBTfBjKpAlGbAbEDRDdBFnARdBb@zCx@dDFp@?Z@nEBpMDbHNfGArCGzAw@bHMfAChBM|Y?TB\\Jn@\\z@tBlAd@hD?F', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ecntIbinRNQE]NIr@Mr@CdC^d@RLMLGLLfOh@tJxQZT`@VAJ`@PLRLdAjAjKlAfCFlAfAdLL~@`@pBHRjA~ARb@Hn@XhFGBt@z@hAxAu@lHRZ?NM^Vf@jDbHp@~A`@lAdA`ERf@TNEp@@Pv@`EnCrJF`@AXOx@Gp@?n@L`BV|A`@tAb@bAPTPNZFj@@XJbMfe@pDjNk@fAL\\JNr@l@JR?FGb@DZPLSpA~CdC^Jv@CHLJb@pArHXfAfB~Cr@|Ad@tAr@fCu@nASj@Vn@BVCv@@T\\xAHZjAnCH\\@l@MzB@NF^r@~A{@bBETC^Ct@Dd@N|@pCrGf@vABVA`@IZe@~@Y~@Id@KhBc@rBa@`CIx@Ez@Ff@jArCMNGMGMMTIQLV', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([55.94686288480748,-3.19150418043137], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=48952">View all updates for Greyfriars Bobby, Edinburgh</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        1<span class="sup">st</span> Apr 2019, 20:40
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        1<span class="sup">st</span> Apr 2019, 20:40
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11848952">No</span> <span id="discdetail11848952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Bar Billiards : <span id="fac10748952">No</span> <span id="discdetail10748952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Beer Festivals : <span id="fac11748952">No</span> <span id="discdetail11748952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Beer Garden : <span id="fac11448952">No</span>  - <span id="discdetail11448952" class="discdetail" style="">Tables on pavement</span> -   <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10248952">No</span> <span id="discdetail10248952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Car Park : <span id="fac11348952">No</span> <span id="discdetail11348952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Child Friendly : <span id="fac12148952">Yes</span> <span id="discdetail12148952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Darts : <span id="fac11148952">No</span> <span id="discdetail11148952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Dog Friendly : <span id="fac10548952">No</span> <span id="discdetail10548952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Function Room : <span id="fac12348952">No</span> <span id="discdetail12348952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Hot Food : <span id="fac10348952">Yes</span> <span id="discdetail10348952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Jukebox : <span id="fac11248952">No</span> <span id="discdetail11248952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Karaoke : <span id="fac10648952">No</span> <span id="discdetail10648952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Live Music : <span id="fac10848952">No</span> <span id="discdetail10848952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Live TV Sports : <span id="fac11048952">No</span> <span id="discdetail11048952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Micropub : <span id="fac12248952">No</span> <span id="discdetail12248952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Pinball : <span id="fac11648952">No</span> <span id="discdetail11648952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Pool Table : <span id="fac10448952">No</span> <span id="discdetail10448952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Real Ale : <span id="fac10148952">Yes</span> <span id="discdetail10148952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>Real Cider : <span id="fac11948952">No</span> <span id="discdetail11948952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li><li>WiFi : <span id="fac11548952">Yes</span> <span id="discdetail11548952" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11am - 11pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - Midnight</td></tr>
+<tr><td>Saturday</td><td>11am - 1am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64695/" class="List1">Frankenstein</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/48990/" class="List1">Oz Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/67576/" class="List1">Revolution</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64716/" class="List1">Sandy Bells</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/67602/" class="List1">Divino Enoteca</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64688/" class="List1">Dropkick Murphys</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/49197/" class="List1">Under the Stairs</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/48784/" class="List1">George IV Bar</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

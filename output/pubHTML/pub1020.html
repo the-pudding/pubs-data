@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Royal Oak pub in Carlton (near Bedford), Bedfordshire, MK43 7LP : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Royal Oak" />
+  <meta name="keywords" content="The Royal Oak, 23  Bridge End, Carlton, Bedford, Bedfordshire, , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Royal Oak in Carlton" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/1001_1500/1020_846065bf.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/1020/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.19259913549568" />
+<meta property="og:longitude" content="-0.60172677040100" />
+<meta property="og:street-address" content="23  Bridge End" />
+<meta property="og:locality" content="Carlton" />
+<meta property="og:region" content="Bedfordshire" />
+<meta property="og:postal-code" content="MK43 7LP" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Royal Oak in Carlton? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Royal Oak the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/1020/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Royal Oak in Carlton" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Royal Oak " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/1001_1500/1020_846065bf.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/1020/" />
+<meta name="geo.position" content="52.19259913549568;-0.60172677040100" />
+<meta name="geo.placename" content="The Royal Oak in Carlton" />
+<meta name="geo.region" content="UK" />
+<title>The Royal Oak in Carlton (near Bedford) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":1020},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(1020);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 1020;var pubaddress = "23  Bridge End";var pubname = "The Royal Oak";var pubpostcode = "MK43 7LP";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/bedfordshire/" title="Pubs Galore : Bedfordshire Page">Bedfordshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/bedford/bedfordshire/" title="Pubs Galore : Bedford Page">Bedford</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/carlton/bedfordshire/" title="Pubs Galore : Carlton Page">Carlton</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Royal Oak Page">The Royal Oak Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="bb2g0e4c6dclk9bal5jk02lff1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/1020/" class="indisplay"><img src="/images/display/1001_1500/1020_846065bf.jpg?w=1" alt="Picture of The Royal Oak" /></a><br />  Image posted by <a href="/userinfo.php?name=Blackthorn" class="indisplay">Blackthorn _</a><br />
+  Submitted on Tuesday, 9<sup>th</sup> April 2013<br />
+  With picture contributions to 4300 other pubs<br />
+<a href="/pubpictures/1020/" class="smallbutton">View all this pub's pictures</a>
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/1020/">Pub map</a><br /><a href="/pubreviews/1020/">Pub reviews (2)</a><br /><a href="/pubpictures/1020/">Pub pictures (1)</a><br /><a href="/core/pubaudit.php?id=1020" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Royal Oak, Bedford</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">23  Bridge End</span><br />
+
+<span class="town">Carlton</span><br />
+<span class="postaltown">Postal town: Bedford</span><br />
+<span class="postcode">MK43 7LP</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/carlton/bedfordshire/">Carlton</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Royal Oak  <span class="h2note">(Average Rating: <span id="averagerating"><b>6</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review121495" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Gann">Steve of N21</a> left this review about The Royal Oak</h6>
+<p class="old">Good to see this one open again, which I believe happened in May last year after being closed since my last review below and at some point the new owners buying it from Charles Wells. From what I can remember of the old pub internally it&rsquo;s had a fairly major makeover and refurb throughout and although the old main pub building bar is still in situ a large dining room area has been added. Wooden floored throughout the smaller front and larger main bar sections are connected by an open doorway and have a shared wood burning stove set in the connecting room. As well as the new restaurant area the outside has been improved considerably and there are now two outside areas, an undercover terrace section and then a large lawn area with plentiful wooden tables and chairs. <br />
+This is now a free house and there are three hand pumps on each of the sections. For my visit there were two ales available in the shape of Phipps NBC India Pale Ale and another local microbrewery beer that I didn&rsquo;t note down.<br />
+We didn&rsquo;t eat here but I did get the impression that the food side leads this establishment now, but that is perfectly fine if that&rsquo;s what it takes to keep it open.</p>
+<p class="Reviewer">On 22<sup>nd</sup> August 2017 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 1577 recommendations about 1528 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review30440" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Gann">Steve of N21</a> left this review about The Royal Oak</h6>
+<p class="old">The Royal Oak has now shut down and is currently undergoing planning permission to be turned into a residential dwelling.<br />
+Carlton village used to support five pubs at the turn of the century and there were still three up to the late 70&#039;s when the Angel shut down.<br />
+And with this closure this now leaves the Fox as the only pub in the Village of Carlton.</p>
+<p class="Reviewer">On 17<sup>th</sup> July 2010 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 1577 recommendations about 1528 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Royal Oak</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="759569177433412">Facebook - <a href="https://www.facebook.com/theroyaloakcarlton/" target="_blank" rel="nofollow">The Royal Oak Carlton</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/1020/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Blackthorn">Blackthorn _</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.19259913549568, -0.60172677040100], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.19259913549568, -0.60172677040100]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Bedford, 7.83 miles, 2 hr 31 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Bedford St Johns, 8.69 miles, 2 hr 47 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Kempston Hardwick, 10.55 miles, 3 hr 23 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('qzp}HpptBXOtAmA|AqCn@kB~Keb@RcAH}@DyCIaDk@mOSgDKgDFeHAmGOqK@mCTmJ@wERwMJaARo@bB}CfCiEx@cA`D_DxF_EhAiANj@`A~BPVf@Tt@Lj@Bn@Cl@Mf@UtAoAfAuApEwGn@q@ZGVDl@\\zAxAjDjEPLTA`@KdAs@lB_BbCgCrBoCd@a@n@[pDy@rCSlAUt@_@t@k@d@i@d@cAZeAViC\\oB`@_EDcA@eBN{E@s@Co@OqAAg@F_@La@lD{IdE_KZa@\\Qp@SjAk@jAw@fCmCf@kAVwALuBBaCD_BJaA\\uENcATcAp@_Cp@aB~@iBbA_CVo@VmAxAd@|@fAd@H^IBOp@q@lAoBh@]t@uBjDaFd@cAb@GNSFq@t@WrEp@j@Ld@In@c@lBeB~@k@r@[zC_APL^k@pKoRvQm[t@yHd@wHZiB^mA`@q@b@_Ab@qATw@Nq@L{@d@qFtAiRRcAp@qALPJSTKDIl@Kp@Br@Zl@^fANnAZdAFTYH?G[A]L?`AWb@A~BBz@EPCzALd@?NM`@C^HRGNUt@UVWQyAI{AbA[b@]BOAQF[^Mj@FBqArAqTICdAeTf@oH|@wL^cDBkAE]MQWQ@]GWJQF_@JWVUJUT}ALgEVoEPmERmQCsFDoENuFl@wNH{ATkBr@}ElBwK~AqIxAyG`AyCdA}B~@oB~B}DLYH_@BWAo@s@eHCcA@eCDiAX{CH?CSVsCB{@Cs@[mCs@cEPU[wBGq@@a@tDyAdBy@xAcAj@|Ch@c@FVx@q@PSFV^W@Dp@k@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('qzp}HpptBXOtAmA|AqCn@kB~Keb@RcAH}@DyCIaDk@mOSgDKgDFeHAmGOqK@mCTmJ@wERwMJaARo@bB}CfCiEx@cA`D_DxF_EhAiANj@`A~BPVf@Tt@Lj@Bn@Cl@Mf@UtAoAfAuApEwGn@q@ZGVDl@\\zAxAjDjEPLTA`@KdAs@lB_BbCgCrBoCd@a@n@[pDy@rCSlAUt@_@t@k@d@i@d@cAZeAViC\\oB`@_EDcA@eBN{E@s@Co@OqAAg@F_@La@lD{IdE_KZa@\\Qp@SjAk@jAw@fCmCf@kAVwALuBBaCD_BJaA\\uENcATcAp@_Cp@aB~@iBbA_CVo@VmAxAd@|@fAd@H^IBOp@q@lAoBh@]t@uBjDaFd@cAb@GNSFq@t@WrEp@j@Ld@In@c@lBeB~@k@r@[zC_APL^k@pKoRvQm[t@yHd@wHZiB^mA`@q@b@_Ab@qATw@Nq@L{@d@qFtAiRRcAp@qALPJSTKDIl@Kp@Br@Zl@^fANnAZdAFTYH?G[A]L?`AWb@A~BBz@EPCzALd@?NM`@C^HRGNUt@UVWQyAI{AbA[b@]BOAQF[^Mj@FBqArAqTICdAeTf@oH|@wL^cDBkAE]MQWQ@]GWJQF_@JWVUJUT}ALgEVoEPmERmQCsFDoENuFl@wNH{ATkBr@}ElBwK~AqIxAyG`AyCdA}B~@oB~B}DLYH_@BWAo@s@eHCcA@eCDiAX{CH?CSVsCB{@Cs@[mCs@cEPU[wBGq@@a@M_@A]OiCBiALmC^gDDaA`@IrAc@b@Yp@q@bD}@F?@OFUHSf@c@rI}GhFoFl@`DfDyCp@m@bF{EvCgFi@kAwA{BSaAA]LBdAwBBOVBNGXSr@eAXr@r@cADA\\TFKPd@HMRb@NPjAeBVe@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('qzp}HpptBXOtAmA|AqCn@kB~Keb@RcAH}@DyCIaDk@mOSgDKgDFeHAmGOqK@mCTmJ@wERwMJaARo@bB}CfCiEx@cA`D_DxF_EhAiANj@`A~BPVf@Tt@Lj@Bn@Cl@Mf@UtAoAfAuApEwGn@q@ZGVDl@\\zAxAjDjEPLTA`@KdAs@lB_BbCgCrBoCd@a@n@[pDy@rCSlAUt@_@t@k@d@i@d@cAZeAViC\\oB`@_EDcA@eBN{E@s@Co@OqAAg@F_@La@lD{IdE_KZa@\\Qp@SjAk@jAw@fCmCf@kAVwALuBBaCD_BJaA\\uENcATcAp@_Cp@aB~@iBbA_CVo@VmAxAd@|@fAd@H^IBOp@q@lAoBh@]t@uBjDaFd@cAb@GNSFq@t@WrEp@j@Ld@In@c@lBeB~@k@r@[zC_APL^k@pKoRvQm[t@yHd@wHZiB^mA`@q@b@_Ab@qATw@Nq@L{@d@qFtAiRRcAp@qALPJSTKDIl@Kp@Br@Zl@^fANnAZdAFTYH?G[A]L?`AWb@A~BBz@EPCzALd@?NM`@C^HRGNUt@UVWQyAI{AbA[b@]BOAQF[^Mj@FBqA`@oG|AmXlBz@zBzARVV?LFdHhBA\\BFfF`@h@AxAo@~BKn@R?dAI|ARdAb@N~BVf@RdFO|AJVX@\\v@I@\\v@r@ZSfD?~AUj@_@pAa@fBu@bCmA`@]fAk@|HcF~GyC^M~AoAbB_@pC_CX[`Bk@bDWTKTDd@Qz@An@S\\@RO|@A`@Qf@[Rg@|DkB|CsBvD_CrA_B^yAUe@F_BsAqDGEIBSXPrAV|@r@xAp@lAnGtKxE`JNLP@h@[l@}@Xs@FFjB}EjCvBLm@|AzAVPt@RTZPnATH\\Ct@i@p@Ub@Ul@I`BLbEgCNAHPJBFALS?]XQ^Kf@_@`B{@NWLgAn@gAr@_AnAmBj@aAh@k@d@QxB{CHSD[O{@D_@NY|F{ENr@dCi@lCfFrHnEjA^PNj@dA`ApEHiB^qAn@iARQRAz@x@d@x@dApARLH?HGn@mBDJ`CdCvBfCJ]n@yDHKxAQbBeAHMhBkNCU_Bo@GM@OFG~Al@FIJ[@WRPN@NYCKtBcLXyBfAeCjA}Bz@qAbAyCb@k@FY@_@n@Wd@NxB{AXWL@D\\FF`By@b@YjBa@TZN@xA|@@E', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.19259913549568,-0.60172677040100], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=1020">View all updates for The Royal Oak, Carlton</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        22<span class="sup">nd</span> Aug 2017, 11:11
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Gann">Steve of N21</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        27<span class="sup">th</span> Sep 2016, 10:51
+      </div><div class="auditexp">Request to mark pub as open by <a rel="nofollow" href="/userinfo.php?name=ROBCamra">ROB Camra</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac1181020">No</span> <span id="discdetail1181020" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 September 2016 by ROB Camra</span></li><li>Beer Festivals : <span id="fac1171020">No</span> <span id="discdetail1171020" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 September 2016 by ROB Camra</span></li><li>Beer Garden : <span id="fac1141020">Yes</span> <span id="discdetail1141020" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 September 2016 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac1021020">No</span> <span id="discdetail1021020" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 September 2016 by ROB Camra</span></li><li>Car Park : <span id="fac1131020">Yes</span> <span id="discdetail1131020" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 September 2016 by ROB Camra</span></li><li>Child Friendly : <span id="fac1211020">Yes</span> <span id="discdetail1211020" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 September 2016 by ROB Camra</span></li><li>Dog Friendly : <span id="fac1051020">Yes</span> <span id="discdetail1051020" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 September 2016 by ROB Camra</span></li><li>Hot Food : <span id="fac1031020">Yes</span>  - <span id="discdetail1031020" class="discdetail" style="">Not Monday - Wednesday</span> -   <span class="Reviewer">last updated 27 September 2016 by ROB Camra</span></li><li>Micropub : <span id="fac1221020">No</span> <span id="discdetail1221020" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 September 2016 by ROB Camra</span></li><li>Real Ale : <span id="fac1011020">Yes</span> <span id="discdetail1011020" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 September 2016 by ROB Camra</span></li><li>Real Cider : <span id="fac1191020">No</span> <span id="discdetail1191020" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 September 2016 by ROB Camra</span></li><li>Wheelchair Access : <span id="fac1201020">Yes</span> <span id="discdetail1201020" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 September 2016 by ROB Camra</span></li><li>WiFi : <span id="fac1151020">Yes</span> <span id="discdetail1151020" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 September 2016 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 9:30pm</td></tr>
+<tr><td>Monday</td><td>Closed</td></tr>
+<tr><td>Tuesday</td><td>Closed</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>Closed</td></tr>
+<tr><td>Thursday</td><td>11:30am - 11pm</td></tr>
+<tr><td>Friday</td><td>11:30am - 11pm</td></tr>
+<tr><td>Saturday</td><td>11:30am - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/957/" class="List1">The Fox Inn</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

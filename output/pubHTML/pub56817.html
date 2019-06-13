@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Windlesora (JD Wetherspoon) pub in Windsor, Berkshire, SL4 1BB : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Windlesora (JD Wetherspoon)" />
+  <meta name="keywords" content="The Windlesora (JD Wetherspoon), 17 William Street, Windsor, Berkshire, Windsor Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Windlesora (JD Wetherspoon) in Windsor" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/56501_57000/56817_a738b4cd.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/56817/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.48038899944383" />
+<meta property="og:longitude" content="-0.61054587364197" />
+<meta property="og:street-address" content="17 William Street" />
+<meta property="og:locality" content="Windsor" />
+<meta property="og:region" content="Berkshire" />
+<meta property="og:postal-code" content="SL4 1BB" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Windlesora (JD Wetherspoon) in Windsor? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Windlesora (JD Wetherspoon) the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/56817/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Windlesora (JD Wetherspoon) in Windsor" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Windlesora (JD Wetherspoon) " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/56501_57000/56817_a738b4cd.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/56817/" />
+<meta name="geo.position" content="51.48038899944383;-0.61054587364197" />
+<meta name="geo.placename" content="The Windlesora (JD Wetherspoon) in Windsor" />
+<meta name="geo.region" content="UK" />
+<title>The Windlesora (JD Wetherspoon) in Windsor : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":56817},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(56817);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 56817;var pubaddress = "17 William Street";var pubname = "The Windlesora (JD Wetherspoon)";var pubpostcode = "SL4 1BB";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/berkshire/" title="Pubs Galore : Berkshire Page">Berkshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/windsor/berkshire/" title="Pubs Galore : Windsor Page">Windsor</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Windlesora (JD Wetherspoon) Page">The Windlesora (JD Wetherspoon) Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="138s7ocl3tgl98496etif5mtq6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/56817/" class="indisplay"><img src="/images/display/56501_57000/56817_a738b4cd.jpg?w=2" alt="Picture of The Windlesora (JD Wetherspoon)" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
+  Submitted on Monday, 13<sup>th</sup> April 2015<br />
+  With picture contributions to 24007 other pubs<br />
+<a href="/pubpictures/56817/" class="smallbutton">View all this pub's pictures</a> (9 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/56817/">Pub map</a><br /><a href="/pubreviews/56817/">Pub reviews (4)</a><br /><a href="/pubpictures/56817/">Pub pictures (10)</a><br /><a href="/core/pubaudit.php?id=56817" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Windlesora (JD Wetherspoon), Windsor Central, Windsor</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">17 William Street</span><br />
+
+
+<span class="town">Windsor</span><br />
+<span class="postcode">SL4 1BB</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01753754050</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">J D Wetherspoon</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/windsor-central/berkshire/">Windsor Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Windlesora (JD Wetherspoon)  <span class="h2note">(Average Rating: <span id="averagerating"><b>5&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review112666" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Mobyduck">moby duck</a> left this review about The Windlesora (JD Wetherspoon)</h6>
+<p class="old">A little tucked away off the beaten track for a JDW,a very average place,ten pumps but only five beers on, Youngs Special,GK IPA,Hobgoblin, a brace from W&amp;E Canberra and Conqueror, four coming soon and Old Rosie Cider Completed the lineup, the Conqueror turned out to be average at best. I think Tim should have a re think and get shot of this one.</p>
+<p class="Reviewer">On 9<sup>th</sup> November 2016 
+  - rating: <b>4</b><br />
+  <span class="leftspace">[User has posted 1202 recommendations about 1191 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review110188" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> left this review about The Windlesora (JD Wetherspoon)</h6>
+<p class="old">Reported as no longer being up for sale. <br />
+<br />
+Visit December 2015<br />
+This is quite small for a Spoons and the &quot;For Sale&quot; sign was prominently displayed outside. It&#039;s a single open plan square room with a low ceiling. There is some wooden panelling with booths and some decorative lamps along the left side but apart from that it is pretty dull. The furnishings are all pretty standard. <br />
+It wasn&#039;t that busy when I arrived at 11:00 on a Friday Morning. <br />
+The bar has two sets of hand pumps which on my visit had GK IPA &amp; Abbot, Doom Bore, Hook Norton AFO, Windsor &amp; Eton Guardsman &amp; 882 Seattle Porter, Bingham Space Hoppy IPA, Twickenham Grandstand, a cider and Bombardier available soon. I tried the Seattle Porter and the Space Hoppy (&pound;2.05) both of which were in good nick but the Space Hoppy had a very slight haze. <br />
+The new menu from two days previously showed Guest Ales from &pound;2.09 which means either I was undercharged or that anything on before the price rise was being sold at the old prices. <br />
+Despite being a bit dull I quite liked this one and much preferred it to their more central tourist trap. I can&#039;t say I would return as at the moment nobody knows if or when it will close.</p>
+<p class="Reviewer">On 31<sup>st</sup> August 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2121 recommendations about 2116 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review102034" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Windlesora (JD Wetherspoon)</h6>
+<p class="old">Now on the JDW disposal list (when you compare its size and location to the King &amp; Castle, perhaps it&rsquo;s no surprise as to why). Seems to now have ten pumps though not all were on -  2x ciders, 2x W&amp;E brews and 2x GK. My half of W&amp;E Conquer was in good shape and keenly-priced. The standard of service from the mature barmaid was also noticeably above average for a Spoons. If you&rsquo;re off down the Acre, this is worth a nose.<br />
+<br />
+December 2014<br />
+A slight improvement this visit, a good pint of Binghams Old Ale and more professional service. Cemented a 6.<br />
+<br />
+March 2014<br />
+A little off the beaten track for a Spoons, Timbo must have had issues getting a prime location here a few years back. Situated in a nasty early 80&rsquo;s style building off Peascod Street, this is yer classic open-plan room JDW. There&rsquo;s some wood panelling to the left and a couple of bright blue paint splashes. Usual Wetherspoon furniture and whiffs though seemingly more fruits than usual, I think they provided 50% of the light and heat source. Staff seemed more interested in hiding in the kitchen than serving, much cackling hilarity emanating from it. Five pumps, Abbot as the JDW bog standard with others being guests including two LocAles (Binghams). My Twyford Tipple was in decent shape. The King &amp; Castle is the better of the two Spoons but the bonus here is the avoidance of tourists due the location; a number of punters were mingling like true regulars. In the context of Windsor, I&#039;ll be generous with a 6.</p>
+<p class="Reviewer">On 9<sup>th</sup> December 2015 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/56817/">View more reviews of The Windlesora (JD Wetherspoon) (4)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Windlesora (JD Wetherspoon)</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official page of The Windlesora - <a href="http://www.jdwetherspoon.co.uk/pubs/pub-details.php?PubNumber=4309" title="Submitted by:- elizabeth mcgraw" target="_blank">www.jdwetherspoon.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="104039706297074">Facebook - <a href="https://www.facebook.com/The-Windlesora-Wetherspoons-104039706297074/" target="_blank" rel="nofollow">The Windlesora Wetherspoons</a></li></ul><ul id="Custom2"><li class="twitlink" id="1103390598">Twitter - <a href="https://twitter.com/windlesora1" target="_blank" rel="nofollow">The Windlesora</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/56817/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=hondo">hondo .</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.48038899944383, -0.61054587364197], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.48038899944383, -0.61054587364197]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Windsor & Eton Central, 0.25 miles, 4 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Windsor & Eton Riverside, 0.5 miles, 9 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Datchet, 2.02 miles, 38 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('qweyHxevBo@PaBlAa@eAo@x@Sl@mAyAWf@_@g@qAg@Mc@SK@Ee@UE\\QGIl@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('qweyHxevBo@PaBlAqBkF{AuEa@\\U^CA]RCPcAsEcBxAMDU?KGOSkCoFIIGAYHUNEI_@GSFcA_DYo@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('qweyHxevBo@PaBlAqBkF{AuEa@\\U^CA]RCPcAsEcBxAMDU?KGOSkCoFIIGAYHUNEI_@GSFcA_D{@oBkAiD]g@Mg@}@oBZe@sFuLY`@q@{AwA}DMeAGkAXaKVcF^kFnAaLJoADw@Aw@OeJD_BFq@Hc@w@UdAkCbBiDvA_CnCuDlBkDvBmDpAI`FkHxEoFyCkHx@mBGQBk@a@DIOP[', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.48038899944383,-0.61054587364197], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=56817">View all updates for The Windlesora (JD Wetherspoon), Windsor</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        9<span class="sup">th</span> Nov 2016, 23:28
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Mobyduck">moby duck</a> amended by <a rel="nofollow" href="/userinfo.php?name=Mobyduck">moby duck</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        9<span class="sup">th</span> Nov 2016, 23:27
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Mobyduck">moby duck</a> amended by <a rel="nofollow" href="/userinfo.php?name=Mobyduck">moby duck</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11856817">No</span> <span id="discdetail11856817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Bar Billiards : <span id="fac10756817">No</span> <span id="discdetail10756817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Beer Festivals : <span id="fac11756817">Yes</span> <span id="discdetail11756817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Beer Garden : <span id="fac11456817">No</span> <span id="discdetail11456817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10256817">No</span>  - <span id="discdetail10256817" class="discdetail" style="">JDW vouchers only</span> -   <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Car Park : <span id="fac11356817">No</span> <span id="discdetail11356817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Child Friendly : <span id="fac12156817">Yes</span> <span id="discdetail12156817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Darts : <span id="fac11156817">No</span> <span id="discdetail11156817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Dog Friendly : <span id="fac10556817">No</span> <span id="discdetail10556817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Function Room : <span id="fac12356817">No</span> <span id="discdetail12356817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Hot Food : <span id="fac10356817">Yes</span> <span id="discdetail10356817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Jukebox : <span id="fac11256817">No</span> <span id="discdetail11256817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Karaoke : <span id="fac10656817">No</span> <span id="discdetail10656817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Live Music : <span id="fac10856817">Yes</span> <span id="discdetail10856817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11056817">No</span> <span id="discdetail11056817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Micropub : <span id="fac12256817">No</span> <span id="discdetail12256817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Pinball : <span id="fac11656817">No</span> <span id="discdetail11656817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Pool Table : <span id="fac10456817">No</span> <span id="discdetail10456817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Quiz Night : <span id="fac10956817">No</span> <span id="discdetail10956817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Real Ale : <span id="fac10156817">Yes</span> <span id="discdetail10156817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Real Cider : <span id="fac11956817">Yes</span> <span id="discdetail11956817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>Wheelchair Access : <span id="fac12056817">Yes</span> <span id="discdetail12056817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li><li>WiFi : <span id="fac11556817">Yes</span> <span id="discdetail11556817" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 February 2017 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1959/" class="List1">The Piper</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 3 reviewer(s)" title="Pub has average rating of 7 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1919/" class="List1">The Queen Victoria</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 1 reviewer(s)" title="Pub has average rating of 8 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81083/" class="List1">Acre</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81638/" class="List1">Bar Yello</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81488/" class="List1">Charley&#039;s Horse Mexican Cantina</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/61167/" class="List1">All Bar One</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82864/" class="List1">La Tasca</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64354/" class="List1">Cafe Rouge</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

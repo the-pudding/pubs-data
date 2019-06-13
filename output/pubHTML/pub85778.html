@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Real Ale pub in W9, London (Central), W9 1EE : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Real Ale" />
+  <meta name="keywords" content="Real Ale, 4 Formosa Street, W9, London (Central), Little Venice, Maida Vale, Warwick Avenue, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Real Ale in W9" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/85501_86000/85778_c1567473.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/85778/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.52463070000000" />
+<meta property="og:longitude" content="-0.18455240000000" />
+<meta property="og:street-address" content="4 Formosa Street" />
+<meta property="og:locality" content="W9" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="W9 1EE" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Real Ale in W9? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Real Ale the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/85778/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Real Ale in W9" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Real Ale " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/85501_86000/85778_c1567473.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/85778/" />
+<meta name="geo.position" content="51.52463070000000;-0.18455240000000" />
+<meta name="geo.placename" content="Real Ale in W9" />
+<meta name="geo.region" content="UK" />
+<title>Real Ale in W9 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":85778},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(85778);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 85778;var pubaddress = "4 Formosa Street";var pubname = "Real Ale";var pubpostcode = "W9 1EE";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/w9/central-london/" title="Pubs Galore : W9 Page">W9</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Real Ale Page">Real Ale Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="6f24gc5413620n5ae0fvs0v3u1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/85778/" class="indisplay"><img src="/images/display/85501_86000/85778_c1567473.jpg?w=2" alt="Picture of Real Ale" /></a><br />  Image posted by <a href="/userinfo.php?name=Tris39" class="indisplay">Tris C</a><br />
+  Submitted on Sunday, 18<sup>th</sup> February 2018<br />
+  With picture contributions to 2132 other pubs<br />
+<a href="/pubpictures/85778/" class="smallbutton">View all this pub's pictures</a> (2 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/85778/">Pub map</a><br /><a href="/pubreviews/85778/">Pub reviews (2)</a><br /><a href="/pubpictures/85778/">Pub pictures (3)</a><br /><a href="/core/pubaudit.php?id=85778" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Real Ale, W9</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=Tris39">Tris C</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">4 Formosa Street</span><br />
+
+
+<span class="town">W9</span><br />
+<span class="postcode">W9 1EE</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/little-venice/central-london/">Little Venice</a>, <a href="/areas/maida-vale/central-london/">Maida Vale</a>, <a href="/areas/warwick-avenue/central-london/">Warwick Avenue</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Real Ale  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review135923" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a> left this review about Real Ale</h6>
+<p>A small shop conversion,with three high tables in the front windows with 8 stools,display cabinets on each side and a keg bar running along the rear wall.There is an overflow area downstairs with a further set of tables and tressels in the basement.Unlike the Twickenham branch there is a licence to consume alcohol on the premises.<br />
+This is the place to come and sample the very best of cutting edge craft beer production.There is a changing list of 8 kegs from a tap menu with on my trip Woodeforde&#039;s Conquest Lager,Wylam Reality Asylum,Ansbach &amp; Hobday The Enigma Code IPA,Moncada Formosa,Burnt Mill 1000 Days,Deya Sinister Baltic Porter,Left Hand Giant Compulsory Fun IPA 6.5% (outstanding) and Tiny Rebel Imperial Porter Chocolate Stay Puft 9%(unbelievably good).Measures are served in thirds,halves,schooners and pints with some classy glassware,while there is a corkage charge for bottles and cans from the shelves.Besides beers there are wines and spirits and the emphasis here is on excellence,but that comes at a price.&pound;3 for a third of 9% Tiny Rebel may surprise but I was happy with the result.<br />
+The service is knowledgeable ,the muzak was cool and the surrounding hip but welcoming.If you like to swing the bat at very high ABV beers bursting with hop and malt character then suspend your CAMRA biases and give this place a go.I will be back.</p>
+<p class="Reviewer">On 6<sup>th</sup> January 2019 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 1916 recommendations about 1916 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review123185" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> left this review about Real Ale</h6>
+<p class="old">This so-called &#039;liquid delicatessen&#039; opened just a few weeks ago and is in effect an off-licence/bar shop conversion situated in an attractive bijou parade of shops just 50 yards from the Prince Alfred. It&#039;s a small venue with plain white walls, a pale boarded floor, ceiling fans, muted music and brightly lit with the little bar at the rear behind which are dispensed eight beers from keg; so no real ale then. The left and right walls are flanked with glass-fronted chiller cabinets displaying a wide variety of beers in cans, bottles and kegs as well as bottles of wine and an obligatory choice of gins which for some reason people are drinking again, Hogarth&#039;s message seemingly having fallen on deaf ears. The bar doesn&#039;t sell food, just crunchy bar snacks. There are two high tables each with two stools to the windows and a more centrally located high setup to seat four; there are stairs down to further seating but as the area went unexplored, their height was undetermined.<br />
+On our visit we were greeted by a very charming and friendly member of staff who brought us our drinks, as is obviously the custom here, a couple of minutes after ordering.<br />
+As mentioned, there are eight beers dispensed from keg via a wall to the bar&#039;s rear, all available in not just pints but also in 2/3rds and litres. We both plumped for the Moncada&#039;s Formosa Real Ale as it was the only beverage to include the words &#039;real&#039; and &#039;ale&#039; in the description. I wasn&#039;t what I would call real ale though I&#039;m happy to be corrected, but it was quite pleasant enough being cool, the sort of thing I&#039;d welcome in a pub garden in the height of summer. It was also reasonably priced too at &pound;3.25. A pint would have cost &pound;4.25 and a litre &pound;6.45.<br />
+This is an interesting little place and may well be a good off-licence but as a drinking establishment I think it&#039;s a little flawed. It&#039;s not exactly homely being a little like drinking in a doctor&#039;s waiting room; it doesn&#039;t exactly cosset and it&#039;s certainly not spacious.<br />
+That said, I hope it survives and is probably worth a visit if only for the mild novelty factor.</p>
+<p class="Reviewer">On 13<sup>th</sup> October 2017 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 873 recommendations about 860 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Real Ale</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of Real Ale - <a href="http://realale.com/pages/little-venice" title="Submitted by:- Tris C" target="_blank">realale.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="269579668354">Facebook - <a href="https://www.facebook.com/Real-Ale-269579668354/" target="_blank" rel="nofollow">Real Ale</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/85778/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Tris39">Tris C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.52463070000000, -0.18455240000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.52463070000000, -0.18455240000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> London Paddington, 0.7 miles, 13 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> London Marylebone, 1.19 miles, 23 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Kilburn High Road, 1.2 miles, 23 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('iknyHn`c@@y@zBKdA}@LGPK\\i@`EcHZa@NIjCaEPb@NOPa@LAXJ@FXi@Rq@dCeE?m@HTTXTDPBnCeFr@eAL\\^PDSr@yAl@nAL@DAXl@NYlBwC', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('iknyHn`c@@y@zBKdA}@LGPK~EmIZa@NI|C}EZk@CE@QBIhAoBDUbAqBJYDc@EQLi@BwMH?LkQGQMCED_@kAGa@?s@[yBSg@K_@O[HIBWEIlAaBmB{GgAmEuDuQvAu@y@mESLYsD', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('iknyHn`c@?~@\\n@kEdHq@|@_CrDcFtN?V_@hAHTORKYcDpFKSAGE?eC}Bg@UKCoABgAGs@Ku@QUBoB`@MHEGQEKBCJe@]OCWFAGGMI@ONm@|@_@v@Yb@EXkEvEsBxBUPGAuIyFWU_Ai@UIG@w@z@o@wBE@o@uB', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.52463070000000,-0.18455240000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=85778">View all updates for Real Ale, W9</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        6<span class="sup">th</span> Jan 2019, 12:34
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a> amended by <a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        6<span class="sup">th</span> Jan 2019, 12:32
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11885778">No</span> <span id="discdetail11885778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Bar Billiards : <span id="fac10785778">No</span> <span id="discdetail10785778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Beer Festivals : <span id="fac11785778">No</span> <span id="discdetail11785778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Beer Garden : <span id="fac11485778">No</span> <span id="discdetail11485778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Car Park : <span id="fac11385778">No</span> <span id="discdetail11385778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Darts : <span id="fac11185778">No</span> <span id="discdetail11185778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Function Room : <span id="fac12385778">No</span> <span id="discdetail12385778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Hot Food : <span id="fac10385778">No</span> <span id="discdetail10385778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Jukebox : <span id="fac11285778">No</span> <span id="discdetail11285778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Karaoke : <span id="fac10685778">No</span> <span id="discdetail10685778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Live Music : <span id="fac10885778">No</span> <span id="discdetail10885778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Live TV Sports : <span id="fac11085778">No</span> <span id="discdetail11085778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Pinball : <span id="fac11685778">No</span> <span id="discdetail11685778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Pool Table : <span id="fac10485778">No</span> <span id="discdetail10485778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Quiz Night : <span id="fac10985778">No</span> <span id="discdetail10985778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Real Ale : <span id="fac10185778">No</span> <span id="discdetail10185778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Real Cider : <span id="fac11985778">No</span> <span id="discdetail11985778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>Wheelchair Access : <span id="fac12085778">No</span>  - <span id="discdetail12085778" class="discdetail" style="">WCs downstairs.</span> -   <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li><li>WiFi : <span id="fac11585778">Yes</span> <span id="discdetail11585778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 October 2017 by Tris C</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 26 picture(s)" title="Pub has 26 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 11 reviewer(s)" title="Pub has average rating of 7.5 from 11 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22729/" class="List1">The Prince Alfred</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 10 reviewer(s)" title="Pub has average rating of 7 from 10 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22748/" class="List1">Warwick Castle</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 26 picture(s)" title="Pub has 26 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 10 reviewer(s)" title="Pub has average rating of 7.5 from 10 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22747/" class="List1">The Warrington Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3.5 from 4 reviewer(s)" title="Pub has average rating of 3.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54685/" class="List1">Bridge House</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 6 reviewer(s)" title="Pub has average rating of 4 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22740/" class="List1">The Waterway</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 6 reviewer(s)" title="Pub has average rating of 5.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22745/" class="List1">The Hero of Maida</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 5 reviewer(s)" title="Pub has average rating of 5.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/22742/" class="List1">The Eagle</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 1 from 1 reviewer(s)" title="Pub has average rating of 1 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85945/" class="List1">Pergola</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

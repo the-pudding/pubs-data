@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Tabard pub in W4, London (Greater), W4 1LW : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Tabard" />
+  <meta name="keywords" content="The Tabard, 2  Bath Road, W4, London (Greater), Chiswick, Turnham Green, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Tabard in W4" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/24501_25000/24737_b622a199.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/24737/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.49562581146937" />
+<meta property="og:longitude" content="-0.25491714477539" />
+<meta property="og:street-address" content="2  Bath Road" />
+<meta property="og:locality" content="W4" />
+<meta property="og:region" content="London (Greater)" />
+<meta property="og:postal-code" content="W4 1LW" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Tabard in W4? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Tabard the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/24737/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Tabard in W4" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Tabard " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/24501_25000/24737_b622a199.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/24737/" />
+<meta name="geo.position" content="51.49562581146937;-0.25491714477539" />
+<meta name="geo.placename" content="The Tabard in W4" />
+<meta name="geo.region" content="UK" />
+<title>The Tabard in W4 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":24737},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(24737);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 24737;var pubaddress = "2  Bath Road";var pubname = "The Tabard";var pubpostcode = "W4 1LW";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/greater-london/" title="Pubs Galore : London (Greater) Page">London (Greater)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/w4/greater-london/" title="Pubs Galore : W4 Page">W4</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Tabard Page">The Tabard Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="v90rn00ljoci09pdvdspv1mg34" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/24737/" class="indisplay"><img src="/images/display/24501_25000/24737_b622a199.jpg?w=2" alt="Picture of The Tabard" /></a><br />  Image posted by <a href="/userinfo.php?name=PaulOfHorsham" class="indisplay">paulof horsham</a><br />
+  Submitted on Thursday, 18<sup>th</sup> April 2019<br />
+  With picture contributions to 1317 other pubs<br />
+<a href="/pubpictures/24737/" class="smallbutton">View all this pub's pictures</a> (14 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/24737/">Pub map</a><br /><a href="/pubreviews/24737/">Pub reviews (5)</a><br /><a href="/pubpictures/24737/">Pub pictures (15)</a><br /><a href="/core/pubaudit.php?id=24737" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Tabard, W4</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">2  Bath Road</span><br />
+
+
+<span class="town">W4</span><br />
+<span class="postcode">W4 1LW</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Taylor Walker (Spirit Pubs)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/chiswick/greater-london/">Chiswick</a>, <a href="/areas/turnham-green/greater-london/">Turnham Green</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Tabard  <span class="h2note">(Average Rating: <span id="averagerating"><b>7&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review133029" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> left this review about The Tabard</h6>
+<p>A first in here the other day and the westernmost pub in London that I&rsquo;ve ever visited. This is much as described as below except that it&rsquo;s now owned by Greene King &ndash; out of the frying pan, into the fire.<br />
+As mentioned, the pub was designed in 1880 by esteemed Hampstead architect Richard Norman Shaw with interior polychromatic glazed tilework by William de Morgan; a fireplace surround is apparently by artist and illustrator Walter Crane. The bar is generally central with a couple of rooms running off and a recessed snug to the rear. The floor is bare boarded and there is some quite ornately carved wood panelling. Out back there&rsquo;s an AstroTurf garden and steps leading up to the Tabard Theatre. There&rsquo;s food too, but this isn&rsquo;t a gastropub. Being a GK outlet, there&rsquo;s the obligatory games machine; de Morgan and Crane must be spinning in their graves.<br />
+It was a Saturday and the pub wasn&rsquo;t that full but despite this, the service was glacially slow. Once again, staff devote themselves to mixing cocktails and trudging about opening bottles of wine for the ladies who won&rsquo;t drink beer &ndash; this is a pub for God&rsquo;s sake!<br />
+Despite the Greene King stewardship, the beer choice was about the best I&rsquo;ve experienced from this stable. Six ales: GK IPA and Abbot of course, but also Titanic Plums&rsquo; Porter, Plain Ales Sheep Dip and Intrigue as well as Landlord at &pound;4.10, later &pound;4.45 a pint and good.<br />
+On balance, this is a good pub and certainly worth visiting. However, the ugly games machine and especially the slow service must result in a lower mark.</p>
+<p class="Reviewer">On 16<sup>th</sup> September 2018 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 873 recommendations about 860 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review76539" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=london+calling">john gray</a> left this review about The Tabard</h6>
+<p class="old">Another nice Chiswick pub with at times 6 -8 beers on. Although its grade two listed I am not overly impressed by its style. Was impressed by my Clarence and Fredricks -apa</p>
+<p class="Reviewer">On 9<sup>th</sup> November 2013 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 886 recommendations about 874 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review66423" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pub+Anorak">John Bonser</a> left this review about The Tabard</h6>
+<p class="old">Update &ndash; December 2012<br />
+<br />
+Now branded as a Taylor Walker pub, although the branding is more discreet than at The Packhorse and Talbot, several recent visits to this pub have found an interesting variety of beers served in good condition &ndash; Harviestoun Bitter and Twisted, East London Foundation Bitter, Bingham Doodle Stout amongst them.<br />
+<br />
+Friendly and knowledgeable staff contribute to what I consider to be a much improved all round pub, which has now gained a listing in CAMRA&rsquo;s 2013 Good Beer Guide &ndash; well deserved in my view.<br />
+<br />
+The pub is just round the corner from Turnham Green Tube ( District Line ), which I pass through most days of the week. I feel that more stop offs en route here are definitely on the cards.<br />
+<br />
+<br />
+Original review &ndash; January 2010<br />
+<br />
+The pub was built in 1880 as the pub for the commuter garden suburb of Bedford Park and the building is Grade 2 listed. An unusual notable external frontage gives way to 2 interconnecting bars, with some fine original wall-tiles in the room on the right being of particular note. The pub features in CAMRA&#039;s Regional London Inventory.<br />
+<br />
+The bar on the left has an adjoining food orientated dining area and an unusual sunken wood pannelled snug type area. There&#039;s some memorabilia from the pub cricket team - The Tabard Pilgrims - who are evidently very active. Next door there&#039;s a 60 seater theatre attached to the pub.<br />
+<br />
+On the pavement outside, a sandwich board tells us &quot;Best real ale choice or your money back&quot; and, on my recent Saturday afternoon visit, 4 real ales were on - Butcombe, Batemans XB, Rev James plus one other which I&#039;ve forgotten ( Spitfire?). A 5th pump had been serving Tribute, but it had run out. The Batemans XB - � 2.83p - was in good nick.<br />
+<br />
+I find it difficult to assess on a single visit where this pub is trying to position itself. On the one hand, the beer choice is welcomed in a Fullers dominated area and there&#039;s an active pub cricket team, but, on the other hand, there&#039;s no TV&#039;s for televised sport and no real pubby atmosphere or feel, which is discouraging. Food obviously plays a big part, but, unusually for the area, its of the pub grub variety and not gastro. The pub was virtually deserted on my visit and those few customers present were evidently not regulars.<br />
+<br />
+The jury&#039;s out on this one as far as I&#039;m concerned but, given its convenient location by the station, plus beer range, I&#039;m inclined to give it another go sometime.</p>
+<p class="Reviewer">On 7<sup>th</sup> January 2013 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 560 recommendations about 560 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/24737/">View more reviews of The Tabard (5)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Tabard</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Tabard - <a href="http://www.greeneking-pubs.co.uk/pubs/greater-london/tabard/" title="Submitted by:- Tris C" target="_blank">www.greeneking-pubs.co.uk</a></li>
+			<li>Randomness Guide to London - <a href="http://london.randomness.org.uk/wiki.cgi?Tabard,_W4_1LN" title="Submitted by:- Kake Pugh" target="_blank">Tabard entry</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="109972112398098">Facebook - <a href="https://www.facebook.com/thetabardpub/" target="_blank" rel="nofollow">The Tabard</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/24737/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.49562581146937, -0.25491714477539], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.49562581146937, -0.25491714477539]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> South Acton, 0.83 miles, 16 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Gunnersbury, 1.1 miles, 21 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Acton Central, 1.19 miles, 22 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('mwhyHtxp@BVR|@b@~FNtAZhRBhBGpBQhFKbDu@lHObBKx@_@fBSp@?lDQZwGnHeCrBeChBe@`AaBcC', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('mwhyHtxp@BVR|@b@~FNtAZhRBhBGpBQhFKbDT`Dh@~Dd@~Bp@hCIb@JLbBbEh@Il@Q|@u@H~C`@vHHLf@F@tDBtAt@hK`Ci@V`EL^RR^H@Z_A~CV\\?@r@z@HH', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('mwhyHtxp@Jp@yA|@Uw@oBWg@OeLiIaCwAe@Wi@?_@DqBd@}@JQCmADGCwCZEAmAj@UTuAdBsAvA{A`CgAzAs@p@gBpAcEbBSBSP}@|ASnAKtBU|A_AnDo@tB]tAAVAt@Mj@O`@_@f@s@ZFj@aBh@Dp@BdA`@J', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.49562581146937,-0.25491714477539], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=24737">View all updates for The Tabard, W4</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> Apr 2019, 22:01
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=PaulOfHorsham">paulof horsham</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> Apr 2019, 22:01
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=PaulOfHorsham">paulof horsham</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11824737">No</span> <span id="discdetail11824737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 June 2014 by ROB Camra</span></li><li>Bar Billiards : <span id="fac10724737">No</span> <span id="discdetail10724737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Tris C</span></li><li>Beer Garden : <span id="fac11424737">Yes</span> <span id="discdetail11424737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 August 2013 by aleand hearty</span></li><li>CAMRA Discount : <span id="fac10224737">Yes</span>  - <span id="discdetail10224737" class="discdetail" style="">10% </span> -   <span class="Reviewer">last updated 08 November 2014 by ROB Camra</span></li><li>Car Park : <span id="fac11324737">No</span> <span id="discdetail11324737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 August 2013 by aleand hearty</span></li><li>Child Friendly : <span id="fac12124737">Yes</span> <span id="discdetail12124737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 June 2014 by ROB Camra</span></li><li>Darts : <span id="fac11124737">No</span> <span id="discdetail11124737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Tris C</span></li><li>Dog Friendly : <span id="fac10524737">Yes</span> <span id="discdetail10524737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 June 2014 by ROB Camra</span></li><li>Function Room : <span id="fac12324737">Yes</span>  - <span id="discdetail12324737" class="discdetail" style="">Shared with live music on Saturdays.</span> -   <span class="Reviewer">last updated 16 September 2018 by Tris C</span></li><li>Hot Food : <span id="fac10324737">Yes</span> <span id="discdetail10324737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 August 2013 by aleand hearty</span></li><li>Jukebox : <span id="fac11224737">No</span> <span id="discdetail11224737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Tris C</span></li><li>Karaoke : <span id="fac10624737">No</span> <span id="discdetail10624737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Tris C</span></li><li>Live Music : <span id="fac10824737">Yes</span> <span id="discdetail10824737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 June 2014 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11024737">No</span> <span id="discdetail11024737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Tris C</span></li><li>Micropub : <span id="fac12224737">No</span> <span id="discdetail12224737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 06 August 2018 by Tris C</span></li><li>Pinball : <span id="fac11624737">No</span> <span id="discdetail11624737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Tris C</span></li><li>Pool Table : <span id="fac10424737">No</span> <span id="discdetail10424737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Tris C</span></li><li>Quiz Night : <span id="fac10924737">No</span> <span id="discdetail10924737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2018 by Tris C</span></li><li>Real Ale : <span id="fac10124737">Yes</span> <span id="discdetail10124737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 August 2013 by aleand hearty</span></li><li>Real Cider : <span id="fac11924737">Yes</span> <span id="discdetail11924737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 June 2014 by ROB Camra</span></li><li>Wheelchair Access : <span id="fac12024737">Yes</span>  - <span id="discdetail12024737" class="discdetail" style="">Disabled WC.</span> -   <span class="Reviewer">last updated 16 September 2018 by Tris C</span></li><li>WiFi : <span id="fac11524737">Yes</span> <span id="discdetail11524737" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 June 2014 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 11pm</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>12noon - Midnight</td></tr>
+<tr><td>Friday</td><td>12noon - Midnight</td></tr>
+<tr><td>Saturday</td><td>12noon - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84849/" class="List1">Hack &amp; Veldt</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 6 reviewer(s)" title="Pub has average rating of 6 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24730/" class="List1">The Packhorse &amp; Talbot</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81181/" class="List1">The Crown</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 4 reviewer(s)" title="Pub has average rating of 6 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24732/" class="List1">The Roebuck</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 5 reviewer(s)" title="Pub has average rating of 7 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24721/" class="List1">George IV</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 2 reviewer(s)" title="Pub has average rating of 7 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81182/" class="List1">The Italian Job</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2 from 1 reviewer(s)" title="Pub has average rating of 2 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65405/" class="List1">No 197 Chiswick Fire Station</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24725/" class="List1">Piano</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

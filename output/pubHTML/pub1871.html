@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Royal Oak pub in Farnham Common (near Slough), Berkshire, SL2 3HS : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Royal Oak" />
+  <meta name="keywords" content="The Royal Oak, Beaconsfield Road, Farnham Common, Slough, Berkshire, , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Royal Oak in Farnham Common" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/1501_2000/1871_066e71d9.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/1871/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.56070700000000" />
+<meta property="og:longitude" content="-0.61644800000000" />
+<meta property="og:street-address" content="Beaconsfield Road" />
+<meta property="og:locality" content="Farnham Common" />
+<meta property="og:region" content="Berkshire" />
+<meta property="og:postal-code" content="SL2 3HS" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Royal Oak in Farnham Common? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Royal Oak the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/1871/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Royal Oak in Farnham Common" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Royal Oak " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/1501_2000/1871_066e71d9.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/1871/" />
+<meta name="geo.position" content="51.56070700000000;-0.61644800000000" />
+<meta name="geo.placename" content="The Royal Oak in Farnham Common" />
+<meta name="geo.region" content="UK" />
+<title>The Royal Oak in Farnham Common (near Slough) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":1871},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(1871);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 1871;var pubaddress = "Beaconsfield Road";var pubname = "The Royal Oak";var pubpostcode = "SL2 3HS";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/berkshire/" title="Pubs Galore : Buckinghamshire Page">Buckinghamshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/slough/berkshire/" title="Pubs Galore : Slough Page">Slough</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/farnham-common/buckinghamshire/" title="Pubs Galore : Farnham Common Page">Farnham Common</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Royal Oak Page">The Royal Oak Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="aua4sigdqt05imq2i5b5cstuc5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/1871/" class="indisplay"><img src="/images/display/1501_2000/1871_066e71d9.jpg?w=2" alt="Picture of The Royal Oak" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Tuesday, 8<sup>th</sup> September 2015<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/1871/" class="smallbutton">View all this pub's pictures</a> (1 more image)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/1871/">Pub map</a><br /><a href="/pubreviews/1871/">Pub reviews (2)</a><br /><a href="/pubpictures/1871/">Pub pictures (2)</a><br /><a href="/core/pubaudit.php?id=1871" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Royal Oak, Slough</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Beaconsfield Road</span><br />
+
+<span class="town">Farnham Common</span><br />
+<span class="postaltown">Postal town: Slough</span><br />
+<span class="postcode">SL2 3HS</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01753642032</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Chef & Brewer (Spirit Pubs)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/farnham-common/buckinghamshire/">Farnham Common</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Royal Oak  <span class="h2note">(Average Rating: <span id="averagerating"><b>5&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review99340" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Royal Oak</h6>
+<p class="old">Small Chef &amp; Brewer ticking most of their usual boxes. L-shaped interior in a decent state of decor with the chain&rsquo;s regular faux-rustic finishing. Just three ales and a dull choice too: Bombardier (so-so), GK IPA and London Pride. Nowt to really recommend it as a destination, very functional compared to others in the same stable.</p>
+<p class="Reviewer">On 14<sup>th</sup> September 2015 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review30439" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Gann">Steve of N21</a> left this review about The Royal Oak</h6>
+<p class="old">The Royal Oak is a fairly large food orientated pub belonging to the Chef and Brewer chain, which is situated in the village of Farnham Common on the main A40 route from Junction 2 of the M40 to Slough. Fortunately it&rsquo;s a lot closer to the M40 junction than it is to Slough.<br />
+Although it&rsquo;s primarily focussed on the food menu, the pub still has a decent size bar area to the left of the main door as you enter, which is subdivided into three distinct sections supporting a decent sized brick fireplace in the main one and a couple of fruit machines to the smaller sections around the back of the central bar serving area.<br />
+The dining section to the right of the entrance is larger and again subdivided into three sections. The decor throughout, although obviously a modern refurbishment, keeps a traditional pub feel, with loads of solid wood beams and wooden tables and chairs.<br />
+The pub also benefits from a large car park and a sizeable benched outside drinking area to the side and back of the pub.<br />
+There are three hand pumps on the bar and these were Fullers London Pride, Adnams Bitter and a guest pump which was supporting the tempting, but completely unhelpful &lsquo;guest beer coming soon&rsquo; clip.<br />
+The pride was decent enough and all in all, if I had to divert off the M40 to find somewhere to eat and drink I would certainly ignore the services on Junction 2 and drive the extra couple of miles to this place.</p>
+<p class="Reviewer">On 17<sup>th</sup> July 2010 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 1577 recommendations about 1528 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Royal Oak</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="574648045940386">Facebook - <a href="https://www.facebook.com/The-Royal-Oak-Farnham-Common-Slough-574648045940386/" target="_blank" rel="nofollow">The Royal Oak Farnham Common, Slough</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/1871/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.56070700000000, -0.61644800000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.56070700000000, -0.61644800000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Burnham (Berks), 3.86 miles, 1 hr 14 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Gerrards Cross, 4.36 miles, 1 hr 24 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Seer Green, 5.09 miles, 1 hr 38 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('}iuyH`hwBvABLIj@y@p@P?kAdPDEnMdMPvFPlDR`C\\`BLbA?x@RxB^zAO|EgBxAS`FfAr@JhDg@|@ETBLVLlAVb@lEhAtBVfAB|COn@F`EnB~@^fHgA`B]Za@v@Jr@vEBnAE`EKpB?`BJ|A`@M~@?nCVItEMtCdQvCOzGKtLBRJLxIPSdh@DnE`@rEDbCWxL|H\\C~AD^NNnBLKfL~@Iz@{@h@yAb@c@j@[l@SbAIr@B|@Nj@^h@~@Xr@f@v@VRl@PjIRl@Rh@j@?N|@jCfAsALYL|BHfD', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('}iuyH`hwBvABLIj@y@p@P?kAsJG_D@mJMAo@Ga@Su@wA_DIYEg@u@eVQoDMwAG]{BeEgAyAoAkA_CcB{@w@g@u@y@y@NoBCgBKaDBcBv@gJjA}LiDwEqF}HiBu@yJcAoJzD{H_B\\qBd@{FaAkGeAyIoAaIMoDwA_PCw@Aq@UoC{@eIs@gGu@qFWeCy@wGg@iCg@qA?uAQuAcCsLIcAi@m@g@a@cAYiAGQAaCe@kGw@cD_AaCcBeAaB}AsAqGyCmCuAiDeCaBwAsB_DSkBg@SwAaC{@oBO|@WQoAf@i@Be@Q]i@oA}CQu@Sk@[oMxA}Cc@e@qC{DKYj@kF`DkKFABEbCgILK|@iAXOXWH?AD', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('}iuyH`hwBvABLIj@y@p@P?kAsJG_D@mJMAo@Ga@Su@wA_DIYAQ{B[_Ey@cDBiIk@{E_@{Bg@sBs@u@uA_B_Fs@mA{EkIyAY{BeAkCeAw@aA_@_BSaCEkG[eES?cBsCW{@AOu@g@wBoAgBKuBBiAEgB_@yBiAcKyDgBcAsBmBwAkBi@kB]sCMcC?kBHmC?_DIuBa@yC[gBcCuJQ{AA_BaCTq@Uq@PmAP{F_BqB?_DmEoDwEu@qBaCiBe@m@kAe@s@ZSAWr@U`@StAWJg@vC{G|WaH~PqFhJu@xB{@jDaBYgAYoAQ_AWkAi@q@_Ao@qB_@|B_@NmKwGqA_@{E^uBFs@~BiAlAsEvL{AoCo@aAmC_DM\\_DgAwDnAe@rCoA~CaBrDqFhPp@f@r@bAh@vBj@vA`@vAJzACzA[jBq@lC?p@Ot@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.56070700000000,-0.61644800000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=1871">View all updates for The Royal Oak, Farnham Common</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        14<span class="sup">th</span> Sep 2015, 22:04
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        8<span class="sup">th</span> Sep 2015, 23:01
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac1181871">No</span> <span id="discdetail1181871" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 January 2017 by ROB Camra</span></li><li>Beer Festivals : <span id="fac1171871">No</span> <span id="discdetail1171871" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 January 2017 by ROB Camra</span></li><li>Beer Garden : <span id="fac1141871">Yes</span> <span id="discdetail1141871" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 January 2017 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac1021871">Yes</span>  - <span id="discdetail1021871" class="discdetail" style="">10% </span> -   <span class="Reviewer">last updated 30 January 2017 by ROB Camra</span></li><li>Car Park : <span id="fac1131871">Yes</span> <span id="discdetail1131871" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 January 2017 by ROB Camra</span></li><li>Child Friendly : <span id="fac1211871">Yes</span> <span id="discdetail1211871" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2015 by Quinno _</span></li><li>Darts : <span id="fac1111871">No</span> <span id="discdetail1111871" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 September 2015 by Quinno _</span></li><li>Dog Friendly : <span id="fac1051871">Yes</span> <span id="discdetail1051871" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 January 2017 by ROB Camra</span></li><li>Hot Food : <span id="fac1031871">Yes</span> <span id="discdetail1031871" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 January 2017 by ROB Camra</span></li><li>Micropub : <span id="fac1221871">No</span> <span id="discdetail1221871" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 January 2017 by ROB Camra</span></li><li>Real Ale : <span id="fac1011871">Yes</span> <span id="discdetail1011871" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 January 2017 by ROB Camra</span></li><li>Real Cider : <span id="fac1191871">Yes</span> <span id="discdetail1191871" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 January 2017 by ROB Camra</span></li><li>Wheelchair Access : <span id="fac1201871">Yes</span> <span id="discdetail1201871" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 January 2017 by ROB Camra</span></li><li>WiFi : <span id="fac1151871">Yes</span> <span id="discdetail1151871" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 January 2017 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - 11pm</td></tr>
+<tr><td>Saturday</td><td>12noon - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83279/" class="List1">The Foresters</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 2 reviewer(s)" title="Pub has average rating of 7.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1874/" class="List1">Stag &amp; Hounds</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/1882/" class="List1">The Victoria</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

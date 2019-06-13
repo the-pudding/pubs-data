@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Harkers pub in York, North Yorkshire, YO1 8QN : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Harkers" />
+  <meta name="keywords" content="Harkers, 1 St Helens Square, York, North Yorkshire, York Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Harkers in York" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/56001_56500/56454_bc59b66e.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/56454/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="53.96010462797933" />
+<meta property="og:longitude" content="-1.08476153372953" />
+<meta property="og:street-address" content="1 St Helens Square" />
+<meta property="og:locality" content="York" />
+<meta property="og:region" content="North Yorkshire" />
+<meta property="og:postal-code" content="YO1 8QN" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Harkers in York? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Harkers the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/56454/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Harkers in York" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Harkers " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/56001_56500/56454_bc59b66e.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/56454/" />
+<meta name="geo.position" content="53.96010462797933;-1.08476153372953" />
+<meta name="geo.placename" content="Harkers in York" />
+<meta name="geo.region" content="UK" />
+<title>Harkers in York : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":56454},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(56454);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 56454;var pubaddress = "1 St Helens Square";var pubname = "Harkers";var pubpostcode = "YO1 8QN";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/north-yorkshire/" title="Pubs Galore : North Yorkshire Page">North Yorkshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/york/north-yorkshire/" title="Pubs Galore : York Page">York</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Harkers Page">Harkers Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="u8n01autmivl6498gijpap9cf1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/56454/" class="indisplay"><img src="/images/display/56001_56500/56454_bc59b66e.jpg?w=2" alt="Picture of Harkers" /></a><br />  Image posted by <a href="/userinfo.php?name=Brainypool" class="indisplay">Jon B</a><br />
+  Submitted on Sunday, 21<sup>st</sup> April 2019<br />
+  With picture contributions to 190 other pubs<br />
+<a href="/pubpictures/56454/" class="smallbutton">View all this pub's pictures</a> (14 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/56454/">Pub map</a><br /><a href="/pubreviews/56454/">Pub reviews (9)</a><br /><a href="/pubpictures/56454/">Pub pictures (15)</a><br /><a href="/core/pubaudit.php?id=56454" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Harkers, York Central, York</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">1 St Helens Square</span><br />
+
+
+<span class="town">York</span><br />
+<span class="postcode">YO1 8QN</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01904672795</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Nicholsons (Mitchells & Butlers)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/york-central/north-yorkshire/">York Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by Harkers</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/YorkHarkers" target="_blank"><img src="https://pbs.twimg.com/profile_images/694910123102314496/hoFK1B6i_normal.jpg" alt="HarkersYork" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/YorkHarkers" target="_blank">HarkersYork</a></strong>
+Get out of the rain and warm up with one of our favourite whiskys: Woodford Reserve!<a href="http://twitter.com/search?q=%23whisky" target="_blank"> #whisky</a><a href="http://twitter.com/search?q=%23drinks" target="_blank"> #drinks</a><a href="http://twitter.com/search?q=%23Harkers" target="_blank"> #Harkers</a> <a href='https://t.co/VyShOzVNvN' target='_blank'>https://t.co/VyShOzVNvN</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/YorkHarkers/status/1138777167511379969">about 15 hours ago</a> from <a href="https://r4e-social-oauth.reputation.com/" rel="nofollow">Reputation.com-Social</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/YorkHarkers" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/YorkHarkers" target="_blank">HarkersYork</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Harkers  <span class="h2note">(Average Rating: <span id="averagerating"><b>6</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review116181" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=conwway">Alex Conway</a> left this review about Harkers</h6>
+<p class="old">This place is an absolute joke. Aside from the awful clientele ( not the rough and ready kind,  worse still the rich middle classes who have too much money and think its acceptable to behave like an utter nob head simply because they have a few quid). This place caters to these types and it is always rammed on a weekend with a good number of weekend tourists to suit usually from the norths east and usually drunken slobs. The management in this place is a total joke along with the beer prices.  &pound;4.30 I was asked for a pint of landlord I kid you not! When I asked why such stupid pricing I was told &ldquo;its Christmas prices&rdquo; which is probably the stupidest thing I&rsquo;ve ever heard in a pub, Does my girlfriend get Christmas pay then over the Christmas period?  OF COURSE NOT!<br />
+I was then confronted by someone proclaiming to be the &ldquo;cellar master&rdquo; who heard me having issue with his pub and beer  and received a sermon on how he looks after his beers and carefully makes sure each one is of top quality which I found hysterical, laughed very loudly and then told him that was all complete B****ks  and that the world&rsquo;s most expensive pint of Landlord was sharp, bitter, lifeless and unconditioned (which it defiantly was although judging by my mood at this point I probably would have told the cocky sod the same thing even if it was perfect) plus a few other remarks that are probably best unrepeated. <br />
+Hard working but understaffed bar workers do their best and are really unappreciated, especially a pretty petite brunette who no matter how many scrotes scream down her neck stayed professional and competent, much credit to her.  But management is utterly incapable of running a tight ship and with all the drunken louts in here on a weekend not even the seven ale pumps will get me to return. It&rsquo;s a bank conversion so there are high ceilings and lots of tables and chairs scattered around the large room in a traditional yet contemporary pub style but it&rsquo;s all superficial to the fact that this is a terrible place full of terrible people and so utterly expensive it hurts. Had it not cost &pound;4.30 I think I would have lobbed it straight back over the bar. For what it&rsquo;s worth John Smiths cask and Nicholson&rsquo;s pale are the permanents with the rest changing but just don&rsquo;t bother. It&rsquo;s not actually a 5 but purely for the way it is it can&rsquo;t score any higher.  The Old white Swan is a much better bet for a Nicolson&rsquo;s pub in York.</p>
+<p class="Reviewer">On 15<sup>th</sup> March 2017 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 424 recommendations about 424 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review114766" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Zaphod">custodian 42</a> left this review about Harkers</h6>
+<p class="old">Hadn&#039;t been in here for many a year and was pleased with the real ale selection. Will probably revisit.</p>
+<p class="Reviewer">On 26<sup>th</sup> January 2017 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 1391 recommendations about 1390 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review86912" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=hondo">hondo .</a> left this review about Harkers</h6>
+<p class="old">Split level Nicholson&#039;s pub 7 real ales and food served.</p>
+<p class="Reviewer">On 6<sup>th</sup> September 2014 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 2564 recommendations about 2508 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/56454/">View more reviews of Harkers (9)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Harkers</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="460906220643197">Facebook - <a href="https://www.facebook.com/harkersyork/" target="_blank" rel="nofollow">Harkers</a></li></ul><ul id="Custom2"><li class="twitlink" id="1162986062">Twitter - <a href="https://twitter.com/YorkHarkers" target="_blank" rel="nofollow">HarkersYork</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/56454/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Orderaround">Steve Lovell</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([53.96010462797933, -1.08476153372953], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([53.96010462797933, -1.08476153372953]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> York, 0.5 miles, 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Poppleton, 3.29 miles, 1 hr 3 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Hammerton, 9.13 miles, 2 hr 56 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('wajhI|zrEDHHS@@ETy@~By@xBQp@jBpBtAxBtAxD`@`A~@jCDNAXCLMRMlAXFrApD@PSx@`@bAWh@M^?`@IL?|AC??Tf@@dAN', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('wajhI|zrEDHHS@@ETy@~By@xBYdAYh@Qj@Cb@?PHr@H`@NNL@L\\@VUt@IHJtADJIj@EDCF@RIV?TOV@RBNKNGT?T@HDDBNc@bD[`C]hD?`@`Bx@E\\?l@CFo@lGQfA_@`B{@`DH?g@rB{A`KsArEy@pCaA`Gs@|Ea@|CAVYnBA^IHe@bDxCr@BrHGdHBz@yDhAFvA?LBB@`Ag@vAIp@Nx@RjAPrBIHbAtEr@|CX|@I`@?JvAjFVlA@JE\\@NLXYl@o@dBi@vBUlAU`By@fIS`Ba@bBeBvF}@dDkEhNwFhQo@zAeDpGgBzDcCdHwF~RsAxFoA|FSdBQhCWlGGz@QhAUjAA~AB\\Ab@IXINa@zBGtAU~HM`Bo@lEq@b@UCYBgCj@oAf@iCjAiBfAEWBA@BDESmB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('wajhI|zrEDHHS@@ETy@~By@xBYdAYh@Qj@Cb@?PHr@H`@NNL@L\\@VUt@IHJtADJIj@EDCF@RIV?TOV@RBNKNGT?T@HDDBNc@bD[`C]hD?`@`Bx@E\\?l@CFo@lGQfA_@`B{@`DH?g@rB{A`KsArEy@pCaA`Gs@|Ea@|CAVYnBA^IHe@bDxCr@BrHGdHBz@yDhAFvA?LBB@`Ag@vAIp@Nx@RjAPrBIHbAtEr@|CX|@I`@?JvAjFVlA@JE\\@NLXYl@o@dBi@vBUlAU`By@fIS`Ba@bBeBvF}@dDkEhNwFhQo@zAeDpGgBzDcCdHwF~RsAxFoA|FSdBQhCWlGGz@QhAUjAHj@@hADVHPOXG~@KJa@nAO`DC|BEnBE~@g@tDUnAC^SlA]b@Y~BgGnl@WrCUbEMxDG`F@le@GvGGrCWjG?vBLpFBlBEnB]|FInBCvA?rDGjBSdCYrBgEbWiExVcJfl@{BlOUfCkAnPUlCWnB{@jF_M|r@wBfMo@fDo@vC_ArD{@zC]x@kCzESr@Y`BaIhl@a@rCk@bDoEhT{@vDcBxG}@~DoCrMkCtNiFvTaCjReAfHeCfNsFxYw@~DoA~FYbBYbC[rB{BrK]xBe@hEPr@~@xOHxB?zAGvBKhBm@dDgCpEOdOw@f]s@~Se@jLQnDdJ~D\\f@dAvE`BdF', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.96010462797933,-1.08476153372953], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=56454">View all updates for Harkers, York</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        21<span class="sup">st</span> Apr 2019, 10:24
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Brainypool">Jon B</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        21<span class="sup">st</span> Apr 2019, 10:02
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Brainypool">Jon B</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11856454">No</span> <span id="discdetail11856454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li><li>Bar Billiards : <span id="fac10756454">No</span> <span id="discdetail10756454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li><li>Beer Festivals : <span id="fac11756454">No</span> <span id="discdetail11756454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li><li>Beer Garden : <span id="fac11456454">No</span> <span id="discdetail11456454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 August 2013 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10256454">No</span>  - <span id="discdetail10256454" class="discdetail" style="">Discount withdrawn</span> -   <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li><li>Car Park : <span id="fac11356454">No</span> <span id="discdetail11356454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li><li>Child Friendly : <span id="fac12156454">Yes</span> <span id="discdetail12156454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li><li>Darts : <span id="fac11156454">No</span> <span id="discdetail11156454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 August 2013 by ROB Camra</span></li><li>Hot Food : <span id="fac10356454">Yes</span> <span id="discdetail10356454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li><li>Jukebox : <span id="fac11256454">No</span> <span id="discdetail11256454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li><li>Karaoke : <span id="fac10656454">No</span> <span id="discdetail10656454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li><li>Live Music : <span id="fac10856454">No</span> <span id="discdetail10856454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11056454">No</span> <span id="discdetail11056454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li><li>Micropub : <span id="fac12256454">No</span> <span id="discdetail12256454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li><li>Pinball : <span id="fac11656454">No</span> <span id="discdetail11656454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li><li>Pool Table : <span id="fac10456454">No</span> <span id="discdetail10456454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li><li>Real Ale : <span id="fac10156454">Yes</span> <span id="discdetail10156454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li><li>Real Cider : <span id="fac11956454">No</span> <span id="discdetail11956454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li><li>WiFi : <span id="fac11556454">Yes</span> <span id="discdetail11556454" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 January 2017 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>10am - 10:30pm</td></tr>
+<tr><td>Monday</td><td>10am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>10am - 11pm</td></tr>
+<tr><td>Wednesday</td><td>10am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>10am - 11pm</td></tr>
+<tr><td>Friday</td><td>10am - Midnight</td></tr>
+<tr><td>Saturday</td><td>10am - 1am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 11 recommendation(s)" title="Pub has 11recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 9 reviewer(s)" title="Pub has average rating of 6.5 from 9 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54089/" class="List1">Lendal Cellars</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 11 recommendation(s)" title="Pub has 11recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 7 reviewer(s)" title="Pub has average rating of 5.5 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/43581/" class="List1">Judge&#039;s Lodgings</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62623/" class="List1">City Screen</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62652/" class="List1">Revolution</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56438/" class="List1">The Graduate</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82008/" class="List1">The Drawing Board</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 24 picture(s)" title="Pub has 24 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 14 recommendation(s)" title="Pub has 14recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 10 reviewer(s)" title="Pub has average rating of 7 from 10 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/43624/" class="List1">Punch Bowl</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/58606/" class="List1">Pitcher and Piano</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

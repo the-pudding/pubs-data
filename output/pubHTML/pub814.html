@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Off the Rails pub in Weston Central, Weston Super Mare, Somerset, BS23 1XY : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Off the Rails" />
+  <meta name="keywords" content="Off the Rails, Station Road, Weston Super Mare, Somerset, Weston Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Off the Rails in Weston Super Mare" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/501_1000/814_3a74f2e3.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/814/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.34458326996596" />
+<meta property="og:longitude" content="-2.97186344861984" />
+<meta property="og:street-address" content="Station Road" />
+<meta property="og:locality" content="Weston Super Mare" />
+<meta property="og:region" content="Somerset" />
+<meta property="og:postal-code" content="BS23 1XY" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Off the Rails in Weston Super Mare? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Off the Rails the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/814/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Off the Rails in Weston Super Mare" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Off the Rails " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/501_1000/814_3a74f2e3.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/814/" />
+<meta name="geo.position" content="51.34458326996596;-2.97186344861984" />
+<meta name="geo.placename" content="Off the Rails in Weston Super Mare" />
+<meta name="geo.region" content="UK" />
+<title>Off the Rails in Weston Central, Weston Super Mare : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":814},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(814);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 814;var pubaddress = "Station Road";var pubname = "Off the Rails";var pubpostcode = "BS23 1XY";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/somerset/" title="Pubs Galore : Somerset Page">Somerset</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/weston-super-mare/somerset/" title="Pubs Galore : Weston Super Mare Page">Weston Super Mare</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Off the Rails Page">Off the Rails Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="vm9r2njulpsfhpgm5e7t16i7d0" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/814/" class="indisplay"><img src="/images/display/501_1000/814_3a74f2e3.jpg?w=1" alt="Picture of Off the Rails" /></a><br />  Image posted by <a href="/userinfo.php?name=bcfczuluarmy" class="indisplay">Jonathan Wilde</a><br />
+  Submitted on Friday, 16<sup>th</sup> May 2014<br />
+  With picture contributions to 3997 other pubs<br />
+<a href="/pubpictures/814/" class="smallbutton">View all this pub's pictures</a> (8 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/814/">Pub map</a><br /><a href="/pubreviews/814/">Pub reviews (6)</a><br /><a href="/pubpictures/814/">Pub pictures (9)</a><br /><a href="/core/pubaudit.php?id=814" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Off the Rails, Weston Central, Weston Super Mare</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Station Road</span><br />
+
+
+<span class="town">Weston Super Mare</span><br />
+<span class="postcode">BS23 1XY</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01934415109</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/weston-central/somerset/">Weston Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Off the Rails  <span class="h2note">(Average Rating: <span id="averagerating"><b>7&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review116991" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about Off the Rails</h6>
+<p class="old">Funny little place, with a compact bar accessed from the station forecourt linked to an old-fashioned caf&eacute; with its door opening onto the &#039;up&#039; platform.  Although I was only there briefly, I got the impression that most of the other customers were locals rather than travellers (and the barmaid didn&#039;t go out of her way to stop chatting and start serving).  Two Cottage beers on the handpumps: Duchess and Mosquito (&pound;1.60, half).</p>
+<p class="Reviewer">On 15<sup>th</sup> April 2017 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review60369" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about Off The Rails</h6>
+<p class="old">This is very much a pub of two halves &ndash; one half has a reasonably traditional pub appearance and has a frontage out on to the street. The other half has the appearance of a station caf&eacute; (which is what it is) and fronts on to the platform.<br />
+<br />
+Starting with the caf&eacute; half, this has a basic run-down appearance, with plastic chairs, a sandwich counter, ice-cream cabinet and a rack of newspapers for sale. Through the stone archway we come to the proper part of the pub. This too has a fairly basic and dated appearance, with some fetching red tile-effect lino around the floor near the bar, some rather worn carpet elsewhere and polystyrene tiles on the ceiling. <br />
+<br />
+The L-shaped bar counter itself is of a traditional dark wood design, with a shelf around the top for storing glasses. There are a number of bar stools here which seemed to be where most of the locals congregated. Some of their language was a little colourful.<br />
+<br />
+I&rsquo;d always perceived this as being a bit of a real ale Mecca in spite of it&rsquo;s unusual location, but there didn&rsquo;t seem to be that extensive a range on when I visited. The only two beers on tap were Gem and Bees Knees. Ciders were better represented with Thatcher&rsquo;s Gold, Heck&rsquo;s Farmhouse, Thatcher&#039;s Traditional, Thatcher&#039;s Dry and Blackthorn.</p>
+<p class="Reviewer">On 1<sup>st</sup> June 2012 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review52612" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pub+Anorak">John Bonser</a> left this review about Off The Rails</h6>
+<p class="old">Forming an integral part of the Weston Super Mare main line station building, with entrances both from the platform and the station concourse outside, is Off The Rails, a small single bar free house<br />
+<br />
+The pub has a traditional feel with a dark mahogany small L shaped bar counter, gantry and bar back, fixed padded seating and some exposed stonework remaining from the original station building. There&rsquo;s the inevitable framed railway engine prints, but the railway theme certainly does not dominate.<br />
+<br />
+As part of the premises, in an adjoining room, there&rsquo;s a rather old fashioned railway buffet selling newspapers, teas, coffees, rolls wrapped in clingfilm etc which is served by the same staff.<br />
+<br />
+On the basis of my recent Monday evening visit, the pub has a strong loyal local trade with many evident regulars occupying bar stools and who clearly were not waiting for trains. Rather tellingly, the entrance door from the platform closes at 7pm and access can only be gained from outside the station.<br />
+<br />
+Cider is very much the favoured drink of the boisterous, but good natured locals here, but there&rsquo;s two handpumps which very serving RCH Pitchfork and Cheddar Valley Potholer, both priced at &pound; 2.80p and in good nick. I was informed that the beer range is rotated weekly. The pub is listed in the 2011 CAMRA Good Beer Guide.<br />
+<br />
+There&rsquo;s not the same overall experience that you get in the better known real ale station bars at say, Dewsbury or Stalybridge &ndash; and the beer range is more restricted as well &ndash; but, in a town where decent pubs seem desperately thin on the ground, you might want to look this one out when in town</p>
+<p class="Reviewer">On 17<sup>th</sup> October 2011 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 560 recommendations about 560 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/814/">View more reviews of Off the Rails (6)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Off the Rails</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="1019943554786811">Facebook - <a href="https://www.facebook.com/westonsupermaretrainstation/" target="_blank" rel="nofollow">Off The Rails</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/814/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.34458326996596, -2.97186344861984], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.34458326996596, -2.97186344861984]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Weston-super-Mare, 0 miles, 0 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Weston Milton, 1.74 miles, 33 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Worle, 3.55 miles, 1 hr 8 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('igkxHzmcQBD', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('igkxHzmcQAIIEM@OJ]f@MSk@k@IMQAGDIPe@JUAcAIIIG}@?a@P_DsCOAYm@iMeBAJ}DL@JsE{Dm@~@mZ[uGg@}IKAGEIIES?QFUNOIsBGqCBuEZsGFs@lAeIsAsEgA_He@}CeCeOq@eEbAQp@c@T[|BaBFK?QAMaA_IEI|@_@?KLGWoBBAXxB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('igkxHzmcQAIIEM@OJ]f@MSk@k@IMQAGDIPe@JUAcAIIIG}@?a@P_DsCOAYm@iMeBAJ}DL@JsE{Dm@~@mZ[uGg@}IKAGEIIES?QFUNOIsBGqCBuEZsGFs@lAeIsAsEgA_He@}CeCeO[{@yCoQM_@@[M[iA}A\\cAZ_@vG}EHO_@_C_AcI[aAkAmIOO`@eAVe@d@g@^YaCeRIw@?yAUsBa@y@WeBHKOw@S}CMw@Ce@D[d@SZq@c@}@MYKy@@c@Fm@Na@jAyAXg@F[BU@YEgCd@wFZuCoAo@QO]aCIIe@SQ_@Y{AT]GGMs@AUDW?W{AwGjA{Do@y@}AwAq@q@iA_D}@yBw@eBMs@A[q@cAoAyCq@}@m@oAIU]iBEG{@o@_@c@[o@s@eAqAyCeCgFcAcC}CvA]EEDACAB?@ADHX', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.34458326996596,-2.97186344861984], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=814">View all updates for Off the Rails, Weston Super Mare</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        30<span class="sup">th</span> Apr 2017, 10:23
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        30<span class="sup">th</span> Apr 2017, 10:23
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac118814">No</span> <span id="discdetail118814" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by Jonathan Wilde</span></li><li>Bar Billiards : <span id="fac107814">No</span> <span id="discdetail107814" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by Jonathan Wilde</span></li><li>Beer Festivals : <span id="fac117814">No</span> <span id="discdetail117814" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by Jonathan Wilde</span></li><li>Beer Garden : <span id="fac114814">No</span> <span id="discdetail114814" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by Jonathan Wilde</span></li><li>CAMRA Discount : <span id="fac102814">No</span> <span id="discdetail102814" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by Jonathan Wilde</span></li><li>Car Park : <span id="fac113814">Yes</span>  - <span id="discdetail113814" class="discdetail" style="">Station 30 min short stay</span> -   <span class="Reviewer">last updated 16 May 2014 by Jonathan Wilde</span></li><li>Child Friendly : <span id="fac121814">Yes</span> <span id="discdetail121814" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by Jonathan Wilde</span></li><li>Darts : <span id="fac111814">No</span> <span id="discdetail111814" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by Jonathan Wilde</span></li><li>Jukebox : <span id="fac112814">Yes</span> <span id="discdetail112814" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by Jonathan Wilde</span></li><li>Karaoke : <span id="fac106814">Yes</span> <span id="discdetail106814" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by Jonathan Wilde</span></li><li>Micropub : <span id="fac122814">No</span> <span id="discdetail122814" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2016 by Blackthorn _</span></li><li>Pinball : <span id="fac116814">No</span> <span id="discdetail116814" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by Jonathan Wilde</span></li><li>Pool Table : <span id="fac104814">No</span> <span id="discdetail104814" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by Jonathan Wilde</span></li><li>Real Ale : <span id="fac101814">Yes</span> <span id="discdetail101814" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 October 2011 by moby duck</span></li><li>Real Cider : <span id="fac119814">No</span> <span id="discdetail119814" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by Jonathan Wilde</span></li><li>Wheelchair Access : <span id="fac120814">Yes</span> <span id="discdetail120814" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by Jonathan Wilde</span></li><li>WiFi : <span id="fac115814">Yes</span> <span id="discdetail115814" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 May 2014 by Jonathan Wilde</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8.5 from 2 reviewer(s)" title="Pub has average rating of 8.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56567/" class="List1">The Bristol Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56566/" class="List1">The Red Admiral</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/783/" class="List1">The Edge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/854/" class="List1">Bonds</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81005/" class="List1">The George and Dragon</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2 from 1 reviewer(s)" title="Pub has average rating of 2 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/79583/" class="List1">Strings</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/61884/" class="List1">Charles Dickins</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56564/" class="List1">Tavern Inn The Town</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

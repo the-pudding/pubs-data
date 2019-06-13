@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Fountain pub in Cowes, Isle Of Wight, PO31 7AW : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Fountain" />
+  <meta name="keywords" content="The Fountain, High Street, Cowes, Isle Of Wight, Cowes Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Fountain in Cowes" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/15001_15500/15115_875b8e92.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/15115/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="50.76289400000000" />
+<meta property="og:longitude" content="-1.29752800000000" />
+<meta property="og:street-address" content="High Street" />
+<meta property="og:locality" content="Cowes" />
+<meta property="og:region" content="Isle Of Wight" />
+<meta property="og:postal-code" content="PO31 7AW" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Fountain in Cowes? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Fountain the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/15115/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Fountain in Cowes" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Fountain " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/15001_15500/15115_875b8e92.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/15115/" />
+<meta name="geo.position" content="50.76289400000000;-1.29752800000000" />
+<meta name="geo.placename" content="The Fountain in Cowes" />
+<meta name="geo.region" content="UK" />
+<title>The Fountain in Cowes : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":15115},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(15115);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 15115;var pubaddress = "High Street";var pubname = "The Fountain";var pubpostcode = "PO31 7AW";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/isle-of-wight/" title="Pubs Galore : Isle Of Wight Page">Isle Of Wight</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/cowes/isle-of-wight/" title="Pubs Galore : Cowes Page">Cowes</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Fountain Page">The Fountain Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="4rgt5msk8b0iiem528fn3kh6j7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/15115/" class="indisplay"><img src="/images/display/15001_15500/15115_875b8e92.jpg?w=2" alt="Picture of The Fountain" /></a><br />  Image posted by <a href="/userinfo.php?name=RogerB" class="indisplay">Roger Button</a><br />
+  Submitted on Wednesday, 30<sup>th</sup> March 2011<br />
+  With picture contributions to 1175 other pubs<br />
+<a href="/pubpictures/15115/" class="smallbutton">View all this pub's pictures</a> (14 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/15115/">Pub map</a><br /><a href="/pubreviews/15115/">Pub reviews (2)</a><br /><a href="/pubpictures/15115/">Pub pictures (15)</a><br /><a href="/core/pubaudit.php?id=15115" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Fountain, Cowes Town, Cowes</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">High Street</span><br />
+
+
+<span class="town">Cowes</span><br />
+<span class="postcode">PO31 7AW</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01983292397</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Old English Inns (Greene King)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/cowes-town/isle-of-wight/">Cowes Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Fountain  <span class="h2note">(Average Rating: <span id="averagerating"><b>5</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review96804" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=ETA">E TA</a> left this review about Fountain Hotel</h6>
+<p class="old">Originally The Golden Fleece, this town hotel is currently owned by GK.  The large bar has a mix of slate and laminate flooring which only really serves to make it look a bit cheap and nasty &ndash; which it isn&rsquo;t.  There is a yard at the back used primarily as a smoking area, a shame as the prevailing wind brings the smoke into the bar.  The food was unimaginative and formulaic, while the chef seemed to spend more time in the smoking yard than the kitchen.  The staff were of the bearded-troll variety, the customers mainly tourists.  There was a gaming machine which looked a bit out of place.  Three ales on, all from GK.  I had a pint of Ferryman, an unremarkable bitter labelled, apparently, just for this hotel, though the staff couldn&rsquo;t really explain why.  The ambiance was peaceful, though, so it made for a good escape from the other noisy pubs in the vicinity.  Given the presence of other, better pubs within a few minutes&rsquo; walk, I don&rsquo;t see my coming back too often although I might include on a crawl.</p>
+<p class="Reviewer">On 1<sup>st</sup> July 2015 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 2299 recommendations about 2279 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review46784" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=RogerB">Roger Button</a> left this review about Fountain Hotel</h6>
+<p class="old">Built in 1771 (as the Golden Fleece) the Fountain Hotel is ideally situated close to the quayside where the Red Funnel passenger terminal is situated and is thus one of the first (and last) ports of call for anyone wanting a pint on the island. One early visitor was Thomas Jefferson who stayed here in 1789 following a state visit.<br />
+<br />
+The interior consists of a large knocked through main bar and to the rear a separate dining room. The pub has undergone a modern refurbishment and felt rather bland, featureless and lacking any character. Furnishings include the now pre-requisite high tables and sofa areas. There was a sole TV with both Sky &amp; ESPN sports available.    <br />
+<br />
+Being under Greene King ownership you shouldn&rsquo;t expect a great variety of beers although the 2 GK ales (IPA and Old Speckled Hen) were joined by Goddards Fuggle De Dum. Quality was fine (theyv are Cask Marque accredited) and prices reasonable enough for the area. I didn&rsquo;t get a good look at a menu but there were 2 for &pound;9.95 offers advertisd and they also open at 7.30am for breakfast which, given the lack of a local Wetherspoons is probably a decent option.<br />
+<br />
+The place is harmless enough but you feel it could and should be a bit better given its location and history. Beyond killing 20 minutes before the catamaran departs (which was the main purpose of our visit), I wouldn&rsquo;t particularly consider the Fountain as an essential pub stop whilst in town.</p>
+<p class="Reviewer">On 3<sup>rd</sup> June 2011 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 1238 recommendations about 1232 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Fountain</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="513588442064442">Facebook - <a href="https://www.facebook.com/FountainInnCowes/" target="_blank" rel="nofollow">The Fountain Inn</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/15115/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([50.76289400000000, -1.29752800000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([50.76289400000000, -1.29752800000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Ryde Esplanade, 8.17 miles, 2 hr 45 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Ryde St Johns Road, 8.35 miles, 2 hr 48 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Ryde Pier Head, 8.56 miles, 2 hr 53 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('esytHzm|FrAPnAt@j@Iv@k@bA}@LCd@HN?z@a@PW|@yBf@cA^g@\\]b@YDsAN}@hDqHv@uBp@aBhC_LA_@OY?q@CaAg@aDI{@AYFu@fAsCl@uAlBqEhB{En@cCbAi@zCq@d@Qp@qDjCRH}AzAuLTiALQjA{@FKBmIr@EbFFfAAn@GLE\\]Vi@F[PqCJUPElCa@pE]l@ItBq@`Aa@jHkEd@Ib@SDELED@Tc@rE}Jr@sA`@e@pB{CdAyAdAw@FTvAs@f@KnBUBYtAS|D}@?RrJoBAe@B_@P_Bl@yGvBuLv@qCnB{FpGeZReAHOPGd@c@vBwCR]`AwFd@oSJwFHgAp@yCxCuLlBeGf@}F^cBnDoG^{@z@yA^_BL{@@i@Iw@?]Hq@t@gDw@q@jBkSTqCj@RLsBDYL]RMZIpBCJKHQFUB[PoE@q@NkAL[NSVSLClAHZKh@q@JG^??[FGp@@@m@PIL@FgBReHN{IDo@JJBm@Z}B^uDBm@AUGMEcBMcAMs@Y}@wAkDw@yBcBuGcAgEQgAI_B@mBLgHLiDAeEOiC{@{HcAqGLKyDmYI{CEAn@yJMa@}D?[IcBaAe@Sc@IP{BAcAUaCS_BcAeFa@eBCcBI{MVwGNoCd@qGp@yHYs@QiA}@oHOi@_@i@c@W[]_@q@C_HH]Yu@U[GU?y@AGiAa@EGd@uQHaBPaA\\uA~CeLxDgO`@yApB}FRw@qB}EyBkE_A_CQ[cBqEGm@HgH?oBq@{LB{DDWVk@Fc@?aA]yGTE@wDAALaB}JyFJy@SMDQGGFSB_@EMDQKSQ?DOc@s@`@i@CC]b@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('esytHzm|FrAPnAt@j@Iv@k@bA}@LCd@HN?z@a@PW|@yBf@cA^g@\\]b@YDsAN}@hDqHv@uBp@aBhC_LA_@OY?q@CaAg@aDI{@AYFu@fAsCl@uAlBqEhB{En@cCbAi@zCq@d@Qp@qDjCRH}AzAuLTiALQjA{@FKBmIr@EbFFfAAn@GLE\\]Vi@F[PqCJUPElCa@pE]l@ItBq@`Aa@jHkEd@Ib@SDELED@Tc@rE}Jr@sA`@e@pB{CdAyAdAw@FTvAs@f@KnBUBYtAS|D}@?RrJoBAe@B_@P_Bl@yGvBuLv@qCnB{FpGeZReAHOPGd@c@vBwCR]`AwFd@oSJwFHgAp@yCxCuLlBeGf@}F^cBnDoG^{@z@yA^_BL{@@i@Iw@?]Hq@t@gDw@q@jBkSTqCj@RLsBDYL]RMZIpBCJKHQFUB[PoE@q@NkAL[NSVSLClAHZKh@q@JG^??[FGp@@@m@PIL@FgBReHN{IDo@JJBm@Z}B^uDBm@AUGMEcBMcAMs@Y}@wAkDw@yBcBuGcAgEQgAI_B@mBLgHLiDAeEOiC{@{HcAqGLKyDmYI{CEAnAaRJyGQGLsKPOHcNTeWDyBb@kIFcB@w@IgCnBh@PEtA}Jz@mDVy@Zy@r@yCLy@ZIpAJJALi@v@ZJsCECBUB@@mANkBx@eAVgCYKHm@?_AEuCD_BeAQOwHCQKYz@oAD_@?WRSJWDg@Rk@AaGF_C?eCAqAS}@{AsFSeCMoC{@Aw@Fq@LCa@CCJaGHGBIAICIGCZ{QDmAT}JBILO@Dd@m@j@qAP{@Jg@n@uFdAyJX}B{A{BkD}Fc@i@r@qCFTn@Wf@RNYD@`@l@HWIM@CwAwBEJf@r@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('esytHzm|FrAPnAt@j@Iv@k@bA}@LCd@HN?z@a@PW|@yBf@cA^g@\\]b@YDsAN}@hDqHv@uBp@aBhC_LA_@OY?q@CaAg@aDI{@AYFu@fAsCl@uAlBqEhB{En@cCbAi@zCq@d@Qp@qDjCRH}AzAuLTiALQjA{@FKBmIr@EbFFfAAn@GLE\\]Vi@F[PqCJUPElCa@pE]l@ItBq@`Aa@jHkEd@Ib@SDELED@Tc@rE}Jr@sA`@e@pB{CdAyAdAw@FTvAs@f@KnBUBYtAS|D}@?RrJoBAe@B_@P_Bl@yGvBuLv@qCnB{FpGeZReAHOPGd@c@vBwCR]`AwFd@oSJwFHgAp@yCxCuLlBeGf@}F^cBnDoG^{@z@yA^_BL{@@i@Iw@?]Hq@t@gDw@q@jBkSTqCj@RLsBDYL]RMZIpBCJKHQFUB[PoE@q@NkAL[NSVSLClAHZKh@q@JG^??[FGp@@@m@PIL@FgBReHN{IDo@JJBm@Z}B^uDBm@AUGMEcBMcAMs@Y}@wAkDw@yBcBuGcAgEQgAI_B@mBLgHLiDAeEOiC{@{HcAqGLKyDmYI{CEAn@yJMa@}D?[IcBaAe@Sc@IP{BAcAUaCS_BcAeFa@eBCcBI{MVwGNoCd@qGp@yHYs@QiA}@oHOi@_@i@c@W[]_@q@C_HH]Yu@U[GU?y@AGiAa@EGd@uQHaBPaA\\uA~CeLxDgO`@yApB}FRw@qB}EyBkE_A_CQ[cBqEGm@HgH?oBq@{LB{DDWVk@Fc@?aA]yGTE@wDAALaB}JyFJy@SMDQGGFSB_@EMDQKSQ?DOa@o@STc@Tk@RYDqX|CcAFWCgDkA', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([50.76289400000000,-1.29752800000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=15115">View all updates for The Fountain, Cowes</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        22<span class="sup">nd</span> Jul 2017, 12:06
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        22<span class="sup">nd</span> Jul 2017, 11:34
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Real Ale : <span id="fac10115115">Yes</span> <span id="discdetail10115115" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>8am - 10:30pm</td></tr>
+<tr><td>Monday</td><td>7am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>7am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>7am - 11pm</td></tr>
+<tr><td>Thursday</td><td>7am - 11pm</td></tr>
+<tr><td>Friday</td><td>7am - Midnight</td></tr>
+<tr><td>Saturday</td><td>8am - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/15131/" class="List1">The Vectis Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85718/" class="List1">That 60&#039;s Place</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/59330/" class="List1">Pier View</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 28 picture(s)" title="Pub has 28 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/15116/" class="List1">The Anchor Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83036/" class="List1">The Mess</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/15124/" class="List1">Painters Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8.5 from 3 reviewer(s)" title="Pub has average rating of 8.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82892/" class="List1">Cowes Ale House</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 5 reviewer(s)" title="Pub has average rating of 8 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/15130/" class="List1">The Union Inn</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

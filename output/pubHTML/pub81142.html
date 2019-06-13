@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Grosvenor pub in Hanwell, W7, London (Greater), W7 2DT : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Grosvenor" />
+  <meta name="keywords" content="The Grosvenor, 127 Oaklands Road, W7, London (Greater), Hanwell, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Grosvenor in W7" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/81001_81500/81142_27a7783b.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/81142/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.50666651338096" />
+<meta property="og:longitude" content="-0.32757413226318" />
+<meta property="og:street-address" content="127 Oaklands Road" />
+<meta property="og:locality" content="W7" />
+<meta property="og:region" content="London (Greater)" />
+<meta property="og:postal-code" content="W7 2DT" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Grosvenor in W7? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Grosvenor the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/81142/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Grosvenor in W7" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Grosvenor " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/81001_81500/81142_27a7783b.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/81142/" />
+<meta name="geo.position" content="51.50666651338096;-0.32757413226318" />
+<meta name="geo.placename" content="The Grosvenor in W7" />
+<meta name="geo.region" content="UK" />
+<title>The Grosvenor in Hanwell, W7 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":81142},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(81142);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 81142;var pubaddress = "127 Oaklands Road";var pubname = "The Grosvenor";var pubpostcode = "W7 2DT";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/greater-london/" title="Pubs Galore : London (Greater) Page">London (Greater)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/w7/greater-london/" title="Pubs Galore : W7 Page">W7</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Grosvenor Page">The Grosvenor Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="tnif3m362cmo92i4ue6n2n7g43" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/81142/" class="indisplay"><img src="/images/display/81001_81500/81142_27a7783b.jpg?w=2" alt="Picture of The Grosvenor" /></a><br />  Image posted by <a href="/userinfo.php?name=Rex_Rattus" class="indisplay">Rex Rattus</a><br />
+  Submitted on Sunday, 15<sup>th</sup> June 2014<br />
+  With picture contributions to 1040 other pubs<br />
+<a href="/pubpictures/81142/" class="smallbutton">View all this pub's pictures</a> (8 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/81142/">Pub map</a><br /><a href="/pubreviews/81142/">Pub reviews (4)</a><br /><a href="/pubpictures/81142/">Pub pictures (9)</a><br /><a href="/core/pubaudit.php?id=81142" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Grosvenor, Hanwell, W7</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">127 Oaklands Road</span><br />
+
+
+<span class="town">W7</span><br />
+<span class="postcode">W7 2DT</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02088400007</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/hanwell/greater-london/">Hanwell</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Grosvenor</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/grosvenorW7" target="_blank"><img src="https://pbs.twimg.com/profile_images/604657544053829632/smb7TQxi_normal.jpg" alt="The Grosvenor Pub" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/grosvenorW7" target="_blank">The Grosvenor Pub</a></strong>
+It&#039;s quiz night tonight (and every Monday night) with Mr Tom Trivia! Come check it out from 8:30 pm in the snug for&hellip; <a href='https://t.co/e8FYtbSFiG' target='_blank'>https://t.co/e8FYtbSFiG</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/grosvenorW7/status/1122889060098420739">4:43 PM Apr 29th</a> from <a href="http://www.facebook.com/twitter" rel="nofollow">Facebook</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/grosvenorW7" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/grosvenorW7" target="_blank">The Grosvenor Pub</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Grosvenor  <span class="h2note">(Average Rating: <span id="averagerating"><b>7&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review118881" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a> left this review about The Grosvenor</h6>
+<p class="old">An excellent large back street pub, which only a few years ago, was a no go area, so the young barmaid told us. Full of yobs and not any decent beers to be seen. We found the staff in here to be very welcoming on our Sunday afternoon visit. Sunday lunch was being served in the rear part of the pub, which had a nice dining area with double French doors, which lead onto a small patio garden and William Morris style patterned wallpaper. I did notice a couple near the front, indulging in Sunday Lunch and I have to say it looked very good with plenty of veg. <br />
+Four ales on handpump, So we went for the Truman&#039;s Two Halves, which passed the two pint test. I also went for the Beavertown Neck Oil on draft which was a bonus, but only managed a half. The main internal features, that I liked, was the upper stained glass windows, with the original screw mechanism for opening and closing. I also liked the bow shaped corners each end of the front bar. This pub is run and maintained by the Food and Fuel Company. Well worth a visit.</p>
+<p class="Reviewer">On 9<sup>th</sup> June 2017 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 2750 recommendations about 2750 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review115836" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Grosvenor</h6>
+<p class="old">According to the plinths at the end of the grand building, this pub was built in 1904 and despite some obvious alterations over the years, it still retains a fair bit of historic interest for today&#039;s visitor. A corner entrance takes you into a bare boarded room which has clearly been opened out from a multiple room layout, but with some elements of partitioning retained to allow for a two bar set-up. The pub is served by a large horseshoe-shaped central bar with a beautiful curved U-shaped counter which has recessed frontage and a nice polished top. The bar back is a high quality dark wood affair boasting an integral clock and a smart archway through to a back room. The bar area has been fitted with benches, banquettes, chairs and a single sofa, all of which stand under the fine windows which have the pub&#039;s name picked out on them. Through the partitioning screen to the left, which has nice stained glass panes to either side that nicely compliment those above the main windows, there is a snug of sorts which was presumably much more snug in appearance before the pub was opened out. Beyond the snug, there is a large dining room in the left hand side of the pub with attractive high panelling, a nice fireplace, a stack of board games and various old paintings on show. Meanwhile, to the rear right there is what appears to be a formal dining area with pre-set tables, more dark wood panels and lots of photos and paintings on display. I didn&#039;t notice a beer garden, although apparently there is one, but I did spot a number of benches along the pavement at the front of the pub. Music played at a reasonable volume throughout my visit and whilst there was a fairly small number of customers in on this visit, I can imagine the lack of soft furnishings make this a very noisy pub during peak hours.<br />
+The pub has been a local CAMRA branch winner in recent years and there was a decent range of cask ale available on this visit, with hand pumps supporting Sharps Doom Bar, Trumans Swift, Aylesbury Brewhouse Co Horton, Sambrooks Four Chimneys, Vale VPA, Adnams Lighthouse and Twickenham Winter Star. Around twelve or so craft keg options were also available from the likes of Sambrooks, Camden, Weird Beard and Purity. I had a pint of the VPA, a little pricey at &pound;4.20, but in decent enough condition.<br />
+This pub&#039;s location down seemingly endless suburban backstreets between Hanwell and West Ealing, means a bit of effort is required to get out here, but I&#039;m glad I took the time to visit as this is a grand pub with good beer and an interesting interior. It may suffer a little from the very notable dining side of the business, but efforts have clearly been made to accommodate drinkers as well and I would imagine this is one of the better pubs around.</p>
+<p class="Reviewer">On 5<sup>th</sup> March 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review84017" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> left this review about The Grosvenor</h6>
+<p class="old">You can see from the photographs that this is a quite magnificent looking pub. Designed by the prolific West London architect, Thomas Nowell Parr, it still retains several of his trademark design features such as the coloured glass glazing in the upper parts of the windows, and wooden baton beams on the ceilings. Some internal screening also survives here, notably between what would once have been the jug and bottle bar and the snug bar, if the sign on the screening can believed. The tapered forward bar counter looks original as well. But of course the pub&#039;s now been largely opened up. The main bar area is on the right; there&#039;s another room through the screening mentioned previously; and a third area at the back on the right with the inevitable tables all laid for diners. At the back of that room is a doorway out to the small smoking area. The furnishings are mainly normal tables and chairs, but of course with some some sofas in the bar on the left.<br />
+<br />
+Both the bar on the left and the &quot;main&quot; bar have their own set of handpumps, but one has to look at them all to see everything on offer. When I was in on Saturday they had on London Pride, Cornish Coaster and Lazarus from Sharps, and a couple form a local micro-brewery called Weird Beard. Quite approriate as I was on a CAMRA pub crawl. The Weird Beard ales were Little Things, which was an unfined (and thus cloudy) 3% hoppy ale, which the bar staff helpfully pointed out is supposed to be cloudy, and Hit the Lights, a stonkingly full of flavour 5.7% ale that I thoroughly enjoyed.<br />
+<br />
+Despite the gastro features - dedicated dining room - this struck me as a decent enough pub, which is large enough to accommodate dining and drinking areas. I would be happy to visit again.</p>
+<p class="Reviewer">On 17<sup>th</sup> June 2014 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2495 recommendations about 2415 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/81142/">View more reviews of The Grosvenor (4)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Grosvenor</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Grosvenor - <a href="http://www.thegrosvenorhanwell.co.uk" title="Submitted by:- Rex Rattus" target="_blank">www.thegrosvenorhanwell.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="600766290018756">Facebook - <a href="https://www.facebook.com/Grosvenorhanwell/" target="_blank" rel="nofollow">Grosvenorw7</a></li></ul><ul id="Custom2"><li class="twitlink" id="2458219328">Twitter - <a href="https://twitter.com/grosvenorW7" target="_blank" rel="nofollow">The Grosvenor Pub</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/81142/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.50666651338096, -0.32757413226318], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.50666651338096, -0.32757413226318]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Hanwell, 0.81 miles, 15 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> West Ealing, 0.82 miles, 15 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Drayton Green, 1.03 miles, 19 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('m{jyHd~~@G[eDpAoC`BqGpD?pAHpBT|CnBzPJdAD|@}@Xg@HcDTKLGNC`@d@fAsDbGk@`BaA]]UF`ANjEu@R', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('m{jyHd~~@eAsEgA^cBHkDxABOASyB_S]m@{@_ISq@U[a@S_@EEe@{@@_@wEwKDG}@g@k@a@Ey@H]Lo@lAD^JzA^I?O', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('m{jyHd~~@eAsEgA^cBH_JxD[}DcBn@Y[Yi@Uk@Su@Ks@]mDeA\\Ik@u@PCHYDBb@k@N?ZkDz@AHC[}B^Ad@]\\y@RoAzAk@PcBN]LQh@Yh@ODcCAiBOK\\GAW`BGx@B~AV|FVEFd@d@G', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.50666651338096,-0.32757413226318], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=81142">View all updates for The Grosvenor, W7</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        14<span class="sup">th</span> Jun 2017, 20:58
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        14<span class="sup">th</span> Jun 2017, 20:58
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11881142">No</span> <span id="discdetail11881142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 January 2016 by ROB Camra</span></li><li>Bar Billiards : <span id="fac10781142">No</span> <span id="discdetail10781142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2017 by Pub SignMan</span></li><li>Beer Festivals : <span id="fac11781142">Yes</span>  - <span id="discdetail11781142" class="discdetail" style="">September</span> -   <span class="Reviewer">last updated 14 January 2016 by ROB Camra</span></li><li>Beer Garden : <span id="fac11481142">Yes</span> <span id="discdetail11481142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 January 2016 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10281142">Yes</span>  - <span id="discdetail10281142" class="discdetail" style="">10%</span> -   <span class="Reviewer">last updated 14 January 2016 by ROB Camra</span></li><li>Car Park : <span id="fac11381142">No</span> <span id="discdetail11381142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 January 2016 by ROB Camra</span></li><li>Child Friendly : <span id="fac12181142">Yes</span> <span id="discdetail12181142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 January 2016 by ROB Camra</span></li><li>Darts : <span id="fac11181142">No</span> <span id="discdetail11181142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2017 by Pub SignMan</span></li><li>Dog Friendly : <span id="fac10581142">Yes</span> <span id="discdetail10581142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 January 2016 by ROB Camra</span></li><li>Function Room : <span id="fac12381142">Yes</span> <span id="discdetail12381142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2017 by Pub SignMan</span></li><li>Hot Food : <span id="fac10381142">Yes</span> <span id="discdetail10381142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 January 2016 by ROB Camra</span></li><li>Jukebox : <span id="fac11281142">No</span> <span id="discdetail11281142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2017 by Pub SignMan</span></li><li>Karaoke : <span id="fac10681142">No</span> <span id="discdetail10681142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2017 by Pub SignMan</span></li><li>Live Music : <span id="fac10881142">Yes</span>  - <span id="discdetail10881142" class="discdetail" style="">Monthly - Jazz</span> -   <span class="Reviewer">last updated 14 January 2016 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11081142">Yes</span> <span id="discdetail11081142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 January 2016 by ROB Camra</span></li><li>Micropub : <span id="fac12281142">No</span> <span id="discdetail12281142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 January 2016 by ROB Camra</span></li><li>Pinball : <span id="fac11681142">No</span> <span id="discdetail11681142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2017 by Pub SignMan</span></li><li>Pool Table : <span id="fac10481142">No</span> <span id="discdetail10481142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 March 2017 by Pub SignMan</span></li><li>Quiz Night : <span id="fac10981142">Yes</span>  - <span id="discdetail10981142" class="discdetail" style="">Monday</span> -   <span class="Reviewer">last updated 14 January 2016 by ROB Camra</span></li><li>Real Ale : <span id="fac10181142">Yes</span> <span id="discdetail10181142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 January 2016 by ROB Camra</span></li><li>Real Cider : <span id="fac11981142">Yes</span> <span id="discdetail11981142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 January 2016 by ROB Camra</span></li><li>Wheelchair Access : <span id="fac12081142">Yes</span> <span id="discdetail12081142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 January 2016 by ROB Camra</span></li><li>WiFi : <span id="fac11581142">Yes</span> <span id="discdetail11581142" class="discdetail" style=""></span>  <span class="Reviewer">last updated 14 January 2016 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>9am - 11pm</td></tr>
+<tr><td>Saturday</td><td>12noon - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/69159/" class="List1">Hennessys</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65051/" class="List1">The Old Hat</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8.5 from 4 reviewer(s)" title="Pub has average rating of 8.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64618/" class="List1">The Forester</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66435/" class="List1">Lavins</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66437/" class="List1">The Royal</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66438/" class="List1">The Village Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 3 reviewer(s)" title="Pub has average rating of 7.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84957/" class="List1">The Dodo Micropub</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24839/" class="List1">The Kings Arms</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

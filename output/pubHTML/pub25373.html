@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="North Nineteen pub in N19, London (Central), N19 4HZ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of North Nineteen" />
+  <meta name="keywords" content="North Nineteen, 194-196 Sussex Way, N19, London (Central), Holloway, Upper Holloway, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="North Nineteen in N19" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/25001_25500/25373_4303700d.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/25373/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.56461950311319" />
+<meta property="og:longitude" content="-0.12182593345642" />
+<meta property="og:street-address" content="194-196 Sussex Way" />
+<meta property="og:locality" content="N19" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="N19 4HZ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like North Nineteen in N19? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make North Nineteen the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/25373/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="North Nineteen in N19" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about North Nineteen " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/25001_25500/25373_4303700d.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/25373/" />
+<meta name="geo.position" content="51.56461950311319;-0.12182593345642" />
+<meta name="geo.placename" content="North Nineteen in N19" />
+<meta name="geo.region" content="UK" />
+<title>North Nineteen in N19 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":25373},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(25373);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 25373;var pubaddress = "194-196 Sussex Way";var pubname = "North Nineteen";var pubpostcode = "N19 4HZ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/n19/central-london/" title="Pubs Galore : N19 Page">N19</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : North Nineteen Page">North Nineteen Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="d0p68mvtd8f6dh7e20phasncu6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/25373/" class="indisplay"><img src="/images/display/25001_25500/25373_4303700d.jpg?w=2" alt="Picture of North Nineteen" /></a><br />  Image posted by <a href="/userinfo.php?name=Tris39" class="indisplay">Tris C</a><br />
+  Submitted on Sunday, 6<sup>th</sup> February 2011<br />
+  With picture contributions to 2132 other pubs<br />
+<a href="/pubpictures/25373/" class="smallbutton">View all this pub's pictures</a> (3 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/25373/">Pub map</a><br /><a href="/pubreviews/25373/">Pub reviews (4)</a><br /><a href="/pubpictures/25373/">Pub pictures (4)</a><br /><a href="/core/pubaudit.php?id=25373" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">North Nineteen, N19</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">194-196 Sussex Way</span><br />
+
+
+<span class="town">N19</span><br />
+<span class="postcode">N19 4HZ</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02072812786</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/holloway/central-london/">Holloway</a>, <a href="/areas/upper-holloway/central-london/">Upper Holloway</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by North Nineteen</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/North_Nineteen" target="_blank"><img src="https://pbs.twimg.com/profile_images/706852950564544512/nkUMQtB3_normal.jpg" alt="NorthNineteen" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/North_Nineteen" target="_blank">NorthNineteen</a></strong>
+It&rsquo;s that time again THE BIG WEDNESDAY QUIZ! 
+Brighten up hump day with an evening of trivia &amp;amp; laughs. Bar tabs &amp;amp; p&hellip; <a href='https://t.co/4S2MAyHbzs' target='_blank'>https://t.co/4S2MAyHbzs</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/North_Nineteen/status/1136290556273934336">4:15 PM Jun 5th</a> from <a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/North_Nineteen" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/North_Nineteen" target="_blank">NorthNineteen</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of North Nineteen  <span class="h2note">(Average Rating: <span id="averagerating"><b>8</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review117325" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> left this review about North Nineteen</h6>
+<p class="old">North Nineteen is a corner pub that is set in the back streets between Holloway Road and Hornsey Road.<br />
+Once inside there is an oblong shaped room to the front which is bare boarded,there are normal tables and chairs for seating and a real fire was on the go to the front right,there is a separate room to the rear.<br />
+There were two real ales on the bar,i had a drink of Skinners Cornish Knocker,which was a decent drink,the other real ale was put on while i was there,this was Butcombe Bitter.<br />
+The youngish couple running the pub seemed very friendly and told me directions to a recently reopened pub.<br />
+A decent pub that some might find hard to find,a shame it was almost empty on my Saturday afternoon visit.<br />
+<br />
+Pub visited 25/2/2017</p>
+<p class="Reviewer">On 23<sup>rd</sup> April 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 6113 recommendations about 6113 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review52118" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about North Nineteen</h6>
+<p class="old">This pub isn&#039;t all that close to any tube or train station, so a bit of effort is required to find it, but having marched through seemingly endless rows of housing on my admittedly convoluted way from Finsbury Park, I was very glad that I persisted. The interior is divided in two with separate entrances and a gender equality defying connecting route through the gent&rsquo;s toilets. The smart lounge bar is to the right and has two distinct areas. The front section has a bit of a gastro feel to it thanks to plush leather seats around standard pub tables, bare wooden flooring and a nice corner fireplace. A TV screen was on showing the early Premier League football match (a 4-3 defeat for local favourites Arsenal) and I spotted a musical theme with an upright piano next to the fireplace and a guitar hung over the archway to the rear section. This area has less natural light than the front part, so it&#039;s a cosier, darker space filled with plush sofas and another fireplace, this time with a large mirror hung above it. The second room, on the left hand side of the pub, was empty on my visit, so I only had a quick peek inside, which was enough to reveal a smaller space with additional seating and a dartboard.<br />
+The pub sells itself as a steak and ale house, so given the hour of the day, I decided to try a bit of both. The menu focuses heavily on steaks and burgers, although there were some very tempting specials on a chalkboard behind the bar. The steaks were quite pricey, with the cheapest coming in at &pound;16, so I went for something called the N19 burger, which apparently is made from a mixture of three types of beef. I thought it was one of the best burgers I&#039;ve ever tried, which pleased the very friendly barman who was keen to get feedback on his food.<br />
+As for the ale, there are pumps on both bars, but there was a list on a blackboard in the right hand room from which I made my choice. On offer were Skinners Cornish Knocker and Betty Stogs (&pound;3.30), Timothy Taylor Landlord, Fullers ESB and Ringwood Fortyniner. The board also detailed beers that were on their way or recently gone and these included Hop Back Summer Lightning, Sharp&#039;s Doom Bar, St Austell Tribute, Butcombe Bitter, Sambrooks Wandle and Brakspear Oxford Gold. Symonds Founders Reserve Cider was also available as well as the usual keg range. I tried both Skinners beers and found them to be in good shape.<br />
+I thought that this place had found a good balance between friendly local and upmarket gastro which should appeal to a wide range of people. As I left, the barman said that I shouldn&#039;t be a stranger and if I lived nearer I would certainly make the point of using this place regularly as it seems to be a bit of an undiscovered gem.</p>
+<p class="Reviewer">On 4<sup>th</sup> October 2011 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review33190" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Strongers">Steve C</a> left this review about North Nineteen</h6>
+<p class="old">This is a good looking backstreet pub with plenty of picnic tables located at the front exterior that is dotted with plants and pretty blooming flowers. There is also a large drum BBQ that wasn&rsquo;t being used during my visit last Sunday, but it the management here have created a nice little area in not such a great location to have a beer and some food alfresco.<br />
+<br />
+The pub is split into two separate bars and the first one that I entered had some relaxed music playing in the background whilst Formula 1 was being aired on the muted flat screen TV. To the right hand side of the bar was a smaller room that had some comfortable seating along with some board games and a dartboard hidden away in its case. There was a limited selection of draught products available along with three hand pumps that were drawing Skinners Betty Stoggs, Cornish Knocker and Youngs Ordinary. I opted for my usual tipple of Guinness which was perfectly served by the affable guy behind the bar. After having a quick flick through one of the Sunday papers that was laying on the bar I decided to pop into the other bar where access is granted through the toilets or by walking down the outside of the pub. This bar is a little smaller and had six more hand pumps. Three of these were unused, but ESB, Landlord and Directors were available from the others. A few old beer clips were up on the wall behind the bar which shows signs of a rolling selection of beers. There was another dartboard in here along with some books and a big old drawing board in the corner. There was no music or distraction and the wind could be heard blowing through the bushes in the small enclosed area out the back that houses some more picnic tables to go with the ones out the front.<br />
+<br />
+Food is served from 17:00 until 22:00 during the week, midday until 22:00 on Saturday and midday until 19:00 on Sundays when there is a roast menu, but the barman did make it known to some people that entered the pub after me that the entire menu is still available on Sunday, but there will be a longer wait as it isn&rsquo;t prepped.<br />
+<br />
+Along with the entertainment of &ldquo;The Full Pint&rdquo; magazine on the window ledge there is a quiz on Mondays, open mic on Tuesdays and ante up for the poker on Wednesdays which all start at 20:00.<br />
+<br />
+My visit wasn&rsquo;t long enough, but from what I saw over my two pints I was very impressed and I gladly report this pub as a hidden gem &ndash; well worth seeking out for the beer and welcome.</p>
+<p class="Reviewer">On 4<sup>th</sup> September 2010 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 3386 recommendations about 3366 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/25373/">View more reviews of North Nineteen (4)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for North Nineteen</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of North Nineteen, includes menu, wine list and events guide - <a href="http://www.northnineteen.co.uk" title="Submitted by:- elizabeth mcgraw" target="_blank">www.northnineteen.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="14468755270">Facebook - <a href="https://www.facebook.com/NorthNineteen/" target="_blank" rel="nofollow">North Nineteen</a></li></ul><ul id="Custom2"><li class="twitlink" id="39231671">Twitter - <a href="https://twitter.com/North_Nineteen" target="_blank" rel="nofollow">NorthNineteen</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/25373/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Strongers">Steve C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.56461950311319, -0.12182593345642], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.56461950311319, -0.12182593345642]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Upper Holloway, 0.48 miles, 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Crouch Hill, 0.69 miles, 13 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Finsbury Park, 1.02 miles, 19 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('gevyHpwVrBhE`BhC`DjDdCzDSf@sAzEg@lAgDdHWz@S~@d@p@Yr@LLCC', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('gevyHpwVQ_@eC`D_AuB}@yCWVgAgDsAlBuGoO_BdCu@p@@I]w@E@]f@EBECwBeFg@p@KWKAaCuF}@jCIKGO@CAC', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('gevyHpwVWi@?IEKGCe@}@_@YCOFMe@}ArD{D~BkCgAeClAuBcFqJ\\m@}BwFsIuThDaFc@cAdEsG@MAKn@qA\\g@XUz@GDoF]CAbAWCA\\', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.56461950311319,-0.12182593345642], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=25373">View all updates for North Nineteen, N19</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        27<span class="sup">th</span> Jun 2017, 20:10
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        27<span class="sup">th</span> Jun 2017, 18:55
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11825373">No</span> <span id="discdetail11825373" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 February 2017 by ROB Camra</span></li><li>Bar Billiards : <span id="fac10725373">No</span> <span id="discdetail10725373" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 February 2018 by Tris C</span></li><li>Beer Festivals : <span id="fac11725373">No</span> <span id="discdetail11725373" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 February 2017 by ROB Camra</span></li><li>Beer Garden : <span id="fac11425373">Yes</span> <span id="discdetail11425373" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 February 2017 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10225373">Yes</span>  - <span id="discdetail10225373" class="discdetail" style="">20p per pint. SIBA guest beers only</span> -   <span class="Reviewer">last updated 17 February 2017 by ROB Camra</span></li><li>Car Park : <span id="fac11325373">No</span> <span id="discdetail11325373" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 February 2017 by ROB Camra</span></li><li>Darts : <span id="fac11125373">Yes</span> <span id="discdetail11125373" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 February 2017 by ROB Camra</span></li><li>Hot Food : <span id="fac10325373">Yes</span> <span id="discdetail10325373" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 February 2017 by ROB Camra</span></li><li>Live Music : <span id="fac10825373">Yes</span>  - <span id="discdetail10825373" class="discdetail" style="">Tuesday</span> -   <span class="Reviewer">last updated 17 February 2017 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11025373">No</span> <span id="discdetail11025373" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 February 2017 by ROB Camra</span></li><li>Micropub : <span id="fac12225373">No</span> <span id="discdetail12225373" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 February 2017 by ROB Camra</span></li><li>Pool Table : <span id="fac10425373">No</span> <span id="discdetail10425373" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 February 2018 by Tris C</span></li><li>Real Ale : <span id="fac10125373">Yes</span> <span id="discdetail10125373" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 February 2017 by ROB Camra</span></li><li>Real Cider : <span id="fac11925373">No</span> <span id="discdetail11925373" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 February 2017 by ROB Camra</span></li><li>WiFi : <span id="fac11525373">Yes</span> <span id="discdetail11525373" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 February 2017 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 1am</td></tr>
+<tr><td>Monday</td><td>4pm - Midnight</td></tr>
+<tr><td>Tuesday</td><td>4pm - Midnight</td></tr>
+<tr><td>Wednesday</td><td>4pm - Midnight</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>4pm - Midnight</td></tr>
+<tr><td>Friday</td><td>4pm - Midnight</td></tr>
+<tr><td>Saturday</td><td>12noon - 1am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/25376/" class="List1">Landseer Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/25384/" class="List1">The Prince Alfred</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/25386/" class="List1">Corner Flag</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 5 reviewer(s)" title="Pub has average rating of 5.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55010/" class="List1">The Crown</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55040/" class="List1">Nambucca</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 5 reviewer(s)" title="Pub has average rating of 6 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55038/" class="List1">Owl &amp; Hitchhiker</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 6 reviewer(s)" title="Pub has average rating of 7 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/25388/" class="List1">Shaftesbury Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 20 picture(s)" title="Pub has 20 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 3 reviewer(s)" title="Pub has average rating of 7 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/25506/" class="List1">The Swimmer at The Grafton Arms</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

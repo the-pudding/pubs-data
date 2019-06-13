@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The White Hart pub in Midsomer Norton (near Radstock), Somerset, BA3 2HQ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The White Hart" />
+  <meta name="keywords" content="The White Hart, The Island, Midsomer Norton, Radstock, Somerset, , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The White Hart in Midsomer Norton" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/1_500/198_3992a8c6.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/198/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.28529978988048" />
+<meta property="og:longitude" content="-2.48367334722138" />
+<meta property="og:street-address" content="The Island" />
+<meta property="og:locality" content="Midsomer Norton" />
+<meta property="og:region" content="Somerset" />
+<meta property="og:postal-code" content="BA3 2HQ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The White Hart in Midsomer Norton? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The White Hart the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/198/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The White Hart in Midsomer Norton" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The White Hart " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/1_500/198_3992a8c6.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/198/" />
+<meta name="geo.position" content="51.28529978988048;-2.48367334722138" />
+<meta name="geo.placename" content="The White Hart in Midsomer Norton" />
+<meta name="geo.region" content="UK" />
+<title>The White Hart in Midsomer Norton (near Radstock) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":198},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(198);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 198;var pubaddress = "The Island";var pubname = "The White Hart";var pubpostcode = "BA3 2HQ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/somerset/" title="Pubs Galore : Somerset Page">Somerset</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/radstock/somerset/" title="Pubs Galore : Radstock Page">Radstock</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/midsomer-norton/somerset/" title="Pubs Galore : Midsomer Norton Page">Midsomer Norton</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The White Hart Page">The White Hart Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="30tgvobrsn0bo6ov516si5vpt6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/198/" class="indisplay"><img src="/images/display/1_500/198_3992a8c6.jpg?w=2" alt="Picture of The White Hart" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
+  Submitted on Monday, 17<sup>th</sup> April 2017<br />
+  With picture contributions to 20227 other pubs<br />
+<a href="/pubpictures/198/" class="smallbutton">View all this pub's pictures</a> (4 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/198/">Pub map</a><br /><a href="/pubreviews/198/">Pub reviews (1)</a><br /><a href="/pubpictures/198/">Pub pictures (5)</a><br /><a href="/core/pubaudit.php?id=198" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The White Hart, Radstock</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">The Island</span><br />
+
+<span class="town">Midsomer Norton</span><br />
+<span class="postaltown">Postal town: Radstock</span><br />
+<span class="postcode">BA3 2HQ</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Punch Taverns</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/midsomer-norton/somerset/">Midsomer Norton</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The White Hart  <span class="h2note">(Average Rating: <span id="averagerating"><b>6</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review85646" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> left this review about The White Hart</h6>
+<p class="old">This is a CAMRA National Inventory pub because of its relatively unspoilt interior. It still has three separate rooms, plus a serving hatch in the corridor between the rooms, which would once have provided a jug and bottle service but which is now used for bar service. There have been some changed since my previous visit. The old wood panelling has now been painted a light duck egg colour; a lot of the bric a brac has gone, such as jugs hanging from beams, and I reckon some of the old furniture has been replaced with more modern stuff. But they have resisted any temptation to remove any of the panelling, so it clearly still qualifies for its CAMRA Inventory status.<br />
+<br />
+Another change is that Bass is no longer available on stillage, although still available on handpump, and the Butcombe Bitter that used to be on handpump has been replaced by Doom Bar. Pub grub food was advertised on chalkboards above the bar gantry, but I failed to note the details. Personally I don&rsquo;t think that the changes have resulted in an improvement, but my pint of Bass was in good nick, and I reckon that it&rsquo;s still the best pub in Midsomer Norton.</p>
+<p class="Reviewer">On 30<sup>th</sup> July 2014 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2495 recommendations about 2415 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The White Hart</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="349121145106285">Facebook - <a href="https://www.facebook.com/pages/The-White-Hart-North-Scarle/349121145106285" target="_blank" rel="nofollow">The White Hart North Scarle</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/198/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.28529978988048, -2.48367334722138], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.28529978988048, -2.48367334722138]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Oldfield Park, 9.29 miles, 2 hr 59 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Bath Spa, 9.54 miles, 3 hr 4 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Frome, 9.88 miles, 3 hr 10 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ot_xHjbdNy@wCFU?OCMBCBMECK_@LKo@wBa@gAeAuBg@kAOYMb@sEwG_A}@uAkAa@U{Ck@QO{@Us@B_Fv@e@CUMUUk@_A[Q_@KoAMgA]SJG]_@i@i@i@QYWm@Mi@OuAGGuBi@CkIe@{@KHkHkMOAkGlBm@J_@kGyIyC_I{CIJ[{BSgEMw@Oo@kAyCG[_A{G{CwOa@cCUiAoFyI]w@iCkIeE{Ly@iDq@aDYgCSyCgAkI_@REMy@oPGGuMdGsAtAkLnJgMeFMNyBxDe@bAwAtB{Ca@k@QuJoRWw@iEyDMGkAu@oAiAGK[yB[u@?OOKq@aBs@Xk@kEMY?IOEKGIW_@gC}@wCe@eAc@y@gEiFGOBe@ZcAKOQyAa@BWCGK]QGOWNMKK]_AaFEEQ?AIgTuRcEiKGCcCqCi@{@CKIKSuAo@_Ga@sB]qAIQAUR[BQ?WCm@@USEu@c@cHgGsCsCyEkFkCsDqA{A[YYMcB_@uE{BcBgBg@sAyIvAwX^e@]q@LwD`A_BiCuKyOc@gAm@wCUiBcA_GYmAyBgHcBiB_DmEuDmEaEeDaE}AyAu@cB_@oFc@qASkMwEgFcCk@g@q@Om@YcG_ESWUQa@Iu@I]MQKKUWcAOmAs@eAWMK@}At@]HGAm@kASMOSi@wBCSi@aAIGAIYIS@Cc@uBiB]Qi@CYi@A?Me@KUc@W_@@MPCb@eGaBsDmAPKAOBMlB_Aw@oADM@e@CSmDyMGMYKM?mAwECBe@mAgEcUOkBgBGMDQTGRARYAq@wCoBqGIe@OPOk@gBsEoAyBDIHmA~@}BwAiB[k@wAwCk@_Ai@m@gA_A]c@kCsA}Aq@iDsA^qGAOEKo@u@EK?OSG@qAH}AE@Cb@AAKlBCALiC', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ot_xHjbdNy@wCFU?OCMBCBMECK_@LKo@wBa@gAeAuBg@kAOYL_@LUTMb@OMkAEmAGU}FcOg@sAEq@Mi@YiDG_@g@cFQsC@UFO@OIsBm@cGUcBg@_BKmAs@}BUIU?g@]KOGB}@aCi@g@KOeBmEOSKEAe@CcL@s@XcEu@m@y@cAISeB{A[ImAsB}@u@_BcA{AKmI{GMF_@OGOgGkF{BU{@Uo@eAi@oAq@{@K?]XAIGGoAm@{AkA_B_AmA_@]]MSCi@Q?gDmF{DeHBWwBkDcJeS}Ny\\yMyY}@gDq@}BOSUQYIWQKY_BeDeC_GeAqCgCgF{DoIU\\cCmFNaAFO{@cEoAuHS{@yAiIc@qBg@eBkAqBeD{GcA_Bu@cA{CqDwCgEa@c@cDwBqEcC_@Wa@[QA{BkA?UE_@M]UJ[DYEGHmBo@k@[mAcA_AmA_@DcBy@_HqEoD_DwAkCwAeDKw@ORQCs@u@_FeD}@s@y@Oa@i@i@wAy@s@w@c@IQk@JS?m@QyAo@q@Os@Gm@BaCb@@SZa@DKAMa@g@[k@_BkAiDc@gCoCkBQgDwFsBuFsQqPqJkI{CwCwCqE}GqGiB{@?OmAkCYkA]uCWsAm@iCMkAD_BOaAE_Bc@wDCyCK[I}@Ga@Wg@Ai@IOu@s@k@kBg@_As@cCY}AEm@?m@PeC@mA[{B@QJM_EiB}FuDUKmBg@qAGu@??o@}@Yg@]}@[e@?_A^IJ_@o@uAkBiAgBeE{IiD}HsDuHU{@Aa@C[IQEENUEKUDMA[_@wC}Hw@{BQy@U[u@e@QOAQoEeEm@u@oAeB{HwLo@{@mCcCCJu@q@kCsBg@[i@SuAMgECwBe@oBO[iAC]e@?ASq@cBsA{CQo@Qs@m@sD_BeKGCIQKRMBwA{GQgAMQA_@CMIYu@kDGa@ImAG_@EGMAc@W[_AUQg@M_A]q@KO?[JSHOT]BiBx@W\\ERMgAIa@]{@e@{@CAwAp@{@T_Bn@Ee@{@r@Yf@GAMMIe@G@?EC??FsBHKE?|@ULHb@IDBJa@VSF?@TECIQu@My@S}@GDc@aBY}AFFbAlDb@tB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ot_xHjbdNPl@`@tBT?b@c@ASTQLWdBqHBYAgA~DO^_E\\u@Lg@h@gADQVWHa@x@`@T?PMlAaBRONAtAl@d@kDf@aB`Mc[DONLb@NJ?`@MFELa@\\y@|AwFXcBv@{F`A}H|@qEjAkEf@_C~@mFx@kGLw@f@eCf@uBNc@FGjEM|AOfCaAhGeBhAa@pCb@r@qBJk@NmGd@uDn@gDl@wAhAmBtA}D~AoFR_ABe@CU`@YRCdBPVHBWbHuQ~AiFb@cBLE?[nB{I^eAJI~EoAjAa@~Ba@x@Sr@q@OaAJOPCh@u@^SBIDa@j@}CP_@NC^@j@CxDkF@Ik@uGAg@LqJ?MRHVsAf@{GTyHDkCRKhBqA\\IjJaFnIoBJBZeE^iDNc@zAwBb@yAh@gCViNTaITwEXmBzAkFl@cCj@iDt@oFNgALqAHoGPsDIWJ{AJgGG{DQ{D@e@EqC?eBDgBC_CDyAFk@?mFGYNAbDu@?UDOpHsNrC{H~B_HvF}OhFeP?UlEkNhAoJp@aDbC_KTg@fAyCv@{CCCh@yBp@qBhAuCvAoCE{@@GHGeAuD_CkF_@wASoAGsHg@gFUsEIyEIqIOwFDyQUgIIyBO}BIuB@i@NwGFa@d@_AHBf@Yp@m@nAgCR[FQCK_@kAwAsBCO?S\\gB@a@Wu@YgA[oCQ}B?kAn@}AZk@HCl@e@|CcDPEtAoE`AgEr@sA~A_CvC}C~AuC^iA?WCKlAi@t@Ol@WH_@b@gAt@eAz@mBZaALoAd@oCDMJId@Iz@EZ@@MVy@TgADcANaI|@gNRuFXgDBq@ImCCiBb@}Bl@{BjBmGf@yANC?aBFcDj@cOT_CjAsHX}CBq@Ac@HGHOLm@d@iCVeBXcAZs@IUGu@GWs@uB]aBI}A@wAd@mHJA\\}@`@o@Ni@\\m@`AiCMOXcBPJx@eDDYj@sDd@gBl@uAD_@JcBJ_ARe@HKIOkAgASWeAqBBUQo@Ig@R_EHKt@gHPmC~@cDFD`@uBxA_Bu@yCb@Y|@Rb@Rj@F', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.28529978988048,-2.48367334722138], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=198">View all updates for The White Hart, Midsomer Norton</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        5<span class="sup">th</span> May 2017, 20:44
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=hophead">john mcgraw</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        5<span class="sup">th</span> May 2017, 20:44
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=hophead">john mcgraw</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac118198">No</span> <span id="discdetail118198" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 October 2016 by Jonathan Wilde</span></li><li>Bar Billiards : <span id="fac107198">No</span> <span id="discdetail107198" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 October 2016 by Jonathan Wilde</span></li><li>Beer Festivals : <span id="fac117198">No</span> <span id="discdetail117198" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 October 2016 by Jonathan Wilde</span></li><li>Beer Garden : <span id="fac114198">Yes</span> <span id="discdetail114198" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 April 2014 by Jonathan Wilde</span></li><li>CAMRA Discount : <span id="fac102198">No</span> <span id="discdetail102198" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 October 2016 by Jonathan Wilde</span></li><li>Car Park : <span id="fac113198">No</span> <span id="discdetail113198" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 April 2014 by Jonathan Wilde</span></li><li>Darts : <span id="fac111198">Yes</span> <span id="discdetail111198" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 April 2014 by Jonathan Wilde</span></li><li>Dog Friendly : <span id="fac105198">Yes</span> <span id="discdetail105198" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 April 2014 by Jonathan Wilde</span></li><li>Function Room : <span id="fac123198">No</span> <span id="discdetail123198" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 September 2018 by Jonathan Wilde</span></li><li>Hot Food : <span id="fac103198">No</span> <span id="discdetail103198" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 September 2018 by Jonathan Wilde</span></li><li>Live TV Sports : <span id="fac110198">Yes</span> <span id="discdetail110198" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 September 2018 by Jonathan Wilde</span></li><li>Micropub : <span id="fac122198">No</span> <span id="discdetail122198" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 October 2016 by Jonathan Wilde</span></li><li>Pinball : <span id="fac116198">No</span> <span id="discdetail116198" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 September 2018 by Jonathan Wilde</span></li><li>Pool Table : <span id="fac104198">Yes</span>  - <span id="discdetail104198" class="discdetail" style="">Upstairs</span> -   <span class="Reviewer">last updated 29 April 2014 by Jonathan Wilde</span></li><li>Real Ale : <span id="fac101198">Yes</span> <span id="discdetail101198" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 July 2014 by Rex Rattus</span></li><li>Real Cider : <span id="fac119198">Yes</span> <span id="discdetail119198" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 September 2018 by Jonathan Wilde</span></li><li>Wheelchair Access : <span id="fac120198">No</span> <span id="discdetail120198" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 September 2018 by Jonathan Wilde</span></li><li>WiFi : <span id="fac115198">Yes</span>  - <span id="discdetail115198" class="discdetail" style="">The Cloud</span> -   <span class="Reviewer">last updated 29 April 2014 by Jonathan Wilde</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/204/" class="List1">Wunder Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/61877/" class="List1">The Riverside</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86782/" class="List1">The Palladium Electric (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8.5 from 3 reviewer(s)" title="Pub has average rating of 8.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/52313/" class="List1">Mallards</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/35/" class="List1">Crossways Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/43/" class="List1">Dolphin Inn</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

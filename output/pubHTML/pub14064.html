@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Three Cups Inn pub in Stockbridge, Hampshire, SO20 6HB : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Three Cups Inn" />
+  <meta name="keywords" content="The Three Cups Inn, High Street, Stockbridge, Hampshire, Stockbridge Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Three Cups Inn in Stockbridge" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/14001_14500/14064_0e60c658.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/14064/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.11426100000000" />
+<meta property="og:longitude" content="-1.49572200000000" />
+<meta property="og:street-address" content="High Street" />
+<meta property="og:locality" content="Stockbridge" />
+<meta property="og:region" content="Hampshire" />
+<meta property="og:postal-code" content="SO20 6HB" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Three Cups Inn in Stockbridge? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Three Cups Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/14064/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Three Cups Inn in Stockbridge" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Three Cups Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/14001_14500/14064_0e60c658.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/14064/" />
+<meta name="geo.position" content="51.11426100000000;-1.49572200000000" />
+<meta name="geo.placename" content="The Three Cups Inn in Stockbridge" />
+<meta name="geo.region" content="UK" />
+<title>The Three Cups Inn in Stockbridge : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":14064},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(14064);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 14064;var pubaddress = "High Street";var pubname = "The Three Cups Inn";var pubpostcode = "SO20 6HB";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/hampshire/" title="Pubs Galore : Hampshire Page">Hampshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/stockbridge/hampshire/" title="Pubs Galore : Stockbridge Page">Stockbridge</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Three Cups Inn Page">The Three Cups Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="umkmm1f0v17rdgnsjvmdvhjtl1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/14064/" class="indisplay"><img src="/images/display/14001_14500/14064_0e60c658.jpg?w=2" alt="Picture of The Three Cups Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Wednesday, 2<sup>nd</sup> July 2014<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/14064/" class="smallbutton">View all this pub's pictures</a> (2 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/14064/">Pub map</a><br /><a href="/pubreviews/14064/">Pub reviews (3)</a><br /><a href="/pubpictures/14064/">Pub pictures (3)</a><br /><a href="/core/pubaudit.php?id=14064" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Three Cups Inn, Stockbridge Central, Stockbridge</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">High Street</span><br />
+
+
+<span class="town">Stockbridge</span><br />
+<span class="postcode">SO20 6HB</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01264810527</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/stockbridge-central/hampshire/">Stockbridge Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Three Cups Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>6</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review84699" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Three Cups Inn</h6>
+<p class="old">Well described by SteveofN21 below, this L-shaped place seems a bit open and sparse in places (the boarded flooring doesn&rsquo;t help) and was the quietest pub in Stockbridge on Saturday which was a shame. The rear garden beyond the conservatory was really rather lovely and a good bet for a summer&rsquo;s evening. As mentioned, quite food-oriented in here but less stiff than the Greyhound. Four ales at the bar; Sharps Cornish Coaster (pretty good), 2xItchin Valley, (my companion&rsquo;s was ok) and Flack Manor. Little glass jars contained a few drops of ale by each pump to denote colour. Selection of newspapers and magazines. I&#039;d give it another go.</p>
+<p class="Reviewer">On 4<sup>th</sup> July 2014 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review69122" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Gann">Steve of N21</a> left this review about The Three Cups Inn</h6>
+<p class="old">The Three Cups is another of the former 15th Century coaching Inns located on Stockbridge High Street. It is a Free House, but like the others in this moneyed Hampshire Town, its main focus seems to be on dining.. Internally there is a small lounge room with a wooden beamed ceiling, stone-wood flooring, and a large brick fireplace. And then the rest of the internal space is the dining area in the form of the Orangery which leads onto the outside patio. Here a lunchtime sandwich will set you back &pound;7.00 and a Burger or Fish and Chips will cost you the wrong side of &pound;12, although you can get 2 for &pound;20 during the week, and then other more exotic mains are west of &pound;16.00.<br />
+The outside place is one of the positive points of The Three Cups with a very pleasant secluded garden area beyond the patio section with one of the narrow tributaries of the River Test running alongside.<br />
+There are 4 real ale pumps on the bar and the beer choice was pretty good with focus seeming to be on South England Breweries .  Itchen Valley Faggins seems to be a permanent feature and Palmers Best Bitter was on for our visit, and both of these were good.<br />
+Comfortable enough inside but more gastro pub restaurant than traditional, so if you are only drinking, probably best to wait until the sun is out and then you could utilise the very good garden for an alfresco pint.</p>
+<p class="Reviewer">On 16<sup>th</sup> April 2013 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 1577 recommendations about 1528 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review530" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=chris+mc">Chris McMullen</a> left this review about The Three Cups Inn</h6>
+<p class="old">How can i begin. This public house on Stockbridge High St is 15C. It appears to be run/owned by a French family and serves draught Ringwood Ale. The food is superb and appreciated by patrons. <br />
+<br />
+However the aroma of the drains, management smoking behind the bar, other management interviewing prospective staff in the bar area, and wiping down public spaces with dirty old cloths, somewhat offset the overall positive features.<br />
+<br />
+Obviously this is a favourite haunt for a quick break or for serious evening dining, but the management???</p>
+<p class="Reviewer">On 20<sup>th</sup> April 2005 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 6 recommendations about 6 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=1118">Stockbridge in the Test Valley</a> by <a rel="nofollow" href="/userinfo.php?name=Gann">Steve of N21</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Three Cups Inn</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="331267043647831">Facebook - <a href="https://www.facebook.com/thethreecups/" target="_blank" rel="nofollow">The Three Cups Inn</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/14064/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.11426100000000, -1.49572200000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.11426100000000, -1.49572200000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Mottisfont & Dunbridge, 6.95 miles, 2 hr 14 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Andover, 7.51 miles, 2 hr 25 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Grateley, 8.19 miles, 2 hr 38 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('gh~vH~bcHvAcXrIfGxEjClA\\vBT\\xAj@rAzGvEhEjAbAJfB@bBjAb@?~BlAjDLp@k@pB?p@|AfCThCs@tANtAUp@kDLaEj@i@tCNjFfAxDnAfAn@nAj@fAj@jFxBtAx@|EtA|A?hIxB|BhAz@XxHnEr@ZdHrD|Cp@tAPnGHpCYtBKdBHhDFnIlBxD~AxCpBtBdBnFzGvEpFfGvFjP|PvF|G~BfDtA~AhBzArBxAd@TfBl@vAXrARv@DpJJ|AAtLLhE?zBLxBCbHn@pBp@~BfAlEdBpA\\b@PV?\\V^GfBTvFd@zIfAvDh@jBFdAPt@ZtAZx@Vb@HWvBCRGHHTB^FjLLvA@zDFnBFp@Hl@HvBt@nIIXzAbBl@`ABJHp@Dp@NtBRfAXjB^h@N`AXnAPb@FKnDnC`HhSBP`@jXlBn@pCzAzBtAh@D~@?bBGlBWdB]HzAJl@t@pAv@rB`CdFz@bAR@hLnKRZj@~AzBbOLN`HG', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('gh~vH~bcHk@vKItB}@AcBIyEuAsAe@}@Ii@M{BaAmBe@kAQaEYoF_CoBg@{EwAe@QcBeBk@c@}@[{A@wHgEwAm@{Ac@k@WeAw@yCi@uAo@aAo@mAsAiDqGcB}DuBmEsAmAw@y@k@aAyAk@iCsAmCuByBuBuC}Bq@?uBfBoBt@uBl@m@Ly@IsCc@{AHe@QsAcAiAq@kAi@}Ac@{@Mk@CyAF{GHu@XgSfJ{CvB}PjHyCNuEBeDC}NFmAGmMkB_EoB_GaDwEwCcBqAaDYiHOwEWkCEkAMmDk@cCg@u@IsBBuCTk@?}@Ui@_@m@m@{@sAKGUIK?MFwBxAg@Vc@PqC|@mBZeElAmAJ_ACw@M[M_BkAuAyAk@e@qBuAuBaAQGyAMg@BqAj@yGhDo@f@[^o@lAYz@cA`Es@fBaAxBc@p@s@v@mBhBm@b@{Az@gEpBw@b@e@b@_@d@qArB_AbB[`@{@p@k@Zi@Rq@JeACaALkAb@a@Fe@Dw@Ca@FkAfAyBlAoE`BcBvA}Ar@c@`@Y`@IUOs@Gg@ImAQeBM]MSa@MOViAvAo@nAqB~A{A`AuBRc@CyBo@iAWwCi@[b@[L_Fu@a@CW|ASt@KPcJlAmEjCoAf@ALEDE?EKQR]HaS~Dw@Hq@?sAI]MCGKIG?GHa@?gE{AcAU@OkAY]Ok@M@MmBiHIs@i@oBMOGM{@_D_BeFEDIXUXXx@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('gh~vH~bcHs@pNCfAg@pMGhAI^IVKND\\@`@?rB[dIg@bDc@bGQnA_@rB_@jC_@hD]lDSfDKjCGvJER?xEDxBERFRBvDE`BLnCDjCI`@?vBJtHDnIXt_@f@dcAMJaV`l@yFz\\a@fCeCxNw@rFSbEUnIwAzPJjA`BzKHzAQpAuAnAwGdA_Gb@uHjB_AtAGbBZjHe@vIkA[k@EE`@AbCA\\B|DAt@{@`EA`A}@cBu@q@Cl@Qx@[h@Sr@Yb@Wp@u@|AKFi@jCyAzEa@fBm@dBmAlCSn@OROb@Yh@m@~AgAdBYr@_@h@EVUJY`@OFwApAIRc@b@uAx@y@Aa@OSCk@JOOy@SS?QDc@ESMG_@KO]J{@`@IJOw@s@n@s@`@mAn@qAf@OUSq@qB~BDZHVUD]d@_@ZMVOPGXOTMp@a@d@]n@[\\a@j@yCfCOBW^NZi@X[p@_Bn@w@`@_@j@KdAiAjD_@vBo@bBcAbF_@xAOhAIdABZYv@Ql@eD~Ho@rA]j@oBhEg@hBQtAq@[wAc@oLcHcB{@}Bw@kBUiDDi@VwAtAgDtDm_@fSkXvg@g@NGn@}AhDGd@lDvk@s@f@aMvM_NpMaIrIYb@yAbDmA`Fm@tCo@nBkA~BOl@I]]sC`@QiA{IB[Ik@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.11426100000000,-1.49572200000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=14064">View all updates for The Three Cups Inn, Stockbridge</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        21<span class="sup">st</span> Aug 2016, 19:04
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        21<span class="sup">st</span> Aug 2016, 14:12
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Bar Billiards : <span id="fac10714064">No</span> <span id="discdetail10714064" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 July 2014 by Quinno _</span></li><li>Beer Garden : <span id="fac11414064">Yes</span> <span id="discdetail11414064" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 July 2014 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10214064">No</span> <span id="discdetail10214064" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 July 2014 by Quinno _</span></li><li>Car Park : <span id="fac11314064">No</span> <span id="discdetail11314064" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 July 2014 by Quinno _</span></li><li>Hot Food : <span id="fac10314064">Yes</span> <span id="discdetail10314064" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 July 2014 by Quinno _</span></li><li>Jukebox : <span id="fac11214064">No</span> <span id="discdetail11214064" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 July 2014 by Quinno _</span></li><li>Karaoke : <span id="fac10614064">No</span> <span id="discdetail10614064" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 July 2014 by Quinno _</span></li><li>Live TV Sports : <span id="fac11014064">No</span> <span id="discdetail11014064" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 July 2014 by Quinno _</span></li><li>Pinball : <span id="fac11614064">No</span> <span id="discdetail11614064" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 July 2014 by Quinno _</span></li><li>Pool Table : <span id="fac10414064">No</span> <span id="discdetail10414064" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 July 2014 by Quinno _</span></li><li>Real Ale : <span id="fac10114064">Yes</span> <span id="discdetail10114064" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 July 2014 by Quinno _</span></li><li>Real Cider : <span id="fac11914064">No</span> <span id="discdetail11914064" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 July 2014 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11am - 11pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - 11pm</td></tr>
+<tr><td>Saturday</td><td>11am - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14057/" class="List1">The Greyhound on the Test</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 3 reviewer(s)" title="Pub has average rating of 5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/63034/" class="List1">The Grosvenor</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 3 reviewer(s)" title="Pub has average rating of 6 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14066/" class="List1">The White Hart</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

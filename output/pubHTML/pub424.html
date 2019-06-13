@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Drawbridge pub in Bristol, Bristol (County), BS1 4UT : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Drawbridge" />
+  <meta name="keywords" content="The Drawbridge, 14-15 St Augustines Parade, Bristol, Bristol (County), Bristol Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Drawbridge in Bristol" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/1_500/424_4e50c252.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/424/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.45327650291501" />
+<meta property="og:longitude" content="-2.59822368621826" />
+<meta property="og:street-address" content="14-15 St Augustines Parade" />
+<meta property="og:locality" content="Bristol" />
+<meta property="og:region" content="Bristol (County)" />
+<meta property="og:postal-code" content="BS1 4UT" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Drawbridge in Bristol? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Drawbridge the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/424/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Drawbridge in Bristol" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Drawbridge " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/1_500/424_4e50c252.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/424/" />
+<meta name="geo.position" content="51.45327650291501;-2.59822368621826" />
+<meta name="geo.placename" content="The Drawbridge in Bristol" />
+<meta name="geo.region" content="UK" />
+<title>The Drawbridge in Bristol : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":424},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(424);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 424;var pubaddress = "14-15 St Augustines Parade";var pubname = "The Drawbridge";var pubpostcode = "BS1 4UT";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/bristol/" title="Pubs Galore : Bristol (County) Page">Bristol (County)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/bristol/bristol/" title="Pubs Galore : Bristol Page">Bristol</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Drawbridge Page">The Drawbridge Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="gv3kc5eggl7vu0phft5p93rrk3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/424/" class="indisplay"><img src="/images/display/1_500/424_4e50c252.jpg?w=2" alt="Picture of The Drawbridge" /></a><br />  Image posted by <a href="/userinfo.php?name=sheffield+hatter" class="indisplay">Will Larter</a><br />
+  Submitted on Sunday, 16<sup>th</sup> November 2014<br />
+  With picture contributions to 8564 other pubs<br />
+<a href="/pubpictures/424/" class="smallbutton">View all this pub's pictures</a> (16 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/424/">Pub map</a><br /><a href="/pubreviews/424/">Pub reviews (7)</a><br /><a href="/pubpictures/424/">Pub pictures (17)</a><br /><a href="/core/pubaudit.php?id=424" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Drawbridge, Bristol Central, Bristol</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">14-15 St Augustines Parade</span><br />
+
+
+<span class="town">Bristol</span><br />
+<span class="postcode">BS1 4UT</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">John Barras (Spirit Pubs)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/bristol-central/bristol/">Bristol Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Drawbridge  <span class="h2note">(Average Rating: <span id="averagerating"><b>6</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review125432" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about The Drawbridge</h6>
+<p class="old">Recently re-opened after an extensive refurbishment, this is a Greene King house in a prominent position on the city centre, and should be buzzing with a good trade, not least from the adjacent theatre. That rarely seems to be the case though, and from experience it is often practically deserted. Hopefully that will change now, although the refurbishment is rather generic in character and no doubt much the same as many other GK pubs up and down the country. <br />
+<br />
+Whilst the layout is pretty much unchanged, it is of course now tidy and up together whilst it was looking slightly down at heel previously. It&rsquo;s a good size internally and divided in to a number of separate areas. The flooring is predominantly wood strip, with some chequered tiling around the bar counter, whilst the walls are a mixture of mostly dark green paintwork and wood panelling. Some of this is quite extensive in places, and with the addition of old black and white photographs on the walls gives it an almost elegant feel, although the presence of a pool table rather negated this. A large mural of Brunel&rsquo;s Suspension Bridge was on one wall, and elsewhere were old photographs of Bristol, many featuring hot air balloons for which the city is famed. There were also a number of film star pictures, including local lad Cary Grant. Some large Greene King etched mirrors completed the interior d&eacute;cor, although there was also a glass display cabinet with books about Bristol and a model of the Bristol bus. A TV screen was showing the darts match, but the volume was off so this was not too intrusive.     <br />
+<br />
+Beers on tap were Greene King IPA, Abbott Ale, Timothy Taylor Landlord and Butcombe, whilst a fifth pump appeared unused. Ciders meanwhile were a trio from Thatcher&rsquo;s with Dry, Gold and Haze, along with Strongbow Dark Fruit. What had started out as a fairly relaxed pint whilst we waited for our bus soon changed at 11:00pm when there was some rather aggressive bell ringing and the background music was promptly turned off. By 11:02 the lights had been turned up, the TV and fruit machines turned off and we were told that they&rsquo;d &ldquo;be kicking out in five or ten minutes&rdquo;. Not one I&rsquo;ll be rushing back to, but I may pop in again purely because of it&rsquo;s location if I find myself with time to kill before the bus.</p>
+<p class="Reviewer">On 1<sup>st</sup> January 2018 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review102363" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about The Drawbridge</h6>
+<p class="old">Dull John Barras pub on that part of the former quayside which is now filled in.  Split-level interior with a little further seating upstairs, all with the expected corporate furniture and decor.  Further annoyance is that just two of the six handpumps were in use, dispensing Courage Directors and Greene King IPA Reserve.</p>
+<p class="Reviewer">On 27<sup>th</sup> December 2015 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review70406" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Drawbridge</h6>
+<p class="old">Drawn in by the lure of a CAMRA discount (I&rsquo;m cheap and I admit it!) I was stuck by how similar the place was all these years later from its Horn &amp; Trumpet days - I was sure that its location and proximity to the Hippodrome would have seen a major internal gutting and modern refit but no, it still seems aimed at the students and weekend binge drinkers. The U-shaped interior is quite gloomy and painted in vomit yellow. There&rsquo;s a raised section to the rear that looks a little classier and there are a number of tight semi-circular booths on a spur off the right-hand side of the main bar. Two pool tables out the back by the toilets(!). Perhaps the only real selling point is the exterior seating overlooking the square. Parts of the interior need maintenance, which given its location next to a theatre smacks of laziness. At the bar there were a surprising number of ales (Butcombe Bitter, Prescott and Doom Bar with Tribute &lsquo;back soon&rsquo;). It was 10% off for CAMRA cards as advertised and my half of Prescott clocked in at a very reasonable &pound;1.32 which helped offset its middling condition (a bright start that faded very rapidly). This is a place that really should be aiming for the stars given its enviable location next to the Hippodrome and redeveloped dockside area - but instead seems content to work on the maxim that even a stopped clock still tells the right time twice a day.<br />
+<br />
+February 2008<br />
+Now called the Drawbridge. The Horn and Trumpet was a dark and fairly rancid place in its latter years, an example of another Bristol town centre pub that went downhill in the late 90&#039;s. I doubt many people mourn its passing. I don&#039;t.</p>
+<p class="Reviewer">On 24<sup>th</sup> May 2013 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/424/">View more reviews of The Drawbridge (7)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Drawbridge</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Drawbridge - <a href="http://www.johnbarras.com/pub/drawbridge-bristol/p0950/" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">www.johnbarras.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="181396468645507">Facebook - <a href="https://www.facebook.com/TheDrawbridgepub/" target="_blank" rel="nofollow">The Drawbridgebristol</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/424/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.45327650291501, -2.59822368621826], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.45327650291501, -2.59822368621826]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Bristol Temple Meads, 1.08 miles, 20 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Clifton Down, 1.18 miles, 22 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Bedminster, 1.33 miles, 25 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('{m`yHbmzNb@D?Ob@@FBD_@SKRETBZNNLFMBoA@g@FQt@m@^e@r@s@^Q@a@H?@gAp@u@Tc@hBsCAQDKHEHHbCoDN_@LkED]b@kGHkDFa@QI@wAb@}LHkDGa@ROA_@FAPMRm@PY@uAMWR}BJ[Vo@IKL[Q[LYwBiGQMoA{DJ]Q[N_@vAd@p@L@u@[Ai@K', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('{m`yHbmzNb@D?OR@?Ea@E_Bc@o@Eg@Xa@d@GQKMu@c@SGkDa@g@AcBDEP}@f@k@l@CECFO[g@b@AKg@p@GRq@pAa@t@kCbCS\\OWmAzBuAtAaAn@qAZi@ZWVuCdE}ApAi@n@OX_@l@CD?HGVGNGh@KlBBrCE`Ae@hBo@lBs@bA{AjBmBlDi@zA[jAGRAT?f@UJVhALz@?@GDZrCEDAO', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('{m`yHbmzNb@D?Ob@@FBD_@SKRETBZNNLFMBoA@g@FQt@m@^e@r@s@^QT?jC\\HAnF`A^CHIfBMjAAJFdA@tArFvAhGx@e@xBh@@OzBx@TmBBY|@HFCDMFqBBSLWx@KNOGQK_D@mBT?HYp@`@zCl@f@@XCb@s@RMvAsCHHL?XWbA}@d@Sl@A^Jb@XDCvCUFQNLHNf@qAS}@Si@g@Xq@sBEDg@eB', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.45327650291501,-2.59822368621826], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=424">View all updates for The Drawbridge, Bristol</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        1<span class="sup">st</span> Jan 2018, 17:53
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> amended by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        30<span class="sup">th</span> Dec 2017, 20:19
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac118424">No</span> <span id="discdetail118424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 June 2014 by ROB Camra</span></li><li>Beer Garden : <span id="fac114424">Yes</span> <span id="discdetail114424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 June 2014 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac102424">Yes</span>  - <span id="discdetail102424" class="discdetail" style="">10% </span> -   <span class="Reviewer">last updated 06 October 2014 by ROB Camra</span></li><li>Car Park : <span id="fac113424">No</span> <span id="discdetail113424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 June 2014 by ROB Camra</span></li><li>Child Friendly : <span id="fac121424">No</span> <span id="discdetail121424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 June 2014 by ROB Camra</span></li><li>Dog Friendly : <span id="fac105424">Yes</span> <span id="discdetail105424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 June 2017 by Jonathan Wilde</span></li><li>Function Room : <span id="fac123424">Yes</span> <span id="discdetail123424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 June 2017 by Jonathan Wilde</span></li><li>Hot Food : <span id="fac103424">Yes</span> <span id="discdetail103424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 June 2014 by ROB Camra</span></li><li>Jukebox : <span id="fac112424">No</span> <span id="discdetail112424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 June 2017 by Jonathan Wilde</span></li><li>Live Music : <span id="fac108424">Yes</span> <span id="discdetail108424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 June 2014 by ROB Camra</span></li><li>Live TV Sports : <span id="fac110424">Yes</span> <span id="discdetail110424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 June 2017 by Jonathan Wilde</span></li><li>Micropub : <span id="fac122424">No</span> <span id="discdetail122424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 June 2017 by Jonathan Wilde</span></li><li>Pinball : <span id="fac116424">No</span> <span id="discdetail116424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 June 2017 by Jonathan Wilde</span></li><li>Pool Table : <span id="fac104424">Yes</span> <span id="discdetail104424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 May 2013 by hondo .</span></li><li>Real Ale : <span id="fac101424">Yes</span> <span id="discdetail101424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 June 2014 by Dave McNally</span></li><li>Real Cider : <span id="fac119424">No</span> <span id="discdetail119424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 June 2014 by ROB Camra</span></li><li>Wheelchair Access : <span id="fac120424">Yes</span> <span id="discdetail120424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 December 2017 by Jonathan Wilde</span></li><li>WiFi : <span id="fac115424">Yes</span> <span id="discdetail115424" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 June 2014 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - Midnight</td></tr>
+<tr><td>Saturday</td><td>11am - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 4 reviewer(s)" title="Pub has average rating of 6 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54712/" class="List1">Smoke &amp; Mirrors</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/71174/" class="List1">No. 1 Harbourside</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84245/" class="List1">Bambalan</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 2 reviewer(s)" title="Pub has average rating of 5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82639/" class="List1">Turtle Bay</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/401/" class="List1">Greenhouse</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/71196/" class="List1">Watershed</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/80555/" class="List1">Under the Stars</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/80539/" class="List1">The Stable</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

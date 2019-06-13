@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Swan Inn pub in Ringland (near Norwich), Norfolk, NR8 6AB : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Swan Inn" />
+  <meta name="keywords" content="Swan Inn, 1  The Street, Ringland, Norwich, Norfolk, , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Swan Inn in Ringland" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/28501_29000/28672_da7b6426.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/28672/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.68083700000000" />
+<meta property="og:longitude" content="1.16200700000000" />
+<meta property="og:street-address" content="1  The Street" />
+<meta property="og:locality" content="Ringland" />
+<meta property="og:region" content="Norfolk" />
+<meta property="og:postal-code" content="NR8 6AB" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Swan Inn in Ringland? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Swan Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/28672/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Swan Inn in Ringland" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Swan Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/28501_29000/28672_da7b6426.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/28672/" />
+<meta name="geo.position" content="52.68083700000000;1.16200700000000" />
+<meta name="geo.placename" content="Swan Inn in Ringland" />
+<meta name="geo.region" content="UK" />
+<title>Swan Inn in Ringland (near Norwich) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":28672},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(28672);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 28672;var pubaddress = "1  The Street";var pubname = "Swan Inn";var pubpostcode = "NR8 6AB";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/norfolk/" title="Pubs Galore : Norfolk Page">Norfolk</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/norwich/norfolk/" title="Pubs Galore : Norwich Page">Norwich</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/ringland/norfolk/" title="Pubs Galore : Ringland Page">Ringland</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Swan Inn Page">Swan Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="e190bm2bqtdbccrolnhpifnbl2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/28672/" class="indisplay"><img src="/images/display/28501_29000/28672_da7b6426.jpg?w=2" alt="Picture of Swan Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=BENJO" class="indisplay">BEN UNSWORTH</a><br />
+  Submitted on Monday, 30<sup>th</sup> May 2011<br />
+  With picture contributions to 704 other pubs<br />
+<a href="/pubpictures/28672/" class="smallbutton">View all this pub's pictures</a>
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/28672/">Pub map</a><br /><a href="/pubreviews/28672/">Pub reviews (0)</a><br /><a href="/pubpictures/28672/">Pub pictures (1)</a><br /><a href="/core/pubaudit.php?id=28672" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Swan Inn, Norwich</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">1  The Street</span><br />
+
+<span class="town">Ringland</span><br />
+<span class="postaltown">Postal town: Norwich</span><br />
+<span class="postcode">NR8 6AB</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/ringland/norfolk/">Ringland</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Swan Inn  <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div style="line-height:1.3;margin:5px 15px;text-align:center;"><b>Currently no reviews of this pub.</b><br />
+Be the first to write a recommendation on this pub and let everyone know why they should visit.</div>
+
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Swan Inn</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Swan Inn and Taste of Oz Restaurant - <a href="http://www.tasteofoz.com" title="Submitted by:- Jack Nicholson" target="_blank">www.tasteofoz.com</a></li>
+          </ul>
+</div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/28672/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.68083700000000, 1.16200700000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.68083700000000, 1.16200700000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Norwich, 8.4 miles, 2 hr 42 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Wymondham, 9.7 miles, 3 hr 7 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Salhouse, 11.2 miles, 3 hr 36 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ugp`I__bFv@uC~@_FJk@L[LShCwAPCn@DDg@jAoDt@sBBOFsDEaJWaDmEmc@YaBQYY[{D}AeBcAsBs@[S[k@OgARaFO}Ay@mEQ_BiBwMCWIsBEmED{@Lc@KMBKiAsAe@mAa@mA?M@Ml@}AD]\\yAd@oANu@Da@@k@IaC?wACK@}@H_BHg@h@}A^s@^aACE`@{AbAqELaA?m@IsA@STcBB@@MKOCYj@}CEC`EyUVmAcA{@OYAOBWnCkK`AaG^sARWZQLE^Dh@ZBGTNTJHEXkADu@@w@FcABY\\qB?QAGBMD?FO?SDUDoAQcCGa@@O[aCMuC@o@ZoDP{@`A_DZ{AZeED}@A_AIgAIq@@Gc@{CCW]aClCyB?o@O?BQn@mEYi@HU@ODQn@oATa@d@m@dAiB`AwBXeAYYf@kBXkBCo@Oi@NMJg@NQFSFABGAc@NGDETaARcANoBh@uBh@qCd@_D~@oFVoApAaFNElP}f@`A{Cl@cBpDeIb@w@tDcJrCwF|HyLxHiJn@k@dUcXJ[JOJIVOlB_CzCgDjTkWbLyMjCgDZTbBaCE_@j@q@Bk@HQD]RDd@_Ab@B^OjAwA?]dCsEvFgM`CeGX}@P[Hi@HUjCqHbHaWZ}AxAgJDEDUJOB[?UE[BQ^s@AQf@eCd@cBp@iBxCgLJ?fAqFv@wCAc@V_Aj@eBPKb@iAFHlBeEGIt@eBhAgDpAcE|@iDVSjA_CLM?MjA{BHCBBxAiCIY|@iAPKh@k@|CqE~@mAX]h@a@COd@k@h@?AODCEUA[DSg@}@UYPm@?SEa@DGDKDiCFIPIbDN?}@E?BeB@Yz@Bt@EDGhCM|Co@hAADDTADI|@g@V[n@c@r@{@`@_@n@{@v@gBVW^S?ILGbA@BJFB|@Rn@D?GP??M`AUfAMb@KFM?YQ}D?i@?}@FiAJkAJu@P}@f@eBd@sBPg@~@uDFD~@eDx@qDHFDGNFVkAhBKj@mA@BLU', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ugp`I__bFYfAGl@?\\FR`A`BJf@Hp@rAv@lAlAlCnBpNxInAoA`DwD~DgFj@FrB`@dADtDc@xFy@~BCn@EhA_@T~@l@bBvBzE|@bBfAfBjAlAhDfCjFxCv@j@bMbL\\Vd@f@VNv@RrEJlCS^Kr@c@pBu@t@Kd@Hd@Pf@XR@nDE~CBlAMhEoAPW`@sA`@c@lAi@D_A\\@?r@t@DBw@tAe@NCBODKf@AbDqBHDr@Fj@W?Mf@ABJv@^n@DBGjFrCZVEl@nQdDvDv@FQ`A^~EbDf@h@Z`@z@lBz@vArAfB~DdE\\ThAd@rDjA`@d@Xp@jBrFN`@NNVF^?d@OdAm@RUpAcCb@o@ZY|@[Bv@D?VTx@pAh@j@hA|@tH`F`EtCnAn@`A\\tBr@bBd@lBr@xFrATaARWFEb@AXOh@_AZaAZi@PGt@ENILMLYTw@lEiQXy@LI^IvE]xLQ|BUxBEhDWpABxCd@hIzEt@z@l@jAZr@~CrJfArCp@nAv@`AxAj@rBbA~AvAtBpCvAbBlAlAdElCbAh@p@d@p@^rCn@rEvAjARxDVz@AtAQ`h@eCbCBzGr@fCf@lEd@dB\\j@oAOqAHcAz@i@fB{@bBElAIf@Mt@_@TULYFa@l@T\\?n@Ox@Af@IZQr@k@rAs@|BwA~AqAdE{CBV}@lIRXTMrBWhBc@vCm@~Bs@hCcAnCi@PWTKb@FfEDn@JZGxDwEhEyFZ|Az@tCz@pD~A~FhChK|CnLtC|J\\dB?j@NF\\~@FA`@jAALp@nBxAbFhDfKf@~AD?jGtQLNVJJc@n@NdBtChDtEpEdHzE`H|GjKl@n@bCpD`@f@lAdBjBtCbAhB`A~Bf@rAPl@?`@CNRPRQEMPOJRHFJBLEh@i@^_ANS~A{Eb@aAn@{@FDn@F`@LZVR^`@jARS^jAPANLJ@FRNOk@kB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ugp`I__bFv@uC~@_FJk@L[LShCwAPCn@DDg@jAoDt@sBBOFsDEaJWaDmEmc@YaBQYY[{D}AeBcAsBs@[S[k@OgARaFO}Ay@mEQ_BiBwMCWIsBEmED{@Lc@KMBKiAsAe@mAa@mA?M@Ml@}AD]\\yAd@oANu@Da@@k@IaC?wACK@}@H_BHg@h@}A^s@^aACE`@{AbAqELaA?m@IsA@STcBB@@MKOCYj@}CEC`EyUVmAcA{@OYAOBWnCkK`AaG^sARWZQLE^Dh@ZBGTNTJHEXkADu@@w@FcABY\\qB?QAGBMD?FO?SDUDoAQcCGa@@O[aCMuC@o@ZoDP{@`A_DZ{AZeED}@A_AIgAIq@@Gc@{CCW]aClCyB?o@O?BQn@mEm@aAlBgDw@gCECpAoIf@{ANs@`@uEI@s@e@AGA]cAs@[a@BiAl@iJIiEMsJJiLI{AY{Ca@qGWyCMa@?_@mA}LMkFyBu[?g@Bc@t@e@C}@Qi@s@qBk@eCM}@m@aGaA_Gk@gGUuAiBmHQeAOoAK_BCcAAcBBcECeC]sHbA{BlBmCvCqCbA}AMS]M?ME[GKYEBm@AORWVq@PMaAyCw@gEo@yEMaFB_J^}Jx@a[DwHGcH_@gHw@iGwA}HeBoFeCwFyHeNqC}FgAeDuAkF}@eEa@yBAo@Jg@Bm@SeAVmAvB_EbDiFhB{BdCgCdDaDrCeD|BuD|AaDfAmDzAgGdAmHl@_HJwEB_EMgH}@iNm@iKSsFGoDB_LZcLJuISoIm@oIc@sDoB_Oy@oIKkCBq@Lg@@u@Ec@Qc@QcA?s@tBq]\\aF\\wDtAuK|BeOdMmw@bEyYzB{MZaAXg@h@k@RMPYLk@?_AJ}@`@t@Ls@f@_BnDgF~BkCtBkBjB}Ar@]`C{@i@e@g@o@e@?qCw@IQi@gFsBiHE{AH_Lq@GGm@C??cCWoTCa@IWCuIg@KeDqb@HwBqAm^@e@I}@AaBM_@Re@RgAiAsCcAoAyDkB', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.68083700000000,1.16200700000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=28672">View all updates for Swan Inn, Ringland</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        31<span class="sup">st</span> May 2011, 00:00
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=BENJO">BEN UNSWORTH</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        30<span class="sup">th</span> May 2011, 21:16
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=BENJO">BEN UNSWORTH</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Real Ale : <span id="fac10128672">Yes</span> <span id="discdetail10128672" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 May 2014 by Dave McNally</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

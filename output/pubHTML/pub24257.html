@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Kings Arms pub in SE1, London (Central), SE1 1YT : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Kings Arms" />
+  <meta name="keywords" content="Kings Arms, 65  Newcomen Street, SE1, London (Central), London Bridge, Borough, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Kings Arms in SE1" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/24001_24500/24257_fab21771.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/24257/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.50281238523426" />
+<meta property="og:longitude" content="-0.09089469909668" />
+<meta property="og:street-address" content="65  Newcomen Street" />
+<meta property="og:locality" content="SE1" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="SE1 1YT" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Kings Arms in SE1? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Kings Arms the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/24257/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Kings Arms in SE1" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Kings Arms " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/24001_24500/24257_fab21771.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/24257/" />
+<meta name="geo.position" content="51.50281238523426;-0.09089469909668" />
+<meta name="geo.placename" content="Kings Arms in SE1" />
+<meta name="geo.region" content="UK" />
+<title>Kings Arms in SE1 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":24257},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(24257);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 24257;var pubaddress = "65  Newcomen Street";var pubname = "Kings Arms";var pubpostcode = "SE1 1YT";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/se1/central-london/" title="Pubs Galore : SE1 Page">SE1</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Kings Arms Page">Kings Arms Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="f4cljhvq3g8c7imqeajgd241r5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.814697265625E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/24257/" class="indisplay"><img src="/images/display/24001_24500/24257_fab21771.jpg?w=2" alt="Picture of Kings Arms" /></a><br />  Image posted by <a href="/userinfo.php?name=Maldenman" class="indisplay">Malden man</a><br />
+  Submitted on Monday, 12<sup>th</sup> September 2016<br />
+  With picture contributions to 1669 other pubs<br />
+<a href="/pubpictures/24257/" class="smallbutton">View all this pub's pictures</a> (14 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/24257/">Pub map</a><br /><a href="/pubreviews/24257/">Pub reviews (8)</a><br /><a href="/pubpictures/24257/">Pub pictures (15)</a><br /><a href="/core/pubaudit.php?id=24257" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Kings Arms, SE1</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">65  Newcomen Street</span><br />
+
+
+<span class="town">SE1</span><br />
+<span class="postcode">SE1 1YT</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02074071132</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/london-bridge/central-london/">London Bridge</a>, <a href="/areas/borough/central-london/">Borough</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by Kings Arms</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/kingsarmsboro" target="_blank"><img src="https://pbs.twimg.com/profile_images/809786833882251264/pO6d31SD_normal.jpg" alt="Kings Arms Borough" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/kingsarmsboro" target="_blank">Kings Arms Borough</a></strong>
+Today&#039;s special duck breast served with new potatoes and vegetables. Absolutely delicious <a href='https://t.co/2MzkkfEi8Q' target='_blank'>https://t.co/2MzkkfEi8Q</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/kingsarmsboro/status/925682857464549376">11:16 AM Nov 1st 2017</a> from <a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/kingsarmsboro" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/kingsarmsboro" target="_blank">Kings Arms Borough</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Kings Arms  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review136541" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Brainypool">Jon B</a> left this review about Kings Arms</h6>
+<p>quite a nice place off the bustling main road that felt pleasingly old fashioned inside - obviously a deliberate decor choice but nicely done all the same. reasonable if unexciting beer choice. mixed clientele. Decent laid back pub.</p>
+<p class="Reviewer">On 2<sup>nd</sup> February 2019 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 539 recommendations about 536 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review135000" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> left this review about Kings Arms</h6>
+<p>Well described below, this is a simple yet comfortably traditional pub with a central bar sporting some rather gaudy brasswork, looking rather out of place; friendly staff too. There were two TVs on high but as both were off, I know not when they come on. Quiet on our early evening arrival, it soon began to fill up with office workers but as we left shortly after, I don&#039;t know just how busy it gets.<br />
+Ales: something I can&#039;t recall, TT&#039;s Landlord, Harvey&#039;s Sussex Best, Purity&#039;s Mad Goose and Truman&#039;s Runner at &pound;4.60 a pint - a little dear for this type of pub.<br />
+This is a welcome retreat from the bustle of Borough Market and for a quiet drink is miles better than the mayhem that is The George just up the road.</p>
+<p class="Reviewer">On 28<sup>th</sup> November 2018 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 873 recommendations about 860 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review130967" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about Kings Arms</h6>
+<p class="old">Traditional side street pub with a lovely fa&ccedil;ade (the exterior plaque was originally sited on the old London Bridge) and a small L shaped interior. Pleasingly clean and comfortable inside, with dark third length wood panelling, mirrored fireplace inset and unusual twirly brass bar mounted glass holders / uplighters. Five pumps, all on; Timothy Taylor Landlord, Mad Goose Purity, Brains Rev James, Harveys Sussex Best and Truman&#039;s Swift at &pound;2.10, a half. Adventurously priced bar snacks, with a sausage roll at &pound;3.50 and a pork pie &pound;4. Noticeably busier than the nearby competition and perhaps understandable given my experiences during the evning. A decent little place and worth popping in. 7.5</p>
+<p class="Reviewer">On 1<sup>st</sup> February 2018 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/24257/">View more reviews of Kings Arms (8)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Kings Arms</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Kings Arms - <a href="http://www.kingsarmsborough.co.uk/" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">www.kingsarmsborough.co.uk</a></li>
+			<li>Randomness Guide to London - <a href="http://london.randomness.org.uk/wiki.cgi?King's_Arms,_SE1_1YT" title="Submitted by:- Kake Pugh" target="_blank">King's Arms entry</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="483290785164755">Facebook - <a href="https://www.facebook.com/thekingsarmsborough/" target="_blank" rel="nofollow">The Kings Arms - Borough</a></li></ul><ul id="Custom2"><li class="twitlink" id="3460589177">Twitter - <a href="https://twitter.com/kingsarmsboro" target="_blank" rel="nofollow">Kings Arms Borough</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/24257/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.50281238523426, -0.09089469909668], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.50281238523426, -0.09089469909668]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> London Bridge, 0.42 miles, 8 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> London Bridge, 0.42 miles, 8 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> London Cannon Street, 0.76 miles, 14 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('gdjyHnvPR{@f@eDj@uBOKwFaC`@aBuCmC@G]WBK_@Wk@q@x@yCNAc@u@x@kBRZFK', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('gdjyHnvPR{@f@eDj@uBOKwFaC`@aBuCmC@G]WBK_@Wk@q@x@yCNAc@u@x@kBRZFK', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('gdjyHnvPKd@i@tCoDsCe@}@iFoHSG_AiAg@c@sAw@uGeBwG}AsBk@Lz@LB[jDU|Aq@bDSlAc@tEICH_A', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.50281238523426,-0.09089469909668], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=24257">View all updates for Kings Arms, SE1</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        2<span class="sup">nd</span> Feb 2019, 13:25
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Brainypool">Jon B</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        28<span class="sup">th</span> Nov 2018, 21:47
+      </div><div class="auditexp">Request to add pub to area <a href="/areas/london-bridge/central-london/">London Bridge</a> by <a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> approved
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11824257">No</span> <span id="discdetail11824257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Bar Billiards : <span id="fac10724257">No</span> <span id="discdetail10724257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Beer Festivals : <span id="fac11724257">No</span> <span id="discdetail11724257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Beer Garden : <span id="fac11424257">No</span> <span id="discdetail11424257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10224257">No</span> <span id="discdetail10224257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Car Park : <span id="fac11324257">No</span> <span id="discdetail11324257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Child Friendly : <span id="fac12124257">Yes</span> <span id="discdetail12124257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Darts : <span id="fac11124257">No</span> <span id="discdetail11124257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Dog Friendly : <span id="fac10524257">No</span> <span id="discdetail10524257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Function Room : <span id="fac12324257">Yes</span> <span id="discdetail12324257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Hot Food : <span id="fac10324257">Yes</span> <span id="discdetail10324257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Jukebox : <span id="fac11224257">No</span> <span id="discdetail11224257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Karaoke : <span id="fac10624257">No</span> <span id="discdetail10624257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Live Music : <span id="fac10824257">Yes</span> <span id="discdetail10824257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Micropub : <span id="fac12224257">No</span> <span id="discdetail12224257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Pinball : <span id="fac11624257">No</span> <span id="discdetail11624257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Pool Table : <span id="fac10424257">No</span> <span id="discdetail10424257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Real Ale : <span id="fac10124257">Yes</span> <span id="discdetail10124257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li><li>Real Cider : <span id="fac11924257">No</span> <span id="discdetail11924257" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 July 2018 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>Closed</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - 11pm</td></tr>
+<tr><td>Saturday</td><td>12noon - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 5 reviewer(s)" title="Pub has average rating of 5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54950/" class="List1">St. Christopher&#039;s Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2 from 2 reviewer(s)" title="Pub has average rating of 2 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54948/" class="List1">Belushis</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 7 reviewer(s)" title="Pub has average rating of 5 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24212/" class="List1">The Blue Eyed Maid</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 4 reviewer(s)" title="Pub has average rating of 4.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54951/" class="List1">The Bridge Tap</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 35 picture(s)" title="Pub has 35 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 22 recommendation(s)" title="Pub has 22recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 18 reviewer(s)" title="Pub has average rating of 6 from 18 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24203/" class="List1">The George</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85789/" class="List1">Call Me Mr Lucky</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 3 reviewer(s)" title="Pub has average rating of 4.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54046/" class="List1">The Heeltap</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 10 reviewer(s)" title="Pub has average rating of 6.5 from 10 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24291/" class="List1">The Southwark Tavern</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

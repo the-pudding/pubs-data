@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Harbour Inn pub in Lyme Regis, Dorset, DT7 3JF : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Harbour Inn" />
+  <meta name="keywords" content="The Harbour Inn, 23  Marine Parade, Lyme Regis, Dorset, Lyme Regis Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Harbour Inn in Lyme Regis" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/9501_10000/9903_92d5415f6bdf9245bdc66a0ecfdb5830.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/9903/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="50.72120196429992" />
+<meta property="og:longitude" content="-2.93894737958908" />
+<meta property="og:street-address" content="23  Marine Parade" />
+<meta property="og:locality" content="Lyme Regis" />
+<meta property="og:region" content="Dorset" />
+<meta property="og:postal-code" content="DT7 3JF" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Harbour Inn in Lyme Regis? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Harbour Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/9903/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Harbour Inn in Lyme Regis" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Harbour Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/9501_10000/9903_92d5415f6bdf9245bdc66a0ecfdb5830.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/9903/" />
+<meta name="geo.position" content="50.72120196429992;-2.93894737958908" />
+<meta name="geo.placename" content="The Harbour Inn in Lyme Regis" />
+<meta name="geo.region" content="UK" />
+<title>The Harbour Inn in Lyme Regis : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":9903},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(9903);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 9903;var pubaddress = "23  Marine Parade";var pubname = "The Harbour Inn";var pubpostcode = "DT7 3JF";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/dorset/" title="Pubs Galore : Dorset Page">Dorset</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/lyme-regis/dorset/" title="Pubs Galore : Lyme Regis Page">Lyme Regis</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Harbour Inn Page">The Harbour Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="40jpqg5uan4jh3smgppgo9ovf2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/9903/" class="indisplay"><img src="/images/display/9501_10000/9903_92d5415f6bdf9245bdc66a0ecfdb5830.jpg?w=2" alt="Picture of The Harbour Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
+  Submitted on Monday, 22<sup>nd</sup> October 2007<br />
+  With picture contributions to 20227 other pubs<br />
+<a href="/pubpictures/9903/" class="smallbutton">View all this pub's pictures</a> (4 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/9903/">Pub map</a><br /><a href="/pubreviews/9903/">Pub reviews (5)</a><br /><a href="/pubpictures/9903/">Pub pictures (5)</a><br /><a href="/core/pubaudit.php?id=9903" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Harbour Inn, Lyme Regis Town, Lyme Regis</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">23  Marine Parade</span><br />
+
+
+<span class="town">Lyme Regis</span><br />
+<span class="postcode">DT7 3JF</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/lyme-regis-town/dorset/">Lyme Regis Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Harbour Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>8&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review75634" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=carwynnen">Chris Sawle</a> left this review about The Harbour Inn</h6>
+<p class="old">Okay little waterfront pub, but only a small verandah to the seaside, then the prom, with further seating beyond shared with a caff - but plastic only over there. Whuh? Hamstrings one&#039;s movement. Not too pricey a pint. Smells very strongly of fish with a strongly fruits de la mer menu. One for the piscivore.</p>
+<p class="Reviewer">On 12<sup>th</sup> October 2013 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 49 recommendations about 48 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review62337" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about The Harbour Inn</h6>
+<p class="old">This pub is in a prime spot overlooking the harbour and makes the most of it&rsquo;s views with a small terrace at the front of the pub. Inside there are two rooms, although neither really feel that &ldquo;pubby&rdquo; &ndash; in many ways it&rsquo;s got more of a cafe feel to it, although it&rsquo;s by no means unpleasant.<br />
+<br />
+The front bar has black slate tiles on the floor and chunky wooden furniture as well as the bar counter. Up a couple of steps at the rear and you find the other room which looks to be more intended for diners than drinkers. This has rough wooden flooring and bench pine seating around the perimeter with plenty of cushions. There was some exposed stonework on the walls that had been painted cream and elsewhere the plasterwork was a mixture of dark blue and maroon. Various pieces of artwork were dotted around the walls, much of it for sale. I use the term &ldquo;artwork&rdquo; loosely &ndash; one particularly large piece opposite where I was sitting consisted merely of light blue paint across the top gradually fading to dark blue paint at the bottom. Other than that, the only thing on there was a couple of smudges that could perhaps have been interpreted as someone walking a dog on the beach. At &pound;860 it didn&rsquo;t really strike me as much of a bargain.  <br />
+<br />
+Food wise, the menu tended very much towards fish dishes as might be expected going on it&rsquo;s location. I had the Creamy smoked haddock, prawn and salmon fish pie while Mrs. B had Crab fish cakes with a chilli sauce. Both were decent dishes, and although not cheap at around &pound;12 each, you get what you pay for and we were both quite happy with them.<br />
+<br />
+Beers on tap were Otter Ale, Otter Bitter and Tribute. Ciders were Thatcher&rsquo;s Gold and Cornish Rattler. Overall, I quite liked this place &ndash; decent food, good location and friendly staff. But if you&rsquo;re after a more traditional pub, it may not be for you.</p>
+<p class="Reviewer">On 30<sup>th</sup> July 2012 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review15236" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Soup+Dragon">Soup Dragon</a> left this review about The Harbour Inn</h6>
+<p class="old">A detached pub/restaurant on the sea-front, with tiled front and greenish painted verandah, there was also a beer patio on the beach if that makes sense!<br />
+<br />
+The interior is modern, which is hell on a personal front for me - if you like that kind of thing, i am sure you will love this. The place is generally open plan, but seems all food orientated, so i would class this as a restuarant first, rather than a 50-50 mix. The decor was a green, with the arty pictures. I didnt eat, so i am not commenting here on the food. The service was fine and it was busy, with a mixed clientele, so i guess i am in the minority! I simply headed out to the beach patio.<br />
+<br />
+Beer; usual tap stuff, with Otter Bitter and Ale and St Austell Tribute on handpull. Sadly, it was served in a plastic glass, but secondly it was too cold.<br />
+<br />
+Sorry, but modern interior and beer too cold meant i really didnt enjoy my visit here. I would do the Cobb and try the Royal Standard next time.</p>
+<p class="Reviewer">On 15<sup>th</sup> September 2009 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 3053 recommendations about 3048 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/9903/">View more reviews of The Harbour Inn (5)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Harbour Inn</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Harbour Inn - <a href="http://www.harbourinnlymeregis.co.uk/" title="Submitted by:- Roger Button" target="_blank">www.harbourinnlymeregis.co.uk</a></li>
+          </ul>
+</div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/9903/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Blackthorn">Blackthorn _</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([50.72120196429992, -2.93894737958908], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([50.72120196429992, -2.93894737958908]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Axminster, 5.97 miles, 1 hr 55 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Honiton, 14.07 miles, 4 hr 31 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Crewkerne, 16.27 miles, 5 hr 14 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('unqtHh`}Pn@`@XFQh@U^iAvAOHm@FYP_@LSCo@YgAY_DFi@FeCBCtAMtAw@@qALc@Ga@Oi@Ee@KgAo@[dAe@dAuA~BSASDOJWp@GFD_Bq@H_A@_@GYDWNSTOFQC_@QUAWNa@dA]j@MJYd@WDEAW^O`AMd@s@vA{@rA[p@aCxGeAbCUv@QNa@J]VY\\k@tBUh@Ox@_@pC]|@SjA[r@qAhC_@UkA_@m@XkArAe@n@gCjCoBzBqEtCoC|@_ATgAK{Ak@U?WL]f@o@rBi@`AeA|Aa@@aEeD}CmBqEsBwFwAoC]cCHsAb@_K|F[X_LjJaChAeFjAqHvA}Bv@yIlG}BvAkEvD_DxC]VE@IIm@`BaO|ZQPeA|FwB|JyCnL{GbWgGrRo@`Ck@tCe@zD[vDKtDMvZk@bCsCi@aDyAw@VsAqA_AbEYnBS|@W`CQv@qAfIe@xBgD|Ho@pBWtA_@vCwAv@mCHmFFc@f@iEGoEYIv@?|BD|@UnEMnAo@jA_AzBuAhIDD_AhFqD{CYbCElAE\\CAUfAM`AB\\BRNVNLDVVn@`Av@Kl@n@b@Mj@EE', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('unqtHh`}Pn@`@XFQh@U^iAvAOHm@FYP_@LSCo@YgAY_DFi@FeCBCtAMtAw@@qALc@Ga@Oi@Ee@KgAo@[dAe@dAuA~BSASDOJWp@GFD_Bq@H_A@_@GYDWNSTOFQC_@QUAWNa@dA]j@MJYd@WDEAW^O`AMd@s@vA{@rA[p@aCxGeAbCUv@QNa@J]VY\\k@tBUh@Ox@_@pC]|@SjA[r@qAhCM\\I\\OtBKvEI|@UbAUvAO`CeAjF]tAFBDVJxAGvD@pADJEZ@`BP~CLx@j@rA`@nAJdBIpA[hDKh@IpA?zACZG^k@`Aw@~@yA|CwB~Fc@fBeAxC?h@HtBA`AUnBa@dC_CpKm@lFOzCm@~Dc@rDcFfR[x@J~MM~@SjEcBn[uFbWwB|GMAErAJlB@j@@r@Ed@gCfJeCvJ_FlKwBzH{AnG}HhZuC`JeB|WJlCNp@PnGSh@`ClGPfAMbFY|Cq@dFOnBjA~@v@lAfAdDHdB?xAFPBtFU|BOtBPZmAzFDn@MLMVEZ`B`AtBl@TTq@vBUfBI~@?ZBHNxBFbBE|@Ov@[t@c@n@{BjCaBzBoAfAm@dAq@nBy@pCyBtEg@v@WPOT]jAUbBeAxD_AjEs@l@c@hA[vAc@nDQfE_@jC]vFe@fEw@lAiDnCgApBi@vA{@~@[`AM|AMl@wAhEMn@qAfDUZwADe@`@_@d@IP_@bBSj@Yf@sCbDsBnCo@dAa@VQDg@Ai@Fm@VaAt@oA|AYh@]zAmAhEIx@MbBMzDGr@{@nHs@lES|AMf@_@t@Wr@ER?J_@nA[v@aBtCoAxAUNi@Rs@BeAKq@QEJa@N[V[r@Ot@QxDH|APdCH~@Jj@DLLN^D@tO@ToA~Hy@zKI`Cs@zBkA|EO~AKrBUfAH^Yd@i@|Aa@zAItA@nBKdB@t@H|BAl@KbAc@vAO`@o@r@o@dAc@d@a@j@c@m@Mc@C_@W[mB?{BlD[bBeA`Ba@FOZe@vBfG`Nd@vCFjC^OT?`A\\\\D|@?@PE^Qt@e@jAWTg@Ro@t@cApBoA`BONQZ[jAyArEmGfL?LOv@W~@Ir@Cf@?d@b@tD@h@UrCq@pFMp@M`@aBvCI^Ef@A|@DhC?rGApAEf@GZYj@I^iAfHu@rDmA`EmAj@}AhDe@tAu@rAkA|AkBpFiBrCmCxDaDvC{BjBoB~@kBfBqElCg@h@sAlBmAbAw@^y@RcBRMEu@f@}@d@_A~CkAnEoAlF{@fBcChEoBlEmA~A{KbXcD~JuEnOc@vAiBfH]p@gAbC_AvC]rAoJpToDtIsCbIiA`Ca@hJUhKElEChAWpD]tDe@nC]pAa@nA@LyBjMYtCm@bEc@zDKjBRbCf@hDd@`C|ClLl@fDRpCPtAVpAfAvCxCzGv@pDh@dDXtCJbBKr@k@|@gB`B[JQb@[b@_A`AQ^Ol@OdBIf@K`@gArCQb@a@l@}@dADPFz@DvACHMdBCt@?~@VvLa@xLWzCLlAd@hAFh@FB`AnAb@v@d@hAg@b@Xh@f@h@Xh@@KJPPUIQEDQ]EI', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('unqtHh`}PqBmAmDuC_@q@Uq@e@aAcAuCYoAASOoAg@uBE?CGC@eAqGEKEE_@CIBIm@m@eBKsACKMG_BK?Kg@Da@CGHMIaA{@SWk@iAMO[MSAkBJi@HoEdAa@F}@@oAQ}@Em@Jm@R}Bh@mGbBu@JcDHeBa@WoGEm@Ke@SUq@Oc@BmBZkBJiEJa@GSIuBgB}CqDkBkBQKS@KUSW]Y_CsAkCaAmBi@eD]eAAoBK}@@s@MYF}DOu@?u@GkBKeApAgCjBmDhBoAt@_CbByD~C}@`A{@r@kAh@Sf@S~@YdBKd@Ul@w@d@U^[hAu@b@k@R_@Ro@^[OOCcA`@o@h@KGy@MqDxA_@b@kAn@i@@}@GYMa@H}AI}@BgALcBj@mAf@UXa@tAi@`A_@u@eBkBiAcBeA}B_Ak@mAiA{@k@cC_@iDaEmA{Cy@u@kA{A_@~@ObA_@zAg@nCGRKCG@}@r@WG{@QoB_AcDoBmLsOkB}AcAIm@Da@KsCiAkAs@UWO?GDKP[fAIJM?m@Y{DkCgB_A[FUGcB_AmBeBy@e@qAsAmBoAkDeBs@mAa@YuNqFy@SaAC{Ks@[@iBPgA`@J`B]LcGlAaGbEk@f@CxDyAGsBo@eDpAyClF_@v@uBWmNr@wBFkDOyBs@yBgAwCuBoD_CeAgAeCyBu@s@eCwEs@_Aw@{Am@s@g@Yu@Ke@Yc@g@s@wAgBcDyA}BW_A?w@Ku@EeA[q@_@[m@q@u@m@o@c@YWUa@gAeDs@iB}AkGq@sB]qA_@kBMoAFkCPcBCcAOOW@w@Gm@AWIUQSW]{@KI_D}A{Aq@yCs@iAE}@Ik@Ww@e@u@][W[_A[e@YA{Bz@cATo@Aa@Ek@w@{AyCiB{B_@Wi@Ku@?_@GiBoDi@uAc@qAOq@MoAa@cAg@w@i@Qu@_@_@q@Su@g@iAs@eAk@[{@GcASu@UkAwAyBs@i@YiAmAQWQ_@e@yEG[eAiCOg@_@yBQcBOaAc@{Ao@sAk@}@oA}BoCyDgGmH{A_CcBwB]i@aBcFkBcE]e@o@aBm@sAQLYJyCi@yAFAgBIs@Qw@EGq@[EOEGy@Iu@UyAk@s@_@W_@i@KOY{@g@oBe@g@YUUm@?e@KcClAcBhA}AhAEHuA{BgAy@OYy@]aDcAeCa@iGu@cBFu@h@I@SOuAVMFECw@Vs@Do@d@YFGH{@Ss@c@]Yq@Mq@Eg@BoC~@q@HAg@y@qBe@{Ca@gEg@yF_AqAo@gBsBaIwBgJeA_F]yAu@cBkA{BcAiDg@qCcAgDQqAImKOsFK[e@k@oCyA{A}ASa@AoBe@cCcAiCNaA?[g@cAKe@Co@s@gOMmAaAmDgCeLB_@BK_DqBQSiAYSgG[yD_@mFM]]FaIcDOUuBqBeGqDi@Oa@}@{AqDyA_DWg@]mAKyAYqBSeA[w@k@{@m@y@S_@Oq@A[HKJe@Bq@JSBS?s@L]pAsF?Mr@w@Tm@R}@BsA?_AScAGo@D_ALqA`@aAHeADiAVmA\\k@DOEQg@oGOsF?kACc@Ko@EoAGm@Mi@GcAEWYm@KqA@KUa@o@iDYq@USkBAgAEg@KcBEcCAcDcAFqAGmCBiCAmA[oHK_@IgEa@{F_@{@oAaEeBkHHc@~@_HI{@o@iCOe@q@e@mCs@}@_@MYK{@Mm@Wc@Qg@SeAK{@a@iAUqAF_BsFgHEy@uAmJmDmGeBqCsAQ}CwDw@}Ay@yAmBeCmBmDyAaD_CeEBQaBs@{FmBcBy@aB_@kBw@WSTo@p@uCr@yCRgAJ_AZqKRaE@y@E{A?oAF}AH_AYOf@aSAmDIuC]k@kA_Dg@{Aa@aCs@}B_AkAuAu@eBYy@c@]YaAqAm@m@{@q@q@eA_@q@AIDITM~@[ZYp@Cr@HvAh@N?JIz@iFd@_GDeBB_DBgGCaBZCDcBTKPBj@^VDv@OTa@Ls@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([50.72120196429992,-2.93894737958908], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=9903">View all updates for The Harbour Inn, Lyme Regis</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        12<span class="sup">th</span> Oct 2013, 19:07
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=carwynnen">Chris Sawle</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        30<span class="sup">th</span> Jul 2012, 20:11
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Hot Food : <span id="fac1039903">Yes</span> <span id="discdetail1039903" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 October 2007 by moby duck</span></li><li>Real Ale : <span id="fac1019903">Yes</span> <span id="discdetail1019903" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 October 2007 by moby duck</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 8 reviewer(s)" title="Pub has average rating of 7.5 from 8 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/9900/" class="List1">Cobb Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 6 reviewer(s)" title="Pub has average rating of 6 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/9912/" class="List1">The Royal Standard</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 7 reviewer(s)" title="Pub has average rating of 7.5 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/9919/" class="List1">The Volunteer Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 4 reviewer(s)" title="Pub has average rating of 7.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/9906/" class="List1">The Nags Head</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81974/" class="List1">Cellar 59</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 6 reviewer(s)" title="Pub has average rating of 6.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56693/" class="List1">Royal Lion Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 9 from 1 reviewer(s)" title="Pub has average rating of 9 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83434/" class="List1">Lyme Regis Brewery Tap</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 4 reviewer(s)" title="Pub has average rating of 4.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/9910/" class="List1">Rock Point Inn</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

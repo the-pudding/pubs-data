@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Granite City pub in Dyce (near Aberdeen), Grampian, AB21 7DU : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Granite City" />
+  <meta name="keywords" content="The Granite City, Landside, Aberdeen Airport, Dyce, Aberdeen, Grampian, , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Granite City in Dyce" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/69001_69500/69029_a457629e.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/69029/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="57.19985321567246" />
+<meta property="og:longitude" content="-2.20378875732422" />
+<meta property="og:street-address" content="Landside, Aberdeen Airport" />
+<meta property="og:locality" content="Dyce" />
+<meta property="og:region" content="Grampian" />
+<meta property="og:postal-code" content="AB21 7DU" />
+<meta property="og:country-name" content="Scotland" />
+<meta property="og:description" content="Do you like The Granite City in Dyce? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Granite City the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/69029/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Granite City in Dyce" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Granite City " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/69001_69500/69029_a457629e.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/69029/" />
+<meta name="geo.position" content="57.19985321567246;-2.20378875732422" />
+<meta name="geo.placename" content="The Granite City in Dyce" />
+<meta name="geo.region" content="UK" />
+<title>The Granite City in Dyce (near Aberdeen) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":69029},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(69029);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 69029;var pubaddress = "Landside, Aberdeen Airport";var pubname = "The Granite City";var pubpostcode = "AB21 7DU";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/scotland/" title="Pubs Galore : Scotland Page">Scotland</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/grampian/" title="Pubs Galore : Grampian Page">Grampian</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/aberdeen/grampian/" title="Pubs Galore : Aberdeen Page">Aberdeen</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/dyce/grampian/" title="Pubs Galore : Dyce Page">Dyce</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Granite City Page">The Granite City Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="v3q8qt0idp3ds1rhjk4ls3obh3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/69029/" class="indisplay"><img src="/images/display/69001_69500/69029_a457629e.jpg?w=2" alt="Picture of The Granite City" /></a><br />  Image posted by <a href="/userinfo.php?name=rpadam" class="indisplay">Just a quick pint, then I&#039;m off</a><br />
+  Submitted on Saturday, 8<sup>th</sup> October 2016<br />
+  With picture contributions to 5082 other pubs<br />
+<a href="/pubpictures/69029/" class="smallbutton">View all this pub's pictures</a> (5 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/69029/">Pub map</a><br /><a href="/pubreviews/69029/">Pub reviews (2)</a><br /><a href="/pubpictures/69029/">Pub pictures (6)</a><br /><a href="/core/pubaudit.php?id=69029" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Granite City, Aberdeen</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=Edmon">William Purnell</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Landside, Aberdeen Airport</span><br />
+
+<span class="town">Dyce</span><br />
+<span class="postaltown">Postal town: Aberdeen</span><br />
+<span class="postcode">AB21 7DU</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">J D Wetherspoon</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/dyce/grampian/">Dyce</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Granite City  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review130637" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Granite City</h6>
+<p>I visited this pub in Aberdeen Airport&rsquo;s main terminal building a couple of weeks before Wetherspoons old it to another pub operator, so this review relates to its time as a Wetherspoons pub, rather than its present incarnation. The pub is easily found, just to the right of the entrance into the main terminal. It&rsquo;s set up much like any airport &lsquo;Spoons, with an open front which gives way to a more conventional pub-space beyond. Carpeted seating areas straddle a central tiled gangway which provides plenty of space to navigate your way through with all your baggage in tow. There is also a nice granite slab in the doorway with the pub&rsquo;s name chiselled into it. I couldn&rsquo;t quite get to grips with the room&rsquo;s layout, but it seems to be a slightly curved room with an arcing bar counter along the rear wall, broken in places by a couple of polished granite and wood pillars. Standard tables and chairs are pretty much the order of the day throughout, although there are a few high tables and stools along the windows which sadly appear to look out to the drop-off area outside the terminal, rather than giving any view of the runway. To the left there is a set of rather boxy shelving units full of seemingly randomly selected bits of tat including lots of promotional stuff for the Windswept Brewery. The front wall has some floral wallpaper and several info boards which explain the history of Aberdeen&rsquo;s granite industry. The room seems to run on behind the bar, but I didn&rsquo;t get around to exploring here and it also appears that there is some sort of outdoor drinking area, but it was a cold, dark evening when I arrived, so again I didn&rsquo;t bother to investigate fully. TV screens were showing subtitled news coverage and there were some useful departures boards as well. <br />
+The ale range was a little underwhelming with two guest ales and two &lsquo;Spoons regulars to choose from, plus one &lsquo;Coming Soon&rsquo; clip. I guess this isn&rsquo;t that big an airport and the ale range reflects the level of passing trade. I tried a pint of Phoenix Hopsack, which was in decent shape and served to me by a totally disinterested barman. I believe there are now just two ales available in the post-Wetherspoons version of the pub and at much higher prices than before.<br />
+I thought this was pretty good by the admittedly low standards of airport bars and would hope that the new operators are able to keep this running much as it was, as alternative options are pretty thin on the ground.</p>
+<p class="Reviewer">On 13<sup>th</sup> July 2018 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review111602" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about Granite City (JD Wetherspoon)</h6>
+<p class="old">For an airport &#039;spoons, this one must be one of the best.  It can be found landside at one end of the terminal building, with fairly smart semi-modern furniture and decor.  Also features an outside patio area if the weather is favourable.  Well-staffed too.  Just Doom Bar and Oakham Scarlet Macaw from the five handpumps, but the latter was just &pound;2.75 which was much cheaper than I was expecting (given the fairly captive market at this location).</p>
+<p class="Reviewer">On 15<sup>th</sup> October 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Granite City</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+</div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/69029/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Edmon">William Purnell</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([57.19985321567246, -2.20378875732422], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([57.19985321567246, -2.20378875732422]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Dyce, 2.34 miles, 45 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Aberdeen, 6.6 miles, 2 hr 7 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Inverurie, 11.83 miles, 3 hr 48 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('}yb|IjmmLRMb@ALI@ERF@RX^HVFb@HbBGtB@HBF`@HlA@@a@tAE@E?]FwB|@AHwEB@FI@G|BEn@IpAuAKc@Eu@D_BJs@L]zCyDvAsAnAw@rIqKv@gA`@[ZEV?VBZLb@b@zBwK^}Aj@iBvB}FXcAj@eDJmAH{AB{AA{AGaBEq@MsASuA[yAo@oBy@_Bw@aAi@e@w@e@aAY[Ew@AiANq@Xoj@r`@u@^WHa@BUCSB_AEO?o@NKJc@NYAaAO_@AaIdAMJU?{C^wBp@UTAIUwBQLAKc@X', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('}yb|IjmmLRMb@ALI@ERF@RX^HVFb@HbBGtB@HBF`@HlA@@a@tAE@E?]FwB|@AHwEB@FI@G|BEn@IpAuAKc@Eu@D_BJs@L]zCyDvAsAnAw@rIqKv@gA`@[ZEV?VBZLb@b@zBwK^}Aj@iBvB}FXcAj@eDJmAH{AB{AA{AGaBSeCSuA[yAo@oBy@_Bi@q@Ly@@U?cOA}PpDXJClCTFIlAyD`AZhAHXIpDeBv@U\\Ev@F`@GHGI}BC?AStBq@p@_@xAeAp@o@lA}Ad@u@^y@~DqLdAuBt@cAh@a@dAg@`AWFMJcAHWrAsAbDeBBN`FiCzA_AzAiA\\[r@yAJ_@l@uAQ{FTCGcE?eABaBTwDLiAVwAl@uB~AiEHNjAwCXY~@mCD[IY`@uAP_A~A{Iv@}EHDH?^m@ZAxAT\\Bl@Ql@^TDFQCmA`A}AXW`@U^[Ha@hAOl@EJJ~@s@tAwAh@s@l@{CHSNCEo@VEn@VT?VKHa@XZb@{B^ZZsBbGm\\FONCbBzAdB{Id@aB`@o@\\]r@g@f@SAeK@aANgAj@aBb@m@l@QGwC{@aJJwAIc@?SDg@FMJMLCXuAPyA\\kBnDyMTeA`G}UrCyPHo@Je@Ju@Ha@HMJ@FEBGF[C[KQDU@}@@sILkLZAJ}@\\kBlEiIr@qBz@cBNk@BBbF_GHUK{AD@NMBEl@[VWj@[x@{@jDwF`BeCfDuDlF{GdCaBZg@f@gBnAeDDEf@yAVc@LADIDWFQlAmCr@wAbCgEVZJQbDKpCgFUo@N_@TiAn@mBTQtAOAUxAsBPOLAJN~AiBLAb@UVg@He@FJJ^Rc@XYk@eD~CyCa@sBnCeCBR`@a@DTFIAIFI', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('}yb|IjmmLg@\\i@p@Fr@`CrQAp@P`@Vh@XC|Cj@d@TrGpB`A`@\\Ln@h@tJjBpHrBE|A@fBTjD@b@DLf@pC|@hDv@~AtArBLp@Fx@GnB@x@iA~ZU~Jg@FkDMeFeA]nBgAtDmBrEm@jKmEcAKHg@fGq@bACXkAxTg@~DQx@cCbGc@nAWrBExAJzC@pFi@Ug@L}Ae@_@E]RKZm@A_AdBO^SfBAzDGpABnAGj@?x@Jp@IfF[nFk@vDaArI_@hCs@rDwDxA_Cb@vAhY^vFZxGCbBKlCE`D?j@Dj@TbCD~@ApAGpAeB`Ly@nFS|@Ut@}BnF_@j@?HEXsE|Kd@zApAlHL\\NTH\\DbAJb@c@fE_CnZ{@pGOlCx@nDIlB]tBElA@zAPNlDjHRPr@fBKLUDGJGVy@pG?LgA|@D`@Nd@r@|Aa@b@KVGTGh@EJMByBEOJQf@MbA_AF@r@EfA[nBIv@Ct@P~CpCi@q@nE]vEw@lEk@jCKr@Ef@Dz@LdAxBdLHl@FnAB~ACp@m@tFIjASpC]lBCf@XZKtCw@EqIpg@L`@yBtG_F|TeAqA}FpJyD|GuGpKqq@bkAi@FuEvFy@h@iACiBDgEK_@WaAKMII[Co@KOY?gBj@q@HeBIwE~@{Cd@wCjAe@ASYYK}BpMc@fAq@d@uAFs@j@y@`AsExHy@dCkDpJuAbD_EnM[v@}@jG@h@OHg@d@uHlJq@`A}DxFaBfCkC`Fs@hAm@d@oCbBk@j@Y^]p@MUKGSB{BvAwBdBIBQRwDdAgEzAaE|CqCpCkBvCoA`CcC`FOP[KOWM@R`@DP@j@Ch@aAnByAlC}CbFcHvKkFpIyEhHeAxAuBfCgCfC_Ar@]FU?URMf@[j@wBjB{BzAwBnAaGjCwBn@oEr@qDRoB@eBCMW_B]g@e@GUgAi@q@i@mBgBkCqBo@[}Ai@}@O_@Ba@RQ^WfAy@q@YM{@Oc@@mAV_DzA_GhD{@l@mAhAeBlBa@Te@RqEjAkCx@uD`Am@Jk@wAcDkLQWSBUNuAvA_CfBsAz@eAh@cBr@oDhAcGxBgB|@iBhADXM^iCpCGB[EG?EI]R_@HYAQGm@i@u@eAAIy@q@eAeAOCM@KL', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([57.19985321567246,-2.20378875732422], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=69029">View all updates for The Granite City, Dyce</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        13<span class="sup">th</span> Jul 2018, 17:49
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        15<span class="sup">th</span> Oct 2016, 11:55
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11869029">No</span> <span id="discdetail11869029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 July 2018 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10769029">No</span> <span id="discdetail10769029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 July 2018 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11469029">Yes</span> <span id="discdetail11469029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 July 2018 by Pub SignMan</span></li><li>Car Park : <span id="fac11369029">Yes</span> <span id="discdetail11369029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 July 2018 by Pub SignMan</span></li><li>Child Friendly : <span id="fac12169029">Yes</span> <span id="discdetail12169029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 July 2018 by Pub SignMan</span></li><li>Darts : <span id="fac11169029">No</span> <span id="discdetail11169029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 July 2018 by Pub SignMan</span></li><li>Dog Friendly : <span id="fac10569029">No</span> <span id="discdetail10569029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 July 2018 by Pub SignMan</span></li><li>Function Room : <span id="fac12369029">No</span> <span id="discdetail12369029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 July 2018 by Pub SignMan</span></li><li>Hot Food : <span id="fac10369029">Yes</span> <span id="discdetail10369029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 July 2013 by Dave McNally</span></li><li>Jukebox : <span id="fac11269029">No</span> <span id="discdetail11269029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 July 2018 by Pub SignMan</span></li><li>Karaoke : <span id="fac10669029">No</span> <span id="discdetail10669029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 July 2018 by Pub SignMan</span></li><li>Live Music : <span id="fac10869029">No</span> <span id="discdetail10869029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 July 2018 by Pub SignMan</span></li><li>Micropub : <span id="fac12269029">No</span> <span id="discdetail12269029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 July 2018 by Pub SignMan</span></li><li>Pinball : <span id="fac11669029">No</span> <span id="discdetail11669029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 July 2018 by Pub SignMan</span></li><li>Pool Table : <span id="fac10469029">No</span> <span id="discdetail10469029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 July 2018 by Pub SignMan</span></li><li>Real Ale : <span id="fac10169029">Yes</span> <span id="discdetail10169029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 July 2013 by Dave McNally</span></li><li>Wheelchair Access : <span id="fac12069029">Yes</span> <span id="discdetail12069029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 July 2018 by Pub SignMan</span></li><li>WiFi : <span id="fac11569029">Yes</span> <span id="discdetail11569029" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 July 2013 by Dave McNally</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/47423/" class="List1">Leonardo Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84624/" class="List1">Dyce Farm</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/47424/" class="List1">The Spiders Web</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

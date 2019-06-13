@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Cafe Bruxelles pub in Leicester, Leicestershire, LE1 5YP : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Cafe Bruxelles" />
+  <meta name="keywords" content="Cafe Bruxelles, 90-92 High Street, Leicester, Leicestershire, Leicester Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Cafe Bruxelles in Leicester" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/58501_59000/58892_c0a14a72.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/58892/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.63523442742100" />
+<meta property="og:longitude" content="-1.13778501749039" />
+<meta property="og:street-address" content="90-92 High Street" />
+<meta property="og:locality" content="Leicester" />
+<meta property="og:region" content="Leicestershire" />
+<meta property="og:postal-code" content="LE1 5YP" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Cafe Bruxelles in Leicester? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Cafe Bruxelles the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/58892/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Cafe Bruxelles in Leicester" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Cafe Bruxelles " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/58501_59000/58892_c0a14a72.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/58892/" />
+<meta name="geo.position" content="52.63523442742100;-1.13778501749039" />
+<meta name="geo.placename" content="Cafe Bruxelles in Leicester" />
+<meta name="geo.region" content="UK" />
+<title>Cafe Bruxelles in Leicester : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":58892},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(58892);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 58892;var pubaddress = "90-92 High Street";var pubname = "Cafe Bruxelles";var pubpostcode = "LE1 5YP";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/leicestershire/" title="Pubs Galore : Leicestershire Page">Leicestershire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/leicester/leicestershire/" title="Pubs Galore : Leicester Page">Leicester</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Cafe Bruxelles Page">Cafe Bruxelles Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="q39l0u9imgu4botcmgikguoeo6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/58892/" class="indisplay"><img src="/images/display/58501_59000/58892_c0a14a72.jpg?w=2" alt="Picture of Cafe Bruxelles" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
+  Submitted on Wednesday, 22<sup>nd</sup> August 2012<br />
+  With picture contributions to 20227 other pubs<br />
+<a href="/pubpictures/58892/" class="smallbutton">View all this pub's pictures</a> (25 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/58892/">Pub map</a><br /><a href="/pubreviews/58892/">Pub reviews (5)</a><br /><a href="/pubpictures/58892/">Pub pictures (26)</a><br /><a href="/core/pubaudit.php?id=58892" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Cafe Bruxelles, Leicester Central, Leicester</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">90-92 High Street</span><br />
+
+
+<span class="town">Leicester</span><br />
+<span class="postcode">LE1 5YP</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01162243013</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/leicester-central/leicestershire/">Leicester Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Cafe Bruxelles  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review102977" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about Cafe Bruxelles</h6>
+<p class="old">Built in 1903 and currently residing on one of the city&#039;s main retail thoroughfares, this is a remarkably ornate faux-Art Nouveau bar with a loose Belgian theme. The main bar is a roughly square shaped room with parquet flooring and a servery along the rear wall. Seating comprises standard tables and chairs through the centre of the room, with a wide parting down the middle for vertical drinkers. Meanwhile, wide padded U-shaped banquette booths run down the left and right hand walls between a series of grand looking white pillars. The servery is a lovely, symmetrical, curved C shape with a nice contrasting light and dark wood counter. The bar back is most impressive with its arch centrepiece flanked by large angels and cherubs with a plain mirror inset. Large boards in dark wood frames hang either side, detailing the drinks available and the possibility of attending cocktail and spirit tasting master classes. The pub&#039;s undoubted highlight however, is the huge cupola which covers most of the high ceiling. It&#039;s a remarkable feature, with gold bands radiating from a central rose, from where a huge chandelier hangs. The bands are decorated with depictions of fruit and flowers and in between each band there is a painting of a scene from somewhere around the world, with panels beneath explaining where that might be (Strasbourg, Sylhet, Chongquing and of course Leicester, to name but a few). Some stained glasswork has also been incorporated and the overall effect is quite dazzling. Stairs to the rear left lead down to the Hendricks Gin Bar - a tile floored room with caf&eacute;-style tables and a few sofas. A dark wood servery runs to the rear, with a nice carved counter, and the whole room has some good low wood panelling with orange, white and blue tiles running in a band above. A cabinet full of Delft ceramics stands near the stairs and the toilet doors have the appropriate genders written in both French and Flemish. Signs pointed the way to a &#039;Secret Garden&#039;, but I didn&#039;t get round to taking a look.<br />
+There is no cask ale sold here, perhaps because they feel it doesn&#039;t fit with the Belgian theme, but there were some interesting keg options and, after a chat with the helpful barman, I ended up with a pint of Flying Dog Easy IPA for &pound;3.90. The remaining taps had a mix of mainstream (Carlsberg, Guinness etc...) and craft beers such as Whitstable Pale Ale. A good bottled range could be viewed in the fridges and as you would expect, there were plenty of Belgian options, all listed on a large board on the left hand wall. <br />
+My early afternoon visit saw this place pretty quiet and I felt that this was probably the best sort of time to explore this place, as it gives you the chance to relax and take in the fine interior. I thought it was a really interesting building and whilst it&#039;s a bit of a shame that there is no ale sold here, there was still plenty enough to make me consider returning.</p>
+<p class="Reviewer">On 21<sup>st</sup> January 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review79191" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a> left this review about Cafe Bruxelles</h6>
+<p class="old">Well worth a swift one, just to admire the decor. The pub was busy enough on our Sat afternoon visit. The clientele ranged from 20&#039;s to 30&#039;s, who were enjoying the ambience of this trendy Caf&eacute; bar and most probably didn&#039;t mind the top end prices. Hoegaarden was my choice, which was a cloudy wheat beer. No real ale.</p>
+<p class="Reviewer">On 3<sup>rd</sup> February 2014 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2750 recommendations about 2750 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review69345" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=ROBCamra">ROB Camra</a> left this review about Cafe Bruxelles</h6>
+<p class="old">A fantastic looking bar, very ornate with a great domed ceiling, parquet flooring and a chandelier. It&#039;s worth a look in for the decor alone. Sadly there&#039;s no real ale on the bar and the list of Belgian beers is just that, a list with no tasting notes or description. It was the end of a very long day for me and a bottle of 9% Trippel would probably have finished me off, so I just had a half of San Miguel whilst I had a look round. It was very quiet at about 10:30 on a Thursday evening with there only being 2 other people in the bar. I&#039;d visit again for the decor, but not for the beer range.</p>
+<p class="Reviewer">On 22<sup>nd</sup> April 2013 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2666 recommendations about 2596 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/58892/">View more reviews of Cafe Bruxelles (5)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Cafe Bruxelles</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Cafe Bruxelles official site - <a href="http://www.cafebruxelles.net/" title="Submitted by:- Quinno _" target="_blank">www.cafebruxelles.net</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="166355010065294">Facebook - <a href="https://www.facebook.com/bruxellesleic/" target="_blank" rel="nofollow">Bruxelles Leicester</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/58892/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Dave+M">Dave McNally</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.63523442742100, -1.13778501749039], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.63523442742100, -1.13778501749039]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Leicester, 0.77 miles, 14 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> South Wigston, 4.44 miles, 1 hr 25 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Syston, 5.05 miles, 1 hr 37 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('}ig`Ilf}Eg@sGrA{@y@kEr@m@VoAWYS]t@eBHDtBwE[qABy@FMP?Mc@E_@nBgC|AuCxAaErAkFlAsFDAFQTAB}@TIpAsADURWSo@\\a@_@[Eo@k@i@Pm@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('}ig`Ilf}EXhDnBu@`C_@DJ?JnANt@At@KzBw@J@DZNGDXD@^]HZ^EJZ^ZJFDP@\\Jj@|@}@`A?RUpAfEpBcC`@xAPSX\\JBJCd@b@`@f@\\YfFuFRl@l@~Ar@rBbBcBzC_ArCZHED]TJALDF`AFLLhET`BT`Gb@BgAXk@TeADq@ZcBLSBMBm@Aa@XODSdA}B`BrAb@d@HKVI`@p@d@f@tAhAXHlAt@~@P|@OBVnWcF|FcA~Cy@hFiAv@Al@TUq@ZS`@d@jKvCG`AZJv@eK|RpI~EzB`An@LN\\j@rBtBFl@XGhAx@`BbCr@l@v@VjHPl@QDT~BHLKPJvB@?NNjADCBLTGLZV_@J?FGT{@RPOz@Ad@DZLNx@ZvA_@fDq@B\\JNL?\\EbAY|B_AhB]t@Ct@Dr@JfMbCD_Ax@D@s@HM`@@BoB\\uCdAyGPcBBwAxC[lCo@lC_AMeA`A[jAMzBq@pF{BvIoE^zCD@KwB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('}ig`Ilf}EsBgXUcAISSQQCEIsDsBaD}BuBmAk@g@WK}CyB}Aw@}CsBUGSRMBMAMIKMKa@m@mAuFmFuBqAQMF[gE}DoCiBCe@@MaDqBCJm@_@g@Ue@AcHoFoBoA{BgBW_@mIwF_G{EqBqAwBcAwBkAaGuEuFcEsGaGqJmHDUmBqADUm@_@eBmACIyIeHoImGmBkBU[CIYK{AaCBKuAyAaBoAkAs@EKD]WIDUQEGTKHQC_@MsGqDCEeF}CeB_AgFmDSICD}DqDGJSSU]]qAKs@KQE[Bw@ASKQLYO[]eAsA}Fe@}Aw@_Bi@{@k@o@oBkCeCeCuAeAIBg@[kJmJ{FcGEUa@a@[Mu@m@cAo@gAg@IQSQKAUNaAImABy@Jg@LaBt@oClBiAfAKDQCEKUDUe@INcAx@c@@oGaEgCuAm@g@eBmA{@cAiByCM]o@_AgAgCY_AONe@uBWyACs@Ya@aCoGoAkDw@gCq@cBqImR[m@Uf@Ox@Kv@Cv@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.63523442742100,-1.13778501749039], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=58892">View all updates for Cafe Bruxelles, Leicester</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        23<span class="sup">rd</span> Mar 2017, 11:03
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        22<span class="sup">nd</span> Mar 2017, 23:03
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11858892">No</span> <span id="discdetail11858892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 September 2013 by Quinno _</span></li><li>Bar Billiards : <span id="fac10758892">No</span> <span id="discdetail10758892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 September 2013 by Quinno _</span></li><li>Beer Festivals : <span id="fac11758892">No</span> <span id="discdetail11758892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 February 2014 by ROB Camra</span></li><li>Beer Garden : <span id="fac11458892">Yes</span> <span id="discdetail11458892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 January 2016 by Pub SignMan</span></li><li>CAMRA Discount : <span id="fac10258892">No</span> <span id="discdetail10258892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 September 2013 by Quinno _</span></li><li>Car Park : <span id="fac11358892">No</span> <span id="discdetail11358892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 September 2013 by Quinno _</span></li><li>Darts : <span id="fac11158892">No</span> <span id="discdetail11158892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 September 2013 by Quinno _</span></li><li>Dog Friendly : <span id="fac10558892">No</span> <span id="discdetail10558892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 September 2013 by Quinno _</span></li><li>Function Room : <span id="fac12358892">Yes</span> <span id="discdetail12358892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 January 2016 by Pub SignMan</span></li><li>Hot Food : <span id="fac10358892">Yes</span> <span id="discdetail10358892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 September 2013 by Quinno _</span></li><li>Jukebox : <span id="fac11258892">No</span> <span id="discdetail11258892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 September 2013 by Quinno _</span></li><li>Karaoke : <span id="fac10658892">No</span> <span id="discdetail10658892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 September 2013 by Quinno _</span></li><li>Live Music : <span id="fac10858892">Yes</span> <span id="discdetail10858892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 September 2013 by Quinno _</span></li><li>Live TV Sports : <span id="fac11058892">No</span> <span id="discdetail11058892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 September 2013 by Quinno _</span></li><li>Micropub : <span id="fac12258892">No</span> <span id="discdetail12258892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 January 2016 by Pub SignMan</span></li><li>Pinball : <span id="fac11658892">No</span> <span id="discdetail11658892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 September 2013 by Quinno _</span></li><li>Pool Table : <span id="fac10458892">No</span> <span id="discdetail10458892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 September 2013 by Quinno _</span></li><li>Real Ale : <span id="fac10158892">No</span> <span id="discdetail10158892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 April 2013 by hondo .</span></li><li>Real Cider : <span id="fac11958892">No</span> <span id="discdetail11958892" class="discdetail" style=""></span>  <span class="Reviewer">last updated 03 February 2014 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66287/" class="List1">Queen of Bradgate</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 3 reviewer(s)" title="Pub has average rating of 7 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/20639/" class="List1">The Orange Tree</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 23 picture(s)" title="Pub has 23 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 7 reviewer(s)" title="Pub has average rating of 6.5 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56932/" class="List1">The High Cross (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85124/" class="List1">The Cookie</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85117/" class="List1">Foxie Browns</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66283/" class="List1">Mem Saab</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/76987/" class="List1">Gadabout</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85129/" class="List1">Cafe Rouge</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

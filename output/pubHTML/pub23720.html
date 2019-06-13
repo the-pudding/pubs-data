@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Holly Bush pub in Hampstead, NW3, London (Central), NW3 6SG : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Holly Bush" />
+  <meta name="keywords" content="The Holly Bush, 22  Holly Mount, NW3, London (Central), Hampstead, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Holly Bush in NW3" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/23501_24000/23720_1d37be4f.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/23720/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.55784957494591" />
+<meta property="og:longitude" content="-0.17931103706360" />
+<meta property="og:street-address" content="22  Holly Mount" />
+<meta property="og:locality" content="NW3" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="NW3 6SG" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Holly Bush in NW3? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Holly Bush the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/23720/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Holly Bush in NW3" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Holly Bush " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/23501_24000/23720_1d37be4f.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/23720/" />
+<meta name="geo.position" content="51.55784957494591;-0.17931103706360" />
+<meta name="geo.placename" content="The Holly Bush in NW3" />
+<meta name="geo.region" content="UK" />
+<title>The Holly Bush in Hampstead, NW3 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":23720},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(23720);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 23720;var pubaddress = "22  Holly Mount";var pubname = "The Holly Bush";var pubpostcode = "NW3 6SG";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/nw3/central-london/" title="Pubs Galore : NW3 Page">NW3</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Holly Bush Page">The Holly Bush Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="jfvpihm2sopk4m88j7o58abkh3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/23720/" class="indisplay"><img src="/images/display/23501_24000/23720_1d37be4f.jpg?w=1" alt="Picture of The Holly Bush" /></a><br />  Image posted by <a href="/userinfo.php?name=Blackthorn" class="indisplay">Blackthorn _</a><br />
+  Submitted on Friday, 18<sup>th</sup> September 2015<br />
+  With picture contributions to 4300 other pubs<br />
+<a href="/pubpictures/23720/" class="smallbutton">View all this pub's pictures</a> (19 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/23720/">Pub map</a><br /><a href="/pubreviews/23720/">Pub reviews (12)</a><br /><a href="/pubpictures/23720/">Pub pictures (20)</a><br /><a href="/core/pubaudit.php?id=23720" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Holly Bush, Hampstead, NW3</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">22  Holly Mount</span><br />
+
+
+<span class="town">NW3</span><br />
+<span class="postcode">NW3 6SG</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02074352892</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/hampstead/central-london/">Hampstead</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Holly Bush</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/TheHollyBushPub" target="_blank"><img src="https://pbs.twimg.com/profile_images/994474202341232640/BVwvDD_L_normal.jpg" alt="The Holly Bush" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/TheHollyBushPub" target="_blank">The Holly Bush</a></strong>
+Last call for our Only at Fuller&rsquo;s Supper-Club tomorrow @ 7pm in our Romney Room with our Director of Food &amp;amp; Suppli&hellip; <a href='https://t.co/6JuZx9YvwS' target='_blank'>https://t.co/6JuZx9YvwS</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/TheHollyBushPub/status/1138825441769402370">about 9 hours ago</a> from <a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/TheHollyBushPub" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/TheHollyBushPub" target="_blank">The Holly Bush</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Holly Bush  <span class="h2note">(Average Rating: <span id="averagerating"><b>7&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review126439" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> left this review about The Holly Bush</h6>
+<p class="old">Tucked away in one of the most beautiful Queen Anne and Georgian enclaves and serving the community since 1643, is one of London&#039;s most famous and historic pubs: The Holly Bush. As a former local, born and bred, this has been one of my all-time favourite pubs which I&#039;ve been visiting for the best part of 35 years, over which time I&#039;ve seen changes major and minor.<br />
+The room to the rear wasn&#039;t originally part of the pub. In the &#039;80s it was curtained off and used for poetry reading. It had t &#039;n&#039; g panelling and an upright piano. Now it&#039;s pretty much used solely as a dining room which reduces much-needed drinking space. An anteroom is now home to an ancillary till for the dining area. A second and central anteroom now houses a stainless-steel sink with cleaning products; visible to all, it&#039;s a terrible eye sore.<br />
+The snug still has a real fire but it, along with the rest of the pub, has been painted magnolia. Where once there were original gas lights until around 1990 (which hissed!), there were hideous Japanned lamps which looked like they came from a dungeon, though at least the ugly wicker colonial-style ceiling fans have gone. Happily, the lamps have gone, replaced with ones which are altogether more fitting, looking like blown glass. The floor is new, untreated and bare boarded but is aging well. Furniture is fairly conventional, the pretentious oxblood armchairs which looked like the property of Sherlock Holmes have gone, as have most of the fake Victorian sitting room d&eacute;cor. As an added plus, the log fire in the main bar is now active for the first time in my memory, though the pub doesn&rsquo;t benefit from the stupid names now applied to the various rooms: &lsquo;Whitestone Room&rsquo;?<br />
+Clients are a mix of locals, celebrities and many tourists/incomers. The bar staff seem to change on a weekly basis which doesn&#039;t make for good continuity and can be a bit clueless but they seem decent enough, though they are hardly burdened by working in a challenging environment.<br />
+Ales: the standard Fuller&#039;s line-up with a few guests (more likely Fuller&#039;s acquisitions such as Gale&rsquo;s) with a pint of the hilariously named Castle Rock&rsquo;s Crafty Flanker Pale Ale weighing in at a hefty &pound;4.80 for a beer that&rsquo;s around the 4.0% ABV mark.<br />
+I haven&#039;t painted a brilliant picture of the pub, but nothing&#039;s perfect - it can get rammed at peak times too. This place though is probably about as good as an urban pub is ever going to get, hence the high mark.</p>
+<p class="Reviewer">On 12<sup>th</sup> February 2018 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 873 recommendations about 860 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review110752" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=%2Fian.mapp">Ian Mapp</a> left this review about Holly Bush</h6>
+<p class="old">One of my favourites in London.<br />
+<br />
+This visit was the first time I have eaten here.<br />
+<br />
+&pound;25 for a steak. To be fair, it was delicious.<br />
+&pound;12.50 for the cheesboard - but alas, my expense policy was blown on the steak.<br />
+<br />
+ESB served in the proper chalice. <br />
+<br />
+Love the feel of this pub. Photos at my blog - http://bit.ly/2cRaZHD</p>
+<p class="Reviewer">On 15<sup>th</sup> September 2016 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 276 recommendations about 275 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review99411" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about Holly Bush</h6>
+<p class="old">A pleasant and attractive looking pub located slightly off the beaten track but only a short stroll from Hampstead&rsquo;s High Street, it&rsquo;s worth taking the trouble to track down as it&rsquo;s one of the more traditional pubs in the area and seems to cater for drinkers just as much as diners based on a recent Saturday evening visit, although it was getting a little late when we visited so may perhaps be different earlier in the evening.   <br />
+<br />
+It&rsquo;s a multi-roomed layout, probably four in total although we only investigated the front two. The right hand bar at the front is where the bar counter is. There was much wood panelling on the walls and a small snug off of here with just a couple of seats. The left hand bar is given over to seating with red button back banquettes around much of the perimeter and small tables and chairs elsewhere. The colour scheme was a mixture of brown and pale yellow and there were dark wooden boards on the floor and etched glass windows to the front. An old fire-place was off to one side with a couple of shelves of old books up above.<br />
+<br />
+The menu looked to be a step or two up from your usual &ldquo;pub grub&rdquo; with most of the dishes being priced at &pound;15 or more, and even fish &amp; chips coming in at &pound;14.50. Other options included beef pie, roast partridge, grouse leg, cod with squid &amp; tapenade or a sea trout salad. We didn&rsquo;t eat ourselves, so can&rsquo;t say whether these prices are justified.<br />
+<br />
+Beers on this occasion were Oliver&rsquo;s Island, Lancaster Red, ESB, London Pride and Butcombe. The solitary cider was a rather pleasant Mortimer&rsquo;s Orchard, which makes a pleasant change from the usual dross around these parts.</p>
+<p class="Reviewer">On 16<sup>th</sup> September 2015 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/23720/">View more reviews of The Holly Bush (12)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Holly Bush</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of Holly Bush - <a href="http://hollybushhampstead.co.uk/" title="Submitted by:- Tris C" target="_blank">hollybushhampstead.co.uk</a></li>
+			<li>Randomness Guide to London - <a href="http://london.randomness.org.uk/wiki.cgi?Holly_Bush,_NW3_6SG" title="Submitted by:- Kake Pugh" target="_blank">Holly Bush entry</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="156989744326455">Facebook - <a href="https://www.facebook.com/HollyBushHampstead/" target="_blank" rel="nofollow">The Holly Bush</a></li></ul><ul id="Custom2"><li class="twitlink" id="251876308">Twitter - <a href="https://twitter.com/TheHollyBushPub" target="_blank" rel="nofollow">The Holly Bush</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/23720/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Strongers">Steve C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.55784957494591, -0.17931103706360], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.55784957494591, -0.17931103706360]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Finchley Road & Frognal, 0.74 miles, 14 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Hampstead Heath, 0.82 miles, 15 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> West Hampstead Thameslink, 1.16 miles, 22 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('a{tyHv_b@?hA|A_ARS~A_CBFl@D?MrAP`@@v@YdAk@hAoAhBfFJFjI{BrIb]HXPZxAsCRt@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('a{tyHv_b@?K\\Un@]JJDC?KDa@MiBRACa@Ym@WSs@]KMPa@DQLWFSAQDSDE?G`@oAq@aA?_@AC?SIsACEUoBV_AF}CBgCG_C@u@n@uFh@qO|@gEJEL_@IQLWNOh@WdBHr@K\\ShA_AO{@FECWZQJp@EBYgB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('a{tyHv_b@?hA|A_ARS~A_CBFl@D?MrAP`@@v@YdAk@hAoAhBfFJFjI{BrIb]HXPZWf@Pt@hAlDpBgBfDjLl@hBn@bCBP@vAFxACtFL\\ChDK?G`Bb@@?^C@C~@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.55784957494591,-0.17931103706360], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=23720">View all updates for The Holly Bush, NW3</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        12<span class="sup">th</span> Feb 2018, 21:10
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        12<span class="sup">th</span> Feb 2018, 21:07
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> deleted by <a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11823720">No</span> <span id="discdetail11823720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 November 2013 by Tris C</span></li><li>Bar Billiards : <span id="fac10723720">No</span> <span id="discdetail10723720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 July 2013 by Tris C</span></li><li>Beer Festivals : <span id="fac11723720">No</span> <span id="discdetail11723720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 June 2015 by Tris C</span></li><li>Beer Garden : <span id="fac11423720">No</span> <span id="discdetail11423720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 July 2013 by Tris C</span></li><li>Car Park : <span id="fac11323720">No</span> <span id="discdetail11323720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 July 2013 by Tris C</span></li><li>Child Friendly : <span id="fac12123720">Yes</span>  - <span id="discdetail12123720" class="discdetail" style="">Crying babies at all hours</span> -   <span class="Reviewer">last updated 27 November 2013 by Tris C</span></li><li>Darts : <span id="fac11123720">No</span> <span id="discdetail11123720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 July 2013 by Tris C</span></li><li>Dog Friendly : <span id="fac10523720">No</span>  - <span id="discdetail10523720" class="discdetail" style="">Guide dogs only.</span> -   <span class="Reviewer">last updated 12 February 2018 by Tris C</span></li><li>Function Room : <span id="fac12323720">Yes</span>  - <span id="discdetail12323720" class="discdetail" style="">x2.</span> -   <span class="Reviewer">last updated 12 March 2016 by Tris C</span></li><li>Hot Food : <span id="fac10323720">Yes</span> <span id="discdetail10323720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 June 2014 by hondo .</span></li><li>Jukebox : <span id="fac11223720">No</span> <span id="discdetail11223720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 July 2013 by Tris C</span></li><li>Karaoke : <span id="fac10623720">No</span> <span id="discdetail10623720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 July 2013 by Tris C</span></li><li>Live Music : <span id="fac10823720">No</span> <span id="discdetail10823720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 July 2013 by Tris C</span></li><li>Live TV Sports : <span id="fac11023720">No</span> <span id="discdetail11023720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 November 2013 by Tris C</span></li><li>Micropub : <span id="fac12223720">No</span> <span id="discdetail12223720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 June 2015 by Tris C</span></li><li>Pinball : <span id="fac11623720">No</span> <span id="discdetail11623720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 July 2013 by Tris C</span></li><li>Pool Table : <span id="fac10423720">No</span> <span id="discdetail10423720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 July 2013 by Tris C</span></li><li>Quiz Night : <span id="fac10923720">No</span> <span id="discdetail10923720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 September 2017 by Tris C</span></li><li>Real Ale : <span id="fac10123720">Yes</span>  - <span id="discdetail10123720" class="discdetail" style="">Fuller&#039;s</span> -   <span class="Reviewer">last updated 04 June 2014 by hondo .</span></li><li>Real Cider : <span id="fac11923720">No</span> <span id="discdetail11923720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2015 by Blackthorn _</span></li><li>Wheelchair Access : <span id="fac12023720">No</span> <span id="discdetail12023720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 November 2013 by Tris C</span></li><li>WiFi : <span id="fac11523720">Yes</span> <span id="discdetail11523720" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 July 2013 by Tris C</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - 11pm</td></tr>
+<tr><td>Saturday</td><td>12noon - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/73389/" class="List1">La Gaffe</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 34 picture(s)" title="Pub has 34 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 17 recommendation(s)" title="Pub has 17recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 10 reviewer(s)" title="Pub has average rating of 7 from 10 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55733/" class="List1">The Duke of Hamilton</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 20 picture(s)" title="Pub has 20 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 5 reviewer(s)" title="Pub has average rating of 5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23752/" class="List1">The Horseshoe</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 35 picture(s)" title="Pub has 35 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 13 recommendation(s)" title="Pub has 13recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 13 reviewer(s)" title="Pub has average rating of 7.5 from 13 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23719/" class="List1">The Flask</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 24 picture(s)" title="Pub has 24 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/67726/" class="List1">Cafe Rouge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 28 picture(s)" title="Pub has 28 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 6 reviewer(s)" title="Pub has average rating of 5.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23737/" class="List1">King William IV</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 4 reviewer(s)" title="Pub has average rating of 5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23754/" class="List1">The Wells Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 5 reviewer(s)" title="Pub has average rating of 5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55734/" class="List1">The Freemasons Arms</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

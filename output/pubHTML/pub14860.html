@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="O&#039;Neill&#039;s pub in St Albans Central, St. Albans, Hertfordshire, AL1 3JJ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of O&#039;Neill&#039;s" />
+  <meta name="keywords" content="O&#039;Neill&#039;s, Victoria Street, St. Albans, Hertfordshire, St Albans Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="O&#039;Neill&#039;s in St. Albans" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/14501_15000/14860_c9a7f9039138f1061c538cc368d63091.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/14860/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.75212303546795" />
+<meta property="og:longitude" content="-0.33795565366745" />
+<meta property="og:street-address" content="Victoria Street" />
+<meta property="og:locality" content="St. Albans" />
+<meta property="og:region" content="Hertfordshire" />
+<meta property="og:postal-code" content="AL1 3JJ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like O&#039;Neill&#039;s in St. Albans? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make O&#039;Neill&#039;s the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/14860/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="O&#039;Neill&#039;s in St. Albans" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about O&#039;Neill&#039;s " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/14501_15000/14860_c9a7f9039138f1061c538cc368d63091.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/14860/" />
+<meta name="geo.position" content="51.75212303546795;-0.33795565366745" />
+<meta name="geo.placename" content="O&#039;Neill&#039;s in St. Albans" />
+<meta name="geo.region" content="UK" />
+<title>O&#039;Neill&#039;s in St Albans Central, St. Albans : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":14860},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(14860);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 14860;var pubaddress = "Victoria Street";var pubname = "O'Neill's";var pubpostcode = "AL1 3JJ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/hertfordshire/" title="Pubs Galore : Hertfordshire Page">Hertfordshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/st-albans/hertfordshire/" title="Pubs Galore : St. Albans Page">St. Albans</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : O&#039;Neill&#039;s Page">O&#039;Neill&#039;s Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="os3ufp8lr3ski6rtb1b17n67v7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/14860/" class="indisplay"><img src="/images/display/14501_15000/14860_c9a7f9039138f1061c538cc368d63091.jpg?w=2" alt="Picture of O&#039;Neill&#039;s" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
+  Submitted on Wednesday, 14<sup>th</sup> March 2007<br />
+  With picture contributions to 20227 other pubs<br />
+<a href="/pubpictures/14860/" class="smallbutton">View all this pub's pictures</a> (7 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/14860/">Pub map</a><br /><a href="/pubreviews/14860/">Pub reviews (2)</a><br /><a href="/pubpictures/14860/">Pub pictures (8)</a><br /><a href="/core/pubaudit.php?id=14860" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">O&#039;Neill&#039;s, St Albans Central, St. Albans</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Victoria Street</span><br />
+
+
+<span class="town">St. Albans</span><br />
+<span class="postcode">AL1 3JJ</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">O'Neill's (Mitchells & Butlers)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/st-albans-central/hertfordshire/">St Albans Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by O'Neill's</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/StAlbansONeills" target="_blank"><img src="https://pbs.twimg.com/profile_images/868436994241830913/K2lfkJ1p_normal.jpg" alt="O&#039;Neill&#039;s St Albans" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/StAlbansONeills" target="_blank">O&#039;Neill&#039;s St Albans</a></strong>
+<a href='https://t.co/K32WhPH6eH' target='_blank'>https://t.co/K32WhPH6eH</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/StAlbansONeills/status/904784757590024193">8:14 PM Sep 4th 2017</a> from <a href="http://www.facebook.com/twitter" rel="nofollow">Facebook</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/StAlbansONeills" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/StAlbansONeills" target="_blank">O&#039;Neill&#039;s St Albans</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of O'Neill's  <span class="h2note">(Average Rating: <span id="averagerating"><b>5&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review121708" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> left this review about O&#039;Neill&#039;s</h6>
+<p class="old">O&#039;Neils is housed in a grand looking building and was the first open i found before 11AM in St Albans.<br />
+Once inside there is a large square shaped room with the bar on the right side,the floor is part tiled and wood floored,the seating is normal tables and chairs and tall tables and chairs,plus some bench seating.<br />
+There was one real ale on the bar which was Doom Bar,this went down well after the train journey down from Nottingham.<br />
+There were TVs showing rugby British Lions v New Zealand.<br />
+The pub was packed on my Saturday morning visit no doubt due to the rugby being shown.<br />
+I was happy enough having a drink in this pub.<br />
+<br />
+Pub visited 24/7/2017</p>
+<p class="Reviewer">On 28<sup>th</sup> August 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 6113 recommendations about 6113 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review25243" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=RogerB">Roger Button</a> left this review about O&#039;Neill&#039;s</h6>
+<p class="old">I wouldn&rsquo;t generally venture into an O&rsquo;Neills at the best of times, especially in a City with such a wealth of good pubs but trying to find a pub in St Albans with the Satanta channel is quite a challenge and O&rsquo;Neills appeared to be the only place to meet my requirements on the day I needed it. The building itself is a huge cavern of a place that once housed the City&rsquo;s library and bears all the hallmarks one would expect of a municipal building however it just doesn&rsquo;t come across as being the right sort of building for an Irish theme pub. The d&eacute;cor consists of all the usual Irish trimmings; tricolours, Guinness posters, Irish sporting memorabilia (signed shirts etc) and an indeterminate amount of O&rsquo;Neills advertising. For an early Saturday evening the place was quite bustling and I&rsquo;m sure not everyone was there for the Man U v Spurs screening. Naturally everything on the beer front centres on Guinness, Caffreys and Magners and the 2 hand pumps were both vacant on my vist (one was badged as Deuchars but unavailable and the other redundant). There is a programme of live music on Fridays but in general it isn&rsquo;t a place I would quickly return to given the other pubs around but it did at least serve the purpose for which we needed it (even if Spurs did get stuffed) and if the Deuchars had been on, things would have been slightly more bearable.</p>
+<p class="Reviewer">On 27<sup>th</sup> April 2009 
+  - rating: <b>4</b><br />
+  <span class="leftspace">[User has posted 1238 recommendations about 1232 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for O&#039;Neill&#039;s</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official page of O'Neill's in St Albans - <a href="http://www.oneills.co.uk/oneillsstalbans/" title="Submitted by:- Philip Carter" target="_blank">www.oneills.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="twitlink" id="1712167532">Twitter - <a href="https://twitter.com/StAlbansONeills" target="_blank" rel="nofollow">O'Neill's St Albans</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/14860/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Strongers">Steve C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.75212303546795, -0.33795565366745], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.75212303546795, -0.33795565366745]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> St Albans City, 0.53 miles, 10 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> St Albans Abbey, 0.68 miles, 13 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Park Street, 2.1 miles, 40 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('cyzzHr_aAvC}Rx@yLtBsWPoCh@cBWE@YWEIMKCQAAx@D@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('cyzzHr_aAe@`CtBxBfA|@l@\\~HrDxBjAENtBzARB@b@BJDNNTlAfAXPdALTGTaAtAv@n@d@VDp@Xp@^v@l@hBdCL[DDBGEGz@yBc@o@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('cyzzHr_aAe@`CtBxBfA|@l@\\~HrDxBjAENtBzARB@b@BJDNNTlAfAXPdALTGTaAtAv@n@d@VDp@Xp@^v@l@nCtDn@XNIPHr@gBHBPINBJVf@j@BNHGv@_CVIFlAHh@HRnApA`Ar@^PzJWdBBdA@HARO`@\\|@^nHtETn@vCsAzKwDbAi@FU~@q@xCqEbAb@NApH}B@HxLgFhIyDnCo@r@@\\JNiARA', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.75212303546795,-0.33795565366745], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=14860">View all updates for O&#039;Neill&#039;s, St. Albans</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        28<span class="sup">th</span> Aug 2017, 18:58
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        28<span class="sup">th</span> Aug 2017, 16:16
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Real Ale : <span id="fac10114860">Yes</span> <span id="discdetail10114860" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 2 reviewer(s)" title="Pub has average rating of 4.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54699/" class="List1">The Slug &amp; Lettuce</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 40 picture(s)" title="Pub has 40 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 18 recommendation(s)" title="Pub has 18recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 14 reviewer(s)" title="Pub has average rating of 7 from 14 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56897/" class="List1">Waterend Barn (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65639/" class="List1">Chilli</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 24 picture(s)" title="Pub has 24 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 5 reviewer(s)" title="Pub has average rating of 6 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14889/" class="List1">The White Swan</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 6 reviewer(s)" title="Pub has average rating of 6 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14858/" class="List1">The Peahen</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 22 picture(s)" title="Pub has 22 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 17 recommendation(s)" title="Pub has 17recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 15 reviewer(s)" title="Pub has average rating of 7 from 15 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14813/" class="List1">The Boot</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 4 reviewer(s)" title="Pub has average rating of 5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14831/" class="List1">The Snug @ Fleur De Lys</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/75789/" class="List1">The Beech House</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Cardinals Hat pub in Worcester, Worcestershire, WR1 2NA : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Cardinals Hat" />
+  <meta name="keywords" content="The Cardinals Hat, 33  Friar Street, Worcester, Worcestershire, Worcester Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Cardinals Hat in Worcester" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/42001_42500/42409_bc8d389e.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/42409/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.18949384770882" />
+<meta property="og:longitude" content="-2.21862993219975" />
+<meta property="og:street-address" content="33  Friar Street" />
+<meta property="og:locality" content="Worcester" />
+<meta property="og:region" content="Worcestershire" />
+<meta property="og:postal-code" content="WR1 2NA" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Cardinals Hat in Worcester? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Cardinals Hat the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/42409/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Cardinals Hat in Worcester" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Cardinals Hat " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/42001_42500/42409_bc8d389e.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/42409/" />
+<meta name="geo.position" content="52.18949384770882;-2.21862993219975" />
+<meta name="geo.placename" content="The Cardinals Hat in Worcester" />
+<meta name="geo.region" content="UK" />
+<title>The Cardinals Hat in Worcester : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":42409},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(42409);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 42409;var pubaddress = "33  Friar Street";var pubname = "The Cardinals Hat";var pubpostcode = "WR1 2NA";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/worcestershire/" title="Pubs Galore : Worcestershire Page">Worcestershire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/worcester/worcestershire/" title="Pubs Galore : Worcester Page">Worcester</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Cardinals Hat Page">The Cardinals Hat Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="lcdvh6njg89l1u38mgvjhort66" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/42409/" class="indisplay"><img src="/images/display/42001_42500/42409_bc8d389e.jpg?w=2" alt="Picture of The Cardinals Hat" /></a><br />  Image posted by <a href="/userinfo.php?name=Delboy20" class="indisplay">Delboy 20</a><br />
+  Submitted on Monday, 3<sup>rd</sup> December 2018<br />
+  With picture contributions to 1026 other pubs<br />
+<a href="/pubpictures/42409/" class="smallbutton">View all this pub's pictures</a> (16 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/42409/">Pub map</a><br /><a href="/pubreviews/42409/">Pub reviews (14)</a><br /><a href="/pubpictures/42409/">Pub pictures (17)</a><br /><a href="/core/pubaudit.php?id=42409" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Cardinals Hat, Worcester Central, Worcester</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">33  Friar Street</span><br />
+
+
+<span class="town">Worcester</span><br />
+<span class="postcode">WR1 2NA</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01905724006</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/worcester-central/worcestershire/">Worcester Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Cardinals Hat</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/TheCardinalsHat" target="_blank"><img src="https://pbs.twimg.com/profile_images/3592864919/ccdfee64e203c1f0d02f200c8ec81181_normal.jpeg" alt="The Cardinal&#039;s Hat" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/TheCardinalsHat" target="_blank">The Cardinal&#039;s Hat</a></strong>
+TODAY! Sat 30 March at<a href="http://twitter.com/theCardinalsHat" target="_blank"> @theCardinalsHat</a> - Meet the Brewer, Cheesemaker, Cider maker + Live Music from<a href="http://twitter.com/betsyvintage" target="_blank"> @betsyvintage</a>&hellip; <a href='https://t.co/1LCb5fjRvx' target='_blank'>https://t.co/1LCb5fjRvx</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/TheCardinalsHat/status/1111939121843441664">10:32 AM Mar 30th</a> from <a href="https://www.hootsuite.com" rel="nofollow">Hootsuite Inc.</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/TheCardinalsHat" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/TheCardinalsHat" target="_blank">The Cardinal&#039;s Hat</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Cardinals Hat  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review86785" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Maldenman">Malden man</a> left this review about The Cardinals Hat</h6>
+<p class="old">Another top drawer Worcester boozer, multi-roomed with all areas linked via a flag stoned corridor. The bar serves the front room, ales are listed on a board together with those coming next so if you are sat in the back you can still see what&#039;s going on, St Georges Ascelon, Bank&#039;s Sunbeam, Wychwood Hayburner, Wye Valley Butty Bach, ciders from Cheddar Valley. A stone fireplace with herringbone brickwork and a wood burner was a feature, leaded windows, dark wood panelling, bench seating with the seat backs being a continuation of the wood panelled walls, copper jugs on the window cills, tables formatted from old Singer sowing machines. Quiet music in the background, didn&#039;t see a TV. Free WiFi. A lovely old pub, another on the Worcester must do list.</p>
+<p class="Reviewer">On 2<sup>nd</sup> September 2014 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 1678 recommendations about 1655 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review81418" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Cardinals Hat</h6>
+<p class="old">First visit since the management/emphasis change. The exterior has been given a splash of deep purple which along with the black trim gives it an almost goth look. Thankfully the multi-room heritage interior has been left unmolested and indeed seems brighter and cleaner than previous. Five ales; Purity Mad Goose, Brakspear Special, Cotswold Lion, Marston New World and the gorgeous but lesser-spotted Bathams Bitter which slipped down a treat. Three proper ciders too, including a couple of unusual choices. I was always enamoured with the previous Austrian bier haus incarnation and whilst I&rsquo;m sorry to see it go, I&rsquo;m really happy that an excellent ale pub has taken its place. If you&rsquo;re visiting Worcester, put this one on the list of &lsquo;must-do&rsquo; pubs.<br />
+<br />
+June 2011<br />
+Multi-roomed Austrian bier haus, in a historic 15th century building which is CAMRA heritage listed. The attractive exterior with leaded windows is enticing and the interior lives up to the billing, with three rooms (two front, one rear) plus a small drinking corridor. Dark oak panelling and real fires abound. Beer-wise, it&rsquo;s all imported Austrian stuff being served so be prepared to pay for the privilege but it&rsquo;s well-worth it. My half was &pound;2.40 which was reasonable in the greater scheme of things; penny-pinchers can go and amuse themselves in the Postal Order. One slight downside was the grumpily Teutonic service &ndash; the place was packed with tourists and I think mein hostfrau was feeling the strain of having to explain why there was no Fosters, real ale etc. The funny farming implement above the bar may have been for dealing with annoying customers, luckily it wasn&rsquo;t used during my visit. Beware funny opening hours - they generally aren&rsquo;t open during the daytime. I liked this one and would happily go back here. Recommended to the open-minded among you. Rated 8</p>
+<p class="Reviewer">On 1<sup>st</sup> April 2014 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review81069" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about The Cardinals Hat</h6>
+<p class="old">Only managed a quick visit the compact bar at the front of the building this time, but this is the sort of place which demands a re-visit.  Thankfully, after a long day, we managed to secure seats at one of the high tables near the windows.  Better still, the range of real ale included Batham&#039;s Bitter (&pound;1.70 for a half).  Excellent.</p>
+<p class="Reviewer">On 23<sup>rd</sup> March 2014 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/42409/">View more reviews of The Cardinals Hat (14)</a>
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=1305">Worcester</a> by <a rel="nofollow" href="/userinfo.php?name=CHPC">Roy Collins</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Cardinals Hat</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Cardinals Hat - <a href="http://www.the-cardinals-hat.co.uk" title="Submitted by:- aleand hearty" target="_blank">www.the-cardinals-hat.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="175533419268469">Facebook - <a href="https://www.facebook.com/thecardinalshat/" target="_blank" rel="nofollow">The Cardinals Hat</a></li></ul><ul id="Custom2"><li class="twitlink" id="1390486020">Twitter - <a href="https://twitter.com/TheCardinalsHat" target="_blank" rel="nofollow">The Cardinal's Hat</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/42409/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=sheffield+hatter">Will Larter</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.18949384770882, -2.21862993219975], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.18949384770882, -2.21862993219975]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Worcester Foregate Street, 0.45 miles, 8 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Worcester Shrub Hill, 0.91 miles, 17 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Droitwich Spa, 7.51 miles, 2 hr 25 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('igp}HhjpLa@AiD`@[Ag@MECArA_APqBf@yCfASG[xAShCCZABGDE?k@FgBb@O@aGnB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('igp}HhjpLa@AiD`@[Ag@MQE{Dg@CkABqGG@?z@P?@oAKWHiHsDO?SMUGAWwHKqAQw@Ys@a@uA_@aBUqBKyBGq@[q@[|@K_@@u@Me@c@Ki@J[LEe@_DjAuA^AC~D{A', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('igp}HhjpLa@AiD`@[Ag@MQE{Dg@wC_AIBORm@o@UIoAjAi@l@g@\\ILEBIAMQKU?O@SQASWMw@S{Ao@}Dy@oBaAmA]o@[@{C_CqHwH]a@wApB_As@gAq@cEwBmBg@ENu@S?UaAYWCMBOEDUOUWs@SYwAyAU]Qi@{HpFk@kCwA|Ay@d@o@LG`BmCf@cAXqCReH~@a@ZSb@WPe@Nu@J[PWZk@FUJIXwA~@QF}@De@Ee@QkAaAwDpBm@@}Ah@_C_@gFe@_BxAm@L[COIk@k@cBs@SQa@m@a@{@Yg@e@q@oBuDa@wAe@IeAo@oAtAy@nB}DrLeDeFuC}DkC}DoBmDaDaHaAkCuBuCaEoGQ\\wF|AkIiA@QGMMIF[YOaACuC}AGYMh@{AEm@n@wAIaAo@i@fDSOeCDwBpAq@DaA@eCk@WCUBOHu@l@q@fAOLkAJs@I{Aq@a@mBK]SOk@ImDE{C{AWe@Oq@iEiF{AsAwAiBaAaA{@c@o@IK?GHCP@f@K`Aq@]_@?SBwA`@m@FUA]Ma@Sa@CSDq@`@SBY?WKOOe@s@qAaCsEiF}Bo@yBYQMa@RaAKD}AIPo@k@a@g@}BgI}FuQdAmAwAuCqDcOGCw@oA}@eBqAwAk@c@wA[gAOaBD_@HeBx@[Hu@EUIOQa@_AMk@y@oGSmBi@mCOgAA}@JyCb@sDBm@A]EMWWcAEs@IqBe@q@Ie@e@[y@Ki@a@qGGi@S?i@{Co@_Do@kD]oC[yDLWJIXBBaAE{AKu@Sc@e@wAq@w@QEMKQk@YeB_@uDQiAW{@s@sAw@wBEk@Um@e@e@[KsAHc@Cm@Wi@[][]c@Yi@_@kAMqASuACKO[Zk@iBgEUk@Mm@Iw@Qw@Y}@o@sAYy@o@cCs@}Am@q@B[XoAHQCMk@qEg@oCMOCWNa@CUW[CUKQ?aAE]e@wB{DgGg@eAQi@Ou@KSKMBs@mATMBKCEIYiB_@NLlB_@a@[`A', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.18949384770882,-2.21862993219975], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=42409">View all updates for The Cardinals Hat, Worcester</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        3<span class="sup">rd</span> Dec 2018, 20:53
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Delboy20">Delboy 20</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        3<span class="sup">rd</span> Dec 2018, 20:53
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Delboy20">Delboy 20</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11842409">Yes</span> <span id="discdetail11842409" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 March 2017 by ROB Camra</span></li><li>Beer Festivals : <span id="fac11742409">No</span> <span id="discdetail11742409" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 March 2017 by ROB Camra</span></li><li>Beer Garden : <span id="fac11442409">Yes</span> <span id="discdetail11442409" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 March 2017 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10242409">No</span>  - <span id="discdetail10242409" class="discdetail" style="">Discount withdrawn</span> -   <span class="Reviewer">last updated 22 March 2017 by ROB Camra</span></li><li>Car Park : <span id="fac11342409">No</span> <span id="discdetail11342409" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 March 2017 by ROB Camra</span></li><li>Child Friendly : <span id="fac12142409">Yes</span> <span id="discdetail12142409" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 March 2017 by ROB Camra</span></li><li>Dog Friendly : <span id="fac10542409">Yes</span> <span id="discdetail10542409" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 March 2017 by ROB Camra</span></li><li>Hot Food : <span id="fac10342409">Yes</span> <span id="discdetail10342409" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 March 2017 by ROB Camra</span></li><li>Live Music : <span id="fac10842409">Yes</span> <span id="discdetail10842409" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 March 2017 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11042409">No</span> <span id="discdetail11042409" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 March 2017 by ROB Camra</span></li><li>Micropub : <span id="fac12242409">No</span> <span id="discdetail12242409" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 March 2017 by ROB Camra</span></li><li>Real Ale : <span id="fac10142409">Yes</span> <span id="discdetail10142409" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 March 2017 by ROB Camra</span></li><li>Real Cider : <span id="fac11942409">Yes</span> <span id="discdetail11942409" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 March 2017 by ROB Camra</span></li><li>WiFi : <span id="fac11542409">Yes</span> <span id="discdetail11542409" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 March 2017 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>4pm - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - 11pm</td></tr>
+<tr><td>Saturday</td><td>12noon - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64458/" class="List1">The Conservatory</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/42542/" class="List1">Ye Olde Talbot</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86342/" class="List1">All Bar One</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86343/" class="List1">Cosy Club</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84988/" class="List1">Heroes</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 5 reviewer(s)" title="Pub has average rating of 6.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/68006/" class="List1">The Hand in Glove</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/77958/" class="List1">Cafe Rouge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 21 picture(s)" title="Pub has 21 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 5 reviewer(s)" title="Pub has average rating of 6 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/42429/" class="List1">Eagle Vaults</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

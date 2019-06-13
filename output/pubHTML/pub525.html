@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Old Inn pub in Congresbury (near Bristol), Bristol (County), BS49 5DQ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Old Inn" />
+  <meta name="keywords" content="The Old Inn, Pauls Causeway, Congresbury, Bristol, Bristol (County), , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Old Inn in Congresbury" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/501_1000/525_18f0b336.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/525/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.36964210734531" />
+<meta property="og:longitude" content="-2.80980974435806" />
+<meta property="og:street-address" content="Pauls Causeway" />
+<meta property="og:locality" content="Congresbury" />
+<meta property="og:region" content="Bristol (County)" />
+<meta property="og:postal-code" content="BS49 5DQ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Old Inn in Congresbury? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Old Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/525/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Old Inn in Congresbury" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Old Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/501_1000/525_18f0b336.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/525/" />
+<meta name="geo.position" content="51.36964210734531;-2.80980974435806" />
+<meta name="geo.placename" content="The Old Inn in Congresbury" />
+<meta name="geo.region" content="UK" />
+<title>The Old Inn in Congresbury (near Bristol) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":525},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(525);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 525;var pubaddress = "Pauls Causeway";var pubname = "The Old Inn";var pubpostcode = "BS49 5DQ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/bristol/" title="Pubs Galore : Somerset Page">Somerset</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/bristol/bristol/" title="Pubs Galore : Bristol Page">Bristol</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/congresbury/somerset/" title="Pubs Galore : Congresbury Page">Congresbury</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Old Inn Page">The Old Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="sjjjg7jufhlt0ucuh8ho3fh6m2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/525/" class="indisplay"><img src="/images/display/501_1000/525_18f0b336.jpg?w=1" alt="Picture of The Old Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=Blackthorn" class="indisplay">Blackthorn _</a><br />
+  Submitted on Wednesday, 15<sup>th</sup> June 2011<br />
+  With picture contributions to 4300 other pubs<br />
+<a href="/pubpictures/525/" class="smallbutton">View all this pub's pictures</a> (7 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/525/">Pub map</a><br /><a href="/pubreviews/525/">Pub reviews (1)</a><br /><a href="/pubpictures/525/">Pub pictures (8)</a><br /><a href="/core/pubaudit.php?id=525" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Old Inn, Bristol</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Pauls Causeway</span><br />
+
+<span class="town">Congresbury</span><br />
+<span class="postaltown">Postal town: Bristol</span><br />
+<span class="postcode">BS49 5DQ</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/congresbury/somerset/">Congresbury</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Old Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>9</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review108683" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about The Old Inn</h6>
+<p class="old">As it&rsquo;s name suggests, a delightful old inn, tucked away down a quiet cul-de-sac. It&rsquo;s certainly not one that&rsquo;s going to attract much in the way of passing trade, but nonetheless seems to keep quite busy. Whenever we go in the main bar is invariably busy, presumably with locals who all know each other.<br />
+<br />
+The main bar has a flagstone floor, plenty of wooden beams and rather unusually lots of leather straps hanging from the ceiling to grab hold of, like you get on some railway carriages. Useful if you&rsquo;ve had one too many and are swaying a bit, perhaps? There&rsquo;s a slightly cosier snug off to the left, and although this had a plasma screen up in the corner, this was not in use on our visit. To the right is a tiled bar with some wood panelling on the walls and several tables and chairs that is more geared up for dining, with all the tables being laid up for food. There&rsquo;s plenty of pictures on the walls and some big old fireplaces, although I&rsquo;m not sure if these are actually used or not. There&rsquo;s a double sided fireplace separating the main bar from the one on the right that looks as though it may have been a bread oven at one time, and now houses some type of wood burner. There is a beer garden out the back, and usefully a serving hatch directly in to the bar.<br />
+<br />
+Food wise, the menu offered a decent selection of pub grub dishes such as scampi &amp; chips, liver &amp; bacon, sausage &amp; mash and so on as well as a small specials board. Most of the main courses were around the &pound;9/&pound;10 mark, and our lasagne and Hunter&rsquo;s Chicken were both decent and tasty dishes. <br />
+<br />
+Beers on tap were Young&rsquo;s Special, St. Austell&rsquo;s Tribute and Butcombe. Ciders meanwhile were a trio from Thatcher&rsquo;s, with their Dry, Gold and Haze.</p>
+<p class="Reviewer">On 13<sup>th</sup> July 2016 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Old Inn</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Old Inn pages at the Youngs site - <a href="http://www.youngs.co.uk/pub-detail.asp?PubID=307" title="Submitted by:- Blackthorn _" target="_blank">www.youngs.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="144118218973837">Facebook - <a href="https://www.facebook.com/oldinncongresbury/" target="_blank" rel="nofollow">Old Inn</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/525/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.36964210734531, -2.80980974435806], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.36964210734531, -2.80980974435806]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Yatton, 2.18 miles, 42 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Nailsea & Backwell, 5.02 miles, 1 hr 36 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Worle, 5.53 miles, 1 hr 46 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('}bpxHhycPSXYnAeB}A_Ak@GIEKi@\\cBuBm@e@w@WaCKmAPWVOl@Sf@c@x@g@j@}BbB@JaAXWB_ACm@e@[[Ye@YM]E?MQAyCp@g@FAt@MvA]zC_@bCi@pBoApDmAnE{@r@]l@ISwIvGcAw@gH}D_ArHYzAA`@WFObA@Pa@vDS|@]lBg@zE@LK`@MlAMPQFHRf@lCX|@mDpBkBx@oD|@{@P_Bb@UJiAzAkDdDIXYdFG`@MT[VcC`Ce@Tg@DUISOc@i@Wc@K[CAuBpB[kAEYCk@GYUf@EIUVBNW}@DGh@fB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('}bpxHhycPSXYnAeB}A_Ak@GIEKi@\\mB_Cc@[k@U@MCOKSaAcAoEuDiCwAo@o@c@}@Ko@MuA@yBGoCc@sCQw@MKKAIyAQ{@g@aBEFM@e@[cD{CSWw@c@w@Cy@JyGtCwFsAaBuFsCyKJGa@uCJ_ET_@f@Ya@y@{@}B_EeMUG]m@qBuCyCqCKOAIE{DSeD@OBIwBuFw@cBcBeDc@kAc@kBYXg@{BoDgMUiA@ON[g@uAy@sBuBqEoCkEeCiCiBmAm@g@q@cAg@mAk@w@k@a@_A]o@]s@o@sEkHgEqJiC{IsCqK]yBScBm@}Bc@R{@QyB{@UAWDSNaCrCoApAWIw@i@[oBSkAMa@SYi@CeA@gIcC{DgHy@FiAe@iARqBsLYyEy@_CmA_CiD}DwByCeBqAcDeBuAWWO@YcDW{GoFy@x@a@?}AkCyUkVgIp@WJc@QyCyGGm@gAqBQUmA{@w@y@[|@}@pB[`@q@p@ZrAHDBNBAEOHAF`@HCSkA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('}bpxHhycPSXYnACRAx@KbDM`AAd@ENOJVDnAGhAtFXbDDdAF~CB`DX~@nAfAPdAVvECxCFhBTlCTtLRrBv@hSCb@Q`AiAlESCMXkDq@eFxHWPBTh@zMt@bIPfCz@tFtArHhAvHn@`IFZDv@J|@Dr@L`@dDxW?~WtEp\\fAgAXr@p@`CTl@n@bCr@rDPp@Zl@d@L`@DXN^d@`@RVn@fBtJ`A`Dp@jBf@r@`@d@d@`ARl@Rx@LtHB\\VnAt@fBr@l@bB^t@lDPlA@fAx@vHAp@Sr@_@b@c@\\iBfCkAfB@PIXy@r@bBdEo@TYNURQXM`@Mv@k@nEK`A@\\f@lDl@fGNfCP|DHrC?h@EV?^TlE?p@Gd@Of@a@p@qB~BvBlG?VJx@bArDVf@PJtCjJlBvG|BlHV`ARnA~@tHLv@LV^f@Ph@D`@@f@]hGIb@]t@SlACr@Dx@|@|GrAlHb@tAXn@nArBVp@ZvATf@RLJDxBS`@D^b@HPBJHHD@NC\\NtFxKLNv@~CPx@Ht@@|@Fp@z@xF?TATENaC~CUTODQh@GZYrBEr@UzAQp@?HmCbHqAyCeCgFcAcC}CvA]EEDACAB?@ADHX', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.36964210734531,-2.80980974435806], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=525">View all updates for The Old Inn, Congresbury</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        10<span class="sup">th</span> Aug 2018, 21:04
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Lady+Grey">Helen Iwanczuk</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        10<span class="sup">th</span> Aug 2018, 14:47
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Lady+Grey">Helen Iwanczuk</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac118525">No</span> <span id="discdetail118525" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li><li>Bar Billiards : <span id="fac107525">No</span> <span id="discdetail107525" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li><li>Beer Garden : <span id="fac114525">Yes</span> <span id="discdetail114525" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li><li>Car Park : <span id="fac113525">Yes</span> <span id="discdetail113525" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li><li>Child Friendly : <span id="fac121525">Yes</span> <span id="discdetail121525" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li><li>Dog Friendly : <span id="fac105525">Yes</span> <span id="discdetail105525" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li><li>Function Room : <span id="fac123525">Yes</span>  - <span id="discdetail123525" class="discdetail" style="">Parties/hire and business meetings catered for</span> -   <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li><li>Hot Food : <span id="fac103525">Yes</span> <span id="discdetail103525" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li><li>Jukebox : <span id="fac112525">No</span> <span id="discdetail112525" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li><li>Karaoke : <span id="fac106525">No</span> <span id="discdetail106525" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li><li>Live TV Sports : <span id="fac110525">Yes</span>  - <span id="discdetail110525" class="discdetail" style="">BT Sport </span> -   <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li><li>Micropub : <span id="fac122525">No</span> <span id="discdetail122525" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li><li>Pinball : <span id="fac116525">No</span> <span id="discdetail116525" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li><li>Pool Table : <span id="fac104525">No</span> <span id="discdetail104525" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li><li>Real Ale : <span id="fac101525">Yes</span> <span id="discdetail101525" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2013 by Dave McNally</span></li><li>Real Cider : <span id="fac119525">No</span> <span id="discdetail119525" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li><li>Wheelchair Access : <span id="fac120525">No</span> <span id="discdetail120525" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li><li>WiFi : <span id="fac115525">Yes</span>  - <span id="discdetail115525" class="discdetail" style="">Code on chalkboard at bar </span> -   <span class="Reviewer">last updated 30 November 2015 by Jonathan Wilde</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 11pm</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - Midnight</td></tr>
+<tr><td>Saturday</td><td>12noon - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/644/" class="List1">Congresbury Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 9 from 1 reviewer(s)" title="Pub has average rating of 9 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/553/" class="List1">The Plough Inn</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

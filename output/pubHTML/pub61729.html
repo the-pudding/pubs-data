@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Bathampton Mill pub in Bath, Somerset, BA2 6TS : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Bathampton Mill" />
+  <meta name="keywords" content="Bathampton Mill, Mill Lane, Bath, Somerset, Bathampton, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Bathampton Mill in Bath" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/61501_62000/61729_089c913d.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/61729/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.40067817977678" />
+<meta property="og:longitude" content="-2.32541884187242" />
+<meta property="og:street-address" content="Mill Lane" />
+<meta property="og:locality" content="Bath" />
+<meta property="og:region" content="Somerset" />
+<meta property="og:postal-code" content="BA2 6TS" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Bathampton Mill in Bath? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Bathampton Mill the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/61729/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Bathampton Mill in Bath" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Bathampton Mill " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/61501_62000/61729_089c913d.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/61729/" />
+<meta name="geo.position" content="51.40067817977678;-2.32541884187242" />
+<meta name="geo.placename" content="Bathampton Mill in Bath" />
+<meta name="geo.region" content="UK" />
+<title>Bathampton Mill in Bath : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":61729},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(61729);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 61729;var pubaddress = "Mill Lane";var pubname = "Bathampton Mill";var pubpostcode = "BA2 6TS";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/somerset/" title="Pubs Galore : Somerset Page">Somerset</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/bath/somerset/" title="Pubs Galore : Bath Page">Bath</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Bathampton Mill Page">Bathampton Mill Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="o9lki5bubtlthpg1dujq1snou6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/61729/" class="indisplay"><img src="/images/display/61501_62000/61729_089c913d.jpg?w=1" alt="Picture of Bathampton Mill" /></a><br />  Image posted by <a href="/userinfo.php?name=bcfczuluarmy" class="indisplay">Jonathan Wilde</a><br />
+  Submitted on Saturday, 18<sup>th</sup> October 2014<br />
+  With picture contributions to 3997 other pubs<br />
+<a href="/pubpictures/61729/" class="smallbutton">View all this pub's pictures</a> (8 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/61729/">Pub map</a><br /><a href="/pubreviews/61729/">Pub reviews (3)</a><br /><a href="/pubpictures/61729/">Pub pictures (9)</a><br /><a href="/core/pubaudit.php?id=61729" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Bathampton Mill, Bathampton, Bath</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Mill Lane</span><br />
+<span class="region">Bathampton</span><br />
+
+<span class="town">Bath</span><br />
+<span class="postcode">BA2 6TS</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01225469758</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Premium Country Pubs (Mitchells & Butlers)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/bathampton/somerset/">Bathampton</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Bathampton Mill  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review111748" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=ETA">E TA</a> left this review about Bathampton Mill</h6>
+<p class="old">As the name suggests, this is a converted mill house and is well described by Blackthorne, below.  The staff were friendly, reasonably helpful, but the location brings a mixed bag of customers, including, on this visit, a large coachful of elderly wheel-chair users which made service very slow indeed and crowded the outside seating area.  Two ales on from Sharp, Doombar and Atlantic, both in reasonable condition.  The prices are higher than I would like, and parking can be problematic, but it&rsquo;s not a bad place to sit and enjoy the sun if you can find space.</p>
+<p class="Reviewer">On 17<sup>th</sup> October 2016 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2299 recommendations about 2279 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review82124" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about Bathampton Mill</h6>
+<p class="old">A good sized pub overlooking the river, weir and bridge, it makes the most of it&rsquo;s attractive location with a large beer garden and plenty of outside seating, both on the grass alongside the riverbank and on a terrace made of wooden decking running around two sides of the pub. It appears to have been recently refurbished, and I believe that it was badly flooded a few months back which would account for the fresh look. <br />
+<br />
+Inside, the pub consists of one large, open-plan &ldquo;L&rdquo; shaped room with a small snug at the back and a mixture of tiling and wood boards on the floor and further wooden boards cladding the back wall. A stone fire-place was at one end and the paintwork was the usual Farrow &amp; Ball pastel shades and whilst pleasant enough it all seemed a little bland and unimaginative like you get I many chain pubs. A few old oak beams were the only nod to anything slightly more authentic. Service at the bar seemed somewhat chaotic &ndash; it was a sunny bank holiday afternoon so naturally the pub was very busy, but the problem was not so much a lack of staff but a lack of any organisation with many of them just milling around instead of serving the throng of thirsty punters waiting at the bar. The terrace outside looks to have had some money spent on it, with lots of wooden furniture, candles swinging from the frames above the tables, and even cushions laid out on the benches which was a nice touch. Seating in the garden was mostly plastic by the look of it, but unusually included loungers as well as chairs if you just wanted to relax and admire the view.<br />
+<br />
+Food wise the menu offered a good selection of dishes, perhaps a step or two up from your usual &ldquo;pub grub&rdquo; but nothing too out the way and also included a selection of sharing platters and sandwiches. Most of these were priced somewhere between about &pound;9 - &pound;13, and many were available in both small and large portion sizes. We were only there for a mid-afternoon snack so opted for a Beef Tomato, Mozzarella and Avocado Half Baguette with optional Chicken. At &pound;9.45 this seemed expensive, even though it was accompanied with a side-order of chips. As it happens, ours came out without the requested chicken, which I wasn&rsquo;t too concerned about as long as we didn&rsquo;t get charged for it, but the waitress Lucy, who incidentally, was very hard working, switched on and a real credit to the place, brought us a whole new baguette complete with chicken this time, and another portion of chips. So in the end, two meals for the price of one was pretty good, but ordinarily of course that would not be the case.   <br />
+<br />
+The beer supply seemed just as disorganised as the kitchen and the bar service and despite five pumps on the bar, two had no clips on and two had apparently run out leaving just Gales Spring Sprinter. When a punter next to me asked for this, he was told it had run out, but they had Proper Job on instead. By the time I left, neither of these were in evidence, but they were apparently serving Doom Bar and Gem. The solitary cider was Aspall&rsquo;s Suffolk which was a bit of a shame &ndash; why they couldn&rsquo;t have offered something a little more local I&rsquo;m not sure. Overall, I&rsquo;ve mixed views on this &ndash; it&rsquo;s certainly a very pleasant spot, but whether there is much reason to visit when the sun&rsquo;s not out is open to debate.</p>
+<p class="Reviewer">On 22<sup>nd</sup> April 2014 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1668 recommendations about 1606 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review33367" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Rallyman">Keith Oswin</a> left this review about Bathampton Mill</h6>
+<p class="old">This establishment is prone to being flooded (always best to phone ahead if there&#039;s been heavy rain for a few days prior to your visit) and as a result has been through a major revamp. It is now more of a high quality restaurant than a pub and while the food is excellent it&#039;s mnore for a special occasion than for anyone wanting to be a regular at the bar.</p>
+<p class="Reviewer">On 6<sup>th</sup> September 2010 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 18 recommendations about 18 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Bathampton Mill</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Bathampton Mill, contains menu and wine list - <a href="http://www.thebathamptonmill.co.uk/" title="Submitted by:- hondo ." target="_blank">www.thebathamptonmill.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="758227994258565">Facebook - <a href="https://www.facebook.com/thebathampton.mill/" target="_blank" rel="nofollow">The Bathampton Mill, Bath</a></li></ul><ul id="Custom2"><li class="twitlink" id="274489210">Twitter - <a href="https://twitter.com/BathamptonMill" target="_blank" rel="nofollow">The Bathampton Mill</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/61729/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Blackthorn">Blackthorn _</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.40067817977678, -2.32541884187242], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.40067817977678, -2.32541884187242]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Bath Spa, 2.73 miles, 52 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Oldfield Park, 3.47 miles, 1 hr 6 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Freshford, 5.26 miles, 1 hr 41 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('}cvxH|deM?cAQqBCGZg@v@m@r@]vB{@BPFl@?tABx@H\\Fl@JfCBTr@fCt@zB~@dCFx@Eh@Bb@|@hEv@`H|AfKPv@JPbAhDNJ|AdB`CxBJMzInLz@~If@vChAtF\\pB`Ag@LCLH|@dB`A~Df@rAHl@|@pE`@tCFzAp@xDJ\\P^x@rAx@b@lAPj@RtBtArDfB@ZD\\lCpIP\\`@fAJNXP`Dn@N?PLf@~@xFxRz@vD?THJb@`AbAhDf@nBNEdAwAv@mAVUXFJPRp@LDfDyAFCDUFAAd@REtDMjFI?PzBGFDDJJ?HJFKN?@ITECIQu@My@S}@GDc@aBY}AFFbAlDb@tB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('}cvxH|deM?cAQqBCGZg@v@m@r@]vB{@BPFl@?tABx@H\\Fl@JfCBTr@fCt@zB~@dCFx@Eh@Bb@|@hEv@`H|AfKPv@JPbAhDNJ|AdB`CxBJMzInLz@~If@vChAtF\\pB`Ag@LCLH|@dB`A~Df@rAHl@|@pE`@tCFzAp@xDJ\\P^x@rAx@b@lAPj@RtBtArDfB@ZD\\lCpIP\\`@fAJNXP`Dn@N?PLf@~@xFxRz@vD?THJb@`AbAhDf@nBh@hD@N?JKXE@Bz@Fx@z@|Go@Tf@nFFC\\bF^b@iArDJH?JBNFPzD`DGPD^HHFxHKF@h@E\\E?Dr@BtBHf@BTDxCC^p@hCT`@N`@@TChAm@rBCNBn@L\\^b@HX@VAXKh@Sh@`@\\L?|@`AEz@Kd@pF|Ej@~@\\x@HFITM~EIpAKdCWbCc@rHz@P@qAH}AE@Cb@AAKlBCALiC', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('}cvxH|deM?cAQqBCGZg@v@m@r@]~FyBdAm@lAy@lAeA`As@|@a@FIBOMgC@_@HSNIPBJJDTDd@dEi@tA?ZI`AH@U|C\\N?ZK\\BBa@fCBDc@h@aDFSj@}@dAVHO^Of@FdByHLCJO\\}AVc@n@U`@@`@J^RxCjEhJzNx@{@r@a@bA@|@\\nADrG}ALDX{@LQfEmA|HuC|AiAtEmEvEwEhETNNlBdF\\b@h@`@JRnAl@bBTHi@nB@TkBn@oC`@`CTj@VZ|@l@pAp@`@NpAJp@CpC[l@DhB\\fAj@NWxAiAb@OlE_AzD?xAf@tAv@fBtA`C`BRYbDs@vI_B?QLYLk@`@{CJQ|@KTM\\o@bByOFUDYH_@JQJ_@NcBXHFUp@FNmAEi@NQBQ?IOaAh@Nj@Tp@F`@PlA~@zAdAzAh@j@\\h@f@jBpBf@p@Rd@r@n@h@l@Nh@f@LJg@PWVOlAGt@IlAe@t@g@`ByBVNHA`@m@FU?[TAlAVhOtGn@b@vD~AZ@PGJKFDzAO~AKfDKL?bA\\VD`AI`Bg@fAg@LK|@gB~AeB@e@?_AY_AA]NsAb@w@d@Qr@iB|@gFbFqb@lCqNCIBMxCgFDEH@`@dBL_@FF@E', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.40067817977678,-2.32541884187242], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=61729">View all updates for Bathampton Mill, Bath</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        17<span class="sup">th</span> Oct 2016, 08:00
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=ETA">E TA</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> Oct 2014, 18:42
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11861729">No</span> <span id="discdetail11861729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 October 2014 by Jonathan Wilde</span></li><li>Bar Billiards : <span id="fac10761729">No</span> <span id="discdetail10761729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2014 by Jonathan Wilde</span></li><li>Beer Garden : <span id="fac11461729">Yes</span> <span id="discdetail11461729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2014 by Jonathan Wilde</span></li><li>Car Park : <span id="fac11361729">Yes</span> <span id="discdetail11361729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2014 by Jonathan Wilde</span></li><li>Child Friendly : <span id="fac12161729">Yes</span> <span id="discdetail12161729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2014 by Jonathan Wilde</span></li><li>Darts : <span id="fac11161729">No</span> <span id="discdetail11161729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2014 by Jonathan Wilde</span></li><li>Dog Friendly : <span id="fac10561729">Yes</span> <span id="discdetail10561729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2014 by Jonathan Wilde</span></li><li>Hot Food : <span id="fac10361729">Yes</span> <span id="discdetail10361729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Jukebox : <span id="fac11261729">No</span> <span id="discdetail11261729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2014 by Jonathan Wilde</span></li><li>Karaoke : <span id="fac10661729">No</span> <span id="discdetail10661729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2014 by Jonathan Wilde</span></li><li>Live Music : <span id="fac10861729">No</span> <span id="discdetail10861729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2014 by Jonathan Wilde</span></li><li>Live TV Sports : <span id="fac11061729">Yes</span>  - <span id="discdetail11061729" class="discdetail" style="">Terrestrial only.</span> -   <span class="Reviewer">last updated 21 October 2014 by Jonathan Wilde</span></li><li>Pinball : <span id="fac11661729">No</span> <span id="discdetail11661729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 21 October 2014 by Jonathan Wilde</span></li><li>Pool Table : <span id="fac10461729">No</span> <span id="discdetail10461729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2014 by Jonathan Wilde</span></li><li>Quiz Night : <span id="fac10961729">No</span> <span id="discdetail10961729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2014 by Jonathan Wilde</span></li><li>Real Ale : <span id="fac10161729">Yes</span> <span id="discdetail10161729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Real Cider : <span id="fac11961729">No</span> <span id="discdetail11961729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2014 by Jonathan Wilde</span></li><li>Wheelchair Access : <span id="fac12061729">Yes</span> <span id="discdetail12061729" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2014 by Jonathan Wilde</span></li><li>WiFi : <span id="fac11561729">Yes</span>  - <span id="discdetail11561729" class="discdetail" style="">O2 Wifi</span> -   <span class="Reviewer">last updated 18 October 2014 by Jonathan Wilde</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11am - 11pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - 11pm</td></tr>
+<tr><td>Saturday</td><td>11am - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/174/" class="List1">The Old Mill Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62/" class="List1">The George Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/61/" class="List1">The George &amp; Dragon</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/201/" class="List1">The White Lion</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

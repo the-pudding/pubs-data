@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Kings Head Hotel pub in Bridgnorth, Shropshire, WV16 4QN : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Kings Head Hotel" />
+  <meta name="keywords" content="The Kings Head Hotel, Whitburn Street, Bridgnorth, Shropshire, Bridgnorth Central, High Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Kings Head Hotel in Bridgnorth" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/32001_32500/32026_62ecc764.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/32026/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.53635135232889" />
+<meta property="og:longitude" content="-2.42141246795654" />
+<meta property="og:street-address" content="Whitburn Street" />
+<meta property="og:locality" content="Bridgnorth" />
+<meta property="og:region" content="Shropshire" />
+<meta property="og:postal-code" content="WV16 4QN" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Kings Head Hotel in Bridgnorth? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Kings Head Hotel the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/32026/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Kings Head Hotel in Bridgnorth" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Kings Head Hotel " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/32001_32500/32026_62ecc764.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/32026/" />
+<meta name="geo.position" content="52.53635135232889;-2.42141246795654" />
+<meta name="geo.placename" content="The Kings Head Hotel in Bridgnorth" />
+<meta name="geo.region" content="UK" />
+<title>The Kings Head Hotel in Bridgnorth : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":32026},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(32026);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 32026;var pubaddress = "Whitburn Street";var pubname = "The Kings Head Hotel";var pubpostcode = "WV16 4QN";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/shropshire/" title="Pubs Galore : Shropshire Page">Shropshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/bridgnorth/shropshire/" title="Pubs Galore : Bridgnorth Page">Bridgnorth</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Kings Head Hotel Page">The Kings Head Hotel Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="pnrqamem85n1becdmns7ef6dj5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/32026/" class="indisplay"><img src="/images/display/32001_32500/32026_62ecc764.jpg?w=2" alt="Picture of The Kings Head Hotel" /></a><br />  Image posted by <a href="/userinfo.php?name=sheffield+hatter" class="indisplay">Will Larter</a><br />
+  Submitted on Sunday, 12<sup>th</sup> November 2017<br />
+  With picture contributions to 8564 other pubs<br />
+<a href="/pubpictures/32026/" class="smallbutton">View all this pub's pictures</a> (5 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/32026/">Pub map</a><br /><a href="/pubreviews/32026/">Pub reviews (9)</a><br /><a href="/pubpictures/32026/">Pub pictures (6)</a><br /><a href="/core/pubaudit.php?id=32026" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Kings Head Hotel, Bridgnorth</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Whitburn Street</span><br />
+
+
+<span class="town">Bridgnorth</span><br />
+<span class="postcode">WV16 4QN</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/bridgnorth-central/shropshire/">Bridgnorth Central</a>, <a href="/areas/high-town/shropshire/">High Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Kings Head Hotel  <span class="h2note">(Average Rating: <span id="averagerating"><b>8&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review119606" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> left this review about The Kings Head Hotel</h6>
+<p class="old">The Kings Head is a nice looking pub that is situated on a side street just off the main shopping street.<br />
+Once inside there is an irregular shaped which has a stone floor,the seating is bench seating and normal tables and chairs,the rear area of the room is down one step.<br />
+There were four real ales on the bar,i had a drink of Hobsons Twisted Spire,which went down very well,the other real ales were Hobsons Best,Hobsons Town Crier and Wye Valley HPA.<br />
+We thought this was a very pleasant pub to have a drink in and much better than the Stables Bar which is behind it.<br />
+<br />
+Pub visited 29/4/2017</p>
+<p class="Reviewer">On 3<sup>rd</sup> July 2017 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 6113 recommendations about 6113 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review117510" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=%2Fian.mapp">Ian Mapp</a> left this review about The Kings Head Hotel</h6>
+<p class="old">Wow - C16th Coaching House. #1 for food in Bridgnorth (according to Tripadvisor), in the Good Beer Guide 2017.<br />
+<br />
+Had to be checked out.<br />
+<br />
+Lived up to all expectations. Great staff. Prompt Service. Excellent Food and the best Hobsons Town Crier I have had.<br />
+<br />
+The Stable Bar in the back courtyard is worth checking out - although its nothing to do with the pub.<br />
+<br />
+Visit blogged at http://bit.ly/2pw4bYW</p>
+<p class="Reviewer">On 29<sup>th</sup> April 2017 
+  - rating: <b>10</b><br />
+  <span class="leftspace">[User has posted 276 recommendations about 275 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review106462" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a> left this review about The Kings Head Hotel</h6>
+<p class="old">This 16th Century coaching house is worth a visit and as Aqualung mentions, it does look like something from a film set. The pub has two main areas, basically a front and rear room, separated by a short stone wall with an opening for a fire grate. The rear room housed a small bar, with five handpumps, which were offering two from Hobson&#039;s, Wye Valley HPA, Ma Pardoes and Three Tuns Stout. I am not an avid fan of dark beers, but knowing the quality of Three Tuns, I went for a half of their stout, which was very good.</p>
+<p class="Reviewer">On 5<sup>th</sup> May 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2750 recommendations about 2750 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/32026/">View more reviews of The Kings Head Hotel (9)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Kings Head Hotel</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Kings Head, includes menus and wine list - <a href="http://www.kingsheadbridgnorth.co.uk/" title="Submitted by:- Paul Brett" target="_blank">www.kingsheadbridgnorth.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="1553461858239202">Facebook - <a href="https://www.facebook.com/kingshead.bridgnorth/" target="_blank" rel="nofollow">The Kings Head Bridgnorth</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/32026/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Row17">John Horton</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.53635135232889, -2.42141246795654], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.53635135232889, -2.42141246795654]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Albrighton, 11.76 miles, 3 hr 47 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Shifnal, 11.88 miles, 3 hr 49 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Cosford, 12.55 miles, 4 hr 2 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('m~s_If|wM}@kEs@wEP_ABg@E]j@gA^a@b@Wr@IZgANLjAo@`A@P[HKf@Qp@P`@BFOGYAeANeGMBe@Cd@uFsD_Cm@m@[o@Ma@Ii@OMCK[CYG_@e@u@qAwAyB}@}@aAm@aAc@aBwCs@kDw@iFeCF_@uDoDyHkAFcDd@cDuCi@gB{AmAMy@FcA]]gHmFwFqEgE{D}AgCc@Ec@w@s@}BmBaJiA_DkAmE}AcDaCeDy@gCeB{GUgCaAiDqByDiAaCiAqAgAUuA{@}BGgBw@e@uA{AEcBrBy@pAk@\\Bu@o@}@u@|@qAgCsAwXe@_D{@}AmBkB}DeEgFyIqBsBs\\eHsGkAgAWyAaBsB_DgDwIyCwB{N{q@_Hs@}LuBNsOoHkJgCyDsCeDmA_AsAc@yAVgAZa@C[e@o@bAWf@eABeAKuEN{@WqB}@sAI}B_@YL[qAg@aGG}CTyCa@_DBwBc@yHrByMo@oAyBaMS{DLgEb@oGVsF?_A]q@yAqEu@mIBkKhAgQUwIR}b@RuIHeIBqAfA{E?yAQiCeAoKa@sGqBaS[sA}@kB{BcKu@mFYkAiDqM}IyOoDwBmGqFqEeDaJaEeANcBe@q@kB}HcD}HoEyNaEcLd@oAeImDjBk@IaAe@w@i@cByBw@yAqE_MsAqCkX{JoAYgBy@{A_AyAe@s@[i@?cCc@cB_A}@s@w@[e@@a@Ea@EmCq@k@?cAMe@H]L[R_@HwACoBS_AFb@_G^yC^_Gx@gDiGs@@e@sCcAkFC_FoFoFeEqHfFqDz@}CaIqCuHqCiGwBqCsIGc@_E@qBcBEuAR{@yKuDYuEK{Bj@c@}BaA{G', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('m~s_If|wM}@kEs@wEP_ABg@E]j@gA^a@b@Wr@IZgANLjAo@`A@P[HKf@Qp@P`@BFOGYAeANeGMBe@Cd@uFsD_Cm@m@[o@Ma@Ii@OMCK[CYG_@e@u@qAwAyB}@}@aAm@aAc@aBwCs@kDw@iFeCF_@uDoDyHkAFcDd@cDuCi@gB{AmAMy@FcA]]gHmFwFqEgE{D}AgCc@Ec@w@s@}BmBaJiA_DkAmE}AcDaCeDy@gCeB{GUgCaAiDqByDiAaCiAqAgAUuA{@}BGgBw@e@uA{AEcBrBy@pAk@\\Bu@o@}@u@|@qAgCsAwXe@_D{@}AmBkB}DeEgFyIqBsBs\\eHsGkAgAWyAaBsB_DgDwIyCwB{N{q@_Hs@}LuBNsOoHkJgCyDsCeDmA_AsAc@yAVgAZa@C[e@o@bAWf@eABeAKuEN{@WqB}@sAI}B_@iBv@]z@_AbBe@LaC_@}@Uw@eAs@iBWqB?qCq@uDwBsIaBeFcBwDcBkGy@kFs@mCq@uBiAqBa@eC_@gA[G_Dh@gBlBY~A@bG[tAgB`AcE`DsCpAyAN_ICoMBwBSoE}A{Ac@iJq@oEeA}BgAcKgBeGFwCKyBB}ArL}EwCuAo@eA\\Ul@]zCsBjBkBtCaDxA}ItEqHnK_A~@mDjBcB~CY^_EkAwAoBiAyCm@kDoHA_LmAiAdEqB|@wDjEcF|AwKnBoIFiNhGeFbDcIlMgB~IeJfPkA|FcBEaF`@oFfA}GzBcIfBsJpCsPrFsMxCqIv@yAMe@LeALyAp@iPfCsJpAWAy@e@{@nAg@NoA@mDQuC@aFj@CeB{@?BiCD?Ax@V@?m@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('m~s_If|wM}@kEs@wEP_ABg@E]j@gA^a@b@Wr@IZgANLjAo@`A@P[HKf@Qp@P`@BFOGYAeANeGMBe@Cd@uFsD_Cm@m@[o@Ma@Ii@OMCK[CYG_@e@u@qAwAyB}@}@aAm@aAc@aBwCs@kDw@iFeCF_@uDoDyHkAFcDd@cDuCi@gB{AmAMy@FcA]]gHmFwFqEgE{D}AgCc@Ec@w@s@}BmBaJiA_DkAmE}AcDaCeDy@gCeB{GUgCaAiDqByDiAaCiAqAgAUuA{@}BGgBw@e@uA{AEcBrBy@pAk@\\Bu@o@}@u@|@qAgCsAwXe@_D{@}AmBkB}DeEgFyIqBsBs\\eHsGkAgAWyAaBsB_DgDwIyCwB{N{q@_Hs@}LuBNsOoHkJgCyDsCeDmA_AsAc@yAVgAZa@C[e@o@bAWf@eABeAKuEN{@WqB}@sAI}B_@YL[qAg@aGG}CTyCa@_DBwBc@yHrByMo@oAyBaMS{DLgEb@oGVsF?_A]q@yAqEu@mIBkKhAgQUwIR}b@RuIHeIBqAfA{E?yAQiCeAoKa@sGqBaS[sA}@kB{BcKu@mFYkAiDqM}IyOoDwBmGqFqEeDaJaEeANcBe@q@kB}HcD}HoEyNaEcLd@oAeImDjBk@IaAe@w@i@cByBw@yAqE_MsAqCkX{JoAYgBy@{A_AyAe@s@[i@?cCc@cB_A}@s@w@[e@@a@Ea@EmCq@k@?cAMe@H]L[R_@HwACoBS_AFkFk@eA_@a@rA]Om@?mMlB{EVyFg@yKzBs@DgB]gAIwA`AiBvDcA_CgAmBgBiAeDoA_CcBe@e@o@y@oAyBaAmBWjA_@`Ay@|@yA|A}@nB}@hDg@vAq@hAsArBgAhAw@v@sAz@kAZcJi@q@JiFdBkD~Ay@d@_@H_@C{ApBeFtFuDtDy@r@MRIX@ZP^n@pB`@zACB~@`DvLdUl@bAb@h@z@~@j@f@BP?RS~@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.53635135232889,-2.42141246795654], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=32026">View all updates for The Kings Head Hotel, Bridgnorth</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        24<span class="sup">th</span> Feb 2019, 17:12
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Delboy20">Delboy 20</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        24<span class="sup">th</span> Feb 2019, 15:17
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Delboy20">Delboy 20</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11832026">No</span> <span id="discdetail11832026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Aqualung .</span></li><li>Bar Billiards : <span id="fac10732026">No</span> <span id="discdetail10732026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Aqualung .</span></li><li>Beer Festivals : <span id="fac11732026">No</span> <span id="discdetail11732026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Aqualung .</span></li><li>Beer Garden : <span id="fac11432026">Yes</span> <span id="discdetail11432026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2013 by Alan Hurdle</span></li><li>CAMRA Discount : <span id="fac10232026">No</span> <span id="discdetail10232026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Aqualung .</span></li><li>Car Park : <span id="fac11332026">No</span> <span id="discdetail11332026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 July 2008 by moby duck</span></li><li>Child Friendly : <span id="fac12132026">Yes</span> <span id="discdetail12132026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Aqualung .</span></li><li>Darts : <span id="fac11132026">No</span> <span id="discdetail11132026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Aqualung .</span></li><li>Dog Friendly : <span id="fac10532026">Yes</span> <span id="discdetail10532026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2013 by Alan Hurdle</span></li><li>Function Room : <span id="fac12332026">No</span> <span id="discdetail12332026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Aqualung .</span></li><li>Hot Food : <span id="fac10332026">Yes</span> <span id="discdetail10332026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Jukebox : <span id="fac11232026">No</span> <span id="discdetail11232026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Aqualung .</span></li><li>Karaoke : <span id="fac10632026">No</span> <span id="discdetail10632026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Aqualung .</span></li><li>Live Music : <span id="fac10832026">Yes</span> <span id="discdetail10832026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2013 by Alan Hurdle</span></li><li>Live TV Sports : <span id="fac11032026">No</span> <span id="discdetail11032026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Aqualung .</span></li><li>Micropub : <span id="fac12232026">No</span> <span id="discdetail12232026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Aqualung .</span></li><li>Pinball : <span id="fac11632026">No</span> <span id="discdetail11632026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Aqualung .</span></li><li>Pool Table : <span id="fac10432026">No</span> <span id="discdetail10432026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Aqualung .</span></li><li>Real Ale : <span id="fac10132026">Yes</span> <span id="discdetail10132026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 July 2008 by moby duck</span></li><li>Real Cider : <span id="fac11932026">Yes</span> <span id="discdetail11932026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 January 2016 by Aqualung .</span></li><li>Wheelchair Access : <span id="fac12032026">Yes</span> <span id="discdetail12032026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2013 by Alan Hurdle</span></li><li>WiFi : <span id="fac11532026">Yes</span> <span id="discdetail11532026" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2013 by Alan Hurdle</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 11pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - Midnight</td></tr>
+<tr><td>Saturday</td><td>11am - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84092/" class="List1">The Stable Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 2 reviewer(s)" title="Pub has average rating of 4 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/32003/" class="List1">The Crown</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31995/" class="List1">The Bear</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 5 reviewer(s)" title="Pub has average rating of 8 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/32025/" class="List1">The Golden Lion Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 11 recommendation(s)" title="Pub has 11recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 7 reviewer(s)" title="Pub has average rating of 6 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/57023/" class="List1">The Jewel of the Severn (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/32012/" class="List1">The New Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 9 recommendation(s)" title="Pub has 9recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 4 reviewer(s)" title="Pub has average rating of 6.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64348/" class="List1">The Friars</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85379/" class="List1">Bailey&#039;s Bistro &amp; Wine Bar</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

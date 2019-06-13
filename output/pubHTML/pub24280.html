@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Rose &amp; Crown pub in Southwark, SE1, London (Central), SE1 8DP : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Rose &amp; Crown" />
+  <meta name="keywords" content="Rose &amp; Crown, 47  Colombo Street, SE1, London (Central), Southwark, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Rose &amp; Crown in SE1" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/24001_24500/24280_c1c18900.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/24280/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.50571073833212" />
+<meta property="og:longitude" content="-0.10572195053101" />
+<meta property="og:street-address" content="47  Colombo Street" />
+<meta property="og:locality" content="SE1" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="SE1 8DP" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Rose &amp; Crown in SE1? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Rose &amp; Crown the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/24280/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Rose &amp; Crown in SE1" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Rose &amp; Crown " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/24001_24500/24280_c1c18900.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/24280/" />
+<meta name="geo.position" content="51.50571073833212;-0.10572195053101" />
+<meta name="geo.placename" content="Rose &amp; Crown in SE1" />
+<meta name="geo.region" content="UK" />
+<title>Rose &amp; Crown in Southwark, SE1 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":24280},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(24280);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 24280;var pubaddress = "47  Colombo Street";var pubname = "Rose & Crown";var pubpostcode = "SE1 8DP";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/se1/central-london/" title="Pubs Galore : SE1 Page">SE1</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Rose &amp; Crown Page">Rose &amp; Crown Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="p613ko7b0bibfrlab5sttfjq61" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/24280/" class="indisplay"><img src="/images/display/24001_24500/24280_c1c18900.jpg?w=2" alt="Picture of Rose &amp; Crown" /></a><br />  Image posted by <a href="/userinfo.php?name=Maldenman" class="indisplay">Malden man</a><br />
+  Submitted on Monday, 21<sup>st</sup> March 2016<br />
+  With picture contributions to 1669 other pubs<br />
+<a href="/pubpictures/24280/" class="smallbutton">View all this pub's pictures</a> (12 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/24280/">Pub map</a><br /><a href="/pubreviews/24280/">Pub reviews (9)</a><br /><a href="/pubpictures/24280/">Pub pictures (13)</a><br /><a href="/core/pubaudit.php?id=24280" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Rose &amp; Crown, Southwark, SE1</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">47  Colombo Street</span><br />
+
+
+<span class="town">SE1</span><br />
+<span class="postcode">SE1 8DP</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02079284285</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/southwark/central-london/">Southwark</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Rose & Crown  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review136805" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about Rose &amp; Crown</h6>
+<p>Hidden away down the old back street of Southwark, this is a cosy, traditional boozer of the sort that is becoming harder to find in the city centre. The pub has a simple L-shaped layout that clearly signposts a former multiple room layout, not least by virtue of there being no less than four entrances (two of which are now blocked up). Both remaining doors lead into the same bar boarded front bar area with some full length tongue and groove panelled walls and a lovely dark wood bar counter with a pleasing curved front section under an attractive old fashioned gantry and white tile bar back. High tables and stools offer basic seating along the front wall, with a single regular tables to the left, under a wall covered with nice old black and white photos and a blackboard listing various food options. The large fairy-light bordered windows to the front and right have modern etched glass panes with the pub&rsquo;s name and the Shepherd Neame Brewery logo picked out. The room extends down the right hand side into a raised rear space with more wood panelling, a few more tables and chairs and a long button backed banquette under another collection of black and white photos. A couple of TV screens were on, showing subtitled news coverage whilst a series of dreadful modern pop tunes played loudly through a pub with just three customers. A surprisingly large patio garden with lots of benches can be found out the back &ndash; ideal for local office workers to get some fresh air.<br />
+There are four handpulls on the bar, but only Shepherd Neame Spitfire was available, with a Whitstable Bay pump clip turned and the other pumps unclipped. The barmaid checked that I wanted the Spitfire ale and not the kegged lager of the same name (not always a given in Shep&rsquo;s pubs, as I&rsquo;ve found to my cost in the past) and poured a reasonable pint which I quite enjoyed despite not really being a fan of the beer.<br />
+I found it quite difficult to judge this pub on such a quiet mid-week afternoon visit, but it struck me as a very nice traditional pub that suffers from a limited ale range. It&rsquo;s good to see pubs like this still trading though and whilst it didn&rsquo;t quite work for me, I&rsquo;m pleased that I finally got round to visiting. It&rsquo;s worth bearing in mind that the pub has limited weekend opening, with an early finish on a Saturday and full closure on Sundays, so don&rsquo;t do as I did and turn up here at the wrong part of the week!</p>
+<p class="Reviewer">On 11<sup>th</sup> February 2019 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review128896" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about Rose &amp; Crown</h6>
+<p class="old">Excellent Shepherd Neame pub, with a good atmosphere and somewhat &#039;old fashioned&#039; (in the best sense of the phrase...) interior.  Comprises a compact. slightly split-level &#039;L&#039;-shaped bar with limited furniture and dark decor.  However, its best feature is the pleasant beer garden to the rear (left open following wartime bomb damage).  On this visit, I found Whitstable Bay Pale, the two Spitfires - original and Gold - and the seasonal Early Bird (&pound;4.65, and in fine form as the beer always is here) being dispensed from the four handpumps.  Well worth seeking out.</p>
+<p class="Reviewer">On 12<sup>th</sup> May 2018 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review104882" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Maldenman">Malden man</a> left this review about Rose &amp; Crown</h6>
+<p class="old">A great looking Shepherd Neame pub on a backstreet corner, a real survivor, all adjoining buildings were bombed in WWII, evidence of this in the rendered raking shore to one side and the very large (for central London) rear garden. There are tales of the pub dating from the 16th century but I cannot buy that, the building style is distinctly Victorian, perhaps parts of it are older.<br />
+Slightly split level ground floor area inside, a compact bar to the front with some carved wood, boarded floor and high tables in this area. The return of the L-shaped room has more regular seating. There are full height panelled walls, lots of framed stuff including pearly kings and queens, river scenes, abstract art and old local scenes. Three remaining doors, two in use, hint at this small pub&#039;s once layout of three tiny rooms. Some etched glass remains also. Iggy Pop was the soundtrack while curiously the TVs showed some old film with subtitles.<br />
+Sheps beers, Spitfire plus Spitfire Gold, Early Bird and Whitstable Bay turned around.<br />
+This is a fine pub indeed, a superb building, highly recommended. I can take or leave SN beers generally, if this place had an eclectic selection it would be right up there with the best.</p>
+<p class="Reviewer">On 22<sup>nd</sup> March 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1678 recommendations about 1655 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/24280/">View more reviews of Rose &amp; Crown (9)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Rose &amp; Crown</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Rose &amp; Crown, includes menu - <a href="http://www.roseandcrownlondon.co.uk/" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">www.roseandcrownlondon.co.uk</a></li>
+			<li>Randomness Guide to London - <a href="http://london.randomness.org.uk/wiki.cgi?Rose_And_Crown,_SE1_8DP" title="Submitted by:- Kake Pugh" target="_blank">Rose And Crown entry</a></li>
+			<li>Official page of the Rose &amp; Crown - <a href="http://www.shepherdneame.co.uk/pubs/pubs.php/roseandcrown_london" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">www.shepherdneame.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="154565034561256">Facebook - <a href="https://www.facebook.com/roseandcrownse1/" target="_blank" rel="nofollow">Rose and Crown</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/24280/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.50571073833212, -0.10572195053101], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.50571073833212, -0.10572195053101]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> London Waterloo, 0.45 miles, 8 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> City Thameslink, 0.79 miles, 15 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> London Blackfriars, 2.2 miles, 42 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('aujyHxrSNTbAWZvDJCtAfOr@Un@vGp@[t@jCW^AEHK@DIJAEHK@DIJAEHK@DQRBV|AxDYp@BP', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('aujyHxrSUc@[d@c@Su@DKKEI?OTqDuAEoAMgC?IDaA@?Wo@CaA?yMOuAWCXWGKJIC]@CKI?CJ}@F_DBiHl@EoACeB]OYUk@s@OXANI?', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('aujyHxrSNTbAWZvDJCdCdXKF|@zHAr@CP_@vAMjAHBOtASh@?VC@@LVj@`AvA`GxFR^xBjBl@^NCTLHDDJHEL\\HJdBz@EtFMlCJz@?h@E?SlUB@ANGEYA?HaAE?U]m@O]iI}G}LaIuQcRqGmjA@sI', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.50571073833212,-0.10572195053101], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=24280">View all updates for Rose &amp; Crown, SE1</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        11<span class="sup">th</span> Feb 2019, 18:50
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        13<span class="sup">th</span> May 2018, 22:51
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11824280">No</span> <span id="discdetail11824280" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10724280">No</span> <span id="discdetail10724280" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11424280">Yes</span> <span id="discdetail11424280" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Car Park : <span id="fac11324280">No</span> <span id="discdetail11324280" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 September 2013 by Quinno _</span></li><li>Child Friendly : <span id="fac12124280">Yes</span> <span id="discdetail12124280" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Darts : <span id="fac11124280">No</span> <span id="discdetail11124280" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Dog Friendly : <span id="fac10524280">Yes</span> <span id="discdetail10524280" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Function Room : <span id="fac12324280">Yes</span>  - <span id="discdetail12324280" class="discdetail" style="">From review</span> -   <span class="Reviewer">last updated 15 February 2012 by Dave McNally</span></li><li>Hot Food : <span id="fac10324280">Yes</span> <span id="discdetail10324280" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Karaoke : <span id="fac10624280">No</span> <span id="discdetail10624280" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Micropub : <span id="fac12224280">No</span> <span id="discdetail12224280" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Pinball : <span id="fac11624280">No</span> <span id="discdetail11624280" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Pool Table : <span id="fac10424280">No</span> <span id="discdetail10424280" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 September 2013 by Quinno _</span></li><li>Real Ale : <span id="fac10124280">Yes</span> <span id="discdetail10124280" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 May 2008 by Alan Winfield</span></li><li>Real Cider : <span id="fac11924280">No</span> <span id="discdetail11924280" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Wheelchair Access : <span id="fac12024280">Yes</span> <span id="discdetail12024280" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>Closed</td></tr>
+<tr><td>Monday</td><td>12noon - 11pm</td></tr>
+<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
+<tr><td>Wednesday</td><td>12noon - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Thursday</td><td>12noon - 11pm</td></tr>
+<tr><td>Friday</td><td>12noon - 11pm</td></tr>
+<tr><td>Saturday</td><td>Closed</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86373/" class="List1">Jamboree (Novotel London Blackfriars)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 11 recommendation(s)" title="Pub has 11recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 11 reviewer(s)" title="Pub has average rating of 6.5 from 11 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24297/" class="List1">The Mad Hatter</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81665/" class="List1">Jacks Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81811/" class="List1">Ev Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 5 reviewer(s)" title="Pub has average rating of 5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24275/" class="List1">Prince William Henry</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87679/" class="List1">Black Sheep</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55627/" class="List1">Fountain &amp; Ink</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 8 reviewer(s)" title="Pub has average rating of 4.5 from 8 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55626/" class="List1">The Anchor and Hope</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

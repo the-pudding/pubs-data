@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The White House pub in Guildford, Surrey, GU2 4AJ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The White House" />
+  <meta name="keywords" content="The White House, 8  High Street, Guildford, Surrey, Guildford Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The White House in Guildford" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/35501_36000/35868_52475f4a.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/35868/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.23479697700014" />
+<meta property="og:longitude" content="-0.57699680328369" />
+<meta property="og:street-address" content="8  High Street" />
+<meta property="og:locality" content="Guildford" />
+<meta property="og:region" content="Surrey" />
+<meta property="og:postal-code" content="GU2 4AJ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The White House in Guildford? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The White House the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/35868/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The White House in Guildford" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The White House " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/35501_36000/35868_52475f4a.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/35868/" />
+<meta name="geo.position" content="51.23479697700014;-0.57699680328369" />
+<meta name="geo.placename" content="The White House in Guildford" />
+<meta name="geo.region" content="UK" />
+<title>The White House in Guildford : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":35868},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(35868);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 35868;var pubaddress = "8  High Street";var pubname = "The White House";var pubpostcode = "GU2 4AJ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/surrey/" title="Pubs Galore : Surrey Page">Surrey</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/guildford/surrey/" title="Pubs Galore : Guildford Page">Guildford</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The White House Page">The White House Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="biuf9vqfemfdarshlip4s58it7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/35868/" class="indisplay"><img src="/images/display/35501_36000/35868_52475f4a.jpg?w=2" alt="Picture of The White House" /></a><br />  Image posted by <a href="/userinfo.php?name=Mobyduck" class="indisplay">moby duck</a><br />
+  Submitted on Sunday, 18<sup>th</sup> October 2015<br />
+  With picture contributions to 484 other pubs<br />
+<a href="/pubpictures/35868/" class="smallbutton">View all this pub's pictures</a> (24 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/35868/">Pub map</a><br /><a href="/pubreviews/35868/">Pub reviews (12)</a><br /><a href="/pubpictures/35868/">Pub pictures (25)</a><br /><a href="/core/pubaudit.php?id=35868" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The White House, Guildford Central, Guildford</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">8  High Street</span><br />
+
+
+<span class="town">Guildford</span><br />
+<span class="postcode">GU2 4AJ</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01483302006</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Fuller's</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/guildford-central/surrey/">Guildford Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The White House  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review120149" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> left this review about The White House</h6>
+<p class="old">The White House is a decent looking pub that is at the side of the main bridge in Guildford that goes over the River Wey.<br />
+Once inside there is an oblong shaped room which runs to the rear,the bar is to the rear,the floor is bare boarded,there are tall tables and chairs and one normal table and chairs in this room,there is a conservatory to the right which gives good views of the River Wey,this room has a tiled floor and normal tables and chairs.<br />
+The pub is a Fullers tied house,there were four Fullers real ales on the bar,i had a drink of Fullers Olivers Island,which went down well,the other beers were Southern Star,London Pride and ESB.<br />
+Quiet background music was playing.<br />
+The pub no where as busy as the Britannia which is a short walk along the river.<br />
+I thought this was a decent enough pub to have a drink in.<br />
+<br />
+Pub visited 13/5/2017</p>
+<p class="Reviewer">On 21<sup>st</sup> July 2017 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 6113 recommendations about 6113 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review107314" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The White House</h6>
+<p class="old">This Fullers pub is an office conversion set on the western bank of the River Wey, next to the Town Bridge. You enter through an impressive portico which has seemingly been styled to imitate that of the pub&#039;s more famous American namesake, emerging into a large bare boarded main bar area with the servery in the far right corner. The room has some coloured wooden-plank cladded walls to the right, with a green and cream colour scheme through much of the rest of the room. As you enter, you pass a nice little nook to the left where some tub chairs have been arranged around a bright green fireplace with a higgledy-piggledy collection of mirrors arranged above and paintings of fruit to the side. High tables and stools are down the right side of the room and opposite the bar, with long, low benches elsewhere and some black and white photos of people showing off their tattoos. The servery is an angular shape with a dark wood counter and bare brick bar back, whilst on the canopy you can see some old 7&quot; records arranged in a line, each detailing a beer from the pub&#039;s range on their sleeve. To the left, the room opens into a good sized conservatory which was seemingly reserved for diners, as someone prevented us from taking a seat here. Tables were formal affairs with good views out to the garden and river beyond. Stairs near the entrance lead up to a small first floor function room with several tables served by comfy seating options. This leads out to a first floor terrace with limited seating, but excellent views of the river and a nearby car park, depending on which way you&#039;re facing. A few excellent retro movie posters along the staircase make the trek to the toilets much more enjoyable.<br />
+The usual Fullers trio of London Pride, ESB and Oliver&#039;s Island were available along with Gales Redwood and a few keg Fullers products. I had a pint of the Redwood, which I was pleased to find was in very good condition. We also stopped here for a bite to eat, opting to try a few bits from the starters/sharers menu. The food was pretty good but for the price we paid, we felt that the portions were pretty stingy.<br />
+This is a nice, attractive pub with a slightly incongruous modernised interior - the result of a 2015 refit. The place is popular thanks to its location, although thankfully much more peaceful on a Sunday afternoon than the previous reviewer experienced, and it is the riverside location that dazzles the most here. I was happy enough spending an hour or so relaxing in this pub and if I was returning to Guildford with others, I&#039;d happily suggest it as a good spot for a pleasant drink or two.</p>
+<p class="Reviewer">On 31<sup>st</sup> May 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review98858" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Mobyduck">moby duck</a> left this review about The White House</h6>
+<p class="old">A lively modern set up to this pub ,a little too lively on my visit to appreciate the pub properly, they had a bank holiday caribbean event on and the music was at such a level it could be heard right across the town.The place was rammed but I managed to spot four beers on, all Fullers, Pride, ESB, Olivers Island and Quintessential Pale Ale. I would probably give it another go at a quieter time.</p>
+<p class="Reviewer">On 31<sup>st</sup> August 2015 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 1202 recommendations about 1191 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/35868/">View more reviews of The White House (12)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The White House</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of Fullers Brewery, owners of The White House - <a href="http://www.fullers.co.uk/rte.asp?id=4&amp;itemid=346&amp;task=View" title="Submitted by:- elizabeth mcgraw" target="_blank">www.fullers.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="435429219828606">Facebook - <a href="https://www.facebook.com/WhiteHouseGuildford/" target="_blank" rel="nofollow">The White House</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/35868/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=hophead">john mcgraw</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.23479697700014, -0.57699680328369], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.23479697700014, -0.57699680328369]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Guildford, 0.48 miles, 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> London Road (Guildford), 0.85 miles, 16 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Shalford (Surrey), 1.64 miles, 31 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('qxuwHhuoB@HIP[Kg@VaAjA@R]ZMCm@h@_@nDILDLLDKn@G@M^q@XC[MB]~AETGFTtAgAj@y@d@UJHh@PIyDfBBJlEuB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('qxuwHhuoB@HIP[yC?]GMGo@EHuBt@]Fk@XCu@UoAQ]DS?K_@yCKM@UoAyIIHk@DwA`@kAiJIwAo@RUsAQEYFOGEYOH_@p@_@?g@[WsE@i@SiBe@sABOAoAi@BIyH?uBsAa@i@e@AF', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('qxuwHhuoBEe@p@c@j@Sz@KnAq@f@m@`@Yl@Ot@CGk@Kc@UY?MDIZSlBo@TUVk@z@m@\\MRW\\u@Rs@`@u@~@kAI_AJEr@EFGn@@hACl@B`AE\\Dx@@p@Iv@Yp@a@N?pDy@lBo@t@Q^DjAWpAKf@@jAUjDyAvBe@v@GNBb@`@Th@\\hApDb@`@u@dARRVtAZb@uGdFqD`BeB~@q@bFkCx@]hAa@fDs@\\AR@T_@`@GPAb@VXKbAODe@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.23479697700014,-0.57699680328369], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=35868">View all updates for The White House, Guildford</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        21<span class="sup">st</span> Jul 2017, 17:34
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        3<span class="sup">rd</span> Jul 2017, 18:49
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11835868">No</span> <span id="discdetail11835868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 August 2013 by Malden man</span></li><li>Bar Billiards : <span id="fac10735868">No</span> <span id="discdetail10735868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 August 2013 by Malden man</span></li><li>Beer Garden : <span id="fac11435868">Yes</span>  - <span id="discdetail11435868" class="discdetail" style="">riverside terraces</span> -   <span class="Reviewer">last updated 10 August 2013 by Malden man</span></li><li>CAMRA Discount : <span id="fac10235868">No</span> <span id="discdetail10235868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 August 2013 by Malden man</span></li><li>Car Park : <span id="fac11335868">No</span> <span id="discdetail11335868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 August 2013 by Malden man</span></li><li>Child Friendly : <span id="fac12135868">Yes</span> <span id="discdetail12135868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 31 May 2016 by Pub SignMan</span></li><li>Darts : <span id="fac11135868">No</span> <span id="discdetail11135868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 August 2013 by Malden man</span></li><li>Dog Friendly : <span id="fac10535868">Yes</span> <span id="discdetail10535868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 31 May 2016 by Pub SignMan</span></li><li>Function Room : <span id="fac12335868">Yes</span> <span id="discdetail12335868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 31 May 2016 by Pub SignMan</span></li><li>Hot Food : <span id="fac10335868">Yes</span> <span id="discdetail10335868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 August 2013 by Malden man</span></li><li>Jukebox : <span id="fac11235868">No</span> <span id="discdetail11235868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 31 May 2016 by Pub SignMan</span></li><li>Karaoke : <span id="fac10635868">No</span> <span id="discdetail10635868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 April 2014 by Quinno _</span></li><li>Live TV Sports : <span id="fac11035868">No</span> <span id="discdetail11035868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 April 2014 by Quinno _</span></li><li>Micropub : <span id="fac12235868">No</span> <span id="discdetail12235868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 31 May 2016 by Pub SignMan</span></li><li>Pinball : <span id="fac11635868">No</span> <span id="discdetail11635868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 August 2013 by Malden man</span></li><li>Pool Table : <span id="fac10435868">No</span> <span id="discdetail10435868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 August 2013 by Malden man</span></li><li>Real Ale : <span id="fac10135868">Yes</span> <span id="discdetail10135868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 August 2013 by Malden man</span></li><li>Real Cider : <span id="fac11935868">No</span> <span id="discdetail11935868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 April 2014 by Quinno _</span></li><li>Wheelchair Access : <span id="fac12035868">Yes</span> <span id="discdetail12035868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 31 May 2016 by Pub SignMan</span></li><li>WiFi : <span id="fac11535868">Yes</span> <span id="discdetail11535868" class="discdetail" style=""></span>  <span class="Reviewer">last updated 31 May 2016 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - 0:30am</td></tr>
+<tr><td>Saturday</td><td>11am - 0:30am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 20 picture(s)" title="Pub has 20 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 9 reviewer(s)" title="Pub has average rating of 6.5 from 9 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/35829/" class="List1">George Abbot</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 6 reviewer(s)" title="Pub has average rating of 7 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/35820/" class="List1">The Cannon</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 6 reviewer(s)" title="Pub has average rating of 6.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/35856/" class="List1">The Britannia</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 1 from 1 reviewer(s)" title="Pub has average rating of 1 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/64981/" class="List1">Popworld</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 25 picture(s)" title="Pub has 25 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 16 recommendation(s)" title="Pub has 16recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 12 reviewer(s)" title="Pub has average rating of 6 from 12 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56981/" class="List1">The Rodboro Buildings (Lloyds No 1)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 21 picture(s)" title="Pub has 21 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 10 reviewer(s)" title="Pub has average rating of 6.5 from 10 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/35860/" class="List1">The Star Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 1 from 1 reviewer(s)" title="Pub has average rating of 1 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/68715/" class="List1">Bar Thirteen</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 1 from 1 reviewer(s)" title="Pub has average rating of 1 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/35813/" class="List1">Bar Mambo</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

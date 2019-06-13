@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Mermaid pub in E5, London (Central), E5 8EE : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Mermaid" />
+  <meta name="keywords" content="The Mermaid, 181 Clarence Road, E5, London (Central), Clapton, Hackney Downs, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Mermaid in E5" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/73501_74000/73856_12c81925.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/73856/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.55574840000000" />
+<meta property="og:longitude" content="-0.05620570000000" />
+<meta property="og:street-address" content="181 Clarence Road" />
+<meta property="og:locality" content="E5" />
+<meta property="og:region" content="London (Central)" />
+<meta property="og:postal-code" content="E5 8EE" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Mermaid in E5? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Mermaid the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/73856/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Mermaid in E5" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Mermaid " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/73501_74000/73856_12c81925.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/73856/" />
+<meta name="geo.position" content="51.55574840000000;-0.05620570000000" />
+<meta name="geo.placename" content="The Mermaid in E5" />
+<meta name="geo.region" content="UK" />
+<title>The Mermaid in E5 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":73856},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(73856);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 73856;var pubaddress = "181 Clarence Road";var pubname = "The Mermaid";var pubpostcode = "E5 8EE";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/central-london/" title="Pubs Galore : London (Central) Page">London (Central)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/e5/central-london/" title="Pubs Galore : E5 Page">E5</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Mermaid Page">The Mermaid Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="u189i33iss6jqoft8kvl39a4m7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/73856/" class="indisplay"><img src="/images/display/73501_74000/73856_12c81925.jpg?w=2" alt="Picture of The Mermaid" /></a><br />  Image posted by <a href="/userinfo.php?name=Maldenman" class="indisplay">Malden man</a><br />
+  Submitted on Saturday, 25<sup>th</sup> March 2017<br />
+  With picture contributions to 1669 other pubs<br />
+<a href="/pubpictures/73856/" class="smallbutton">View all this pub's pictures</a> (11 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/73856/">Pub map</a><br /><a href="/pubreviews/73856/">Pub reviews (8)</a><br /><a href="/pubpictures/73856/">Pub pictures (12)</a><br /><a href="/core/pubaudit.php?id=73856" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Mermaid, E5</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=Tris39">Tris C</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">181 Clarence Road</span><br />
+
+
+<span class="town">E5</span><br />
+<span class="postcode">E5 8EE</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/clapton/central-london/">Clapton</a>, <a href="/areas/hackney-downs/central-london/">Hackney Downs</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Mermaid  <span class="h2note">(Average Rating: <span id="averagerating"><b>5&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review133498" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Mermaid</h6>
+<p>This looks like a fairly regular street corner pub on approach, but upon entering it becomes clear that this is in fact a modern craft beer bar with the resultant dull makeover that such establishments usually demand. This essentially means we find a pretty plain L-shaped room with exposed floorboards and a similarly shaped servery to the rear right. The bar has a tongue and groove panelled counter and bar back, with the latter decorated with lots of hipster-style art. The room tapers off to the right where some small tables are served by chairs, but it opens out nicely to the left, allowing ample space for upholstered banquettes to run around the perimeter as the room extends to the rear. Scrubbed tables are a bit of a non-feature and there is a sizeable open-plan standing area which adds to the bland feel of the interior. The room has been decorated in a drab neutral colour scheme, mostly grey, brightened up somewhat by the occasional framed print, a beer board to the front left (although the beer menus at the bar were a lot easier to read) and some beer fridges to the side of the servery. Stairs lead down to a small, unwelcoming basement room with quite a bit more seating but even less charm, which is saying something. For best results, a seat out on the front pavement might be the way to get around the interior design atrocities  within. A hip indie soundtrack played quietly in the background and I don&rsquo;t recall spotting any TV screens.<br />
+There are a total of seventeen keg beer lines and a further two dispensing keg ciders, but cask ale is conspicuous by its absence. After consulting the handy printed menus on the bar, I opted for the catchy-named Cloudwater DDH IPA Enigma Chinook which turned out to be a cloudy mess probably better enjoyed with a spoon than from the glass. It had an overwhelming yeast flavour, but such is the way with these craft beers that you can&rsquo;t question such gunk as it is doubtless an unfined brew that is supposed to taste like you&rsquo;re licking the bottom of the fermenting vessel.<br />
+This place was a bit of a disaster from what I experienced, suffering from the sort of makeover that seems so unutterably unloveable that you have to wonder who thought it would be a good idea in the first place. Added to this, my beer was a rotten affair and the prices, although not noted by me on this visit, were far from good value. Not somewhere I&rsquo;ll be heading back to in a hurry.</p>
+<p class="Reviewer">On 1<sup>st</sup> October 2018 
+  - rating: <b>4</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review117002" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about The Mermaid</h6>
+<p class="old">Wedge-shaped building with rather doom-laden dark grey paintwork, clearly shouting &quot;here be a craft keggery&quot; at all and sundry...  The interior featured a slightly lighter two-tone colour scheme and fairly minimalist furniture.  Also has a number of outside table on a narrow terrace.  A wall-mounted board in the corner announced a total of 18 keg beers and ciders in a wide variety of styles which were available from the anonymous taps, from which I went for the Amager Khaleesi IPA imported from Denmark (&pound;2.90, half).</p>
+<p class="Reviewer">On 15<sup>th</sup> April 2017 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review116921" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> left this review about The Mermaid</h6>
+<p class="old">Just about everywhere in here was painted a sort of khaki colour, and there were arty prints all over the place that meant nothing to me. The board in the corner listing the beers, with prices and ABVs was useful - in fact absolutely essential as the tap fonts didn&#039;t identify the beers available. The only beers available were keg &quot;craft&quot; beers, but I guess they still get people coming in and asking for a pint of lager. <br />
+<br />
+It was as expensive as you would expect. This is not really my sort of place, but I guess one should drop into this sort of place every now and again to see how the other half lives.</p>
+<p class="Reviewer">On 12<sup>th</sup> April 2017 
+  - rating: <b>4</b><br />
+  <span class="leftspace">[User has posted 2495 recommendations about 2415 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/73856/">View more reviews of The Mermaid (8)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Mermaid</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Mermaid - <a href="http://www.themermaidclapton.com/" title="Submitted by:- Old Boots" target="_blank">www.themermaidclapton.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="twitlink" id="2182481861">Twitter - <a href="https://twitter.com/VerdenE5" target="_blank" rel="nofollow">VERDEN</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/73856/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Tris39">Tris C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.55574840000000, -0.05620570000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.55574840000000, -0.05620570000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Clapton, 0.48 miles, 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Hackney Downs, 0.6 miles, 11 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Rectory Road, 0.73 miles, 14 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('aotyHx~Iw@wDm@b@e@\\s@RkAHkABa@Jo@Da@R_@p@QHW?eAy@QAo@PcAj@cAb@aCh@wB|@eA\\cARIoA', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('aotyHx~INp@HV\\^ZLxH\\^D`Af@jCnCJLFBAJlDnADSrIzCj@\\BNHPDFFCFNPL@f@Pl@Pb@DT\\x@f@nBd@]CKXQMy@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('aotyHx~INp@HVOTOF}F~@kAZ_@Vm@t@YPaAPJ|G?bCOrJ_@vJCRUdA}@tCa@l@[VjClMz@tDy@^', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.55574840000000,-0.05620570000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=73856">View all updates for The Mermaid, E5</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        1<span class="sup">st</span> Oct 2018, 18:55
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        1<span class="sup">st</span> May 2017, 11:37
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11873856">No</span> <span id="discdetail11873856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 November 2016 by Tris C</span></li><li>Bar Billiards : <span id="fac10773856">No</span> <span id="discdetail10773856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 October 2018 by Pub SignMan</span></li><li>Beer Festivals : <span id="fac11773856">No</span> <span id="discdetail11773856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 June 2016 by ROB Camra</span></li><li>Beer Garden : <span id="fac11473856">No</span> <span id="discdetail11473856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 October 2018 by Pub SignMan</span></li><li>CAMRA Discount : <span id="fac10273856">No</span> <span id="discdetail10273856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 October 2018 by Pub SignMan</span></li><li>Car Park : <span id="fac11373856">No</span> <span id="discdetail11373856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 November 2016 by Tris C</span></li><li>Darts : <span id="fac11173856">No</span> <span id="discdetail11173856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 October 2018 by Pub SignMan</span></li><li>Hot Food : <span id="fac10373856">Yes</span> <span id="discdetail10373856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 November 2016 by Tris C</span></li><li>Jukebox : <span id="fac11273856">No</span> <span id="discdetail11273856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 October 2018 by Pub SignMan</span></li><li>Karaoke : <span id="fac10673856">No</span> <span id="discdetail10673856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 October 2018 by Pub SignMan</span></li><li>Live TV Sports : <span id="fac11073856">No</span> <span id="discdetail11073856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 October 2018 by Pub SignMan</span></li><li>Micropub : <span id="fac12273856">No</span> <span id="discdetail12273856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 October 2018 by Pub SignMan</span></li><li>Pinball : <span id="fac11673856">No</span> <span id="discdetail11673856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 October 2018 by Pub SignMan</span></li><li>Pool Table : <span id="fac10473856">No</span> <span id="discdetail10473856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 October 2018 by Pub SignMan</span></li><li>Real Ale : <span id="fac10173856">Yes</span> <span id="discdetail10173856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 February 2019 by Tris C</span></li><li>Real Cider : <span id="fac11973856">Yes</span> <span id="discdetail11973856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 01 October 2018 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 24 picture(s)" title="Pub has 24 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 11 reviewer(s)" title="Pub has average rating of 7.5 from 11 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/73861/" class="List1">The Clapton Hart</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55863/" class="List1">The Star by Hackney Downs</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82879/" class="List1">Biddle Bros</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 1 reviewer(s)" title="Pub has average rating of 8 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55861/" class="List1">The Elephants Head</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 18 picture(s)" title="Pub has 18 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 3 reviewer(s)" title="Pub has average rating of 4.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/25054/" class="List1">Flynn&#039;s</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 5 reviewer(s)" title="Pub has average rating of 7 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/25008/" class="List1">The Crooked Billet</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 20 picture(s)" title="Pub has 20 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 16 recommendation(s)" title="Pub has 16recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 15 reviewer(s)" title="Pub has average rating of 7.5 from 15 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/25070/" class="List1">The Pembury Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/25018/" class="List1">London Tavern</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

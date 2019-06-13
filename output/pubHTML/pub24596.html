@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Manor Arms pub in Streatham, SW16, London (Greater), SW16 6LQ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Manor Arms" />
+  <meta name="keywords" content="The Manor Arms, 13  Mitcham Lane, SW16, London (Greater), Streatham, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Manor Arms in SW16" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/24501_25000/24596_0bc66ad1.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/24596/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.42811294433025" />
+<meta property="og:longitude" content="-0.13230800628662" />
+<meta property="og:street-address" content="13  Mitcham Lane" />
+<meta property="og:locality" content="SW16" />
+<meta property="og:region" content="London (Greater)" />
+<meta property="og:postal-code" content="SW16 6LQ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Manor Arms in SW16? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Manor Arms the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/24596/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Manor Arms in SW16" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Manor Arms " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/24501_25000/24596_0bc66ad1.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/24596/" />
+<meta name="geo.position" content="51.42811294433025;-0.13230800628662" />
+<meta name="geo.placename" content="The Manor Arms in SW16" />
+<meta name="geo.region" content="UK" />
+<title>The Manor Arms in Streatham, SW16 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":24596},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(24596);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 24596;var pubaddress = "13  Mitcham Lane";var pubname = "The Manor Arms";var pubpostcode = "SW16 6LQ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/greater-london/" title="Pubs Galore : London (Greater) Page">London (Greater)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/sw16/greater-london/" title="Pubs Galore : SW16 Page">SW16</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Manor Arms Page">The Manor Arms Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="p48o15nn0s6057a89hs89j0pm3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/24596/" class="indisplay"><img src="/images/display/24501_25000/24596_0bc66ad1.jpg?w=2" alt="Picture of The Manor Arms" /></a><br />  Image posted by <a href="/userinfo.php?name=Maldenman" class="indisplay">Malden man</a><br />
+  Submitted on Saturday, 14<sup>th</sup> May 2011<br />
+  With picture contributions to 1669 other pubs<br />
+<a href="/pubpictures/24596/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/24596/">Pub map</a><br /><a href="/pubreviews/24596/">Pub reviews (3)</a><br /><a href="/pubpictures/24596/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=24596" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Manor Arms, Streatham, SW16</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">13  Mitcham Lane</span><br />
+
+
+<span class="town">SW16</span><br />
+<span class="postcode">SW16 6LQ</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02031956888</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/streatham/greater-london/">Streatham</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Manor Arms</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/manorarms" target="_blank"><img src="https://pbs.twimg.com/profile_images/512610495212556290/3CIq54Xt_normal.jpeg" alt="The Manor Arms" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/manorarms" target="_blank">The Manor Arms</a></strong>
+It&#039;s<a href="http://twitter.com/search?q=%23QuizNight" target="_blank"> #QuizNight</a> on Thursday<a href="http://twitter.com/manorarms" target="_blank"> @manorarms</a> in<a href="http://twitter.com/search?q=%23Streatham" target="_blank"> #Streatham</a>! Test your general knowledge from 08:00 PM!<a href="http://twitter.com/search?q=%23PubQuiz" target="_blank"> #PubQuiz</a> <a href='https://t.co/PjP9fwQtPF' target='_blank'>https://t.co/PjP9fwQtPF</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/manorarms/status/1138723011522113536">about 17 hours ago</a> from <a href="http://questionone.com" rel="nofollow">Question One - Auto Quizzer</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/manorarms" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/manorarms" target="_blank">The Manor Arms</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Manor Arms  <span class="h2note">(Average Rating: <span id="averagerating"><b>5&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review84560" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> left this review about The Manor Arms</h6>
+<p class="old">The three ales on in here were Doom Bar, Young&#039;s Bitter, and Ringwood Best (&pound;3.70 a pint). A variety of food is available - &quot;small plates&quot; e.g. taramasalata with flatbread (&pound;4.50), whitebait (&pound;4.95); sarnies around &pound;6 - &pound;7; a pizza menu with all around the &pound;10 mark; and main courses also around the &pound;10 mark - e.g. the pie of the day is &pound;9.95. A little card on the tables advertises a pizza and a pint for &pound;10, but doesn&#039;t specify a pint of what. I usually find these sort of deals only allow a pint of something I wouldn&#039;t want to drink. It would be great if the advertising specified a pint of any draught beer! There is an open to view kitchen behind one end of the bar counter, meaning that everyone is treated to the overbearing smell of food cooking. But perhaps some people think these odours add to the appeal.<br />
+<br />
+Although menus are on all the tables, there is a separate room at the &quot;wedge&quot; end of the pub with all tables laid for diners. In the main bar area we still have the tall tables/tall stools, sofas off to the right in a small enclosed area. A door on the right leads to an outside drinking/smoking area. There was some music playing, but thankfully only piped to the speakers on the right near the sofas, so obviously I sat at the far end of the room near the dining area. They have some features that you typically find in the &quot;hotel lounge&quot; style of pub, such as dividing shelves bearing bottles of wine, jugs, vases and the like, and a gantry in front of the kitchen area had on it plates, jars of what looked like pickled lemons (!), jars of coffee beans, etc. There&#039;s not a great deal of decor, and consists mainly of small framed prints of butterflies. Everywhere is bare-boarded of course, and the bar counter and some pillars are painted indigo. <br />
+<br />
+The beer choice is OK, without being anything very exciting. But my pint of Ringwood Best Bitter was in good nick, and at a fairly reasonable price of &pound;3.70 a pint. This pub has clearly lost much of the pub character it once had, having gone down the gastro route, but it is clean and bright and reasonably comfortable. My main gripe is the smell of cooking food, and although it&#039;s not really my favourite kind of place, it&#039;s an &quot;OK&quot; pub nonetheless.</p>
+<p class="Reviewer">On 1<sup>st</sup> July 2014 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 2495 recommendations about 2415 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review62152" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Arthurish">Philip Carter</a> left this review about The Manor Arms</h6>
+<p class="old">Large pub just off the main road through Streatham. Small garden at the back. Real ale on sale, though can&#039;t remember which ones. looked closed when viewed from the main road, but entrance is round the other side. Bar area is divided in two, on the right, the bar and on the left, food preparation area.</p>
+<p class="Reviewer">On 25<sup>th</sup> July 2012 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 744 recommendations about 710 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review45998" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Maldenman">Malden man</a> left this review about The Manor Arms</h6>
+<p class="old">This pub has now been opened out into one huge long space, it has expensive looking wooden floors, mainly light coloured walls, sofas, chaise longues and elaborate court style chairs as well as a few of the normal variety. The long curved bar has a metal top, I doubt it is pewter but it could be, and adjacent and competing in area is a big open food servery. The circular end area has thankfully retained some decent looking tiling to the circular columns and piers, and the ceiling looks original. The opposite end has a partly covered attractive garden area. <br />
+There are hard bound drinks menus on the tables and printed daily food specials menus, with examples being Chicken and Morel Pie with greens(&pound;13), Bacon Chop, Crushed Jerseys and Broad beans(&pound;16). <br />
+The discretely located TV was off despite the FA Cup final being in progress, so this clearly isn&#039;t a pub geared up for sports watchers. It is clear that the target clientele are the neo-yuppie incomers to Streatham, and they were there in droves, their loud voices amplified by the hard surfaces and extensive space.<br />
+In fairness the beer range was good, quality excellent and the service efficient. Four handpumps served Sambrooks Wandle, Adnams Broadside, Doom Bar and the excellent Purity Pure Gold (&pound;3.50, 3.8%). Reading the drinks menu, it suggests all four are regulars.<br />
+I enjoyed my pint but these sort of places are not really my type of pub and increasingly irritated by groups of 30somethings kiss-greeting each other ostentatiously in the continental style I needed a culture change and headed off in search of a Wetherspoons.</p>
+<p class="Reviewer">On 15<sup>th</sup> May 2011 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 1678 recommendations about 1655 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Manor Arms</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of the Manor Arms - <a href="http://www.themanorarms.com" title="Submitted by:- Frances Button" target="_blank">www.themanorarms.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="136225866438702">Facebook - <a href="https://www.facebook.com/manorarms/" target="_blank" rel="nofollow">The Manor Arms - Streatham</a></li></ul><ul id="Custom2"><li class="twitlink" id="236018469">Twitter - <a href="https://twitter.com/manorarms" target="_blank" rel="nofollow">The Manor Arms</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/24596/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Maldenman">Malden man</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.42811294433025, -0.13230800628662], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.42811294433025, -0.13230800628662]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Streatham, 0.2 miles, 3 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Streatham Hill, 0.78 miles, 15 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Streatham Common, 0.81 miles, 15 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ip{xHzxXUODQGs@P_B@g@hADZA|CRh@?n@IZBXIBN', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ip{xHzxXUO_@RM]S]wAqAYOIKWk@[[cD_Ey@{@q@g@uAYcBBa@CUI]EsGyDu@Mu@AgBFm@?qAI}ASgFqA_@MeFkCQpBMG', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ip{xHzxXxAxAx@lA`BaD@IJHnBxDhBzCbEtFtHdJl@`AL`@vBCb@jBfDsAV_@f@WNFVI@i@N@@Ux@CPIpDsDDJJFfBeB', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.42811294433025,-0.13230800628662], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=24596">View all updates for The Manor Arms, SW16</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        1<span class="sup">st</span> Jul 2014, 17:25
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        30<span class="sup">th</span> Jul 2012, 17:23
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Arthurish">Philip Carter</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Real Ale : <span id="fac10124596">Yes</span> <span id="discdetail10124596" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo-grey.gif" alt="Pub has no pictures" title="Pub has no pictures" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86466/" class="List1">Art &amp; Craft SW16(2)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 7 reviewer(s)" title="Pub has average rating of 6 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65083/" class="List1">The Holland Tringham (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 5 reviewer(s)" title="Pub has average rating of 7 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65224/" class="List1">Pratts &amp; Payne</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/74565/" class="List1">White Lion</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 4 reviewer(s)" title="Pub has average rating of 6.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24590/" class="List1">Earl Ferrers</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 3 reviewer(s)" title="Pub has average rating of 7 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24594/" class="List1">The Leigham Well</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/24592/" class="List1">The Rabbit Hole</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2.5 from 2 reviewer(s)" title="Pub has average rating of 2.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65226/" class="List1">The Mere Scribbler</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

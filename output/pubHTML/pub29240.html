@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Half Moon pub in Knaresborough, North Yorkshire, HG5 8HY : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Half Moon" />
+  <meta name="keywords" content="The Half Moon, 1  Abbey Road, Knaresborough, North Yorkshire, Knaresborough Central, Calcutt, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Half Moon in Knaresborough" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/29001_29500/29240_ae424c60.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/29240/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="54.00355675893405" />
+<meta property="og:longitude" content="-1.46710395812988" />
+<meta property="og:street-address" content="1  Abbey Road" />
+<meta property="og:locality" content="Knaresborough" />
+<meta property="og:region" content="North Yorkshire" />
+<meta property="og:postal-code" content="HG5 8HY" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Half Moon in Knaresborough? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Half Moon the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/29240/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Half Moon in Knaresborough" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Half Moon " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/29001_29500/29240_ae424c60.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/29240/" />
+<meta name="geo.position" content="54.00355675893405;-1.46710395812988" />
+<meta name="geo.placename" content="The Half Moon in Knaresborough" />
+<meta name="geo.region" content="UK" />
+<title>The Half Moon in Knaresborough : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":29240},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(29240);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 29240;var pubaddress = "1  Abbey Road";var pubname = "The Half Moon";var pubpostcode = "HG5 8HY";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/north-yorkshire/" title="Pubs Galore : North Yorkshire Page">North Yorkshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/knaresborough/north-yorkshire/" title="Pubs Galore : Knaresborough Page">Knaresborough</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Half Moon Page">The Half Moon Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="dk76esjs1vmhh014ijt2ogelo3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/29240/" class="indisplay"><img src="/images/display/29001_29500/29240_ae424c60.jpg?w=2" alt="Picture of The Half Moon" /></a><br />  Image posted by <a href="/userinfo.php?name=Real+Ale+Ray" class="indisplay">Real Ale  Ray</a><br />
+  Submitted on Wednesday, 24<sup>th</sup> June 2015<br />
+  With picture contributions to 852 other pubs<br />
+<a href="/pubpictures/29240/" class="smallbutton">View all this pub's pictures</a> (5 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/29240/">Pub map</a><br /><a href="/pubreviews/29240/">Pub reviews (4)</a><br /><a href="/pubpictures/29240/">Pub pictures (6)</a><br /><a href="/core/pubaudit.php?id=29240" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Half Moon, Knaresborough</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">1  Abbey Road</span><br />
+
+
+<span class="town">Knaresborough</span><br />
+<span class="postcode">HG5 8HY</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01423313461</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/knaresborough-central/north-yorkshire/">Knaresborough Central</a>, <a href="/areas/calcutt/north-yorkshire/">Calcutt</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Half Moon</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/halfmoonfreedom" target="_blank"><img src="https://pbs.twimg.com/profile_images/344513261570285640/3ba25724c7d8432524d345622c5e92d8_normal.jpeg" alt="Half Moon Free House" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/halfmoonfreedom" target="_blank">Half Moon Free House</a></strong>
+Our Great Knaresborough Bed Race bed decoration is now on the pub roof, as is our tradition (now in its 6th year).&hellip; <a href='https://t.co/HyazHkviLE' target='_blank'>https://t.co/HyazHkviLE</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/halfmoonfreedom/status/1137717936632803330">2:47 PM Jun 9th</a> from <a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/halfmoonfreedom" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/halfmoonfreedom" target="_blank">Half Moon Free House</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Half Moon  <span class="h2note">(Average Rating: <span id="averagerating"><b>7&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review96586" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a> left this review about The Half Moon</h6>
+<p class="old">The Half Moon is a well run freehouse, which was only refurbished a few years ago. You can see from the pub&#039;s interior, that the emphasis here is attention to detail. The service and beer quality is also top class. There were four ales on handpump, so we went for the Roosters Bed Racer and the Great Yorkshire Brewery Yorkshire Golden. We took our beers into the patio area, which was a real suntrap. You also have the option of being able to take your beer and sit beside the river, only problem there is your beer is served in a plastic glass.</p>
+<p class="Reviewer">On 24<sup>th</sup> June 2015 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 2750 recommendations about 2750 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review95616" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Half Moon</h6>
+<p class="old">This smart gastro-style pub on the fringe of town has a great location next to the River Nidd and just over the road from Mother Shipton&#039;s cave. You enter directly into the bar area with a simple servery on the rear wall facing the front door. Over on the right hand side there is a nice, slightly raised seating area with comfortable chairs arranged around a grand fireplace. The room has a lot of exposed brickwork which combines well with the slightly more contemporary d&eacute;cor to produce a very smart and classy look. Standard and low stool seating opposite the bar affords the chance to admire the views out to the river and bridge. To the left there is a wedge shaped carpeted area with standard and bench seating options under a huge black and white image of a local street scene. D&eacute;cor elsewhere includes a few random bits of breweriana plus a huge mirror. To the rear there is a small paved courtyard with limited seating, which might be a nice sun trap, but is hemmed in somewhat and doesn&#039;t seem to benefit from any kind of view. Music played very quietly throughout my stay and a lot of customers were eating during my Saturday lunchtime visit, with the portions looking generous and very tempting.<br />
+Four handpulls were dispensing Saltaire South Island Pale, Theakston Best, Roosters Yankee and My Generation Session Pale, whilst the keg taps offered a few well known brands and a number of slightly more obscure brews which might loosely be described as &#039;craft&#039;. My South Island Pale was marvellous and there seemed to be a real appreciation of the beers from the various punters I noticed ordering at the bar.<br />
+There were lots of things I enjoyed about this pub, from the picturesque location to the classy presentation of the interior through to the top notch beer quality. The pub&#039;s compact interior and food focus on my lunchtime visit meant that it lost a bit of its &#039;pubiness&#039;, but that wouldn&#039;t put me off from making a return visit some time.</p>
+<p class="Reviewer">On 28<sup>th</sup> May 2015 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review67816" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=oldboots">Old Boots</a> left this review about The Half Moon</h6>
+<p class="old">Nicely restored and cleaned from its previous incarnation, structurally unchanged but everything else has been improved to a high standard. Plain walls decorated with pictures, the wooden floors and some gentle music in the background give it a modern feel. The open fires and the old pews and settles are more old pub but the furnishings are a mix as some of the candle powered tables could be from Ikea.  One part has a dark and intimate atmosphere while the bar area and beyond is well lit. Four pulls grace the counter, serving excellently kept local beers from Roosters and Rudgate as well as the ubiquitous Taylors Landlord and Black Sheep Bitter although these change from time to time.  My beer was served in the correct branded glassware and the glass was dry on the outside reflecting the good level of service to be found.  There&#039;s a sheltered smoking area in the side yard. On the down side it&#039;s at the bottom of a very steep hill so I had a couple of pints to fortify myself for the climb back to the town centre.</p>
+<p class="Reviewer">On 27<sup>th</sup> February 2013 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 1974 recommendations about 1855 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/29240/">View more reviews of The Half Moon (4)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Half Moon</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="297137683737371">Facebook - <a href="https://www.facebook.com/halfmoonfreedom/" target="_blank" rel="nofollow">The Half Moon Free House</a></li></ul><ul id="Custom2"><li class="twitlink" id="303609117">Twitter - <a href="https://twitter.com/halfmoonfreedom" target="_blank" rel="nofollow">Half Moon Free House</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/29240/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=traveller">Jim Newell</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([54.00355675893405, -1.46710395812988], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([54.00355675893405, -1.46710395812988]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Knaresborough, 0.48 miles, 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Starbeck, 1.79 miles, 34 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Hornbeam Park, 3.15 miles, 1 hr 0 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('yprhI|p}GSh@P@K`AK`BQ`Ae@~@]`@{AbDqBrAyBdAy@Rm@IaAa@k@KmC}@o@CiAP[?u@^]\\OGEJIAQb@CU[q@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('yprhI|p}GSh@^Dh@Xf@b@~BqA~@@lAT[~@sAKWx@I|@Fl@DxAIlN@xBFpAEz@JbAZj@TtAJxA\\fBn@hBp@bBlBtFzAxDf@`BPv@s@xHQbB_@xBCjASzBD`@Ax@vA`C|ApPBbACl@AvDL`BAxGHjB@xAyC|AAFbAxIsAl@PjB?dADXDLJNrB|@ZKZvC{@xN?b@IXvFdHCV^|@IN@DGFOEy@dA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('yprhI|p}GSh@^Dh@Xf@b@~BqA~@@lATv@|@zCjBxAl@dBW|@Wj@]lAmApLf{@vPjnAn@PnA~F`EnQZtBDAJDBFBLEZf@nBlCxLjIf`@dEtQhBvIfA|E\\lB|BhJv@tD|ChNlA|FdD~NnBjIrAlC|AhCPrAb@lEd@dBx@tBjC`G`FlK', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([54.00355675893405,-1.46710395812988], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=29240">View all updates for The Half Moon, Knaresborough</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        24<span class="sup">th</span> Jun 2015, 19:14
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        24<span class="sup">th</span> Jun 2015, 19:03
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11829240">No</span> <span id="discdetail11829240" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 May 2015 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10729240">No</span> <span id="discdetail10729240" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 May 2015 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11429240">Yes</span> <span id="discdetail11429240" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 May 2015 by Pub SignMan</span></li><li>Car Park : <span id="fac11329240">No</span> <span id="discdetail11329240" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 May 2015 by Pub SignMan</span></li><li>Child Friendly : <span id="fac12129240">Yes</span> <span id="discdetail12129240" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 May 2015 by Pub SignMan</span></li><li>Darts : <span id="fac11129240">No</span> <span id="discdetail11129240" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 May 2015 by Pub SignMan</span></li><li>Dog Friendly : <span id="fac10529240">Yes</span> <span id="discdetail10529240" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 May 2015 by Pub SignMan</span></li><li>Hot Food : <span id="fac10329240">Yes</span> <span id="discdetail10329240" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 May 2015 by Pub SignMan</span></li><li>Jukebox : <span id="fac11229240">No</span> <span id="discdetail11229240" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 May 2015 by Pub SignMan</span></li><li>Micropub : <span id="fac12229240">No</span> <span id="discdetail12229240" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 May 2015 by Pub SignMan</span></li><li>Pinball : <span id="fac11629240">No</span> <span id="discdetail11629240" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 May 2015 by Pub SignMan</span></li><li>Pool Table : <span id="fac10429240">No</span> <span id="discdetail10429240" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 May 2015 by Pub SignMan</span></li><li>Real Ale : <span id="fac10129240">Yes</span> <span id="discdetail10129240" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 April 2011 by hondo .</span></li><li>Real Cider : <span id="fac11929240">Yes</span> <span id="discdetail11929240" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 May 2015 by Pub SignMan</span></li><li>Wheelchair Access : <span id="fac12029240">No</span> <span id="discdetail12029240" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 May 2015 by Pub SignMan</span></li><li>WiFi : <span id="fac11529240">Yes</span> <span id="discdetail11529240" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 May 2015 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10:30pm</td></tr>
+<tr><td>Monday</td><td>5pm - 11pm</td></tr>
+<tr><td>Tuesday</td><td>5pm - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>5pm - 11pm</td></tr>
+<tr><td>Thursday</td><td>5pm - 11pm</td></tr>
+<tr><td>Friday</td><td>4pm - 11pm</td></tr>
+<tr><td>Saturday</td><td>12noon - 11pm</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/29247/" class="List1">Mother Shipton Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/29256/" class="List1">Wellington Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/29237/" class="List1">George &amp; Dragon Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8.5 from 3 reviewer(s)" title="Pub has average rating of 8.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/29235/" class="List1">Cross Keys Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/29244/" class="List1">Market Tavern</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 2 reviewer(s)" title="Pub has average rating of 4 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/29249/" class="List1">The Old Royal Oak</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 4 reviewer(s)" title="Pub has average rating of 7.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/29234/" class="List1">Castle Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 4 reviewer(s)" title="Pub has average rating of 7 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/52327/" class="List1">Blind Jack&#039;s</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

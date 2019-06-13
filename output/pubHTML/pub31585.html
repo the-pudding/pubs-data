@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Prince of Wales pub in Didcot, Oxfordshire, OX11 7NN : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Prince of Wales" />
+  <meta name="keywords" content="The Prince of Wales, Station Road, Didcot, Oxfordshire, Didcot Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Prince of Wales in Didcot" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/31501_32000/31585_a139ff0b.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/31585/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.61067104895466" />
+<meta property="og:longitude" content="-1.24349174008944" />
+<meta property="og:street-address" content="Station Road" />
+<meta property="og:locality" content="Didcot" />
+<meta property="og:region" content="Oxfordshire" />
+<meta property="og:postal-code" content="OX11 7NN" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Prince of Wales in Didcot? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Prince of Wales the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/31585/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Prince of Wales in Didcot" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Prince of Wales " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/31501_32000/31585_a139ff0b.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/31585/" />
+<meta name="geo.position" content="51.61067104895466;-1.24349174008944" />
+<meta name="geo.placename" content="The Prince of Wales in Didcot" />
+<meta name="geo.region" content="UK" />
+<title>The Prince of Wales in Didcot : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":31585},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(31585);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 31585;var pubaddress = "Station Road";var pubname = "The Prince of Wales";var pubpostcode = "OX11 7NN";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/oxfordshire/" title="Pubs Galore : Oxfordshire Page">Oxfordshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/didcot/oxfordshire/" title="Pubs Galore : Didcot Page">Didcot</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Prince of Wales Page">The Prince of Wales Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="o1pr3kqu3994is56qapmessgu5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/31585/" class="indisplay"><img src="/images/display/31501_32000/31585_a139ff0b.jpg?w=2" alt="Picture of The Prince of Wales" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Sunday, 20<sup>th</sup> April 2014<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/31585/" class="smallbutton">View all this pub's pictures</a> (3 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/31585/">Pub map</a><br /><a href="/pubreviews/31585/">Pub reviews (3)</a><br /><a href="/pubpictures/31585/">Pub pictures (4)</a><br /><a href="/core/pubaudit.php?id=31585" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Prince of Wales, Didcot Town, Didcot</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Station Road</span><br />
+
+
+<span class="town">Didcot</span><br />
+<span class="postcode">OX11 7NN</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01235511380</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Greene King</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/didcot-town/oxfordshire/">Didcot Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Prince of Wales  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review109455" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Prince of Wales</h6>
+<p class="old">Looking in peril, slated to be demolished as part of the &#039;Didcot Gateway&#039; scheme.<br />
+<br />
+December 2013<br />
+GK station pub, looked to have been recently refurbed and wasn&rsquo;t too bad actually. Just two GK ales on, I gave up and had a lemonade but my hardy companion (reluctantly) supped a half of Abbot, which was he said was average. Not worth getting off the train for but if you&rsquo;ve been delayed it&rsquo;s probably worth the effort. Rated 6</p>
+<p class="Reviewer">On 2<sup>nd</sup> August 2016 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review87710" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Strongers">Steve C</a> left this review about The Prince of Wales</h6>
+<p class="old">Located opposite Didcot Railway Station is the Prince of Wales that was unsurprisingly busy during a recent early Thursday evening visit. This is a Greene King establishment so IPA and Old Speckled Hen were both available alongside the seasonal Bonkers Conkers. For those that are averse to GK ales or generic lager there is a forth hand pump that was drawing Thwaites&rsquo; Wainwright. I didn&rsquo;t look in a menu, but food is available from sometime after 10:00, when the pub opens, until 21:00.<br />
+<br />
+Plasma screens are located throughout and Sky Sports was muted in favour of some background music. I found it strange that lots of empty tables had reserved signs on them until I spotted an advertisement for the weekly Thursday evening quiz, which must be quite popular.<br />
+<br />
+Outside the front of the pub some picnic tables line the exterior and there is a beer yard out the back with more picnic tables, some of which are found under a jumbrella.<br />
+<br />
+I found the service to be very friendly and I would pop back in here if I had a long wait for a train, but I wouldn&rsquo;t go out of my way for a revisit.</p>
+<p class="Reviewer">On 3<sup>rd</sup> October 2014 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 3386 recommendations about 3366 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review43734" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Al+10000">Alan Winfield</a> left this review about The Prince Of Wales Hotel</h6>
+<p class="old">The Prince of Wales is opposite Didcot train station so i made a quick visit while waiting for a connecting train.<br />
+Once inside the pub was quite smart and it had been opened out,the pub was trading under the Morrells banner but the brewery had closed down quite a few years ago so i dont know who was brewing the beer i drunk.<br />
+I had a drink of Morrells bitter this was drinkable but nothing special.<br />
+This pub is very handy if your waiting for a train here.<br />
+<br />
+Pub visited 29/9/2001</p>
+<p class="Reviewer">On 29<sup>th</sup> September 2001 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 6113 recommendations about 6113 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Prince of Wales</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="353810914657393">Facebook - <a href="https://www.facebook.com/PrinceofWalesDidcot/" target="_blank" rel="nofollow">Prince of Wales, Didcot</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/31585/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Strongers">Steve C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.61067104895466, -1.24349174008944], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.61067104895466, -1.24349174008944]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Didcot Parkway, 0.24 miles, 4 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Appleford, 2.43 miles, 46 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Culham, 5.57 miles, 1 hr 47 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('af_zH~{qF]YETg@a@ICEHCCw@fDO~@Sz@M\\CMD]CAjCgM', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('af_zH~{qF]YETg@a@ICEHCCw@fDO~@Sz@c@lAo@xCm@_@Kf@GEQz@UM{@v@?TiCvN[n@U|@}@xB{@s@WAYJ_@^Q^_ApCiHiEqEmEgD}BaAQeA]yD_AyA_AqCk@oANkAE_D{@ASISGCK@KLAL_Dg@mFeKkOuD[Ca@FgI~Ba@BYMe@g@wAy@_@MUAkAgAcAoA@i@Em@c@G{O_EaXeIu@M]BOJKLSf@cA|Cc@zBEf@B?Cp@RB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('af_zH~{qF]YETg@a@ICEHCCw@fDO~@Sz@c@lAo@xCm@_@Kf@GEQz@UM{@v@?TiCvN[n@U|@}@xB{@s@WAYJ_@^Q^_ApCiHiEqEmEgD}BaAQeA]yD_AyA_AqCk@oANkAE_D{@ASISGCK@KLAL_Dg@mFeKkOuD[Ca@FgI~Ba@BYMe@g@wAy@_@MUAyBHg@Z_@\\uLjiAqAlNuBnPUr@aFy@i@?OX_AbFoAdFk@jCg@zCu@fFMVSPa@FOHMRWQc@IeD?qG]sDGCx@oB`R[jDyAa@]M?KyAc@@ImBo@eIkBqBYkA}CuBmDoAcD]iAe@sAe@k@m@SSg@e@EaAg@YGWB_DrB]H}@DcFQ_@C_MkD_@?q@HA{F[sKQG?YHSDoD?qICw@H_NFmCp@oOXcQZeFlAoPzAuTVuFNcIe@OQUMi@E[@w@Fy@Ko@RsGAiAAG_A?', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.61067104895466,-1.24349174008944], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=31585">View all updates for The Prince of Wales, Didcot</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        2<span class="sup">nd</span> Aug 2016, 21:59
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> amended by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        3<span class="sup">rd</span> Oct 2014, 12:34
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Strongers">Steve C</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Bar Billiards : <span id="fac10731585">No</span> <span id="discdetail10731585" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 April 2014 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10231585">No</span> <span id="discdetail10231585" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 April 2014 by Quinno _</span></li><li>Hot Food : <span id="fac10331585">Yes</span> <span id="discdetail10331585" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 April 2014 by Quinno _</span></li><li>Pinball : <span id="fac11631585">No</span> <span id="discdetail11631585" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 April 2014 by Quinno _</span></li><li>Real Ale : <span id="fac10131585">Yes</span> <span id="discdetail10131585" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 April 2014 by Quinno _</span></li><li>Real Cider : <span id="fac11931585">No</span> <span id="discdetail11931585" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 April 2014 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>10am - 11pm</td></tr>
+<tr><td>Monday</td><td>10am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>10am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>10am - 11pm</td></tr>
+<tr><td>Thursday</td><td>10am - 11pm</td></tr>
+<tr><td>Friday</td><td>10am - Midnight</td></tr>
+<tr><td>Saturday</td><td>10am - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31577/" class="List1">Broadways</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31586/" class="List1">The Queens Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86935/" class="List1">Berro Lounge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/58003/" class="List1">Ladygrove</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/58004/" class="List1">Mulberry</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 2 reviewer(s)" title="Pub has average rating of 5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31592/" class="List1">The Wheatsheaf</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

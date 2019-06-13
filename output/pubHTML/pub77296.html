@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="BrewDog pub in Manchester, Manchester (Greater), M2 5BG : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of BrewDog" />
+  <meta name="keywords" content="BrewDog, 35 Peter Street, Manchester, Manchester (Greater), Manchester Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="BrewDog in Manchester" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/77001_77500/77296_2df822e5.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/77296/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="53.47809400177376" />
+<meta property="og:longitude" content="-2.24728882312775" />
+<meta property="og:street-address" content="35 Peter Street" />
+<meta property="og:locality" content="Manchester" />
+<meta property="og:region" content="Manchester (Greater)" />
+<meta property="og:postal-code" content="M2 5BG" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like BrewDog in Manchester? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make BrewDog the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/77296/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="BrewDog in Manchester" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about BrewDog " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/77001_77500/77296_2df822e5.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/77296/" />
+<meta name="geo.position" content="53.47809400177376;-2.24728882312775" />
+<meta name="geo.placename" content="BrewDog in Manchester" />
+<meta name="geo.region" content="UK" />
+<title>BrewDog in Manchester : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":77296},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(77296);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 77296;var pubaddress = "35 Peter Street";var pubname = "BrewDog";var pubpostcode = "M2 5BG";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/greater-manchester/" title="Pubs Galore : Manchester (Greater) Page">Manchester (Greater)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/manchester/greater-manchester/" title="Pubs Galore : Manchester Page">Manchester</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : BrewDog Page">BrewDog Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="94niqq29fo7co58k821ajtfim4" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/77296/" class="indisplay"><img src="/images/display/77001_77500/77296_2df822e5.jpg?w=2" alt="Picture of BrewDog" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
+  Submitted on Wednesday, 11<sup>th</sup> July 2018<br />
+  With picture contributions to 24007 other pubs<br />
+<a href="/pubpictures/77296/" class="smallbutton">View all this pub's pictures</a> (5 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/77296/">Pub map</a><br /><a href="/pubreviews/77296/">Pub reviews (5)</a><br /><a href="/pubpictures/77296/">Pub pictures (6)</a><br /><a href="/core/pubaudit.php?id=77296" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">BrewDog, Manchester Central, Manchester</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=hondo">hondo .</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">35 Peter Street</span><br />
+
+
+<span class="town">Manchester</span><br />
+<span class="postcode">M2 5BG</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/manchester-central/greater-manchester/">Manchester Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of BrewDog  <span class="h2note">(Average Rating: <span id="averagerating"><b>5&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review137005" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=RealAleRobUK">Rob Hunter</a> left this review about BrewDog</h6>
+<p>Good selection but pretty expensive.  No cask, all keg.  Busy on Saturday evening and looking a bit scruffy in parts with rubbish on the floor etc.  My Baltic Bandit was fine.  Really the kind of place I would go to once in a blue moon.<br />
+<br />
+In addition to the keg offerings there are fridges with cans and bottles in which can be purchased for take away, or for an additional &pound;2 you can drink in with them.<br />
+<br />
+There is a further seating area upstairs, which was also full apart from one reserved table at the time of my visit.  People do tend to come and go, so seats become free fairly quickly.</p>
+<p class="Reviewer">On 20<sup>th</sup> February 2019 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 359 recommendations about 336 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review136803" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about BrewDog</h6>
+<p>This is a typical city centre Brewdog bar, just down a couple of doors down from the Albert Hall. The chain&rsquo;s distinctive industrial stylings are in evidence here, thanks to a concrete floor, stone topped bar counter and exposed utilities running across the ceiling. Some nice padded bench booths run along the front wall, beneath the floor-to-ceiling windows and were a good choice to enjoy some top-class people watching in the run up to midnight on New Year&rsquo;s Eve. The servery runs down the rear part of the right hand wall and has a simple stone-topped counter and the usual cinema-style beer board on the bar back, detailing the full range of draught beers in lieu of any pump or tap signage. More seating can be found along the left hand wall and a few tables also run through the centre of the room, but crucially, plenty of space has been retained for vertical drinking which, on a busy night such as when we visited, looks to be a very wise choice, as the room quickly fills up. The decor involves the inevitable drab paint scheme but this has thankfully been brightened up considerably by some pretty cool mural artworks and, less impressively, by a Brewdog merchandise stand. An outstanding 90&rsquo;s alternative rock soundtrack played throughout our visit &ndash; every song was an absolute belter &ndash; and if this is indicative of the sort of stuff they usually play in here, I&rsquo;d be tempted to return for the tunes alone.<br />
+Thankfully the pub has more to recommend than just the music though, with twelve keg taps devoted to Brewdog beers and a further six dispensing guest brews from small batch micros. I decided to try the Brewdog Kingpin, only to find they had just run-out, but the incredibly helpful barman rushed off and performed some behind the scenes trickery in no time at all to get a new keg of the Kingpin on.<br />
+I&rsquo;ve definitely been to much nicer Brewdog bars than this one, as it feels a bit under-developed and too similar to your average craft beer bar. The helpful staff and great soundtrack made me appreciate this place a little more, but overall it probably ends up in the lower tier of Brewdog bars and as such struggles to make an impression in the wider Manchester pub scene.</p>
+<p class="Reviewer">On 11<sup>th</sup> February 2019 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2276 recommendations about 2276 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review71258" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a> left this review about BrewDog</h6>
+<p class="old">Called in here around 5.30 on a hot day and did fancy a cold beer. We sat out front with two overpriced halves. My 5 AM Saint at 5% was quite tasteless, Mrs Ale&#039;s Vagabond at 4.5% did have more flavour. Went in looking for some American craft beer on draft, only seem to have it in bottles now.</p>
+<p class="Reviewer">On 16<sup>th</sup> June 2013 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2750 recommendations about 2750 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/77296/">View more reviews of BrewDog (5)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for BrewDog</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="212762658788486">Facebook - <a href="https://www.facebook.com/BrewDogManchest/" target="_blank" rel="nofollow">Brewdog Manchester</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/77296/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=hondo">hondo .</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([53.47809400177376, -2.24728882312775], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([53.47809400177376, -2.24728882312775]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Deansgate, 0.43 miles, 8 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Manchester Oxford Road, 0.46 miles, 8 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Salford Central, 0.65 miles, 12 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('c}keI`}uLNDOxBn@THIr@sBZdAx@b@FTlAn@CRRJCTZNDKD?`@b@lAl@\\APKv@`@JrAj@bBPbAHCHv@BbAJC@]RBAj@|AJC\\GCAJ', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('c}keI`}uLNDl@{JVwD^cB`@gAj@aATW`DgCvG}FBPJF^W@XJCp@DHPP~@F@H~@R@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('c}keI`}uLs@Qs@bLg@WYbDMpDQjCPHuCtEa@t@yEzGw@?UCMO]_Ak@wBMYKVcGxG`ApD', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.47809400177376,-2.24728882312775], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=77296">View all updates for BrewDog, Manchester</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        20<span class="sup">th</span> Feb 2019, 15:26
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=RealAleRobUK">Rob Hunter</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        11<span class="sup">th</span> Feb 2019, 18:45
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> 
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11877296">No</span> <span id="discdetail11877296" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10777296">No</span> <span id="discdetail10777296" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11477296">No</span> <span id="discdetail11477296" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>CAMRA Discount : <span id="fac10277296">No</span> <span id="discdetail10277296" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Car Park : <span id="fac11377296">No</span> <span id="discdetail11377296" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Darts : <span id="fac11177296">No</span> <span id="discdetail11177296" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Function Room : <span id="fac12377296">No</span> <span id="discdetail12377296" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Hot Food : <span id="fac10377296">Yes</span> <span id="discdetail10377296" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Jukebox : <span id="fac11277296">No</span> <span id="discdetail11277296" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Live TV Sports : <span id="fac11077296">No</span> <span id="discdetail11077296" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Micropub : <span id="fac12277296">No</span> <span id="discdetail12277296" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Pinball : <span id="fac11677296">No</span> <span id="discdetail11677296" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Pool Table : <span id="fac10477296">No</span> <span id="discdetail10477296" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>Real Ale : <span id="fac10177296">No</span> <span id="discdetail10177296" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 June 2013 by Alan Hurdle</span></li><li>Real Cider : <span id="fac11977296">No</span> <span id="discdetail11977296" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li><li>WiFi : <span id="fac11577296">Yes</span> <span id="discdetail11577296" class="discdetail" style=""></span>  <span class="Reviewer">last updated 11 February 2019 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11am - Midnight</td></tr>
+<tr><td>Monday</td><td>12noon - 1am</td></tr>
+<tr><td>Tuesday</td><td>12noon - 1am</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>12noon - 1am</td></tr>
+<tr><td>Thursday</td><td>12noon - 1am</td></tr>
+<tr><td>Friday</td><td>12noon - 2am</td></tr>
+<tr><td>Saturday</td><td>11am - 2am</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 4 reviewer(s)" title="Pub has average rating of 7.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55846/" class="List1">Sir Ralph Abercromby Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86146/" class="List1">Manchester Smokehouse</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86667/" class="List1">The Wellington</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3.5 from 2 reviewer(s)" title="Pub has average rating of 3.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/75378/" class="List1">Kiely&#039;s Irish Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/75379/" class="List1">Epernay</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 23 picture(s)" title="Pub has 23 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55845/" class="List1">The Old Nags Head</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 26 picture(s)" title="Pub has 26 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 10 reviewer(s)" title="Pub has average rating of 7 from 10 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/26201/" class="List1">Rising Sun</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83491/" class="List1">Albert&#039;s Schloss</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

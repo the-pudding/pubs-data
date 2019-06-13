@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Queens Head pub in Winchmore Hill, N21, London (Greater), N21 3NB : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Queens Head" />
+  <meta name="keywords" content="The Queens Head, 41-43 Station Road, N21, London (Greater), Winchmore Hill, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Queens Head in N21" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/66001_66500/66031_a47c716e.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/66031/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.63320233780777" />
+<meta property="og:longitude" content="-0.09974598884583" />
+<meta property="og:street-address" content="41-43 Station Road" />
+<meta property="og:locality" content="N21" />
+<meta property="og:region" content="London (Greater)" />
+<meta property="og:postal-code" content="N21 3NB" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Queens Head in N21? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Queens Head the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/66031/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Queens Head in N21" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Queens Head " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/66001_66500/66031_a47c716e.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/66031/" />
+<meta name="geo.position" content="51.63320233780777;-0.09974598884583" />
+<meta name="geo.placename" content="The Queens Head in N21" />
+<meta name="geo.region" content="UK" />
+<title>The Queens Head in Winchmore Hill, N21 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":66031},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(66031);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 66031;var pubaddress = "41-43 Station Road";var pubname = "The Queens Head";var pubpostcode = "N21 3NB";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/greater-london/" title="Pubs Galore : London (Greater) Page">London (Greater)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/n21/greater-london/" title="Pubs Galore : N21 Page">N21</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Queens Head Page">The Queens Head Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="8c26aj0vqpv9drgo2969o5pa45" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/66031/" class="indisplay"><img src="/images/display/66001_66500/66031_a47c716e.jpg?w=2" alt="Picture of The Queens Head" /></a><br />  Image posted by <a href="/userinfo.php?name=Rex_Rattus" class="indisplay">Rex Rattus</a><br />
+  Submitted on Sunday, 26<sup>th</sup> May 2019<br />
+  With picture contributions to 1040 other pubs<br />
+<a href="/pubpictures/66031/" class="smallbutton">View all this pub's pictures</a> (5 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/66031/">Pub map</a><br /><a href="/pubreviews/66031/">Pub reviews (6)</a><br /><a href="/pubpictures/66031/">Pub pictures (6)</a><br /><a href="/core/pubaudit.php?id=66031" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Queens Head, Winchmore Hill, N21</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">41-43 Station Road</span><br />
+
+
+<span class="town">N21</span><br />
+<span class="postcode">N21 3NB</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02083609989</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/winchmore-hill/greater-london/">Winchmore Hill</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Queens Head</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/QueensheadN21" target="_blank"><img src="https://pbs.twimg.com/profile_images/892749687379415041/oG6JqrZH_normal.jpg" alt="The Queen&#039;s Head" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/QueensheadN21" target="_blank">The Queen&#039;s Head</a></strong>
+Sneak peek behind the scenes! We&#039;re getting there and will be opening next week - watch this space! 
+<a href="http://twitter.com/search?q=%23yournewlocal" target="_blank">
+#yournewlocal</a>&hellip; <a href='https://t.co/OWVmRyYIFj' target='_blank'>https://t.co/OWVmRyYIFj</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/QueensheadN21/status/900060511408140289">7:22 PM Aug 22nd 2017</a> from <a href="https://about.twitter.com/products/tweetdeck" rel="nofollow">TweetDeck</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/QueensheadN21" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/QueensheadN21" target="_blank">The Queen&#039;s Head</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Queens Head  <span class="h2note">(Average Rating: <span id="averagerating"><b>5</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review139463" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> left this review about The Queens Head</h6>
+<p>Three handpumps were clipped - Doom Bar; something called Horizon - both coming soon or something similar, leaving London Pride as the only ale actually on. It was decidedly average, at &pound;2.45 for a half, and I was decidedly unimpressed. There were two menus on the tables on Sunday afternoon - one had all manner of odd things on it, predominantly something to &quot;feast upon&quot; (their words not mine) called sourdough flatbreads - some sort of pizza substitute perhaps? Anyway, they cost &pound;7 for a margherita and &pound;9.50 for a bresaola(?). The other menu made a bit more sense, featuring Pieminister pies - &pound;7 for pies and &pound;7.50 for pie meals. Not sure what you get for the extra 50p; gravy and/or mash perhaps?<br />
+<br />
+The place has been totally modernised, and although the bar counter looks old it has been re-sited. It&#039;s bare-boarded, has its fair share of tall tables with tall stools and benches, but some normal tables and chairs, one of which I bagged of course. As is the case with this type of modernised pub, there&#039;s reclaimed wood around the place, as well as that modern design staple the exposed brickwork. I did quite like the brick built fireplace on the right though.<br />
+<br />
+It was doing a reasonable trade on Sunday afternoon so it looks to be a going concern, and that&#039;s a good thing. But it&#039;s not somewhere that I&#039;ll be rushing back to.</p>
+<p class="Reviewer">On 27<sup>th</sup> May 2019 
+  - rating: <b>4</b><br />
+  <span class="leftspace">[User has posted 2495 recommendations about 2415 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review134548" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a> left this review about The Queens Head</h6>
+<p>Modern style pub interior with an L shaped bar area that meets you on entry. Seating consisted of high tables and chairs near the entrance and banks of tables and chairs running along the front windows on the left of the entrance. There was a further seating area on the right hand side, which had a fireplace, feature wallpapered wall and a couple of settees. This pub was busy on our Thursday Eve visit, maybe as it is so close to the train station. Nothing exciting across the handpumps, a choice of London Pride, Doombar and one cider. I went for the Pride, which was ok, but didn&#039;t prompt me to stay for a second one.</p>
+<p class="Reviewer">On 7<sup>th</sup> November 2018 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2750 recommendations about 2750 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review134409" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Bucking+Fastard">Bucking Fastard</a> left this review about The Queens Head</h6>
+<p>ORIGINAL REVIEW March 2017<br />
+A cottage style pub,which has been knocked about a lot and is now open plan,despite the two doors hinting at seperate bars in the days gone by.The interior is a mess,too little furniture with lots of sofas,square pooves,uncomfortable high tables and a small bar looking felourn.The darts board looks out of place.At the rear there is a restaurant area with tables set for diners,but the mismatch in styles gives the impression of a cheap makeover ,especially the chintzy wall coverings.A fine fireplace stands to the right but it&#039;s surrounded by sofas with a very low table and is lost as a feature.<br />
+There are two handpumps but only Bath Gem was on offer,a malty boring brew in fair condition but over priced at &pound;2.10 which is all I could stomach from this indifferent brewer .<br />
+With some thought this could be a much better pub but I found its current guise to be dull and uninteresting,with annoying loud muzak.In such an upmarket area,I&#039;m surprised more care isn&#039;t being lavished on this pub.<br />
+<br />
+UPDATE<br />
+<br />
+Another refurb has produced a much more cohesive interior and smartened the place up.I just popped in for a quick one,the pub was busy and trendy.The ale selection was still dull with London Pride,Doom Bar and a real cider but it&#039;s a far more welcoming experience.</p>
+<p class="Reviewer">On 2<sup>nd</sup> November 2018 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 1916 recommendations about 1916 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/66031/">View more reviews of The Queens Head (6)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Queens Head</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Queens Head - <a href="http://www.queensheadwinchmorehill.co.uk/" title="Submitted by:- Rex Rattus" target="_blank">www.queensheadwinchmorehill.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="twitlink" id="1354601461">Twitter - <a href="https://twitter.com/QueensheadN21" target="_blank" rel="nofollow">The Queen's Head</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/66031/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Strongers">Steve C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.63320233780777, -0.09974598884583], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.63320233780777, -0.09974598884583]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Winchmore Hill, 0.07 miles, 1 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Grange Park, 0.93 miles, 17 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Palmers Green, 1.41 miles, 27 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('csczHzmRe@nBw@tD', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('csczHzmROn@aA}@q@{AgAe@cAKGO?c@PkFAOMEoD_@kJ}AgAy@wAyA_Ao@iBs@k@s@g@hC]dCwBS_BE[HS?yBQeBe@[zBYdBOxA_@KBS\\qACUUI[Aa@F_Bk@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('csczHzmRe@nBvEvC}@bFEn@GTGn@l@ZXBvD|@u@hBa@pBjHzE`E`Bl@RzBf@r@HrCL~HnBdBj@BWhJpDzK~E|A`BpBjBlBxAzA|AzArB|AfBbBoGOMBQII', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.63320233780777,-0.09974598884583], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=66031">View all updates for The Queens Head, N21</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        27<span class="sup">th</span> May 2019, 18:09
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        26<span class="sup">th</span> May 2019, 21:35
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Beer Garden : <span id="fac11466031">Yes</span> <span id="discdetail11466031" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 March 2017 by Bucking Fastard</span></li><li>Darts : <span id="fac11166031">No</span> <span id="discdetail11166031" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 November 2018 by Bucking Fastard</span></li><li>Hot Food : <span id="fac10366031">Yes</span> <span id="discdetail10366031" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 May 2019 by Rex Rattus</span></li><li>Karaoke : <span id="fac10666031">No</span> <span id="discdetail10666031" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 November 2018 by Bucking Fastard</span></li><li>Real Ale : <span id="fac10166031">Yes</span> <span id="discdetail10166031" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 May 2019 by Rex Rattus</span></li><li>Real Cider : <span id="fac11966031">Yes</span> <span id="discdetail11966031" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 November 2018 by Bucking Fastard</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 4 reviewer(s)" title="Pub has average rating of 6 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66032/" class="List1">The Salisbury Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 5 reviewer(s)" title="Pub has average rating of 6 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66030/" class="List1">The Kings Head</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66042/" class="List1">The Three Wishes</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 4 reviewer(s)" title="Pub has average rating of 6 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66044/" class="List1">On Broadway</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 7 reviewer(s)" title="Pub has average rating of 7.5 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66045/" class="List1">The Orange Tree</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8.5 from 6 reviewer(s)" title="Pub has average rating of 8.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85699/" class="List1">Little Green Dragon</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 7 reviewer(s)" title="Pub has average rating of 8 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/52719/" class="List1">Dog &amp; Duck</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66046/" class="List1">Winchmore</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

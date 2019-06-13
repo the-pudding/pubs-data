@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Harrogate Tap pub in Harrogate, North Yorkshire, HG1 1TE : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Harrogate Tap" />
+  <meta name="keywords" content="Harrogate Tap, Station Parade, Harrogate, North Yorkshire, Harrogate Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Harrogate Tap in Harrogate" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/81001_81500/81224_c9586a25.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/81224/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="53.99308220000000" />
+<meta property="og:longitude" content="-1.53762110000000" />
+<meta property="og:street-address" content="Station Parade" />
+<meta property="og:locality" content="Harrogate" />
+<meta property="og:region" content="North Yorkshire" />
+<meta property="og:postal-code" content="HG1 1TE" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Harrogate Tap in Harrogate? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Harrogate Tap the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/81224/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Harrogate Tap in Harrogate" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Harrogate Tap " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/81001_81500/81224_c9586a25.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/81224/" />
+<meta name="geo.position" content="53.99308220000000;-1.53762110000000" />
+<meta name="geo.placename" content="Harrogate Tap in Harrogate" />
+<meta name="geo.region" content="UK" />
+<title>Harrogate Tap in Harrogate : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":81224},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(81224);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 81224;var pubaddress = "Station Parade";var pubname = "Harrogate Tap";var pubpostcode = "HG1 1TE";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/north-yorkshire/" title="Pubs Galore : North Yorkshire Page">North Yorkshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/harrogate/north-yorkshire/" title="Pubs Galore : Harrogate Page">Harrogate</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Harrogate Tap Page">Harrogate Tap Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="0mo9gsfig4pb2e2m99gjo7ejo7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/81224/" class="indisplay"><img src="/images/display/81001_81500/81224_c9586a25.jpg?w=2" alt="Picture of Harrogate Tap" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Saturday, 11<sup>th</sup> April 2015<br />
+  With picture contributions to 3588 other pubs<br />
+<a href="/pubpictures/81224/" class="smallbutton">View all this pub's pictures</a> (11 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/81224/">Pub map</a><br /><a href="/pubreviews/81224/">Pub reviews (9)</a><br /><a href="/pubpictures/81224/">Pub pictures (12)</a><br /><a href="/core/pubaudit.php?id=81224" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Harrogate Tap, Harrogate Central, Harrogate</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=oldboots">Old Boots</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Station Parade</span><br />
+
+
+<span class="town">Harrogate</span><br />
+<span class="postcode">HG1 1TE</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01423501644</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/harrogate-central/north-yorkshire/">Harrogate Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by Harrogate Tap</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/HarrogateTap" target="_blank"><img src="https://pbs.twimg.com/profile_images/378800000579682011/72f1d4e780ceb29703f193d02cf25d7e_normal.jpeg" alt="Harrogate Tap" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/HarrogateTap" target="_blank">Harrogate Tap</a></strong>
+Restock of these two wonderful beers
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/HarrogateTap/status/1138833047258849282">about 6 hours ago</a> from <a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/HarrogateTap" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/HarrogateTap" target="_blank">Harrogate Tap</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Harrogate Tap  <span class="h2note">(Average Rating: <span id="averagerating"><b>8&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review113820" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Zaphod">custodian 42</a> left this review about Harrogate Tap</h6>
+<p class="old">Excellent venue with great quality ales. I always visit here when in Harrogate and allow adequate time before catching the train home.</p>
+<p class="Reviewer">On 23<sup>rd</sup> December 2016 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 1391 recommendations about 1390 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review102526" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=ROBCamra">ROB Camra</a> left this review about Harrogate Tap</h6>
+<p class="old">A similar looking bar to the Sheffield Tap and that&#039;s a real positive. Once again they&#039;ve done a great job on an unused building. We were only in Harrogate for 2 nights, but called in here 3 times. A great selection of beer on the bar and all the ones we tried were in top notch condition. 3 different barstaff were on during our times here and all were friendly and knowledgeable. A great addition to the Harrogate ale scene. I can&#039;t imagine being in Harrogate and not visiting this place again.</p>
+<p class="Reviewer">On 4<sup>th</sup> January 2016 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 2666 recommendations about 2596 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review101211" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=danny+o%27revey">Danny O&#039;Revey</a> left this review about Harrogate Tap</h6>
+<p class="old">Railway station waiting room fitout. Its ok, not as special as say York or Sheffield and the beer was poor quality on my visit.</p>
+<p class="Reviewer">On 9<sup>th</sup> November 2015 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 1177 recommendations about 1154 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/81224/">View more reviews of Harrogate Tap (9)</a>
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=1264">Harrogate</a> by <a rel="nofollow" href="/userinfo.php?name=trainman">train man</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Harrogate Tap</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of Harrogate Tap - <a href="http://www.harrogatetap.co.uk" title="Submitted by:- aleand hearty" target="_blank">www.harrogatetap.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="601216486612698">Facebook - <a href="https://www.facebook.com/TheHarrogateTap/" target="_blank" rel="nofollow">The Harrogate Tap</a></li></ul><ul id="Custom2"><li class="twitlink" id="1231513741">Twitter - <a href="https://twitter.com/HarrogateTap" target="_blank" rel="nofollow">Harrogate Tap</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/81224/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=oldboots">Old Boots</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([53.99308220000000, -1.53762110000000], 16);
+
+	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([53.99308220000000, -1.53762110000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Harrogate, 0.18 miles, 3 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Hornbeam Park, 1.32 miles, 25 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Starbeck, 1.85 miles, 35 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('yophIvhkH|CmACUcDpA@NUHKgAXIBNp@Y', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('yophIvhkH|CmACUcBr@PhBFFB\\fBa@l@ShBs@jCmA|D}Ar@_@JCrAkAnAkATQHAFFEO|OqCxB[nGaG_@wA_AoCxB_CReAJuAzDsDEQlAqAd@_ARw@Hq@Bk@?u@UkFCy@Fm@vAuC`FlK', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('yophIvhkH|CmACUcDpA@NUHKgAXIBNLEGq@k@NMG@U}Ao@gAo@CMXaB_Aw@D[WgEwA_UTGWgHMyAGgBLsHP_OKQHWGaFRo@Wk@SmNDi@eEoi@sG{|@UkBoBgK]sAONMc@MLOEy@dA', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.99308220000000,-1.53762110000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=81224">View all updates for Harrogate Tap, Harrogate</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        8<span class="sup">th</span> Nov 2018, 10:03
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=aleandhearty">aleand hearty</a> approved
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        8<span class="sup">th</span> Nov 2018, 10:00
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=aleandhearty">aleand hearty</a>
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11881224">No</span> <span id="discdetail11881224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 June 2015 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10781224">No</span> <span id="discdetail10781224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 June 2015 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11481224">No</span> <span id="discdetail11481224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 June 2015 by Pub SignMan</span></li><li>Car Park : <span id="fac11381224">Yes</span> <span id="discdetail11381224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 June 2015 by Pub SignMan</span></li><li>Child Friendly : <span id="fac12181224">Yes</span> <span id="discdetail12181224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 June 2015 by Pub SignMan</span></li><li>Darts : <span id="fac11181224">No</span> <span id="discdetail11181224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 June 2015 by Pub SignMan</span></li><li>Dog Friendly : <span id="fac10581224">Yes</span> <span id="discdetail10581224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 June 2015 by Pub SignMan</span></li><li>Hot Food : <span id="fac10381224">No</span> <span id="discdetail10381224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 June 2015 by Pub SignMan</span></li><li>Jukebox : <span id="fac11281224">No</span> <span id="discdetail11281224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 June 2015 by Pub SignMan</span></li><li>Karaoke : <span id="fac10681224">No</span> <span id="discdetail10681224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 June 2015 by Pub SignMan</span></li><li>Live TV Sports : <span id="fac11081224">No</span> <span id="discdetail11081224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 June 2015 by Pub SignMan</span></li><li>Micropub : <span id="fac12281224">No</span> <span id="discdetail12281224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 June 2015 by Pub SignMan</span></li><li>Pinball : <span id="fac11681224">No</span> <span id="discdetail11681224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 June 2015 by Pub SignMan</span></li><li>Pool Table : <span id="fac10481224">No</span> <span id="discdetail10481224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 June 2015 by Pub SignMan</span></li><li>Real Ale : <span id="fac10181224">Yes</span> <span id="discdetail10181224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 December 2013 by ROB Camra</span></li><li>Real Cider : <span id="fac11981224">Yes</span> <span id="discdetail11981224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 December 2013 by ROB Camra</span></li><li>Wheelchair Access : <span id="fac12081224">Yes</span> <span id="discdetail12081224" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 June 2015 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11am - 11pm</td></tr>
+<tr><td>Monday</td><td>11am - 11pm</td></tr>
+<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
+<tr style="font-weight:bold"><td>Wednesday</td><td>11am - 11pm</td></tr>
+<tr><td>Thursday</td><td>11am - 11pm</td></tr>
+<tr><td>Friday</td><td>11am - Midnight</td></tr>
+<tr><td>Saturday</td><td>10am - Midnight</td></tr>
+</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87226/" class="List1">Stevie&#039;s</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87637/" class="List1">The Disappearing Chin</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83791/" class="List1">North Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62966/" class="List1">Banyan</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2 from 1 reviewer(s)" title="Pub has average rating of 2 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62967/" class="List1">Pitcher &amp; Piano</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66465/" class="List1">Las Iguanas</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/29127/" class="List1">The Den</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/29219/" class="List1">Trotters Bar</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>
