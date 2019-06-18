@@ -14,10 +14,19 @@ function processCSV(filename) {
 	combinedPubs = newdb
 }
 
+function stripSpaces(string) {
+	newString = string.replace(/\s+/g,' ').trim()
+	return(newString)
+}
+
 function init() {
 	const files = fs.readdirSync(IN_PATH).filter(d => d.includes('.csv'));
 
 	_.each(files, filename => processCSV(filename))
+	const clean = combinedPubs.map(d => ({
+		...d,
+		pubStreet: stripSpaces(d.pubStreet)
+	}))
 	const all = d3.csvFormat(combinedPubs)
 	fs.writeFileSync(`${OUT_PATH}/combinedPubs.csv`, all)
 }
