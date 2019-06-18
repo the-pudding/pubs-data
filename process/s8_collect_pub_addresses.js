@@ -26,7 +26,7 @@ function getPubAddresses(d) {
 				if (pubName) pubAddressData.push({pubName, pubID, pubStreet, pubTown, pubPostCode})
 			})
 
-		resolve();	
+		resolve();
 	})
 }
 
