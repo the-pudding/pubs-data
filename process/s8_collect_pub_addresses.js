@@ -2,12 +2,12 @@ const fs = require('fs');
 const d3 = require('d3');
 const request = require('request');
 const cheerio = require('cheerio');
-let pubAddressData = [];
 
-const OUT_PATH = './output/'
+const OUT_PATH = './output/pubAddresses'
 const IN_PATH = './output/pubHTML/'
 
 function getPubAddresses(d) {
+	let pubAddressData = [];
 	let pubID = d.replace('.html', '');
 	pubID = pubID.replace('pub', '');
 
@@ -15,18 +15,31 @@ function getPubAddresses(d) {
 		const file = fs.readFileSync(`${IN_PATH}${d}`, 'utf-8');
 		const $ = cheerio.load(file);
 
-		$('#pubcard')
-			.each((i, el) => {
-				const pubName = $(el).find('.pubname').text()
-				const pubAddress = $(el).find('.pubaddress')
-				const pubStreet = pubAddress.find('.address')
-				const pubTown = pubAddress.find('.town')
-				const pubPostCode = pubAddress.find('.postcode')
+		const fileOut = `${OUT_PATH}/pubAdd_${pubID}.csv`
+		const exists = fs.existsSync(fileOut)
 
-				if (pubName) pubAddressData.push({pubName, pubID, pubStreet, pubTown, pubPostCode})
-			})
+		if (exists) resolve();
+		else {
+			$('#pubcard')
+				.each((i, el) => {
+					const pubName = $(el).find('.pubname').text()
+					const pubAddress = $(el).find('.pubaddress')
+					const pubStreet = pubAddress.find('.address').text()
+					const pubTown = pubAddress.find('.town').text()
+					const pubPostCode = pubAddress.find('.postcode').text()
 
-		resolve();
+					if (pubName) pubAddressData.push({pubName, pubID, pubStreet, pubTown, pubPostCode})
+				})
+
+				const allAddresses = [].concat(...pubAddressData).map(d => ({
+					...d
+				}));
+
+				const csv = d3.csvFormat(allAddresses);
+				fs.writeFileSync(`${OUT_PATH}/pubAdd_${pubID}.csv`, csv)
+
+				resolve();
+		}
 	})
 }
 
@@ -46,15 +59,6 @@ async function init() {
 		}
 		i += 1;
 	}
-
-	console.log(pubAddressData)
-
-	// const allAddresses = [].concat(...pubAddressData).map(d => ({
-	// 	...d
-	// }));
-	//
-	// const csv = d3.csvFormat(allAddresses);
-	// fs.writeFileSync(`${OUT_PATH}/pubAddresses.csv`, csv)
 }
 
 // async function init() {
