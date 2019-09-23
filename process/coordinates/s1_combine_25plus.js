@@ -43,6 +43,10 @@ function loadGroupedFiles(file) {
 	let rawDuration = parsedData.routes[0].duration
 	let rawDistance = parsedData.routes[0].distance
 
+	if (!filePath.includes('-1')) {
+		rawCoordinates = rawCoordinates.slice(0, -1)
+	}
+
 	GROUPED_COORDS.push(rawCoordinates)
 	GROUPED_DUR.push(rawDuration)
 	GROUPED_DIST.push(rawDistance)
@@ -81,7 +85,6 @@ function init() {
 
 	files.map(stripFilename);
 	PUB_NAMES.map(combineFiles)
-	//console.log(PUB_NAMES[72])
 	combineMetrics()
 
 	PUB_NAMES.map(replaceData)
