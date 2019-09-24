@@ -6,25 +6,9 @@ const OUT_PATH = './output/over-25/results-combined/'
 const IN_PATH = './output/over-25/results/'
 let PUB_NAMES = [];
 let GROUPED_FILES = [];
-let FLAT_COORDS = [];
-let SUMMED_DIST = [];
-let SUMMED_DUR = [];
-
-// const PUB_NAMES = [
-// 	'anchorinn',
-// 	'angelinn',
-// 	'barleymow',
-// 	'bayhorse',
-// 	'bellinn',
-// 	'blackbull',
-// 	'blackhorse',
-// 	'blackhorseinn',
-// 	'blacklion',
-// 	'blacksmithsarms',
-// 	'blackswan',
-// 	'bluebell',
-// 	'bluebellinn'
-// ]
+let GROUPED_COORDS = [];
+let GROUPED_DUR = [];
+let GROUPED_DIST = [];
 
 function stripFilename(filename) {
 	let stripped = filename.split('-')[2]
@@ -32,14 +16,30 @@ function stripFilename(filename) {
 	PUB_NAMES = _.uniqBy(PUB_NAMES, 'stripped')
 }
 
-function replaceData(pubName) {
-	let pub = pubName
+function replaceData(strippedName) {
+	//console.log(FLAT_COORDS.length)
+	let pub = strippedName.stripped
+
+	let filteredCoords = GROUPED_COORDS.filter(d => d.pub == pub)
+	let flattenedCoords = filteredCoords.map(d => ({ coordinates: d.rawCoordinates }))
+	flattenedCoords = _.flatMap(flattenedCoords, 'coordinates')
+
+	let filteredDist = GROUPED_DIST.filter(d => d.pub == pub)
+	let flattenedDist = filteredDist.map(d => ({ distance: d.rawDistance }))
+	flattenedDist = _.flatMap(flattenedDist, 'distance')
+	let summedDist = flattenedDist.reduce((a,b) => a + b, 0)
+
+	let filteredDur = GROUPED_DUR.filter(d => d.pub == pub)
+	let flattenedDur = filteredDur.map(d => ({ duration: d.rawDuration }))
+	flattenedDur = _.flatMap(flattenedDur, 'duration')
+	let summedDur = flattenedDur.reduce((a,b) => a + b, 0)
+
 	let filePath = `${IN_PATH}result-coordinates-${pub}-1.txt`
 	let raw = fs.readFileSync(`${filePath}`, 'utf-8')
 	let parsedData = JSON.parse(raw)
-	parsedData.routes[0].geometry.coordinates = FLAT_COORDS
-	parsedData.routes[0].duration = SUMMED_DUR
-	parsedData.routes[0].distance = SUMMED_DIST
+	parsedData.routes[0].geometry.coordinates = flattenedCoords
+	parsedData.routes[0].duration = summedDur
+	parsedData.routes[0].distance = summedDist
 
 	let fileOut = `${OUT_PATH}result-coordinates-${pub}.txt`
 	let output = JSON.stringify(parsedData)
@@ -47,10 +47,11 @@ function replaceData(pubName) {
 	fs.writeFileSync(fileOut, output)
 }
 
-function combineMetrics(GROUPED_COORDS, GROUPED_DUR, GROUPED_DIST) {
-	FLAT_COORDS = [].concat.apply([], GROUPED_COORDS)
-	SUMMED_DUR = GROUPED_DUR.reduce((a,b) => a + b, 0)
-	SUMMED_DIST = GROUPED_DIST.reduce((a,b) => a + b, 0)
+function combineMetrics(pub, rawCoordinates, rawDuration, rawDistance) {
+
+	GROUPED_COORDS.push({pub, rawCoordinates})
+	GROUPED_DUR.push({pub, rawDuration})
+	GROUPED_DIST.push({pub, rawDistance})
 }
 
 function loadSingleFile(file) {
@@ -67,49 +68,19 @@ function loadSingleFile(file) {
 		rawCoordinates = rawCoordinates.slice(2, rawCoordinates.length)
 	}
 
-	let GROUPED_COORDS = []
-	GROUPED_COORDS.push(rawCoordinates)
-	let GROUPED_DUR = []
-	GROUPED_DUR.push(rawDuration)
-	let GROUPED_DIST = []
-	GROUPED_DIST.push(rawDistance)
-
-	combineMetrics(GROUPED_COORDS, GROUPED_DUR, GROUPED_DIST)
-
-	replaceData(pub)
+	combineMetrics(pub, rawCoordinates, rawDuration, rawDistance)
 }
 
 function loadGroupedFiles(fileGroup) {
 	let nameFiles = fileGroup
 	nameFiles = nameFiles.split()
 	nameFiles.map(loadSingleFile)
-	// let pubName = file.split('-')[2]
-	// let filePath = `${IN_PATH}${file}`
-	// let raw = fs.readFileSync(`${filePath}`, 'utf-8')
-	// let parsedData = JSON.parse(raw)
-	// let rawCoordinates = parsedData.routes[0].geometry.coordinates
-	// let rawDuration = parsedData.routes[0].duration
-	// let rawDistance = parsedData.routes[0].distance
-	//
-	// if (!filePath.includes('-1')) {
-	// 	//Removes first(duped) overlapping coordinates in subsequent files
-	// 	rawCoordinates = rawCoordinates.slice(2, rawCoordinates.length)
-	// }
-	//
-	// GROUPED_COORDS.push(rawCoordinates)
-	// GROUPED_DUR.push(rawDuration)
-	// GROUPED_DIST.push(rawDistance)
-	//
-	// combineMetrics()
-	//
-	// replaceData(pubName)
 }
 
 function combineFiles(strippedName) {
 	let pub = strippedName.stripped
 
 	GROUPED_FILES = fs.readdirSync(IN_PATH).filter(d => d.includes(pub))
-
 	GROUPED_FILES.map(loadGroupedFiles)
 
 }
@@ -119,6 +90,9 @@ function init() {
 
 	files.map(stripFilename);
 	PUB_NAMES.map(combineFiles)
+
+	PUB_NAMES.map(replaceData)
+
 }
 
 init();
