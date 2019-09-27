@@ -17,10 +17,10 @@ function stripFilename(filename) {
 }
 
 function replaceData(strippedName) {
-	//console.log(FLAT_COORDS.length)
 	let pub = strippedName.stripped
 
 	let filteredCoords = GROUPED_COORDS.filter(d => d.pub == pub)
+
 	let flattenedCoords = filteredCoords.map(d => ({ coordinates: d.rawCoordinates }))
 	flattenedCoords = _.flatMap(flattenedCoords, 'coordinates')
 
@@ -50,6 +50,7 @@ function replaceData(strippedName) {
 function combineMetrics(pub, rawCoordinates, rawDuration, rawDistance) {
 
 	GROUPED_COORDS.push({pub, rawCoordinates})
+
 	GROUPED_DUR.push({pub, rawDuration})
 	GROUPED_DIST.push({pub, rawDistance})
 }
@@ -63,10 +64,12 @@ function loadSingleFile(file) {
 	let rawDuration = parsedData.routes[0].duration
 	let rawDistance = parsedData.routes[0].distance
 
-	if (!filePath.includes('-1')) {
-		//Removes first(duped) overlapping coordinates in subsequent files
-		rawCoordinates = rawCoordinates.slice(2, rawCoordinates.length)
-	}
+	// if (!file.includes('-1')) {
+	// 	//Removes first(duped) overlapping coordinates in subsequent files
+	// 	rawCoordinates = rawCoordinates.slice(1, rawCoordinates.length)
+	// } else {
+	// 	rawCoordinates = rawCoordinates
+	// }
 
 	combineMetrics(pub, rawCoordinates, rawDuration, rawDistance)
 }
@@ -80,6 +83,7 @@ function loadGroupedFiles(fileGroup) {
 function combineFiles(strippedName) {
 	let pub = strippedName.stripped
 
+	//console.log(pub)
 	GROUPED_FILES = fs.readdirSync(IN_PATH).filter(d => d.includes(pub))
 	GROUPED_FILES.map(loadGroupedFiles)
 
