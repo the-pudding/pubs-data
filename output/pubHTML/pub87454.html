@@ -126,13 +126,13 @@ var thispub = 87454;var pubaddress = "Westridge Way";var pubname = "Quantock B
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87454;var pubaddress = "Westridge Way";var pubname = "Quantock B
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="2a8nqia767fsfjq2cpjeppan50" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="u1n19loeio8ded3v9ci8gr6a07" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87454;var pubaddress = "Westridge Way";var pubname = "Quantock B
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87454;var pubaddress = "Westridge Way";var pubname = "Quantock B
   <div id="displayedimage">
 <a href="/pubpictures/87454/" class="indisplay"><img src="/images/display/87001_87500/87454_86b4304c5f473fff8935f7c7643aea3d.jpg?w=2" alt="Picture of Quantock Brewery Tap" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
   Submitted on Tuesday, 12<sup>th</sup> February 2019<br />
-  With picture contributions to 20227 other pubs<br />
+  With picture contributions to 20678 other pubs<br />
 <a href="/pubpictures/87454/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -263,7 +263,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul id="Custom2">
 			<li>Official site of Quantock Brewery Tap - <a href="http://www.quantockbrewery.co.uk/taproom-shop/" title="Submitted by:- Old Boots" target="_blank">www.quantockbrewery.co.uk</a></li>
           </ul>
-</div>
+<ul id="Custom2"><li class="wplink" id="TAU/588">CAMRA WhatPub :: Quantock Brewery Tap - <a href="https://whatpub.com/pubs/TAU/588/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -277,7 +277,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([51.05488806655868, -3.19227192631990], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Bishop's Lydeard, 0.18 miles, 3 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Taunton, 5.38 miles, 1 hr 43 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Bridgwater, 11.71 miles, 3 hr 46 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('wsrvH|onRZMFh@y@^pAvGEJYNHn@^W?M`Bu@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('wsrvH|onRZMFh@aAb@WwAG@[{@]k@BuCJ}CDg@LgC?e@Ae@E_@I[GO[a@BGz@gAzBeE|BwCEI|@wA?Et@wAfByCFLf@aAd@s@d@i@bAu@fAc@l@e@X]`@s@lB}DHBv@kF`@iB\\eA`@cAdAaChAsCHqACIAWFSp@yAhAkE|CsMd@eBp@kBtA_D^eBRiAdAsHd@eCfAsD^eAf@eApB}Cd@aAb@oA`@uAt@gD~@}EtBgKX_BT}ARaArCyKzDsOdAyD\\gAnAoCv@iA\\a@h@e@zFmD|@u@`AgA~@oA`FyJnA}BJCJQl@{Ap@cENaBRaDGUIE@qAKaF?g@JiAJm@zBgJb@eC\\uAj@aBRa@~EmGh@_AdA_C`@k@TWf@]CSp@]DILe@LEFw@LC]_I@SDSRQGk@SgAEw@D_CXIRONSd@]xB{B`@Ud@Or@GX?@GLYDCDBPUb@OfCa@ZOTWz@iAr@uA\\y@b@qAFa@fARDKJgCAOFcECmB@qBCcBC]T?@qBL_CVuBrAmIfAgKl@uICWS[dA_Eb@kBnAsGJy@Dg@HCRwBL_@Ra@AO?YLe@LYBYEa@Ng@^_AFa@\\oDF{@AUH_AcBc@IbAD@Be@uA]IbAiCNCCRgBp@wEt@sKdB_@DGFcICOBI@}@CuCh@KYbNFBh@aU', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('wsrvH|onRZMFh@aAb@WwAG@[{@]k@BuCJ}CDg@LmDE{@Ke@GOoAaBc@[o@[{Bg@o@Ec@I}DwAy@e@g@Ge@Be@JWTkBnCSR_@Xu@b@K@QCgFuAuC}@mCk@uEoAcBUuBk@aAa@kIyDWQoF_FeCkBOYkAmDqC{Jk@eCUm@y@}Ca@wBSc@SY{BqAwJuBgCo@o@Wi@_@a@c@_@m@q@oB]sAOs@o@kF]uBY}AYaAkK}Sy@kCkC{FkB{DmA}CMQQCCQa@s@aCkF}@{HFKLFJVZ^lBbBTDLM?wDKwBQ}@oByCuAaBc@gCe@}AmAoAy@yAmFiMIk@Us@]y@o@cC[y@]k@@cBGKAYHm@Nk@^o@x@eCKU_AcCGi@y@{DSuB[gB[iAWw@m@qAESOyAZwA`@aA?OOOo@IqAgDUY]WQUUMW@IMSeAk@oAw@yAk@aBe@}CSsCAsA]qCE_Ao@mA[mAO]KGSE?c@SwCs@iGoAcI_AgFOq@Uu@SUa@M]Ec@SWSeAkAqCsBQUYk@cAqCQa@]a@qDmDgAq@u@o@U[a@{@{EaN[uAGgABu@n@}E@k@CcBEk@Ie@[o@eFgCoCaCY[Ys@Y{@gBaIUq@cAwBe@mAgAqEOg@Sc@iAgBaCoCw@u@uBaBuAyBa@Wc@Ki@U_@_@a@i@{AoCmBsG}@gDi@gAqC{CuA_Bc@c@cAc@]i@Sc@Ok@uBkNCa@CaBDyDn@uN`@gKO}FOyCIqEGu@Qu@wAqCQm@CUAeAFeP?sDKoEQ_EcDkk@y@cP[gDYqAYy@m@gAsAwBS_@k@cBMUoCsCu@}@S_@Y}@Qw@s@mFMuAOcCKw@kD_M]iAy@uBmBqEcCwEe@gA[eAqDeNyBuJgE}UuAkHi@eDUoBeBcX{@{KMiCEkFFaI?kGJyD@cAAaBOqECaBAoDCs@Ea@Se@YY}A{@{BaAmBiBFg@SqBKi@QgCXgAE[GqMKy@y@oA_@[c@iBUcBMqDHiFE_CY{AKaAGw@@wGAkAEk@_@}B?Ma@w@SIDkB?c@IcDIwK@iGEkAUsA[kA{AcFgBmGa@cBw@yDSs@{CcIs@gBgHaMc@gAKOpAsCM_@xA{DKOAMBoDIsCEm@}@}Ho@cBMCp@aBt@m@Lk@tA_EqAgECFe@oAo@uADEQY@_@HKJEJMBIPsBFyAKmAWuBc@iBTQGO?We@iL?OAAAGSC}@}@dAqDPoCAs@I_AFGPkA@cAA{AeBIi@J', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.05488806655868,-3.19227192631990], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

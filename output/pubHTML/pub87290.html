@@ -126,13 +126,13 @@ var thispub = 87290;var pubaddress = "Botley Mills, Mill Hill";var pubname = "
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87290;var pubaddress = "Botley Mills, Mill Hill";var pubname = "
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="m8fi69cef4h2co8iild7u58f72" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="vc2i18tejq87p5c2s4sp56nh51" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87290;var pubaddress = "Botley Mills, Mill Hill";var pubname = "
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -262,7 +262,7 @@ Open now till 11pm tonight the hidden tap Botley mills botley why not join us fo
 <p>Brewery tap for the Botley Brewery. Limited opening hours as you would expect!</p>
 <p class="Reviewer">On 24<sup>th</sup> December 2018 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 783 recommendations about 755 pubs]</span></p>
+  <span class="leftspace">[User has posted 900 recommendations about 870 pubs]</span></p>
   </div>
 </div>
 
@@ -279,7 +279,7 @@ Open now till 11pm tonight the hidden tap Botley mills botley why not join us fo
           <ul id="Custom2">
 			<li>Official site of Hidden Tap - <a href="http://botleybreweryltd.com/hidden-tap" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">botleybreweryltd.com</a></li>
           </ul>
-<ul id="Custom2"><li class="fblink" id="767452713352181">Facebook - <a href="https://www.facebook.com/botleybreweryltd/" target="_blank" rel="nofollow">Botley Brewery</a></li></ul><ul id="Custom2"><li class="twitlink" id="995318467">Twitter - <a href="https://twitter.com/botleybrewery" target="_blank" rel="nofollow">Botleybreweryltd</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="767452713352181">Facebook - <a href="https://www.facebook.com/botleybreweryltd/" target="_blank" rel="nofollow">Botley Brewery</a></li></ul><ul id="Custom2"><li class="twitlink" id="995318467">Twitter - <a href="https://twitter.com/botleybrewery" target="_blank" rel="nofollow">Botleybreweryltd</a></li></ul><ul id="Custom2"><li class="wplink" id="HAS/00833">CAMRA WhatPub :: Hidden Tap - <a href="https://whatpub.com/pubs/HAS/00833/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -293,7 +293,7 @@ Open now till 11pm tonight the hidden tap Botley mills botley why not join us fo
 
 	var mymap = L.map('mapid').setView([50.91450440000000, -1.26786430000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -318,7 +318,39 @@ Open now till 11pm tonight the hidden tap Botley mills botley why not join us fo
 
 
 </script><div>
+<i class="fas fa-train"></i> Botley, 0.47 miles, 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Hedge End, 2.07 miles, 39 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Bursledon, 3.16 miles, 1 hr 1 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('_dwuHdsvF@mFO_H@cEHyDCaCMcBOmAUkAOe@k@qAaA_BuEmGM\\UYKVAE?@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('_dwuHdsvFApACp@i@xEI|A?tAHhF?hAGnAQ~A[~Ba@rAWl@IMGCQJq@jB?ZDf@g@pB{@k@qBc@QBIJKjAKNM@_@M]hBS@STkACSEo@g@cAPy@?IVMPMF}@lBKLBt@k@l@QxAFb@aA@sAs@gCzHsAlGiAdBkAz@iAxAaBtC{EdHsEdKcCpEqDjTOZc@p@gA~@oAdBw@tC{ApB}AhCq@n@gAe@w@F}@j@HPaEhFKW{@hAa@s@yB{CQM?GIUKAGFENMSIPS]HOBD@E', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('_dwuHdsvFApACp@]vCQpBpEd@|A?nAGVBDIJIxBKVBz@JjBh@rB~@~BzAfCrBlDvDv@b@zAf@`@PxFzEx@fABRAZ_@|BE|@@p@|@Pz@\\NJHNNx@\\dAj@n@j@d@pAp@VHNv^H\\bBnEbFnJdClDd@z@Rr@l@hHBLhJtHHNHTl@~CJ~BLEJDDFD`@@`@Jt@Pd@RNVH~@AVJxAjA|@\\X?LNDArARK^BVZjAl@rBn@fBb@|AnDH`@IfAu@NKJSZURJXD`@Vj@El@m@jB{D\\ApBp@hFhC`C|AHLLHXfATZANzAd@PRBn@]xD`AhDb@dAZb@~DnEnHfOHOb@^Xx@N~@FhA?n@NVz@nCj@bA|@f@LCd@g@h@QXR', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([50.91450440000000,-1.26786430000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -334,15 +366,16 @@ Open now till 11pm tonight the hidden tap Botley mills botley why not join us fo
       </div></div>
       
 
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Car Park : <span id="fac11387290">Yes</span> <span id="discdetail11387290" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 September 2019 by Craig O</span></li><li>Micropub : <span id="fac12287290">Yes</span> <span id="discdetail12287290" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 September 2019 by Craig O</span></li><li>Real Ale : <span id="fac10187290">Yes</span> <span id="discdetail10187290" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 September 2019 by Craig O</span></li><li>Real Cider : <span id="fac11987290">Yes</span> <span id="discdetail11987290" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 September 2019 by Craig O</span></li></ul></span>
+  
+</div>
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>Closed</td></tr>
-<tr><td>Monday</td><td>12noon - 5pm</td></tr>
-<tr><td>Tuesday</td><td>12noon - 5pm</td></tr>
-<tr><td>Wednesday</td><td>12noon - 5pm</td></tr>
-<tr style="font-weight:bold"><td>Thursday</td><td>12noon - 5pm</td></tr>
-<tr><td>Friday</td><td>1pm - 6pm</td></tr>
-<tr><td>Saturday</td><td>11am - 2pm</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>

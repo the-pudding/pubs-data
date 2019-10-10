@@ -126,13 +126,13 @@ var thispub = 64248;var pubaddress = "11a High Street";var pubname = "Cafe Rou
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 64248;var pubaddress = "11a High Street";var pubname = "Cafe Rou
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="6s572sfvhvg6hlpgu4g4cg3p30" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="fki4l8scrntjlset50sbflge14" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 64248;var pubaddress = "11a High Street";var pubname = "Cafe Rou
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -246,12 +246,14 @@ var thispub = 64248;var pubaddress = "11a High Street";var pubname = "Cafe Rou
   <h2>Reviews of Cafe Rouge  <span class="h2note">(Average Rating: <span id="averagerating"><b>1</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
   <div id="newreview"></div>
   <div class="hline"></div>
-  <div class="indreview"><div id="review133025" class="reviewdiv">
+  <div class="indreview"><div id="review133025" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
 <h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Komakino">Komakino .</a> left this review about Cafe Rouge</h6>
-<p>As described below, a chain French-style cafe/restaurant which follows a similar layout to other outlets throughout the country (the name translates as &#039;Red Cafe&#039;). No real ale - and why would there be? Stella Artois on draught and a few bottles in the fridge, including BrewDog Punk IPA and Estrella Galicia which I went for (&pound;4.95 for the privilege). The shtick is to sit at a set-out-for-dining table and hope to get a be-aproned serving staffer&#039;s attention. Quite why you&#039;d want to go through this rigmarole when there are proper pub options in this market town beats me, but at least you&#039;ve been warned.</p>
+<p class="old">As described below, a chain French-style cafe/restaurant which follows a similar layout to other outlets throughout the country (the name translates as &#039;Red Cafe&#039;). No real ale - and why would there be? Stella Artois on draught and a few bottles in the fridge, including BrewDog Punk IPA and Estrella Galicia which I went for (&pound;4.95 for the privilege). The shtick is to sit at a set-out-for-dining table and hope to get a be-aproned serving staffer&#039;s attention. Quite why you&#039;d want to go through this rigmarole when there are proper pub options in this market town beats me, but at least you&#039;ve been warned.</p>
 <p class="Reviewer">On 16<sup>th</sup> September 2018 
   - rating: <b>1</b><br />
-  <span class="leftspace">[User has posted 940 recommendations about 940 pubs]</span></p>
+  <span class="leftspace">[User has posted 955 recommendations about 955 pubs]</span></p>
   </div>
 </div><hr />
 <div class="indreview"><div id="review17987" class="reviewdiv old">
@@ -289,7 +291,7 @@ var thispub = 64248;var pubaddress = "11a High Street";var pubname = "Cafe Rou
 
 	var mymap = L.map('mapid').setView([51.94853698489875, -0.27846689073795], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -372,14 +374,7 @@ var thispub = 64248;var pubaddress = "11a High Street";var pubname = "Cafe Rou
   
 </div>
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>9am - 10:30pm</td></tr>
-<tr><td>Monday</td><td>8am - 10pm</td></tr>
-<tr><td>Tuesday</td><td>8am - 10pm</td></tr>
-<tr style="font-weight:bold"><td>Wednesday</td><td>8am - 10pm</td></tr>
-<tr><td>Thursday</td><td>8am - 10pm</td></tr>
-<tr><td>Friday</td><td>8am - 10:30pm</td></tr>
-<tr><td>Saturday</td><td>8am - 10:30pm</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>
@@ -392,7 +387,7 @@ var thispub = 64248;var pubaddress = "11a High Street";var pubname = "Cafe Rou
                     <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 2 reviewer(s)" title="Pub has average rating of 5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/59383/" class="List1">Pitcher &amp; Piano</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 31 picture(s)" title="Pub has 31 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14642/" class="List1">The Sun</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 23 picture(s)" title="Pub has 23 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 4 reviewer(s)" title="Pub has average rating of 5.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14609/" class="List1">The George</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82811/" class="List1">Angel Vaults Inn (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 4 reviewer(s)" title="Pub has average rating of 6.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82811/" class="List1">Angel Vaults Inn (JD Wetherspoon)</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2 from 1 reviewer(s)" title="Pub has average rating of 2 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82112/" class="List1">The Snug</a></li>
 
           </ul>

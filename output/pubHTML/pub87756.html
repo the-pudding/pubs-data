@@ -126,13 +126,13 @@ var thispub = 87756;var pubaddress = "24 Birley Street";var pubname = "Compass
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87756;var pubaddress = "24 Birley Street";var pubname = "Compass
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="f6363u3387u1b6leo61ibdlsv1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="thr399otka7srpie29ad12p7h4" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87756;var pubaddress = "24 Birley Street";var pubname = "Compass
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87756;var pubaddress = "24 Birley Street";var pubname = "Compass
   <div id="displayedimage">
 <a href="/pubpictures/87756/" class="indisplay"><img src="/images/display/87501_88000/87756_5b5c4fa9.jpg?w=2" alt="Picture of Compass" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
   Submitted on Wednesday, 22<sup>nd</sup> May 2019<br />
-  With picture contributions to 24007 other pubs<br />
+  With picture contributions to 24825 other pubs<br />
 <a href="/pubpictures/87756/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -251,7 +251,7 @@ var thispub = 87756;var pubaddress = "24 Birley Street";var pubname = "Compass
 <p>A well positioned cafe bar with a couple of beer taps and outside seating</p>
 <p class="Reviewer">On 22<sup>nd</sup> May 2019 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 1994 recommendations about 1960 pubs]</span></p>
+  <span class="leftspace">[User has posted 2072 recommendations about 2036 pubs]</span></p>
   </div>
 </div>
 
@@ -282,7 +282,7 @@ var thispub = 87756;var pubaddress = "24 Birley Street";var pubname = "Compass
 
 	var mymap = L.map('mapid').setView([53.81814590000000, -3.05279330000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -307,7 +307,39 @@ var thispub = 87756;var pubaddress = "24 Birley Street";var pubname = "Compass
 
 
 </script><div>
+<i class="fas fa-train"></i> Blackpool North, 0.44 miles, 8 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Blackpool South, 1.7 miles, 32 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Layton (Lancs), 1.89 miles, 36 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('qjngI~fsQ@mEu@d@w@\\UR}A~@sBrAmA`AeAoFaDaNXW[w@FOAg@EM_Ac@IM', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('qjngI~fsQExGJCN~C|CYbBTfA?lEiAb@LL?p@QAAl@WNSVw@BAFQn@uA~CkHJLJp@NVFFt@_BLK~Dm@dA]DPHB`@ErC{@HUhBg@vASBk@h@GRj@xC]|@s@bAKZGd@W\\d@FKnB[pAMj@i@Na@DYDCDO@Ir@BlAKf@Jd@@`@Kj@c@r@Af@E|@SGa@z@w@Rm@r@QRWn@@ZOPAVBPAhAk@NCb@FPCnAa@L?`BXLH`@EZOb@m@NGj@@ZSRYL_@H]JsAPEb@jNRQBBV]`@A', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('qjngI~fsQ@mE`@WJQJk@@[QeEAwCBuAMsBa@sA}@Ne@iBg@l@_JaXcAcDSs@AKsAjAQ@oB}@IOCFmHqUq@Jo@mKY@IEqAiDCg@OGmBmFWXwAoEw@_BeCdDiAqKMk@]kA_AaAuAoAq@a@sC_AqCCiBBe@DqB^u@H[Ek@YSQW[Wg@UV[NQDeADwBZiANeBJe@?MG[EABqAiC@CQ[M\\PX@CEI', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.81814590000000,-3.05279330000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

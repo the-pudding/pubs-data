@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Chequers Inn pub in Ledsham (near Leeds), West Yorkshire, LS25 5LP : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Chequers Inn" />
+  <meta name="keywords" content="The Chequers Inn, Claypit Lane, Ledsham, Leeds, West Yorkshire, , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Chequers Inn in Ledsham" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/42501_43000/42647_b43be5e552d5b3be961ab0e7e5362e5c.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/42647/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="53.76204431285496" />
+<meta property="og:longitude" content="-1.31074190139771" />
+<meta property="og:street-address" content="Claypit Lane" />
+<meta property="og:locality" content="Ledsham" />
+<meta property="og:region" content="West Yorkshire" />
+<meta property="og:postal-code" content="LS25 5LP" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Chequers Inn in Ledsham? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Chequers Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/42647/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Chequers Inn in Ledsham" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Chequers Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/42501_43000/42647_b43be5e552d5b3be961ab0e7e5362e5c.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/42647/" />
+<meta name="geo.position" content="53.76204431285496;-1.31074190139771" />
+<meta name="geo.placename" content="The Chequers Inn in Ledsham" />
+<meta name="geo.region" content="UK" />
+<title>The Chequers Inn in Ledsham (near Leeds) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":42647},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(42647);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 42647;var pubaddress = "Claypit Lane";var pubname = "The Chequers Inn";var pubpostcode = "LS25 5LP";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/west-yorkshire/" title="Pubs Galore : West Yorkshire Page">West Yorkshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/leeds/west-yorkshire/" title="Pubs Galore : Leeds Page">Leeds</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/ledsham/west-yorkshire/" title="Pubs Galore : Ledsham Page">Ledsham</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Chequers Inn Page">The Chequers Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="tpmkcclr6jjcsq8tql7svnbv37" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/42647/" class="indisplay"><img src="/images/display/42501_43000/42647_b43be5e552d5b3be961ab0e7e5362e5c.jpg?w=2" alt="Picture of The Chequers Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=bighair" class="indisplay">James Joines</a><br />
+  Submitted on Tuesday, 22<sup>nd</sup> April 2008<br />
+  With picture contributions to 1645 other pubs<br />
+<a href="/pubpictures/42647/" class="smallbutton">View all this pub's pictures</a>
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/42647/">Pub map</a><br /><a href="/pubreviews/42647/">Pub reviews (3)</a><br /><a href="/pubpictures/42647/">Pub pictures (1)</a><br /><a href="/core/pubaudit.php?id=42647" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Chequers Inn, Leeds</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Claypit Lane</span><br />
+
+<span class="town">Ledsham</span><br />
+<span class="postaltown">Postal town: Leeds</span><br />
+<span class="postcode">LS25 5LP</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01977683135</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/ledsham/west-yorkshire/">Ledsham</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Chequers Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>8</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review88606" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Wittenden">. Wittenden</a> left this review about The Chequers Inn</h6>
+<p class="old">A stone built village pub in a well looked - after settlement a few hundred yards from the A1. An L shaped building, the bar is reached from the car park by way of a paved area fitted out with tables and umbrellas and the paraphernalia of barbecue cookery.<br />
+A central bar serves four rooms and snugs radiating from it: mainly set up for meals when we visited on a mild October Saturday lunchtime,though with a comfortable wet trade as well. As Ale and Hearty commented, the food was of high quality,though fairly expensive , even by southeast standards. Having said that, we were very impressed by both the meal and the service.<br />
+A Good Beer Guide regular,both the beers that I tried-Ledsham Sessions and Green Piece, both from Brown Cow Brewery of Selby were in excellent condition.Alongside these were a couple of stalwarts from Yorkshire family brewers, and  Yorkshire Gold from the nearby Leeds Brewery.<br />
+We sat in the Top Snug, overlooking the village street, and overlooked by a print of famous Yorkshire men, both alive and dead.  A visit to The Chequers had been on the cards for some time, but the policy of Sunday closing, (while welcome to a traditionalist such as I) , was a hindrance. However, the good people of the Big House have recently relented, and the pub now opens seven days a week.<br />
+We certainly enjoyed our visit, and hope to return.</p>
+<p class="Reviewer">On 3<sup>rd</sup> November 2014 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 234 recommendations about 233 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review60552" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=aleandhearty">aleand hearty</a> left this review about The Chequers Inn</h6>
+<p class="old">A superb example of a traditional, English village pub. There are four small rooms with exposed beams, wooden panelling and real fires. All of them are slightly dark and envelop you with a wonderful, almost conspiratorial cosiness.<br />
+<br />
+It&rsquo;s quite unusual, in having a six-day licence. One hundred and seventy years ago the lady of the manor, who owned the pub, closed it on Sundays, as she was unhappy with her employees&rsquo; over indulgence on the Sabbath! The same family still own the pub and they have maintained the tradition down the years.<br />
+<br />
+Five real ales on our visit: Timothy Taylor&rsquo;s &lsquo;Landlord&rsquo;, Leeds Best, John Smith&rsquo;s Cask, Theakson&rsquo;s Best and Brown Cow &lsquo;Jubilee Bitter&rsquo; (which I suspect was a re-badge, although I believe the bar does have a permanent Brown Cow pump.) In the spirit of the celebrations, I opted for the latter, which I found to be in good nick, if a little cold for my palate. (A view shared by my wife, with her Leeds Best.) <br />
+<br />
+The Chequers is famous for its food and offers high-end bar snacks as well as a full restaurant service. Quality is good, but priced accordingly.<br />
+<br />
+My only niggle, is that on more than one occasion, the service has been a little cool. Our visit on this occasion coincided with a wedding party, so I&rsquo;ll cut them a little slack there. However, even when visiting at quieter times, bar staff have been a little off-hand. <br />
+<br />
+Has a very comfortable outdoor drinking area, with seating on several levels.<br />
+<br />
+Although very rural in feel, it is actually only half a mile or so from the A1. It would make a great &lsquo;pit stop&rsquo;, if you were on a long journey. Handy for the RSPB reserve, at nearby Fairburn Ings.<br />
+<br />
+Overall, highly recommended.</p>
+<p class="Reviewer">On 5<sup>th</sup> June 2012 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 329 recommendations about 316 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review7309" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=bighair">James Joines</a> left this review about The Chequers Inn</h6>
+<p class="old">A fine busy village pub with 3 rooms and a seperate restaurnt. Upto 4 Real ales available including &#039;Brown Cow&#039;. Bar meals available (large portions)on our visit at lunchtime pub was heaving with dinners.<br />
+Large terrace and garden for smoking and drinking.<br />
+Large car park at the side.<br />
+Regular in the GBG.</p>
+<p class="Reviewer">On 22<sup>nd</sup> April 2008 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 841 recommendations about 835 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Chequers Inn</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Chequers Inn - <a href="http://www.thechequersinn.com" title="Submitted by:- aleand hearty" target="_blank">www.thechequersinn.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="171869999565800">Facebook - <a href="https://www.facebook.com/ChequersLedsham/" target="_blank" rel="nofollow">The Chequers Inn</a></li></ul><ul id="Custom2"><li class="wplink" id="LEE/107">CAMRA WhatPub :: The Chequers Inn - <a href="https://whatpub.com/pubs/LEE/107/" target="_blank">whatpub.com</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/42647/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=aleandhearty">aleand hearty</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([53.76204431285496, -1.31074190139771], 16);
+
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([53.76204431285496, -1.31074190139771]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Micklefield, 2.45 miles, 47 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> South Milford, 3.88 miles, 1 hr 14 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Castleford, 4.07 miles, 1 hr 18 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('elcgIh}~Fa@MAFmA[[H}FdCuAHgJ]kAW{A}@iLiJ{@YuKsA{@EY\\a@dAqA~EYLa@IsQkSqGzNaCrGIxHSxHAbC\\dCWRu@PuAPeADwATa@Xc@Kg@d@Yl@w@zAiCdI_@vAg@tAq@|A_AtAiArAiEtG{AdCi@F{BfDcBvCqAlD}AfD{B~Ck@^kB~@gH`ADqAXFDCA\\', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('elcgIh}~FJsA]@PcAXkC@qAEKk@MGKCKCkAAqMB}APgBDcA?]Ci@[kCAmABeBNcE?k@GoAc@{DEeABu@h@mCF]F}@DyAHuG@uCEoAKoAk@kEC{@?a@FcAP{@Xs@^g@LmEMcAH[Dg@Ws@GYMQOIQg@_@R@{@MmCm@kH_@aAk@_@AWPIHKEa@[oBYyAm@S[WUc@SeAKUSI_@Ee@BeDnAiDdBMPEVBf@H\\DdAGYk@oAKu@IuC?o@Fk@`@u@TiCAk@u@_M[_MCyAKwC_@_FIeAIkCWcDUiB[iBQw@I_B]sKUcPg@_Hc@oIEsC{AJqDf@sC~AuClAe@\\gCdA}AZsAOwBqAIgDM}Ao@_CyHwSc@cA]e@MRoCrA[cBe@eBc@mBgAyFkAuCSu@WaBIoCg@eG@oDA}@McAgCsHm@{As@oAW{@O{@IyAEqEi@FeCp@oBn@{D|Ae@jDIfAA?OxC', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('elcgIh}~Fa@MEn@@^BVj@t@hAt@`FxBPd@|A`MLj@Tb@jB|Ah@bA^vAxArLrC_IvAgAh@Ez@@|@Jx@b@zGbEtCk@p@@pEpCx@TvAtAhAl@n@j@hHlHvJjJz@|@~@p@z@Rv@IbBq@|AMvCm@rNj^jBdPfLhQ`CvWtIfSr@rADDHTR`A@t@?lABh@JTVLFA^{AFIJDNXh@bBn@fAh@tAd@x@JXZ\\x@lEX|@`@jB|EpVH|@DzAbEnTFJPXd@lBvCsG`@y@t@uAd@m@vAuAL`AN`@|AsABQZ]`Aq@DVh@rGT?\\k@\\[JGf@Ab@Nb@@ZOZ_@Zu@VqAD_BJdAIzAPDpAc@~C{@|@~F~@c@FV^zCFE`BQ`@XXp@`AfHLERfBVDScB', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.76204431285496,-1.31074190139771], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=42647">View all updates for The Chequers Inn, Ledsham</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        19<span class="sup">th</span> Oct 2015, 17:30
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=aleandhearty">aleand hearty</a> approved
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        19<span class="sup">th</span> Oct 2015, 17:30
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=aleandhearty">aleand hearty</a>
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Beer Garden : <span id="fac11442647">Yes</span> <span id="discdetail11442647" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 September 2015 by . Wittenden</span></li><li>Car Park : <span id="fac11342647">Yes</span> <span id="discdetail11342647" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 September 2015 by . Wittenden</span></li><li>Dog Friendly : <span id="fac10542647">Yes</span> <span id="discdetail10542647" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 September 2015 by . Wittenden</span></li><li>Hot Food : <span id="fac10342647">Yes</span> <span id="discdetail10342647" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Real Ale : <span id="fac10142647">Yes</span> <span id="discdetail10142647" class="discdetail" style=""></span>  <span class="Reviewer">last updated 05 June 2012 by hondo .</span></li><li>WiFi : <span id="fac11542647">Yes</span> <span id="discdetail11542647" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 September 2015 by . Wittenden</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

@@ -126,13 +126,13 @@ var thispub = 87645;var pubaddress = "Signposted from A861";var pubname = "Gle
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87645;var pubaddress = "Signposted from A861";var pubname = "Gle
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="dufgb2s6mmj805l0ov42hvd3q3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="5cubd1p8dfnlnaskdknmu3ibo1" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87645;var pubaddress = "Signposted from A861";var pubname = "Gle
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul id="Custom2">
 			<li>Official site of Glenuig Inn - <a href="http://glenuig.com/" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">glenuig.com</a></li>
           </ul>
-<ul id="Custom2"><li class="fblink" id="344682018886915">Facebook - <a href="https://www.facebook.com/GlenuigInn/" target="_blank" rel="nofollow">Glenuig Inn</a></li></ul><ul id="Custom2"><li class="twitlink" id="407880832">Twitter - <a href="https://twitter.com/GlenuigInn" target="_blank" rel="nofollow">Glenuig Inn</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="344682018886915">Facebook - <a href="https://www.facebook.com/GlenuigInn/" target="_blank" rel="nofollow">Glenuig Inn</a></li></ul><ul id="Custom2"><li class="twitlink" id="407880832">Twitter - <a href="https://twitter.com/GlenuigInn" target="_blank" rel="nofollow">Glenuig Inn</a></li></ul><ul id="Custom2"><li class="wplink" id="INV/96">CAMRA WhatPub :: Glenuig Inn - <a href="https://whatpub.com/pubs/INV/96/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -288,7 +288,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([56.82880313492952, -5.81845626908114], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -313,7 +313,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Lochailort, 8.29 miles, 2 hr 39 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Beasdale, 13.16 miles, 4 hr 14 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Arisaig, 16.96 miles, 5 hr 27 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ekzyI`kob@t@u@rAiD^uBDa@Cs@gB`@qA@{@Um@_@qCwC_Au@yAu@_E}Au@QqAGgCFk@Cq@_@m@w@e@y@aD}Kc@_A_@a@cEoBqAw@}@gAa@y@a@{AUyAQ{AEgBBsCJ{DXyEvBqQHwAI_PDkAHiAjB}LLiBBoAA}Cw@mQCaCBeCVcH?kBIgAUsB_BqIm@oCeCoGiB{Fk@sBWsAMwA?iBJcDJgFCeAYwIAsBLeKEyAaBmP]}Cc@_Cm@aBk@aAsAeBgA}@iAyAq@i@i@eAYs@a@qA[kBOoBEmBBsBjCmV@kBEuA[cCqE{Om@}B[qBKkBAqBFeBrAsMHmADkDB_JPeDbCaZ@aBGkDcDsd@u@iLG_CCkR{@yHIkC?iN]sGEwBEaKSkDc@kD]_BeAmDsCsGs@}BsAqGk@mBo@yAo@aAkCiDk@gAsBqEg@u@o@k@wEoBcHcC}@MsGe@cAWw@g@{@{@wC_EaA}@_CeAmJoDwA_@yAO{ACwBPqDr@eA?s@I}@Y{@e@q@o@u@cAq@kAwB_Gi@_B_@_BiAcHu@{DaBiGo@wBw@cBq@iAaAkAgA_Ay@a@y@Y}AY}@[q@g@a@i@c@y@]_A{BoHUeAO_Ag@gGO_CGeB?sAF}ALgAvAuHXoBJiB?sAGyAIaAMgAeAcFgDoUwAqHgBgHeAmFcAiHa@cB]eATs@MqAGqAOq@]eAUuA}FkAkBqD_@aCkDoE}BoDmB_AcA]gEyBoE_FQCM|@MFkAAi@Ka@?q@HeBSk@y@gAw@cCmAQNo@M', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ekzyI`kob@t@u@rAiD^uBDa@Cs@gB`@qA@{@Um@_@qCwC_Au@yAu@_E}Au@QqAGgCFk@Cq@_@m@w@e@y@aD}Kc@_A_@a@cEoBqAw@}@gAa@y@a@{AUyAQ{AEgBBsCJ{DXyEvBqQHwAI_PDkAHiAjB}LLiBBoAA}Cw@mQCaCBeCVcH?kBIgAUsB_BqIm@oCeCoGiB{Fk@sBWsAMwA?iBJcDJgFCeAYwIAsBLeKEyAaBmP]}Cc@_Cm@aBk@aAsAeBgA}@iAyAq@i@i@eAYs@a@qA[kBOoBEmBBsBjCmV@kBEuA[cCqE{Om@}B[qBKkBAqBFeBrAsMHmADkDB_JPeDbCaZ@aBGkDcDsd@u@iLG_CCkR{@yHIkC?iN]sGEwBEaKSkDc@kD]_BeAmDsCsGs@}BsAqGk@mBo@yAo@aAkCiDk@gAsBqEg@u@o@k@wEoBcHcC}@MsGe@cAWw@g@{@{@wC_EaA}@_CeAmJoDwA_@yAO{ACwBPqDr@eA?s@I}@Y{@e@q@o@u@cAq@kAwB_Gi@_B_@_BiAcHu@{DaBiGo@wBw@cBq@iAaAkAgA_Ay@a@y@Y}AY}@[q@g@a@i@c@y@]_A{BoHUeAO_Ag@gGO_CGeB?sAF}ALgAvAuHXoBJiB?sAGyAIaAMgAeAcFgDoUwAqHgBgHeAmFcAiHa@cB]eAYu@wCaF{@qAe@g@k@c@_Be@wB_@i@SeE_D}@[iB_@gAc@i@c@[c@_@u@gCqG_@_@YG_@NqApBj@vB^zBXjCPtBF`B@bB?dBE|AGxAWvCa@pCe@xBe@zAkF`Na@tAi@|B]jCUzBIbCGfD_@xs@GvBSrCGxAOvAOv@Qx@e@bAmJta@e@|Au@hBwIjOo@tAc@lAYlAUnA[rEYpGUbCUvAYdA_@~@]n@Yp@[f@c@\\o@TcBDwHjAaA^q@h@o@r@g@t@e@dAe@rA[pAUpAMjAOfCoAjXUnD]dDsBtJWjBMbBEz@AjABlBDpANnBhA~JLxABdBAvCi@nL[fFI|@MxEGdAOdA]`Aa@z@y@lA{CpCmDpCaAbAu@jAe@z@]`A[nA]lBMbBKzAAhBJjD\\`EvAtMZdDZxFf@tQXhBv@nJ`AlEdCpIJ~DrApHRnE[hD_@jBi@jAq@z@i@d@sAHq@Wo@O{A{By@iCMyAuAoCm@w@c@W]Go@?i@H[NkAx@e@Ji@E}CqAs@s@Ue@Qc@wAaFQc@[i@{@y@c@S_@Em@LWPQR]p@W|@Gd@WfDAbABl@Hp@bE~VRvAp@tIPtCTvK', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ekzyI`kob@t@u@rAiD^uBDa@Cs@gB`@qA@{@Um@_@qCwC_Au@yAu@_E}Au@QqAGgCFk@Cq@_@m@w@e@y@aD}Kc@_A_@a@cEoBqAw@}@gAa@y@a@{AUyAQ{AEgBBsCJ{DXyEvBqQHwAI_PDkAHiAjB}LLiBBoAA}Cw@mQCaCBeCVcH?kBIgAUsB_BqIm@oCeCoGiB{Fk@sBWsAMwA?iBJcDJgFCeAYwIAsBLeKEyAaBmP]}Cc@_Cm@aBk@aAsAeBgA}@iAyAq@i@i@eAYs@a@qA[kBOoBEmBBsBjCmV@kBEuA[cCqE{Om@}B[qBKkBAqBFeBrAsMHmADkDB_JPeDbCaZ@aBGkDcDsd@u@iLG_CCkR{@yHIkC?iN]sGEwBEaKSkDc@kD]_BeAmDsCsGs@}BsAqGk@mBo@yAo@aAkCiDk@gAsBqEg@u@o@k@wEoBcHcC}@MsGe@cAWw@g@{@{@wC_EaA}@_CeAmJoDwA_@yAO{ACwBPqDr@eA?s@I}@Y{@e@q@o@u@cAq@kAwB_Gi@_B_@_BiAcHu@{DaBiGo@wBw@cBq@iAaAkAgA_Ay@a@y@Y}AY}@[q@g@a@i@c@y@]_A{BoHUeAO_Ag@gGO_CGeB?sAF}ALgAvAuHXoBJiB?sAGyAIaAMgAeAcFgDoUwAqHgBgHeAmFcAiHa@cB]eAYu@wCaF{@qAe@g@k@c@_Be@wB_@i@SeE_D}@[iB_@gAc@i@c@[c@_@u@gCqG_@_@YG_@NqApBj@vB^zBXjCPtBF`B@bB?dBE|AGxAWvCa@pCe@xBe@zAkF`Na@tAi@|B]jCUzBIbCGfD_@xs@GvBSrCGxAOvAOv@Qx@e@bAmJta@e@|Au@hBwIjOo@tAc@lAYlAUnA[rEYpGUbCUvAYdA_@~@]n@Yp@[f@c@\\o@TcBDwHjAaA^q@h@o@r@g@t@e@dAe@rA[pAUpAMjAOfCoAjXUnD]dDsBtJWjBMbBEz@AjABlBDpANnBhA~JLxABdBAvCi@nL[fFI|@MxEGdAOdA]`Aa@z@y@lA{CpCmDpCaAbAu@jAe@z@]`A[nA]lBMbBKzAAhBJjD\\`EvAtMZdDZxFf@tQXhBv@nJ`AlEdCpIJ~DrApHRnE[hD_@jBi@jAq@z@i@d@sAHq@Wo@O{A{By@iCMyAuAoCm@w@c@W]Go@?i@H[NkAx@e@Ji@E}CqAs@s@Ue@Qc@wAaFQc@[i@UWe@a@c@S_@Em@LWPQR]p@W|@Gd@WfDAbABl@Hp@bE~VRvAp@tIPtCh@rXA~AMtD@pBHv@Tx@Lt@PbIl@pGXjLn@fP^|Bp@vNFxDBvDCxFGxB]vBaArEq@zDKX]jBMnBGzDVzCpA`FZ|AdAbIj@pGJjGKvG@f@YhFQvD[fEs@lEmBzFsDjMaAdEcClIcCjJqJfd@oDtLuFpSsBxFqCxDaBt@sC`@_Ea@sGwDcBQu@ZYPg@n@m@bBk@tFNpE|@jHnAdG|@|DtAbKDr@\\jB^nINtGyAvWMlCMG}@~M_@|CcAs@q@iAu@mC]kDLqD?y@Eg@GGGjC', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([56.82880313492952,-5.81845626908114], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -332,14 +364,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
       
 
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>4pm - 9pm</td></tr>
-<tr><td>Monday</td><td>4pm - 9pm</td></tr>
-<tr><td>Tuesday</td><td>4pm - 9pm</td></tr>
-<tr style="font-weight:bold"><td>Wednesday</td><td>4pm - 9pm</td></tr>
-<tr><td>Thursday</td><td>4pm - 9pm</td></tr>
-<tr><td>Friday</td><td>4pm - 9pm</td></tr>
-<tr><td>Saturday</td><td>4pm - 9pm</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>

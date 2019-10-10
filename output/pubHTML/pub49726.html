@@ -126,13 +126,13 @@ var thispub = 49726;var pubaddress = "69  Hutcheson Street";var pubname = "Pav
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 49726;var pubaddress = "69  Hutcheson Street";var pubname = "Pav
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="apnp860roucs6nfmdksud1vvo0" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="5miitagu6hg9flm5vko3rph9g6" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 49726;var pubaddress = "69  Hutcheson Street";var pubname = "Pav
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 49726;var pubaddress = "69  Hutcheson Street";var pubname = "Pav
   <div id="displayedimage">
 <a href="/pubpictures/49726/" class="indisplay"><img src="/images/display/49501_50000/49726_ef2d68d0.jpg?w=2" alt="Picture of Pavement" /></a><br />  Image posted by <a href="/userinfo.php?name=Barty19" class="indisplay">Alastair  Barter</a><br />
   Submitted on Tuesday, 19<sup>th</sup> February 2019<br />
-  With picture contributions to 1103 other pubs<br />
+  With picture contributions to 1199 other pubs<br />
 <a href="/pubpictures/49726/" class="smallbutton">View all this pub's pictures</a> (7 more images)
  
   
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([55.85889909239235, -4.24815530919273], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Argyle Street, 0.23 miles, 4 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Glasgow Queen Street, 0.4 miles, 7 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> High Street (Glasgow), 0.44 miles, 8 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('}||sIxt|XlHhBu@|Kr@TBSi@OGV', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('}||sIxt|XiD{@Ev@{A_@KhBm@OEh@}C}@k@xJaAWC\\aB_@AVA?MnCCAAJB?GnA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('}||sIxt|XiD{@f@_LVyDDwCTsDc@s@oBoC_AcAR}BvA{AP[@a@@FX]b@y@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([55.85889909239235,-4.24815530919273], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

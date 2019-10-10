@@ -126,13 +126,13 @@ var thispub = 87378;var pubaddress = "91-92 Queens Road";var pubname = "The Dr
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87378;var pubaddress = "91-92 Queens Road";var pubname = "The Dr
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="urngrnmcc0p33tnonohl8avh84" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="skrjo5dg5gu64u19d7g0oj7cl7" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87378;var pubaddress = "91-92 Queens Road";var pubname = "The Dr
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87378;var pubaddress = "91-92 Queens Road";var pubname = "The Dr
   <div id="displayedimage">
 <a href="/pubpictures/87378/" class="indisplay"><img src="/images/display/87001_87500/87378_48f17066d0e6baa8e97928cfba871b5f.jpg?w=2" alt="Picture of The Drift In Cafe Bar" /></a><br />  Image posted by <a href="/userinfo.php?name=Pangolin" class="indisplay">Graham Coombs</a><br />
   Submitted on Monday, 21<sup>st</sup> January 2019<br />
-  With picture contributions to 2588 other pubs<br />
+  With picture contributions to 2906 other pubs<br />
 <a href="/pubpictures/87378/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -251,7 +251,7 @@ var thispub = 87378;var pubaddress = "91-92 Queens Road";var pubname = "The Dr
 <p>Fairly spartan caf&eacute; bar next door to the Fountain. It has wooden benches and regular live music, with 3 Legs beers on keg plus various bottles.</p>
 <p class="Reviewer">On 21<sup>st</sup> January 2019 
   - rating: <b>5</b><br />
-  <span class="leftspace">[User has posted 1775 recommendations about 1734 pubs]</span></p>
+  <span class="leftspace">[User has posted 1965 recommendations about 1921 pubs]</span></p>
   </div>
 </div>
 
@@ -279,7 +279,7 @@ var thispub = 87378;var pubaddress = "91-92 Queens Road";var pubname = "The Dr
 
 	var mymap = L.map('mapid').setView([50.85970862820521, 0.58397009140162], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -304,7 +304,39 @@ var thispub = 87378;var pubaddress = "91-92 Queens Road";var pubname = "The Dr
 
 
 </script><div>
+<i class="fas fa-train"></i> Hastings, 0.49 miles, 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Ore, 0.76 miles, 14 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> St Leonards Warrior Square, 1.33 miles, 25 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('epluHs`qBlDfCCb@Nl@b@bCc@~A|@~@JrBTd@IZVXrDzFBNOf@CZ\\t@H\\Fn@U@EFEpAEjCAZGl@SfAsAaAG[', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('epluHs`qBWQ`@_ERkAwBwAeB{@mBa@_@Yg@UaA@{CfA]JM?o@YKKGOCSMCm@DmA{@y@{AeAiCcAoCo@z@g@^o@PIeDI?m@gAYGQBKNCZoC_MHM', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('epluHs`qBlDfCCb@Nl@b@bCc@~A|@~@JrBTd@IZVXrDzFBNOf@CZ\\t@H\\Fn@JpE@fCMvCCvCVhEl@vEE`@M^Or@Kp@Ep@@`GKPARdAjBt@bB}B|EoCdI\\pBp@BzAp@aApNl@IhCk@dA`NTHDrARW?K', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([50.85970862820521,0.58397009140162], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -330,14 +362,7 @@ var thispub = 87378;var pubaddress = "91-92 Queens Road";var pubname = "The Dr
   
 </div>
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 6pm</td></tr>
-<tr><td>Monday</td><td>Closed</td></tr>
-<tr><td>Tuesday</td><td>10:30am - 6pm</td></tr>
-<tr style="font-weight:bold"><td>Wednesday</td><td>10:30am - 6pm</td></tr>
-<tr><td>Thursday</td><td>10:30am - 6pm</td></tr>
-<tr><td>Friday</td><td>10:30am - 11:30pm</td></tr>
-<tr><td>Saturday</td><td>10:30am - 11:30pm</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>

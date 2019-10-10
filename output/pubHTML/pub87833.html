@@ -126,13 +126,13 @@ var thispub = 87833;var pubaddress = "29 Marina";var pubname = "Rocksalt-on-Se
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87833;var pubaddress = "29 Marina";var pubname = "Rocksalt-on-Se
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="v0qpddj3fjmd5me31pejgka8u0" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="4aotk34n5hj0i7knqau3mo9ka1" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87833;var pubaddress = "29 Marina";var pubname = "Rocksalt-on-Se
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87833;var pubaddress = "29 Marina";var pubname = "Rocksalt-on-Se
   <div id="displayedimage">
 <a href="/pubpictures/87833/" class="indisplay"><img src="/images/display/87501_88000/87833_c36335f7.jpg?w=2" alt="Picture of Rocksalt-on-Sea" /></a><br />  Image posted by <a href="/userinfo.php?name=rpadam" class="indisplay">Just a quick pint, then I&#039;m off</a><br />
   Submitted on Monday, 10<sup>th</sup> June 2019<br />
-  With picture contributions to 5082 other pubs<br />
+  With picture contributions to 5595 other pubs<br />
 <a href="/pubpictures/87833/" class="smallbutton">View all this pub's pictures</a> (1 more image)
  
   
@@ -251,7 +251,7 @@ var thispub = 87833;var pubaddress = "29 Marina";var pubname = "Rocksalt-on-Se
 <p>Relaxed bar / brasserie (confusingly with some of the previous shop signage still in place) with plain dark furniture and a mix of decorative themes including nautical and breweriana.  Eight craft and standard keg beers on tap, but Long Man Best Bitter is also available on handpump.</p>
 <p class="Reviewer">On 9<sup>th</sup> June 2019 
   - rating: <b>6</b><br />
-  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  <span class="leftspace">[User has posted 5722 recommendations about 5722 pubs]</span></p>
   </div>
 </div>
 
@@ -282,7 +282,7 @@ var thispub = 87833;var pubaddress = "29 Marina";var pubname = "Rocksalt-on-Se
 
 	var mymap = L.map('mapid').setView([50.83800282963098, 0.47331258650820], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -307,7 +307,39 @@ var thispub = 87833;var pubaddress = "29 Marina";var pubname = "Rocksalt-on-Se
 
 
 </script><div>
+<i class="fas fa-train"></i> Bexhill, 0.5 miles, 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Collington, 0.89 miles, 17 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Cooden Beach, 2.23 miles, 43 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('khhuH}k{AZGH}B@uAGsBUgD}P{BMwDc@A@TFABx@JAF`CC@GyBI?NjE', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('khhuH}k{AZGAbCX??fGCHW@A`BFh@DH@NETGF@Ph@nGh@lFxA|[Yz@HXD\\B~CD|@R~BDzAJpA?V[p@]N]?SBYJo@BaBb@O@RlCiCd@?FwAb@PtB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('khhuH}k{AZGAbCzA?HCBI@DNJFL?h@?n@tAtMbEv`ART@NKV@PF?NzCVZZrEx@bJGpBJtLXbHJTRpLv@~MLtANbAh@~G`@fHn@`GHRf@rJLrIDNJJJ|JIPy@TThCLjCOj@e@|@{@~@SNbCbTHXt@`AR^Nj@d@nEATEJOFaB[?ZRpB', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([50.83800282963098,0.47331258650820], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -326,14 +358,7 @@ var thispub = 87833;var pubaddress = "29 Marina";var pubname = "Rocksalt-on-Se
       
 
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>10:30am - 8pm</td></tr>
-<tr><td>Monday</td><td>12noon - 11pm</td></tr>
-<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
-<tr style="font-weight:bold"><td>Wednesday</td><td>12noon - 11pm</td></tr>
-<tr><td>Thursday</td><td>12noon - 11pm</td></tr>
-<tr><td>Friday</td><td>12noon - 11pm</td></tr>
-<tr><td>Saturday</td><td>10am - 11pm</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>

@@ -126,13 +126,13 @@ var thispub = 87350;var pubaddress = "61 Heol y Pentre";var pubname = "Incline
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87350;var pubaddress = "61 Heol y Pentre";var pubname = "Incline
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="snkvqfr0ruvj2bhqpm1vfkq5s4" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="m2pfa0b7g068g85tq3iqrouo43" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87350;var pubaddress = "61 Heol y Pentre";var pubname = "Incline
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87350;var pubaddress = "61 Heol y Pentre";var pubname = "Incline
   <div id="displayedimage">
 <a href="/pubpictures/87350/" class="indisplay"><img src="/images/display/87001_87500/87350_16737331c56a8e4158245d0f6d65d8c5.jpg?w=2" alt="Picture of Incline Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=realalefan" class="indisplay">Paul Brett</a><br />
   Submitted on Friday, 11<sup>th</sup> January 2019<br />
-  With picture contributions to 1121 other pubs<br />
+  With picture contributions to 1128 other pubs<br />
 <a href="/pubpictures/87350/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -260,7 +260,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 <span class="h2ish" id="linksheading">External web links for Incline Inn</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="CAT/325">CAMRA WhatPub :: Incline Inn - <a href="https://whatpub.com/pubs/CAT/325/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([51.76188950000000, -4.20883600000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Kidwelly, 6.34 miles, 2 hr 2 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Llanelli, 7.55 miles, 2 hr 25 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Pembrey & Burry Port, 7.82 miles, 2 hr 30 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ow|zHt_uXQ|@wAnBYvAW`@[@[n@q@|@oCzCa@zAc@~@EDeAf@sA~AIpCGlG?|AgA|C]vDG~AQv@o@zAuA~B{AzBg@~@[lB}@fA[d@wAlGu@lC?hD]hAuAhD_A|Ao@lAYbAa@v@If@y@lCKf@kN`MuDzDf@`CJt@Ed@Id@Hl@DtBV`DLrCb@dCR`Bn@fDNfCHbJHpBz@hD\\bC?fBNxDV|AjB\\rBq@~D{AzBe@pCPjH~A~C`Al@f@xB|DhHxK~BdEzMdXtCdF|D`ErD`ElA~@xA~BtE~L|AlGv@lB|HxPpBfEtHbOjB~Dr@lBtF|P|BvGn@lCh@pC~DzRjJn^pArHRrGdBhGNfA`EpHn@dBrApEdD|Nn@lAr@j@`Dt@t@j@p@xBNbBgAh@VdBTjCb@hBl@|@fAvBfBpCrDxJtAzC~@hFnBbF^nANfBOVEX@ZnCrR_AdB~CrQnCrHlA|FvDjJQlAOMeAjGAT@RDDCH', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ow|zHt_uXH]`AeHp@uBp@kAZaAd@uBd@eAj@}An@mEJOXGfAn@|@rAy@iEIwB?iBVuAh@wETyEv@mDrB}AbDsErEsE|BuDpAeIx@uBnAoAn@cAnAcAjBq@l@k@d@_AvAyAv@_@x@uAn@cBbBoBvDqBbCS|@g@jEqGdC]fAHtDKbD[xBp@\\RlClFtFvLdBlEvApEv@rCdAfC|@bBb@rBfAzA|ClAvFtCh@NpIg@dIgEb^yDdI{NzEqGpBaFd@qCB]pAc@XWj@s@rAqEv@eBb@o@xAwAdBkAlCeBnEyDxC_DzCyClB_CrAuAhF}EVMf@ItAF`A?x@Gl@Ml@UfEkBlJiCtIuA|CWlKWxIa@fNWlB@|Fz@fJn@~A@l@SPMDVJXVRvA`@j@Dn@E|@Y`CwAH?XRJ?v@_@tAWl@S^[R?Vb@LBPApBo@PKNUr@ShASvAKb@?xAY`Bm@|@W~@e@f@]bBeBjBq@f@g@NQbDoHZ{@Pq@DKFCZBBu@nQaBf@?|AXbATBLXDJCFGBe@G}AxKeAA_@VC\\]t@iAlBeFNk@n@mDp@gEHFz@yE`BjAl@qCDNTg@HIHE`@CLG^pALj@d@HfA?pELLGXYxAcBTp@d@s@n@CNIxAgBGYlFuCr@zAN]`C_CpBgBf@[^{ANNlAgIJk@FQRTCVNF', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ow|zHt_uXH]`AeHp@uBp@kAZaAd@uBd@eAj@}An@mEJOXGfAn@|@rAy@iEIwB?iBVuAh@wETyEv@mDrB}AbDsErEsE|BuDpAeIx@uBnAoAn@cAnAcAjBq@l@k@d@_AvAyAv@_@x@uAn@cBbBoBvDqBbCS|@g@jEqGdC]fAHtDKbD[xBp@\\RlClFtFvLdBlEvApEv@rCdAfC|@bBb@rBfAzA|ClAvFtCh@NpIg@dIgEb^yDdI{NzEqGpBaFd@qCR?TDFNz@vA`ArBFXfAfMHb@v@jCjC`G`BnDp@nAh@pAhBbGzFzThEfLtBxGxAdEHp@FbANrAR|@pAdDr@xALKR]f@Yz@CtBWp@CRDNZt@l@Z~AfFgA`EeAdAaEnCgAxLbE|Cz@dH@fEx@ZJ~HrG~CbB`@n@rApDX_@JPTLn@Nz@HbB@b@Lb@f@\\hAn@rAz@zD`@tAvB`CP\\lCdJ\\zBl@tCRn@PXTTVBZPv@|@J\\Ff@Xx@z@bBt@hB`AtDLVxAzAnAhEfBfHzBlGrBfDzBdBpA|ApErMl@`COhBDhA?jAn@vGBnBf@~Bf@lEd@pG\\~Cj@dB~@|BdB|AtCdBt@Xv@pAf@jBNbArAd@GTKv@IhAK~DlBStBl@t@BXErAi@pAG?Jd@ZVjBv@dEFhBAnCfEbEb@XzAt@rAf@r@vEFnF', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.76188950000000,-4.20883600000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

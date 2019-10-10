@@ -126,13 +126,13 @@ var thispub = 87590;var pubaddress = "5 Ogwen Terrace, High Street";var pubnam
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87590;var pubaddress = "5 Ogwen Terrace, High Street";var pubnam
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="ipl0op06ejet99eot4dia76hg6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="nhurud1vidk1205177b787s230" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87590;var pubaddress = "5 Ogwen Terrace, High Street";var pubnam
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87590;var pubaddress = "5 Ogwen Terrace, High Street";var pubnam
   <div id="displayedimage">
 <a href="/pubpictures/87590/" class="indisplay"><img src="/images/display/87501_88000/87590_f004265a15fc83ba167b3ba56b5ab13f.jpg?w=2" alt="Picture of Cwrw Ogwen" /></a><br />  Image posted by <a href="/userinfo.php?name=sheffield+hatter" class="indisplay">Will Larter</a><br />
   Submitted on Monday, 1<sup>st</sup> April 2019<br />
-  With picture contributions to 8564 other pubs<br />
+  With picture contributions to 8736 other pubs<br />
 <a href="/pubpictures/87590/" class="smallbutton">View all this pub's pictures</a> (2 more images)
  
   
@@ -277,7 +277,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([53.17938840000000, -4.06092910000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Bangor (Gwynedd), 5.86 miles, 1 hr 53 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Llanfairfechan, 8.17 miles, 2 hr 37 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Llanfairpwll, 9.11 miles, 2 hr 55 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('qrqcIvcxWMtCEb@Uz@S^MNgAZUT[b@Sj@u@m@S|AKJaAl@UXmA`Du@|AgEvGmBxBw@j@m@XGJEb@]MIK_@RyC`AoDnBUEm@\\EFETmMtHwBhACIGDcAMiFuA[CiBNsBGgAPg@@_APsADUL{@~@c@Za@N[RU\\[dAAVTz@?RIXuAh@iFfA_@LgAn@m@L{BNUFa@v@Or@g@dE[nAKZ_@RoAjC]nAm@vF[pAKLu@\\}Ab@IHgEjJk@l@aAxCk@bA{AlBS^Sl@WjAoB|G[r@OPYPwBjA[`@Yp@_@pAULg@FeC?kHt@cNfB]Ew@UGL[FkAF]FYNeDfEyA`BeB~Be@h@a@VaCv@]RqApB[ZoAr@s@TeAt@_AlAQ\\K\\u@hDQZg@xDK|A?bADrAKHHtAPvAH`AKx@cAxCo@jA[v@_@JDz@d@hCx@tC\\fDHn@QXGr@Bh@FLfBc@?\\Hd@lArDtChK^jBRvCFzFyC}A{CvQGdC[hBwB|BUxAq@vB}BrGIH_BtFMT]`A@fCs@~Ai@zAYhAWpBIJKj@C`@GfBAnAO`@IB@VeAnC_AfB}@l@_@Eg@@UXg@~AaAlCi@z@UhA_@bAYb@a@b@s@Hw@Kk@JaBAcBbEWnBF~AJzDm@DyAf@W`@Ih@d@^fBbCf@h@tClGp@`BnAvDpAzGlFpOUn@e@x@{@jBON[PyABEGv@}E]SeAvF[vAIKjAiH', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('qrqcIvcxWL_CNkAsAq@HmASGWWoACRy@MCGQKa@O]i@m@a@m@WoAUS@_@GWGIJYPO_@mBJS?I}@cBXk@K[I_@Yq@iBCiAb@s@OKSEUAO@WX{BTi@F_BC}@Gg@e@oBSg@Uc@YUaFmCwAw@mEgC{@_@gCgA[?c@K]e@GSKqAQuDg@mDm@aCaAsA_AcA}HgQuBqFk@}@sA{@y@uAaAq@g@Oe@cAuBkAuBjD_AnBNiDuB|EUEe@d@UZ@\\Kj@q@lAm@`@m@VW\\y@d@wBt@iAl@YFeBBw@Xu@n@u@xAk@~A{CdFaAfAW`AO^G^a@r@g@n@EJAb@BJJdHQRqBdGILULo@r@UPW@cAGSJCKIOc@Sq@m@[}@[]GUQa@?]Pa@Hg@Cg@F}@Ek@mAmC]g@DyDRkA@}@GyBH}Ds@qCGoBSsA]a@c@aBQaAa@iA]}AQ[[{@]a@s@Os@c@}@Oi@_@a@OqAa@mB{@YGw@[q@i@u@f@SRTw@\\Y{@w@wAyBwGmIo@u@eCkBsBoA_CaCsAcBiCgCgGqEcGcAo@kC_AiC}AkCiBg@cAEwAc@cDi@k@AsBNu@Ek@Ym@e@y@bBuA`C]ZmBdAyAXW@m@SaB_@WIIKUqAw@uCC?g@p@KFi@EQ@c@Ta@`@_@a@OKmF}Ac@o@_CcC]UqAi@aAEg@a@eBqBuBqDu@kBc@mDY}@M}@SaC?kACO_@a@[q@g@{@eAmCU[IUIIWEASaAcAy@aBaByDQq@OoCK_Dm@oFO[m@f@MBk@@OQaAsEQq@Q_@a@r@o@r@aCq@WDw@t@Q^eCoG?IcCiGEQe@k@}HaVwDeKqDkKuBgFk@yC_DaGqH_MqByFm@kAQSe@SKkAMo@_BaEiAr@oFmDyGqFsDkEmB_H{BaPm@wEe@mCqAiEg@iA}@aAcAe@]c@Wk@MyADI?sAMY_@k@wCuGs@mBcAfAaDNoHz@g@?WFULM\\G`@eB{E{AyFCoB}@Hu@^I|@fErNEJL^', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('qrqcIvcxWMtCEb@Uz@S^MNgAZUT[b@Sj@oAhIo@|Cu@bDxAzALLR\\rBzHDJb@fBx@~BR\\d@xALr@Cd@Q`@i@p@SNc@LVrBgBfDWfCVxBCZW`@Mf@?Nt@nAXVRrA}A~@f@jBB~BVpADz@?V@`GAf@?b@I~@D|@Cv@?d@Cx@u@hBYnAo@xAQj@G`@KNIbAm@hDs@xCMX@JDtALnCAbASdFK?FnGAN@bEGb@_@v@Kd@Gd@Cl@DtACh@@x@CXStAOp@_BV_DtBq@HO|AKh@OTm@FMRYfBq@x@Un@}@tAMMCSy@T]^aC`AkBc@cBAUOAbA]pBJdAPx@Bb@e@rAc@dBe@t@u@RkB`Io@vAcARg@UCp@YNc@Fd@rGFLFxABrEEtDWhEUtBs@|DeBbFoAnBwCrDuAbAcBz@wAd@O\\g@hBaB}Aq@LOEaITiCRkC`@eAf@uAhAaAxAgA~BgAnEW|@{@xBwA`Cc@j@YTPjACV_A?y@l@_@hA]r@k@v@}@l@QWo@EiAAgAf@k@t@}@z@_DnAkCnAkB~Bm@PeANgCPgAl@eA|Aw@jB_Ar@q@@k@EkANyA~@{An@_BZu@ZaAv@YXWFg@?kGaB{@Iu@FiEx@eA?aAR_BEqAHiE|AgC`CSnCLpCLlELjCrCrKFtAYnEIZQ\\oAj@URY`@Sr@}CrNOdAGpA?`CR`HBrECp@]pCm@nBWt@Mt@Gp@@dAHp@FhBIbAIb@g@lAZrCFr@AX_@NMRk@bEUjAiAvC}DpGyAtB}@rCi@tBSfAEf@?j@Fl@lA~DDX?XC`@u@lC_@nBM^u@jAfB|E~@nBJh@~BnDTb@|EfNn@tBHEFRNx@Pn@b@zB@f@E^GHcBx@kCrCiBbBa@TWb@sFrGYXs@n@MMGCOBIQu@hAMfAsAVESOEiAGIOs@NDP]Hq@^WNg@b@]^_CpDK^Ob@?NEROXUt@Mn@GtBBdHDhBr@jNt@jMTjCf@jCbBbH~@vCfIzUTQrAzDSZdBfFvApFh@hDV`DJz@RtAT~@j@nDd@rGJbCH`ARhAZfAPtADvAE|@UjCIhCLrIAdAGx@Kz@YvA[xBWvCGpARZ~AbDFR@TDbCB\\DZlCdHuAnAu@fAu@jBu@|C]bA?R_@dME@@g@EAEhA', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.17938840000000,-4.06092910000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

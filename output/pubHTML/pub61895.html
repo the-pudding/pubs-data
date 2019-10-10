@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Star Inn pub in Star (near Winscombe), Somerset, BS25 1QE : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Star Inn" />
+  <meta name="keywords" content="The Star Inn, Bristol Road, Star, Winscombe, Somerset, , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Star Inn in Star" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/61501_62000/61895_a2be39f0.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/61895/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.32186421419848" />
+<meta property="og:longitude" content="-2.80648916959763" />
+<meta property="og:street-address" content="Bristol Road" />
+<meta property="og:locality" content="Star" />
+<meta property="og:region" content="Somerset" />
+<meta property="og:postal-code" content="BS25 1QE" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Star Inn in Star? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Star Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/61895/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Star Inn in Star" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Star Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/61501_62000/61895_a2be39f0.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/61895/" />
+<meta name="geo.position" content="51.32186421419848;-2.80648916959763" />
+<meta name="geo.placename" content="The Star Inn in Star" />
+<meta name="geo.region" content="UK" />
+<title>The Star Inn in Star (near Winscombe) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":61895},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(61895);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 61895;var pubaddress = "Bristol Road";var pubname = "The Star Inn";var pubpostcode = "BS25 1QE";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/somerset/" title="Pubs Galore : Somerset Page">Somerset</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/winscombe/somerset/" title="Pubs Galore : Winscombe Page">Winscombe</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/star/somerset/" title="Pubs Galore : Star Page">Star</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Star Inn Page">The Star Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="sv950u1e1aguq0enqcqgp7ga31" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/61895/" class="indisplay"><img src="/images/display/61501_62000/61895_a2be39f0.jpg?w=1" alt="Picture of The Star Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=bcfczuluarmy" class="indisplay">Jonathan Wilde</a><br />
+  Submitted on Sunday, 2<sup>nd</sup> June 2013<br />
+  With picture contributions to 4140 other pubs<br />
+<a href="/pubpictures/61895/" class="smallbutton">View all this pub's pictures</a> (4 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/61895/">Pub map</a><br /><a href="/pubreviews/61895/">Pub reviews (3)</a><br /><a href="/pubpictures/61895/">Pub pictures (5)</a><br /><a href="/core/pubaudit.php?id=61895" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Star Inn, Winscombe</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=bzylzy">elizabeth mcgraw</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Bristol Road</span><br />
+
+<span class="town">Star</span><br />
+<span class="postaltown">Postal town: Winscombe</span><br />
+<span class="postcode">BS25 1QE</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01934844453</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/star/somerset/">Star</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Star Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>5</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review91948" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=ROBCamra">ROB Camra</a> left this review about The Star Inn</h6>
+<p class="old">Reopened according to Bristol CAMRA, still operating as a carvery but with new owners and a new website as well.</p>
+<p class="Reviewer">On 8<sup>th</sup> February 2015 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 2728 recommendations about 2656 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review81329" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a> left this review about The Star Inn</h6>
+<p class="old">Currently closed when driven past today. No carvery has to equal a loss of a lot of money so suspect it may be shut at present.</p>
+<p class="Reviewer">On 30<sup>th</sup> March 2014 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 359 recommendations about 340 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review42266" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> left this review about The Star Inn</h6>
+<p class="old">A large pub on the main A38, although one that seems to concentrate on the food side of things more than the drinks. We went in the side door from the car park and you&rsquo;re immediately confronted by a large L-shape stainless steel carvery counter which I always find slightly off-putting in a pub, especially when it&rsquo;s not in use. To the right the pub extends some way back but this is very much a restaurant area, seating about 80 according to some of the blurb that I read.<br />
+<br />
+Other than the carvery counter, the entrance vestibule is pleasant enough with a slate tiled floor and a small bar, although it seemed to have a slightly musty smell to it. The landlady was friendly and suggested if we were just drinking we might like to go the front of the pub where there were some comfy sofa&rsquo;s. This we duly did, passing another snug with some diners in on the way.<br />
+<br />
+The front bar is definitely more atmospheric, with a low ceiling, white paint on the walls with black wooden beams, and an impressive fireplace at one end. However, there were two problems to my mind &ndash; all the tables in this bar were laid up for food, even though there was nobody in there. True, there were some sofa&rsquo;s as mentioned, but right next to this was a large plasma with the volume up far too loudly. It wasn&rsquo;t even showing any sport as you might expect, just whatever rubbish was on ITV. I turned this off and we sat on the sofa&rsquo;s which was then a pleasant enough spot. Next to this is a smaller bar with a pool table.<br />
+<br />
+We didn&rsquo;t check the menu, but it seems to concentrate on &ldquo;2 for 1&rdquo; deals judging on all the flyers around, which in my experience does not usually bode too well in terms of the quality of the food on offer. <br />
+<br />
+The solitary beer on tap was Butcombe, although there were two more pumps not in use. Ciders were Thatcher&rsquo;s Gold and Blackthorn.<br />
+<br />
+Unfortunately by the time we left at about 9:30 on a Saturday evening, there was not a single customer left in the pub. Obviously this cannot bode well for the future of the pub and I fear it may not be long before this goes the way of so many others.</p>
+<p class="Reviewer">On 27<sup>th</sup> February 2011 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 1693 recommendations about 1630 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Star Inn</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Star Inn - <a href="http://www.thestaratstar.com" title="Submitted by:- Blackthorn _" target="_blank">www.thestaratstar.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="wplink" id="AVN/697">CAMRA WhatPub :: The Star Inn - <a href="https://whatpub.com/pubs/AVN/697/" target="_blank">whatpub.com</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/61895/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.32186421419848, -2.80648916959763], 16);
+
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.32186421419848, -2.80648916959763]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Worle, 5.97 miles, 1 hr 55 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Yatton, 6.24 miles, 2 hr 0 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Weston Milton, 6.86 miles, 2 hr 12 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('wxfxH~acPHATOPx@~@jDrAhH\\rAdAbCr@pAf@x@IZi@vE]zD?ZVbJe@zJRzM[jHKzASrAo@jDUbBKdBIrE?jGFz@e@`Eq@dC_A`Cu@zCSh@g@h@Kb@Er@AzAI|Ao@vECdBTzEJtEDtBE|A@dBFvA?j@Ep@B~@QdBa@vGIh@StI[pFxB~Sp@vF}A`NkA`HQHB~@c@^CLIbDU~COnAQjBWdDIvDD|B\\|H@l@CbBOxBo@`Eo@vCMVc@b@oFjCoAr@{@x@q@fAk@pA_AbBwAzCsBdDU|@{BnR[D_Af@eAt@_@`@aAbBc@z@oB~C}@jBcJ`N_@r@iCfFy@~Cm@hDMl@e@bAMVuEjGcAhBsBdEaE`JcCzFmA`CwDbIeK~T}@jBWb@q@r@k@b@g@XaCbAuCjBqBbAmC`A}@NmBLk@Jo@\\{A~@aAv@]`@i@x@g@jAeBfIoA`HQt@Ob@`AhBNL{EbL}B|FwApEs@lBM`@ILc@KO~C[CA\\YRsFzJYt@KHK@ATENaC~CUTODQh@GZYrBEr@UzAQp@?HmCbHqAyCeCgFcAcC}CvA]EEDACAB?@ADHX', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('wxfxH~acPHATOMk@MFKEa@m@}@s@iA[wBwAu@kAi@a@_AU}@[e@a@]a@Wg@Sk@Oq@c@kFg@{Ek@eBo@g@_@_@uAuBeAiAYSyASaANmFbC_@AYIq@e@oBeA_@i@]cBYa@a@WcE}AwB[k@AgAZm@f@uCrBK@g@OA{@m@KiOtFqBrAwCiCy@{CYGe@j@i@@oBW_@YMXSPa@Z_@NyGlATrCS\\a@@aDb@eJ|NuGrAC|@q@LwA@aCAyCOiCm@wBaAoBsAiBgBwD_CaBuAsAq@cA[_BFuD~@qGf@oA\\qChBMLQC[t@gAhB[^cAz@eCbAiCz@iQkLiCi@KlBCjBEr@WpAIt@IhAAbAgAG_@AQDu@Vy@f@gATq@CqDe@{@@SFa@\\c@h@a@t@mAi@]GEIs@CAKyA}@IBUWQa@Pi@ASMi@SBo@Z}BPSFSJc@n@}BrAgCjAqB|AKNGOSIM@U`@_@BmAQWbCCb@@z@Cb@GPMNa@P^`C@T]pCo@g@W|AQ`BA^UbASf@c@x@g@j@}BbB@JaAXWB_ACm@e@[[Ye@YM]E?MQAyCp@g@FAt@MvA]zC_@bCi@pBoApDmAnE{@r@]l@ISwIvGcAw@gH}D_ArHYzAA`@WFObA@Pa@vDS|@]lBg@zE@LK`@MlAMPQFHRf@lCX|@mDpBkBx@oD|@{@P_Bb@UJiAzAkDdDIXYdFG`@MT[VcC`Ce@Tg@DUISOc@i@Wc@K[CAuBpB[kAEYCk@GYUf@EIUVBNW}@DGh@fB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('wxfxH~acPHATOPx@~@jDrAhH\\rAdAbCr@pAf@x@IZi@vE]zD?ZVbJe@zJRzM[jHKzASrAo@jDUbBKdBIrE?jGFz@e@`Eq@dC_A`Cu@zCSh@g@h@Kb@Er@AzAI|Ao@vECdBTzEJtEDtBE|A@dBFvA?j@Ep@B~@QdBa@vGIh@StI[pFxB~Sp@vF}A`NkA`HQHB~@c@^CLIbDU~COnAQjBWdDIvDD|B\\|H@l@CbBOxBo@`Eo@vCMVc@b@oFjCoAr@{@x@q@fAk@pA_AbBwAzCsBdDU|@yB|QCp@IfFQhD[`EeAlJMfBGzA]d]DjDL~Ej@xIL|CA~CCzACx@SvCgC`]oApMoBbQe@lDk@|Ci@bCwFxSNLWv@eDzMqBbJeBnJY`BOf@SMoCvQqBjO}G|n@NF@@?F_@`EEvAKPMf@Gt@?XC\\CPENq@rGm@vDMtAFtACx@Ob@CJ_@HIIM@ODORo@bBw@nAKQU\\cAjAcCzB_@^W^M\\QCUDoAp@iC`AQA@l@I@EOKKeBJ{AAi@NSJY^Sf@EZGxAUA?^]AQbCWjF@\\Gj@g@tA{AlC_@l@eAxC]v@oDnHUP[h@QN@JWLK?KLER@XId@M^o@lAaA`BY`@}@r@h@@XNBJFCFl@EBDb@LGWoBBAXxB', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.32186421419848,-2.80648916959763], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=61895">View all updates for The Star Inn, Star</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> Jun 2018, 20:51
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> approved
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> Jun 2018, 19:59
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a>
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11861895">No</span> <span id="discdetail11861895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 November 2013 by Jonathan Wilde</span></li><li>Bar Billiards : <span id="fac10761895">No</span> <span id="discdetail10761895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 November 2013 by Jonathan Wilde</span></li><li>Beer Festivals : <span id="fac11761895">No</span> <span id="discdetail11761895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 November 2013 by Jonathan Wilde</span></li><li>Beer Garden : <span id="fac11461895">Yes</span> <span id="discdetail11461895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 November 2013 by Jonathan Wilde</span></li><li>CAMRA Discount : <span id="fac10261895">No</span> <span id="discdetail10261895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 February 2015 by ROB Camra</span></li><li>Car Park : <span id="fac11361895">Yes</span> <span id="discdetail11361895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 February 2015 by ROB Camra</span></li><li>Child Friendly : <span id="fac12161895">Yes</span> <span id="discdetail12161895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 February 2015 by ROB Camra</span></li><li>Darts : <span id="fac11161895">No</span> <span id="discdetail11161895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 November 2013 by Jonathan Wilde</span></li><li>Hot Food : <span id="fac10361895">Yes</span> <span id="discdetail10361895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 February 2015 by ROB Camra</span></li><li>Jukebox : <span id="fac11261895">No</span> <span id="discdetail11261895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 November 2013 by Jonathan Wilde</span></li><li>Karaoke : <span id="fac10661895">No</span> <span id="discdetail10661895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 November 2013 by Jonathan Wilde</span></li><li>Live Music : <span id="fac10861895">No</span> <span id="discdetail10861895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 February 2015 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11061895">No</span> <span id="discdetail11061895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 February 2015 by ROB Camra</span></li><li>Pinball : <span id="fac11661895">No</span> <span id="discdetail11661895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 November 2013 by Jonathan Wilde</span></li><li>Pool Table : <span id="fac10461895">Yes</span> <span id="discdetail10461895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 February 2015 by ROB Camra</span></li><li>Real Ale : <span id="fac10161895">Yes</span> <span id="discdetail10161895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 February 2015 by ROB Camra</span></li><li>Real Cider : <span id="fac11961895">No</span> <span id="discdetail11961895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 08 February 2015 by ROB Camra</span></li><li>Wheelchair Access : <span id="fac12061895">Yes</span> <span id="discdetail12061895" class="discdetail" style=""></span>  <span class="Reviewer">last updated 10 November 2013 by Jonathan Wilde</span></li><li>WiFi : <span id="fac11561895">Yes</span>  - <span id="discdetail11561895" class="discdetail" style="">BT wifi code on chalkboard by bar. </span> -   <span class="Reviewer">last updated 08 March 2015 by Jonathan Wilde</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/872/" class="List1">Penscot Inn</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

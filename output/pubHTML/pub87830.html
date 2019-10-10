@@ -126,13 +126,13 @@ var thispub = 87830;var pubaddress = "3 Coniscliffe Road";var pubname = "Dr.in
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87830;var pubaddress = "3 Coniscliffe Road";var pubname = "Dr.in
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="168sga24kel6a83rsi7fj6it73" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="k34qbgdgcr0na2qjsn069sppp6" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87830;var pubaddress = "3 Coniscliffe Road";var pubname = "Dr.in
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87830;var pubaddress = "3 Coniscliffe Road";var pubname = "Dr.in
   <div id="displayedimage">
 <a href="/pubpictures/87830/" class="indisplay"><img src="/images/display/87501_88000/87830_7908d87b.jpg?w=2" alt="Picture of Dr.inks" /></a><br />  Image posted by <a href="/userinfo.php?name=Pangolin" class="indisplay">Graham Coombs</a><br />
   Submitted on Friday, 7<sup>th</sup> June 2019<br />
-  With picture contributions to 2588 other pubs<br />
+  With picture contributions to 2906 other pubs<br />
 <a href="/pubpictures/87830/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -251,7 +251,7 @@ var thispub = 87830;var pubaddress = "3 Coniscliffe Road";var pubname = "Dr.in
 <p>Bar/restaurant conversion of an old townhouse over 3 floors, featuring a &#039;secret garden&#039;. The cosy bar has a couple of keg lagers and a small range of bottles.</p>
 <p class="Reviewer">On 7<sup>th</sup> June 2019 
   - rating: <b>4</b><br />
-  <span class="leftspace">[User has posted 1775 recommendations about 1734 pubs]</span></p>
+  <span class="leftspace">[User has posted 1965 recommendations about 1921 pubs]</span></p>
   </div>
 </div>
 
@@ -279,7 +279,7 @@ var thispub = 87830;var pubaddress = "3 Coniscliffe Road";var pubname = "Dr.in
 
 	var mymap = L.map('mapid').setView([54.52347684586617, -1.55841570321877], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -304,7 +304,39 @@ var thispub = 87830;var pubaddress = "3 Coniscliffe Road";var pubname = "Dr.in
 
 
 </script><div>
+<i class="fas fa-train"></i> Darlington, 0.62 miles, 11 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> North Road, 1.08 miles, 20 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Dinsdale, 4.44 miles, 1 hr 25 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('acxkIhkoHS_BJGZ?h@LJiBn@JZ_HI[HQd@oEXeBXsBp@c@RLPBNKRg@B_AGc@FQVsB`Bg]CABa@a@GFoAc@G?Gv@J', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('acxkIhkoH]sCOCe@BoGi@mA[}BU_@dBAVMNI\\[x@m@pAyCsAqHoAqDFeODPwGuFa@kA}Ea@wAOUeAMVsH{AWKBOPUb@Y|@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('acxkIhkoH_@eDQAMmBm@cGOaFFiFJiEJ_@DEF?H_CBQHILBDy@HeAKDgAQCm@E_@?a@cAKMS@eAf@yEKGRuAr@kDd@eCf@wBX}ATqAf@eDDkD@iEUcLG}JD_I[gU?cCDiBZoFfDuZTgDJeCkBc@JwB_@oC`@QL]b@oIBSRm@VgGTqDN{CEk@~Am@AOB_@DKf@q@P?A_@|@iNd@{CZgAdEcIbBaGj@iDUMb@oF?S@sADy@DGDSVgCb@}GPyDHeC@aAEe@EKo@q@E_APYR{A@]E]IyC]}DMe@i@}@F_@@i@JCHIDQBYH?AcAC_@g@kBWaCBqCwCq]_@qDWmB_@wB_AgEgAqDe@oAmByDmEiIPa@GYDIBU@qAKsQQoLA_ABs@lEs[F[Xi@JEfDk@rA]b@[V[pB{D`CaDP_@P]`BaF\\k@`@Ut@Y~Ag@bAW~@GHPNPTD`Gs@_@gHUDBb@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([54.52347684586617,-1.55841570321877], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -323,14 +355,7 @@ var thispub = 87830;var pubaddress = "3 Coniscliffe Road";var pubname = "Dr.in
       
 
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 8pm</td></tr>
-<tr><td>Monday</td><td>11am - 11pm</td></tr>
-<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
-<tr style="font-weight:bold"><td>Wednesday</td><td>11am - 11pm</td></tr>
-<tr><td>Thursday</td><td>11am - 11pm</td></tr>
-<tr><td>Friday</td><td>11am - 1am</td></tr>
-<tr><td>Saturday</td><td>11am - 1am</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>
@@ -342,7 +367,7 @@ var thispub = 87830;var pubaddress = "3 Coniscliffe Road";var pubname = "Dr.in
                     <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 9 recommendation(s)" title="Pub has 9recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8.5 from 8 reviewer(s)" title="Pub has average rating of 8.5 from 8 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/5461/" class="List1">Number Twenty 2</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/78346/" class="List1">Prego</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3.5 from 2 reviewer(s)" title="Pub has average rating of 3.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/61168/" class="List1">The Hoskins</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85923/" class="List1">Orb</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 2 reviewer(s)" title="Pub has average rating of 7.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85923/" class="List1">Orb</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83578/" class="List1">Sloans</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/69998/" class="List1">The Grange</a></li>
 

@@ -126,13 +126,13 @@ var thispub = 61871;var pubaddress = "Chapel Road";var pubname = "The Lamb";v
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 61871;var pubaddress = "Chapel Road";var pubname = "The Lamb";v
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="5g35b1nvn3rvffh2ed6lnbdll0" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="cipgv1gufmdldc0md8uue5eaj7" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 61871;var pubaddress = "Chapel Road";var pubname = "The Lamb";v
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 61871;var pubaddress = "Chapel Road";var pubname = "The Lamb";v
   <div id="displayedimage">
 <a href="/pubpictures/61871/" class="indisplay"><img src="/images/display/61501_62000/61871_21500d6c.jpg?w=1" alt="Picture of The Lamb" /></a><br />  Image posted by <a href="/userinfo.php?name=bcfczuluarmy" class="indisplay">Jonathan Wilde</a><br />
   Submitted on Saturday, 1<sup>st</sup> December 2018<br />
-  With picture contributions to 3997 other pubs<br />
+  With picture contributions to 4140 other pubs<br />
 <a href="/pubpictures/61871/" class="smallbutton">View all this pub's pictures</a> (4 more images)
  
   
@@ -263,7 +263,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul id="Custom2">
 			<li>Official site of The Lamb - <a href="http://thelambatclandown.co.uk" title="Submitted by:- Jonathan Wilde" target="_blank">thelambatclandown.co.uk</a></li>
           </ul>
-</div>
+<ul id="Custom2"><li class="wplink" id="BAT/172">CAMRA WhatPub :: The Lamb - <a href="https://whatpub.com/pubs/BAT/172/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -277,7 +277,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([51.30058034771920, -2.45555390905383], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Oldfield Park, 7.27 miles, 2 hr 20 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Bath Spa, 7.7 miles, 2 hr 28 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Freshford, 8.44 miles, 2 hr 43 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ysbxHlr~MMk@Is@[c@Ci@Q?gDmF{DeHBWwBkDcJeS}Ny\\yMyY}@gDq@}BOSUQYIWQKY_BeDeC_GeAqCgCgF{DoIaDvE{CzEqAjAAKq@aBgBi@I@M`@KNg@@UIOOqA[q@EkA?u@e@WWcBiCqCwA{CoAELCAaFYiBm@kEe@uJLGHIC]CS@OHQZe@h@e@Pm@Bc@CeDa@y@UsEuBYU}@_AeAo@SUuB}EIG[DKOY{@KQQMm@Q_@Ee@By@PS@SEu@c@cHgGsCsCyEkFkCsDqA{A[YYMcB_@uE{BcBgBg@sAyIvAwX^e@]q@LwD`A_BiCuKyOc@gAm@wCUiBcA_GYmAyBgHcBiB_DmEuDmEaEeDaE}AyAu@cB_@oFc@qASkMwEgFcCk@g@q@Om@YcG_ESWUQa@Iu@I]MQKKUWcAOmAs@eAWMK@}At@]HGAm@kASMOSi@wBCSi@aAIGAIYIS@Cc@uBiB]Qi@CYi@A?Me@KUc@W_@@MPCb@eGaBsDmAPKAOBMlB_Aw@oADM@e@CSmDyMGMYKM?mAwECBe@mAgEcUOkBgBGMDQTGRARYAq@wCoBqGIe@OPOk@gBsEoAyBDIHmA~@}BwAiB[k@wAwCk@_Ai@m@gA_A]c@kCsA}Aq@iDsA^qGAOEKo@u@EK?OSG@qAH}AE@Cb@AAKlBCALiC', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ysbxHlr~MMk@Is@[c@Ci@Q?gDmF{DeHBWwBkDcJeS}Ny\\yMyY}@gDq@}BOSUQYIWQKY_BeDeC_GeAqCgCgF{DoIU\\cCmFNaAFO{@cEoAuHS{@yAiIc@qBg@eBkAqBeD{GcA_Bu@cA{CqDwCgEa@c@cDwBqEcC_@Wa@[QA{BkA?UE_@M]UJ[DYEGHmBo@k@[mAcA_AmA_@DcBy@_HqEoD_DwAkCwAeDKw@ORQCs@u@_FeD}@s@y@Oa@i@i@wAy@s@w@c@IQk@JS?m@QyAo@q@Os@Gm@BaCb@@SZa@DKAMa@g@[k@_BkAiDc@gCoCkBQgDwFsBuFsQqPqJkI{CwCwCqE}GqGiB{@?OmAkCYkA]uCWsAm@iCMkAD_BOaAE_Bc@wDCyCK[I}@Ga@Wg@Ai@IOu@s@k@kBg@_As@cCY}AEm@?m@PeC@mA[{B@QJM_EiB}FuDUKmBg@qAGu@??o@}@Yg@]}@[e@?_A^IJ_@o@uAkBiAgBeE{IiD}HsDuHU{@Aa@C[IQEENUEKUDMA[_@wC}Hw@{BQy@U[u@e@QOAQoEeEm@u@oAeB{HwLo@{@mCcCCJu@q@kCsBg@[i@SuAMgECwBe@oBO[iAC]e@?ASq@cBsA{CQo@Qs@m@sD_BeKGCIQKRMBwA{GQgAMQA_@CMIYu@kDGa@ImAG_@EGMAc@W[_AUQg@M_A]q@KO?[JSHOT]BiBx@W\\ERMgAIa@]{@e@{@CAwAp@{@T_Bn@Ee@{@r@Yf@GAMMIe@G@?EC??FsBHKE?|@ULHb@IDBJa@VSF?@TECIQu@My@S}@GDc@aBY}AFFbAlDb@tB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ysbxHlr~MMk@Is@[c@Ci@M?G_DJ_Lm@yDVMx@eGf@mGhAuDe@eCAyAqFSa@GaDiAmJ}Ai@WF_AwFch@bCgAj@e@jDaGr@oCVsAIK@CF?Zs@~AcBBKgByCaAyA_@}AOOa@H_@?aAaAu@}Ag@_COuBAiBm@yEm@gC_A}Cm@cAmHqPu@sA_@NyBkMS{C]mBEm@GYeAsBkAqCeBmGWmAM{@OmBSu@LcEA{BqCgW[{Ai@{BoAiE_@kAe@}@a@k@a@y@WqAw@wGI}@AcAL_CT}BT}AB]@YCOSWoBoAo@i@a@q@y@oBs@kCwDaSi@aCy@oCmAqFMsAKuAE{CIqAMqAa@_CmAoG[iAmCmIiGsUu@aEi@eF[kAm@mAwDeNc@{Ae@eDaAuC[qBe@oBiAmBc@mAMu@aAwGEQSWg@w@IYOeAKqBUmBC]Bw@FOR[LUHYDa@Ck@KqA?e@DeAF[r@mAJMZOj@o@Ra@La@Hw@F_ABw@Ao@GyEIeDCmDA_CQ_FMeE[yD@m@Be@Pu@Pc@x@kA`@u@J]p@uFDi@IuCBe@n@kILsC@aAAy@c@wHMgAe@yCGi@?y@HYn@eARe@Dc@\\qFDg@H_@R[^YjBm@ZOV]Rs@Bc@Ec@m@aCO{@MeA_AgLy@eJ_@cHwBwWc@aEGwBAeCIgBMmAy@yEy@eE_@uCC@kAkEaDwG_CaEmF_LyQy\\yFeLo@v@_@ZMc@c@e@Y_B]yAEcAc@qC{@oDWuAkAiFs@sCw@oC{@aCeAgC{@gAE?Ua@KAm@ZGDOCMSQIKAk@JSASIOOWa@g@cAAMQAqAaBiHiE[m@_CoKKIGBo@_@ISGE@MIg@{A{BeAmACg@h@yBu@oAaAw@]G[COIIm@O_@S[SSKEiB?aATW[O`@SWLYBB@E', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.30058034771920,-2.45555390905383], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

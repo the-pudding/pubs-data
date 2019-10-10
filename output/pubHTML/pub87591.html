@@ -126,13 +126,13 @@ var thispub = 87591;var pubaddress = "51 Queen Charlotte Street";var pubname =
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87591;var pubaddress = "51 Queen Charlotte Street";var pubname =
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="p92vinvlg9bjjfbebmhbd08757" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="v8hp3hvukfodvflsc95q7fihp1" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87591;var pubaddress = "51 Queen Charlotte Street";var pubname =
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,8 +198,8 @@ var thispub = 87591;var pubaddress = "51 Queen Charlotte Street";var pubname =
   <div id="displayedimage">
 <a href="/pubpictures/87591/" class="indisplay"><img src="/images/display/87501_88000/87591_979fd917.jpg?w=2" alt="Picture of The Old Granary Bar" /></a><br />  Image posted by <a href="/userinfo.php?name=Blackthorn" class="indisplay">Blackthorn _</a><br />
   Submitted on Wednesday, 3<sup>rd</sup> April 2019<br />
-  With picture contributions to 4300 other pubs<br />
-<a href="/pubpictures/87591/" class="smallbutton">View all this pub's pictures</a> (3 more images)
+  With picture contributions to 4477 other pubs<br />
+<a href="/pubpictures/87591/" class="smallbutton">View all this pub's pictures</a> (5 more images)
  
   
   </div>
@@ -214,7 +214,7 @@ var thispub = 87591;var pubaddress = "51 Queen Charlotte Street";var pubname =
   <div id="pubpages">
     <h2>Detail Pages</h2>
     <p>
-      <a href="/pubmap/87591/">Pub map</a><br /><a href="/pubreviews/87591/">Pub reviews (0)</a><br /><a href="/pubpictures/87591/">Pub pictures (4)</a><br /><a href="/core/pubaudit.php?id=87591" rel="nofollow">Page updates</a><br />
+      <a href="/pubmap/87591/">Pub map</a><br /><a href="/pubreviews/87591/">Pub reviews (0)</a><br /><a href="/pubpictures/87591/">Pub pictures (6)</a><br /><a href="/core/pubaudit.php?id=87591" rel="nofollow">Page updates</a><br />
     </p>
   </div>
   <h1 class="pubname">The Old Granary Bar, Bristol Central, Bristol</h1>
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([51.45153922893636, -2.59313133068849], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,47 +299,80 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Bristol Temple Meads, 0.83 miles, 16 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Bedminster, 1.12 miles, 21 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Montpelier, 1.45 miles, 28 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('sc`yHdnyNEuAjKPBq@D]b@kGHkDFa@QI@wAb@}LHkDGa@ROA_@FAPMRm@PY@uAMWR}BJ[Vo@IKL[Q[LYwBiGQMoA{DJ]Q[N_@vAd@p@L@u@[Ai@K', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('sc`yHdnyNEuAjKPBq@D]b@kGd@DJa@FI~@e@R[RIXDf@JNFAR~Ch@F?BOl@HLPFBhCZ`@PHHHXTT@JN?n@l@BZ^EJMTMNBHFNVd@fBFPRZPWRc@d@wAnEdFbA`AADrAbB@JhBl@LB?KrBj@bBLDGR\\`AhAv@p@HNf@qAS}@Si@g@Xq@sBEDg@eB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('sc`yHdnyN@l@mA?_BHqDPCYOYiA\\C]m@l@Um@wAvA{@kCIXaAdC[g@cAqBQd@iAz@q@eAQD@L}BC]JiAsBe@n@Ea@@WIAKo@KW[a@sCkCSEe@PCq@EBCUEIC?CFAGE?CIGBMQGDACWREMKMKEc@FeAl@KDc@@_@Kw@_AmDgBIE]IIMkAe@QACCqEi@uAEWaBMDOCeAi@wFcDOOm@^s@rAwDmF}AlDK\\@Ve@AIpAEADiA', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.45153922893636,-2.59313133068849], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
 <span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=87591">View all updates for The Old Granary Bar, Bristol</a></span>
 <div class="hline"></div>
       <div class="auditrow"><div class="auditdate">
-        4<span class="sup">th</span> Apr 2019, 19:38
-      </div><div class="auditexp">Pub <a href="/pubmapaudit/87591/">map correction</a> submitted by <a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a> approved
+        18<span class="sup">th</span> Aug 2019, 08:21
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a> approved
 
       </div></div>
       <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
-        4<span class="sup">th</span> Apr 2019, 19:38
-      </div><div class="auditexp">Pub <a href="/pubmapaudit/87591/">map correction</a> submitted by <a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a>
+        18<span class="sup">th</span> Aug 2019, 08:21
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a> approved
 
       </div></div>
       
 
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11887591">No</span> <span id="discdetail11887591" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 August 2019 by Jonathan Wilde</span></li><li>Bar Billiards : <span id="fac10787591">No</span> <span id="discdetail10787591" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 August 2019 by Jonathan Wilde</span></li><li>Beer Festivals : <span id="fac11787591">No</span> <span id="discdetail11787591" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 August 2019 by Jonathan Wilde</span></li><li>Beer Garden : <span id="fac11487591">No</span> <span id="discdetail11487591" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 August 2019 by Jonathan Wilde</span></li><li>CAMRA Discount : <span id="fac10287591">No</span> <span id="discdetail10287591" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 August 2019 by Jonathan Wilde</span></li><li>Car Park : <span id="fac11387591">No</span> <span id="discdetail11387591" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 August 2019 by Jonathan Wilde</span></li><li>Darts : <span id="fac11187591">No</span> <span id="discdetail11187591" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 August 2019 by Jonathan Wilde</span></li><li>Function Room : <span id="fac12387591">No</span> <span id="discdetail12387591" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 August 2019 by Jonathan Wilde</span></li><li>Jukebox : <span id="fac11287591">No</span> <span id="discdetail11287591" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 August 2019 by Jonathan Wilde</span></li><li>Micropub : <span id="fac12287591">No</span> <span id="discdetail12287591" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 August 2019 by Jonathan Wilde</span></li><li>Pinball : <span id="fac11687591">No</span> <span id="discdetail11687591" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 August 2019 by Jonathan Wilde</span></li><li>Pool Table : <span id="fac10487591">No</span> <span id="discdetail10487591" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 August 2019 by Jonathan Wilde</span></li><li>Real Ale : <span id="fac10187591">No</span> <span id="discdetail10187591" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 June 2019 by Alan Hurdle</span></li><li>Real Cider : <span id="fac11987591">No</span> <span id="discdetail11987591" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 August 2019 by Jonathan Wilde</span></li><li>Wheelchair Access : <span id="fac12087591">No</span> <span id="discdetail12087591" class="discdetail" style=""></span>  <span class="Reviewer">last updated 17 August 2019 by Jonathan Wilde</span></li></ul></span>
+  
+</div>
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>Closed</td></tr>
-<tr><td>Monday</td><td>Closed</td></tr>
-<tr><td>Tuesday</td><td>Closed</td></tr>
-<tr style="font-weight:bold"><td>Wednesday</td><td>Closed</td></tr>
-<tr><td>Thursday</td><td>4pm - 11pm</td></tr>
-<tr><td>Friday</td><td>4pm - Midnight</td></tr>
-<tr><td>Saturday</td><td>4pm - Midnight</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>
       <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
        
           <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/88071/" class="List1">Bar + Block</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 4 reviewer(s)" title="Pub has average rating of 6.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/521/" class="List1">The Old Duke</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 6 reviewer(s)" title="Pub has average rating of 7.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83815/" class="List1">King Street Brew House</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/88073/" class="List1">Workout</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 4 reviewer(s)" title="Pub has average rating of 7 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/61759/" class="List1">The Apple</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83452/" class="List1">Spyglass (Three Brothers)</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 2 reviewer(s)" title="Pub has average rating of 5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82431/" class="List1">Kongs of King Street</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 18 picture(s)" title="Pub has 18 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 12 recommendation(s)" title="Pub has 12recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 12 reviewer(s)" title="Pub has average rating of 7.5 from 12 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/80540/" class="List1">The Beer Emporium</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87477/" class="List1">1766 Bar</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 24 picture(s)" title="Pub has 24 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 14 recommendation(s)" title="Pub has 14recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 13 reviewer(s)" title="Pub has average rating of 6.5 from 13 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/507/" class="List1">The Famous Royal Navy Volunteer</a></li>
 
           </ul>
   

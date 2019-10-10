@@ -126,13 +126,13 @@ var thispub = 87364;var pubaddress = "161 Cambridge Road";var pubname = "Cambr
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87364;var pubaddress = "161 Cambridge Road";var pubname = "Cambr
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="f58r2bt29hl7s0b1mvlmk7njn7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="vmq7nkj7vun77g5ik0dkl2ons0" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87364;var pubaddress = "161 Cambridge Road";var pubname = "Cambr
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -258,7 +258,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul id="Custom2">
 			<li>Official site of Cambridge Hotel - <a href="http://samuelsmithshotels.co.uk/cambridge-hotel-middlesbrough/" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">samuelsmithshotels.co.uk</a></li>
           </ul>
-</div>
+<ul id="Custom2"><li class="wplink" id="CLV/12-0317">CAMRA WhatPub :: Cambridge Hotel - <a href="https://whatpub.com/pubs/CLV/12-0317/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -272,7 +272,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([54.55427891312431, -1.26166881866300], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -297,7 +297,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Thornaby, 2.46 miles, 47 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Middlesbrough, 2.6 miles, 50 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> James Cook University Hospital, 2.64 miles, 50 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('oa~kIfluF`@tXZhOh@rDL|Dx@rAtBpCP`AJ`@VRVBTGXYzAm@zAb@bB@r@lAvGDBrAO|CWZI?_AdIf@rAJd@Lv@p@~NHn@@b@@rFB~BA`@[nCMdASdAuBjIcC~IeAtCu@jBg@|@{AfD{ArEeA`ESl@KW]x@_CjEw@`AoEhDD\\aAr@N~@F|@GhPCnB?fHBpBwBr@aCl@kAJe@P_@VW\\cEpKe@{@oA`DQc@o@n@K_@HIg@sB?IEAGD`@dBEBs@{C', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('oa~kIfluFUkSyDPuKVEoAuD?wAF_AEcDAOiLa@DkEhAk@T}@kMc@JgE~AyKtCaBeD]k@e@k@RoAe@{BQEkGyDiOoJqRkr@iBaHJeDq@SuAQA\\_AKSq@s@M?JyASO]s@KH{CSi@YEq@cAy@YoAABgEwGy@yAE@}@^sKgCc@GxBIF?Jo@E', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('oa~kIfluFo@gn@wAqRkBiXEwCK{Oc@oLEk@q@qCCYWYaACVwf@Zm@oAmE_A_BTw@XkAxAuIL_AJqAFmAPsF@{BCiCPu@]qA_@kC[oAqAeEg@uAKDIEEO@UBIGSoEsT_BaJjByAAyBP}@f@gBo@kD?eA\\aApBeDHk@OmB`Ae@fF{GHUnATH}@j@aBf@M~AE~@bA\\D\\WZGb@_@`@UnE{Gf@}@h@k@N_@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([54.55427891312431,-1.26166881866300], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -315,6 +347,14 @@ Be the first to write a recommendation on this pub and let everyone know why the
       </div></div>
       
 
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11887364">Yes</span> <span id="discdetail11887364" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>Beer Festivals : <span id="fac11787364">No</span> <span id="discdetail11787364" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>Beer Garden : <span id="fac11487364">No</span> <span id="discdetail11487364" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10287364">No</span> <span id="discdetail10287364" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>Car Park : <span id="fac11387364">Yes</span> <span id="discdetail11387364" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>Darts : <span id="fac11187364">Yes</span> <span id="discdetail11187364" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>Function Room : <span id="fac12387364">Yes</span> <span id="discdetail12387364" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>Hot Food : <span id="fac10387364">Yes</span> <span id="discdetail10387364" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>Live Music : <span id="fac10887364">No</span> <span id="discdetail10887364" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11087364">No</span> <span id="discdetail11087364" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>Micropub : <span id="fac12287364">No</span> <span id="discdetail12287364" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>Pool Table : <span id="fac10487364">Yes</span> <span id="discdetail10487364" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>Real Ale : <span id="fac10187364">No</span> <span id="discdetail10187364" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>Real Cider : <span id="fac11987364">No</span> <span id="discdetail11987364" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li></ul></span>
+  
+</div>
 
 <!-- fbhours -->
 <!-- FH --> 

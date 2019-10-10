@@ -126,13 +126,13 @@ var thispub = 14227;var pubaddress = "Ross Road";var pubname = "The Broadleys"
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 14227;var pubaddress = "Ross Road";var pubname = "The Broadleys"
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="f17vmjd8j5383nvbbek7mpr2u3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="l3gb8kbo5kotkh74fanosvk502" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 14227;var pubaddress = "Ross Road";var pubname = "The Broadleys"
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,8 +198,8 @@ var thispub = 14227;var pubaddress = "Ross Road";var pubname = "The Broadleys"
   <div id="displayedimage">
 <a href="/pubpictures/14227/" class="indisplay"><img src="/images/display/14001_14500/14227_2ba0afa1.jpg?w=2" alt="Picture of The Broadleys" /></a><br />  Image posted by <a href="/userinfo.php?name=sheffield+hatter" class="indisplay">Will Larter</a><br />
   Submitted on Saturday, 5<sup>th</sup> August 2017<br />
-  With picture contributions to 8564 other pubs<br />
-<a href="/pubpictures/14227/" class="smallbutton">View all this pub's pictures</a>
+  With picture contributions to 8736 other pubs<br />
+<a href="/pubpictures/14227/" class="smallbutton">View all this pub's pictures</a> (1 more image)
  
   
   </div>
@@ -214,7 +214,7 @@ var thispub = 14227;var pubaddress = "Ross Road";var pubname = "The Broadleys"
   <div id="pubpages">
     <h2>Detail Pages</h2>
     <p>
-      <a href="/pubmap/14227/">Pub map</a><br /><a href="/pubreviews/14227/">Pub reviews (0)</a><br /><a href="/pubpictures/14227/">Pub pictures (1)</a><br /><a href="/core/pubaudit.php?id=14227" rel="nofollow">Page updates</a><br />
+      <a href="/pubmap/14227/">Pub map</a><br /><a href="/pubreviews/14227/">Pub reviews (0)</a><br /><a href="/pubpictures/14227/">Pub pictures (2)</a><br /><a href="/core/pubaudit.php?id=14227" rel="nofollow">Page updates</a><br />
     </p>
   </div>
   <h1 class="pubname">The Broadleys, St Martins, Hereford</h1>
@@ -260,7 +260,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 <span class="h2ish" id="linksheading">External web links for The Broadleys</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="HFD/2398">CAMRA WhatPub :: The Broadleys - <a href="https://whatpub.com/pubs/HFD/2398/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([52.04365021394411, -2.71979386871726], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -338,13 +338,13 @@ Be the first to write a recommendation on this pub and let everyone know why the
 <span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=14227">View all updates for The Broadleys, Hereford</a></span>
 <div class="hline"></div>
       <div class="auditrow"><div class="auditdate">
-        5<span class="sup">th</span> Aug 2017, 20:42
-      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sheffield+hatter">Will Larter</a> approved
+        26<span class="sup">th</span> Jul 2019, 14:41
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a> approved
 
       </div></div>
       <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
-        5<span class="sup">th</span> Aug 2017, 19:15
-      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sheffield+hatter">Will Larter</a>
+        26<span class="sup">th</span> Jul 2019, 13:08
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a>
 
       </div></div>
       
@@ -354,7 +354,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
   <div class="hline"></div>
   <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
   
-  <span id="facdisptable"><ul class="Custom1"><li>Beer Garden : <span id="fac11414227">Yes</span> <span id="discdetail11414227" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 August 2013 by Alan Hurdle</span></li><li>Car Park : <span id="fac11314227">Yes</span> <span id="discdetail11314227" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 August 2013 by Alan Hurdle</span></li><li>Hot Food : <span id="fac10314227">Yes</span> <span id="discdetail10314227" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 August 2013 by Alan Hurdle</span></li><li>Real Ale : <span id="fac10114227">Yes</span> <span id="discdetail10114227" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 August 2013 by Alan Hurdle</span></li></ul></span>
+  <span id="facdisptable"><ul class="Custom1"><li>Beer Garden : <span id="fac11414227">Yes</span> <span id="discdetail11414227" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 August 2013 by Alan Hurdle</span></li><li>Car Park : <span id="fac11314227">Yes</span> <span id="discdetail11314227" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 August 2013 by Alan Hurdle</span></li><li>Child Friendly : <span id="fac12114227">Yes</span> <span id="discdetail12114227" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 July 2019 by Jonathan Wilde</span></li><li>Darts : <span id="fac11114227">Yes</span> <span id="discdetail11114227" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 July 2019 by Jonathan Wilde</span></li><li>Hot Food : <span id="fac10314227">Yes</span> <span id="discdetail10314227" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 August 2013 by Alan Hurdle</span></li><li>Jukebox : <span id="fac11214227">Yes</span> <span id="discdetail11214227" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 July 2019 by Jonathan Wilde</span></li><li>Micropub : <span id="fac12214227">No</span> <span id="discdetail12214227" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 July 2019 by Jonathan Wilde</span></li><li>Pinball : <span id="fac11614227">No</span> <span id="discdetail11614227" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 July 2019 by Jonathan Wilde</span></li><li>Pool Table : <span id="fac10414227">Yes</span>  - <span id="discdetail10414227" class="discdetail" style="">Free on Tuesdays</span> -   <span class="Reviewer">last updated 26 July 2019 by Jonathan Wilde</span></li><li>Real Ale : <span id="fac10114227">Yes</span> <span id="discdetail10114227" class="discdetail" style=""></span>  <span class="Reviewer">last updated 20 August 2013 by Alan Hurdle</span></li><li>Real Cider : <span id="fac11914227">No</span> <span id="discdetail11914227" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 July 2019 by Jonathan Wilde</span></li><li>WiFi : <span id="fac11514227">Yes</span>  - <span id="discdetail11514227" class="discdetail" style="">Code behind bar.</span> -   <span class="Reviewer">last updated 26 July 2019 by Jonathan Wilde</span></li></ul></span>
   
 </div>
 

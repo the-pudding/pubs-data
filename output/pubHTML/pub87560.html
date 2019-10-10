@@ -126,13 +126,13 @@ var thispub = 87560;var pubaddress = "21 Victoria Street";var pubname = "The C
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87560;var pubaddress = "21 Victoria Street";var pubname = "The C
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="q0rgses17nniugunhteu6kogm7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="t8p1r6bec6us8je8n69ja96vq6" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87560;var pubaddress = "21 Victoria Street";var pubname = "The C
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -255,7 +255,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 <span class="h2ish" id="linksheading">External web links for The Crafty Baa</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="KEN/1830">CAMRA WhatPub :: The Crafty Baa - <a href="https://whatpub.com/pubs/KEN/1830/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -269,7 +269,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([54.37946020000000, -2.90605030000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -294,7 +294,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Windermere, 0.2 miles, 3 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Staveley, 3.86 miles, 1 hr 14 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Burneside (Cumbria), 6.73 miles, 2 hr 9 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('o~{jItqvPOe@Uc@Y][K_@ID]DWo@QAu@OGBWKEPgBLi@^y@X_@`@MF`@HMDHRY', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('o~{jItqvPOe@Uc@Y][K_@Iq@KOW[}BVmB@i@IuBD{@^uCFYDFX}@TiANeA@Y\\mB@SB]YsK]yCMu@wAiGYwAYkAUaBm@sGg@kDWcCGiBBmAVcEBm@Ao@U}Ec@}AaA_Dq@aD[mBM}A?}@`@yJXiCd@}BlAoEtAiG^{BZcCTgCDeADqBQ}E]qEQeBq@yCoAqEO{@K_AEaCLcL?aACwBc@}KAcABeC~Cug@ZkDf@_G`@iDLwEF{@KKFoAFQLeDG?DuASCHoBBgC?sBUoHg@_MAaDHyETuEdByQ|@iIp@{FrCsQv@iEXsDN_AJc@f@kEBo@N_@FEGmAd@aN?y@E_E@q@FoA~@sFHs@B}A@_BCo@S{CKuB~@c@`@Gz@ML}AViBb@uAj@oANm@NcAHgBfA@CRJHCLBBI^', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('o~{jItqvPOe@Uc@Y][K_@Iq@KOW[}BVmB@i@IuBD{@^uCFYDFX}@TiANeA@Y\\mB@SB]YsK]yCMu@wAiGYwAYkAUaBm@sGg@kDWcCGiBBmAVcEBm@Ao@U}Ec@}AaA_Dq@aD[mBM}A?}@`@yJXiCd@}BlAoEtAiG^{BZcCTgCDeADqBQ}E]qEQeBq@yCoAqEO{@K_AEaCLcL?aACwBc@}KAcABeC~Cug@ZkDf@_G`@iDLwEF{@KKFoAFQLeDG?DuASCHoBBgC?sBUoHg@_MAaDHyETuEdByQ|@iIp@{FrCsQv@iEXsDN_AJc@f@kEBo@N_@FEGmAd@aN?y@E_E@q@FoA~@sFHs@B}A@_BCo@S{CKuB~@c@`@Gz@ML}AViBb@uAj@oANm@NcAHgBnA?BuINoB@qAc@{Ax@oBZg@Lg@vFwErAgBfA_BL_@TmAPuALmCFe@No@t@cC^}A`@mAb@aAjAgB`A_AQwAEq@?qABgEhBcG\\_CHkBh@oCpA}E@sHF_FFSDwHEkMUwGPa@TaBh@sBu@oHDgH@mLp@iBt@iC^{C]_Av@gAl@mABQ?e@BWpAqCPi@xA}@|B{BjD_DzAkBLID@?W|@aDf@aCTmA\\wA`@sBJYJMjAcD^q@vAc@PWt@o@FDf@g@N]l@_C?QRSvBwAbCwChDkDt@o@tAu@ZGv@c@^]z@gA|AaDh@yAv@{ApAwBhCuDjGeIx@rBFTCVKT?DJ\\EF@B]h@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([54.37946020000000,-2.90605030000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

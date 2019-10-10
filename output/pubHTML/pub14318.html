@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Black Swan Hotel pub in Leominster, Herefordshire, HR6 8EP : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Black Swan Hotel" />
+  <meta name="keywords" content="The Black Swan Hotel, 33 West Street, Leominster, Herefordshire, Leominster Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Black Swan Hotel in Leominster" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/14001_14500/14318_531b715f.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/14318/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.22676357319382" />
+<meta property="og:longitude" content="-2.74065645767212" />
+<meta property="og:street-address" content="33 West Street" />
+<meta property="og:locality" content="Leominster" />
+<meta property="og:region" content="Herefordshire" />
+<meta property="og:postal-code" content="HR6 8EP" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Black Swan Hotel in Leominster? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Black Swan Hotel the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/14318/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Black Swan Hotel in Leominster" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Black Swan Hotel " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/14001_14500/14318_531b715f.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/14318/" />
+<meta name="geo.position" content="52.22676357319382;-2.74065645767212" />
+<meta name="geo.placename" content="The Black Swan Hotel in Leominster" />
+<meta name="geo.region" content="UK" />
+<title>The Black Swan Hotel in Leominster : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":14318},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(14318);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 14318;var pubaddress = "33 West Street";var pubname = "The Black Swan Hotel";var pubpostcode = "HR6 8EP";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/herefordshire/" title="Pubs Galore : Herefordshire Page">Herefordshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/leominster/herefordshire/" title="Pubs Galore : Leominster Page">Leominster</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Black Swan Hotel Page">The Black Swan Hotel Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="quqfg6jjb2hg8p4d9m20apqmc4" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/14318/" class="indisplay"><img src="/images/display/14001_14500/14318_531b715f.jpg?w=2" alt="Picture of The Black Swan Hotel" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
+  Submitted on Wednesday, 12<sup>th</sup> September 2018<br />
+  With picture contributions to 24825 other pubs<br />
+<a href="/pubpictures/14318/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/14318/">Pub map</a><br /><a href="/pubreviews/14318/">Pub reviews (1)</a><br /><a href="/pubpictures/14318/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=14318" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Black Swan Hotel, Leominster Central, Leominster</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">33 West Street</span><br />
+
+
+<span class="town">Leominster</span><br />
+<span class="postcode">HR6 8EP</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01568612020</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/leominster-central/herefordshire/">Leominster Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Black Swan Hotel  <span class="h2note">(Average Rating: <span id="averagerating"><b>6</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review76223" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=sheffield+hatter">Will Larter</a> left this review about The Black Swan Hotel</h6>
+<p class="old">Real ale drinkers should not worry about the prominent word &quot;Carling&quot; on the inn sign: there are a couple of hand pumps on the bar here. Though to be strictly accurate, at the time of my visit there was only Grays Best available, the beer for which the term was invented (not), so I opted instead for the Westons cider that was on the other hand pump. The pump clip said scrumpy but the cider I got was not cloudy, so I&#039;m not sure what its provenance was, but at &pound;1.20 a half I wasn&#039;t complaining. There was football on the TV and the landlord was mingling in a friendly way with his regulars. There&#039;s another bar to the side and rear, and this has an unusual collection of old typewriters and sewing machines in the windows, with the name Cygnets Lounge on the door. A footpath leads from the street to the nearby Co-op supermarket, and there&#039;s a small patio belonging to the pub to the side of this passage. In sum, quite a decent pub that would be improved with the addition of a couple of decent real ales.</p>
+<p class="Reviewer">On 30<sup>th</sup> October 2013 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2381 recommendations about 2251 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Black Swan Hotel</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Black Swan Hotel - <a href="http://blackswan-leominster.co.uk/" title="Submitted by:- Tris C" target="_blank">blackswan-leominster.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="252055725220354">Facebook - <a href="https://www.facebook.com/blackswanleominster/" target="_blank" rel="nofollow">The Black Swan Hotel</a></li></ul><ul id="Custom2"><li class="wplink" id="HFD/2465">CAMRA WhatPub :: The Black Swan Hotel - <a href="https://whatpub.com/pubs/HFD/2465/" target="_blank">whatpub.com</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/14318/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Tris39">Tris C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.22676357319382, -2.74065645767212], 16);
+
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.22676357319382, -2.74065645767212]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Leominster, 0.53 miles, 10 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Ludlow, 11.32 miles, 3 hr 38 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Hereford, 12.87 miles, 4 hr 8 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('gpw}H~gvOWEXmE?wAA]SEKkDAmAE]KSMqEYq@BgEDqBl@qANMbBSCq@MkF@iAJg@FQ^c@zBi@Bm@CaC', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('gpw}H~gvOWEAPUK]Wc@c@uA_@Ay@Gy@_@gDyD~BAEwA`@y@D_APi@Vo@d@aD|BODQGe@lAiAlAoAfAs@v@iAz@}@hAiAtBq@|@e@h@sCzBqBx@uRhEwCd@qFd@wA\\wAFeFvAc@FwACkCm@kBk@oASmADa@LuALsB?_IO}Cc@}By@{BqAy@YoAGmARwCz@}B|@m@^o@j@gAl@qA`@uD~@aDjAgAPuA`@eAf@i@f@m@|@}@vBq@pAs@jAwChEo@hA{@~Ck@|BQ^SXiDEgEs@g@Dc@NoAl@iAt@k@j@{AnAqAb@o@FqA?uBLwBZu@T}@d@kJ|FSHmATm@BkDc@wAK}ACs@LkFbBeCZaATy@Dw@NyBz@y@d@_At@iDjDo@^k@Pi@DoCAaABmANaBV_E`A{Dp@c@GuC_AaHyCqBs@eFeAqC[iK_C]Go@@mDx@oC`@c@O]A}Cb@gAD_Cc@kACwAFqAPoAVcDjAc@Di@AcAW_C_AcM}CsAk@}AWy@Wo@YqJcGeEwCeAg@aEmCoCkC_EwEiBsC_A}@wFcDiAe@w@KqA@uAK{A]c@Sq@c@u@k@w@c@}EqA_Ag@mAgAsDgEmDyCwC}ByB{B_EiDgE{BkB{@{@M_RGyE[qMkC{@LoAJsAf@iB`AmA\\uKdBk@NG][WeCwAu@A_Be@eDkAyKuKeBg@uCDk@`Oy@PaAd@_An@yAjAk@X_AJm@?_A]uAcAwEyEeDoCaAkAeBeCwAgB{AcADoCn@eJEa@{@l@OBYIaDaBaBk@{AcAg@q@g@e@gCiEo@sA[WCcEHoCAaFO_BUmAIq@?mDGq@Qs@U]s@q@_BiA_Ay@gAiA{Rs\\cAkAmJd@oEUoW_GED_Do@gSoEEIwJuBkCeCiB{Ag@Wa@C{B^cA^_CrACLMJ_@LM@sHnBgBt@UgCGBGe@c@RGe@Ig@U_@Ma@e@qGGC_@k@oBpAoAlAEVKLo@d@q@NOLuAn@CNEMCg@MYBOGm@UgAUq@EDMe@BA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('gpw}H~gvO|BF?yAvADh@{Ef@G|BPjALfDf@pCXvAJpKVbEKzD]~Ey@bKsAfOyA`CQzAi@|Au@nJcILOrC{B`AoAtFeIvDuE`B}CjFwHrCqDh@}@hDiKn@eBn@kAn@y@hTkUdEsEhAgAp@e@dA[bBMdLa@pBOzBi@|KiEtFkBdCY~K{BdAWvACfAPnHd@bAEnB_@fBq@fCkCt@gAnAcAnAi@z@Mv@ClBNlAPh@GZk@NiBLKDM`@g@n@G|DCbGj@vFbALt@jAXHd@b@Nl@cApEnC^?|@h@d@t@XnA?p@lAjDxAtCZ`@b@X`@Nn@PhALtABvE[nBLlDj@jAGb@Fz@j@dC`@r@A~@WbC{Ah@Wr@Ot@Cp@Hp@Tp@b@p@t@v@~AvAdEfAlBz@t@z@`@`AN`A?~Aa@bDoA|@Q~@EnCRt@Ox@k@~EkKhAgE`@k@d@[l@Ed@HrAnAbBdCtDlGfA`BxC~ClBhBd@l@p@rA~@zClB`HxAvEJ~@J^Xf@d@f@PFr@OdAPt@DpKClAHlANvj@vLjJ~AxF^n@Rp_@bChARbBb@~AXxFh@jBLbNVfNc@b@BfL~BhBNnA@hAGbLuBfE[dDMhJUnAK`AQnAc@fF{CpAk@zAg@xXuExKaClBW|AAbBJpBh@b@l@pBlAdAJ|@`@|AXpA@zFKjEUpFPr@Ix@UrAy@r^yX`DsBnBeAxBw@~EcAjKwAdT}BnAInAAnBHh@F`EbAJVPP`@Jx@DVCTKJYlFsAr@KpBI@SFQHKLCEcA@{@\\`BTZJCxJV`DRjBAVNJKfCTlJA?y@NeBd@wB~DmMOQMc@Ai@Hc@HG`@CnBINKj@sAhAqA`BsAvAi@n@e@tGyIVQZIn@xAFXDX\\PjATh@@h@GDsFDu@Hs@^}Bd@{Bz@sFTiAV}@^{@n@cAx@_Ba@}AGECKSFeA`C', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.22676357319382,-2.74065645767212], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=14318">View all updates for The Black Swan Hotel, Leominster</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        12<span class="sup">th</span> Sep 2018, 22:49
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        12<span class="sup">th</span> Sep 2018, 22:33
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11814318">Yes</span> <span id="discdetail11814318" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 August 2017 by Tris C</span></li><li>Beer Garden : <span id="fac11414318">Yes</span>  - <span id="discdetail11414318" class="discdetail" style="">Patio area to rear</span> -   <span class="Reviewer">last updated 30 October 2013 by Will Larter</span></li><li>Darts : <span id="fac11114318">Yes</span> <span id="discdetail11114318" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 October 2013 by Will Larter</span></li><li>Function Room : <span id="fac12314318">Yes</span>  - <span id="discdetail12314318" class="discdetail" style="">100-person capacity.</span> -   <span class="Reviewer">last updated 13 August 2017 by Tris C</span></li><li>Hot Food : <span id="fac10314318">Yes</span> <span id="discdetail10314318" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 August 2017 by Tris C</span></li><li>Karaoke : <span id="fac10614318">Yes</span> <span id="discdetail10614318" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 October 2013 by Will Larter</span></li><li>Live TV Sports : <span id="fac11014318">Yes</span> <span id="discdetail11014318" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 October 2013 by Will Larter</span></li><li>Micropub : <span id="fac12214318">No</span> <span id="discdetail12214318" class="discdetail" style=""></span>  <span class="Reviewer">last updated 13 August 2017 by Tris C</span></li><li>Real Ale : <span id="fac10114318">Yes</span> <span id="discdetail10114318" class="discdetail" style=""></span>  <span class="Reviewer">last updated 07 November 2012 by Will Larter</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/78793/" class="List1">Reet Petite</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/77711/" class="List1">Shooters Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14317/" class="List1">Talbot Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/59501/" class="List1">The Ducker Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14316/" class="List1">Royal Oak Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 3 reviewer(s)" title="Pub has average rating of 7 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55269/" class="List1">The Grape Vaults</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/74589/" class="List1">The Dukes Head (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14307/" class="List1">Bell Inn</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

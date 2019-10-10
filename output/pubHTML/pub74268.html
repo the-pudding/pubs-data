@@ -126,13 +126,13 @@ var thispub = 74268;var pubaddress = "High Street";var pubname = "The Pear Tre
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 74268;var pubaddress = "High Street";var pubname = "The Pear Tre
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="nf4451rsupl76100bqt3o5u1a1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="rjq2cv6t87bp6qslp6ie9199h0" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 74268;var pubaddress = "High Street";var pubname = "The Pear Tre
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 74268;var pubaddress = "High Street";var pubname = "The Pear Tre
   <div id="displayedimage">
 <a href="/pubpictures/74268/" class="indisplay"><img src="/images/display/74001_74500/74268_5157caf4.jpg?w=2" alt="Picture of The Pear Tree" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
   Submitted on Thursday, 14<sup>th</sup> March 2019<br />
-  With picture contributions to 20227 other pubs<br />
+  With picture contributions to 20678 other pubs<br />
 <a href="/pubpictures/74268/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -253,7 +253,7 @@ var thispub = 74268;var pubaddress = "High Street";var pubname = "The Pear Tre
 <p class="old">The pub, which closed in 2013, was successfully converted into a German furniture warehouse in January 2014</p>
 <p class="Reviewer">On 9<sup>th</sup> February 2015 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 2564 recommendations about 2508 pubs]</span></p>
+  <span class="leftspace">[User has posted 2595 recommendations about 2539 pubs]</span></p>
   </div>
 </div>
 
@@ -267,7 +267,7 @@ var thispub = 74268;var pubaddress = "High Street";var pubname = "The Pear Tre
 <span class="h2ish" id="linksheading">External web links for The Pear Tree</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="CAM/134">CAMRA WhatPub :: The Pear Tree - <a href="https://whatpub.com/pubs/CAM/134/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -281,7 +281,7 @@ var thispub = 74268;var pubaddress = "High Street";var pubname = "The Pear Tre
 
 	var mymap = L.map('mapid').setView([52.11423370000000, 0.25525870000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -306,7 +306,39 @@ var thispub = 74268;var pubaddress = "High Street";var pubname = "The Pear Tre
 
 
 </script><div>
+<i class="fas fa-train"></i> Whittlesford Parkway, 4.51 miles, 1 hr 27 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Great Chesterford, 5.85 miles, 1 hr 52 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Shelford (Cambs), 6.41 miles, 2 hr 3 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('mpa}Hc{p@^z@qDhQ^p@AdTb@xAf@zINvBd@jAZdHP|BEfAgAbA{@tBgFlPz@pA\\?hBx@nAJBTHXLCh@NJN@Vk@hMcB_@aBjRg@bNUnDIj@WIYtCQnAg@pCQjACj@ClFm@Ac@d@_@~@YbDNNXr@VpAHTPVy@fEw@fGMbB]nGDN@PEVINIdEBj@PRFV@d@Kf@Yb@IV?n@f@hEJfB@nBA|@KvBMdAi@lCSf@Mb@?j@bC`R`CxPnBdPpA|Mz@tH|@dFKFh@tBjHdV`CtGDpAh@XpBdExCzEfCpD~AfDJv@THxGbQ`BzCjBvCfCnEjDdIp@xBl@`CVpBHrAEx@GJe@xBNtA^b@\\VP^l@dI~@|O?p@H|AJd@b@bHJfASXoA^INCX?|@@^LjANr@P~AJhBFdCIA?Ph@BCf@VD?GZB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('mpa}Hc{p@^z@qDhQ^p@AdTb@xAf@zINvBd@jAZdHP|BEfAgAbA{@tBgFlPz@pA\\?hBx@nAJL}ArExCT`C]`@G\\GpAJd@PR|@POxDpEl@bE|@bBV@KtFZ`D|@lOdFvBj@dEx@nMxAxCl@jEfA|ExAhCn@jAVlAFhEf@bAZjDvBtCvAnEbBxBj@jCdAaBlWXj@pKpFbAn@ZCnB~@FfHrG_Ar@QjA_@vAy@n@`DtA~CjBtEXf@h@`@d@@XTrFxL`@p@rOtUj@n@pBhClBr@xCDzALtDtBrDpCjBjB~AvChEdGpC`BfBj@lBP|@Rl@jBhJb^R|@dBgAzIx]lGyB|@nMh@z@ILFnAnDaEd@]\\OTCl@Ad@Fb@L|@j@h@d@zBfCRh@R|@~@jCV\\l@n@`@F^If@a@XQn@OzEyF\\@P|@LPMVR\\QXd@_A', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('mpa}Hc{p@^z@qDhQ^p@AdTb@xAf@zINvBd@jAZdH}Bf@_Kp@g@HwCnHCtC]fA?vCn@`As@v@ObAuAKmDn@_@V{AzBUHGr@{ApB[x@QtAEhAC~GDtGHzAIL{EX_B?_@PM|@cIraA?^T`DIrAqAa@yAo@_AxFNLaAbEkBfMWz@mB|GaBnFoDvJ_C~Fo@zC}BxDcChDdA`DiApByJbN}C~FgB|CgAbDo@\\E?mFhF_D~IiDjJcE`Ga@aAg@|JQnGa@dIy@tEq@bEK?[nGMjGoEvEwArAYRq@BIII?ETCVDh@?~@Ch@_@hBKp@Ej@I`DFlA@hA@|DX|D?v@GbAe@zE]hTEtNKlED~C@pDM|HMhBu@lEGz@@bAJxDAtEi@fO]`HWxCKlBIrBChA]hB[d@MFQc@c@_@wBoAcAq@gA}@SdACZ@XBRHLsBhOYMiCbImBhFy@jCKC}@|@{AbH[jCYzAsA`HgBbIiD`Lv@p@pDdFOPICQBIEkAV', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.11423370000000,0.25525870000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

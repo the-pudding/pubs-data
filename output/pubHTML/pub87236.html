@@ -126,13 +126,13 @@ var thispub = 87236;var pubaddress = "1 Alma Street";var pubname = "The Corner
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87236;var pubaddress = "1 Alma Street";var pubname = "The Corner
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="aleq227efbr3tqgmu7uq6j0ni5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="r0dd09fmmhb6qbh0mtq8un60k4" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87236;var pubaddress = "1 Alma Street";var pubname = "The Corner
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87236;var pubaddress = "1 Alma Street";var pubname = "The Corner
   <div id="displayedimage">
 <a href="/pubpictures/87236/" class="indisplay"><img src="/images/display/87001_87500/87236_76efe46d.jpg?w=2" alt="Picture of The Cornerstone" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
   Submitted on Monday, 10<sup>th</sup> December 2018<br />
-  With picture contributions to 24007 other pubs<br />
+  With picture contributions to 24825 other pubs<br />
 <a href="/pubpictures/87236/" class="smallbutton">View all this pub's pictures</a> (1 more image)
  
   
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([53.70209460000000, -2.19901990000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Todmorden, 5.33 miles, 1 hr 42 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Walsden, 6.28 miles, 2 hr 1 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Littleborough, 7.56 miles, 2 hr 26 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('utwfItnlLD^cAn@eDjCUPa@x@I`@GYcA\\cAT_COwB[i@kAy@wOKm@y@aBu@oA_@y@E}@kCa@]o@e@aBIs@@sCw@oBmFaJc@_AyA}Bg@qAgEiJiAwBw@}@_@YaG_Dw@o@gCeBSWqGyMqGcPm@iAg@yAMy@YkDEyBIoASsAQ}C?m@EiA@}@d@iFJ}Cd@yEP[s@oHAaAO@KW}@mESs@[}AUyBg@{Ac@{BqCsMy@gCOkA?q@BmBFqAN_CDsCQgFA{DH{B?uALgHMaPBqAPyBFgAF_ODiCBs@l@wHPoDv@uFN}@@c@AWIOmBiC}CeF}B}Dq@oAg@mA]aAe@eBMeAMuDKsAI}AByBHyBDo@ZmBD_A?y@P{@JmA^oBf@{A`DwLv@gCxAuFN_@tDwNJWHi@nCyKpD{OxBsKb@yBi@{FGuAEk@KUVcASiAVa@Ts@dA{ENcAZqAJSQkBG_FD}A?u@[o@gAsAIYDYtByJr@mMTaHj@wGn@oCAwAf@cGIsFFy@Z}@kA_C?M\\w@^s@FEXA@b@BZb@z@lA`DXfA', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('utwfItnlLD^cAn@eDjCUPa@x@I`@GYcA\\cAT_COwB[i@kAy@wOKm@y@aBu@oA_@y@E}@kCa@]o@e@aBIs@@sCw@oBmFaJc@_AyA}Bg@qAgEiJiAwBw@}@_@YaG_Dw@o@gCeBSWqGyMqGcPm@iAg@yAMy@YkDEyBIoASsAQ}C?m@EiA@}@d@iFJ}Cd@yEP[s@oHAaAO@KW}@mESs@[}AUyBg@{Ac@{BqCsMy@gCOkA?q@BmBFqAN_CDsCQgFA{DH{B?uALgHMaPBqAPyBFgAF_ODiCBs@l@wHPoDv@uFN}@@c@AWIOmBiC}CeF}B}Dq@oAg@mA]aAe@eBMeAMuDKsAI}AByBHyBDo@ZmBD_A?y@P{@JmA^oBf@{A`DwLv@gCxAuFN_@tDwNJWHi@nCyKpD{OxBsK~ElAjDRlCZpB|A\\@hFeATS~F}IzJgWLSrAmAdAuBMkID_@^q@|ByCP[ViA^aAR[_@c@lALnAVn@Tn@H`A@fANLNFVAZGZBJd@SHSAyAUeAMe@OU[MYU\\C^c@Sm@w@{DGe@@y@lEhAb@Dd@MbB}A~Aw@j@O`@Eh@Bv@R@MFMpBuBj@g@p@[`AYNIRC~@@h@Vt@d@TBh@G`@Qb@_@^UjAaAfC_Cl@_@rBeBPGFGp@fBJOr@fB?HSWK?SFFEAEkAbA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('utwfItnlLCOm@BICGGeCsLl@i@Dy@Nu@To@NOs@{C_DaNBs@lAoFn@{BT\\`IeDjAy@tDwAzAw@fByBp@oA~F_K~E{G^mAZcCrAo@zCw@hA{@zCcH^m@hAU`@B^MhAm@|@u@rAeCdAiCtBoJ\\wBhEuHr@CNs@n@\\B_@l@cBrAwBp@eBtAuEp@qCj@mBd@qAj@eAfCgDlAeAz@a@^g@b@{@v@Sj@Wp@?rAV~AFrAf@h@Q^e@ZWT@r@^V\\RHp@IfGsGh@]fAQt@JzA\\`@?d@g@J[WKcAgAVm@L}EBcAFkDFuAV}@v@}Al@sC\\qCCkAEgEQ_Bx@aEx@gCbAuC^}BWaDr@eGt@{@HQLoADSLULGPB`ArA^^jAt@t@TXDh@EtDmAh@KHYGa@}@kAKW?s@jAeEAwBc@uB\\RLL~@Wl@q@j@}@VQp@@YoAHqAh@i@pA_AvBkCh@c@nAm@xAy@b@AtATz@VdC\\hC?vAUdBGlA?IKCc@Di@AKMa@OSAM?uARyAAOIKSSWMm@CSKIMEMAU?i@Hq@d@iBR_B`AkDd@_AHYHk@^qA`@mA\\k@d@g@ZERHl@d@f@p@JHv@NPCHELs@?]CEf@U`@Jf@Qj@k@j@y@HURO~@Uv@]nBRxBJlA[|@qA~B}Fd@w@\\{A@iAAe@SkBHI?MDa@JWRQZCf@Yd@m@EKR[}BuDsBaChAgUzAmGL{Bx@oDl@yBVqCCgA?{BHqDDSh@oADSFa@l@{@l@[rCmBrCiE~DqEhAcAj@uAl@aBPJVCn@o@jCqB|@I`@Fz@|@bAp@x@Tn@Dd@Hh@Zd@Nb@GtAqDbBkCn@sAr@yBZu@h@_AzAyA\\GlAX`@DPG@k@}AqEo@aBcB{Iw@cGQoBAi@@w@HyAX_BT{@xAuDnBmDVw@vAeRLk@nAqCrAaBz@cB~@yBnCwEvD{FtBkDjA{ADmAFeA@k@fCt@HWZmACM\\_@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.70209460000000,-2.19901990000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -335,6 +367,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul class="Custom1">
                     <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 2 reviewer(s)" title="Pub has average rating of 8 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/17115/" class="List1">New Inn</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2 from 1 reviewer(s)" title="Pub has average rating of 2 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/17120/" class="List1">Waterloo Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/88413/" class="List1">The Old Boot</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 3 reviewer(s)" title="Pub has average rating of 7 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/17105/" class="List1">The British Queen</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56014/" class="List1">Little Queens</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/17111/" class="List1">George &amp; Dragon</a></li>

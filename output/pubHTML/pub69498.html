@@ -126,13 +126,13 @@ var thispub = 69498;var pubaddress = "5 Highfield Road";var pubname = "The Hig
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 69498;var pubaddress = "5 Highfield Road";var pubname = "The Hig
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="rktketr7r4debhki4c0k1l7n41" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="77t8qhch0dbmhveone3ghlak27" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 69498;var pubaddress = "5 Highfield Road";var pubname = "The Hig
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -267,7 +267,7 @@ var thispub = 69498;var pubaddress = "5 Highfield Road";var pubname = "The Hig
 <span class="h2ish" id="linksheading">External web links for The Highfield</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-<ul id="Custom2"><li class="fblink" id="310051866024745">Facebook - <a href="https://www.facebook.com/highfieldbeverley/" target="_blank" rel="nofollow">The Highfield Beverley</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="310051866024745">Facebook - <a href="https://www.facebook.com/highfieldbeverley/" target="_blank" rel="nofollow">The Highfield Beverley</a></li></ul><ul id="Custom2"><li class="wplink" id="HUL/BEV009">CAMRA WhatPub :: The Highfield - <a href="https://whatpub.com/pubs/HUL/BEV009/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -281,7 +281,7 @@ var thispub = 69498;var pubaddress = "5 Highfield Road";var pubname = "The Hig
 
 	var mymap = L.map('mapid').setView([53.85348850000000, -0.41962620000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -306,7 +306,39 @@ var thispub = 69498;var pubaddress = "5 Highfield Road";var pubname = "The Hig
 
 
 </script><div>
+<i class="fas fa-train"></i> Beverley, 1.07 miles, 20 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Arram, 3.67 miles, 1 hr 10 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Cottingham, 6.7 miles, 2 hr 9 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('wfugIv|pAZh@`AmBlBnFd@bAn@cAj@k@Lr@`@hA`AtA~@~@dAn@j@Nn@Jx@Aj@Md@]b@nBf@xAdAtAv@h@j@LtKm@RRh@CbAIl@aAn@oAxB}Ej@`Ax@p@RDnCO|@gAt@hCfEUKzBG?OJQ??B{AJ', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('wfugIv|pAiCkEUKUFMZuAyBLg@pAuALKBDf@e@e@iAM{@?i@CSIUKKKEYDQ]DO[s@{Fg[{AyGqAkEcBmEwBwE}BgFmAiDGAi@eB]cBe@yCIWFa@_@qFo@yGYwBk@oCe@{A]gBGAES}BpAq@XsBh@gBp@{T|Ka@L_ABu@IuHqBw@IeSS_@MwAs@_Bc@qAOaAAs@JmHzCg@HaGGo@Fa@XWh@u@fGc@jBw@zAaC|BsBbB{@lAS~@e@tGQt@]v@wAfC{AbBe@p@Kh@B^Nh@[b@v@tCJl@Bh@gB~MSh@MTaEvBl@zAJdA?hAEtAOvCS~Ao@rDYnDYnCC`BPlGGTw@dAY`A{@zEc@pCc@|Ec@nIp@tCHGL@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('wfugIv|pAZh@`AmBlBnFd@bAn@cAj@k@Lr@`@hA`AtA~@~@dAn@j@Nn@Jx@Aj@Md@]b@nBf@xAdAtAv@h@j@LtKm@RRh@CBdBbElBhCxAzAlBvC|DzBlDxB|Bt@qBx@bBv@tD`@nB`BpKfBi@xFyArB[DH\\ANLFAPPxBq@vAO|A@|@CjC^PhAJvADpArBz@TFXE\\[?]XO~CC~@[NIRU\\Mb@GPMZy@VSj@C`AZX]\\QfB`@^A~@c@Rk@`A]h@i@Pw@zBcCD_@pAwBzAmBdA}BxC{Eh@o@rBsBvBoDPShAHLEtAeCD?DMN[jDmCxIqHdBMZWAS@YHOTQ~B[hA]v@c@d@c@V_@Jc@J}HFyAp@gDPWf@Qf@^vApBd@nAbBhFv@lCjCvJTpAHZh@p@pBrLFj@JLL?x@a@hAUbAKrAGvAOnDWlDKf@Lx@h@bBdBTN^BjAEf@N`@^zBlDXTxE|ARJJ^Bl@BXPBTIf@^n@r@LTFf@Lf@VJ`ANj@?z@c@r@k@~AcBr@a@d@FVCp@g@XMj@l@Lc@l@_A`@e@XKfDrFr@rAvA~DVX~@q@f@s@~BaCn@]pAc@bBiCh@iA^a@n@a@T]Ha@?i@QgBAc@L]LQ`@Q\\W@WNBpBoAdG}EnBwAnBqAx@iAdJ~@jFzAzAj@`CbBtBzB`DdC~@x@PDXAnAeEnBqHb@gBXaBf@oDb@yABAb@wBZy@bA_APgAMu@Ei@KaDfAInDE@kATsCLoEAaLS{FtA[N[NuBF_BJo@Rm@h@u@Pj@RdANb@\\LB]`@DDDBe@@{BJqA@_@ASOm@rAsGHA?a@NO?]~AUpAk@r@I?NFC@R', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.85348850000000,-0.41962620000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

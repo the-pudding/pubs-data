@@ -126,13 +126,13 @@ var thispub = 20613;var pubaddress = "Main Street";var pubname = "The Nags Hea
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 20613;var pubaddress = "Main Street";var pubname = "The Nags Hea
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="i05ajof82l2id1ejij1ra55jj1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="sliv62pmbdaedffklm4smd7es7" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 20613;var pubaddress = "Main Street";var pubname = "The Nags Hea
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -267,7 +267,7 @@ var thispub = 20613;var pubaddress = "Main Street";var pubname = "The Nags Hea
 <span class="h2ish" id="linksheading">External web links for The Nags Head</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="HIN/8671">CAMRA WhatPub :: The Nags Head - <a href="https://whatpub.com/pubs/HIN/8671/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -281,7 +281,7 @@ var thispub = 20613;var pubaddress = "Main Street";var pubname = "The Nags Hea
 
 	var mymap = L.map('mapid').setView([52.58188100000000, -1.35910500000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -306,7 +306,39 @@ var thispub = 20613;var pubaddress = "Main Street";var pubname = "The Nags Hea
 
 
 </script><div>
+<i class="fas fa-train"></i> Hinckley, 3.72 miles, 1 hr 11 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Nuneaton, 7.65 miles, 2 hr 27 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Narborough, 7.8 miles, 2 hr 30 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('_||_IxnhGJDh@@Xc@~@aCf@i@rCuAl@H\\Z~BbDl@dAdBfF`@bA|AzCzBpCbA~@tB~AtC~AfA\\~@NpA@fIGxAR`CD~FTxCV~@_@`Bc@dI\\fARbBr@pCdBjBv@j@d@`@h@J@bFbG~@v@h@Lt@?ZC\\K|Am@HD@LBP|GsDv@W|@QtAGt@@vCb@xBAEm@t@Sv@]Db@hD_A|Da@`AStAOrBDn@Lx@\\bBbAzB~ANq@nOnK`JdGvAlA`A{APRv@Vt@~A`@xAlCzDXZp@^~ArAzAzAJFR@j@GVSd@e@l@}@JN\\V|BzANTr@hBXbAVInDeBd@EFKHAbBNlIEzAElEk@zEcA?Pf@eAl@}@x@{@CY?UNKI}@DAFx@ZKIiABAFr@A?VnDE@ScC', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('_||_IxnhGJDh@@Xc@~@aCf@i@rCuAl@H\\Z~BbDl@dAdBfF`@bA|AzCzBpCbA~@tB~AtC~AfA\\~@NpA@fIGxAR`CD~FTxCV~@_@`Bc@dI\\fARbBr@pCdBjBv@j@d@`@h@J@bFbG~@v@h@Lt@?ZC\\K|Am@HD@LBP|GsDv@W|@QtAGt@@vCb@xBAEm@tAa@D`@GTALC`EGdDc@lLG|KF~Ah@bIDb@lApI`CbIh@vBt@`CnAdFr@hCCT@Lf@pEZfENhBH\\FVZTb@BHv@MNERAJBXMTGXOBIHM`@CTCf@QpJ?lDBxBNzDPbCZ~CVjB`@bCx@tDtAfE~@jBZh@LHNF`@IHTLPARBb@TjA^p@bAtAp@t@`ClBtAv@`CdA~DrApEpAjGxA|GzBpCpAlBlAjBdBb@@DDX\\GPVb@vAxBzAzCn@|AjAdElEbRhBnH|@nCVn@`ArB~A|BbBdBv@n@dB|@lAb@nB\\?PN??HdBF~AInCe@TRJ^BX@RM`Ba@bBiEvOg@hAET@RmEjP@j@h\\v^tEnFf@|@Tp@\\lATvA`AzGpBjIhAlKbBxPJn@Ph@^p@Z`@pEl@p@?@jECvAOvEOlDBdBThBFXZ|@d@`Ar@hA`AdA|@f@TvABbAAzCLpAFrBBdDVjIZvDPpE@dGGd@Sd@D`EMj@F\\PZLd@@j@CdBZDGZ?l@jAtIbAzFf@tF?FDNHZfAnJ\\bCsBfBw@x@IJKvAQ^FRQDKCM\\k@|@m@j@mAx@QIQHa@m@_CjECIf@}@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('_||_IxnhGJDh@@Xc@~@aCf@i@rCuAXDbA}R`@yBxAgE|@}DxCaFhBoC~BeBpBaD~C{GbIyCqEqEDwAk@TPmY?iINoBtAoHh@eELeB@_@EgBmAoLImBi@gK}@aWD{BX{FPyE?uA]kG@WN]Zg@[kAOu@o@cFYRYAyAuBe@T@cCEcAKeAAgBDk@HuEHA?uAIuA@gAEsAKiABu@GaCJ?C}Ch@LTEFGc@aCg@iBKSuAsAe@k@Pu@?i@Mo@Ke@_A{BYk@cAuC_AcDa@mB}@oCGCLQPcCHcDKsESoC_@oKGaEYILcB?a@Go@o@JiAQy@WViCVcEx@uJVuC`@uFPqB^wCx@}D^eCXaCH}AFiIPiCP}ATaAzB}EdA{Ct@mDxAwIfBwQz@aGz@oIj@iIHaGRgD@y@Fg@EYYg@Y[Ss@QwAB{@`@e@|@a@zA{@dAmAv@wA^yDT{DMwCi@oC}@kBoBmCsAkDa@yCS{B`AUvBu@~B_AhDg@lDa@f@Og@yKo@qSO}J@aCZgCn@i@`@IoBaPq@G`@iFv@kFb@aBv@qBh@aBnBoNgAmD}@mCWm@g@g@OWO_@SiAOgA?}BZwCRoAlAmFl@eDTyANyAN}BBiAAqDBk@JeAf@{DP{BBgA?qAMiG?aIG}BQ{AY{Aa@eBOeAIsA@wBH_Db@iJLgGC}AOgCGs@_BoL?_OTu@cBkF{@aDf@e@JUD]NiEFc@AWHeD@kA[yMEu@IU@gBMqAA[KSw@kCAYnBcA', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.58188100000000,-1.35910500000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

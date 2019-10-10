@@ -126,13 +126,13 @@ var thispub = 87425;var pubaddress = "Westgate, Bonn Square";var pubname = "Th
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87425;var pubaddress = "Westgate, Bonn Square";var pubname = "Th
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="gsa003qqb97jvvjjolnfak7li0" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="m1sr0jfmmmbh6gv7md40r7v6e0" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87425;var pubaddress = "Westgate, Bonn Square";var pubname = "Th
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87425;var pubaddress = "Westgate, Bonn Square";var pubname = "Th
   <div id="displayedimage">
 <a href="/pubpictures/87425/" class="indisplay"><img src="/images/display/87001_87500/87425_cdb78cd9.jpg?w=2" alt="Picture of The Alchemist" /></a><br />  Image posted by <a href="/userinfo.php?name=Komakino" class="indisplay">Komakino .</a><br />
   Submitted on Saturday, 11<sup>th</sup> May 2019<br />
-  With picture contributions to 592 other pubs<br />
+  With picture contributions to 601 other pubs<br />
 <a href="/pubpictures/87425/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -251,7 +251,7 @@ var thispub = 87425;var pubaddress = "Westgate, Bonn Square";var pubname = "Th
 <p>A chain cocktail bar located on the &#039;Rooftop Terrace&#039; of Oxford&#039;s new Westgate Centre. Heaving with pretty young things on a Saturday afternoon, there were two keg pumps serving unbranded fizz. The drinks menus didn&#039;t mention the provenance, and due to the hubbub and loud muzak, I parted with &pound;5 for a pint of &#039;IPA&#039; which was drinkable, although I&#039;d expect that for the price.</p>
 <p class="Reviewer">On 11<sup>th</sup> May 2019 
   - rating: <b>2</b><br />
-  <span class="leftspace">[User has posted 940 recommendations about 940 pubs]</span></p>
+  <span class="leftspace">[User has posted 955 recommendations about 955 pubs]</span></p>
   </div>
 </div>
 
@@ -282,7 +282,7 @@ var thispub = 87425;var pubaddress = "Westgate, Bonn Square";var pubname = "Th
 
 	var mymap = L.map('mapid').setView([51.74957460000000, -1.26152080000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -307,7 +307,39 @@ var thispub = 87425;var pubaddress = "Westgate, Bonn Square";var pubname = "Th
 
 
 </script><div>
+<i class="fas fa-train"></i> Oxford, 0.84 miles, 16 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Oxford Parkway, 4.19 miles, 1 hr 20 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Radley, 5.32 miles, 1 hr 42 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('yizzHtkuF}Cq@e@xAG?~A_FJUHIZu@J{@y@IE\\}ALFhCIXI^IEa@pA}@vBO`@[]kAxDNtAo@p@}ChBCtA@x@U?JjFyAd@`@tDSHBVAPB\\Lr@T`EID]d@@LEBHlAaARL|BI@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('yizzHtkuF}Cq@e@xAG?~A_FJUHIZu@J{@y@IE\\}ALAWO@CeBmC|@[BEI]mFiDnAe@mCiDzA_Bf@AQO}@iBZ}A|@iA^CWo@HmBb@uAZk@Bk@J{@Zg@ViCb@e@Du@EqDb@}CHoE\\QKu@HKVGD?LyDf@iHXkALiF|@gGxAkHz@eDd@yFxAgE|@_C`@iCr@yBt@_Dr@uGpBAIuPvE@N]Jg@BoDdAk@\\aItDyGjEEWuEvCM@GNIF_HvDcCv@KEeDp@y@BKDALUGIKOEI@IDa@l@CKGFuA^mDpA{F`C}A\\mCLw@Mo@Se@SEQQEIF}@WqAQ{@A_EBkE^aFxAqPpGkCr@_@NW{@Yi@UWSISC]HQLMPk@lAc@^sBj@W@CN[Ig@Nk@\\[p@e@h@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('yizzHtkuF`@JMtBUU@d@pCv@HcAn@uEFDBOLDCLVJFPDh@DSHI\\QJUj@e@d@[j@YNEBNFFhAc@G{@C@Dh@v@YMuDvJ_B`HkBvEs@hGwAX]JNRc@\\MXDNVPFH?JE~AyBl@rAd@_@dDyA@IJEBDbDgAn@[g@sAvC_DbDsDbIsJhEuFJYzD}E`@m@b@{@DWGUd@YHKKwARUp@Q|Ci@jGk@vB]RMv@qAlBoBhJgWVy@?a@n@aDZNfATnCXhACt@XpAjAfBz@|BCd@L^VjBEhBm@n@_@|EcFr@tAd@hA`@\\^NPo@fEuD|BKtEoBd@o@pQaHtG_ALZFhAp@tBdI}AfJ{AjH}A\\nAjBe@xAWbBGj@IpFrEzEvFh@T~B|FhAJdATDVp@`@tAvAhBpBh@b@dA`@rD^`FvAjDf@fADpBILGxChAlHrDfC~AxAhAhAjAj@}Ct@aCp@qAdAuBl@oBp@iEj@aBbAgBjA_CPQ^SlA[f@@vBv@j@}Bd@S~@@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.74957460000000,-1.26152080000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -340,14 +372,14 @@ var thispub = 87425;var pubaddress = "Westgate, Bonn Square";var pubname = "Th
       <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
        
           <ul class="Custom1">
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 4 reviewer(s)" title="Pub has average rating of 6.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31682/" class="List1">The Castle</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31742/" class="List1">The Jolly Farmers</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 24 picture(s)" title="Pub has 24 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 4 reviewer(s)" title="Pub has average rating of 7 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/68406/" class="List1">The Swan &amp; Castle (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 4 reviewer(s)" title="Pub has average rating of 6.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31682/" class="List1">The Castle</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31742/" class="List1">The Jolly Farmers</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 26 picture(s)" title="Pub has 26 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 5 reviewer(s)" title="Pub has average rating of 7 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/68406/" class="List1">The Swan &amp; Castle (JD Wetherspoon)</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82222/" class="List1">1855 Oxford</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31825/" class="List1">The Cow &amp; Creek</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 36 picture(s)" title="Pub has 36 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 15 recommendation(s)" title="Pub has 15recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 13 reviewer(s)" title="Pub has average rating of 7.5 from 13 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31671/" class="List1">The Royal Blenheim</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31825/" class="List1">The Cow &amp; Creek</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 37 picture(s)" title="Pub has 37 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 15 recommendation(s)" title="Pub has 15recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 13 reviewer(s)" title="Pub has average rating of 7.5 from 13 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/31671/" class="List1">The Royal Blenheim</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2 from 1 reviewer(s)" title="Pub has average rating of 2 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83284/" class="List1">Malmaison</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81894/" class="List1">The Slug &amp; Lettuce</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81894/" class="List1">Slug &amp; Lettuce</a></li>
 
           </ul>
   

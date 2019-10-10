@@ -126,13 +126,13 @@ var thispub = 34178;var pubaddress = "Ogley Hay Road";var pubname = "Foresters
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 34178;var pubaddress = "Ogley Hay Road";var pubname = "Foresters
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="savbcha53f7j1fn6oejhao4cc7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="g07uqdncat2ag3bbbnqlfpbcl5" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 34178;var pubaddress = "Ogley Hay Road";var pubname = "Foresters
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -246,9 +246,11 @@ var thispub = 34178;var pubaddress = "Ogley Hay Road";var pubname = "Foresters
   <h2>Reviews of Foresters Tavern  <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
   <div id="newreview"></div>
   <div class="hline"></div>
-  <div class="indreview"><div id="review130123" class="reviewdiv">
+  <div class="indreview"><div id="review130123" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
 <h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Soup+Dragon">Soup Dragon</a> left this review about Foresters Tavern</h6>
-<p>Update: Returned to this estate pub, which does have a small rear garden area. This time I went into the bar, which had darts and pool. There was a TV showing sport and no music. A few bits of footy memorabilia were on the walls. Service was fine and a few local were in. Pedigree is still the only real ale. It remains one for the locals. <br />
+<p class="old">Update: Returned to this estate pub, which does have a small rear garden area. This time I went into the bar, which had darts and pool. There was a TV showing sport and no music. A few bits of footy memorabilia were on the walls. Service was fine and a few local were in. Pedigree is still the only real ale. It remains one for the locals. <br />
 **************************************<br />
 Sep 2009:A very 60s kind of place, a little large and soulless, aimed a little more for the food market i think. Two big rooms inside, clean and tidy enough and the service was fine. <br />
 <br />
@@ -271,7 +273,7 @@ As its a little out the way, i cant see myself going back, but if you live by it
 <span class="h2ish" id="linksheading">External web links for Foresters Tavern</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="TAM/0042">CAMRA WhatPub :: Foresters Tavern - <a href="https://whatpub.com/pubs/TAM/0042/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -285,7 +287,7 @@ As its a little out the way, i cant see myself going back, but if you live by it
 
 	var mymap = L.map('mapid').setView([52.69085767994022, -1.92291505026242], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '

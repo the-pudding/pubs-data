@@ -126,13 +126,13 @@ var thispub = 87014;var pubaddress = "Unit 31, Harmill Industrial Estatte";var
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87014;var pubaddress = "Unit 31, Harmill Industrial Estatte";var
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="s2em0bmt1j3ogerhqdkq7vsd26" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="u5q12pr16m0vhruoe9cq4171g3" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87014;var pubaddress = "Unit 31, Harmill Industrial Estatte";var
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -246,7 +246,7 @@ var thispub = 87014;var pubaddress = "Unit 31, Harmill Industrial Estatte";var
 <p>The bar of this brewery is a 2019 Good Beer Guide entry, and it is only open Fridays and Saturdays.  There were cask and keg beers and also plenty of bottles to purchase. We enjoyed their Captain Cook and Corporal Rogers beers.</p>
 <p class="Reviewer">On 18<sup>th</sup> February 2019 
   - rating: <b>7</b><br />
-  <span class="leftspace">[User has posted 1191 recommendations about 1117 pubs]</span></p>
+  <span class="leftspace">[User has posted 1296 recommendations about 1186 pubs]</span></p>
   </div>
 </div>
 
@@ -263,7 +263,7 @@ var thispub = 87014;var pubaddress = "Unit 31, Harmill Industrial Estatte";var
           <ul id="Custom2">
 			<li>Official site of Leighton Buzzard Brewing Co Brewery Tap - <a href="http://leightonbuzzardbrewing.co.uk/" title="Submitted by:- Paul Brett" target="_blank">leightonbuzzardbrewing.co.uk</a></li>
           </ul>
-</div>
+<ul id="Custom2"><li class="wplink" id="BES/572">CAMRA WhatPub :: Leighton Buzzard Brewing Co Brewery Tap - <a href="https://whatpub.com/pubs/BES/572/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -277,7 +277,7 @@ var thispub = 87014;var pubaddress = "Unit 31, Harmill Industrial Estatte";var
 
 	var mymap = L.map('mapid').setView([51.90744030000000, -0.66041870000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,39 @@ var thispub = 87014;var pubaddress = "Unit 31, Harmill Industrial Estatte";var
 
 
 </script><div>
+<i class="fas fa-train"></i> Leighton Buzzard, 1.33 miles, 25 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Cheddington, 4.74 miles, 1 hr 31 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Fenny Stratford, 8.25 miles, 2 hr 39 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('mey{Hd``ChAvBkChF_CmEiE~h@[fE_BpSFVBZ@nBRrCA~@ElAeBUqC}@WlD[h@]FoCkAGNK@kB~Dk@cA[w@aAuCo@n@IZGn@IfDCZEFG@kCYWICMSEcBbCABc@ICPw@_@Eh@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('mey{Hd``ChAvBkChFnC|DtA~ArAfAz@`@bA~@`AvAnGrInAxAlAz@xA^rBAdAGAQF_@FKHEJ?HDLXLIHs@Sy@KgADeEBuNDmBHoALPOfBFhAPhAF|@dDzApPlG[vAHLxFiCf@cBAe@RU~@qDj@iBJg@hG~AL[b@w@f@m@b@_@NGFS\\f@Zg@`@]j@SXAnB^lAH~C[d@?b@Df@DnAXj@X|@h@XFZ?\\GZUpDyDT[n@uAd@uBHU|C_GxAcCbA{AR_@To@`@oBPoALyBPaA\\k@b@Wh@CvBRd@Pl@RvAt@n@`@p@h@p@t@`@j@Xl@hBdFz@vDVh@NPTJj@LR@xF{CNQRORANIh@_@h@s@t@wAZg@ZYhCqB`BuA`DgCVKb@Il@CjCRr@C`@Ol@a@Zc@Ta@Pm@XuAx@_Fj@cCDk@XkAZ{BXsAJYFNNBXNz@n@DABEtK~KnIdOLCnNbAJIXCJDf@bBn@`Cn@vDrArEZ`AhAfGzBxHZx@X\\RbD?`@pOgDrDcA`Em@z@E', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('mey{Hd``ChAvBkChF_CmEiE~h@i@fBUYCDWEcABs@PmA`@wCjAiFfBqDt@YBm@E{DiAs@ASDSHa@`@y@nAc@Te@Ce@Sx@DY~BG\\Ql@]x@QZw@~@i@b@uB~@eBd@c@DeCFsIAaFFiDL{BRuA^{@`@k@b@sFtFWc@M?c@x@WXs@Xu@FaAMc@SG@IjAw@fFUjA[lAMVQXWPe@Jw@HmBAw@EsDi@[n@MFoGdAuC`Gk@e@o@[qASc@Cg@MgANj@j@iAz@Wh@KZa@jCQp@y@dCuBtEe@~@m@|@kB~AmA|@UBqAc@SAi@J[Z[h@Or@OpBw@pDI|AQn@Ej@ArAFvCFtH?|CAv@s@lOGl@G^Un@Wl@eF|JYd@yAzA]b@sA|ByA|Ae@r@]pAGb@C^AbAQfAYbAW^wGnHcBdBOFqBDm@Fs@^SRg@x@Sb@C@EKKC@Tb@|Bu@fAcBrFIVE@a@tAs@fB_@~@_@j@MJc@NiAN_EpAc@TyBxAw@\\U?WGqGoBaD{Ac@Ma@Ce@Fs@RiF|Bm@R}AD@s@PDABUBGCg@AsCJy@A_AKu@My@]s@_@q@Sw@@a@HOF_@\\S^s@xAoBrFSf@Yd@]d@a@^[RcBp@sA|AWTQH{@nAY|@E`@UhCKv@Qj@Sf@Ub@oAx@MN[`@cAtBKLoExAg@^e@j@MJa@R{@VcDrB_AhAUN]Bc@IaBq@cAMo@@}@HiCb@e@B{@IqA[qBqB{FoFSUsAuBi@Sw@Ma@?WLmA`A]PaABaCImANaAb@kJlFe@f@k@HaIjE_GrDc@`@yApB[ZgAl@o@PW@o@EaCsAiDqAqBaAmBiAq@Sm@G}BXa@DWAqGiA[AO?mDgAeAg@_ASeDMyCUeAOk@SQMSYcAaDiAgC[g@MOg@[e@SUWe@[]Q]Ki@A{B\\cExA}B`@}D\\MEYUQAi@J[?YYm@xB{@rCMf@?VYVIMyAk@_Dc@?r@I@@p@Cx@HrH', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.90744030000000,-0.66041870000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

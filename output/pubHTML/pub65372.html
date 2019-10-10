@@ -126,13 +126,13 @@ var thispub = 65372;var pubaddress = "Colliford Lake";var pubname = "Colliford
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 65372;var pubaddress = "Colliford Lake";var pubname = "Colliford
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="phduqdqu9i7uaf6jbdk18qg5f5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="rt1kem713j228badqe6do6ph35" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 65372;var pubaddress = "Colliford Lake";var pubname = "Colliford
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -265,7 +265,7 @@ var thispub = 65372;var pubaddress = "Colliford Lake";var pubname = "Colliford
           <ul id="Custom2">
 			<li>Official site of the Colliford Tavern - <a href="http://www.colliford.com" title="Submitted by:- James Joines" target="_blank">www.colliford.com</a></li>
           </ul>
-</div>
+<ul id="Custom2"><li class="wplink" id="COR/574">CAMRA WhatPub :: Colliford Tavern - <a href="https://whatpub.com/pubs/COR/574/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -279,7 +279,7 @@ var thispub = 65372;var pubaddress = "Colliford Lake";var pubname = "Colliford
 
 	var mymap = L.map('mapid').setView([50.53698238044063, -4.58192814380266], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -304,7 +304,39 @@ var thispub = 65372;var pubaddress = "Colliford Lake";var pubname = "Colliford
 
 
 </script><div>
+<i class="fas fa-train"></i> Bodmin Parkway, 9.72 miles, 3 hr 7 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Coombe Junction Halt (Rail Station), 9.88 miles, 3 hr 10 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Liskeard, 10.54 miles, 3 hr 23 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('onmsH|}}Zd@hACdBE`@hArKi@`ApBnJBXv@F`ANbFzAkDvKm@dAsA~A_BhAQX@ZaGt\\Oj@n@rFtNjq@nApIhBpFFz@C~@[zB]bBMjA?pBHv@\\x@`C~BlCdEbArChAfEdArCnAxBfDvEdD_Af@d@hDi@X?LDp@v@r@IvAYn@{@vAeBDw@Ac@t@m@xBIrAbAlCZzA`@xBEbDa@pGiC\\sAn@a@rGqAjJoAzBiBfDwA\\bB~DpEZR~@Gb@V~@dCb@pBWtBg@~ACd@r@|AdAaAfBDp]qAlAw@x@Wl@C|A`@jChBVJbG|A|AFbBNjARjBf@tAR~DnAjATjDGl@J~CrAfDvBxBLzCv@zBPxBO~DMpBVp@hAhAtBzBlApAb@bBPzAn@rCfBxAj@rGvDzE|EfNrPhEzFZn@JYHg@@L`BgBr@qATIn@D`CKtAUz@Pr@^PDbCI~@[h@xF^dCx@pB|@~@t@dAdAhCnArEdDnJvCzLzApI?jAVh@\\Td@DvGsBz@?|Bj@fBVnBCpBSbBY~P_FbAEvBn@`Dr@hDh@tGXvGrA`B`A`BLxAOl@c@tAc@fAA~@\\hAlBZZtGvA`AbAtA`C`BvDp@tA\\P`@ANc@Lg@DuAOkBOs@s@wN@sDNaA`AsAtBqAj@k@Xi@DY@s@CeCBc@F]HQTKVpGv@`Kp@zFv@hFdAzIp@fHTnDbAtJz@fLPjAbA~Eh@hBbB|EdEnSXbAz@`CpAhC|@tATf@n@rB\\pAZr@fA|A^r@Vn@Jh@LbBt@@j@FtB^n@a@J@Zj@hAbBb@`Al@dAx@lBCFHb@KJ', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('onmsH|}}Zd@hACdBE`@hArKi@`ApBnJBXv@F`ANbAXh@RtBl@|Av@pAnA`FlFdFnEtEnE~BfBx@d@fGjCzE~ArAXrALdABtAE`C]fA[hCkAfBeAtAo@v@SpAYpAMzACnB@tAKzBe@bA]dAc@pBuA~@y@vBmCrBwDvByFt@}Al@cAz@iAbCiCn@k@n@c@TWfAsB`A{Ap@y@d@e@hA}@jAo@`IsDrCaAvBUZB?c@c@gBmF_SYgBMaBA{ABqBRaCP{@hA_FlBuIzAuIpA}IRkBFsA?qAE_AI{@QcAOk@Qe@f@m@b@QH?H@ZV\\f@F^@bB@z@TbB^~@bAxAv@|@z@VbAGRDTPX@PQnBSz@EhDx@dAJt@Nd@p@t@nAr@AnCaDzCuBdByArA{AdAaAXkB`@yA|@gB`AoAdAeAvD[lA_@t@?r@NxCZ~@YZEXRf@LtAh@fBIdCj@Tr@\\b@bAVp@Mn@i@fAmAtCqCt@wDb@}AdA]nBYhCy@d@m@r@a@`AWf@s@ZmBbAaDc@aB]kDCm@B{A^`@N@`A]LONgAJuAPsADiBJs@|CsGz@kDh@sArAaHf@gE`@wBXoAXw@~@iBrA_HL}Jq@{FRa@`@g@x@o@n@[v@m@`@QTOR[j@eBBy@@uBVwA`@gA|@uAL_AB_BTaBJeBCaCZeAbEkL\\}AL}A?kGJkBnA_J@gAHaA\\kAx@q@l@aA\\}ARqAPs@\\_@lAq@lHaHjDuErA{JNs@\\_@jAo@nCmCzAoB`BeAxBcD|@y@vC_Bb@g@RWlBkBl@w@~DoBjCmD\\oAhBaC`BmCp@oAbGmNXmAjDaFdCmEjBuAh@eAf@kA~FuFx@aBh@gDvCuGz@_ChBoDbAmD~CyGlDuGJELQNc@F_@D{@?w@C_@SwAUsCUEUSc@gCIq@GqAAeABg@VoBTiA\\eAN]h@y@`BgB^[bCgDn@cARc@Bu@FUVm@Zg@jAcAJEHOp@k@l@_AtEsIxCmGhAkCb@qAp@}AnAwBhAfANVh@eARKTERAJDDSl@s@zAkAhAs@jAm@l@k@|DmBB[VE~LiFb@UF[LJr@[PM`@S', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('onmsH|}}Zd@hACdBE`@hArKi@`ApBnJBXv@F`ANbAXh@RtBl@|Av@pAnA`FlFdFnEtEnE~BfBx@d@fGjCzE~ArAXrALdABtAE`C]fA[hCkAfBeAtAo@v@SpAYpAMzACnB@tAKzBe@bA]dAc@pBuA~@y@vBmCrBwDvByFt@}Al@cAz@iAbCiCn@k@n@c@TWfAsB`A{Ap@y@d@e@hA}@jAo@`IsDrCaAvBUZB?c@c@gBmF_SYgBMaBA{ABqBRaCP{@hA_FlBuIzAuIpA}IRkBFsA?qAE_AI{@QcAOk@Qe@f@m@b@QH?H@ZV\\f@F^@bB@z@TbB^~@bAxAv@|@z@VbAGRDTPX@PQnBSz@EhDx@dAJt@Nd@p@t@nAr@AnCaDzCuBdByArA{AdAaAXkB`@yA|@gB`AoAdAeAvD[lA_@t@?r@NxCZ~@YZEXRf@LtAh@fBIdCj@Tr@\\b@bAVp@Mn@i@fAmAtCqCt@wDb@}AdA]nBYhCy@d@m@r@a@`AWf@s@ZmBbAaDc@aB]kDCm@B{A^`@N@`A]LONgAJuAPsADiBJs@|CsGz@kDh@sArAaHf@gE`@wBXoAXw@~@iBrA_HL}Jq@{FRa@`@g@x@o@n@[v@m@`@QTOR[j@eBBy@@uBVwA`@gA|@uAL_AB_BTaBJeBCaCZeAbEkL\\}AL}A?kGJkBnA_J@gAHaA\\kAx@q@l@aA\\}ARqAPs@\\_@lAq@lHaHjDuErA{JNs@\\_@jAo@nCmCzAoB`BeAxBcD|@y@vC_Bb@g@RWlBkBl@w@~DoBjCmD\\oAhBaC`BmCp@oAbGmNXmAjDaFdCmEjBuAh@eAf@kA~FuFx@aBh@gDvCuGz@_ChBoDbAmD~CyGlDuGJELQNc@F_@D{@?w@C_@SwAUsCUEUSc@gCIq@GqAAeABg@VoBTiA\\eAN]h@y@`BgB^[bCgDn@cARc@Bu@FUVm@Zg@jAcAJEHOp@k@l@_AtEsIxCmGhAkCb@qAp@}AnAwBhAfANVh@eARKTERAJDDSl@s@zAkAhAs@jAm@l@k@|DmBB[VE~LiFb@UF[EEOa@IGSaAAQ@STgA?aBFkAHq@AaAD{@^{Eb@}ELgD?eAOwAM}@IaAKiCUyDEsAEI}@qCa@w@uE_Eb@cANLDK@@CJBBd@iA?CTg@V_ADSFBk@vB', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([50.53698238044063,-4.58192814380266], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

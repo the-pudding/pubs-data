@@ -126,13 +126,13 @@ var thispub = 44336;var pubaddress = "Edlogan Square";var pubname = "The Six I
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 44336;var pubaddress = "Edlogan Square";var pubname = "The Six I
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="tq7d0ct1nm8tudgunopc833r96" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="4vgkfeck9j10lfsiqrnni75ll1" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 44336;var pubaddress = "Edlogan Square";var pubname = "The Six I
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -259,7 +259,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 <span class="h2ish" id="linksheading">External web links for The Six In Hand</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-<ul id="Custom2"><li class="fblink" id="194469673960281">Facebook - <a href="https://www.facebook.com/The-Six-In-Hand-194469673960281/" target="_blank" rel="nofollow">The Six In Hand</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="194469673960281">Facebook - <a href="https://www.facebook.com/The-Six-In-Hand-194469673960281/" target="_blank" rel="nofollow">The Six In Hand</a></li></ul><ul id="Custom2"><li class="wplink" id="NEW/251">CAMRA WhatPub :: The Six In Hand - <a href="https://whatpub.com/pubs/NEW/251/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -273,7 +273,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([51.66319930515183, -3.00996422767639], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -298,7 +298,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Cwmbran, 0.56 miles, 10 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Pontypool & New Inn, 2.93 miles, 56 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Newport (S Wales), 6.43 miles, 2 hr 4 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('mmizHf|jQTURn@hB}@PzAh@fDBX^JbB`A|@DbBLxAZ`A`@z@b@d@Zn@VDELADBFFZ~@`CzBrAxAjCtHBf@YD', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('mmizHf|jQTUi@iDCIEESCw@@IGCMBqI@ON[\\S[sBGKKGK?MDg@}CoAq@A@}DVUP]WwAYk@GcDr@IoASu@MKg@eCUaBIQQ?IJGf@IbBMn@i@dCa@nA_DbBsB`AwEtA_Dl@_CTcGnAcBPmBF{Ep@kDTyCQuCm@yAEcC]_AUoEoBs@Mw@G}BHa@NoAbA[{@Ue@]]i@UaAQyC[aA[oBy@oBm@k@I[?a@f@yDtDu@z@uCdCmDxDe@p@_D~Cu@z@yNdNoBvBeEpFkErGm@vAQjAS|A]c@a@w@[w@e@kB}@{DaAkD', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('mmizHf|jQTURn@hB}@z@[~@g@tHcGbB{AX[Zo@j@uAxAaF^iAn@sAdAqBfA_CnBjC|@fAXPl@Hh@GnDeBzBaA\\ICUBa@Lg@JMPIT?TPNXb@a@xCeBtCqAZbCVbAHj@Xx@l@fAxAxAbFtDxDdCbCzAhAh@|EnB^gEBeAn@@zALRCLKHSF@d@]DK?WGMBMlEmDjAeArAcARId@EzD?PD^TJRH\\tCgB`@i@Z}@Lk@Bc@~Bh@NJTr@zHcJl@k@Vc@NKz@D~AhBXRnAh@|Bb@rA?hCc@hEYt@HRJVRVZx@hAvAbCVZn@p@rHrGn@jAJJDGPEFDDDFR?Tt@Vx@n@bKdJ~B|BdAj@`@Lp@@nAK`Eg@vCZ\\F|Bp@fA`@rCnAdAr@ZJTAJWLONEVBHNN`@@Z`@h@ZNXD|Dc@a@{HE[KQc@e@ZiAJQX]hAw@`C_@nD]|@NXmEd@gCLi@JUnAiB^v@j@j@fBcDVk@`BoElAkEPa@R[f@c@tA}@~@_@tDy@TCh@Dd@JlCp@|@FpD@DuCTAGa@AoABQTENM\\o@f@u@x@c@|BWpBm@`Ao@LUDQ|AqAPH|@k@rC]RL\\OhHy@xAKt@Bv@Nd@Ph@ZrEvDbAl@|@Zx@b@jA|@vBlAl@^Z_Bl@yF?e@t@_GlDz@fCd@xB@TSDPtC{Av@AzDWf@Ef@MDEFDvDQBMP?f@If@B\\EPFn@GNK`ASTQ\\k@NDf@m@x@i@b@OdAGnBPNCRWCb@Bj@TZB\\?xBDpAJn@tAvCvA`Bn@dAxBdFT\\[x@E?IG?OFEHD@HAJa@hA_@g@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.66319930515183,-3.00996422767639], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -333,11 +365,11 @@ Be the first to write a recommendation on this pub and let everyone know why the
        
           <ul class="Custom1">
                     <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/44339/" class="List1">Upper Cock Inn</a></li>
-                    <li><img src="/images/icon-photo-grey.gif" alt="Pub has no pictures" title="Pub has no pictures" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2 from 2 reviewer(s)" title="Pub has average rating of 2 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/44320/" class="List1">Ashbridge Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2 from 2 reviewer(s)" title="Pub has average rating of 2 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/44320/" class="List1">Ashbridge Inn</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82563/" class="List1">Harvester Cwmbran</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/44323/" class="List1">Terrace Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/44323/" class="List1">Terrace Inn</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84102/" class="List1">Frankie &amp; Benny&#039;s</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 2 reviewer(s)" title="Pub has average rating of 5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/44330/" class="List1">The John Fielding (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 2 reviewer(s)" title="Pub has average rating of 5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/44330/" class="List1">The John Fielding (JD Wetherspoon)</a></li>
 
           </ul>
   

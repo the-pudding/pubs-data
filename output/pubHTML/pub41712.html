@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The New Inn pub in Amesbury (near Salisbury), Wiltshire, SP4 7DL : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The New Inn" />
+  <meta name="keywords" content="The New Inn, 10  High Street, Amesbury, Salisbury, Wiltshire, , map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The New Inn in Amesbury" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/41501_42000/41712_da9cac36.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/41712/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.17257974797813" />
+<meta property="og:longitude" content="-1.78120672702789" />
+<meta property="og:street-address" content="10  High Street" />
+<meta property="og:locality" content="Amesbury" />
+<meta property="og:region" content="Wiltshire" />
+<meta property="og:postal-code" content="SP4 7DL" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The New Inn in Amesbury? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The New Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/41712/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The New Inn in Amesbury" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The New Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/41501_42000/41712_da9cac36.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/41712/" />
+<meta name="geo.position" content="51.17257974797813;-1.78120672702789" />
+<meta name="geo.placename" content="The New Inn in Amesbury" />
+<meta name="geo.region" content="UK" />
+<title>The New Inn in Amesbury (near Salisbury) : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":41712},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(41712);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 41712;var pubaddress = "10  High Street";var pubname = "The New Inn";var pubpostcode = "SP4 7DL";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/wiltshire/" title="Pubs Galore : Wiltshire Page">Wiltshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/salisbury/wiltshire/" title="Pubs Galore : Salisbury Page">Salisbury</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/areas/amesbury/wiltshire/" title="Pubs Galore : Amesbury Page">Amesbury</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The New Inn Page">The New Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="augh834avil5rpseg35u9ufuo7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/41712/" class="indisplay"><img src="/images/display/41501_42000/41712_da9cac36.jpg?w=2" alt="Picture of The New Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=Quinno" class="indisplay">Quinno _</a><br />
+  Submitted on Monday, 12<sup>th</sup> August 2019<br />
+  With picture contributions to 3700 other pubs<br />
+<a href="/pubpictures/41712/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/41712/">Pub map</a><br /><a href="/pubreviews/41712/">Pub reviews (3)</a><br /><a href="/pubpictures/41712/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=41712" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The New Inn, Salisbury</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">10  High Street</span><br />
+
+<span class="town">Amesbury</span><br />
+<span class="postaltown">Postal town: Salisbury</span><br />
+<span class="postcode">SP4 7DL</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 07711405899</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/amesbury/wiltshire/">Amesbury</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The New Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>6</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review142479" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The New Inn</h6>
+<p>A fairly traditional local. Staple shaped bar with a room of little distinction off the side. Low and bowed tongue and grooved wood ceiling, assumed to be a 1970s refurb job and overall has a bit of character. Pervading smell of old fags, a burberry style carpet and general lack of natural light didn&rsquo;t enhance the ambience though. Rear courtyard patio and grassed garden looked decent. Five ales on, probably two too many; Abbott, Belhaven, Stonehenge Great Bustard and two from Twisted Ale. My half of the Twsited Pale was clearly the first out for a fair while but ostensibly fine (NBSS 2). Got a thanks from the locals and barmaid for visiting as I exited, so a point for friendliness that you rarely get in pubs nowadays.</p>
+<p class="Reviewer">On 11<sup>th</sup> August 2019 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 3912 recommendations about 3900 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review72458" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=ETA">E TA</a> left this review about The New Inn</h6>
+<p class="old">Recently renovated and, I believe with a change of ownership, this 17th Century town inn has a rambling interior with various snugs and bar areas.  There is single large main bar, while two function rooms occupy the rear of the building.  There is also an open courtyard at the back.  The staff were a bit vague, the clientele consisted of a few drunks and some CAMRA types.  Three ales on, I had Jennings&#039;s Cumberland which was in excellent condition.  Worth dropping in for a pint and including in a crawl.</p>
+<p class="Reviewer">On 17<sup>th</sup> July 2013 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2382 recommendations about 2361 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review26081" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Soup+Dragon">Soup Dragon</a> left this review about The New Inn</h6>
+<p class="old">A large detached white rendered coaching inn style pub, with some black paintwork<br />
+<br />
+The interior is open plan, a large U-shape around the bar with a few nooks and crannies. There was a dining area (we didn&#039;t eat) a pool table are and a bar area, as well as a sofa/comfy chair with TV area. The decor was white artex and black beams, with a stone fireplace and some exposed brick. There was no real ephemera, or pictures on the walls. The music was rock and at a decent level, the service was fine, but it was a young lad that didnt really know much about the real ales it seemed, but he took them back one at a time when i returned them. The clientele was small, but mixed. <br />
+<br />
+Beer; well, tap stuff, with 5 handpulls; 6X, Flower&#039;s Original, London Pride, Ringwood Bitter and Spitfire. I asked for Ringwood, which was foul, so i returned it, to be told the 6X was now not on either. I asked for Flowers, but he turned the clip around as he though that wasn&#039;t on. I then had my 4th choice, London Pride, which was, although the favourite of the locals, he said, also not on. I was left with Spitfire - not a drink i would choose, but it was at least not vinegar. I managed half of it and left.<br />
+<br />
+Sorry, but it wasn&#039;t a good experience.</p>
+<p class="Reviewer">On 26<sup>th</sup> April 2010 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 3053 recommendations about 3048 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The New Inn</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="wplink" id="SAL/10">CAMRA WhatPub :: The New Inn - <a href="https://whatpub.com/pubs/SAL/10/" target="_blank">whatpub.com</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/41712/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.17257974797813, -1.78120672702789], 16);
+
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.17257974797813, -1.78120672702789]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Grateley, 8.14 miles, 2 hr 37 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Salisbury, 8.61 miles, 2 hr 46 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Dean, 12.92 miles, 4 hr 9 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('{siwH~{zIn@pAR@JIdAcFNcAZqDH[@[_@u@BUCw@G}@@UKCgAeB\\}Ab@w@^y@XT`@}@p@iBT]Xu@RsAp@mBHOZeB`@RXaCLgBDq@LaFRiCFi@h@yCrAqFLq@xCsQJ}@RkAj@yE@sA^a@A]XuHB_CAcAEmAWmDp@YWcGCsAAoFcB?ICe@_@iF}Fc@a@KUOw@@sAPiAC]MW_A{@lDwRn@}D|@yEzAwIlBcKl@uD^}Df@cGlDij@dD{f@_@Ci@Oa@eB[gBaAqDoEuNi@sB?cACq@FyD@cCCoCUoMIyAGmCAaC@aDCgBRkCg@iAKeEE{_@BeBNgDJiAdHg_@ZqDPsWN[Jc@b@yCx@cI\\iCRo@Ri@Va@l@YjAULBB}HzAmFxKkh@|Hqb@tAqETiAcO_EoM}CJc@x@gBzGeMCi@wFye@IuAMk@eAsDuAkHwDmQcKkg@eFk[_DmOqEoQ{AyG}AcG_FqQW}AMc@x@qGhAsI|@_J~F_ThE{NI]]sC`@QiA{IB[Ik@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('{siwH~{zIn@pATl@r@|Bp@fCr@tA~@pCd@n@Vl@p@xBF`ACPp@~DAZ`Av@`@b@d@X`@OJJlEtADDD`ANPT@n@GhLhNtD|ExAD`A\\~DnDtFtAxBdBlA~D^~B~AbCtFvB|C|BnCpC~@fAhAhBtCjFvCpChE`DlAXbFfEnAVbDG|D}@^StFqFdBeAjC_AnBc@|DgAt@CHG@Gh@`@fAjAl@~@\\x@Xx@P|@DhABtCRl@^r@^h@`A`AR\\L`@?l@MzA?TZT\\A\\mAlAaCnAiApAaBx@sC\\kCNANQnHxJr@vBB`@r@Md@A|CJl@GpDeAbC}@zLoCrNmDjAQKp@c@~DW|C`UfDf@TV\\T`Ar@fF~@rHRl@TJZAhAcAl_@ba@h\\PdA~@lEnApDbBx@Pv@GfGmBfPqHxE{@xJcCdBKdDi@nDkAbHiDnCaBdDgCxBkBbHmGnBsBpQyRn@cAdBsBnDuFr@_AbAs@t@_@|AYPGHPVXn@\\NPHFJ@f@DZC^_@Rk@dA}BJRRHPAR[rCWTF~Bc@zCiAhFsAnBy@`@YlB}@`A_@`Bg@hCc@~BSb@Jv@[zAGr@IPDLDjE_@D|@H^f@r@lBgAXATBXL\\VDH`Cm@t@I|Es@n@Dp@a@hJa@PNFRp@xBf@rBN^f@dAl@r@zCnCJRDZCXLZHp@DFBAX_@R?ZJd@`@v@_Bb@t@Lc@PH^BBIHBFKHAHSHCHLROv@l@l@x@TZNr@RZTN\\z@H|@Ah@RFFHH\\Dr@pAzFZc@f@oAx@pF?b@F`@JVJj@B^CvD', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('{siwH~{zIn@pAR@JIdAcFNcAZqDH[@[zATp@@VMpC_EnEaIPUd@]nDmHRY`@c@h@[x@Sl@G~@Fz@Tr@`@jAbA~B`CrA|@VL|@V@KHGv@M\\KpB}@~D}BXMXEp@@l@Nh@^r@p@r@`@|AVj@DVHhLkAbHOh@Ir@FFDd@GXHZR\\b@p@h@bBr@nBb@pDbAfI|AvBXrEQzEe@vWoCtEs@bEAEsDB_AHm@hBrApFnEp@`@dCzBv@x@@Bx@l@ZZjBnAn@f@NXhq@ceAbQwXpDwDnEcDbBcChAeCXy@hCeIlDoI|GoUhCgHnBeEt@kBtAiEv@aFCCCOBQFGF?v@gDTs@l@qAVQ^I~ARRAd@UpCaDXSVKf@@DaAEOTa@nBoFR]Lf@N\\v@jAxA~CrK~MdDfBxG}AJWb@_B^r@bCnDhDvDNXFK|C{KbH_TlLaa@|C_I`GiOxK}i@pHia@bE}EpIeH~JiJ`EaGbBkDdAwAbC{BpGwHzAeAxDiDfHuCpA_AnBsCxMmWlBwFbEoIIUe@o@cA_AuA{AW]Ha@HkAJ[Jo@^o@q@{A?OJa@p@iBLNrCqIlAuBzDaCzGqMlBmCpAcCNcAxBsD^{@d@aBr@oBhCeMl@yBlGiJhAeAd@Y~EsBzHuDh@AvEq@lBCRGhH}BzF{CbFmBnBYzAz@V{@Ny@TiBzBJhBc@QyA`@_@xBqD|@s@z@u@~BoCVk@DaALcAb@cA`@]|BsChAsCbAwDV_Cl@_Dl@mEt@sDb@iCZmAn@VFo@\\}BZqCXaEPmA~@gFPoCeAgIOwB~DwH|AyGYqFrByB|CoTdDeEhCiRtF_D|DIhCgDtAs@`Es@`BuAt@gC?iCtCgJjAwBjDyJdFyJx@}GdE{BVYTy@`@o@fBiAJBHoB', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.17257974797813,-1.78120672702789], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=41712">View all updates for The New Inn, Amesbury</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        16<span class="sup">th</span> Sep 2019, 23:03
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        12<span class="sup">th</span> Aug 2019, 21:36
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11841712">No</span> <span id="discdetail11841712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2019 by Quinno _</span></li><li>Bar Billiards : <span id="fac10741712">No</span> <span id="discdetail10741712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2019 by Quinno _</span></li><li>Beer Festivals : <span id="fac11741712">No</span> <span id="discdetail11741712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2019 by Quinno _</span></li><li>Beer Garden : <span id="fac11441712">Yes</span> <span id="discdetail11441712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2019 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10241712">No</span> <span id="discdetail10241712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2019 by Quinno _</span></li><li>Car Park : <span id="fac11341712">Yes</span> <span id="discdetail11341712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2019 by Quinno _</span></li><li>Function Room : <span id="fac12341712">Yes</span>  - <span id="discdetail12341712" class="discdetail" style="">According to Facebook page</span> -   <span class="Reviewer">last updated 21 July 2015 by Dave McNally</span></li><li>Hot Food : <span id="fac10341712">Yes</span> <span id="discdetail10341712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 April 2010 by hondo .</span></li><li>Micropub : <span id="fac12241712">No</span> <span id="discdetail12241712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2019 by Quinno _</span></li><li>Pinball : <span id="fac11641712">No</span> <span id="discdetail11641712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2019 by Quinno _</span></li><li>Pool Table : <span id="fac10441712">No</span> <span id="discdetail10441712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2019 by Quinno _</span></li><li>Real Ale : <span id="fac10141712">Yes</span> <span id="discdetail10141712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2019 by Quinno _</span></li><li>Real Cider : <span id="fac11941712">No</span> <span id="discdetail11941712" class="discdetail" style=""></span>  <span class="Reviewer">last updated 16 September 2019 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 3 reviewer(s)" title="Pub has average rating of 5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/41751/" class="List1">The George Hotel</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 3 reviewer(s)" title="Pub has average rating of 7 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/41654/" class="List1">The Bell (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 2 reviewer(s)" title="Pub has average rating of 4.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/41698/" class="List1">The Kings Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/72073/" class="List1">The Antrobus Arms Hotel</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

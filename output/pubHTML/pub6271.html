@@ -126,13 +126,13 @@ var thispub = 6271;var pubaddress = "23 Market Square";var pubname = "Pennine 
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 6271;var pubaddress = "23 Market Square";var pubname = "Pennine 
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="6uhm56juueai57tnr8tsgn4fb3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="cnfh0fku091oijgj68hk7gfea7" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 6271;var pubaddress = "23 Market Square";var pubname = "Pennine 
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 6271;var pubaddress = "23 Market Square";var pubname = "Pennine 
   <div id="displayedimage">
 <a href="/pubpictures/6271/" class="indisplay"><img src="/images/display/6001_6500/6271_ebfc983d.jpg?w=2" alt="Picture of Pennine Hotel" /></a><br />  Image posted by <a href="/userinfo.php?name=First+King" class="indisplay">Wynne Route</a><br />
   Submitted on Tuesday, 15<sup>th</sup> November 2011<br />
-  With picture contributions to 3464 other pubs<br />
+  With picture contributions to 3485 other pubs<br />
 <a href="/pubpictures/6271/" class="smallbutton">View all this pub's pictures</a> (1 more image)
  
   
@@ -263,7 +263,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul id="Custom2">
 			<li>Official site of Pennine Hotel - <a href="http://www.penninehotel.com" title="Submitted by:- aleand hearty" target="_blank">www.penninehotel.com</a></li>
           </ul>
-<ul id="Custom2"><li class="fblink" id="361308754028752">Facebook - <a href="https://www.facebook.com/pennineboutiquehotel/" target="_blank" rel="nofollow">Pennine Boutique Hotel</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="361308754028752">Facebook - <a href="https://www.facebook.com/pennineboutiquehotel/" target="_blank" rel="nofollow">Pennine Boutique Hotel</a></li></ul><ul id="Custom2"><li class="wplink" id="KEN/970">CAMRA WhatPub :: Pennine Hotel - <a href="https://whatpub.com/pubs/KEN/970/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -277,7 +277,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([54.47336900000000, -2.34830800000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Kirkby Stephen, 1.77 miles, 34 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Appleby, 11.59 miles, 3 hr 43 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Garsdale, 12.1 miles, 3 hr 53 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('oinkIrtiMfCFf@FPHFTlBCjASJBxAn@b@`@`BpCp@~ATn@p@vAj@v@p@t@l@p@~@x@~AjAn@^`K~DvKhG|@n@~D|DPJ`B^PLNXH\\RLbAzBZf@`@\\b@Pb@DlBAvHORBGxA\\tED~BDp@h@pCd@vAZf@l@l@z@zArAt@f@b@T@f@b@v@bBl@vBBXFpAJj@L|A@XCv@ArEVlCHXT\\hAvARNDJmAjADFl@a@BLXSJZJONd@KJAEY^', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('oinkIrtiMg@F?XU@KJcBd@KAEr@U@WzDIp@aAIm@BgC`@}@AOpEK`BIj@i@hCk@tBm@fC@f@Yn@s@vC{CtHaBrDa@vC?rABjBKxBwAdKcAtLk@lA_BjB]hAc@rH{@bEsA~CoC~KgCvFeAf@yAIo@LwIvQiBzEgGjJyAdCoCzJe@hDw@hCa@dDyBjJaDlPyAUcCVuEv@uDdAm@ZmBtCw@b@C`ABFm@^gBTeGhBgAlAeKhDAtABvA^fEAr@IhAUhA{@fKI~AqAxFoBzJg@xBsAjE{BxISI_Rx\\kDfHoHpEkDvFwQh]YHCq@kHKcH{D_C]eEsBoGNeAnNiGbNg@xBm@oAaCrKqG`QsBwBwE|AnApAMAIFOh@]t@[^_Bn@W?QGgDeF[GeAsAYKyA\\cACq@Qo@q@eFwB{H~GgDxAuD\\kAMyErHkDiLu@mAmI{JE{@@q@QKkAhA?f@CNYT_@Jk@Yo@ZeARRpEfAzMShPi@tCgAfCuMnX{BtGiAvDGbADjCVhEG|AIfA_@pAeD`HwBnC_BtFs@hA[tAg@~CIxBMhAcA|Ea@|Be@pAI\\QnBmAfJEPu@rBg@rES|@m@zAUV_@NoA?aA\\{A~@mGfAkBrAyCzDuCpCiBxCuBvGYpHqA~MCpAM?MvCFbAV~@tArD?Te@nAa@fBK|@E|@HhDAv@Kp@?x@DZ`EjDXZXRHAHRKl@Wl@[pAAXOBI^MBGLCb@g@zBFLg@zAJ^BZMTc@Z_@`@I\\]b@_@|@Y\\[R[b@C\\If@Et@Q`BAd@Kf@Ef@Ef@EvAId@Cb@Kb@?^aA~Bu@fAUr@WfA{@xAKB_@USSKROFe@fA_A`AEPOZ[rAg@p@U^i@zA[b@Oh@y@`@}@t@]`@ODWTY@QT]TUVDVMRUGa@Du@b@g@P_AHQJkBPcAT}Af@IBST[NaAHk@C]@_@Jm@OmMt@_Ce@kLkHuKMqG@w@bBaB~BsA~BiA|AiA~@QDcA`@cAcBWk@Ie@QuBM_AFSKe@KaAD_CIu@[w@cAOYRwE~@g@ROLsA`Bk@h@u@|@g@f@uAbAKRQf@Kj@u@dD[x@iDtDaBzBkAvA_BcFuAwDi@~@Gf@c@y@Yn@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('oinkIrtiMfCFf@FPHFTlBCjASFu@DSbAoBRc@ZkALOJGf@A~I`BtAj@|ARdAXTP`ApAjC|CdA~AfAvB~@vBT\\jB|AxCzAl@NnETNGb@]NGx@EvA\\`@?XK|A{@zCkArGoE`@UxAe@xA[nADp@Mr@_@dDk@~CTl@MnAa@bBw@~JeHl@k@@O^w@VSLALHJ\\|@[Tu@jBaClEaEhD_BhAcAfAk@`Aj@fAiBh@sAh@K~@GpBm@fBiBz@oA|@y@n@oA`@cB\\y@^Wr@HzA^~BpAzBZlHgAbH}DpDqAdLuG\\y@hAqApCmF~A{G~A{E`CqAj@}@`GoFdAq@nAiBvC}AfHEhCl@Xf@r@w@f@N`A~EhBSL`B^`BD\\LEP@dBj@hA?lARDH~GtG~DfDjB|CbBvBx@jDl@z@jAxBb@\\dA}DHUPOJAx@JFEfA{ADWLEdAeA\\Q`@G\\A`E^ZGpCgAzBq@bASvBd@\\?n@]l@q@xAaAJ?HBtBfC\\PzAVtA^|CCn@F|@XfC@hCNd@FlC~@b@Bz@i@^Or@Bd@Vp@x@t@b@XD^AjCQpE_A~C]xJgBzEu@pCKTE^Sr@g@j@KdEk@`C`@^D`@A~D}@\\?\\DjBl@p@LvANvG`AvObE~Hv@`CPjAh@|ClCBMfAy@~G~B~DKTHVREVFDfC_BlCi@pBVvGlBhBx@t@p@L@JPfAwDCq@T@\\TbA`@NLd@Dp@Th@b@LR`DrAjElA`DJ|@KvAFrBlApBnB~AOr@j@fFbFzE~@bBZdB]`BRzAg@lAk@ZIbCSf@D`@x@b@MNHLN`@v@~AFv@LjAd@h@Jp@D`@CnAc@vAo@FEFQ?a@ZW|HgBHPf@~AhAvCj@sAjG{A~GmDpAK~@eAh@wBvCkDzMsEpAmAnKwAxD}DhBaApBS\\h@fCmB`Db@tHZtJH|E~@xEvAjEhC\\r@Nv@h@fHvApGzE|EUdAa@nDc@dAH`@CdA@~@Qf@CNHRz@[VOPF~@rALD~Cg@DBVj@jB`CfB`@VKx@{BRA~@Xh@KrAg@ZAn@HnB`@xCiErKkB?i@nAqCjAQhFmJnCiEn@I`A[JSJG@qAV]|BcBnIyNpCsEbGuQdB{EVqAp@yA|@o@LXfB}AfAo@dBoA|@]pA_@n@_@`@{@T{@a@G[S[w@Ua@y@cCKRM[', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([54.47336900000000,-2.34830800000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

@@ -126,13 +126,13 @@ var thispub = 48372;var pubaddress = "118  Glasgow Road";var pubname = "Stags 
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 48372;var pubaddress = "118  Glasgow Road";var pubname = "Stags 
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="o8fvei4boqonjfdb7v9jllrrm5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="v44pr5340fpjskpdmh2detvde4" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 48372;var pubaddress = "118  Glasgow Road";var pubname = "Stags 
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -214,7 +214,7 @@ var thispub = 48372;var pubaddress = "118  Glasgow Road";var pubname = "Stags 
   <div id="pubpages">
     <h2>Detail Pages</h2>
     <p>
-      <a href="/pubmap/48372/">Pub map</a><br /><a href="/pubreviews/48372/">Pub reviews (0)</a><br /><a href="/pubpictures/48372/">Pub pictures (3)</a><br /><a href="/core/pubaudit.php?id=48372" rel="nofollow">Page updates</a><br />
+      <a href="/pubmap/48372/">Pub map</a><br /><a href="/pubreviews/48372/">Pub reviews (1)</a><br /><a href="/pubpictures/48372/">Pub pictures (3)</a><br /><a href="/core/pubaudit.php?id=48372" rel="nofollow">Page updates</a><br />
     </p>
   </div>
   <h1 class="pubname">Stags Head, Dumbarton Town, Dumbarton</h1>
@@ -243,12 +243,21 @@ var thispub = 48372;var pubaddress = "118  Glasgow Road";var pubname = "Stags 
 
 
 <div id="pubreviews">
-  <h2>Reviews of Stags Head  <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <h2>Reviews of Stags Head  <span class="h2note">(Average Rating: <span id="averagerating"><b>9</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
   <div id="newreview"></div>
   <div class="hline"></div>
-  <div style="line-height:1.3;margin:5px 15px;text-align:center;"><b>Currently no reviews of this pub.</b><br />
-Be the first to write a recommendation on this pub and let everyone know why they should visit.</div>
-
+  <div class="indreview"><div id="review140705" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Mister+Boggers">Mister Boggers</a> left this review about Stags Head</h6>
+<p>Friendly, one-room locals&#039; bar - the only proper pub in the east-end of the town. Live sports on multiple televisions. Beer garden doubles as smoking area.<br />
+<br />
+Very busy Friday and Saturday evenings with groups meeting up before heading for Glasgow via the railway station (Dumbarton East) opposite.<br />
+<br />
+Wide variety of entertainments. Very cheap prices.</p>
+<p class="Reviewer">On 15<sup>th</sup> July 2019 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 5 recommendations about 5 pubs]</span></p>
+  </div>
+</div>
 
 </div>
 
@@ -274,7 +283,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([55.94202000000000, -4.55478900000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -338,9 +347,8 @@ Be the first to write a recommendation on this pub and let everyone know why the
 <span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=48372">View all updates for Stags Head, Dumbarton</a></span>
 <div class="hline"></div>
       <div class="auditrow"><div class="auditdate">
-        5<span class="sup">th</span> May 2015, 07:51
-      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=barty">ALASTAIR BARTER</a> approved
-
+        15<span class="sup">th</span> Jul 2019, 15:01
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Mister+Boggers">Mister Boggers</a> 
       </div></div>
       <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
         5<span class="sup">th</span> May 2015, 07:51
@@ -354,18 +362,11 @@ Be the first to write a recommendation on this pub and let everyone know why the
   <div class="hline"></div>
   <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
   
-  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11848372">No</span> <span id="discdetail11848372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 June 2014 by David Myles</span></li><li>Bar Billiards : <span id="fac10748372">No</span> <span id="discdetail10748372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 June 2014 by David Myles</span></li><li>Car Park : <span id="fac11348372">Yes</span> <span id="discdetail11348372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 June 2014 by David Myles</span></li><li>Darts : <span id="fac11148372">Yes</span> <span id="discdetail11148372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 June 2014 by David Myles</span></li><li>Dog Friendly : <span id="fac10548372">Yes</span> <span id="discdetail10548372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 June 2014 by David Myles</span></li><li>Hot Food : <span id="fac10348372">Yes</span> <span id="discdetail10348372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 June 2014 by David Myles</span></li><li>Jukebox : <span id="fac11248372">Yes</span> <span id="discdetail11248372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 June 2014 by David Myles</span></li><li>Karaoke : <span id="fac10648372">Yes</span> <span id="discdetail10648372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 June 2014 by David Myles</span></li><li>Live Music : <span id="fac10848372">Yes</span>  - <span id="discdetail10848372" class="discdetail" style="">Sat at 9:30</span> -   <span class="Reviewer">last updated 22 June 2014 by David Myles</span></li><li>Quiz Night : <span id="fac10948372">Yes</span> <span id="discdetail10948372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 June 2014 by David Myles</span></li><li>Real Ale : <span id="fac10148372">No</span> <span id="discdetail10148372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 June 2014 by David Myles</span></li><li>Real Cider : <span id="fac11948372">No</span> <span id="discdetail11948372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 June 2014 by David Myles</span></li><li>Wheelchair Access : <span id="fac12048372">Yes</span> <span id="discdetail12048372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 June 2014 by David Myles</span></li></ul></span>
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11848372">No</span> <span id="discdetail11848372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Bar Billiards : <span id="fac10748372">No</span> <span id="discdetail10748372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Beer Festivals : <span id="fac11748372">No</span> <span id="discdetail11748372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Beer Garden : <span id="fac11448372">Yes</span> <span id="discdetail11448372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>CAMRA Discount : <span id="fac10248372">No</span> <span id="discdetail10248372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Car Park : <span id="fac11348372">Yes</span> <span id="discdetail11348372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Child Friendly : <span id="fac12148372">No</span> <span id="discdetail12148372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Darts : <span id="fac11148372">Yes</span> <span id="discdetail11148372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Dog Friendly : <span id="fac10548372">Yes</span> <span id="discdetail10548372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 June 2014 by David Myles</span></li><li>Function Room : <span id="fac12348372">No</span> <span id="discdetail12348372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Hot Food : <span id="fac10348372">No</span> <span id="discdetail10348372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Jukebox : <span id="fac11248372">Yes</span> <span id="discdetail11248372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Karaoke : <span id="fac10648372">Yes</span> <span id="discdetail10648372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Live Music : <span id="fac10848372">Yes</span>  - <span id="discdetail10848372" class="discdetail" style="">Sat at 9:30</span> -   <span class="Reviewer">last updated 22 June 2014 by David Myles</span></li><li>Live TV Sports : <span id="fac11048372">Yes</span> <span id="discdetail11048372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Micropub : <span id="fac12248372">No</span> <span id="discdetail12248372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Pinball : <span id="fac11648372">No</span> <span id="discdetail11648372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Pool Table : <span id="fac10448372">Yes</span> <span id="discdetail10448372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Quiz Night : <span id="fac10948372">Yes</span> <span id="discdetail10948372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 22 June 2014 by David Myles</span></li><li>Real Ale : <span id="fac10148372">No</span> <span id="discdetail10148372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Real Cider : <span id="fac11948372">No</span> <span id="discdetail11948372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>Wheelchair Access : <span id="fac12048372">Yes</span> <span id="discdetail12048372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li><li>WiFi : <span id="fac11548372">Yes</span> <span id="discdetail11548372" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 July 2019 by Mister Boggers</span></li></ul></span>
   
 </div>
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11am - 11pm</td></tr>
-<tr><td>Monday</td><td>11am - 11pm</td></tr>
-<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
-<tr style="font-weight:bold"><td>Wednesday</td><td>12noon - 11pm</td></tr>
-<tr><td>Thursday</td><td>12noon - Midnight</td></tr>
-<tr><td>Friday</td><td>11am - 1am</td></tr>
-<tr><td>Saturday</td><td>11am - 1am</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>
@@ -373,8 +374,8 @@ Be the first to write a recommendation on this pub and let everyone know why the
        
           <ul class="Custom1">
                     <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 1 reviewer(s)" title="Pub has average rating of 8 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/48375/" class="List1">The Abbotsford Hotel</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81954/" class="List1">The Clipper</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81938/" class="List1">Counting House</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81954/" class="List1">The Clipper</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/81938/" class="List1">Counting House</a></li>
 
           </ul>
   

@@ -126,13 +126,13 @@ var thispub = 73711;var pubaddress = "A456";var pubname = "Temeside Inn";var 
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 73711;var pubaddress = "A456";var pubname = "Temeside Inn";var 
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="bqlpcdq7fd0ivoifmkq7luqg00" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="idpqvpm2jq9rh16v7mobcpsv05" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 73711;var pubaddress = "A456";var pubname = "Temeside Inn";var 
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -267,7 +267,7 @@ var thispub = 73711;var pubaddress = "A456";var pubname = "Temeside Inn";var 
 <span class="h2ish" id="linksheading">External web links for Temeside Inn</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="HFD/2482">CAMRA WhatPub :: Temeside Inn - <a href="https://whatpub.com/pubs/HFD/2482/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -281,7 +281,7 @@ var thispub = 73711;var pubaddress = "A456";var pubname = "Temeside Inn";var 
 
 	var mymap = L.map('mapid').setView([52.31005620000000, -2.66576170000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -306,7 +306,39 @@ var thispub = 73711;var pubaddress = "A456";var pubname = "Temeside Inn";var 
 
 
 </script><div>
+<i class="fas fa-train"></i> Ludlow, 5.48 miles, 1 hr 45 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Leominster, 7.82 miles, 2 hr 30 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Craven Arms, 13.54 miles, 4 hr 21 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('cyg~H`ugO[QoC{@a@w@MJ[p@GVeB[iABk@M_@[cDm@aBMuA@uB\\}AF_Bd@qABmSIkFdCoCsIgJr@eHeB}BlB_ExAiBDuAe@sBUcBr@sAYeBiA}AqA_A{A}Ao@sDIoB\\w@X{BfKaBvIo@fBo@tEiArG]`B_BlCkBzDk@z@kAdAgBvDcCzDgF|IiBdCqBrBqBfDwAj@w@b@{AnJoB`Kg@vDm@jIaAtEc@lAqCzBkCzAu@RGMmAzCoB|Dc@Zy@LqCTc@L[V}@bAkA`BaA~As@h@kAVaA@qAgAoAq@YFg@j@cAzAm@jAiAfCuAfCiB|B}BzBqA|@y@jAu@jAy@`AsFdKcBhDw@dDSjAKv@SBY]oAEwFb@cAG[j@i@lCi@Ik@@yGjAwAH_A?{AWmCj@cBR[RoB|A}@hA{AlCaAbC}BpG]p@cAzAkAzA}EhDWbAa@|Ba@`DO`BAx@@b@L|DW`E_@vEKbBm@OQMy@MKFCREp@y@xAgAgAI\\Yv@c@t@YX}Al@iA`Ag@n@Me@BA', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('cyg~H`ugOPRR^Pb@x@pCRQJCn@ITH~C\\|BF`@Il@Yj@OVDf@X^^|AfCZ^\\Xn@TrBXl@CTIjC{Ar@OXQrAuAPAPF|A`A`@F^Gj@aAZ[PGPAh@DrBt@\\Bj@CvC{@|B_B|E{DxBk@vDy@xCNhAZvFdBb@BpAKvCR`BKtGbAv@H`DFzFq@x@[p@MtD{AtE}EnDUvDsBtCi@`@@z@NTLfJjPfAtK~AnD|UjDrBs@dFhC|@fBt@pAbApAz@h@rATbB`@TLFVNlE`BrJPtDIbCSdC?lBBrBlAtG`@jCjB`KfAfD`A~Aj@~B^v@PpAd@bCr@jB^x@xDrEnAdB|DlB~E`FbE|CZ\\f@x@`C~EX~@VpANjCL~@V|@`@bAv@vArDzFrAhBOd@MlAn@f@v@J`AQdAa@n@Gv@Xr@`@j@^dCbCdEvD\\|@h@t@`HlGbBh@xAD`GjFfKnAhFjE|D~C|C_@rBRbCh@xAp@Ce@X{B`@Wr@eAn@m@pBuApAs@jByAt@]XGd@fCZW`@AbA|Fl@~@nDbPXhEz@zCBfA?nB`@vApPdKHj@h@|Bl@fBVn@jEfIzAbENlAMN@hAPpBAfCXxCD~@@lC\\|DRtAPx@tCtK|@hGAPNLANvCbCpBdCz@zB|BvHVdAFd@DTDHNDLPR`@nAhD\\w@x@^tBInGoBnJ{Bb@DlAMxAo@z@cAp@jB_@r@EBRjAIFMbCG^TX^c@zBi@Bm@CaC', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('cyg~H`ugO[QoC{@a@w@MJ[p@GVeB[iABk@M_@[cDm@aBMuA@uB\\}AF_Bd@qABmSIkFdCoCsIgJr@eHeB}BlB_ExAiBDuAe@sBUcBr@sAYeBiA}AqA_A{A}Ao@sDIoB\\w@X{BfKaBvIo@fBo@tEiArG]`B_BlCkBzDk@z@kAdAgBvDcCzDgF|IiBdCqBrBqBfDwAj@w@b@{AnJoB`Kg@vDm@jIaAtEc@lAqCzBkCzAu@RGMmAzCoB|Dc@Zy@LqCTc@L[V}@bAkA`BaA~As@h@kAVaA@qAgAoAq@YFg@j@cAzAm@jAiAfCuAfCiB|B}BzBqA|@y@jAu@jAy@`AsFdKcBhDw@dDSjAKv@SBY]oAEwFb@cAG[j@i@lCi@Ik@@yGjAwAH_A?{AWmCj@cBR[RoB|A}@hA{AlCaAbC}BpG]p@cAzAkAzA}EhDWbAa@|Ba@`DO`BAx@@b@L|DW`Eg@rGKhC]jFIRGC_@k@oBpAoAlAEVERo@h@c@NYPm@f@u@^Fn@HzAALQDCFJnBiA\\c@HmD`@mAXKHGHIXUlAu@bCc@pAsA|C[h@o@v@mCvB_@|GKr@oAdG{A~I}@xDWrAq@|EYbAaAhCiAhCSl@Yj@KNMLq@FIDIAWRaBtDi@`AyBlDOPyAlAwCrCq@v@SH_Ep@YR_A^mAp@k@d@q@~@w@rAgBzB_BzBuB~CuEjIkBrCKZYlCc@OeE}@g@G{@RcB{@cBm@y@UF|@HzFE|@yB|KmDxNuB~F?`BEp@c@lB]v@yBnJ_@pBM^DN}CnNm@nD{BvKSb@gAzDe@`AgChEu@dBm@dB]hBQrAQxBw@xHm@rJOfBo@tD{@rEq@dEiArF}@jFUlAM`Aa@vF}@~QOfIG|GIhCGdAm@nFGzEe@pKUfCe@`D}@rDs@lBWrAs@dDiD~IoB|DwHhGaBvCiBbBiBlDuCtG}AzGMhAQhAk@nBeA`DAP?LFZdBxCHp@g@NgAj@g@`@g@h@m@t@iElHkClDoIxHq@p@yBpCaJdOyDbHwDfHq@bAqDyEuAVmFpCe@~@GfFKfBw@tDWx@GvALlCDxB]lA}BfCyBtAgNpHJv@s@p@gCzA}CnAcBReDXgFNaCd@eBb@iF~BeChBoBpB}EvGsCrCW}@kAfAoCj@iEdCmBbAwA\\SfAa@xA[X]f@Q@WMSBYf@Gh@i@Ta@t@Oj@m@YInBgAhDm@tCiBtA?RCDIBFbAFjDq@@{@VqAfAwDbEo@wBA@O_@Oq@kDr@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.31005620000000,-2.66576170000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

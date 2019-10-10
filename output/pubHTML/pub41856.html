@@ -126,13 +126,13 @@ var thispub = 41856;var pubaddress = "High Street";var pubname = "The Plough";
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 41856;var pubaddress = "High Street";var pubname = "The Plough";
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="p1l11uhmdvpdn6hj7ima1pkth4" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="n04uqtlo26uh3q148brvvcgkk6" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 41856;var pubaddress = "High Street";var pubname = "The Plough";
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 41856;var pubaddress = "High Street";var pubname = "The Plough";
   <div id="displayedimage">
 <a href="/pubpictures/41856/" class="indisplay"><img src="/images/display/41501_42000/41856_0b56cabe.jpg?w=2" alt="Picture of The Plough" /></a><br />  Image posted by <a href="/userinfo.php?name=PaulOfHorsham" class="indisplay">paulof horsham</a><br />
   Submitted on Tuesday, 23<sup>rd</sup> April 2019<br />
-  With picture contributions to 1317 other pubs<br />
+  With picture contributions to 1642 other pubs<br />
 <a href="/pubpictures/41856/" class="smallbutton">View all this pub's pictures</a> (7 more images)
  
   
@@ -263,7 +263,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul id="Custom2">
 			<li>Official site of The Plough - <a href="http://theploughinn-wanborough.co.uk/" title="Submitted by:- Jonathan Wilde" target="_blank">theploughinn-wanborough.co.uk</a></li>
           </ul>
-<ul id="Custom2"><li class="fblink" id="170467482972873">Facebook - <a href="https://www.facebook.com/The-Plough-170467482972873/" target="_blank" rel="nofollow">The Plough</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="170467482972873">Facebook - <a href="https://www.facebook.com/The-Plough-170467482972873/" target="_blank" rel="nofollow">The Plough</a></li></ul><ul id="Custom2"><li class="wplink" id="SWN/136">CAMRA WhatPub :: The Plough - <a href="https://whatpub.com/pubs/SWN/136/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -277,7 +277,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([51.54922562830404, -1.69557183980942], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Swindon, 5.38 miles, 1 hr 43 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Hungerford, 14.68 miles, 4 hr 43 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Bedwyn, 15.15 miles, 4 hr 52 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('cesyH`ejIKRw@`A}@dBqCrEKXG\\AfC]bG[fECjAOz@XrA]x@d@bCoGfIMFlAxEtAfJ{AhBGp@}@U{CrHiBvI{PrOqLjL}GtN_GP]Gu@WkA_AyA}@{Ao@sBc@e@YM[{A~AoBjCm@~@oAdCu@`BqAhE_@jBIl@m@fGYxBi@pCgAzEARGFm@tBuAhFfAnAd@n@Bj@Ql@eBtDvC~Eb@v@N`@Jp@JvADj@DPd@|@\\zAPtAHz@BnACl@Gf@Qn@}@fAe@l@IRA^Pj@~@dE^|AAbACLu@hBSr@EjAGd@Sp@Y`@g@d@i@VMBWEOPLj@Bh@CnABzAZXcCvKOd@g@xBkBnIkAnHyAxEaBpHm@nBPxCJh@KDQv@BTXh@DR?p@ZBVLbFfGVAn@r@HXAPLDXXdBnCf@dARVr@bBLr@`@~CJ^[j@Mh@_@v@wA`Eu@nAMb@FDDXDhAHr@rAvCj@l@\\x@bChDrAjChBdCT`@a@n@k@tA_@|Ag@jCg@rB[`AEPBBa@|AIDGRB`@HTOTKj@]bAKx@Cr@EZa@~@E`@@ZF^d@nBHf@Fz@@FHDL?XKd@CFXLd@JRBb@QbACT?j@d@nDLb@\\b@NVh@nEKJ[t@DPR|Ay@ZhD~[[Lf@zEEBd@bC`AtEZbBQV@VT`AqAbAHj@ODOLCHaA|@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('cesyH`ejIKRr@^^D~@_@jBbEl@_@LdB\\`Al@aA|@@h@Fd@QLh@pA{AnAkAz@tB^l@x@z@tCeCx@a@~@hBdE`EfDgChF_BXLTPpCzCd@^dAj@tIbDjBtAbDvCh@`@p@`@nCl@lD~@ZDx@Il@Ah@LLHHPN_@z@y@Tw@nB_CnB_AT~@VfCXeA`@eA`@k@p@mAl@kDn@wCh@gB`@q@ZAXiAj@ShDoKpDwLIc@Z}@rDeH|JgK~AuAtEsE`CoBIg@j[aV[{E|A}HfE_S`CqO|DkMjDgF|EgLlH_LvOyQlAkDnByJ~@aIyA_Mzj@ct@`NsHnIqH`JwJxBm@`AeCVgEv@aB`Skl@|Uks@lBmErZ_VN@VLt@r@THbA]x@OVJ~@Gx@SfB_ARf@t@v@BVAT^@^Cr@WbAk@dBo@^G`@BHFHOREn@APGxBkAdA]rF}@T?hEq@lCIhBOtDKxAFl@HHDtDfALJ@PDYPA@LNDTA^CTJ\\Mt@?`BMr@@LCz@RnC?fDd@jADTIJYTCh@SdBmAl@Ut@e@pAk@Za@hDaBn@e@`BgA~@e@|@s@dAg@tCqBlAs@n@m@dB}@r@k@p@Wv@e@|@_AxAe@f@]p@g@`@UtCcENqBr@}DF{AXiB\\_BPk@VuAb@wAr@k@h@Sv@Ov@Nj@@h@H~@Bt@Ur@q@t@mA`@aAvAsCh@Sh@Fx@\\b@l@d@d@fC~@z@RnA?b@KhADhBu@nA?z@BrBZx@Rj@MCOHD~@BbCIr@@fE_@hAiAd@ATN?wBDmAFq@R}@Pc@rAaBEEd@y@@s@EwAUaEA{@FwAHw@Bc@LAHI`@qARY~@OVEnBLjBT^AbAYdACHeAJ{@@uAMqCQiBL{RhAqU\\yLEmHNqDbB_Hv@kBx@yD`CuM|CsQXsDlAmK|B}F`GsKvAwAdAiBvBiFnBmFxDsUpAgC`@_F`Dij@xAmVISOyBIaJRmIl@oKv@aIbAeHYeMn@wElCgJZc@~@aEj@kFhCyWtAgL~@wElFpCn@UrF{@pEi@lTqLD?D_@PA?G`EgNJCRiBXqAL}@Ts@Dm@?y@@QvCwCD_@BsBDo@Jo@Pg@R_@b@g@CaBEuESeK@_DDqAPcAjAt@NqA?mAB[LqCZwBNcBVcAFAR_BGEF[XNFa@GEAF', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('cesyH`ejIKRr@^^D~@_@jBbEl@_@LdB\\`Al@aA|@@h@Fd@QLh@pA{AnAkAz@tB^l@x@z@tCeCx@a@~@hBdE`EfDgChF_BXLTPpCzCd@^dAj@tIbDjBtAbDvCh@`@p@`@nCl@lD~@ZDx@Il@Ah@LLHHPN_@z@y@Tw@nB_CnB_AT~@VfCXeA`@eA`@k@p@mAl@kDn@wCh@gB`@q@ZAXiAj@ShDoKpDwLIc@Z}@rDeH|JgK~AuAtEsE`CoBIg@j[aV[{E|A}HfE_S`CqO|DkMjDgF|EgLlH_LvOyQlAkDnByJ~@aIyA_Mzj@ct@`NsHnIqH`JwJxBm@`AeCVgEv@aB`Skl@|Uks@lBmErZ_VN@VLt@r@THbA]x@OVJ~@Gx@SfB_ARf@t@v@BVAT^@^Cr@WbAk@dBo@^G`@BHFHOREn@APGxBkAdA]rF}@T?hEq@lCIhBOtDKxAFl@HHDtDfALJ@PDYPA@LNDTAf@\\lCt@jAd@`ALnAd@r@HdIlE~@\\n@`@lBz@fCxAxEzB|D`Bz@l@fBf@tB~A|ANv@t@h@VfCb@p@QDYjBk@jAGZo@|EsF|@}@`C}Cv@k@vBu@z@B|Bp@xBz@n@b@j@?v@LzABlBQ|Ai@tBQn@YfGhCpBeExCaHV{@`@sBFq@DyBLyBb@{FJu@\\gAjAeCbAwBhB{C`@e@`@UhFsAlDcAd@]Gk@BSd@aABKv@?h@D\\RZAr@Wb@LNLx@b@XEhABn@OJIn@TN[|BOhEm@R@`EzL`@PzBmAlCiA`AjJ~AjKvApA|@]vIyTj@jAnMg\\dDXx@oAh@M|DPnBjAAr@WnAs@fBWpAGbAPvAnFhIhCpA~@IdB}AhTi@|@wAhHsEjBk@|CyMZs@nAyAzGqExCqAhIi@`AAdBTvCMrI}ArCoAdLaEtFgAtA_@bA}@vI@`OiBxDcAhC`@lCkBvBgAjCBhD`@zG?`@k@n@qAj@InC{BpDqFzLgK~C{@xAh@dCCbC_BjEoFlF_FJn@dArCzDpIb@v@lD}GhFzFhBdBZkARm@t@]Xa@HE^BjD~C~ApAHJJZDpAFPZVj@uCECFi@A?OZUD?HwBeB', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.54922562830404,-1.69557183980942], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

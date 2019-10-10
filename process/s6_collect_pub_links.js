@@ -3,6 +3,7 @@ const d3 = require('d3');
 const request = require('request');
 const cheerio = require('cheerio');
 let pubNameData = [];
+let errorData = [];
 
 const OUT_PATH = './output/'
 const IN_PATH = './output/districtHTML/'
@@ -10,7 +11,8 @@ const IN_PATH = './output/districtHTML/'
 function getPubLinks(filename) {
 	const district = filename.replace('.html', '');
 	console.log(district)
-	const file = fs.readFileSync(`${IN_PATH}${filename}`, 'utf-8');
+	const filePath = `${IN_PATH}${filename}`
+	const file = fs.readFileSync(filePath, 'utf-8');
 	const $ = cheerio.load(file);
 
 	$('#pagelist')

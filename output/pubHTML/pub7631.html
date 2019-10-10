@@ -126,13 +126,13 @@ var thispub = 7631;var pubaddress = "George Street";var pubname = "The George 
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 7631;var pubaddress = "George Street";var pubname = "The George 
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="3soh7afprgsdjrp9isg89sk1r0" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="2ccdo0ir67flk525f2eldgfjr5" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 7631;var pubaddress = "George Street";var pubname = "The George 
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -253,7 +253,7 @@ var thispub = 7631;var pubaddress = "George Street";var pubname = "The George 
 <p class="old">CLOSED &amp; EMPTY(20/09/09)</p>
 <p class="Reviewer">On 24<sup>th</sup> September 2009 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 2043 recommendations about 2023 pubs]</span></p>
+  <span class="leftspace">[User has posted 2038 recommendations about 2019 pubs]</span></p>
   </div>
 </div><hr />
 <div class="indreview"><div id="review39766" class="reviewdiv old">
@@ -280,7 +280,7 @@ Pub visited 20 August 2002.</p>
 <span class="h2ish" id="linksheading">External web links for The George Hotel</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="EXE/7">CAMRA WhatPub :: The George Hotel - <a href="https://whatpub.com/pubs/EXE/7/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -294,7 +294,7 @@ Pub visited 20 August 2002.</p>
 
 	var mymap = L.map('mapid').setView([50.78247174725058, -2.99783611541363], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -319,7 +319,39 @@ Pub visited 20 August 2002.</p>
 
 
 </script><div>
+<i class="fas fa-train"></i> Axminster, 0.48 miles, 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Honiton, 9.33 miles, 3 hr 0 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Crewkerne, 13.76 miles, 4 hr 25 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('{m}tH`phQBH`@VEV?T\\tALvANn@L\\LTPPcAxCzB~DR`Aj@^|@PR`@V`BHRFFPBVMFLJBDCVt@n@v@L?FPH\\HINVNLDVVn@`Av@Kl@n@b@Mj@EE', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('{m}tH`phQBH`@VEV?T\\tALvANn@L\\LTPPcAxCzB~DR`Aj@^|@PR`@V`BHRFFPBVMFLJBDCVt@vAtDb@rBn@bD~@fGHjA?jAc@~CWnC@r@Jv@fAjD^nBfAlKBnGbAhRj@zGb@lIHrBBdGEbGKhD]vBsE`a@{@jIT?u@`F{A|P}@lEGn@MESBoEfNcAtCiA~DgHdTe@|AYrAOBWXm@d@o@RcA?e@R_BbHu@fC{A~C{IdPeChIm@fB]j@EP]|BmA|F?~@y@~HO~IEfBQd@Kv@?`BGhA?v@HnCKpBB`@H\\`ArBr@lArAhDd@`BDT?XARiAbD{BfGuAb@FzCj@`EQVSR}BNEz@k@nE?d@PjBHpA?x@CrAg@~E}AdACjBI\\KLMBT`Ah@nAf@bAP~@GHU|As@xFq@pGa@bDKp@]pUwAjs@]`E]lHKzAM^a@t@Mb@@l@Ph@hAhCt@lAfAvAj@pAHl@NdECj@Qn@_BzCg@nAYvB_BxCG\\BvBu@dFe@`GOlC_@`D@bANv@LPPHe@`GOnCa@zDI~C?|AL|CVfD^xBVnA^dCLjDb@~FBr@KdF]hIMdF[bYEhAI`AQdAiBnHwB|Hi@zBK`AStCc@zJKjJDzCAhACl@SdCObEMhKKxCaBh`@UhKElEChAWpD]tDe@nC]pAa@nA@LyBjMYtCm@bEc@zDKjBRbCf@hDd@`C|ClLl@fDRpCPtAVpAfAvCxCzGv@pDh@dDXtCJbBKr@k@|@gB`B[JQb@[b@_A`AQ^Ol@OdBIf@K`@gArCQb@a@l@}@dADPFz@DvACHMdBCt@?~@VvLa@xLWzCLlAd@hAFh@FB`AnAb@v@d@hAg@b@Xh@f@h@Xh@@KJPPUIQEDQ]EI', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('{m}tH`phQBHw@b@aAbAoEgCs@m@g@s@cDwDsAuAuAw@yBk@Sd@a@`@e@Cw@Ya@@oBq@qBkAqAyA{C{CiD{DqEeGqBeDaEoIaAmDC{E@cBKkCQ_C_JuDyG}GmCoDa@e@a@a@o@]e@CiAB{@Cy@KiEyAoKsB}@Iy@Aq@Kq@O{Bw@mBUgDaAiCk@CQmEoQs@mDu@wCeD{La@iBc@_AK_@q@uCU{A]sEUiAQmAYoCOk@iD}JUkAKm@?]F_AFYLqB@qAF{@Iy@i@aCWq@yAoFw@oDAUi@WQOc@{Do@aCu@kBYmCQo@QUcAk@YSo@s@_@o@Kw@AeABgAHiAw@kHKWu@yAU[wAu@e@S[Ie@BsF?CmBoB}[FmBAeBQgC@mCCi@YsBUwBc@qGSiFAkAB}CWeEa@yHQiCBoAHuAEk@Y}@Ui@_Am@w@u@aBw@]c@Q]Ss@ESAYM{K@iBGmBu@_@w@k@y@a@iAy@cCy@a@[yB{BuAmB_E_E}AeBLiBWDcA?oCe@yA[e@YUSiAi@cC}B{B}AyKyJwBeBaByCi@kAoBuHaBkHeCcMbA_CPm@`@_APi@X]lBuDrAuCLa@iBcBaBqCoB_EkDyIYcBkB_H{@cEeA{FOeALK_@_Bm@kAi@uAeBcHoBoGGGHWGM?sAg@uFIkB]{FIg@GCKBiBbAqB~@eBf@@FGNsAsGg@eAWaAo@oD}@wCm@wAa@qAW{AGwAGsCHyDCkA`@qBPeBHwCT}AJgBA{@y@qBe@{Ca@gEg@yF_AqAo@gBsBaIwBgJeA_F]yAu@cBkA{BcAiDg@qCcAgDQqAImKOsFK[e@k@oCyA{A}ASa@AoBe@cCcAiCNaA?[g@cAKe@Co@s@gOMmAaAmDgCeLB_@BK_DqBQSiAYSgG[yD_@mFM]]FaIcDOUuBqBeGqDi@Oa@}@{AqDyA_DWg@]mAKyAYqBSeA[w@k@{@m@y@S_@Oq@A[HKJe@Bq@JSBS?s@L]pAsF?Mr@w@Tm@R}@BsA?_AScAGo@D_ALqA`@aAHeADiAVmA\\k@DOEQg@oGOsF?kACc@Ko@EoAGm@Mi@GcAEWYm@KqA@KUa@o@iDYq@USkBAgAEg@KcBEcCAcDcAFqAGmCBiCAmA[oHK_@IgEa@{F_@{@oAaEeBkHHc@~@_HI{@o@iCOe@q@e@mCs@}@_@MYK{@Mm@Wc@Qg@SeAK{@a@iAUqAF_BsFgHEy@uAmJmDmGeBqCsAQ}CwDw@}Ay@yAmBeCmBmDyAaD_CeEBQaBs@{FmBcBy@aB_@kBw@WSTo@p@uCr@yCRgAJ_AZqKRaE@y@E{A?oAF}AH_AYOf@aSAmDIuC]k@kA_Dg@{Aa@aCs@}B_AkAuAu@eBYy@c@]YaAqAm@m@{@q@q@eA_@q@AIDITM~@[ZYp@Cr@HvAh@N?JIz@iFd@_GDeBB_DBgGCaBZCDcBTKPBj@^VDv@OTa@Ls@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([50.78247174725058,-2.99783611541363], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -342,7 +374,7 @@ Pub visited 20 August 2002.</p>
   <div class="hline"></div>
   <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
   
-  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac1187631">Yes</span> <span id="discdetail1187631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 March 2019 by Quinno _</span></li><li>Real Ale : <span id="fac1017631">Yes</span> <span id="discdetail1017631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 March 2019 by Quinno _</span></li></ul></span>
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac1187631">Yes</span> <span id="discdetail1187631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 March 2019 by Quinno _</span></li><li>Bar Billiards : <span id="fac1077631">No</span> <span id="discdetail1077631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Beer Festivals : <span id="fac1177631">No</span> <span id="discdetail1177631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Beer Garden : <span id="fac1147631">Yes</span> <span id="discdetail1147631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>CAMRA Discount : <span id="fac1027631">No</span> <span id="discdetail1027631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Car Park : <span id="fac1137631">Yes</span> <span id="discdetail1137631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Child Friendly : <span id="fac1217631">Yes</span> <span id="discdetail1217631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Darts : <span id="fac1117631">No</span> <span id="discdetail1117631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Dog Friendly : <span id="fac1057631">Yes</span> <span id="discdetail1057631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Function Room : <span id="fac1237631">No</span> <span id="discdetail1237631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Hot Food : <span id="fac1037631">Yes</span> <span id="discdetail1037631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Jukebox : <span id="fac1127631">No</span> <span id="discdetail1127631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Karaoke : <span id="fac1067631">No</span> <span id="discdetail1067631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Live Music : <span id="fac1087631">No</span> <span id="discdetail1087631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Live TV Sports : <span id="fac1107631">No</span> <span id="discdetail1107631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Micropub : <span id="fac1227631">No</span> <span id="discdetail1227631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Pinball : <span id="fac1167631">No</span> <span id="discdetail1167631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Pool Table : <span id="fac1047631">No</span> <span id="discdetail1047631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Real Ale : <span id="fac1017631">Yes</span> <span id="discdetail1017631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 March 2019 by Quinno _</span></li><li>Real Cider : <span id="fac1197631">Yes</span> <span id="discdetail1197631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>Wheelchair Access : <span id="fac1207631">Yes</span> <span id="discdetail1207631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li><li>WiFi : <span id="fac1157631">Yes</span> <span id="discdetail1157631" class="discdetail" style=""></span>  <span class="Reviewer">last updated 02 October 2019 by E TA</span></li></ul></span>
   
 </div>
 

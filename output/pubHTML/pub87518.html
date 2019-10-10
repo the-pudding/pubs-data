@@ -126,13 +126,13 @@ var thispub = 87518;var pubaddress = "15-27 Cowgate";var pubname = "Players Sp
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87518;var pubaddress = "15-27 Cowgate";var pubname = "Players Sp
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="fiknqv0lgb47bpfp0m6sra00a7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="9lklikdpctcrulf43uscs7gs26" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87518;var pubaddress = "15-27 Cowgate";var pubname = "Players Sp
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87518;var pubaddress = "15-27 Cowgate";var pubname = "Players Sp
   <div id="displayedimage">
 <a href="/pubpictures/87518/" class="indisplay"><img src="/images/display/87501_88000/87518_3594f8b7.jpg?w=2" alt="Picture of Players Sports Lounge" /></a><br />  Image posted by <a href="/userinfo.php?name=rpadam" class="indisplay">Just a quick pint, then I&#039;m off</a><br />
   Submitted on Saturday, 9<sup>th</sup> March 2019<br />
-  With picture contributions to 5082 other pubs<br />
+  With picture contributions to 5595 other pubs<br />
 <a href="/pubpictures/87518/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -277,7 +277,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([52.57302626361203, -0.24619108102036], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Peterborough, 0.48 miles, 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Whittlesea, 6.68 miles, 2 hr 9 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Stamford, 13.51 miles, 4 hr 20 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('_d{_I|ao@QzANB?VHCZlAHADOQo@ICsDlEIBOCIIFb@FDGTKPs@f@GP?RJ|AUDGj@a@^DPCRHf@[NAKIBN`AFEbB_AAGlBeAAKuEdC', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('_d{_I|ao@QzA^LdAgKJcBTkDF{@DkD|Cf@DEF@@Gn@JfDID]d@ExCs@CY\\GPOb@Pt@MA[DCH_@EOQ_D^yDLiATiAv@wCjEcNv@mCdBcIZiBl@aFH[LaABgAEsH@y@KcG@uCKgN?cLG_BFyDCM_@}@Ko@?KBIIcJ?sDc@ey@QgYcBsWe@qGuEaq@gFws@_@cEMmBOwEDEIiABg@He@La@N[hBoATMNO^MXQfGqEFO?UG{@?UBODG`@KFQNy@x@{AJM?OUsD}FyfAMwCGgCA{BDeBtAkd@RmCVoCVqAzCgLh@eCr@_EVu@Zm@POPEhMfCFCFMN{Dn@gLBMAM^gHPwF\\gHp@Fn@GPYDg@@i@FOHqAA_CxAaAz@B|AZb@sJd@eCz@oBl@oBnCsOrAiHb@}Bd@yAHMBOBUByADeADeCfBq@tA_ALQfA_@VEPOF_@IiAzAg@z@y@fAk@bBWpCWh@O^QZWd@i@f@w@v@}CnAsFJYXe@l@c@fAOz@q@\\a@vC{FbEmHEeAGgEHk@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('_d{_I|ao@QzANB?VHCZlAHADOQo@ICsDlEIBOCIIGSECk@AoAd@KNc@LaBvA_DjCKLe@vA?\\BZKn@[Vs@DCU[AqAPc@@IC{@b@yB~@wAf@IXSMeKtCe@XOJOC{D`AqCx@SROTQh@ARc@j@[Z\\l@HZBV?b@Z`MLzAENID]x@E^ZnGGh@Ot@_AzBUpAGr@E|@@r@NzBFrAC^FNOlJUEGJi@II@KPK@FxCSx@KTCT@TBTKKIV^ZJ^Fn@VdPKl@Q\\Of@Dr@l@z@JADn@MlBI|@ITe@nCYjA?H_AbCi@bAuEvG{A~Bq@jAs@~Ac@vA[nASjA]xCGlC@`AJj@Xx@NZHh@@REvCKp@KXMv@G|ACz@BpHC|BBbBFf@Cb@W|@MJG@STQLILo@b@_@hAgBbJkArFKtAG^kAjF}ArIqExSg@lBeDdPIXMPG?aA]eH}@cCAaB]k@?QL_@f@Od@G^aBbTKj@QXWV_FjDILyAzMg@rDm@tCqBrGVVZ~@j@tAh@|B\\f@`DhJGN~BnGkAnBcArBkBfB_BnDk@_Bk@|CmBhDmBfEgJnOa@PuC@uAjDgBdK]xAwD`H]lAEl@TbAItBUfDvB~IhAnEHhBCxCg@t@e@lDWt@yBLy@`@kAv@hBzN{@l@gFxFGlAIh@}B|CsFfA{AH}Br@c@MsA{AM~Au@hGe@dD_@vBq@vCkIf[_K`b@a@rAaB`EkAhDkK`]oB~FmGfSeHrUi@tBSfAKxAI`Bi@|RQrDi@`JCnADtAXpBl@dGFfABnB?xBAj@IbAER[p@o@v@e@jBGt@CJWVRhCDTLTLh@Fp@BlBV|LFnLrAr_@HhDKzEGnCqBAONENEt@p@fLGr@M\\cA|@Yh@_IfFaFfA{Ap@}BnB{BlA`B|DJn@MtAFFTl@~@rHv@bKvA|K@z@Pr@|AdNlC|PlAfFpAhAe@JiCfCiErF{FvPm@TBJGJaF|Yq[haCiAnGwBpc@WSeAIo@xAuClKeQliAG`BHZQJ_IxG_Bh@{G|@gC`@q@R\\fB^hAPVWdB}@dAgB`AiHhEe@nAi@RaAwA_DxCi@wAc@BGW_AIs@F{BdCmDdEg@Zf@|@b@N`AFVjALRREx@q@AeAN?BK@GTU', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.57302626361203,-0.24619108102036], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -334,8 +366,8 @@ Be the first to write a recommendation on this pub and let everyone know why the
                     <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/86077/" class="List1">Turtle Bay</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 4 reviewer(s)" title="Pub has average rating of 7 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84287/" class="List1">The Stoneworks</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 15 picture(s)" title="Pub has 15 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 5 reviewer(s)" title="Pub has average rating of 7 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/3148/" class="List1">Wortley Almshouses</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 10 from 1 reviewer(s)" title="Pub has average rating of 10 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/88168/" class="List1">Tap &amp; Tandoor</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/2976/" class="List1">The Beehive</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 8 reviewer(s)" title="Pub has average rating of 8 from 8 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84228/" class="List1">The Bumble Inn</a></li>
 
           </ul>
   

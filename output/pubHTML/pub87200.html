@@ -126,13 +126,13 @@ var thispub = 87200;var pubaddress = "9 Woodford Road";var pubname = "78 Degre
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87200;var pubaddress = "9 Woodford Road";var pubname = "78 Degre
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="p2kt856ss666dgkt5jm4id0qm0" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="irum0r3h8fgmk1aaivo4lprmj1" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87200;var pubaddress = "9 Woodford Road";var pubname = "78 Degre
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87200;var pubaddress = "9 Woodford Road";var pubname = "78 Degre
   <div id="displayedimage">
 <a href="/pubpictures/87200/" class="indisplay"><img src="/images/display/87001_87500/87200_8e41ab92.jpg?w=2" alt="Picture of 78 Degrees" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
   Submitted on Wednesday, 28<sup>th</sup> November 2018<br />
-  With picture contributions to 24007 other pubs<br />
+  With picture contributions to 24825 other pubs<br />
 <a href="/pubpictures/87200/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([53.35687970000000, -2.16545860000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Bramhall, 0.32 miles, 6 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Poynton, 1.85 miles, 35 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Cheadle Hulme, 1.97 miles, 38 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('cgtdIb~eLm@h@[PYFsHyEkIsEBOM]WSRi@?EJW', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('cgtdIb~eLm@h@[PYFkDyBB_EJiC^oDbAwFDs@@{EDa@Ry@tAiEZeA|C{MJBJ{A|AGdBbAVSr@IlAVrAwAtEoE{@sDg@mAw@_C]cBeC}HAi@Fg@t@{BNgCx@sEr@iNPi@~@aEJPRq@NgABo@@eAEyAn@q@VECg@H_@x@gCRYPEGyA@uAtDcNuC}BP[Z{@n@oAd@i@bB}@T[XK`@@EmCOGEKEDMa@ILAC@C', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('cgtdIb~eLm@h@[PYF_@|Am@hBi@r@STo@RyBAaBHs@N_@Ne@X{AzA{BpCoEtG]v@[rAInACrAA`CQ@qAz@I_@kAe@UDgJzEOHSZ_GnN}@fCo@nQ_E{AIAKNaCbG?PBT`BjAyAbIk@dCJJ_@j@cBjBiCv@sAh@YXi@dAmAvBkBpAiAhCYfA?RgA[C\\oAbEqAHmDb@gAkAeA?mAMQRISFGAGe@OQS@MGC?DAFj@r@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.35687970000000,-2.16545860000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -326,14 +358,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
   
 </div>
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>2pm - 10:30pm</td></tr>
-<tr><td>Monday</td><td>4pm - 11:30pm</td></tr>
-<tr><td>Tuesday</td><td>4pm - 11:30pm</td></tr>
-<tr><td>Wednesday</td><td>4pm - 11:30pm</td></tr>
-<tr style="font-weight:bold"><td>Thursday</td><td>4pm - 11:30pm</td></tr>
-<tr><td>Friday</td><td>2pm - 11:30pm</td></tr>
-<tr><td>Saturday</td><td>2pm - 11:30pm</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>

@@ -126,13 +126,13 @@ var thispub = 59548;var pubaddress = "Weyhill Road";var pubname = "The Weyhill
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 59548;var pubaddress = "Weyhill Road";var pubname = "The Weyhill
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="gcoctvknjb78lqrbirru9ii6q6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="v6madjc54tujalklebutkc06i4" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 59548;var pubaddress = "Weyhill Road";var pubname = "The Weyhill
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 59548;var pubaddress = "Weyhill Road";var pubname = "The Weyhill
   <div id="displayedimage">
 <a href="/pubpictures/59548/" class="indisplay"><img src="/images/display/59501_60000/59548_ba0b3477.jpg?w=2" alt="Picture of The Weyhill Fair" /></a><br />  Image posted by <a href="/userinfo.php?name=Blackthorn" class="indisplay">Blackthorn _</a><br />
   Submitted on Friday, 10<sup>th</sup> June 2016<br />
-  With picture contributions to 4300 other pubs<br />
+  With picture contributions to 4477 other pubs<br />
 <a href="/pubpictures/59548/" class="smallbutton">View all this pub's pictures</a> (5 more images)
  
   
@@ -263,7 +263,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul id="Custom2">
 			<li>Official site of The Weyhill Fair - <a href="http://www.weyhillfairandover.co.uk/" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">www.weyhillfairandover.co.uk</a></li>
           </ul>
-</div>
+<ul id="Custom2"><li class="wplink" id="HAN/238">CAMRA WhatPub :: The Weyhill Fair - <a href="https://whatpub.com/pubs/HAN/238/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -277,7 +277,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([51.21781244198529, -1.54337105522541], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Andover, 2.58 miles, 49 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Grateley, 5.74 miles, 1 hr 50 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Whitchurch (Hants), 10.66 miles, 3 hr 25 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ymrwHbmlHJ}GRqDtAsMz@mGr@sEzBaM`@uBzB{JPo@ZiBjAwFWiABMf@}@L]P}@Dc@x@qH|@sFd@eCd@wBd@wGNkC~CmNX_BNqBDqBAWBeA@]Hy@Pm@j@cAFc@?c@CQHER[H]RIL]pA_ID@v@{EF?vCoQtBcTbBcOGAp@_GFBFe@d@_CEUt@iEf@iENgBTyFMw@S[SOgE{AcAU@OkAY]Ok@M@MmBiHIs@i@oBMOGM{@_D_BeFEDIXUXXx@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ymrwHbmlHAlCFnFAvAN@ClAGx@fBBzCEb@IvFyEj@YrCo@Ff\\XzL|G~G|QaVNW^y@JGXALELOd@iAd@s@jPeTzJrClBdAtKlH`D|AdCZvAa@h@dDlAfFRpCJ~@vBbKf@~@~AxGdAvFhAtFbBfE~AvDp@fBVtARvBXjGxBbK|XblA~AhFtAdId@dJjAzGDFvE~P~Qd]dHzGpLbUtCfMzAfCn@d@zCtAvBfD~AjBjApBrAbElDjHBHZzFFLfBr@RdDCNs@vASnC|EdFpE~FjCxGn@jCzEzb@vAbLj@SJ\\ALVhC', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ymrwHbmlHJ}GRqDtAsMz@mGr@sEzBaM`@uBzB{JPo@ZiBjAwFWiABMf@}@L]P}@Dc@x@qH|@sFd@eCd@wBd@wGNkC~CmNX_BNqBDqBAWBeA@]Hy@Pm@j@cAFc@?c@CQHER[H]RIL]pA_ID@v@{EF?vCoQtBcTbBcOGAp@_GFBFe@d@_CEUt@iEf@iENgBTyFD{@FQGo@AoBDuD?sBDcAP{A`AsFHm@RwC@]Cu@EO?IDQXuDFsAL}PDgBFcAH_@GM?G@EHIZ{Hb@eEKGJYh@eC@UE]L??u@KaBg@_CKWMa@Ia@MkAEqDH_ARm@F_K[ACm@h@YEiKOsBESRSHENaGjBe]Dk@XqBq@[CkAd@wBFk@DoAR{@ZoCc@g@]oA{E{Gu@{AoAcFeBiIi@aAcAuAU_A{CsHqBsGm@VeAjAERe@?e@kBIgBSESuGg@uKO?gS{YmOqTa@}A{AyE}BaJoAiFeBiGkC}HqEaJ{@oAoAqAaAy@iK}MQq@Ky@Gg@?i@C]EOOGa@NoAkEe@gAo@gBYuBoEsSmEkQw@uDWiBgAcLyBmMwCwRkA_F{BmL}BqO{A_JwBcNaBmMsBsQiAoSy@kT]{HSwAa@{BW_Ai@y@kByE[aAc@gA{FaJa@u@]y@WaA_AqIi@cD]iA{AyDsDuKa@_Be@eCKs@IeAGoCKsHEq@Ec@I[BiDHkEf@mOd@{HTsET}A`@uAbDuHvCoC~FqGn@]rAiAhKmPjEqGz@{Ad@qClAgFhAgELeABsAA}@IeAMkASeAKSCm@HIAUMaC]sDMi@ISg@w@Um@Io@K_@lDcH^_ANe@qHoAb@mDgBy@}AeBsEuAsB{DOkA@i@a@IIC[]s@mAqByDSs@G_@?k@o@LOJSUS_@_@E', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.21781244198529,-1.54337105522541], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

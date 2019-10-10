@@ -126,13 +126,13 @@ var thispub = 87700;var pubaddress = "25-27 The Linkway";var pubname = "Hollyw
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87700;var pubaddress = "25-27 The Linkway";var pubname = "Hollyw
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="n11ogv6m7mq2t2kk5bohigj6u3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="7oel1qj6oddpoc9jka93oa6t27" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87700;var pubaddress = "25-27 The Linkway";var pubname = "Hollyw
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87700;var pubaddress = "25-27 The Linkway";var pubname = "Hollyw
   <div id="displayedimage">
 <a href="/pubpictures/87700/" class="indisplay"><img src="/images/display/87501_88000/87700_0295e3c0.jpg?w=2" alt="Picture of Hollywood Bar @ The Hollywood Bowl" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
   Submitted on Friday, 3<sup>rd</sup> May 2019<br />
-  With picture contributions to 24007 other pubs<br />
+  With picture contributions to 24825 other pubs<br />
 <a href="/pubpictures/87700/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([53.58303250000000, -2.53335300000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Horwich Parkway, 0.88 miles, 17 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Lostock, 2.16 miles, 41 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Blackrod, 2.24 miles, 43 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('yl`fIfxmNZj@y@fBhDjG{@hBA\\?JIT?LaAxB}@xAk@pAq@nBF`A`D|F~BkFLT~AoD^s@DCJAFF`AdBHSBYhAf@f@]@OKeAFCPWNG^JADVJJVN_@FLTc@JEXBx@|AnDhGRP?JBVHLNAFTBBIb@`@^Le@II@G', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('yl`fIfxmNZj@oBhEIFSA]a@m@gBY_BC{AD]TYlC}Aj@q@h@kAj@{Cb@qCR_@HMHS@Q@WCSIS?k@Ja@lByDRKJ@?MhAcBP?Ve@H?Fc@Ra@x@g@d@ItB?OuEHgPDi@Dc@Ny@n@{B^gAZYpASFu@DgCJkAj@P|@wNViCNy@bAyA`BiEJi@n@mER{@lAyBxLiZv@sC`@aCRoBZyEj@iL?k@C{@u@sNEa@c@aAlEmHNg@DY?m@EkAw@iEkA}EOu@NCCc@BM?@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('yl`fIfxmNZj@y@fBhDjG{@hBA\\?JIT?LaAxB}@xAk@pAg@xAOW]VE@_@Yg@_AMDCCoArC~@fBIPR\\Wx@OHkCpF~@vAd@XKf@YTSDDp@d@xAcBrAcBz@eBxA}BlAkBIoLbXgGfTtEjDw@|Eg@`EIv@Ar@HvEVZV|Bn@~ELtATbDBtA?tDFJJGl@u@LMZNz@tCKZeBdBqC~Da@zBI`Ac@rGW`A{CfHnCxGn@tA|@jAIXA?CMCRCCQh@Yl@UVYPWBGCYd@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.58303250000000,-2.53335300000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

@@ -126,13 +126,13 @@ var thispub = 87131;var pubaddress = "The Arcade, High Street";var pubname = "
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87131;var pubaddress = "The Arcade, High Street";var pubname = "
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="0b5tg3671j66hqqh9oljv3en37" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="q6btc6tb74mocrprd3kjd9t6n7" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87131;var pubaddress = "The Arcade, High Street";var pubname = "
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -271,7 +271,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 <span class="h2ish" id="linksheading">External web links for The Tannery</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-<ul id="Custom2"><li class="fblink" id="357621414778062">Facebook - <a href="https://www.facebook.com/thetanneryayton/" target="_blank" rel="nofollow">The Tannery</a></li></ul><ul id="Custom2"><li class="twitlink" id="1055373664286322688">Twitter - <a href="https://twitter.com/TheTanneryAyton" target="_blank" rel="nofollow">The Tannery</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="357621414778062">Facebook - <a href="https://www.facebook.com/thetanneryayton/" target="_blank" rel="nofollow">The Tannery</a></li></ul><ul id="Custom2"><li class="twitlink" id="1055373664286322688">Twitter - <a href="https://twitter.com/TheTanneryAyton" target="_blank" rel="nofollow">The Tannery</a></li></ul><ul id="Custom2"><li class="wplink" id="CLV/18-0550">CAMRA WhatPub :: The Tannery - <a href="https://whatpub.com/pubs/CLV/18-0550/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -285,7 +285,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([54.48849720000000, -1.13359950000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -310,7 +310,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Great Ayton, 0.85 miles, 16 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Kildale, 3.95 miles, 1 hr 16 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Battersby, 4.37 miles, 1 hr 24 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ufqkIxk|EAa@OyBKk@W_Aa@y@j@}A~BaCv@i@x@sBNQIy@EiAP}AGwA{@_F[y@wAeBIy@JcDKaDAiCSkAk@uCWmB}AkHg@eDOoAEmACgCByCJc@As@M_DYoCOc@T]', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ufqkIxk|EAa@OyBKk@W_Aa@y@j@}A~BaCv@i@x@sBh@m@L[j@cDlAwDnBwFf@sBv@y@vDiNr@wCEy@QuAcA{Eo@uBs@}Ac@e@{@KWc@e@kC@UJYy@wDc@eDWqAeAuEo@oA}@}D_@yAkBaFXKj@o@xDaGz@{BLi@dB}C|@oDP}Cd@iAD{ArHcf@b@wE`@eACi@I}@HOFkApDoIpB_BjA_CpAaEzBqEtB}CdFiN~@gFj@iFWgE}BuIe@_AuAEiA{@}Bo@{AsAkBoBcBiA[g@Q_AE_BSeAOeGbDkNhAoMf@oKWoA{BmIa@gCDkATl@jAT`BYzA_@b@}Ar@aAv@wAb@mB^eAf@oA`@yAZmB`@iDLs@FUZs@~@i@p@w@ZgA\\[p@AlATfBdAwCzLIdBF`BMxAUh@]?OH?E', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ufqkIxk|E@VGt@kAnETj@xB^zEjF~DjT`D}CbFyHn@iA~@wBr@mCvAuG|@gCtB_E~@uApDkHjAmDh@iA`GuHxCiDtBwCjFwGj@wAdB_Ep@u@tBwAh@u@p@aCL[b@u@d@]~G{CrB]pDyAx@i@EoF?eEOeCAc@Ba@TaBl@_G~@_GPyAVwC|QeHfG{FvCeDvE_ERCRBZTtCxEX\\d@PrCDx@XbDWfM_CfBMhEDb@Id@K~@a@lBsA`@ObAC|DTrAQn@Up@c@tFiEl@YnAAVE`BaAnAeAr@qA~@gHR_FAmAMqAUaAuAkBc@eAyA}FaDaKqCwEeAqBwAyDo@wB]wAiAGwFn@qEZSAuCu@o@UMTm@}@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([54.48849720000000,-1.13359950000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -335,14 +367,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
   
 </div>
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 11pm</td></tr>
-<tr><td>Monday</td><td>Closed</td></tr>
-<tr><td>Tuesday</td><td>4pm - 11pm</td></tr>
-<tr style="font-weight:bold"><td>Wednesday</td><td>4pm - 11pm</td></tr>
-<tr><td>Thursday</td><td>4pm - 11pm</td></tr>
-<tr><td>Friday</td><td>12noon - 11pm</td></tr>
-<tr><td>Saturday</td><td>12noon - 11pm</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>

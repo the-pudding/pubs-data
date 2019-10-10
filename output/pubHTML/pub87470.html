@@ -126,13 +126,13 @@ var thispub = 87470;var pubaddress = "152 Wandsworth Bridge Road";var pubname 
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87470;var pubaddress = "152 Wandsworth Bridge Road";var pubname 
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="ild9343d0omsef83gkjisbb2a0" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="g874gkrdf28pe3bpfbc2ijecc3" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87470;var pubaddress = "152 Wandsworth Bridge Road";var pubname 
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul id="Custom2">
 			<li>Official site of Callow Ruscoe - <a href="http://www.callowruscoe.com/" title="Submitted by:- Tris C" target="_blank">www.callowruscoe.com</a></li>
           </ul>
-<ul id="Custom2"><li class="twitlink" id="1003222089221005312">Twitter - <a href="https://twitter.com/CallowRuscoe" target="_blank" rel="nofollow">Callow Ruscoe</a></li></ul></div>
+<ul id="Custom2"><li class="twitlink" id="1003222089221005312">Twitter - <a href="https://twitter.com/CallowRuscoe" target="_blank" rel="nofollow">Callow Ruscoe</a></li></ul><ul id="Custom2"><li class="wplink" id="WLD/17207">CAMRA WhatPub :: Callow Ruscoe - <a href="https://whatpub.com/pubs/WLD/17207/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -288,7 +288,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([51.47168950000000, -0.19159610000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -313,7 +313,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Imperial Wharf, 0.67 miles, 12 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Wandsworth Town, 0.89 miles, 17 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Clapham Junction, 1.51 miles, 29 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('cadyHfkd@oDd@Qe@Eg@c@_Av@{ByB_DMy@Ew@@_@FMKk@BINgBqBwBWSp@eE`CiMw@c@c@YMCAKIKMBc@MiBgAADIDGACCCO?Ii@_@a@g@QK]BP^I^k@h@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('cadyHfkd@|NmB|A_@`Cw@t@[jBgAhA}@DNJILADHROFYNM`@c@z@{@lLyK|CiB|@DFEz@J@F\\BPNh@}@X?Af@?x@LDZ`@p@^F^PJrA|ACHDPm@PFl@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('cadyHfkd@|NmB|A_@`Cw@t@[jBgAhA}@EQD[?KRSFJN@ZYnQyP`BcBDIH?DcBCG@WGmAQKiBaEJQMWXSHOJe@PWcAoCdByBHQ@OH[HiBMAKSSEIQb@a@mFcSCK?UBMC[Uy@iBcIaAuE[WUu@b@kDf@g@DASuBQoAHEGsACMzBmA', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.47168950000000,-0.19159610000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -334,7 +366,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
   <div class="hline"></div>
   <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
   
-  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11887470">No</span> <span id="discdetail11887470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 February 2019 by Tris C</span></li><li>Real Ale : <span id="fac10187470">No</span> <span id="discdetail10187470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 February 2019 by Tris C</span></li></ul></span>
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11887470">No</span> <span id="discdetail11887470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 February 2019 by Tris C</span></li><li>Bar Billiards : <span id="fac10787470">No</span> <span id="discdetail10787470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2019 by Tris C</span></li><li>Beer Festivals : <span id="fac11787470">No</span> <span id="discdetail11787470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2019 by Tris C</span></li><li>Car Park : <span id="fac11387470">No</span> <span id="discdetail11387470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2019 by Tris C</span></li><li>Darts : <span id="fac11187470">No</span> <span id="discdetail11187470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2019 by Tris C</span></li><li>Function Room : <span id="fac12387470">No</span> <span id="discdetail12387470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2019 by Tris C</span></li><li>Hot Food : <span id="fac10387470">No</span> <span id="discdetail10387470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2019 by Tris C</span></li><li>Karaoke : <span id="fac10687470">No</span> <span id="discdetail10687470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2019 by Tris C</span></li><li>Live Music : <span id="fac10887470">No</span> <span id="discdetail10887470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2019 by Tris C</span></li><li>Live TV Sports : <span id="fac11087470">No</span> <span id="discdetail11087470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2019 by Tris C</span></li><li>Micropub : <span id="fac12287470">No</span> <span id="discdetail12287470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2019 by Tris C</span></li><li>Pinball : <span id="fac11687470">No</span> <span id="discdetail11687470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2019 by Tris C</span></li><li>Pool Table : <span id="fac10487470">No</span> <span id="discdetail10487470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2019 by Tris C</span></li><li>Quiz Night : <span id="fac10987470">No</span> <span id="discdetail10987470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2019 by Tris C</span></li><li>Real Ale : <span id="fac10187470">No</span> <span id="discdetail10187470" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 February 2019 by Tris C</span></li></ul></span>
   
 </div>
 

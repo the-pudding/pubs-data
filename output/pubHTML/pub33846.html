@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Leopard pub in Doncaster, South Yorkshire, DN1 3AA : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Leopard" />
+  <meta name="keywords" content="The Leopard, 2 West Street, Doncaster, South Yorkshire, Doncaster Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Leopard in Doncaster" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/33501_34000/33846_641a85a1.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/33846/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="53.52066890915651" />
+<meta property="og:longitude" content="-1.13759458065033" />
+<meta property="og:street-address" content="2 West Street" />
+<meta property="og:locality" content="Doncaster" />
+<meta property="og:region" content="South Yorkshire" />
+<meta property="og:postal-code" content="DN1 3AA" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Leopard in Doncaster? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Leopard the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/33846/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Leopard in Doncaster" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Leopard " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/33501_34000/33846_641a85a1.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/33846/" />
+<meta name="geo.position" content="53.52066890915651;-1.13759458065033" />
+<meta name="geo.placename" content="The Leopard in Doncaster" />
+<meta name="geo.region" content="UK" />
+<title>The Leopard in Doncaster : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":33846},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(33846);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 33846;var pubaddress = "2 West Street";var pubname = "The Leopard";var pubpostcode = "DN1 3AA";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/south-yorkshire/" title="Pubs Galore : South Yorkshire Page">South Yorkshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/doncaster/south-yorkshire/" title="Pubs Galore : Doncaster Page">Doncaster</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Leopard Page">The Leopard Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="eceh6ildi0oasp44m6lqrq6751" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/33846/" class="indisplay"><img src="/images/display/33501_34000/33846_641a85a1.jpg?w=2" alt="Picture of The Leopard" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
+  Submitted on Sunday, 22<sup>nd</sup> March 2015<br />
+  With picture contributions to 20678 other pubs<br />
+<a href="/pubpictures/33846/" class="smallbutton">View all this pub's pictures</a> (9 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/33846/">Pub map</a><br /><a href="/pubreviews/33846/">Pub reviews (8)</a><br /><a href="/pubpictures/33846/">Pub pictures (10)</a><br /><a href="/core/pubaudit.php?id=33846" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Leopard, Doncaster Town, Doncaster</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">2 West Street</span><br />
+
+
+<span class="town">Doncaster</span><br />
+<span class="postcode">DN1 3AA</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/doncaster-town/south-yorkshire/">Doncaster Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Leopard  <span class="h2note">(Average Rating: <span id="averagerating"><b>6</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review133372" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=RealAleRobUK">Rob Hunter</a> left this review about The Leopard</h6>
+<p class="old">Despite the traditional green tiles outside, the Leopard looks like a fairly modern welcoming place that does food.  There is a piano in the bar to the right and a TV showing Sky Sports News (muted).  Music was playing, albeit intermittently so not sure if the barman was queuing up tracks manually.<br />
+<br />
+Unfortunately it does look a bit grubby in places - chipped paintwork on the toilet doors, dark fingerprints round the door push plates and general dirty patches on the doors and some of the walls.  Otherwise a pleasant interior but could just do with a bit more attention to detail.  The toilets (gents at least) were basic but functional, again not the cleanest but not disgusting either.  They did smell a bit though.<br />
+<br />
+My beer was fine and in great condition, so the pub appears to be doing cask ales right.  I had the Mai Tai by Ossett at &pound;1.50 for a half, which was topped up without me having to ask.  They also had Titanic Plum Porter, something by Exit 33 and a couple of others that I can&#039;t remember.<br />
+<br />
+This is definitely the least intimidating looking pub in the immediate vicinity and I would be happy to call back again.</p>
+<p class="Reviewer">On 26<sup>th</sup> September 2018 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 420 recommendations about 389 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review131802" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> left this review about The Leopard</h6>
+<p class="old">This place still retains the old green tiles outside and the Warwick and Richardson brewery name. This Newark brewery was taken over by John Smiths  in 1962 so you might expect it to be owned by Star Pubs via Courage. In fact it&#039;s now owned by Doncaster Council. It&#039;s been well described below but has been spruced up although much of the public bar has bookcase and wood panelling wallpaper! I didn&#039;t look into the lounge bar. There is a TV at the end of the public bar but it wasn&#039;t loud if there was any sound at all. The public bar has three hand pumps which had Cameron&#039;s Strongarm, Little Critters Blonde Bear and Sonnet 43 Raven. I went for the Raven (&pound;3.10) which was in good nick. Despite the CAMRA discount being written on the entrance I only noticed it after I&#039;d sat down!<br />
+This is still a music venue so may be worth avoiding on Friday and Saturday night but on my Saturday afternoon visit it was fine. It&#039;s GBG 2018 listed.</p>
+<p class="Reviewer">On 13<sup>th</sup> August 2018 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2130 recommendations about 2125 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review78117" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Strongers">Steve C</a> left this review about The Leopard</h6>
+<p class="old">The Leopard is a live music venue that is open from 16:00 until late on Thursdays and from midday until late Friday through to Sunday. The interior is split in two with a large bar to the left and a smaller bar to the right. I noted the presence of Caledonian&rsquo;s Autumn Red and Old Rosie cider on cask in the left hand side before moving into the right. Here I found standard draught and four more hand pumps. One was drawing Wadworth&rsquo;s Swordfish and the others had &lsquo;being conditioned&rsquo; labels on them.<br />
+There is a pool table and smoking area at the rear.<br />
+<br />
+I was the only customer during my recent Saturday afternoon visit so there was no atmosphere, although there was some low background music playing. The barmaid was polite enough, but I&rsquo;m not a big fan of live music which seems to be this pub&rsquo;s major draw. I doubt that I&rsquo;ll ever return here.</p>
+<p class="Reviewer">On 31<sup>st</sup> December 2013 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 3518 recommendations about 3497 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/33846/">View more reviews of The Leopard (8)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Leopard</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Leopard - <a href="http://www.leopard-doncaster.co.uk" title="Submitted by:- aleand hearty" target="_blank">www.leopard-doncaster.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="340110169380368">Facebook - <a href="https://www.facebook.com/pages/The-Leapord/340110169380368" target="_blank" rel="nofollow">The Leapord</a></li></ul><ul id="Custom2"><li class="wplink" id="DON/8238">CAMRA WhatPub :: The Leopard - <a href="https://whatpub.com/pubs/DON/8238/" target="_blank">whatpub.com</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/33846/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=hondo">hondo .</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([53.52066890915651, -1.13759458065033], 16);
+
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([53.52066890915651, -1.13759458065033]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Doncaster, 0.12 miles, 2 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Bentley (S Yorks), 2.07 miles, 39 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Kirk Sandall, 4.45 miles, 1 hr 25 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('kgteInd}EuBfDQBMQaAdBIMG@EVAt@IH', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('kgteInd}EFI]cBOLKc@_An@YCWYqA_@SUk@?[[wA_@cAk@s@g@e@a@OWGSKJ{@lC}@`C@BGHDNORGOIBAt@It@Mn@LJu@zBgApBsFdHqAfBm@jAc@dA_@jAIhAJ~@i@^INi@h@IDKEy@tBYX_BbD_@h@a@Ni@EWQYEc@DQNk@C@QEYQJm@CWNqC]oBKkBS_BD[B_A\\ZrBCFmH~EmDxB}IrCYE{DzB[wBiAv@gBz@y@\\e@LaC^Bb@?PCH_FbJQ`@]`BaBeAyAwAa@QDa@BEn@q@Mi@s@r@MByAzA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('kgteInd}EFI]cBOLKc@_An@YCWYqA_@SUk@?[[wA_@cAk@s@g@e@a@OWGS?GKGmAcBS_@c@uAS}AYuAq@iBq@gAMCKH}@vBIDA]Ue@m@_@c@c@Og@YyBIkA}@KIAi@a@mA}DkBsFWmAW{CAe@DaBa@Dg@QOMU_@ESK[_DkMe@}CKa@k@iBwBsFyEwIeJcRa@g@_FuBw@aA[g@Ym@Oa@WmA{@yFk@uBw@yBeGkWc@h@Of@gGeGKOM]mEiREc@@g@ZaESKWe@Ec@A]BYuB}@QSM[oFkUAU@]HUsAmD{AaD_B_Cx@qBBW@QCOmBiDsJgOXy@mCoD}CsDi@{@e@iAGWIKOGKBMNe@MMIc@u@a@e@kCaCs@i@sBgAkC_C}@cAgGcGgDmD_AiAm@eAcIgP_F_J}FcLoBcDcFeHu@{@y@g@a@OaAIkE?eEIsEW[fBNJDNLlAt@hB', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.52066890915651,-1.13759458065033], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=33846">View all updates for The Leopard, Doncaster</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        26<span class="sup">th</span> Sep 2018, 18:55
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=RealAleRobUK">Rob Hunter</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        26<span class="sup">th</span> Sep 2018, 18:55
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=RealAleRobUK">Rob Hunter</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11833846">No</span> <span id="discdetail11833846" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 March 2017 by ROB Camra</span></li><li>Beer Festivals : <span id="fac11733846">No</span> <span id="discdetail11733846" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 March 2017 by ROB Camra</span></li><li>Beer Garden : <span id="fac11433846">Yes</span> <span id="discdetail11433846" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 March 2017 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10233846">Yes</span>  - <span id="discdetail10233846" class="discdetail" style="">10%</span> -   <span class="Reviewer">last updated 12 August 2018 by Aqualung .</span></li><li>Car Park : <span id="fac11333846">Yes</span> <span id="discdetail11333846" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 March 2017 by ROB Camra</span></li><li>Child Friendly : <span id="fac12133846">Yes</span>  - <span id="discdetail12133846" class="discdetail" style="">In the lounge until 6 p.m.</span> -   <span class="Reviewer">last updated 15 March 2017 by ROB Camra</span></li><li>Darts : <span id="fac11133846">No</span> <span id="discdetail11133846" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2018 by Aqualung .</span></li><li>Dog Friendly : <span id="fac10533846">Yes</span> <span id="discdetail10533846" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2018 by Aqualung .</span></li><li>Function Room : <span id="fac12333846">Yes</span> <span id="discdetail12333846" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2018 by Aqualung .</span></li><li>Hot Food : <span id="fac10333846">Yes</span> <span id="discdetail10333846" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 March 2017 by ROB Camra</span></li><li>Karaoke : <span id="fac10633846">No</span> <span id="discdetail10633846" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 August 2018 by Aqualung .</span></li><li>Live Music : <span id="fac10833846">Yes</span>  - <span id="discdetail10833846" class="discdetail" style="">Friday &amp; Saturady</span> -   <span class="Reviewer">last updated 15 March 2017 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11033846">Yes</span> <span id="discdetail11033846" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 March 2017 by ROB Camra</span></li><li>Micropub : <span id="fac12233846">No</span> <span id="discdetail12233846" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 March 2017 by ROB Camra</span></li><li>Pool Table : <span id="fac10433846">Yes</span> <span id="discdetail10433846" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 March 2017 by ROB Camra</span></li><li>Real Ale : <span id="fac10133846">Yes</span> <span id="discdetail10133846" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 March 2017 by ROB Camra</span></li><li>Real Cider : <span id="fac11933846">Yes</span> <span id="discdetail11933846" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 March 2017 by ROB Camra</span></li><li>Wheelchair Access : <span id="fac12033846">Yes</span> <span id="discdetail12033846" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 March 2017 by ROB Camra</span></li><li>WiFi : <span id="fac11533846">Yes</span> <span id="discdetail11533846" class="discdetail" style=""></span>  <span class="Reviewer">last updated 15 March 2017 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 19 picture(s)" title="Pub has 19 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 17 recommendation(s)" title="Pub has 17recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8.5 from 11 reviewer(s)" title="Pub has average rating of 8.5 from 11 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/33789/" class="List1">Corner Pin</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/33893/" class="List1">The Railway</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/33876/" class="List1">Paris Gate</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 20 picture(s)" title="Pub has 20 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 13 recommendation(s)" title="Pub has 13recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 10 reviewer(s)" title="Pub has average rating of 7 from 10 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/33883/" class="List1">The Little Plough</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/33790/" class="List1">Corporation Brewery Taps</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 5 reviewer(s)" title="Pub has average rating of 6 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/57691/" class="List1">Tut &#039;N&#039; Shive</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83910/" class="List1">The Mallard</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8.5 from 4 reviewer(s)" title="Pub has average rating of 8.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/85201/" class="List1">The Draughtsman Alehouse</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

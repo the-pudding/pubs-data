@@ -126,13 +126,13 @@ var thispub = 48705;var pubaddress = "Main Street";var pubname = "The Bonnie B
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 48705;var pubaddress = "Main Street";var pubname = "The Bonnie B
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="1t0jdva0b86p894s0lqiv3jvl2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="rtj4jp49sb6fpjmie821br8ki3" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 48705;var pubaddress = "Main Street";var pubname = "The Bonnie B
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 48705;var pubaddress = "Main Street";var pubname = "The Bonnie B
   <div id="displayedimage">
 <a href="/pubpictures/48705/" class="indisplay"><img src="/images/display/48501_49000/48705_55d588d4.jpg?w=2" alt="Picture of The Bonnie Badger" /></a><br />  Image posted by <a href="/userinfo.php?name=Wattie" class="indisplay">Walter Dunlop</a><br />
   Submitted on Saturday, 24<sup>th</sup> July 2010<br />
-  With picture contributions to 1519 other pubs<br />
+  With picture contributions to 1538 other pubs<br />
 <a href="/pubpictures/48705/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -269,7 +269,7 @@ var thispub = 48705;var pubaddress = "Main Street";var pubname = "The Bonnie B
           <ul id="Custom2">
 			<li>Official site of The Bonnie Badger - <a href="http://bonniebadger.com/" title="Submitted by:- hondo ." target="_blank">bonniebadger.com</a></li>
           </ul>
-</div>
+<ul id="Custom2"><li class="wplink" id="EDN/127">CAMRA WhatPub :: The Bonnie Badger - <a href="https://whatpub.com/pubs/EDN/127/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -283,7 +283,7 @@ var thispub = 48705;var pubaddress = "Main Street";var pubname = "The Bonnie B
 
 	var mymap = L.map('mapid').setView([56.03510290610549, -2.83116817474365], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -308,7 +308,39 @@ var thispub = 48705;var pubaddress = "Main Street";var pubname = "The Bonnie B
 
 
 </script><div>
+<i class="fas fa-train"></i> Drem, 3.7 miles, 1 hr 11 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> North Berwick, 4.47 miles, 1 hr 26 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Longniddry, 5.69 miles, 1 hr 49 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('wi_uId}gPdAxEZjBdD{BRSpI_LvAwBhBxChAvAl@j@hAv@dCAzWkCpL}AjEaBzGmDhFsDlGgGHAJAHBvDtJDBLA[iAoDkJmFkTrC[zAs@lBiC|@cC\\sBpFsMb@gBVqCJsBXcBdKab@rAcGJg@Dk@La@\\k@VoAJw@`AkGPiB@]CoDK_F?aAM_B?aAKo@KkB_@yC_@_EYyFFkBLW|BsA|CaAxBoAb@o@\\]`YcPiA}RdBUCwADk@CkBDkAU_DQyAv@oAj@u@BHRg@XQJkAh@MAK', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('wi_uId}gP_Ha\\mC{OkEwTkBaLGFcAeGgG}`@aAgFWiBS{Bk@_LAgAq@Po@x@eEhD_@@QQi@gBYcAY{ACa@A}FQgGc@oGgAkGq@_FkBkPkEwCFoAH{@Bu@AkES{JwA}d@OiPUiEOqAUkAO_Be@wLIqAOs@Em@BMm@sC]yB_@oD_@mGSqEU_DWcBUy@qDeIeCaGESAUMAg@gAOGwDqJiAuEDOgCiKwAyH[qB}A_NgAyKgFob@uFaf@g@yEgD_Yk@oFxAw@Zs@H_@B[EoADoAWQ]oD[oBq@eGQwK@UFOlAgBd@{@GM', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('wi_uId}gPdAxEZjB`@rCb@bEL|@Nz@NXb@^R[vWnMlClAVZzFtC@TlAdAzEnFtG|GxBzAj@l@n@fAj@`@LxALj@nArD~BtFfCnEP`@l@XxFnGbIhJrBtB~BrCjCjCj@}AZqAHgBFi@H]d@gAzEsAd@gAHDVZXTDILe@n@Z|Ad@^RZ`@^t@l@|AXfBRhEFh@|D`Wb@tBxAlET|@Lv@LdDF\\FFJFb@Q`ByBd@[JDHn@p@bJ\\~C\\vBXxAfBlHJhATlAPh@`B`Gf@~ATbA^pAf@vA^rA^rA\\dBf@rARt@PjAZ~@`@v@Lh@dBfF^zBf@rA^xAh@dBP|@^rAZv@`@hBFPVWpGsIt@NZYHWj@Q`A\\j@D~AfEnBv@RVxEnXzAeBjBy@?gBDa@HWxBq@NO`Cy@ZENNHj@Ap@Cb@hEgBr@a@tBhA`DjCpBfCnJxNnCvFnApDz@tDt@~EF\\Rv@LpAHXr@rBbDnGtGnKnAbBx@r@v@\\xBd@|C\\xAU`Be@ZMbGiFxDqDjBuBzAmA\\O^BJHLN\\rAHl@d@|CT\\nMaCl@g@HPFBJEHS@Mb@n@Bo@i@gBPSu@gD', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([56.03510290610549,-2.83116817474365], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

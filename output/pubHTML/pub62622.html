@@ -126,13 +126,13 @@ var thispub = 62622;var pubaddress = "Marsh Lane";var pubname = "The Kings Arm
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 62622;var pubaddress = "Marsh Lane";var pubname = "The Kings Arm
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="hccej58s5nnejf7u9e1ol9uek2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="33o7scsomqqo2ld3onm0dvaji1" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 62622;var pubaddress = "Marsh Lane";var pubname = "The Kings Arm
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -271,7 +271,7 @@ On a visit 12/4/09 3 Real Ales available, Johns Cask Caledonian Raspberry Fool a
 <span class="h2ish" id="linksheading">External web links for The Kings Arms</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-<ul id="Custom2"><li class="fblink" id="706117386094105">Facebook - <a href="https://www.facebook.com/pages/Kings-Arms-Beal/706117386094105" target="_blank" rel="nofollow">King's Arms, Beal</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="706117386094105">Facebook - <a href="https://www.facebook.com/pages/Kings-Arms-Beal/706117386094105" target="_blank" rel="nofollow">King's Arms, Beal</a></li></ul><ul id="Custom2"><li class="wplink" id="DON/8154">CAMRA WhatPub :: The Kings Arms - <a href="https://whatpub.com/pubs/DON/8154/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -285,7 +285,7 @@ On a visit 12/4/09 3 Real Ales available, Johns Cask Caledonian Raspberry Fool a
 
 	var mymap = L.map('mapid').setView([53.72314834918782, -1.19420528411865], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -310,7 +310,39 @@ On a visit 12/4/09 3 Real Ales available, Johns Cask Caledonian Raspberry Fool a
 
 
 </script><div>
+<i class="fas fa-train"></i> Whitley Bridge, 2.88 miles, 55 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Knottingley, 3.94 miles, 1 hr 16 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Hensall, 4.26 miles, 1 hr 22 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ey{fIlghFIUG_@NUHYHoDdB?lAKh@@l@RN{@TkCd@gB~Cc`@v@mF^iBrFmS^_BhG{e@w@qFFc@HWrJaHvA_An@o@|@g@fA]xH{Ej@FzFbOn@LnQPtAOdQR|GR`GCBo@nN_qARmBDu@M_@DEBMj@f@`@NG`D', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ey{fIlghFIUG_@NUHYHoDdB?lAKh@@l@ROfBC`ADbAV|CLxGThFj@dJFXZd@HtBCdBQzA?~APnGOQLPB`AA|FQzA_@bBm@bAu@z@[fAC`BXbB\\fAh@~@pBfBbABrBXxBdAv@l@lD|Ep@l@lB|@`AN`A@nBYp@_@t@y@t@}Ad@q@|@y@l@Sh@?x@Vv@n@bAnA`AjCRzADjAAnCeBjKSrBi@nDKfB}@nIElBh@`BlBxBvAzBn@r@pApCb@vEP`FP|An@XpEuD`AK`@Nn@z@d@`Bp@hBh@pCj@bC\\fBV|BB|AAnAQbIaC_@aAb\\BVNG\\En@@Es@BDtAtNr@jGFfB?xJMdT@bACvEIlBY|Bk@`CIVWPb@rOTvDx@tKdC`ZVbBd@tB^nA\\AhBl@r@\\~@r@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ey{fIlghFIUG_@NUHYHoDdB?lAKh@@l@RN{@TkCd@gB~Cc`@v@mF^iBrFmS^_BhG{e@w@qFFc@HWrJaHvA_An@o@|@g@fA]xH{EJ{@w@yBq@}AiBsDKc@OsAa@gHGi@Eu@Ak@PcAJ]h@w@vDwE~BwB`@WnA{Sb@{GDAjAaB~AkAvAaBbAwAzA}AjAcAHD`A_AlAsADWHK`@YTIdAm@F@JY|BgBRa@XeAZm@TIf@kALIx@Qv@iHX}BXsAJ@JEHMDM?a@MYf@yEVeGZwDBs@AaADk@T_AHDJ?HIFMBM?a@MWFYhBgOf@qDdAmFbAyD`AyBp@_Ah@q@lEcEr@}@h@eA^cAb@oBJiADaBCqRHsGPcCjAeOPkAR{@\\mARm@fEmJf@}AbEiSl@wByHoN@_C', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.72314834918782,-1.19420528411865], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

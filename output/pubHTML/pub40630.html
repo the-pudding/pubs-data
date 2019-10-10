@@ -126,13 +126,13 @@ var thispub = 40630;var pubaddress = "231  Barnsley Road";var pubname = "The D
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 40630;var pubaddress = "231  Barnsley Road";var pubname = "The D
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="cah82heq0qn8gebs6v3je29ld1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="n91h69sl3m2ugs0j4f128ltlg2" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 40630;var pubaddress = "231  Barnsley Road";var pubname = "The D
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 40630;var pubaddress = "231  Barnsley Road";var pubname = "The D
   <div id="displayedimage">
 <a href="/pubpictures/40630/" class="indisplay"><img src="/images/display/40501_41000/40630_5dde6758.jpg?w=2" alt="Picture of The Dunkirk" /></a><br />  Image posted by <a href="/userinfo.php?name=sheffield+hatter" class="indisplay">Will Larter</a><br />
   Submitted on Sunday, 30<sup>th</sup> December 2012<br />
-  With picture contributions to 8564 other pubs<br />
+  With picture contributions to 8736 other pubs<br />
 <a href="/pubpictures/40630/" class="smallbutton">View all this pub's pictures</a> (2 more images)
  
   
@@ -255,7 +255,7 @@ var thispub = 40630;var pubaddress = "231  Barnsley Road";var pubname = "The D
 There were three real ales available: Wychwood Hobgoblin, Tetleys Bitter and Jennings Cumberland, and the three of us had a different beer which we drank without complaint. This was our second pub of a Denby Dale crawl, and we had another walk back to the centre and a bus to catch, otherwise we&#039;d have stayed longer. There was a lad of about seven playing pool who would have beaten me if I&#039;d taken him on, so it&#039;s just as well we had to hit the road.</p>
 <p class="Reviewer">On 30<sup>th</sup> December 2012 
   - rating: <b>6</b><br />
-  <span class="leftspace">[User has posted 2309 recommendations about 2199 pubs]</span></p>
+  <span class="leftspace">[User has posted 2381 recommendations about 2251 pubs]</span></p>
   </div>
 </div>
 
@@ -272,7 +272,7 @@ There were three real ales available: Wychwood Hobgoblin, Tetleys Bitter and Jen
           <ul id="Custom2">
 			<li>Official site of The Dunkirk - <a href="http://www.thedunkirk.co.uk/" title="Submitted by:- Will Larter" target="_blank">www.thedunkirk.co.uk</a></li>
           </ul>
-</div>
+<ul id="Custom2"><li class="wplink" id="KIR/1068">CAMRA WhatPub :: The Dunkirk - <a href="https://whatpub.com/pubs/KIR/1068/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -286,7 +286,7 @@ There were three real ales available: Wychwood Hobgoblin, Tetleys Bitter and Jen
 
 	var mymap = L.map('mapid').setView([53.56800387571687, -1.64210200309753], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '

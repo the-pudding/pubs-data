@@ -126,13 +126,13 @@ var thispub = 87709;var pubaddress = "1 Palk Street";var pubname = "Soho";var
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87709;var pubaddress = "1 Palk Street";var pubname = "Soho";var
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="a8pbsj80m37tv3f2r0cf8kh7a3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="q20jatt6ar8vo00h0jgttc5ba5" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87709;var pubaddress = "1 Palk Street";var pubname = "Soho";var
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87709;var pubaddress = "1 Palk Street";var pubname = "Soho";var
   <div id="displayedimage">
 <a href="/pubpictures/87709/" class="indisplay"><img src="/images/display/87501_88000/87709_3aa888f4be2e0227d6d5c788862b7dee.jpg?w=2" alt="Picture of Soho" /></a><br />  Image posted by <a href="/userinfo.php?name=bcfczuluarmy" class="indisplay">Jonathan Wilde</a><br />
   Submitted on Sunday, 5<sup>th</sup> May 2019<br />
-  With picture contributions to 3997 other pubs<br />
+  With picture contributions to 4140 other pubs<br />
 <a href="/pubpictures/87709/" class="smallbutton">View all this pub's pictures</a> (4 more images)
  
   
@@ -251,7 +251,7 @@ var thispub = 87709;var pubaddress = "1 Palk Street";var pubname = "Soho";var
 <p>Lounge Bar just off the harbour area which was fairly busy on my Easter weekend visit. No real ale on sadly but very pleasant no the less.</p>
 <p class="Reviewer">On 6<sup>th</sup> May 2019 
   - rating: <b>5</b><br />
-  <span class="leftspace">[User has posted 354 recommendations about 335 pubs]</span></p>
+  <span class="leftspace">[User has posted 359 recommendations about 340 pubs]</span></p>
   </div>
 </div>
 
@@ -279,7 +279,7 @@ var thispub = 87709;var pubaddress = "1 Palk Street";var pubname = "Soho";var
 
 	var mymap = L.map('mapid').setView([50.46183360000000, -3.52557650000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -304,7 +304,39 @@ var thispub = 87709;var pubaddress = "1 Palk Street";var pubname = "Soho";var
 
 
 </script><div>
+<i class="fas fa-train"></i> Torquay, 0.98 miles, 18 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Torre, 1.37 miles, 26 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Paignton, 3.28 miles, 1 hr 3 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('gy~rHdqoT]USIAP@j@Nt@JVo@h@ZtAX|@Fh@Br@CzADb@IhEkAtFk@jDWrAkBtByAdCEZMhCGLdClI\\l@IJAv@R@n@`ClArDE@lCdI~@xBLn@Rj@?ZAJfAPX@PRFh@Ld@?xAO^HPIRIrAKp@mAp@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('gy~rHdqoT]USIk@DOHSP}@fAyA|ByAd@qC\\aBHENM?[r@w@x@qAbCk@pAaA`Bl@hAOh@e@dC]jAORYEK@cBbDu@lAk@dAi@Ae@MKnBRzEcA~BmDzIWdABZWTQl@Q~@mBbLW~@Qf@m@n@u@dAMXa@hAy@hBRVFh@EfAYpAE\\K@QRYp@s@zBUbAC\\Ad@BnAk@\\yAlA_@t@Kh@DLCNUp@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('gy~rHdqoT]USIAP@j@Nt@JVo@h@ZtAX|@Fh@Br@CzADb@IhEkAtFk@jDWrAkBtByAdCEZMhCGLdClI\\l@IJAv@R@n@`ClArDE@lCdI~@xBLn@Rj@?ZAJfAPX@PRvAbBv@^^^RHhDfA~@`@p@j@^f@xAlDxAlCnBhCrArAZR`G~Cn@d@LPzEvJTn@Df@DnBDb@Rx@JT`@rAfBrFdB`D`@dAHb@j@tEALHZPb@d@n@LAJHt@\\lDp@d@^b@t@pBfE^t@\\b@|AjC^}@pAgCr@gBHC\\XtCdEVRjCbD~DlFxEfIpE|GRDHA`@QJFpAhD@b@r@fC^dAb@xAZpAVt@RPHeC~ACnAMhBkAfBwAb@QVA\\FtBn@@F|Bd@dCn@H^EvBhBFPE`@_@RMDSlA\\DFLKFi@ND', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([50.46183360000000,-3.52557650000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

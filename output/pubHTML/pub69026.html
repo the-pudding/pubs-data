@@ -126,13 +126,13 @@ var thispub = 69026;var pubaddress = "Long Lane";var pubname = "Yew Tree";var
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 69026;var pubaddress = "Long Lane";var pubname = "Yew Tree";var
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="don5mirf46hvja2jo1osjm0an6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="1rfcsavga9qodlto4qaa04u387" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 69026;var pubaddress = "Long Lane";var pubname = "Yew Tree";var
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 69026;var pubaddress = "Long Lane";var pubname = "Yew Tree";var
   <div id="displayedimage">
 <a href="/pubpictures/69026/" class="indisplay"><img src="/images/display/69001_69500/69026_a94b1e1d.jpg?w=1" alt="Picture of Yew Tree" /></a><br />  Image posted by <a href="/userinfo.php?name=PaulOfHorsham" class="indisplay">paulof horsham</a><br />
   Submitted on Tuesday, 9<sup>th</sup> October 2018<br />
-  With picture contributions to 1317 other pubs<br />
+  With picture contributions to 1642 other pubs<br />
 <a href="/pubpictures/69026/" class="smallbutton">View all this pub's pictures</a> (4 more images)
  
   
@@ -280,7 +280,7 @@ var thispub = 69026;var pubaddress = "Long Lane";var pubname = "Yew Tree";var
           <ul id="Custom2">
 			<li>Official site of Yew Tree - <a href="http://www.bunburyyewtree.co.uk/" title="Submitted by:- paulof horsham" target="_blank">www.bunburyyewtree.co.uk</a></li>
           </ul>
-</div>
+<ul id="Custom2"><li class="wplink" id="CHS/1025">CAMRA WhatPub :: Yew Tree - <a href="https://whatpub.com/pubs/CHS/1025/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -294,7 +294,7 @@ var thispub = 69026;var pubaddress = "Long Lane";var pubname = "Yew Tree";var
 
 	var mymap = L.map('mapid').setView([53.11033086786244, -2.65413599140163], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -319,7 +319,39 @@ var thispub = 69026;var pubaddress = "Long Lane";var pubname = "Yew Tree";var
 
 
 </script><div>
+<i class="fas fa-train"></i> Nantwich, 7.36 miles, 2 hr 22 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Wrenbury, 8.12 miles, 2 hr 36 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Delamere, 9.8 miles, 3 hr 9 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('{adcIzkeOLq@qAyAg@Ui@yIS_Fk@wEq@mIQaGDcBAqCP_BCOjGiUhC}C~CmCfC}ChAiAfAyBv@iAnBu@nCiDt@g@r@kA`CmLzAoBNMT_Gr@yDeAeOrA{GFmACuBwCaG]oCfB{QHeAVcGZoNNeCl@sHjCwHnBiDnAiCvGeDnGuHrDwFvAmAvCkBnDaD`CoBd@G~B?lB|@TaAv@aFb@}B`@oCpACbJgLtB}DjCaEp@i@P}@dGgNTgA^y@jCgBpCaEf@iBv@kApB{BSg@Ao@XqArIcP^wAn@eB`EyHTuAxAaEd@eBxBcGj@qA|A{AvEgGnAuAr@e@pB]r@eMFYt@wKN{ArBqOt@{GjBgMrBmIdA_GpBcPrAgMTcC`AoPHeD?}Dj@{LBeBGmASgAi@cCQqAKwBzASxAIlAObC_Ar@_A\\wAf@iH\\oGXiNBoLb@wHl@oDZyAtAqF~@iDxA{Iv@aDvBwGTy@n@sCTeBDk@@a@EqDEqC[{JAy@D}@b@kFHgBB}CE}AKuAFUt@cB`@q@f@a@h@Qt@MhA]dA{Bt@oAvAcBhAu@`@E`@DBMFID?JF@F`AWhAFBi@?FH@YuE', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('{adcIzkeOLq@fHuNZ}@XyAP_C^}HDk@Lc@TKZEdADxU_GhBYtBw@|BiAx@i@NL`@Rn@t@rMNjIw@bDm@jPmHc@{BnA}BhBuBzEaIjCwBhCgCxCeEzBeDtDeGpCyFrAaC~@gAr@sA`Au@DUBaA^aBr@aADmAFsAJOPO~BJjCBzLwL?sBLkCj@iInBmTHMd@a@BoBbDaClD_Af@]Ri@t@UdDMfBSATvBHt@PdA?fBOHU`CmDVe@fA_Dl@_Ap@o@XEb@H|@r@hAR\\Yd@WD?MXGVCV?`@DZFXLHLD`BBAhCv@r@fBtAv@d@dDlAtAVn@f@V`@`B|DjBfA\\X|GpB^EhAVxAt@~Ai@f@_EfBcClCkEvC}BhE_EhDmDxGiIb@jBjAlDj@~Bp@cBbAoAtAy@`D_@x@UbEW~CbAp@f@j@]~IqCpEqCjCa@hCcA?iAxC?xAQvBsEhFoI~@uBtDzIlBdChBjAAtAZzCCx@Fb@rDpAx@|ArAtEn@rCb@a@~@Dt@[^@}@}An@{@h@eBn@{@n@oBpD_Gr@_BtA}BEIBe@PJVKG@z@_C~@aGh@}E~Ef@?g@z@VrDXl@O~Dq@hJsDjHqD?Wj@aA\\OpAC`@Nh@k@v@eCpA_Dz@aAfCoA|CPr@_@|@@fEz@rB~@PFzBLNLd@EL@@UTuBh@kC`BeGjAwDpA{DPiANwCPcFbImHbDoCv@_@lBwAhBaD\\w@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('{adcIzkeOLq@qAyAg@Ui@yIS_Fk@wEq@mIQaGaC[gCq@gAo@mAjAkCZ_Bv@eEo@{BU]DyAv@UAYYK]E}@Ow@SYMA_@f@{C\\EKCyCiCEiAI_CPuBx@kBgBwA}@g@AeGRgAVWVM\\U~@_@z@]d@y@\\sCv@kCL_BwAcBa@}AAwAn@mBrA}@MKHiB|IMRYRcAFONQd@Mj@O\\QTeA~@KTSr@s@lBcDc@_D[mCmAkE_@GP{DjVg@b@}G|BeDvBq@FoAbASTcBFE]S_@oFn@kFtCgC~DaGlHq@p@uG`Fq@x@a@p@uBsBaDoB}DKaAg@mY~Ek@bAyEuB}JeFUA]e@G[[LiAe@_Ew@mD{@mECiEnAeBa@u@CeOlBaE`BiAf@w@d@gBjBMXY~BgA?_@Je@^yEjHiA|@eBx@wBj@iEPcAX_Bp@k@u@gBgOi@aDwCcFCRELaA{A_FkHkEcFm@fBcAvA_BnDo@bAGl@[h@gALoGmAG@OKsA{Ei@sCy@PaBdBoBzAWVkAeFkAn@yCd@gIgAmHeCmAxDICk@GmAu@aE}GLcAi@s@gAs@aBmBMcBs@BcGJqGSaCuAcAMiBcAsE}C{B}@q\\{Eo_@fMuq@~Soi@f_@ia@hYqCzAeAb@_Ch@mBVmDlUWnCy@_Az@qTe@A@MS?', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.11033086786244,-2.65413599140163], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -355,7 +387,7 @@ var thispub = 69026;var pubaddress = "Long Lane";var pubname = "Yew Tree";var
           <ul class="Custom1">
                     <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 9 from 1 reviewer(s)" title="Pub has average rating of 9 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/68569/" class="List1">The Nags Head</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/80660/" class="List1">Panama Hatty&#039;s Bar</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 2 reviewer(s)" title="Pub has average rating of 5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54825/" class="List1">Dysart Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54825/" class="List1">Dysart Arms</a></li>
 
           </ul>
   

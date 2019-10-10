@@ -126,13 +126,13 @@ var thispub = 12885;var pubaddress = "The Chippings";var pubname = "Dinneywick
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 12885;var pubaddress = "The Chippings";var pubname = "Dinneywick
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="b4n14sord1hbhef4deifb5oa00" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="atgi7f35fup5s3sr9s3n4t0k23" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 12885;var pubaddress = "The Chippings";var pubname = "Dinneywick
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 12885;var pubaddress = "The Chippings";var pubname = "Dinneywick
   <div id="displayedimage">
 <a href="/pubpictures/12885/" class="indisplay"><img src="/images/display/12501_13000/12885_3f2e2ec5.jpg?w=1" alt="Picture of Dinneywicks" /></a><br />  Image posted by <a href="/userinfo.php?name=Blackthorn" class="indisplay">Blackthorn _</a><br />
   Submitted on Sunday, 29<sup>th</sup> October 2017<br />
-  With picture contributions to 4300 other pubs<br />
+  With picture contributions to 4477 other pubs<br />
 <a href="/pubpictures/12885/" class="smallbutton">View all this pub's pictures</a> (3 more images)
  
   
@@ -260,7 +260,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 <span class="h2ish" id="linksheading">External web links for Dinneywicks</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="GLO/0306">CAMRA WhatPub :: Dinneywicks - <a href="https://whatpub.com/pubs/GLO/0306/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([51.62421719404587, -2.36756443977356], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Yate, 7.56 miles, 2 hr 25 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Cam & Dursley, 7.94 miles, 2 hr 33 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Stonehouse, 11.25 miles, 3 hr 37 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('gzazH|mmMM@QLRPzBlDlAfCb@jAz@vCv@~CdAhFv@tEt@dDtBtDfCzEnI~LbBfC`CrAbAx@bNfYjLnWzA~BvCrBnBtBdDpFzBbDx@fAr@jAnAdCh@t@n@Zn@LfFr@xErApKhDX@VEnAi@LCNBPFp@l@rBhAdGdEdBl@nCr@x@h@t@r@pC~C^w@Rs@PW\\Mv@@r@KV?NHNRZx@b@i@Iy@h@g@b@bBDHHBrCKZEjBw@JQPi@JSTSzCcAn@Yh@[j@UXGb@C^Bd@PPNR\\X_@NIb@Gt@ETZTv@PJPAfA]F^JRJBRC~A[b@AXJV\\Pf@Fz@@jAPD|@?jGl@lYhDdJv@~FJ`G?bDIhCOdHu@lEw@p]eHr@K|@?xJj@lARjFrC`ARb@DdGO`BJfEt@dB@r@G`Eq@@RDLvBtDvAnBPZTz@`@vBPp@`@x@PTrBrBbAv@^P^Hl@Fj@@pBQhBq@X@NVd@hCTz@T`@LNvAr@dAp@xAh@dB\\nAl@?LNHBDBj@X?A`@D?BEB[FC?VBVNZ~@r@|@jAND@P`@j@fBzAf@h@b@r@d@|@Pd@Jb@JKDVN^Zp@Hr@bAtBZtATnADGF?DV\\~@QZEL?NNEDDhCw@Fb@Tf@XXx@h@t@P`@B\\G|@a@^lANn@JADZTjAn@xBZlAf@xC\\xCHdBFfBDbHF~FF?^O\\?FNtB@JFBGVAz@Hh@Nh@Xl@b@d@j@d@p@jH|NF`@?f@Ib@Oh@cAhDjAjAlA~@~@Zf@FjB@AzBOlEBpGWnRORCNYnDB@AHqAm@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('gzazH|mmMM@QL_@OS@aCf@_C`@QASQa@k@aA?c@S}B}AoCuAu@a@OQy@xA_AlDa@n@gDjBkAx@a@dAOj@Eb@_A`AeA|ASd@WlBmBrCu@lBYZ[FeAfB}BlDUXi@HSPo@`AIr@SVYPIRWs@{DdG{BvGyH~JkDjMYvD_BfBaBn@mClBoAjCm@Rg@BqDoAo@Ag@X_@l@{FdCwAb@Uu@Oa@S]eA{AkA{Bi@yBcAcCqA_EmDeG_CkCmBgB_A{AuBiEk@Dc@GSjCItAkD|F_BjDeAtEeA`D_Ag@{Jg@aDs@uBq@eAb@kByCqBuBkC}AETkCg@}DsCoAi@uAOuBCGGu@C_@IUoBy@t@c@j@y@VOJKGsDi@uEg@mCy@{DIcBgDk@}@_Au@}@e@gEs@MKQeAOc@SUm@YIMKkAB}@EEK{@S{@Aa@@OAIg@H{AMmNsDUhBM@kDc@qAEg@NwB^}BH}@Gi@]MU]MIOoEmDsDgC[UkAuDSI_@d@g@RmBCaBm@{@Q}@BsALcBZeHnE]aB{AvAWNa@FkBF}@RcC|Au@j@eBb@SVa@h@s@bCi@hAq@_B]GgA@aDgAkBYcBCcDXsAKeAQu@c@mAwA[m@KGM?[Fu@\\gCdC@VaEdEYgAs@j@SHwEz@FjA?v@GfAk@SQ?u@ZuAv@y@n@m@x@_@l@Yr@AF[^[h@u@xB[UyEyDg@i@a@q@m@qAgAuAu@w@YQwB}@q@MUUUGyCcDCiLKeJKmAS@SEKOKw@aBPcC_@qBa@eAmAs@kAcBkDSm@]T[D[@e@Gg@KiAi@w@e@k@u@o@gA{@wB]gAeAV]@uBYkIs@mB@Mc@U_@iCiBcF{FqKuNsAsAsBsAm@q@MYeANAI', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('gzazH|mmMM@QL_@OA]ESeBkA{@c@iCw@SkCSkBY_ABc@HUv@cBa@q@_@w@iAkHMTyFoFyBmH{AgHgBoK[{@yE{GqGqHCWm@CoA^aCj@cBt@}BMcCg@{AUaAEAPE?CG{DWAFcBBg@IOlAQnASlA[xAyBwCk@e@GA@g@_C@]WmAm@sDeCm@OeCOsBDo@JQ?GCEIO}@Gm@AGMMGMEo@Kw@Ou@K{@gAkBa@[G?Bs@m@[So@a@m@w@ScA?gALu@p@gAdCo@dB_@j@s@Dy@a@[e@@DuAiA{AcASIkBuC}BaD{@{Dc@}B]uA{@uAkBkAk@Si@I_BJk@RyFpCcB`@{BH}@MiFuBq@Mi@Ba@PcApAMD[d@_@V}Ax@aAr@q@r@cE`ByARw@hA{@bAa@t@_@d@e@d@s@h@yBMCH{@E[BK`@w@DeAv@{BxCuChDUA[]]W[CSF]AgAU{GC}@Yi@o@k@VkHXe@~GaA`FmAtEu@bF]dAoAjAuBj@_@?o@NsAb@sAWaAIU?iCZgA?_A_Aw@aCo@oC_AqAq@]kAJy@Ps@]s@KeAd@{@p@I`@iAp@e@JO|@_CGqBcCwAwBM{@SCwBkD{@qA@CUe@Bc@He@EC_AsBk@]i@o@WMa@s@UcAWk@PUSe@IA}ANIJEoDMw@s@cD@aBaBaCm@UiAQk@QkHmFmAl@kA_B{CkF_AsA}F}AoFkAiA]A^c@HKA_BgAkAkA[g@mKeFaKcKGKwBn@uAj@]@o@_@m@q@o@|BsDqBuFG_H}A_GcCcKeC}K_CgCqBiKsU?i@I_@_AgDCg@?q@qCkBcASa@C{@He@Z}C}S{AcEgNmLu@T_GyC_I}LsAmEiFaGiBgBiC{DuBcHiCyC_FcHsAkDsCiF[P_B`@sB^{ELw@Ru@p@cBfAoAVSiCWeCCg@_EaWc@YkDkHuF_Hi@cDECmCmKwAqGM[gFwi@wAaAAMIFIo@WIu@m@UWQa@I}@EgAQ}@iAeB[q@Kk@?oBDu@EWWJq@Jw@Oy@y@}AgBeFqCuAoAgBkBM_@i@iGK_ASe@YMuA?o@M_FwAkAa@oBg@wBVw@M_I_IzE{H_AiAI@gAy@][OYs@Gg@DKC', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.62421719404587,-2.36756443977356], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

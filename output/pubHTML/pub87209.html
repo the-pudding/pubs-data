@@ -126,13 +126,13 @@ var thispub = 87209;var pubaddress = "6 St Andrews Street South";var pubname =
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87209;var pubaddress = "6 St Andrews Street South";var pubname =
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="g4m3d7ehoth6b6qovtt7fj3gi5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="969916htv6s33v9fqmal713386" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87209;var pubaddress = "6 St Andrews Street South";var pubname =
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87209;var pubaddress = "6 St Andrews Street South";var pubname =
   <div id="displayedimage">
 <a href="/pubpictures/87209/" class="indisplay"><img src="/images/display/87001_87500/87209_ae0689cb.jpg?w=2" alt="Picture of Hunter Club" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
   Submitted on Wednesday, 5<sup>th</sup> December 2018<br />
-  With picture contributions to 20227 other pubs<br />
+  With picture contributions to 20678 other pubs<br />
 <a href="/pubpictures/87209/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -279,7 +279,7 @@ var thispub = 87209;var pubaddress = "6 St Andrews Street South";var pubname =
 
 	var mymap = L.map('mapid').setView([52.24328520000000, 0.71095320000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -304,7 +304,39 @@ var thispub = 87209;var pubaddress = "6 St Andrews Street South";var pubname =
 
 
 </script><div>
+<i class="fas fa-train"></i> Bury St Edmunds, 0.83 miles, 16 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Thurston, 4.76 miles, 1 hr 31 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Elmswell, 9.9 miles, 3 hr 11 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('wvz}HsziCCq@iH`@GD]Cm@D}DQ@QDkC_BMw@HBSqABsAVk@D_De@sAa@o@WeCoB{A{@ENiA^eATo@FANKJKIAG[@kBc@gAa@UOW]a@{@OReALSf@GA@BCFCzB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('wvz}HsziCCq@iH`@GDi@CCUB_DBER@LCFGBMCuCGeAAG@GK}C_@_IIECEw@JGeAc@DGKgAeGUyBYqHQaBm@wBaBoEqBcF_AoB]{@]aBiAoIc@sGL]Ze@?SPc@ZeAh@oCReAv@eHJ_BGwA?k@Lu@H_AAuCQoESuC[gB_@wH?g@IqBGgA[}KIq@M_Cg@sCDQBO?{BQqDBk@OaGSeGIy@?kBXC?yCYuG?QCeAIi@]gKEgCHq@CaASe@c@oMGgC?cCFg@FOC_@@a@[OKOMwCG}Dg@oOEwBBmEH_JT{LtAgSXwJPcEvAHPIv@{SM{@@c@tA{Ha@OGKLgAHwCI[OcD[cSMwDWoGB[Si@_B}GcAiDwCqHqAuCEO@WBUCGBm@_@CAPIAAGMBk@cC_@yBOeBMeCEcBBwKEe@{CwPs@gEoCsYdNoHv@m@Vk@EOQiDl@G?H', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('wvz}HsziCCq@iH`@GDi@CCUB_DBER@LCFGBMCuCGeAAG@GK}C_@_IIECEw@JGeAc@DGKgAeGUyBYqHQaBm@wBaBoEqBcF_AoB]{@]aBiAoIc@sGL]Ze@?SPc@ZeAh@oCReAv@eHJ_BGwA?k@Lu@H_AAuCQoESuC[gB_@wH?g@IqBGgA[}KIq@M_Cg@sCDQBO?{BQqDBk@OaGSeGIy@?kBXC?yCYuG?QCeAIi@]gKEgCHq@CaASe@c@oMGgC?cCFg@FOC_@@a@[OKOMwCG}Dg@oOEwBBmEH_JT{LtAgSXwJPcEvAHPIv@{SM{@@c@tA{Ha@OGKLgAHwCI[OcD[cSMwDWoGB[XGh@eJt@iGdAcG~@_Fh@}G\\yJb@uu@TaJfAsXBiEOy@i@w@}DoEtBgFlEcJpFyKpBkD~FaL{AcDW{@AiAL}BVuB^mBFuAe@_HIi@fDqDxBuBBcD^kIViFt@wGaAoJuAgKIgBYsE?mCh@eFfAaDr@yAVgCR[fBl@~ByLbCgLfBuFDkAs@wJDmCNq@zAcDdAsDh@oCt@gFnA_XcA[Wi@IGb@oBb@_B@m@VqAl@iEf@}Cl@N`@?LkAAw@CmDEyJM{KPyFSwEm@eBm@kDSuF@{C]sCgCoMa@mCMqBAwB@{EE_AWyBzBaGhAcDKMl@iDyLyI@{B_@g@@iAZwC@cAk@s@C{A\\cHm@oAP_KQ[mCQEsG{B?A_@h@mPn@qLl@aBh@mH^wAFs@XkG`@qAiASLiBrB_TZ_CVK\\yANkCf@_A~C_FrAPb@qKaA[{AcBq@{@Ij@LF[|B', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.24328520000000,0.71095320000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

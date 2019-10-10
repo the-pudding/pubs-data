@@ -126,13 +126,13 @@ var thispub = 87444;var pubaddress = "78 Saddleworth Road";var pubname = "Craf
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87444;var pubaddress = "78 Saddleworth Road";var pubname = "Craf
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="h2hks24220p8q3uclf1qv1v302" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="r8a07m1o5olm4ata81ph5v7m87" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87444;var pubaddress = "78 Saddleworth Road";var pubname = "Craf
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87444;var pubaddress = "78 Saddleworth Road";var pubname = "Craf
   <div id="displayedimage">
 <a href="/pubpictures/87444/" class="indisplay"><img src="/images/display/87001_87500/87444_5f337570.jpg?w=2" alt="Picture of Craft West Vale" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
   Submitted on Wednesday, 13<sup>th</sup> February 2019<br />
-  With picture contributions to 24007 other pubs<br />
+  With picture contributions to 24825 other pubs<br />
 <a href="/pubpictures/87444/" class="smallbutton">View all this pub's pictures</a> (1 more image)
  
   
@@ -259,7 +259,10 @@ Be the first to write a recommendation on this pub and let everyone know why the
 <div id="ContentPanel4">
 <span class="h2ish" id="linksheading">External web links for Craft West Vale</span>
 <div class="hline"></div>
-			<p>No known official website for this pub.</p>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of Craft West Vale - <a href="http://craftwest.co.uk/" title="Submitted by:- ROB Camra" target="_blank">craftwest.co.uk</a></li>
+          </ul>
 </div>
 
 
@@ -274,7 +277,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([53.68667690000000, -1.85605030000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,24 +302,62 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Halifax, 2.95 miles, 56 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Sowerby Bridge, 3.17 miles, 1 hr 1 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Brighouse, 3.87 miles, 1 hr 14 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('mttfIhoiJAq@q@\\{AmC]Na@Dg@AKEm@Xk@Ha@Te@`@WoAIQmB}A[_@[q@Q_BIq@a@e@k@k@m@Io@VI}A{K`FkWjKqBn@UAQEIVQN_DrA_Ah@Qb@sB}AcAsAiNuGuBgBsDaB}By@]Js@dA]Js@Qg@tCa@lA]r@KYFeCmAEoA^sAPcBNoCf@y@eBiBJcBv@kA`@wCTuCFuFgAkAO_@[w@gAw@ECoC{@\\gALgA\\eBNm@e@q@K]BcAfAa@?yBi@CT_BYmDDqBYWMEB]r@{@BQxAFD?BIACR@`FAL}A_AQlAoAs@cBkAOOCgCDGZwAGEZsAJJAH_Ay@i@q@AG|@|@z@p@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('mttfIhoiJAq@q@\\{AmC]Na@Dg@AKEm@Xk@Ha@Te@`@UZOh@Ip@AfBc@?CUi@@?DMVHtCRjDEhFE~@NVStAEt@WhCiB`JuAfMa@dDS`AYv@e@jA_B|CQPUHiCBeAJaDx@s@~@k@jCIRI^k@xDM`I?z@KPiBjBGLSt@UNKNOj@w@`EcAlCU`@ML]PSP[z@[rAG\\EnBG`@k@bCQf@Yl@DxBe@Jm@[k@TUrAaA|Ba@dA_AvCgE~@_@IA\\SRSJy@Rw@h@Sb@UAeBD}@M[M[@WLM|@Oh@Yh@oDpDuAnD]r@q@tBgAgBiBg@WY_@|AgAbCoBfFgDfKk@xD[RwBlD}AfBo@fC{AdMIzCLXH`CJxH?pBFhFDhAb@pHLbBTbAX`AR`ARbDPhETdEXdDFtAj@I', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('mttfIhoiJE_MHyELiBZRLEPWPe@RWPc@~@kD^eCx@uCPw@Js@Bk@SgAZRN?JWHC?VLj@EgIIuCOaCQoBmAaIQYBq@OE]a@W{@A}@h@yAFi@k@aDq@}C}@wCI[OiAGmABe@E]]cCg@{BEFgBmHO}@NgBA_A?A\\GNKHg@PuALcBEkASwA]iHWmA_@gAwAcFQq@vCyD_@qAKWzAeBMo@SsA]}DCq@Wy@g@g@NoB?wBGwDS}Ik@sGMwDCgEFsC\\mFJcKSs@Uc@Sg@_FuTu@]y@Is@g@_DgFWRNcEmBgBiBmHyJ_V{@aCyAcC_EmFaC_K]i@s@yD{AgPs@iI~@UGiAFmJKgET{AaFoD~@kF|AkEaBo@NsAOGxBoDmDoKJWNuDOGD_@EAIx@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.68667690000000,-1.85605030000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
 <span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=87444">View all updates for Craft West Vale, West Vale</a></span>
 <div class="hline"></div>
       <div class="auditrow"><div class="auditdate">
-        13<span class="sup">th</span> Feb 2019, 20:31
-      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a> approved
-
+        12<span class="sup">th</span> Sep 2019, 19:55
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=ROBCamra">ROB Camra</a> approved
       </div></div>
       <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
-        13<span class="sup">th</span> Feb 2019, 18:51
-      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a>
-
+        12<span class="sup">th</span> Sep 2019, 19:55
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=ROBCamra">ROB Camra</a>
       </div></div>
       
 
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Beer Festivals : <span id="fac11787444">No</span> <span id="discdetail11787444" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2019 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10287444">No</span> <span id="discdetail10287444" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2019 by ROB Camra</span></li><li>Micropub : <span id="fac12287444">No</span> <span id="discdetail12287444" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2019 by ROB Camra</span></li><li>Real Ale : <span id="fac10187444">No</span> <span id="discdetail10187444" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2019 by ROB Camra</span></li><li>Real Cider : <span id="fac11987444">No</span> <span id="discdetail11987444" class="discdetail" style=""></span>  <span class="Reviewer">last updated 12 September 2019 by ROB Camra</span></li></ul></span>
+  
+</div>
 
 <!-- fbhours -->
 <!-- FH --> 
@@ -326,8 +367,11 @@ Be the first to write a recommendation on this pub and let everyone know why the
        
           <ul class="Custom1">
                     <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83287/" class="List1">Vine</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/88056/" class="List1">The Nook</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/40493/" class="List1">The Queen</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/40519/" class="List1">The Star</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 1 reviewer(s)" title="Pub has average rating of 8 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/40501/" class="List1">Rose &amp; Crown</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 3 reviewer(s)" title="Pub has average rating of 5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/40395/" class="List1">The Fleece Inn</a></li>
 
           </ul>
   

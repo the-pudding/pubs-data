@@ -37,8 +37,6 @@ function getDistrictHTML(d) {
 
 async function init() {
 	loadData(IN_PATH)
-	const splitData = pubs.slice(0,3)
-	//getDistrictHTML(splitData)
 
 	let i = 0;
 

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Three Tuns pub in Uxbridge, London (Greater), UB8 1JN : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Three Tuns" />
+  <meta name="keywords" content="The Three Tuns, 24  High Street, Uxbridge, London (Greater), Uxbridge Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Three Tuns in Uxbridge" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/27501_28000/27900_6ced6f43.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/27900/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.54563447570769" />
+<meta property="og:longitude" content="-0.47890037298203" />
+<meta property="og:street-address" content="24  High Street" />
+<meta property="og:locality" content="Uxbridge" />
+<meta property="og:region" content="London (Greater)" />
+<meta property="og:postal-code" content="UB8 1JN" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Three Tuns in Uxbridge? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Three Tuns the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/27900/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Three Tuns in Uxbridge" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Three Tuns " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/27501_28000/27900_6ced6f43.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/27900/" />
+<meta name="geo.position" content="51.54563447570769;-0.47890037298203" />
+<meta name="geo.placename" content="The Three Tuns in Uxbridge" />
+<meta name="geo.region" content="UK" />
+<title>The Three Tuns in Uxbridge : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":27900},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(27900);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 27900;var pubaddress = "24  High Street";var pubname = "The Three Tuns";var pubpostcode = "UB8 1JN";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/greater-london/" title="Pubs Galore : London (Greater) Page">London (Greater)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/uxbridge/greater-london/" title="Pubs Galore : Uxbridge Page">Uxbridge</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Three Tuns Page">The Three Tuns Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="51pq6ci88pagtp6d9h8tv9qi75" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/27900/" class="indisplay"><img src="/images/display/27501_28000/27900_6ced6f43.jpg?w=2" alt="Picture of The Three Tuns" /></a><br />  Image posted by <a href="/userinfo.php?name=Delboy20" class="indisplay">Delboy 20</a><br />
+  Submitted on Friday, 31<sup>st</sup> May 2019<br />
+  With picture contributions to 1189 other pubs<br />
+<a href="/pubpictures/27900/" class="smallbutton">View all this pub's pictures</a> (5 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/27900/">Pub map</a><br /><a href="/pubreviews/27900/">Pub reviews (5)</a><br /><a href="/pubpictures/27900/">Pub pictures (6)</a><br /><a href="/core/pubaudit.php?id=27900" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Three Tuns, Uxbridge Central, Uxbridge</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">24  High Street</span><br />
+
+
+<span class="town">Uxbridge</span><br />
+<span class="postcode">UB8 1JN</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01895233960</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">John Barras (Spirit Pubs)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/uxbridge-central/greater-london/">Uxbridge Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Three Tuns  <span class="h2note">(Average Rating: <span id="averagerating"><b>5&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review139636" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Delboy20">Delboy 20</a> left this review about The Three Tuns</h6>
+<p>Decent looking pub well described below. 3 beers on including Doom Bar and Old Golden Hen. Camra discount too. I went for the Golden Hen and sat out front in the sun. Happy to call in again.</p>
+<p class="Reviewer">On 5<sup>th</sup> June 2019 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 900 recommendations about 870 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review105369" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=london+calling">john gray</a> left this review about The Three Tuns</h6>
+<p class="old">This is a nice quaint little pub with low ceilings and a few nooks off the main bar which is at the back on the lower level.Busy.Three cask beers Doombar,Speckled Hen and London Glory.The landlord should be proud of this awesome choice.Not.</p>
+<p class="Reviewer">On 4<sup>th</sup> April 2016 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 887 recommendations about 875 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review104104" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> left this review about The Three Tuns</h6>
+<p class="old">This pub is essentially unchanged since the previous reviewer&#039;s visit. It&#039;s branded as a Spirit pub, which it means it&#039;s now Greene King. This is reflected in the ale choice, with GK IPA, London Glory and Old Speckled Hen on, leaving Doom Bar as the only non-Greene King ale available. It was however the cheapest half of Doom Bar that I had had all day, at &pound;1.45. The selection was a bit disappointing as a board outside advertised a 10% CAMRA discount, which I hoped would presage one or two less usually seen ales. They obviously do food, but no menus were out when I was in late afternoon on Friday.<br />
+<br />
+The pub itself is not bad, but it&#039;s a typical town centre pub. As you enter there&#039;s an area at the front with a bunch of normal tables and chairs; the food counter&#039;s still on the left (but not in operation when I visited); and down half a dozen or so steps is an area with a few more normal tables and chairs and tall tables/tall stools and the bar counter. The conservatory is still there on the right, but I couldn&#039;t get in there as there was a private function underway. There&#039;s a lot of dark wood around the place, including some wood panelling up to dado level that looks ancient, if not original. There are also various knick-knacks around, but mainly old stoneware jugs and bottles on a shelf above the steps leading down to the lower area.<br />
+<br />
+This is the second pub of the day that I saw advertising the impending St Patrick&#039;s Day, so I guess we can expect to see all the Guinness tat arriving any day now. There was also a laminated page on all the tables advertising weekly offers and events. It seems you can get four Sharp Shooters for &pound;10; six flavoured shots for &pound;5; and four bombs for &pound;11. All gibberish to me of course, but I mention it just in case anyone is interested in that kind of thing. Also mentioned was a quiz night on Wednesdays, the availability of Sky/BT Sports, and free wi-fi.<br />
+<br />
+For a town centre pub this one&#039;s really not bad, but I doubt whether I&#039;ll be trekking over to Uxbridge to visit it again.</p>
+<p class="Reviewer">On 2<sup>nd</sup> March 2016 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2521 recommendations about 2439 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/27900/">View more reviews of The Three Tuns (5)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Three Tuns</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of Three Tuns - <a href="http://www.johnbarras.com/pub/three-tuns-uxbridge/m2674/" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">www.johnbarras.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="twitlink" id="461193650">Twitter - <a href="https://twitter.com/The3TunsBar" target="_blank" rel="nofollow">The Three Tuns Bar</a></li></ul><ul id="Custom2"><li class="wplink" id="MDX/12105">CAMRA WhatPub :: The Three Tuns - <a href="https://whatpub.com/pubs/MDX/12105/" target="_blank">whatpub.com</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/27900/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Maldenman">Malden man</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.54563447570769, -0.47890037298203], 16);
+
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.54563447570769, -0.47890037298203]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> West Drayton, 2.95 miles, 57 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Denham, 3.01 miles, 58 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> West Ruislip, 3.16 miles, 1 hr 1 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('soryHpo|AFOj@wB\\cAz@qCfA`GdC_A\\QzA]ZAjBv@~@?~@O~@YRlBrDsA~B_AzBiAhGmC~D{ArK@vBCjJJrBEnE@nC`@`A?r@H~DNlBBhA?ZKdACd@JrBCzAe@Pr@XR`CU@]HYFKr@G|AA`Fr@hDrAfA\\n@eGfDnA|InDhDhCRh@fAgA`@d@l@nBNtAb@l@ZRl@D|@eAdAw@vAi@~FyApBo@vAoAXa@jBoDbAoCKKFIt@_CTi@n@mAt@cADYBe@?gA@]vAn@pAhAtAbBL[Dk@?m@JuBAUHa@pA?@_ACAFyB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('soryHpo|AMZwAlBo@t@mB|A_@RAPc@b@mChBgB~@c@d@Kj@]ZkBjDc@jAKD[\\BJ[j@_@|@StAu@fCcBpCaAfAKIsCxCYP_BrAyBxBiE~EcEzD_MvK{DpD}C`DSDg@?UCSMiC}CK@MGQCkBVKJMRKMM`@{ApDU^SJG@KTJ\\?RE\\O|@u@hCo@pEgEpEs@~@_@n@}EbGGIUd@yBjC_ApAs@hAW|@GJe@\\s@VUAAn@Ed@sAxBA`@uAtByAjCmB|CHCCYQ@mCc@{FmAAf@sRkDeAUaA]eAe@uAy@sKeIkFcFnAkS', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('soryHpo|AMZSVGKIGIAIBs@}Bo@l@IMKN]@STa@iAk@TO]Y_AU_AMY_@{AAK[\\aAh@e@cAiAmD}@aDo@uAwDzDkAv@kCkFq@}AYwA}@_Gb@q@LsACiAMoAIk@Ug@GA@MLBB]y@OsEyA{Fo@}AaCuDeIU]WoA[cDEiAc@SMYK]B[?_@Ee@WqAM_@GIMe@l@iE?SAMk@_@OFu@nDc@TMIEe@?w@D_@J_@JWDw@G_BIq@?yBIQ@qADaBEo@@S?MaAOsALk@KY@c@Ke@SmARORQg@eBaCfAkDZuAcAyBSwAcAqMQ_Aa@Wg@g@aBsA]SSk@SqASs@GmBWeADSAkDEcAK{@SoAOwCf@uBTwAcCyBZsA?WGQsAgAfAoE_DoCCMsBgA@U_@AUc@wAkAKAYJcBmA{Au@gBqAaEwBs@u@_BaC[u@Uc@iBsCgE}IBETh@Ta@AISe@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.54563447570769,-0.47890037298203], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=27900">View all updates for The Three Tuns, Uxbridge</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        5<span class="sup">th</span> Jun 2019, 19:25
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Delboy20">Delboy 20</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        31<span class="sup">st</span> May 2019, 21:04
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Delboy20">Delboy 20</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>CAMRA Discount : <span id="fac10227900">Yes</span>  - <span id="discdetail10227900" class="discdetail" style="">10% </span> -   <span class="Reviewer">last updated 21 January 2017 by ROB Camra</span></li><li>Real Ale : <span id="fac10127900">Yes</span> <span id="discdetail10127900" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 June 2014 by Dave McNally</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 8 recommendation(s)" title="Pub has 8recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 7 reviewer(s)" title="Pub has average rating of 6 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/27890/" class="List1">The Queens Head</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 4 reviewer(s)" title="Pub has average rating of 6 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62865/" class="List1">The Metropolitan</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 4 reviewer(s)" title="Pub has average rating of 6 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62863/" class="List1">The Fig Tree</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 2 reviewer(s)" title="Pub has average rating of 4.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62869/" class="List1">Whelan&#039;s</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 9 reviewer(s)" title="Pub has average rating of 5 from 9 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/27869/" class="List1">The Good Yarn (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62864/" class="List1">Millers Tap</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/68369/" class="List1">Auberge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3.5 from 2 reviewer(s)" title="Pub has average rating of 3.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/27867/" class="List1">The Gardeners Arms</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

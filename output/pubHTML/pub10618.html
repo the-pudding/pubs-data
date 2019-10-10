@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Victory Inn pub in Brighton, East Sussex, BN1 1AH : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Victory Inn" />
+  <meta name="keywords" content="The Victory Inn, 6  Duke Street, Brighton, East Sussex, Brighton Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Victory Inn in Brighton" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/10501_11000/10618_4ed49f80.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/10618/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="50.82264801751290" />
+<meta property="og:longitude" content="-0.14243870973587" />
+<meta property="og:street-address" content="6  Duke Street" />
+<meta property="og:locality" content="Brighton" />
+<meta property="og:region" content="East Sussex" />
+<meta property="og:postal-code" content="BN1 1AH" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Victory Inn in Brighton? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Victory Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/10618/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Victory Inn in Brighton" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Victory Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/10501_11000/10618_4ed49f80.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/10618/" />
+<meta name="geo.position" content="50.82264801751290;-0.14243870973587" />
+<meta name="geo.placename" content="The Victory Inn in Brighton" />
+<meta name="geo.region" content="UK" />
+<title>The Victory Inn in Brighton : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":10618},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(10618);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 10618;var pubaddress = "6  Duke Street";var pubname = "The Victory Inn";var pubpostcode = "BN1 1AH";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/east-sussex/" title="Pubs Galore : East Sussex Page">East Sussex</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/brighton/east-sussex/" title="Pubs Galore : Brighton Page">Brighton</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Victory Inn Page">The Victory Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="10mhjjovnb6797cfenevs31762" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/10618/" class="indisplay"><img src="/images/display/10501_11000/10618_4ed49f80.jpg?w=2" alt="Picture of The Victory Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=sheffield+hatter" class="indisplay">Will Larter</a><br />
+  Submitted on Wednesday, 28<sup>th</sup> March 2018<br />
+  With picture contributions to 8736 other pubs<br />
+<a href="/pubpictures/10618/" class="smallbutton">View all this pub's pictures</a> (41 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/10618/">Pub map</a><br /><a href="/pubreviews/10618/">Pub reviews (13)</a><br /><a href="/pubpictures/10618/">Pub pictures (42)</a><br /><a href="/core/pubaudit.php?id=10618" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Victory Inn, Brighton Central, Brighton</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">6  Duke Street</span><br />
+
+
+<span class="town">Brighton</span><br />
+<span class="postcode">BN1 1AH</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01273326555</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/brighton-central/east-sussex/">Brighton Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Victory Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review142944" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Delboy20">Delboy 20</a> left this review about The Victory Inn</h6>
+<p>More a comment than a review. Reading the reviews below it appears that the Victory could do with a bit of work. Just my luck to call on the day it was shut! I did walk in to be met by a team of builders and was told they would be open tomorrow. Maybe next time &hellip;..</p>
+<p class="Reviewer">On 30<sup>th</sup> September 2019 
+  - no rating submitted<br />
+  <span class="leftspace">[User has posted 900 recommendations about 870 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review128032" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=london+calling">john gray</a> left this review about The Victory Inn</h6>
+<p class="old">Very nice looking pub from outside but a bit tatty inside and poor toilets.Three cask beers on and I reluctantly tried Laines -breaker.Dullsville.</p>
+<p class="Reviewer">On 13<sup>th</sup> April 2018 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 887 recommendations about 875 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review127620" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Tris39">Tris C</a> left this review about The Victory Inn</h6>
+<p class="old">Most striking on approach, is the fine glazed tilework indicating that this was once a Tamplin&rsquo;s house, dating back to around 1766. Inside it&rsquo;s a fairly traditional pub, certainly in the front bar, illuminated in part with daylight filtering through the etched stained-glass windows. There are few small high tables and a bare boarded floor, though there&rsquo;s a games machine and TV which spoil things a bit. The rear area appears to have been knocked through into at least one house on Middle Street so is more spacious than it seems at first. It&rsquo;s along this street that there are around four tables with separate benches. In winter, there&rsquo;s a real log fire &ndash; nice. On the downside, the lavatories could do with a little remedial work.<br />
+Ales: Jenning&rsquo;s Sneck Lifter, Sharp&rsquo;s Doom Bar and Laine&rsquo;s Breaker at &pound;2.15 a half and indeed non-descript, also a little pricey.<br />
+This is mostly a very good pub but could do with a larger and more interesting array of ales. The existing range could be improved by ditching the Doom Bar as the sight of the pump clip offends.<br />
+There&rsquo;s a five-day midnight licence, 2.00 am on Friday and Saturday which is a nice bonus.</p>
+<p class="Reviewer">On 31<sup>st</sup> March 2018 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 917 recommendations about 903 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/10618/">View more reviews of The Victory Inn (13)</a>
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=495">A wander around Central Brighton</a> by <a rel="nofollow" href="/userinfo.php?name=Strongers">Steve C</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Victory Inn</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Victory Inn - <a href="http://www.victory.pub/" title="Submitted by:- Will Larter" target="_blank">www.victory.pub</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="144598215554310">Facebook - <a href="https://www.facebook.com/victoryinn/" target="_blank" rel="nofollow">The Victory Inn</a></li></ul><ul id="Custom2"><li class="wplink" id="BRI/3">CAMRA WhatPub :: The Victory Inn - <a href="https://whatpub.com/pubs/BRI/3/" target="_blank">whatpub.com</a></li><li class="hilink" id="7001">Historic Pub Interiors - <a href="https://pubheritage.camra.org.uk/pubs/7001" target="_blank">pubheritage.camra.org.uk</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/10618/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Strongers">Steve C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([50.82264801751290, -0.14243870973587], 16);
+
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([50.82264801751290, -0.14243870973587]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Brighton, 0.97 miles, 18 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> London Road (Brighton), 1.29 miles, 24 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Hove, 1.87 miles, 36 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('_ieuH~xZu@fHk@QmEoBcDeAWU]gA{CeAEn@iE_BsFgBe@KgAMGxAIA@QWEy@Co@DkAVoAf@u@h@m@r@}@|Ag@lACGPg@|@gBj@w@t@q@\\ShAe@p@St@If@A`ADB_@aAEk@@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('_ieuH~xZu@fHk@QmEoBcDeAWU]gA{CeAEn@iE_BsFgBe@KgAMLcDM?AXwAM_DD@SCQCGKEE?KLIG[Em@]Ye@yA{@UXKSGACEMHGOK@E[Gm@Bg@IDO]iBcGsDhEk@t@e@Ca@BOEMOKVC?i@_A[y@]_CGo@s@wEwEnAMmAsAf@]a@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('_ieuH~xZu@fHk@Q]lDs@UQFQ_A_@|@e@f@KD]JOHcBvABb@Y|Cm@nFu@rHu@hFiCvRyC|SoAhJW|BQ|@oAtIk@hHaDw@kCtYg@bGg@|EQpByBc@_BpP}EuAcEuAsF_BmAi@', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([50.82264801751290,-0.14243870973587], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=10618">View all updates for The Victory Inn, Brighton</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        30<span class="sup">th</span> Sep 2019, 21:03
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Delboy20">Delboy 20</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        29<span class="sup">th</span> Sep 2019, 18:26
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Delboy20">Delboy 20</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11810618">No</span> <span id="discdetail11810618" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 June 2014 by ROB Camra</span></li><li>Bar Billiards : <span id="fac10710618">No</span> <span id="discdetail10710618" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2018 by Tris C</span></li><li>Beer Garden : <span id="fac11410618">Yes</span> <span id="discdetail11410618" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 June 2014 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10210618">Yes</span>  - <span id="discdetail10210618" class="discdetail" style="">All real ales &pound;3.50 per pint. No discount on halves.</span> -   <span class="Reviewer">last updated 27 November 2017 by paulof horsham</span></li><li>Car Park : <span id="fac11310618">No</span> <span id="discdetail11310618" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2017 by paulof horsham</span></li><li>Child Friendly : <span id="fac12110618">Yes</span>  - <span id="discdetail12110618" class="discdetail" style="">If eating</span> -   <span class="Reviewer">last updated 23 June 2014 by ROB Camra</span></li><li>Darts : <span id="fac11110618">No</span> <span id="discdetail11110618" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2018 by Tris C</span></li><li>Dog Friendly : <span id="fac10510618">Yes</span> <span id="discdetail10510618" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 June 2014 by ROB Camra</span></li><li>Function Room : <span id="fac12310618">Yes</span> <span id="discdetail12310618" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2018 by Tris C</span></li><li>Hot Food : <span id="fac10310618">Yes</span> <span id="discdetail10310618" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 June 2014 by ROB Camra</span></li><li>Micropub : <span id="fac12210618">No</span> <span id="discdetail12210618" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 November 2017 by paulof horsham</span></li><li>Pinball : <span id="fac11610618">No</span> <span id="discdetail11610618" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2018 by Tris C</span></li><li>Pool Table : <span id="fac10410618">No</span> <span id="discdetail10410618" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2018 by Tris C</span></li><li>Real Ale : <span id="fac10110618">Yes</span> <span id="discdetail10110618" class="discdetail" style=""></span>  <span class="Reviewer">last updated 31 July 2012 by moby duck</span></li><li>Real Cider : <span id="fac11910618">Yes</span> <span id="discdetail11910618" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 June 2014 by ROB Camra</span></li><li>WiFi : <span id="fac11510618">Yes</span> <span id="discdetail11510618" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 June 2014 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 12 picture(s)" title="Pub has 12 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/73040/" class="List1">Browns Brighton</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 17 picture(s)" title="Pub has 17 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 3 reviewer(s)" title="Pub has average rating of 7 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/66796/" class="List1">Seven Stars</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/73352/" class="List1">Coach House</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 2 reviewer(s)" title="Pub has average rating of 7.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/10426/" class="List1">The Fiddlers Elbow</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 22 picture(s)" title="Pub has 22 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 6 recommendation(s)" title="Pub has 6recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 3 reviewer(s)" title="Pub has average rating of 7.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/10596/" class="List1">Molly Malone&#039;s</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 2 from 1 reviewer(s)" title="Pub has average rating of 2 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54252/" class="List1">Popworld</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 21 picture(s)" title="Pub has 21 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 7 reviewer(s)" title="Pub has average rating of 6.5 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/10368/" class="List1">Bath Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 1 reviewer(s)" title="Pub has average rating of 5 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/10427/" class="List1">The Font</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

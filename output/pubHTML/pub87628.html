@@ -126,13 +126,13 @@ var thispub = 87628;var pubaddress = "19 High Street";var pubname = "Bod Newpo
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87628;var pubaddress = "19 High Street";var pubname = "Bod Newpo
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="9c8kd923mbuip3rqg9i58bl6s1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="061n544rj88avp4lde3h40gq46" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87628;var pubaddress = "19 High Street";var pubname = "Bod Newpo
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -246,7 +246,7 @@ var thispub = 87628;var pubaddress = "19 High Street";var pubname = "Bod Newpo
 <p>New cafe bar style pub in former Natwest bank , run by Titanic Brewery</p>
 <p class="Reviewer">On 12<sup>th</sup> April 2019 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 740 recommendations about 637 pubs]</span></p>
+  <span class="leftspace">[User has posted 771 recommendations about 661 pubs]</span></p>
   </div>
 </div>
 
@@ -274,7 +274,7 @@ var thispub = 87628;var pubaddress = "19 High Street";var pubname = "Bod Newpo
 
 	var mymap = L.map('mapid').setView([52.76773180000000, -2.37808590000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ var thispub = 87628;var pubaddress = "19 High Street";var pubname = "Bod Newpo
 
 
 </script><div>
+<i class="fas fa-train"></i> Oakengates, 6.94 miles, 2 hr 13 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Telford Central, 7.91 miles, 2 hr 32 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Shifnal, 8.29 miles, 2 hr 40 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('seaaIxkoM|Bg@jA_@t@[t@jC^r@f@b@nBz@ZV|@^nAz@nEjEbBrAvBxBhEdFpGpEzElDdAr@jE`El@x@X|@j@|@Th@nBjFx@pB|@jBx@`ApAl@nDfAtBz@l@f@bCrD@dBD`@`B`Dh@lAXd@hAz@nBpAbD|CbBnBzApCn@r@d@NpA`A`DvCvAdAT\\VPXHvGxE^l@J`@Tf@r@\\zB`FRXdEpHp@wA`X|d@vBdEp@i@z@FdFv@zFp@tE~@zBI`@FvBpAj@RbBTRHTRBMZk@p@q@jCiBrBoAzBsBp@eAtSpUzUfYdAoAtFbGDnAAt@Ef@_@zCVn@b@z@HtHrBp@Rr@?dBzArDl@\\n@KpDnOJ`Az@NFn@L`@^Tf@?h@Un@O^?vAj@z@l@`AZr@FFpJJhBVtA^v@|FaAn@_@b@Q@Mn@KlDe@~Ac@Tb@f@dGj@vFXfBdB~GIFKZ?P@PJTD@I\\IrAA~ABjBNdD`@|AlBbCvAnCfBH`@`@\\z@NjA^bBx@~ATo@LK\\fHZxA~CtGPnAPj@NXdAfAVNvCRh@Nh@@`@HtB|@n@Bn@b@lCzDb@b@\\Tj@Vh@^j@Vd@Z`@j@HVCn@n@?ZKZi@fAc@PoAX_@n@]p@Kp@[XMt@Id@?xAg@\\ZpErBBdAMrBd@V`@D|@q@^HrA`Ah@N\\QBLLBTJTd@Jv@VE`@Dd@VbCdCd@N@?l@{ARS~Be@@zBGJAlABLXdAQF[b@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('seaaIxkoM|Bg@jA_@t@[t@jC^r@f@b@nBz@ZV|@^nAz@nEjEbBrAvBxBhEdFpGpEzElDdAr@jE`El@x@X|@j@|@Th@nBjFx@pB|@jBx@`ApAl@nDfAtBz@l@f@bCrD@dBD`@`B`Dh@lAXd@hAz@nBpAbD|CbBnBzApCn@r@d@NpA`A`DvCvAdAT\\VPXHvGxE^l@J`@Tf@r@\\zB`FRXdEpHp@wA`X|d@vBdEp@i@z@FdFv@zFp@tE~@zBI`@FvBpAj@RbBTRHTRBMZk@p@q@jCiBrBoAzBsBp@eAtSpUzUfYdAoAtFbGDnAAt@Ef@_@zCVn@b@z@HtHrBp@Rr@?dBzArDl@\\n@KpDnOJ`Az@NFn@L`@^Tf@?h@Un@O^?vAj@z@l@`AZr@FFpJJhBVtA^v@|FaAn@_@b@Q@Mn@KlDe@~Ac@Tb@f@dGj@vFXfBdB~GIFKZ?P@PJTD@I\\IrAA~ABjBNdD`@|AlBbCvAnCfBH`@`@\\z@NjA^bBx@~ATo@LK\\fHZxA~CtGPnAPj@NXdAfAVNvCRh@Nh@@`@HtB|@n@Bn@b@lCzDb@b@\\Tj@Vh@^j@Vd@Z`@j@HVCn@n@?ZKZi@fAc@PoAX_@n@]p@Kp@[XMt@Id@?xAg@\\ZpErBBdAMrBd@V`@D|@q@^HrA`Ah@N\\QBLLBTJTd@Jv@VE`@Dd@VbCdCd@N@?l@{ARS~Be@vJyDz@m@`@a@bA}ANQf@Eh@VPb@\\RP@VVJf@x@w@xAi@pPAdDeAdCeBbAmAgBiDxD}BfAy@pAs@nA{A~GqKFu@GSy@nA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('seaaIxkoM|Bg@jA_@t@[pAu@xH{DjBuApFsH|@wApCyGxCuHd@g@t@g@z@W`@Ub@ATHLEHKHWB]Tm@nCsAlBiAvAi@vAYhCMdEw@^OROjBgB|CZhEL`ALhBQbBCvA`@~APnAOnAg@|Aa@rEuAnEXxFhAf@n@rBxCpCbHnDdGlAzEvAjCtBbBrBnDlDxCbA`@tAb@`B_Bp@_Et@o@`C{@nCTvDEtAKjBcBrCz@pRWpNg@dAm@bBwBj@eArE}C~C{@lBcA`OqIxAsApDaHbSqYbGqCrDk@MkJYmEKcDHmOEmBMgB?qCPoCdDfA|BX`CRbDt@|EnBrCpBvAlAdDv@dEt@xBp@rFPbOsBhBVvEQ`E[~DP`DdBbA{@dGqBnAgBhA]l@?lAWdAnBbD~JjDpEhChCXF?XjFd@^GbCiAh@I`@C|KhDrBnApKrHtAhAjBfDzF~D`IzDtK`IhFnEvCvArDlB~A|AvBbCh@~@`FtGzEtBtGG|AFLl@nFpC\\i@xE?fFfAzEnBlCAv@DpACNDHHNWZKDX`BKnBOBY`@DTb@JM\\M\\ECeB{@?BiCD?Ax@V@?m@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.76773180000000,-2.37808590000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

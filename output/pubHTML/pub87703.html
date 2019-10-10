@@ -126,13 +126,13 @@ var thispub = 87703;var pubaddress = "Hobsons Brewery, Tenbury Road";var pubna
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87703;var pubaddress = "Hobsons Brewery, Tenbury Road";var pubna
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="fca64fdsvm0uvph3ujg11ivnh2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="k14redh0u2vkt3ovas4inetkv2" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87703;var pubaddress = "Hobsons Brewery, Tenbury Road";var pubna
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -246,7 +246,7 @@ var thispub = 87703;var pubaddress = "Hobsons Brewery, Tenbury Road";var pubna
 <p>New brewery tap at Hobsons , open Wednesday to Saturday 10am-8pm.</p>
 <p class="Reviewer">On 4<sup>th</sup> May 2019 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 740 recommendations about 637 pubs]</span></p>
+  <span class="leftspace">[User has posted 771 recommendations about 661 pubs]</span></p>
   </div>
 </div>
 
@@ -260,7 +260,7 @@ var thispub = 87703;var pubaddress = "Hobsons Brewery, Tenbury Road";var pubna
 <span class="h2ish" id="linksheading">External web links for Hobsons Kitchen Tap</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="BNS/3322">CAMRA WhatPub :: Hobsons Kitchen Tap - <a href="https://whatpub.com/pubs/BNS/3322/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -274,7 +274,7 @@ var thispub = 87703;var pubaddress = "Hobsons Brewery, Tenbury Road";var pubna
 
 	var mymap = L.map('mapid').setView([52.37496600000000, -2.48574720000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ var thispub = 87703;var pubaddress = "Hobsons Brewery, Tenbury Road";var pubna
 
 
 </script><div>
+<i class="fas fa-train"></i> Ludlow, 11.57 miles, 3 hr 43 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Kidderminster, 12.41 miles, 3 hr 59 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Hartlebury, 14.72 miles, 4 hr 44 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ant~HvndNTzBN`AOz@n@|@d@fAh@|C`ArPhDnR\\bClCbLnBrLh@dCn@vBj@pC`CbFmAfAuALqAE]lAq@jOQjBmB`Bo@rBaBNc@jBk@F_IkCeAEmCb@k@~[YbD[`BaAtDuCrIoBdF{AbFyCtMWz@gApFc@fC{@fGa@bBUnAUzCOlKF~GWdCWz@i@|@iAbC_@vBSb@iAj@SRS^GVqAtHIl@S|FI`Am@|Fs@jHUzAoBfJmEtR_ApDo@bBiA|FWlBOzBqA|VWfQExTLh@Zt@V^_AjDw@v@oB|@g@?}AS[`@hCdSBpA_@`AoBtCSj@xCnCf@x@D`@ARGZo@dAAH?J@Jv@z@Xf@JVHr@@|@QhCGjE]bLs@vO?\\FRxBhCmMvg@FpGn@zMAfEF`QgBjEcC~HsDrMOnAS?iAf@a@b@}@jCCzBYhCB|ALrEXtAB^ShASj@BPLNrE~ShBzGh@|KStBi@`BMdACbBoA`EcAbCk@jCi@hAMP_@nOI`B@`@dB~MJf@vApDj@xBJfAp@nDlBhIxBjG`@pAA`BDh@NXlBx@nAz@xAdE?hEs@jIiAlInBuAjBc@rADh@lGb@tCNxB[dNYpEV|DYvF]|FOpECzEdAhO\\lC\\hBRlIdAdo@R~DJfSl@pIpA~E`@xFFfCZbE@|C^vDpA~I|AbJbArHHdABn@p@xDd@fBW|EGxB?`BFvAFnATnBpDlTr@nDPrB@jDI`DIvELjDPzBr@hClF~Md@hBh@|BTlBx@bJf@nC`@zAhA~Ct@lBnAnDzAfFr@vCnBbJf@vB\\z@HCZl@`@^ZLh@A^WVWJB?TKd@EZp@AnCd@AbAVPZX|@vBfAdA[~@?Hp@bEDZc@pAHVfBvBtCvDpEfE\\h@|@nCfBnG`@tABTk@rKx@f@?d@FvEDx@EV_B|Ak@r@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ant~HvndNTzBN`AOz@yCyDaCcDy@yBcAoDUm@U[GcDGo@EWYm@UgA[kCKIOACUBu@YcBYgAe@m@QPQwAk@}Ac@_AiE}Du@iAeB{DOIkD|DmAaDmAeEQ{@_@gE]oC]wAUe@]c@c@YiC}@cBy@SQS[I_@A]JcANm@fBiG|@{BpBmBx@sAjAuDzDiPTyCHaDSaJHqAb@yBpAoEpC_Mh@aELyAA{Au@wJC{BJmDZ{BtDoFZm@b@eALiAd@eILyD\\uGVwCnD{Ur@}DLcCE}BUoBO{BCmB^iAhBuDNeA@o@OqJIwN?qCDy@Di@lCcPpBmNjCaWd@uDTyEJaFHuMA}BPgCb@gCjAsDjFaY`@uAl@qAvDmDh@k@p@iApBgGzFsSh@}AjAiChCgEbGiLhHqPbCsIbCwL^{B{@}JE_BDoADk@XoBzA{GXqALiAFsAPkSV{Lh@s^?{BKuAq@eEy@iEwBsK[eBgA_Ko@_HcDaTy@iEuEwR{Hi_@}BmJ[sAg@qCSsBMsBi@sNCoA@a@Hc@Da@Dy@AQCO?a@SgBm@_DiAuE}AgFmBoIoAsHK_@S]Hu@M{C]sFWsCUwBa@wCq@aEk@{ESiDYkDyA{ImCcRMi@Sg@MUu@_@_@YSUkAcBa@kA[mAGo@DeCHW@SG{@K]KMa@}ANsACo@]gBYeCi@{AoAiCuAuCGS@YZcATk@c@{@Oc@EWQa@a@m@^u@f@u@_@g@Uc@CU?a@@e@DYv@uDAi@Mk@Q[m@c@o@[gA_@c@Y[_@Q_@Oi@s@gDiAaFiAoFyBaLgAiGWqBwBwSCgABQMEQiBKKMuAMsBBa@OoBE{AC_CDaCJwOJyJF}IFu@DuCFc@FIXMEY[iEOgAi@gHa@eJKqAQkAi@wAu@uA[iAYgBa@aFSsBMq@Sy@iAuDY{AjI{FxDwCe@qDOiBa@}HCmDF_Jy@uPS{J^E?i@HuSAyBUq@?qBJaAEqFECQl@}Al@u@XKm@sAyA{@Uk@?EgA[s@WiBSw@I_AUiAEaCW{@MIDsCJmDNoAVkAf@oCx@qGeFuDSSoA{BsAsCDGGOEWH[Xo@_@o@GWICVa@Pa@OYI[Ci@@g@TqCEAz@_JLsBb@{IPNf@l@m@WAHvAl@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ant~HvndNTzBN`AOz@yCyDaCcDy@yBcAoDUm@U[GcDGo@EWYm@UgA[kCKIOACUBu@YcBYgAe@m@QPQwAk@}Ac@_AiE}Du@iAeB{DOIkD|DmAaDmAeEQ{@_@gE]oC]wAUe@]c@c@YiC}@cBy@SQS[I_@A]JcANm@fBiG|@{BpBmBx@sAjAuDzDiPTyCHaDSaJHqAb@yBpAoEpC_Mh@aELyAA{Au@wJC{BJmDZ{BtDoFZm@b@eALiAd@eILyD\\uGVwCnD{Ur@}DLcCE}BUoBO{BCmB^iAhBuDNeA@o@OqJIwN?qCDy@Di@lCcPpBmNjCaWd@uDTyEJaFHuMA}BPgCb@gCjAsDjFaY`@uAl@qAvDmDh@k@p@iApBgGzFsSh@}AjAiChCgEbGiLxRpCjQhAj@g@XEhDDb@M\\[`CaF^mBdAiBr@iC\\aD\\iEx@kDdBiElBaBLYcEmM}AkFlByCNe@TuANm@^_A|A}CrD}E|@eBz@yAlBqCPk@Jm@PiBPq@Vc@Re@N{@TaBRaEBYt@yBj@iAz@wBd@wAzBuKD[`FoJbBoCjAsCT{@d@eDJwAPiAP}@dAqDnAaEn@aCJ_AAgC@i@Da@Le@Z_@x@c@`@a@Xc@v@iBf@iB^qAZq@`@o@\\a@zB_Bf@c@\\c@Ra@Pu@Hy@DwA?mAS}B?a@@c@FWTo@b@w@^]~FyDr@o@vBaDlAaC|B_Dx@_AfBcAl@gALk@LiABiBFuA`@}GHk@Rm@xCsDZo@RcADc@@}DCsBSmE@i@Fi@Ja@\\w@NSI}@EYIYc@{@kAyDoBgEQi@CY@g@LaAbAiEXeBDi@?gAKoDSyAcAgGy@}HS}@g@cAuB{D[a@iA{@RqBFsA@mBDmCJ_BRoAd@eAZqAb@sBpAmEXuARk@zAyD`AkB`BeCxAmBdBqCh@gAn@w@vAcAxAUnAg@a@cGMw@U_@SOYKYYQ[Mc@eAyFm@cCa@aAc@q@Ui@Gm@@g@JuAFmBOkA[i@]u@Oa@_@uBk@oFq@iDEs@?a@Fs@Le@Fc@?a@ImBA{@EuADoAZeBb@eBNeALa@JQE{@RoD`@gE?_AI}AC{@E@Ag@FwGAi@G{@Kc@y@wAaB}AOSOe@Ii@Co@@q@Hw@b@mCh@qEh@eHDgAMiCUCCiAsAkAoA_BeAm@^wAPeA`@wCjA{KFg@ViADgAd@sDLo@bB{FdAeEf@d@@EcC_CAHCCb@qBBq@B?NY`AgEDaADY@[CWESB_@EMME@WCAr@eAHa@\\OHQt@kCxBkF`AiCNq@t@eBXoFFe@L_@AKCAi@HIMMy@YHW?SKMSOa@UeCCe@B_@BO~@_ANc@D]?_@Em@k@cChAq@FsA?a@eBmCPq@@a@Gu@g@iDSmBOg@?aAZ{AQUa@{@]wACkBLmBdA_BfBs@Do@AeBeADy@Gi@m@}@cBQ{BD]E]e@iBSg@k@_AAYDe@HYSGk@IPcFHg@tDeAv@Oj@a@jAEbBuAdAi@~Be@GuDKeAAgAt@yC\\iAZ]p@OTALDRb@?w@Cm@a@qDOiCh@_MPyBb@iDESg@w@y@aAA]NkCn@}H{@wI}@aG_AwCmBoCcBmDk@sAwBqHq@oAiBkCAsACQMW{@gAy@k@WWFcADUTk@jAcA\\a@Tu@XyA\\eAj@oArA}BViAFo@b@sB`@iCXyDLsFLkBw@Ig@ABeAHYXo@`@kAVgB@g@AkAY_JQcEI{BGmD', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.37496600000000,-2.48574720000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

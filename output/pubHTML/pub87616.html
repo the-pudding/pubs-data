@@ -126,13 +126,13 @@ var thispub = 87616;var pubaddress = "Off Imperial Way";var pubname = "Beefeat
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87616;var pubaddress = "Off Imperial Way";var pubname = "Beefeat
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="nkq2a56hv9e0pb1blu9a2j4205" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="b8k5f1mlrb98t290ge2qcjq8o5" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87616;var pubaddress = "Off Imperial Way";var pubname = "Beefeat
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -246,7 +246,7 @@ var thispub = 87616;var pubaddress = "Off Imperial Way";var pubname = "Beefeat
 <p>New Build Beeteater Restaurant that has entry into the Premier Inn.</p>
 <p class="Reviewer">On 9<sup>th</sup> April 2019 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  <span class="leftspace">[User has posted 3912 recommendations about 3900 pubs]</span></p>
   </div>
 </div>
 
@@ -263,7 +263,7 @@ var thispub = 87616;var pubaddress = "Off Imperial Way";var pubname = "Beefeat
           <ul id="Custom2">
 			<li>Official site of Beefeater Reading Gateway - <a href="http://www.beefeater.co.uk/steak-restaurant/Berkshire/reading-gateway-m4.html" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">www.beefeater.co.uk</a></li>
           </ul>
-</div>
+<ul id="Custom2"><li class="wplink" id="REA/60">CAMRA WhatPub :: Beefeater Reading Gateway - <a href="https://whatpub.com/pubs/REA/60/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -277,7 +277,7 @@ var thispub = 87616;var pubaddress = "Off Imperial Way";var pubname = "Beefeat
 
 	var mymap = L.map('mapid').setView([51.41733925299877, -0.97375862621152], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,39 @@ var thispub = 87616;var pubaddress = "Off Imperial Way";var pubname = "Beefeat
 
 
 </script><div>
+<i class="fas fa-train"></i> Reading West, 3.48 miles, 1 hr 7 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Reading, 3.52 miles, 1 hr 7 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Reading, 3.52 miles, 1 hr 7 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ulyxH`f}Dx@{AFLuE|Im@x@SBKJIXAJYp@O_@e@rAs@z@{ApA}@j@yAp@}@N_EtAg@^{@t@g@VsBPwCpAUCAH]XOMWf@wC~AoAh@]?MESQMRKMc@VMMINMJi@NSLYB}@QSIo@q@Kr@Af@wA]qAk@aP}Hm@Ya@CYKBMQIIFAFQ@aAYu@MY@{CUuNi@wAMUKY]ORMGK@OMG?AHMPY@c@MiAg@aACoD[_QiAOGCIOAGFOBeEYMCMYI?Ue@IEo@NkAIIJMIIIKJk@LEJQ@Ap@SW]SgC_AkAU}@CcAHs@Ts@b@_@NeAn@WT}@nAGPIrACdABNC`AEJqAGCfA{Cp@_AXDp@Ad@CRQ^YXu@PMRIDs@LmD|@_A\\Iu@_AZcGvALpA?Vk@dM_@`Hy@bVaKiBGbCUtDD@AV~An@FAnBhA', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ulyxH`f}Dx@{AFLuE|Im@x@SBKJIXAJYp@O_@e@rAs@z@{ApA}@j@yAp@}@N_EtAg@^{@t@g@VsBPwCpAUCAH]XOMWf@wC~AoAh@]?MESQMRKMc@VMMINMJi@NSLYB}@QSIc@c@KMISq@}@cDkDa@SEIASHgGmJ}@iATK?{Eg@AkEaAGcGBm@RiAj@Me@KQMKUMSCU?_@Z{@bCQNS@SEQOw@eAcAq@m@@cAc@CI?IJe@gACe@TiB`@wC|@g@E_Cs@kAWe@i@m@cA[Os@Eo@]m@i@OIc@IcCJ}AmAq@W{@Q{@BcAWoAPIEM?OMo@iDEiBkJx@qGd@mABg@JcDrAq@NwEf@M?MOm@}AE?IO[w@oAlBs@s@u@e@m@e@SUMk@g@b@sAxAIU}BvBq@r@AI[TKAmAoA}ASIKq@DoBBDcE{EQwERMAIKEFQJKAEIg@Ta@hAIASPANMCI`BD@Ch@kAQCx@F@HeB', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ulyxH`f}Dx@{AFLuE|Im@x@SBKJIXAJYp@O_@e@rAs@z@{ApA}@j@yAp@}@N_EtAg@^{@t@g@VsBPwCpAUCAH]XOMWf@wC~AoAh@]?MESQMRKMc@VMMINMJi@NSLYB}@QSIc@c@KMISq@}@cDkDa@SEIASHgGmJ}@iATK?{Eg@AkEaAGcGBm@RiAj@Me@KQMKUMSCU?_@Z{@bCQNS@SEQOw@eAcAq@m@@cAc@CI?IJe@gACe@TiB`@wC|@g@E_Cs@kAWe@i@m@cA[Os@Eo@]m@i@OIc@IcCJ}AmAq@W{@Q{@BcAWoAPIEM?OMo@iDEiBkJx@qGd@mABg@JcDrAq@NwEf@M?MOm@}AE?IO[w@oAlBs@s@u@e@m@e@SUMk@g@b@sAxAIU}BvBq@r@AI[TKAmAoA}ASIKq@DoBBDcE{EQwERMAIKEFQJKAEIg@Ta@hAIASPANMCI`BD@Ch@kAQCx@F@HeB', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.41733925299877,-0.97375862621152], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

@@ -126,13 +126,13 @@ var thispub = 70517;var pubaddress = "B951";var pubname = "Glenisla Hotel";va
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 70517;var pubaddress = "B951";var pubname = "Glenisla Hotel";va
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="jvs24sl14gc8sqfu86dm361sv2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="2sacs8d1pv61ih743nsbrq9116" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 70517;var pubaddress = "B951";var pubname = "Glenisla Hotel";va
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 70517;var pubaddress = "B951";var pubname = "Glenisla Hotel";va
   <div id="displayedimage">
 <a href="/pubpictures/70517/" class="indisplay"><img src="/images/display/70501_71000/70517_1f7e4c44.jpg?w=2" alt="Picture of Glenisla Hotel" /></a><br />  Image posted by <a href="/userinfo.php?name=First+King" class="indisplay">Wynne Route</a><br />
   Submitted on Saturday, 20<sup>th</sup> April 2019<br />
-  With picture contributions to 3464 other pubs<br />
+  With picture contributions to 3485 other pubs<br />
 <a href="/pubpictures/70517/" class="smallbutton">View all this pub's pictures</a> (2 more images)
  
   
@@ -263,7 +263,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul id="Custom2">
 			<li>Official site of the Glenisla Hotel - <a href="http://www.glenisla-hotel.com" title="Submitted by:- elizabeth mcgraw" target="_blank">www.glenisla-hotel.com</a></li>
           </ul>
-</div>
+<ul id="Custom2"><li class="wplink" id="TAY/37">CAMRA WhatPub :: Glenisla Hotel - <a href="https://whatpub.com/pubs/TAY/37/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -277,7 +277,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([56.72977148671562, -3.28414575197598], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,38 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Pitlochry, 22.98 miles, 7 hr 23 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Invergowrie, 24.77 miles, 7 hr 58 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('k`gyInk`SHG\\CHb@b@x@Pf@Pp@l@hBb@x@\\vALhA?rCBbA\\`IBrGJdBh@pFHfAPrFRxEl@|CPhCn@dEDnC{@rGm@pDoBxFaArFgAhCiCrFiBpEoOhPmCjFg@z@cHvGmCdDiDvD_DdBeAXfApMZ|C~CcCl@]l@FIhB]fBgBpFMdAm@jHGfCCvBn@zWIz@{AvKkCpPkAlKGzA\\zRq@dVk@~GGxBBhAh@lEfA`HGbJ~ChNRvItKvPrBzBz@`BvCtCdCfBX^Hl@JjDf@hFCnDFfCRjB^dBp@bEt@zJ?jAChAS`CDx@TxA?z@E~A_@hIOdAo@lBEr@c@dOG`AKt@Er@Dr@lC~PFlASrEAr@\\xEJXrFnFZj@`@|ApBpJzBxJ@|@MjCFpB|AvJRrCXjFNbBN|@j@fBhAtCb@f@b@TrDUr@Yd@Ah@NpBnBpB~Br@|@f@dBl@xA`BlB?XQzA}@pEaAzDK~@DbAlHnVn@lBzFMlANbBzBvFlGjC|BdKnQrBnFfAdDt@|@zBfAdEtC~DjDrFpEd@N^C|B[h@HbBl@`BbAeCrMcDtQyInXsBhFkAhB_AtAaA~@sDzCaAbA}@lAs@nAs@`Bu@nBu@hCoLxa@}FvR}Jf]]pCeA`NqA`VH|EfAnDfDpEfFxF|CtLlBrHv@lDd@zJvAvMZlFL~T?hK]fP[|Le@dKx@vN@`IOvFuAnPk@vJuAxSKvCBl@DfCp@~Gd@fGDzBIlCy@zEoAvEeAxFAXHZk@t@eBnA}ClA{Az@qC`Go@fBYX_@h@Wh@MfBWbA^f@|@p@Z^\\f@Fl@BnBO|B?b@LdAObA@jBQnBcBtCq@r@o@\\}@Vg@?ITG^\\f@Y?wAV}DtJmDlH_@dBq@xA_@bA?zAFz@KhBkCbP?x@Gz@Mf@w@dASf@Yb@OZYfAm@Pw@\\wA~@a@HQMYAk@x@_GfEKf@M~AWXM?k@~@Q`@k@^mAp@y@Rk@_@wAmAw@HkBVUb@SFOKi@TcAn@e@B}@v@m@^e@l@[bAU~@o@j@]j@{@bAWb@}@`@i@b@w@xAWlAkAlAc@DQK]REf@g@pDQp@UNYG[NqApAOd@_@h@SNoAKc@B]b@oAlDc@`@a@LaCZ_Ah@}@z@g@bAg@vAMdAE`AOjBYdAo@Ns@hBkE|Rc@jBWlCKtF[zDm@|CuA`GiAvHqApHmAnGqHx^uCbH_CbMeC~L_EzQg@fDCtBd@hIUvCw@zC]bBs@~FcB|LEfAD~@d@vCp@jFv@fH^lFAlAI~@oA~EX~ALtARvC@v@ErAc@`D[hEk@lCAxBCjAoArI?fATpDHzCNbD?f@YnC_@lGg@pC[pBc@bCExBgBhO?fArA~KDjA?|CGrAk@rFy@`DI^oB`Wa@zEExCbAzQj@tFBxFl@|KVfGPhDTfCp@lG\\lB^nAxA`DZxA~@nGx@bEX|@Hl@j@pCb@Ex@HVAp@d@`BrBhA|AfAfC|FzJx@zBn@zCn@zEdBxD\\~@ZlAt@nFb@`Cb@fBv@hBv@vAjBjBf@~@dBnEbClHrAdDp@pCdCnIvMnRh@^bAb@|AJd@PX`@t@hB`@`@bB|@~FdG|CxDzD|DnBfD~DjJhB`G~@zDlA~Bf@rBzBpElBlJz@~AfDbMhClFv@fCbAbAnAtBz@r@nC|AbDfCv@Z`BzBpPlZlHlSVx@J|AtAxYxA|P`@x@lAl@r@|@\\jAn@dGj@jCdA`Ef@fAr@t@x@jA~CjCbAlA|A|D\\tAV|Ab@tDNt@rAdElFvFJTDTHhBDVDLLJp@LRHTVb@t@d@bBb@f@`An@`BPZNzHhHzLpJNPHZpQiBZKz@|Dr@tCNbAMdED^hBtAfB|AZrA`BbCXt@x@dDV|AAt@YhC@XZzB@jCJlAA`DNvDX`A`@jJ\\fAZRnBzEe@b@YxA?N@VXv@l@b@nBnFHlATr@PxAFrBKnB@`BJdAJ~D?bAId@QTKt@?b@FEHDr@MCb@In@c@|B[`Cg@fFkA~MOdAC~@HtD@jABRYnBMRIDg@Kg@Wu@~FKnCM~@Q^Gh@Qt@MfAAf@`@CH}@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('k`gyInk`SHG\\CHb@b@x@Pf@Pp@l@hBb@x@\\vALhA?rCN|EpBOz@AJELa@HMHGn@EHILq@DgB?y@dDYlB\\fByCnAw@dCC~@aIlBcFtAgAVqAB}Ad@Ql@HvG{@xT{@|BFrGBlCxAhCuAtKeDjBsBhDaA~EeBtFgDhFeFfP_Q`@gAXYz@cATQx@w@~J}FvByApAo@rAcAnA{AvB{Bt@sAn@S`BuBlDoAfF}CFPl@bATHh@ETFh@kA`AW|Do@lAe@fAcAV]zA{@rBw@n@K`@OX[^_AzBmDbDcHvB_IDY?_AE]O[Go@Ho@f@q@bA}@pAa@z@q@d@PFCHMvAkHxA_FXgAZu@Ze@fFgDtJkFZc@^_A^SxAWfA@|DXvNg{@n@aBhAcLzBiExBkFnBs@hBgDjB}AfCmAhASpFwGnCwF~@cA`@ItAF|@f@rA?zBeApHyCpC_AbB{@tUkAbDmAfFFxJkAtB]t@YT]lA}B~E}CrBiE`DsDN]nAoBpOGzAq@`GuAjAMlB?d@IhB@d@GnAq@n@w@`@Yx@Od@?|@NhA^dDLx@Lj@Bl@HlBZz@`@VRrAxATFTCJId@o@l@e@xEuAfBWrB@dAFn@PxB|A`DrAj@?pBa@nAGbBAjCu@jBMl@@\\Dn@XRR^j@z@l@~AJ`CfAn@NjAFnGhAnFx@~Bh@j@XdAhAjAr@~Aj@tAN`D~Bj@dA`@h@rEbD\\H^lAlAeBNKZlAN`@HJJv@vC_@pBiCl@q@x@mAVi@JG@e@HDNEFKt@sBH[Ho@Bk@L[ZJL^dHkJdAtDrBwClKwNZUBgPfAep@Dw@Hq@j@kBNNPALMHYBg@CQ`HiN`^_s@^kB?{HLgBTeBjC}GtHsUdAeCv@oAv\\ke@tQ{WxGgKZu@lGoQd@{AdA_BbCwBbAgAbMcOn@qAjHqRPWb@SXGEwACkELqEVqDz@_G~@{B`@s@\\UTKbAMRb@n@bAv@I~@F`@c@zAgDp@u@lRu[n@e@n@?~Bz@fCr@fBHnCSzC_@bLeDn@WvAcArS{W|@cAZIJDPHJLl@`Bn@rAxAjCjBtBzB~AfEhAP_AJeAhAuHv@aC|@}BpAoCx@gAtZiWtI}HjKuIJ`@zAyC`D`JbEqG`DtJ`A{@pByCt@iBbDiKnCwH~@sBpAeBpBo@z@k@tAqBlA}@`@a@`AiBXY`Bs@zApBjBaHrAs@`AsBTcAIa@^eEE[M?HqCIwAG}FLaEf@uE~DqGzAyDt@iAl@gBr@sC~BwMx@_En@aBtE}H|BqFlAgBt@k@Ka@kAgI}CuQhFaNbCiKjA}D|CsJV_AbAuGnNsd@Tc@jCiChD_A|JFpOPtKIrJB`B}JrC{Ot@gGzCJf@uGVcCPs@L[|BmDQ?o@P}A_@_AFm@K^aDxAcI|AcG~CkIxBeE~CaEpCoBvEoCnCu@xBWxAAvBN`BZ|BJt@JvAVtBDpBQjAa@hBw@|@g@xAmAlC}CnBkDzAsDv@qCr@mDn@}DZqC?a@SkEHq@JSXM|BVTEvBeBt@mAhCeGZa@t@U`@~@pAk@lOGl@MbA{@|DkCbDuAd@[rCkEfCoGnDyH~H{QGO}A{]zF}ClD_ClBg@hDg@vP{B~AL`L{Ajg@DxGRfI]hADnHxBj@FXOL]FaABgCZ_@tBMbJ?v@_@@LHPDDNCHS@K`AV~AEz@IV@j@Vn@e@JYVOL@bAl@b@@\\GhAa@pCo@z@E?z@\\JDu@N_@~BYt@YNRP@nB]DIEaEFQh@INb@d@j@`@lADr@Xd@ZIjBYQjKxCdA`KvCv@j@hAt@L`@NXd@\\p@AfBo@TRRf@LbAr@fDxCfHhAaCp@q@~BeDX~@v@eAd@jB\\QHKBgBBWBAbADHHH^RjDT|A|@~ALD`@@b@Yl@S\\BR\\Xt@LRbGhETVH^Dh@RRj@|@N^Pi@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([56.72977148671562,-3.28414575197598], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

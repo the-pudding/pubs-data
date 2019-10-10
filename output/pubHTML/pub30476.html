@@ -126,13 +126,13 @@ var thispub = 30476;var pubaddress = "2 Village Road";var pubname = "John the 
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 30476;var pubaddress = "2 Village Road";var pubname = "John the 
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="0skcq6u21k3d9sjk4hrn07goi5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="b4bnqb0i9u5iqifh0k78qe8el5" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 30476;var pubaddress = "2 Village Road";var pubname = "John the 
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -254,7 +254,7 @@ var thispub = 30476;var pubaddress = "2 Village Road";var pubname = "John the 
 The bar has ten hand pumps which had the two GK beers with an extra Ruddles, one unused, Sonnet 43 Aurora &amp; Raven and four festival ales. I went for the King Goblin (&pound;2.05 festival price) which was in good nick. This seemed to be a decent enough Spoons with a much better choice of beers than many.</p>
 <p class="Reviewer">On 3<sup>rd</sup> April 2017 
   - rating: <b>7</b><br />
-  <span class="leftspace">[User has posted 2121 recommendations about 2116 pubs]</span></p>
+  <span class="leftspace">[User has posted 2130 recommendations about 2125 pubs]</span></p>
   </div>
 </div>
 
@@ -272,7 +272,7 @@ The bar has ten hand pumps which had the two GK beers with an extra Ruddles, one
 			<li>Official site of John the Clerk of Cramlington - <a href="http://www.jdwetherspoon.com/pubs/all-pubs/england/northumberland/john-the-clerk-of-cramlington-cramlington" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">www.jdwetherspoon.com</a></li>
 			<li>CAMRA WhatPub - <a href="http://whatpub.com/pubs/TYN/6507" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">whatpub.com</a></li>
           </ul>
-</div>
+<ul id="Custom2"><li class="wplink" id="TYN/6507">CAMRA WhatPub :: John the Clerk of Cramlington (JD Wetherspoon) - <a href="https://whatpub.com/pubs/TYN/6507/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -286,7 +286,7 @@ The bar has ten hand pumps which had the two GK beers with an extra Ruddles, one
 
 	var mymap = L.map('mapid').setView([55.08651300000000, -1.58471400000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '

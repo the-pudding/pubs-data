@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Red Man pub in Kidderminster, Worcestershire, DY10 2DZ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Red Man" />
+  <meta name="keywords" content="The Red Man, Blackwell Street, Kidderminster, Worcestershire, Kidderminster Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Red Man in Kidderminster" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/42001_42500/42188_08bb05df.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/42188/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="52.39015900000000" />
+<meta property="og:longitude" content="-2.24707100000000" />
+<meta property="og:street-address" content="Blackwell Street" />
+<meta property="og:locality" content="Kidderminster" />
+<meta property="og:region" content="Worcestershire" />
+<meta property="og:postal-code" content="DY10 2DZ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Red Man in Kidderminster? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Red Man the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/42188/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Red Man in Kidderminster" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Red Man " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/42001_42500/42188_08bb05df.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/42188/" />
+<meta name="geo.position" content="52.39015900000000;-2.24707100000000" />
+<meta name="geo.placename" content="The Red Man in Kidderminster" />
+<meta name="geo.region" content="UK" />
+<title>The Red Man in Kidderminster : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":42188},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(42188);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 42188;var pubaddress = "Blackwell Street";var pubname = "The Red Man";var pubpostcode = "DY10 2DZ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/worcestershire/" title="Pubs Galore : Worcestershire Page">Worcestershire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/kidderminster/worcestershire/" title="Pubs Galore : Kidderminster Page">Kidderminster</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Red Man Page">The Red Man Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="ai9lsbo4i1kb1jsre9suel7bf3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/42188/" class="indisplay"><img src="/images/display/42001_42500/42188_08bb05df.jpg?w=2" alt="Picture of The Red Man" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
+  Submitted on Thursday, 9<sup>th</sup> March 2017<br />
+  With picture contributions to 24825 other pubs<br />
+<a href="/pubpictures/42188/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/42188/">Pub map</a><br /><a href="/pubreviews/42188/">Pub reviews (2)</a><br /><a href="/pubpictures/42188/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=42188" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Red Man, Kidderminster Central, Kidderminster</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Blackwell Street</span><br />
+
+
+<span class="town">Kidderminster</span><br />
+<span class="postcode">DY10 2DZ</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 0156267555</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Punch Taverns</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/kidderminster-central/worcestershire/">Kidderminster Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Red Man  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review116492" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Red Man</h6>
+<p class="old">Located just inside Kidderminster ring road, the Red Man is a large modernised bar and live music venue with a number of clearly defined separate areas. The front section of the pub has a small lounge-style area over to the left with some nice comfy looking seating arranged in the space before the bar appears. The servery runs from here parallel to the front wall before turning 90 degrees and heading towards the rear of the main room. It boasts a modest tongue and groove counter and run of the mill dark wood bar back and much of the space around it has been left unfurnished, allowing for plenty of standing room which I imagine is useful on busy music nights, the full run down of which could be gleaned from an &#039;Upcoming Events&#039; board on the right hand wall. The room opens out to the right into a remarkably bland area with striped wallpaper which was being used by the evening&#039;s musical entertainment - a bunch of middle aged men playing Dad-rock cover versions to a pub full of disinterested customers. Beyond the bar, a spacious carpeted area can be found with a couple of lounge chairs and some high tables and stools in front of an open window that looks down into the live music area. A huge clock on one wall provided a bit of visual stimulation, but otherwise it was all a rather drab, thanks mainly to the fact it has been painted in an unimaginably dull shade of grey. Further back there is a dark, bare boarded space with standard seating and a TV showing live football with the commentary fighting against the live music. One final room can be found to the rear left in what appears to be another lounge of sorts, but this time with a loud music soundtrack which was battling against the football commentary and the band - all very cacophonous. There is a large patio garden to the rear but I didn&#039;t get a particularly good look at it in the dark.<br />
+There are four handpulls on the bar but they&#039;d only managed to get two operational on a Friday night, leaving a choice between Wye Valley Butty Bach and Sharps Atlantic. Wye Valley HPA had recently gone off whilst the fourth pump remained unclipped. A disinterested barmaid served up a passable drop of the Butty Bach which I enjoyed whilst watching the football.<br />
+This place strikes me as a pretty good venue in which to put on some decent local music but it&#039;s so lacking in character thanks to the drab grey colour scheme, standard lounge furniture and lack of decor that much of that promise falls away. I enjoyed the pub as a brief calling point on a crawl around town but it remains a fairly unmemorable experience and one I&#039;m unlikely to repeat.</p>
+<p class="Reviewer">On 29<sup>th</sup> March 2017 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2321 recommendations about 2321 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review62143" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Real+Ale+Ray">Real Ale  Ray</a> left this review about Red Man Inn</h6>
+<p class="old">Newly refurbished large open plan pub with enclosed beer garden. This well run pub serves four ales and serves food all day. I went for the Wye Valley HPA.</p>
+<p class="Reviewer">On 24<sup>th</sup> July 2012 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 2857 recommendations about 2857 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Red Man</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="157938587642853">Facebook - <a href="https://www.facebook.com/TheRedManKidderminster/" target="_blank" rel="nofollow">The Red Man Kidderminster</a></li></ul><ul id="Custom2"><li class="wplink" id="KID/1007">CAMRA WhatPub :: The Red Man - <a href="https://whatpub.com/pubs/KID/1007/" target="_blank">whatpub.com</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/42188/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([52.39015900000000, -2.24707100000000], 16);
+
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([52.39015900000000, -2.24707100000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Kidderminster, 0.78 miles, 14 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Blakedown, 3.53 miles, 1 hr 8 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Hartlebury, 4.56 miles, 1 hr 28 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('qmw~Hr|uL|BV|AJ`@@JEFMrArARJfAc@fDQLIj@w@l@kA`@kAvBkETs@F]LGCkAe@{@\\u@z@oAPa@OYI[Ci@@g@TqCEAz@_JLsBb@{IPNf@l@m@WAHvAl@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('qmw~Hr|uLmAMC_@EMQOIAHUp@iCt@_B|@aAf@c@JSJa@Jw@@q@?w@c@kDqAcN_A{E{AoDqBiJkAgIsAuPMkCEuG@qCLADgELeBAgCi@qMBa@UBOqGWXKDEmBOeCY}BcAkF{@cE]oB_@mGS}BgBkIUiBM}BEgD?aJEyBMkBUoB}EcV[sCKiD?{DCcB[kEk@_FeB_MSgEJEDj@HBNIBMGw@JMiCyUO_CNqDB}AM_Bq@aEm@uBwAoESs@Wg@OGyBqE}DeJaBiEiAcCmBcDoBwDc@iAWaAkDuQOJUGyAaAsAgAgCsCs@}@HSHa@?MAGY[[Ug@`AWzA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('qmw~Hr|uL|BV|AJ`@@JEFMrArARJfAc@fDQLIj@w@l@kA`@kAdApAlAnAnDbB`BjAnBz@t@d@vD~ClAjAdCvChAeDNzA\\UVBHPb@dBHHx@y@b@EL\\`@c@\\QXd@p@ObB?tDUx@FlE?pAQfC_A~CoBrAm@pCiBtH}Gh@u@f@y@vBeEF]EWAW@YDUHSJMNGR?h@a@VW~AqC~@gB`AuAxBoD~EaJt@cAf@i@b@S|AYPAx@@vCi@FBTCFELWBOVc@x@Y`@WZW|CyDn@cAvAiA|BuBbFyCv@YzKwG|FkEtAu@~C{Cf@Wv@IrEOfAMhEcAxB[fAYjC_@bBAzBNv@?l@KjBk@d@e@`@m@jAgCPY~AwAd@g@R[Tu@Lw@j@sERe@PKXEdAb@l@b@x@t@jBtB|ArA|Az@nA^rAVn@Bb@En@WnBuAn@W`Gk@xAq@hG}BxEuArDq@bG}@pBCxDe@BM@g@AkAY_JQcEQmG?[', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.39015900000000,-2.24707100000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=42188">View all updates for The Red Man, Kidderminster</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        29<span class="sup">th</span> Mar 2017, 22:05
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        9<span class="sup">th</span> Mar 2017, 21:04
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11842188">No</span> <span id="discdetail11842188" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2017 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10742188">No</span> <span id="discdetail10742188" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2017 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11442188">Yes</span> <span id="discdetail11442188" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2017 by Pub SignMan</span></li><li>Car Park : <span id="fac11342188">No</span> <span id="discdetail11342188" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2017 by Pub SignMan</span></li><li>Child Friendly : <span id="fac12142188">Yes</span> <span id="discdetail12142188" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2017 by Pub SignMan</span></li><li>Darts : <span id="fac11142188">No</span> <span id="discdetail11142188" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2017 by Pub SignMan</span></li><li>Hot Food : <span id="fac10342188">No</span> <span id="discdetail10342188" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2017 by Pub SignMan</span></li><li>Live Music : <span id="fac10842188">Yes</span> <span id="discdetail10842188" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2017 by Pub SignMan</span></li><li>Live TV Sports : <span id="fac11042188">Yes</span> <span id="discdetail11042188" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2017 by Pub SignMan</span></li><li>Micropub : <span id="fac12242188">No</span> <span id="discdetail12242188" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2017 by Pub SignMan</span></li><li>Pinball : <span id="fac11642188">No</span> <span id="discdetail11642188" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2017 by Pub SignMan</span></li><li>Real Ale : <span id="fac10142188">Yes</span> <span id="discdetail10142188" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Real Cider : <span id="fac11942188">No</span> <span id="discdetail11942188" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2017 by Pub SignMan</span></li><li>Wheelchair Access : <span id="fac12042188">Yes</span> <span id="discdetail12042188" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2017 by Pub SignMan</span></li><li>WiFi : <span id="fac11542188">Yes</span> <span id="discdetail11542188" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 March 2017 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 5 reviewer(s)" title="Pub has average rating of 8 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/42216/" class="List1">Ye Olde Seven Stars</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/42177/" class="List1">Old Peacock Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 2 reviewer(s)" title="Pub has average rating of 7 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/42138/" class="List1">The Blue Bell</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 5 reviewer(s)" title="Pub has average rating of 6.5 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/42202/" class="List1">The Swan</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84453/" class="List1">The Vault</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 10 from 1 reviewer(s)" title="Pub has average rating of 10 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82534/" class="List1">Cue &amp; Brew</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/42141/" class="List1">The Chapel Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/42159/" class="List1">The Golden Lion</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

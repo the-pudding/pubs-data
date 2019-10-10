@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Dry Dock pub in Leeds, West Yorkshire, LS2 3AX : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Dry Dock" />
+  <meta name="keywords" content="The Dry Dock, Woodhouse Lane, Leeds, West Yorkshire, Leeds Central, University, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Dry Dock in Leeds" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/69501_70000/69927_9a455928.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/69927/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="53.80446800000000" />
+<meta property="og:longitude" content="-1.54767200000000" />
+<meta property="og:street-address" content="Woodhouse Lane" />
+<meta property="og:locality" content="Leeds" />
+<meta property="og:region" content="West Yorkshire" />
+<meta property="og:postal-code" content="LS2 3AX" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Dry Dock in Leeds? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Dry Dock the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/69927/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Dry Dock in Leeds" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Dry Dock " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/69501_70000/69927_9a455928.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/69927/" />
+<meta name="geo.position" content="53.80446800000000;-1.54767200000000" />
+<meta name="geo.placename" content="The Dry Dock in Leeds" />
+<meta name="geo.region" content="UK" />
+<title>The Dry Dock in Leeds : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":69927},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(69927);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 69927;var pubaddress = "Woodhouse Lane";var pubname = "The Dry Dock";var pubpostcode = "LS2 3AX";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/west-yorkshire/" title="Pubs Galore : West Yorkshire Page">West Yorkshire</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/leeds/west-yorkshire/" title="Pubs Galore : Leeds Page">Leeds</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Dry Dock Page">The Dry Dock Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="9c2sqm7ebcg89jivtiai3jd7j5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/69927/" class="indisplay"><img src="/images/display/69501_70000/69927_9a455928.jpg?w=2" alt="Picture of The Dry Dock" /></a><br />  Image posted by <a href="/userinfo.php?name=Brainypool" class="indisplay">Jon B</a><br />
+  Submitted on Saturday, 21<sup>st</sup> September 2019<br />
+  With picture contributions to 324 other pubs<br />
+<a href="/pubpictures/69927/" class="smallbutton">View all this pub's pictures</a> (14 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/69927/">Pub map</a><br /><a href="/pubreviews/69927/">Pub reviews (3)</a><br /><a href="/pubpictures/69927/">Pub pictures (15)</a><br /><a href="/core/pubaudit.php?id=69927" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Dry Dock, Leeds</h1>
+  <div class="pubposter">Pub added by <a href="/userinfo.php?name=aleandhearty">aleand hearty</a></div>
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">Woodhouse Lane</span><br />
+
+
+<span class="town">Leeds</span><br />
+<span class="postcode">LS2 3AX</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 01133912658</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/leeds-central/west-yorkshire/">Leeds Central</a>, <a href="/areas/university/west-yorkshire/">University</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Dry Dock  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review76012" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Dry Dock</h6>
+<p class="old">As you approach this pub, the temptation is to assume it&rsquo;s some sort of elaborate student prank &ndash; a grounded barge on a traffic island in between several Leeds Met University buildings? Surely not. But this is a fully functioning pub and quite an interesting one at that. The boat isn&rsquo;t entirely intact, with one side having been removed to allow a brick built extension to be added, cunningly hidden under a grassy embankment so that when viewed from outside, the boat appears to be buffeted by a big green wave. This extension forms the left hand side of the pub which houses the entrance, servery, pool table area and toilet block, allowing the actual interior of the boat to be used entirely for seating. A few tub chairs can be found close to the pool table which is next to the front door, whilst high tables and stools run opposite the bar with comfier sofas and plenty of standard seating along the right hand wall. Skylights provide a good amount of light in the absence of any windows, which was much appreciated by the busy, student oriented crowd enjoying food from the cheap menu. The pub is part of the Scream chain and if further student credentials were required, the indie soundtrack and TV screens showing Total Wipeout should do the trick. A door at the rear leads to a smoking area and there are seats available outside on the upper deck.<br />
+A strange ale selection faced me at the bar with Greene King IPA, Acorn Yorkshire Pride and Black Sheep Bitter available, the latter of the three being the strongest at an underwhelming 3.8%. There were no seats available, so I opted for a quick half of the Yorkshire Pride whilst propping up the bar, but sadly it seemed to be a bit past its best.<br />
+This is certainly a fairly memorable bit of pub design and I can see why it&rsquo;s popular with the local student population. Not a destination pub by any means, but well worth a look in passing, if only for the novelty value. And if you really love the place, you could always seek out their sister pub of the same name outside Leicester University.</p>
+<p class="Reviewer">On 25<sup>th</sup> October 2013 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2321 recommendations about 2321 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review57663" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about The Dry Dock</h6>
+<p class="old">You certainly wouldn&#039;t expect to find an old barge left high and dry in the middle of an interchange some distance from the nearest navigable waterway, and the idea of a Scream outlet being a place of interest is also rather implausible.  The Dry Dock is also much larger inside than might expect because there is a side extension well hidden by landscaping.  Being right by the university, the clientele and staff mostly appear to be students.  Plenty of food offers.  Pool.  Three handpumps, not only offering Black Sheep but also Tyke and Porter (&pound;2.80 and in good condition) from the local Bridgehouse microbrewery.  Although I only sought the place out because I had a voucher for a free burger and chips, I was pleasantly surprised and enjoyed my visit.</p>
+<p class="Reviewer">On 11<sup>th</sup> March 2012 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 5722 recommendations about 5722 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review35486" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Acebikerchick">Julie Windmill</a> left this review about The Dry Dock</h6>
+<p class="old">Dry Dock is an unusual pub that takes the form of a large boat, it serves a wide range of beers, wines and spirits and is open until 2am from Monday to Friday. Opposite Leeds Uni it&#039;s often frequented by students and it&#039;s not uncommon to see a queue a mile long outside. And it plays some rocking music...</p>
+<p class="Reviewer">On 9<sup>th</sup> October 2010 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 2 recommendations about 2 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Dry Dock</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Dry Dock page at the Scream site - <a href="http://www.screampubs.co.uk/dry-dock-leeds" title="Submitted by:- aleand hearty" target="_blank">www.screampubs.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="136469853041878">Facebook - <a href="https://www.facebook.com/drydock.leeds/" target="_blank" rel="nofollow">The Dry Dock Leeds</a></li></ul><ul id="Custom2"><li class="twitlink" id="316487627">Twitter - <a href="https://twitter.com/thedockleeds" target="_blank" rel="nofollow">DRY DOCK</a></li></ul><ul id="Custom2"><li class="wplink" id="LEE/296">CAMRA WhatPub :: The Dry Dock - <a href="https://whatpub.com/pubs/LEE/296/" target="_blank">whatpub.com</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/69927/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([53.80446800000000, -1.54767200000000], 16);
+
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([53.80446800000000, -1.54767200000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Leeds, 0.9 miles, 17 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Burley Park, 1.64 miles, 31 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Headingley, 2.44 miles, 47 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('cukgI`imHHpANQ\\c@|@{AFHZY^I~AaCv@pAlBzBNCj@wB\\b@RH|A?pAIlEg@VSNC?SNC@oBbC@|FLnACjD[fAAFZSjAFf@\\G^MrAiALAtBVj@pHPvA', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('cukgI`imHHpA}AnAyBvAg@j@y@nAiAtBFhBCLYbKELGBK@UMYhEKJ?VE@CRKEK@OP?d@DHIEUVUlEa@bGo@dHWtDAt@Gz@UAELGDQx@aAxDm@bDOjAgAbDq@rC{AvESz@LfBi@rHq@i@S~CqBc@g@fIH~@RzAoHjFBNy@j@[jHRnGNpBJdARlAh@`CFCz@jDDn@I\\J`@{@hA@F~@oA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('cukgI`imHHpA}AnAyBvAg@j@y@nAiAtBFhBCLYbKELGBK@UMYhEKJ?VE@CRKEK@OP?d@DHIEUVUlEa@bGo@dHWtDAt@Gz@UAELGDQx@aAxDm@bDOjAgAbDq@rC{AvESz@LfBeBfWu@lH}C~BH^gDdCdA`GmA|@`BlJaAh@z@dFVbAc@b@EOORDLe@l@r@~B_@Ha@V_@`@OZq@hBk@fBuA|G_@dBM`@OVeCxCENAzBCPgDxM}C|MQdAaBLDRSd@MBDlAO@a@rAWxAYvBOfBo@nOCOY]YAID@GEC', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.80446800000000,-1.54767200000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=69927">View all updates for The Dry Dock, Leeds</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        21<span class="sup">st</span> Sep 2019, 19:11
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Brainypool">Jon B</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        21<span class="sup">st</span> Sep 2019, 16:00
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Brainypool">Jon B</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11869927">No</span> <span id="discdetail11869927" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 October 2013 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10769927">No</span> <span id="discdetail10769927" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 October 2013 by Pub SignMan</span></li><li>Beer Garden : <span id="fac11469927">Yes</span> <span id="discdetail11469927" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 October 2013 by Pub SignMan</span></li><li>Car Park : <span id="fac11369927">No</span> <span id="discdetail11369927" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 October 2013 by Pub SignMan</span></li><li>Hot Food : <span id="fac10369927">Yes</span> <span id="discdetail10369927" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 October 2013 by Pub SignMan</span></li><li>Jukebox : <span id="fac11269927">Yes</span> <span id="discdetail11269927" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 October 2013 by Pub SignMan</span></li><li>Pinball : <span id="fac11669927">No</span> <span id="discdetail11669927" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 October 2013 by Pub SignMan</span></li><li>Pool Table : <span id="fac10469927">Yes</span> <span id="discdetail10469927" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 October 2013 by Pub SignMan</span></li><li>Real Ale : <span id="fac10169927">Yes</span> <span id="discdetail10169927" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Real Cider : <span id="fac11969927">No</span> <span id="discdetail11969927" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 October 2013 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54343/" class="List1">Strawbs Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 1 reviewer(s)" title="Pub has average rating of 8 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/42698/" class="List1">The Fenton</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65735/" class="List1">Popworld</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 9 recommendation(s)" title="Pub has 9recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 6 reviewer(s)" title="Pub has average rating of 6.5 from 6 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56945/" class="List1">The Cuthbert Brodrick (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65731/" class="List1">Revolution Leeds Electric Press</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65734/" class="List1">Spice Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65733/" class="List1">All Bar One</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 22 picture(s)" title="Pub has 22 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 9 recommendation(s)" title="Pub has 9recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 8 reviewer(s)" title="Pub has average rating of 6.5 from 8 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/70102/" class="List1">The Hedley Verity (Lloyds No 1)</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

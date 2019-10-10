@@ -126,13 +126,13 @@ var thispub = 87248;var pubaddress = "Pit Lane";var pubname = "Ketton Sports &
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87248;var pubaddress = "Pit Lane";var pubname = "Ketton Sports &
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="dkmddshtmc3jl9qupjrcktgar3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="6hfk34789q8lqi4m8u2udnulv6" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87248;var pubaddress = "Pit Lane";var pubname = "Ketton Sports &
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -241,12 +241,14 @@ var thispub = 87248;var pubaddress = "Pit Lane";var pubname = "Ketton Sports &
   <h2>Reviews of Ketton Sports & Community Centre  <span class="h2note">(Average Rating: <span id="averagerating"><b>5</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
   <div id="newreview"></div>
   <div class="hline"></div>
-  <div class="indreview"><div id="review135491" class="reviewdiv">
+  <div class="indreview"><div id="review135491" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
 <h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about Ketton Sports &amp; Community Centre</h6>
-<p>A big new building which serves as the social base for a myriad of sports clubs. Interior is straightforward large room for socialising and events. 4x dart boards and a nice view of the green. 3 ales (maybe a little over eager?) - Sharps (a bit pump tired), Hancocks HB and London Pride. Good chat with the staff, who went over various beers they could order and we threw in our suggestions based on our pub knowledge.</p>
+<p class="old">A big new building which serves as the social base for a myriad of sports clubs. Interior is straightforward large room for socialising and events. 4x dart boards and a nice view of the green. 3 ales (maybe a little over eager?) - Sharps (a bit pump tired), Hancocks HB and London Pride. Good chat with the staff, who went over various beers they could order and we threw in our suggestions based on our pub knowledge.</p>
 <p class="Reviewer">On 4<sup>th</sup> August 2018 
   - rating: <b>5</b><br />
-  <span class="leftspace">[User has posted 3794 recommendations about 3782 pubs]</span></p>
+  <span class="leftspace">[User has posted 3912 recommendations about 3900 pubs]</span></p>
   </div>
 </div>
 
@@ -277,7 +279,7 @@ var thispub = 87248;var pubaddress = "Pit Lane";var pubname = "Ketton Sports &
 
 	var mymap = L.map('mapid').setView([52.63631620000000, -0.55064990000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +304,39 @@ var thispub = 87248;var pubaddress = "Pit Lane";var pubname = "Ketton Sports &
 
 
 </script><div>
+<i class="fas fa-train"></i> Stamford, 3.91 miles, 1 hr 15 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Oakham, 10.06 miles, 3 hr 14 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Corby, 14.38 miles, 4 hr 37 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('cpg`I`qjB\\h@lJeUeDsOJIcBwHsBeJmEeTaGmXeBsHcAgD}AuEoD{Lc@}Be@}C@s@Cw@UsAWo@e@i@iA{CkAwBmBoCqCeDeCgCsC_C_B{A_AcBIY]kB[_L@uFHaD?kAIuAf@O@ULq@Ng@tFoJb@QPc@LPA]SyAt@U?mCC_@BgAA{@HaB?gATyB\\a@|@]PYVU@y@Oy@Oe@UCWFOa@XcAd@eAf@uAJ{@Pe@d@w@POHWAy@N{BJ_AFURaBh@wC`@cA`@wCXsCCs@_@gBkAsDA_C@oALeAToFB}Ei@aBUSQ[o@gCOoAMa@c@eD]DKAIIu@{D[qAiAcDe@{@o@oBQKOg@g@gAY{@oBuD[u@i@s@cBoEm@aA}EiCsBcB_B_Ba@s@a@oAu@_Dk@mAMeB?mB~@u@Nc@CYf@|@b@N`AFVjALRREx@q@AeAN?BK@GTU', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('cpg`I`qjB\\h@cBdE}@zBoBpFLFxA^JJFPCTGPBVHRtBfBpBnCh@FJLTp@VVbAh@Z@XZz@RfBn@ZRLNRAfCTHC@FGj@I`@Qf@o@pAWt@WX]d@qAjC]`AqAhFkA`IqAzK}A~DqAbB}@nBk@xAcBfCiCzHuArBiDfEw@r@m@X_Sx[k@r@{DrDUn@g@~@_C|CsCjDcK`RsNxPQA{@vAs@v@M^eI|G?d@e@HsAd@m@^qBdBgDtEaDtEqB~BuApAgChB{@j@wBdAsCjAeRbHc@Hc@?{@WQOiC~AoFzC_@X_@z@Oh@QlAM~CMr@Oj@]t@@x@CdAFr@f@rDlEbDnAt@jArDl@jDTdVAbBLrBkHnTh@zEEROt@Af@LnAHpDt@vAFTVxFzAvCLPd@d@D\\@b@OzE?l@ThD@v@C^Kb@[tBSdBKdAUxC?~DLrA`@~AAr@SvAEbA@h@L~A@p@C`@kBjJIJk@VAb@Db@A|@Gt@Qr@e@t@a@b@MXYz@a@\\q@x@_AfBgBpBmBEHfBFp@XdCJb@DDeAnA_@r@GtDDv@wA^mBPu@PQLOL]j@Ur@If@[fDGX[h@UFs@EKxAsDbXgF`\\kBrMyC~Tg@~EyCla@JDw@`Jq@rI_@vFMbDOxI?tNXrLzAj@R`CM~C[lQP|QIxI?zHF`Eh@|P|AxU~BjPb@bEh@tF`CpQt@hGv@tFd@`CxAbGd@dBpClHfKlSLF@Xa@dE@lDHxDl@rLHj@FJZDDh@AXELMdAEp@n@`OHzBaBh]a@vBIU]x@gD~D[j@M`@Gf@F`AOHFl@a@bCDPgArB[nAE`@ArAB`DArAm@hGu@lGe@`BWn@o@fAGPm@~De@vB@l@M\\KH_@@aBOgAJ', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('cpg`I`qjB\\h@dCcGp@l@~@nA`CtDtBeFDCV@HCj@oAv@tABItAzA|AvAn@v@lAhBTw@bA}BJQL?j@z@LHLANW\\yAFe@|@b@fAt@`CbAt@EL\\@bADLbBjCv@gAVSd@U`AYA[Xg@p@u@LAHKxBFnAOhD{C\\Kd@o@xDiDbCtCxVj[bXdu@R^tBjHzHvZn@~A`BhDxAfEbAd@xd@l]~`@xZUrAfAp@z@hCxAtFtAbD~CbGbCbFtUve@jBzs@YpB?p@XjD@jAHlBXpETfAlDtJnAnIj@~BRj@H^Xz@Jh@bAi@pD`C`P`KzGvDnDtMxAxGhA~Ep@a@jA|BzD~PbQ|p@vAtEhC`HrABfCu@v@a@p@q@bCvAf@h@`DdAf@`@r@HzBjArA~C\\jC`OfXnGrFf@p@VhBZzI\\r@@^n@|ArArC`DlGr@`A`@U?tBDzBRpATl@r@xCDvAb@~Bn@nFb@vBt@jAjA`C`AvAn@xA`AlBl@`A^tBz@~@|@f@~CYhCDvJdCXd@|@PLXtA^JNbAbFLVPDp@G^Q^[LLJb@`Ak@`CqBLSTQN@XHXPdD|CrBfChAf@z@FvAYX@jDxAlFjDp@x@xBxFvFrO`FpR^j@jHjDbEbE|AnCtArBx@t@p@XpFn@j@ElCyAZCj@P^C`BDVLrD`EpGrD`DxA~A`B^h@j@vAb@xAt@`BNd@x@gAjAcArA}@hAg@zAg@xB]~@ExHV`Cp@j@Fn@BfCEv@Hl@\\VTxAtBbAp@~CnA|@?|DiA|Ay@vAiAvDgEtHcHh@{@Tw@NaAh@wFTgAZo@fAw@h@i@\\o@v@cCb@q@`@]f@OxA@d@Cl@W|AgBtFsIbHlLxAxBj@j@pAv@xBjB~@bB`CxGRjAZlE|ApNf@xIbAtRnA~H|@|EzBxUZp@ZRRD\\aDd@wCx@mDr@yBbAcCl@kAbA{A`AqA~A}A|AgAZdBxGmBhDo@fA?`BM`EAdFVBTCfBD\\rAdDRpBNHrC`Dh@gAj@a@jAg@x@AtR`GfHhEfApEl@e@bCaCrAeAjD}A`@j@lGbEh@?tBvCh@CDk@PY?`ALtAxFeBV~DJf@Ib@DdAFT', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.63631620000000,-0.55064990000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -327,14 +361,7 @@ var thispub = 87248;var pubaddress = "Pit Lane";var pubname = "Ketton Sports &
   
 </div>
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11:30am - 11pm</td></tr>
-<tr><td>Monday</td><td>7pm - 11pm</td></tr>
-<tr><td>Tuesday</td><td>7pm - 11pm</td></tr>
-<tr><td>Wednesday</td><td>7pm - 11pm</td></tr>
-<tr style="font-weight:bold"><td>Thursday</td><td>7pm - 11pm</td></tr>
-<tr><td>Friday</td><td>4:30pm - 11pm</td></tr>
-<tr><td>Saturday</td><td>11:30am - 11pm</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>

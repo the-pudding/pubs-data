@@ -126,13 +126,13 @@ var thispub = 87434;var pubaddress = "2-6 Gold Street";var pubname = "Turtle B
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87434;var pubaddress = "2-6 Gold Street";var pubname = "Turtle B
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="uh2cltfkluln7rptjr22set3t6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="8vskbasnfivm4cd5m0t0rb6ba7" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87434;var pubaddress = "2-6 Gold Street";var pubname = "Turtle B
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -246,7 +246,7 @@ var thispub = 87434;var pubaddress = "2-6 Gold Street";var pubname = "Turtle B
 <p>Part of the &quot;Turtle Bay&quot; chain.</p>
 <p class="Reviewer">On 6<sup>th</sup> February 2019 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 783 recommendations about 755 pubs]</span></p>
+  <span class="leftspace">[User has posted 900 recommendations about 870 pubs]</span></p>
   </div>
 </div>
 
@@ -277,7 +277,7 @@ var thispub = 87434;var pubaddress = "2-6 Gold Street";var pubname = "Turtle B
 
 	var mymap = L.map('mapid').setView([52.23688630000000, -0.89769550000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,39 @@ var thispub = 87434;var pubaddress = "2-6 Gold Street";var pubname = "Turtle B
 
 
 </script><div>
+<i class="fas fa-train"></i> Northampton, 0.43 miles, 8 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Long Buckby, 10.65 miles, 3 hr 25 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Wellingborough, 12 miles, 3 hr 51 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('goy}HpinDFjFF`LGnGElBB`GDvA?jCElA]r@s@PEl@I[SQPx@BVAb@CFKF', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('goy}HpinDFjFF`LGnGElBB`GDvAFr@DnBCxC?jD^`GFnBo@C]JWKk@J_ABgDhCz@jBqCzD}BxBEpA@TZbAeBrBg@f@CHAV\\hATlA@RCLX|AO\\YdAK`B[lCsA~I[jC_@dEE~A@rB@pCJzF@|AkBNaBDSFQNMVGXEb@c@vIQl@wBpDM^ETCX@^qFxBg@VqDfDLd@OZj@zBqAdB}CpFk@|@s@~@Nh@EV_AhA?Tc@`H_@Ck@Di@^iAvAb@bA^nANt@D`AM`DcC`HKNEX_BpEoAhEcCpGiEzIQd@eApBPZcBhDOWo@pAw@h@V~AHpAIjDeGq@c@K_@Qc@]Ux@a@\\gCbAu@v@g@nAcAxC}@rBgA|AI^At@RbAZxB}LjBc@FMCiArKiA|JaAxF}D~SmDhTcBnJkB|KuCrM[hBaAvGWrBi@jFObAiBnHYrAa@bC[pCc@fC[nC@XGr@U~@}@~Bw@vAu@x@iC|AcBx@_@Zs@|@u@n@oAbB_AvC[j@g@h@oAnBSh@Mt@WdDuErW}AtK[zAaBbHKbAE|@?r@HfBHz@`@bC\\nAL^uN|p@iC~L[pAOTa@^_WhToEzDMTMxh@uAK@~DCb@Ef@Id@c@nBGLEpAh@xBPf@f@bADVgAu@e@B}D`CiA\\}LvAk@DMj@_AlDi@~ByArIi@lB_AxB]hA]fB_AdHc@`CY~@MVORw@n@[r@Id@cAzHm@~GINeBnAS\\Kb@Gd@i@`TGdA_@`CaAxH[fD_@lGIpCElBE~@W|BK~AChCMtECpFSbC_AxGKtAIj@{@|DiGbWmAtE_GbWOd@cH~Oc@pAaBdGwCxL_A`EcB|E_@lB{@zFu@tDeAtDmApBpA~@f@|@Hb@oBjKR?TG`@e@t@Uz@TXVNf@B~@IrABxBAvB_@~J~IhH|EbE~CdC`@Vx@XdBHbBG', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('goy}HpinDA{@?U}@m@w@qEE]@O[KGMg@iBAM@G`@c@@EIsAa@aE?MGu@wAqMMyA@_@E[{@kFA[]o@g@b@k@uDOs@_@cAm@mAQw@iB}Ja@mCw@kGeB^CgEKgEW}DsAsQ_@sEK}@Ku@Uu@kAgD}AoDwAoCi@u@T}@yDq_@_@iDs@wEWDYsA_EyJaBkEcBeENS~@kGv@cGFMFW^kCJyAa@Se@MqAMoALkDl@K{DM}@iHac@uAwGzBgEDc@D{BAu@[gEMq@Wa@?OkBcH@ULm@jAkFa@}CWcA]oAGyAJgAn@gCDeBOuHAsCIk@Uu@Ye@qAy@mFyAOOSg@u@kC}@iCa@_A[c@Uk@CWa@gBe@cBgAkC[WUWKWCy@FcA?q@Ik@Oe@]ECq@Mk@]MzAeCg@eAsAqBsAeBNi@Qa@]cBOIOSUg@s@iDOe@OQ[CIu@CcA@iCu@oAg@qBk@eEi@wLYiDGyAe@mBGk@uAwGSm@y@cAEQST[gCM_B?i@WcHWaAC]Be@U}ECwEBaAQgAs@gBQ{@McA?sAQ{CIs@Y{B[iBe@kBk@mAa@c@Kq@HoBd@[ZKSa@wHyi@BGi@sLWcH_@gEMCJAFGs@aG\\Qf@a@nAqACYg@kBKq@G{WkCa_@uDwYi@o]Qs[wBwZN{@eA{@_BmC`@kAJc@Hq@@cAE}AQiDc@}G@YFYCQL[^q@FSDc@@m@KwACw@{@s@_Ag@eAcCoA_DkBaDq@aBq@_CmAkDUe@q@g@eCuAqFuCgB_@}Dc@o@@iBj@gLnEwCnAYi@{@sBeAqBiBmC{BkCWFUQa@i@]k@Ys@EWFc@g@iAuEwNmEmOqAiE}@_CaDqHsCwJo@uBc@eA[o@SUc@UsCmAyBiBc@g@kAmCyA}AuA]s@uAy@mEsCsDe@sBu@mEm@_CgE{Ky@_C}A}Ck@w@YWKDS@WMUa@CQC_@c@oAmAeA`C}Gv@sAx@cAaA{CoBeEeAaEi@iAIs@MkCOkAKkATYOiBKq@m@u@q@_D[mAS`AMIWmBoBgK[eDI{BAyAIe@Ec@Ma@g@sAk@gAuB_Dw@]cAiBWeA{@yAcDyIa@kAs@mCQYMIMAc@OIIa@uAUwAg@oAqAsDI]KsAAY[BKDg@m@Og@gAn@Sa@YeAm@sCGGGCIOY{@Qu@QIg@k@wAkBNm@i@s@kBgBJ]rAcBcA_DRsANqBLy@EMC_@HsE^iJDeDAmEE}ASwDeDk_@g@yEKYQS[GcEp@c@Q', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.23688630000000,-0.89769550000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

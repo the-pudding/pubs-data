@@ -126,13 +126,13 @@ var thispub = 12102;var pubaddress = "Broadway";var pubname = "Phoenix at Rain
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 12102;var pubaddress = "Broadway";var pubname = "Phoenix at Rain
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="k6l3qkivuoipgvdsl2b3qo8mc4" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="ohg6u3mskmnbadl6emvhjh0684" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 12102;var pubaddress = "Broadway";var pubname = "Phoenix at Rain
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 12102;var pubaddress = "Broadway";var pubname = "Phoenix at Rain
   <div id="displayedimage">
 <a href="/pubpictures/12102/" class="indisplay"><img src="/images/display/12001_12500/12102_cfcb271ec84f3828e62e03571fcebb14.jpg?w=2" alt="Picture of Phoenix at Rainham" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
   Submitted on Thursday, 14<sup>th</sup> September 2006<br />
-  With picture contributions to 20227 other pubs<br />
+  With picture contributions to 20678 other pubs<br />
 <a href="/pubpictures/12102/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -263,7 +263,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul id="Custom2">
 			<li>Randomness Guide to London - <a href="http://london.randomness.org.uk/wiki.cgi?Phoenix,_RM13_9YW" title="Submitted by:- Kake Pugh" target="_blank">Phoenix entry</a></li>
           </ul>
-</div>
+<ul id="Custom2"><li class="wplink" id="ESW/10003">CAMRA WhatPub :: Phoenix at Rainham - <a href="https://whatpub.com/pubs/ESW/10003/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -277,7 +277,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([51.51760941705477, 0.19022226333618], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Rainham (London), 0.14 miles, 2 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Dagenham Dock, 2.68 miles, 51 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Belvedere, 12.78 miles, 4 hr 6 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('s`myHefd@PQLYJo@V{@`AEr@@ZFDBTRV`@@JB@@Re@|@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('s`myHefd@mCzAoAdA]n@i@f@WHQ?a@[GKEI?g@_Cm@e@@a@EuBYCZY?UPUf@ITAZE|EOjFMvBMHI~@SKeApKkAfK_AfEaIzm@{Fne@@Ze@zDeA`IOt@wApK{B~RFBoA|Ig@|BWz@gAtCmBbEIHQCCESd@DL@PENUt@gArCkF`TVTiAhEMn@Ij@Eh@A~@HDBVDX?RfFJtDQd@B|F|@pIvAJd@b@J', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('s`myHefd@mCzAoAdA]n@i@f@WHQ?a@[GKEI?g@_Cm@e@@a@EuBYCZY?UPUf@ITAZE|EOjFMvBMHI~@SKeApKkAfK_AfEaIzm@{Fne@@Ze@zDeA`IOt@wApK{B~RFBoA|Ig@|BWz@gAtCmBbEIHQCCESd@DL@PENUt@gArCkIp\\ELYXDXA@QhAFFEXMIEPJLS`ADbAKLELqCpN}@hE[dBIz@yCbh@OvG[~^SnMBh@?n@C~JCxD@nDApD?dMGtL@`FFd@CjA@nDDL?h@ELIhKFnHLbA?NOn@f@`@lCjCb@rAJ^NnBBJJPRFP`@r@IDdBTjEjApL|BfRj@`Fz@tIXxBfAlGp@~EJXFj@?X`@lDXpAXr@Mp@Jl@IDHp@bAx@l@~Fe@`FZbFFXHRGP?N@JL~CBpBd@xFVxBf@fD\\z@Pv@@TELBt@BAb@rC?JCBh@zD\\xBx@|DhBtIHPv@jCV\\b@zAPGrAxEbBpEFHj@Ch@@XFj@\\\\h@R`@Vv@N|@DbACt@p@h@`@T\\NXDV@v@On@_@FbBNj@\\WzDiApA[lCKzAZhCV\\^H?NQJCzB^hDNjATvAN`AVb@V|A`Bx@p@t@|BCxAL?FRAF~@p@Ze@^Bt@bAp@Mz@gA~CgA|A\\hBKZ`@R~DHTV^L@HMNNVC@Lv@s@jAw@RIt@U|@KpAIx@YXg@HHZ_@Tb@TRnAJZ?XOFWLO?O\\GBK@y@Xk@b@k@j@a@b@OdAWpAQzACjAHhAR|@VbK|DJAVKxAaBXOPCb@@\\RRn@Hp@LfBF`@nAbFd@nCVOJl@p@zFPjD|@ERdFFrCfAMJDZVNVBJHvBATG`@FBCx@?p@HBD`@GAtZuFEJOFCw@WeAGw@@MDOd@YBM?ILGFD|@ORsBFuDDg@BMDIHC@YPi@LmFEgAE]Ka@O]OO[ITgBb@kDf@sDFUx@yFr@qGTeDrC{ULkHHaAJW?IAUEMAwAJwHD[FQPSzASTEXAZKH?Rc@n@_FXy@h@}@L[t@cAJMN]\\wAV_BH_AXaAHi@~@eHVy@`BiEk@k@aA[^kDyAg@`AaMWIADCAAGEAqDyAE_@q@sl@@_@Fw@OqJIcJCqFGi@i@aBEi@Cg@Bq@Pc@fAaAJm@OePc@qAIq@GyF[c]CkLE?E}CgA@GmEDMl@A_@gTKaHtAKFKx@IgBob@?{Aj@cLDmBMyFq@ePFGiAmIe@kEAmA@kEC_GYsNO?q@Bi@UAeIJIVeEs@KD}DG??a@I@Ga@?c@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.51760941705477,0.19022226333618], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

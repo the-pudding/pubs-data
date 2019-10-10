@@ -126,13 +126,13 @@ var thispub = 21234;var pubaddress = "Gainsthorpe Road West";var pubname = "Th
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 21234;var pubaddress = "Gainsthorpe Road West";var pubname = "Th
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="958v9t2orsdd7pf66k7eogb8g1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="m8vqp6rfa2ab5tg5omb8ggor12" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 21234;var pubaddress = "Gainsthorpe Road West";var pubname = "Th
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 21234;var pubaddress = "Gainsthorpe Road West";var pubname = "Th
   <div id="displayedimage">
 <a href="/pubpictures/21234/" class="indisplay"><img src="/images/display/21001_21500/21234_c7eda65d.jpg?w=2" alt="Picture of The Shires" /></a><br />  Image posted by <a href="/userinfo.php?name=sheffield+hatter" class="indisplay">Will Larter</a><br />
   Submitted on Saturday, 20<sup>th</sup> June 2015<br />
-  With picture contributions to 8564 other pubs<br />
+  With picture contributions to 8736 other pubs<br />
 <a href="/pubpictures/21234/" class="smallbutton">View all this pub's pictures</a> (1 more image)
  
   
@@ -263,7 +263,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul id="Custom2">
 			<li>Official site of The Shires - <a href="http://www.theshirespub.co.uk/" title="Submitted by:- ROB Camra" target="_blank">www.theshirespub.co.uk</a></li>
           </ul>
-<ul id="Custom2"><li class="fblink" id="695499880543222">Facebook - <a href="https://www.facebook.com/theshireskirton/" target="_blank" rel="nofollow">The Shires Pub</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="695499880543222">Facebook - <a href="https://www.facebook.com/theshireskirton/" target="_blank" rel="nofollow">The Shires Pub</a></li></ul><ul id="Custom2"><li class="wplink" id="SCU/051">CAMRA WhatPub :: The Shires - <a href="https://whatpub.com/pubs/SCU/051/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -277,7 +277,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([53.50058339130977, -0.57423274609368], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -361,14 +361,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
   
 </div>
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 10pm</td></tr>
-<tr><td>Monday</td><td>5pm - 10pm</td></tr>
-<tr><td>Tuesday</td><td>12noon - 3pm | 5pm - 11am</td></tr>
-<tr style="font-weight:bold"><td>Wednesday</td><td>12noon - 3pm | 5pm - 11am</td></tr>
-<tr><td>Thursday</td><td>12noon - 3pm | 5pm - Midnight</td></tr>
-<tr><td>Friday</td><td>12noon - 3pm | 5pm - Midnight</td></tr>
-<tr><td>Saturday</td><td>12noon - Midnight</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>

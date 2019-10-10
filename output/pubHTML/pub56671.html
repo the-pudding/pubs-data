@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Old Market Tavern pub in Cardiff, South Glamorgan, CF10 1BH : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Old Market Tavern" />
+  <meta name="keywords" content="The Old Market Tavern, 21 Trinity Street, Cardiff, South Glamorgan, Cardiff Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Old Market Tavern in Cardiff" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/56501_57000/56671_57b4ba22.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/56671/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.48045596271306" />
+<meta property="og:longitude" content="-3.17849338790506" />
+<meta property="og:street-address" content="21 Trinity Street" />
+<meta property="og:locality" content="Cardiff" />
+<meta property="og:region" content="South Glamorgan" />
+<meta property="og:postal-code" content="CF10 1BH" />
+<meta property="og:country-name" content="Wales" />
+<meta property="og:description" content="Do you like The Old Market Tavern in Cardiff? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Old Market Tavern the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/56671/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Old Market Tavern in Cardiff" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Old Market Tavern " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/56501_57000/56671_57b4ba22.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/56671/" />
+<meta name="geo.position" content="51.48045596271306;-3.17849338790506" />
+<meta name="geo.placename" content="The Old Market Tavern in Cardiff" />
+<meta name="geo.region" content="UK" />
+<title>The Old Market Tavern in Cardiff : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":56671},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(56671);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 56671;var pubaddress = "21 Trinity Street";var pubname = "The Old Market Tavern";var pubpostcode = "CF10 1BH";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/wales/" title="Pubs Galore : Wales Page">Wales</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/south-glamorgan/" title="Pubs Galore : South Glamorgan Page">South Glamorgan</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/cardiff/south-glamorgan/" title="Pubs Galore : Cardiff Page">Cardiff</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Old Market Tavern Page">The Old Market Tavern Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="ejfv8cub1gcrm1nhf9il976d42" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/56671/" class="indisplay"><img src="/images/display/56501_57000/56671_57b4ba22.jpg?w=2" alt="Picture of The Old Market Tavern" /></a><br />  Image posted by <a href="/userinfo.php?name=rpadam" class="indisplay">Just a quick pint, then I&#039;m off</a><br />
+  Submitted on Saturday, 5<sup>th</sup> August 2017<br />
+  With picture contributions to 5595 other pubs<br />
+<a href="/pubpictures/56671/" class="smallbutton">View all this pub's pictures</a> (4 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/56671/">Pub map</a><br /><a href="/pubreviews/56671/">Pub reviews (2)</a><br /><a href="/pubpictures/56671/">Pub pictures (5)</a><br /><a href="/core/pubaudit.php?id=56671" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Old Market Tavern, Cardiff Central, Cardiff</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">21 Trinity Street</span><br />
+
+
+<span class="town">Cardiff</span><br />
+<span class="postcode">CF10 1BH</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02920371263</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Nicholsons (Mitchells & Butlers)</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/cardiff-central/south-glamorgan/">Cardiff Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Old Market Tavern  <span class="h2note">(Average Rating: <span id="averagerating"><b>5</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review101662" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The Old Market Tavern</h6>
+<p class="old">Was O&#039;Neills and is now a Nicholson (not that there&rsquo;s been a change in the pub&rsquo;s overall ownership &ndash; they&rsquo;re both M&amp;B). Three pumps as you enter and five further round. However in contrast to traditional Nicholsons pubs in London and Birmingham there was only Doom Bar, Rev James and the Nicholson Pale Ale on. The others were all off or found to be off when enquiring at the bar; really appalling cellar management given that we called in early Saturday afternoon. So we settled for a half of the Nicholsons Pale Ale (brewed by St Austell) which was in decent nick. Student discount prominently advertised, though they were utterly perplexed when presented with an NUS card by Mrs Quinno. Fairly so-so interior, the converted butchers were the main thing that caught my eye but there&rsquo;s no high Victoriana as you might well expect from the chain, it really did feel like a pretty basic switch over from O&rsquo;Neills. Rugby showing silently on the TVs to remind you you&rsquo;re in Wales. Overall, the poorest Nicholson I&rsquo;ve been in for many a day.</p>
+<p class="Reviewer">On 23<sup>rd</sup> November 2015 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 3912 recommendations about 3900 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review94338" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about Old Market Tavern</h6>
+<p class="old">Formerly one of two city centre O&#039;Neill&#039;s Irish pubs, this M&amp;B venue has recently been converted into their much more appealing Nicholson&#039;s brand. The pub dates back to the 1840&#039;s and was originally known as the New Market Tavern, in reference to the neighbouring market building. Today we find a jumbled maze of a pub, with a vast amount of partitioning walls and structural supports creating something of a labyrinth around which the pub has been awkwardly laid out. You enter into a small front bar area with a few seats under the front windows and a short stretch of servery with enough space for just three handpulls. The seating area opens out a fair bit over to the right with a lot of high tables and stools in particular, before you move further into the pub where the main servery area appears to the left. There is a decent amount of seating here opposite the bar underneath a painted depiction of the brewing process. As you move further to the rear, the place becomes even more of a rabbit warren, with a series of spaces offering different seating options with differing degrees of privacy. Some button backed banquettes give way to standard tables and chairs in areas that might be better suited to diners wanting a bit of peace from the bustle of the bar area. The pub is decorated in fairly dark shades with lots of half panelled walls and pictures arranged by theme, covering subjects as diverse as rugby and the circus. A dismal pop music soundtrack played throughout my stay, although this can be avoided by making use of the few tables outside at the front which offer the chance to indulge in some good people watching.<br />
+On the bar, two banks of handpulls offered St Austell Proper Job, Sharps Doom Bar, Nicholson&#039;s Pale Ale, Brains Reverend James, Castle Rock Harvest Pale, Daleside Old Leg Over and Conwy Beachcomber. The latter was a new brewery to me, so I gave it a try but found it to be a pretty unpleasant beer, not in the best of condition.<br />
+I normally enjoy visiting Nicholson&#039;s pubs, especially when they are in historic buildings, but this place has been knocked around so much in the past, it&#039;s lost just about all the character it might have once had. I&#039;d hoped this was going to prove to be another good addition to the city&#039;s drinking scene, but ultimately it just feels like an O&#039;Neill&#039;s pub with more handpulls.</p>
+<p class="Reviewer">On 19<sup>th</sup> April 2015 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 2321 recommendations about 2321 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Old Market Tavern</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official page of O'Neill's in Trinity Street, Cardiff - <a href="http://www.oneills.co.uk/oneillstrinitystreetcardiff/" title="Submitted by:- Philip Carter" target="_blank">www.oneills.co.uk</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="665928046855944">Facebook - <a href="https://www.facebook.com/OldMarketTavernCardiff/" target="_blank" rel="nofollow">The Old Market Tavern</a></li></ul><ul id="Custom2"><li class="twitlink" id="2254423412">Twitter - <a href="https://twitter.com/ONeills_Trinity" target="_blank" rel="nofollow">O'Neill's Trinity</a></li></ul><ul id="Custom2"><li class="wplink" id="CAR/103">CAMRA WhatPub :: The Old Market Tavern - <a href="https://whatpub.com/pubs/CAR/103/" target="_blank">whatpub.com</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/56671/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=AlanH">Alan Hurdle</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.48045596271306, -3.17849338790506], 16);
+
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.48045596271306, -3.17849338790506]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Cardiff Central, 0.46 miles, 8 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Cardiff Queen Street, 0.5 miles, 9 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Cathays, 0.71 miles, 13 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('gxeyHhxkRXoAf@}@pAaBh@aCj@q@fAaAx@i@nAm@PAxDz@VLj@`@^t@b@n@RHTj@XpARb@^hAB|AEBIZ@BCHBdB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('gxeyHhxkRXoAf@}@pAaBh@aCLOmAuD_B_HrB{AFOHm@?c@Ic@cA_EWy@a@{@oB}Co@[WBWHmAn@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('gxeyHhxkRQ`AUGw@iASn@q@t@k@Rw@RkAHIHm@EWGa@AwAmAIBAOk@BWI?Mo@_@U?SEeBj@}AkEuBkFkHxDm@`@}A~AsB`D[c@eA|B', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.48045596271306,-3.17849338790506], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=56671">View all updates for The Old Market Tavern, Cardiff</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        5<span class="sup">th</span> Aug 2017, 20:44
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        5<span class="sup">th</span> Aug 2017, 17:55
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11856671">No</span> <span id="discdetail11856671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>Bar Billiards : <span id="fac10756671">No</span> <span id="discdetail10756671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>Beer Garden : <span id="fac11456671">No</span> <span id="discdetail11456671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>CAMRA Discount : <span id="fac10256671">No</span>  - <span id="discdetail10256671" class="discdetail" style="">NUS discount though</span> -   <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>Car Park : <span id="fac11356671">No</span> <span id="discdetail11356671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>Darts : <span id="fac11156671">No</span> <span id="discdetail11156671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>Function Room : <span id="fac12356671">No</span> <span id="discdetail12356671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>Hot Food : <span id="fac10356671">Yes</span> <span id="discdetail10356671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>Jukebox : <span id="fac11256671">No</span> <span id="discdetail11256671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>Karaoke : <span id="fac10656671">No</span> <span id="discdetail10656671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>Live Music : <span id="fac10856671">Yes</span> <span id="discdetail10856671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>Live TV Sports : <span id="fac11056671">Yes</span> <span id="discdetail11056671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>Micropub : <span id="fac12256671">No</span> <span id="discdetail12256671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>Pinball : <span id="fac11656671">No</span> <span id="discdetail11656671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>Pool Table : <span id="fac10456671">No</span> <span id="discdetail10456671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>Real Ale : <span id="fac10156671">Yes</span> <span id="discdetail10156671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>Real Cider : <span id="fac11956671">No</span> <span id="discdetail11956671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li><li>WiFi : <span id="fac11556671">Yes</span> <span id="discdetail11556671" class="discdetail" style=""></span>  <span class="Reviewer">last updated 23 November 2015 by Quinno _</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82298/" class="List1">10 Feet Tall</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56685/" class="List1">Tair Pluen</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56674/" class="List1">Owain Glyndwr</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 7 recommendation(s)" title="Pub has 7recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 7 reviewer(s)" title="Pub has average rating of 7 from 7 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/45785/" class="List1">The Old Arcade</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 2 reviewer(s)" title="Pub has average rating of 6.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84648/" class="List1">Beelzebubs</a></li>
+                    <li><img src="/images/icon-photo-grey.gif" alt="Pub has no pictures" title="Pub has no pictures" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/62219/" class="List1">The Amber Lounge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82299/" class="List1">The Head of Steam</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/45666/" class="List1">Borough</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

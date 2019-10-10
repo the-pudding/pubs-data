@@ -126,13 +126,13 @@ var thispub = 87578;var pubaddress = "15a Promenade";var pubname = "Stackhouse
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87578;var pubaddress = "15a Promenade";var pubname = "Stackhouse
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="hfj3jfk0fklclbvqikr2o878e2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="vp2ijkrs6l1ph9v5d37urgmm41" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87578;var pubaddress = "15a Promenade";var pubname = "Stackhouse
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -246,7 +246,7 @@ var thispub = 87578;var pubaddress = "15a Promenade";var pubname = "Stackhouse
 <p>A new real ale venue for Bridlington, opening today. Sister venue to the Stackhouse Bar in Hornsea. Being promoted as a cashless set-up.</p>
 <p class="Reviewer">On 28<sup>th</sup> March 2019 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 316 recommendations about 304 pubs]</span></p>
+  <span class="leftspace">[User has posted 329 recommendations about 316 pubs]</span></p>
   </div>
 </div>
 
@@ -260,7 +260,7 @@ var thispub = 87578;var pubaddress = "15a Promenade";var pubname = "Stackhouse
 <span class="h2ish" id="linksheading">External web links for Stackhouse Bar</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-<ul id="Custom2"><li class="fblink" id="1647448651970903">Facebook - <a href="https://www.facebook.com/stackhousebarbridlington/" target="_blank" rel="nofollow">Stackhouse Bar Bridlington</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="1647448651970903">Facebook - <a href="https://www.facebook.com/stackhousebarbridlington/" target="_blank" rel="nofollow">Stackhouse Bar Bridlington</a></li></ul><ul id="Custom2"><li class="wplink" id="HUL/112">CAMRA WhatPub :: Stackhouse Bar - <a href="https://whatpub.com/pubs/HUL/112/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -274,7 +274,7 @@ var thispub = 87578;var pubaddress = "15a Promenade";var pubname = "Stackhouse
 
 	var mymap = L.map('mapid').setView([54.08296160000000, -0.18917010000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ var thispub = 87578;var pubaddress = "15a Promenade";var pubname = "Stackhouse
 
 
 </script><div>
+<i class="fas fa-train"></i> Bridlington, 0.65 miles, 12 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Bempton, 3.99 miles, 1 hr 17 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Hunmanby, 8.95 miles, 2 hr 52 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('_bbiIz|c@Lm@rCbCSnAUz@WbBe@`B@V]lBYbAsDbB_Ah@YTMT_@nAy@xEaArHQ`AIx@@f@Df@Px@Ff@?h@RFHVv@~Dd@|FB`Ad@ICW', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('_bbiIz|c@Lm@gDuCb@sH?WUSG?Ik@e@s@yCmDEW}AwACUs@i@yAuAoAaAw@}@u@g@gN{MIR}D}DcDkEkDaEg@Ya@MeIUeFCsAU_NOe@Sw@o@iAeAMo@uApBg@qAWkAsAuIGUSOwNsD_DvCmIzAg@r@yCwHe@uAYcAqKgYaAaB[AaBDsCo@W]KNKTqDtKcDdJ{FpOuFzOoCjHoOfb@a@jAKh@GDi@Ao[qG}Aq@}CgBc@[mBiBm@a@eIiDoFeCQdBAZD^BHFBTBN[', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('_bbiIz|c@Lm@rCbCSnAUz@WbBe@`B@V]lBYbAsDbB_Ah@YTMTWw@ODqFoBqC|@cGxBi@l@kJj@qBTVnGBf@CZGVgBhD@^SB{H|OQB@j@R~AcH~BNrB?bBKvAMb@?PDPd@|@[`AJPaA`Cg@hC?h@Bb@NbCEpBcA`G}@|EOd@[tAGj@Ah@EJCL_@h@U^wCjAI[OEaC|@SPFd@qAh@uAXAO}Ct@}OfAwEtAmHpCyIhG}EtA{CXqFa@sJtA{Kz@iMdE_KpCkBp@oPtCyI`AyFr@kBn@q@XUYYG]Bc@N_@Xs@v@Wf@M`AaA`AqA|AoEtGaHzLmNlSuFfJmDfGo@rAkEfHaEvH{FfKiFpIgBnB_ExFiIpNuBzD_BnEkArD{@hDy@nDcDnRs@rDu@zCeBlF[`AqAbDoB`Ge@`B{AzHk@pBc@fAq@fAaClD}ArByFtGaHzJoBbDiAzBaA~Bw@pBuAxCm@bA_DjESPw@pAKHKPETAVDb@Il@Sn@gErGkYv_@u@tAsAbBI^?h@Jv@@p@Ej@[bAq@zA{ChFwBtCkDfEi@r@cBhD}@xBkAfDq@hCe@zB]lCMtAYlHWxCUbBkArGeArGUzBWjDK|@WbAi@tAYz@Q|@s@lEaAnEcAbHk@fCqA~EcBjEe@`AiCfEw@xAy@|BqC~Ji@bD{@pG{BxLkAnI}@hFcBq@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([54.08296160000000,-0.18917010000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -320,18 +352,11 @@ var thispub = 87578;var pubaddress = "15a Promenade";var pubname = "Stackhouse
   <div class="hline"></div>
   <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
   
-  <span id="facdisptable"><ul class="Custom1"><li>Child Friendly : <span id="fac12187578">Yes</span> <span id="discdetail12187578" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 March 2019 by aleand hearty</span></li><li>Dog Friendly : <span id="fac10587578">Yes</span> <span id="discdetail10587578" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 March 2019 by aleand hearty</span></li><li>Real Ale : <span id="fac10187578">Yes</span> <span id="discdetail10187578" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 March 2019 by aleand hearty</span></li></ul></span>
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11887578">No</span> <span id="discdetail11887578" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2019 by ROB Camra</span></li><li>Beer Festivals : <span id="fac11787578">No</span> <span id="discdetail11787578" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2019 by ROB Camra</span></li><li>Beer Garden : <span id="fac11487578">Yes</span> <span id="discdetail11487578" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2019 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10287578">Yes</span>  - <span id="discdetail10287578" class="discdetail" style="">Discount amount not stated by Hull CAMRA</span> -   <span class="Reviewer">last updated 19 August 2019 by ROB Camra</span></li><li>Car Park : <span id="fac11387578">No</span> <span id="discdetail11387578" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2019 by ROB Camra</span></li><li>Child Friendly : <span id="fac12187578">Yes</span> <span id="discdetail12187578" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 March 2019 by aleand hearty</span></li><li>Dog Friendly : <span id="fac10587578">Yes</span> <span id="discdetail10587578" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 March 2019 by aleand hearty</span></li><li>Live Music : <span id="fac10887578">No</span> <span id="discdetail10887578" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2019 by ROB Camra</span></li><li>Live TV Sports : <span id="fac11087578">No</span> <span id="discdetail11087578" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2019 by ROB Camra</span></li><li>Micropub : <span id="fac12287578">No</span> <span id="discdetail12287578" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2019 by ROB Camra</span></li><li>Real Ale : <span id="fac10187578">Yes</span> <span id="discdetail10187578" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 March 2019 by aleand hearty</span></li><li>Real Cider : <span id="fac11987578">Yes</span> <span id="discdetail11987578" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2019 by ROB Camra</span></li><li>Wheelchair Access : <span id="fac12087578">Yes</span> <span id="discdetail12087578" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2019 by ROB Camra</span></li><li>WiFi : <span id="fac11587578">Yes</span> <span id="discdetail11587578" class="discdetail" style=""></span>  <span class="Reviewer">last updated 19 August 2019 by ROB Camra</span></li></ul></span>
   
 </div>
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 11pm</td></tr>
-<tr><td>Monday</td><td>12noon - 11pm</td></tr>
-<tr><td>Tuesday</td><td>12noon - 11pm</td></tr>
-<tr style="font-weight:bold"><td>Wednesday</td><td>12noon - 11pm</td></tr>
-<tr><td>Thursday</td><td>12noon - 11pm</td></tr>
-<tr><td>Friday</td><td>12noon - 1am</td></tr>
-<tr><td>Saturday</td><td>12noon - 1am</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>
@@ -344,8 +369,8 @@ var thispub = 87578;var pubaddress = "15a Promenade";var pubname = "Stackhouse
                     <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55926/" class="List1">The Appollo</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55929/" class="List1">The Corner Bar</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/28877/" class="List1">Harbour Tavern</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/80707/" class="List1">Roo&#039;s</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/28871/" class="List1">The George</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/28879/" class="List1">The Hook &amp; Parrot</a></li>
 
           </ul>
   

@@ -126,13 +126,13 @@ var thispub = 87336;var pubaddress = "Wharf Terrace";var pubname = "Crewe Arms
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87336;var pubaddress = "Wharf Terrace";var pubname = "Crewe Arms
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="98rdo2r9ot7o13gk2r4b02uvs2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="v5e99h6tfujd4c33pv02loajn5" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87336;var pubaddress = "Wharf Terrace";var pubname = "Crewe Arms
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -255,7 +255,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 <span class="h2ish" id="linksheading">External web links for Crewe Arms Hotel</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="POT/1289">CAMRA WhatPub :: Crewe Arms Hotel - <a href="https://whatpub.com/pubs/POT/1289/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -269,7 +269,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([53.00769440000000, -2.31961870000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -294,7 +294,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Longport, 6.08 miles, 1 hr 57 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Stoke-on-Trent, 6.75 miles, 2 hr 10 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Alsager, 7.28 miles, 2 hr 20 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('}apbIfadMGe@GaAGK?SJ_AAYNaAgGLmAAmAIgAYaFmC}FuCy@i@uBeBaKaHgAaAw@{@k@}@Sm@}@uE_@{@{E_J{AiCOe@Iw@WHiAy@aC_AoIyCiASUISCSLQRGPEEEg@Ma@eAuAkFyJYU}CaAEuIQWFGt@uANo@HiA?}AIkA]cDOOIQ[kAmAoC{@gCyAyCcBaCi@[oAc@@m@M}@e@uAIe@AmCc@yCiAuF@U}AqAmEyBUSaFDeBLGJm@k@i@eAwAcCsCqD]O~@cD?MNw@xAqGRkAJwAJq@Wu@_@y@o@gByBqFg@_BYe@Mm@o@yBIy@QQMW_AgCU]WQ[I_@?_AOe@[Y]Ka@{@cAWe@_@kBEo@UsAg@mAIi@C_@P{BFyDDeA@mBOQ?EVgAFo@L[HaBCs@JmCBGQ{AUq@ZwADm@@uBC_AMmBSaBOw@e@cAc@gAW{BUoAO]Iy@z@_Dj@uF^mBFq@?UCSGYKUkB}Cw@yAqG{Nc@wA_CgKiD}Oo@qDL[BSEg@e@aBy@gD`A{@AKBUEs@F[FKeA{Dv@u@cD{Hj@{@g@{AEY?WHS@[E_@G]kB{D]qBg@_BUqBc@u@YsAm@gBYiAIo@|C}@Am@KgAKyBGgC@}BTuF`@_Ey@{Aw@eCa@gB]wBUwBGmAEcE@mDEsJQOEMAO@SLWDCgAwIo@oHGiBCiFBoAAcBJuC?e@OiBCs@SoBB_@?cACo@gAcDlBsC`A[VOzJ}K', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('}apbIfadMGe@GaAGK?SJ_AAYNaAVFj@ZXDTYo@cCg@iCa@sCu@iKoEpA}@CsCy@aDeCuDaEw@O]?e@QYu@Ms@YwC@aD_@{D?S?_@TyCRsFAOGWo@aAIWG}@?gAFeAf@yH@_AI}BK_A_DoO}@cFi@uEYeDm@uE_B{NeAeKE{@?u@Bu@F_@`@{A`@k@xDmD|@W[gA}AsGwB_FM_@e@gCiAyMYy@OqAIaBFw@UkCOy@Ss@s@}A^w@KgB}@iIo@yCy@_Fe@sDEm@?kJ@oDDoBbA_[BoAEaABYFK@IR}Ed@gIHkBHeLHcUTuCb@wCt@kCn@wBHu@RsBHcCDeCGgCu@sJe@qEqEy]wAaO]_HS}EMwG?qH@}CJ_Dh@sGjCuPt@kCvBsDPa@^uAj@gCXWW[pC{OPgALuATgATg@XkAhAeENWRGNi@x@}DAgBRaBKYZNF@ZUf@i@@QHQfBiAB{DLiEIW?_IAw@@wAHG?kAKyDIqAc@cFuB{PSqBQ}BEw@OgH@}CTqEPiDHqB@_ACoA[eDQyAo@sDM}@?]BUXYr@_@Bq@@qHR]?wBFwEReDTkCb@mCnDgNEQPq@q@o@sAqDDYfC}IfCgJ?SdEr@BYd@aBhCkG`E_GPUNU', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('}apbIfadMGe@GaAGK?SJ_AAYNaAgGLmAAmAIgAYaFmC}FuCy@i@uBeBaKaHgAaAw@{@k@}@Sm@}@uE_@{@{E_J{AiCOe@Iw@WHiAy@aC_AoIyCiASUISCSLQReBvEc@v@o@d@_@Fm@?q@KmG_C{@a@kCaAuAUYICA_@y@eHcGQn@yCmAyCNkA`@}Az@]`@aC|AmD|CaAh@_@d@MX?JGNi@t@mBrBy@Zk@KQIWUUKq@jA[VS@g@KQO_@m@a@Ek@]{@_AQ[e@m@O_@]T]j@cAjAs@`@a@~AqAa@]hK_Ce@iEDIZiFVy@CqDLoD}DwBgBuEoFs@cEw@_C}@kB[e@s@qAyB_Fo@eAy@[e@e@Sh@WRSAy@Ow@[gDWaD_@s@_@cA}Aq@gB}BkC{@i@YMWz@w@jBw@zAuBpA}@b@w@X_@T_ChDYf@Of@IhAS\\U}BMa@m@w@g@a@k@_AK[e@H[CmB}@qBoA[EWDOLQ^On@o@lFO^OPQFS?SI_BuAc@Ug@Ky@GqAAm@Q_@f@q@^u@p@_Bx@{Bh@Gc@MS[[sAeAUEi@f@a@r@m@x@Q\\QLe@pASfAo@hABXm@rDiA|CmAfEq@hBWf@sBhBiB|BaAHs@Ug@e@i@iAQ{AMg@]c@C_@]@mAMuAW_@BSH{Bv@}EvAgBv@WAY[Wy@q@yAyAsAOa@}GqBwFyAoFk@MMqI}Kk@_AcEdDmBp@gFr@uGnHmFjCyLhDkAkEe@{@MKU\\]u@QWsAqCc@q@cBgBB_@kA_EBQe@c@iAi@_@[]c@]o@Sm@Ie@OkDKo@Si@Ym@G]c@sCo@_HMc@GMwAiAUa@o@iCGs@G}A{BXyBBm@Le@n@[j@MqC', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.00769440000000,-2.31961870000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

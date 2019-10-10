@@ -126,13 +126,13 @@ var thispub = 4303;var pubaddress = "Front Street";var pubname = "Impeccable P
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 4303;var pubaddress = "Front Street";var pubname = "Impeccable P
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="391dq4si258lkhu8fnmlc1ipp2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="e3no8s33kbs08e9q2svhkp5210" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 4303;var pubaddress = "Front Street";var pubname = "Impeccable P
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 4303;var pubaddress = "Front Street";var pubname = "Impeccable P
   <div id="displayedimage">
 <a href="/pubpictures/4303/" class="indisplay"><img src="/images/display/4001_4500/4303_f0df13c1.jpg?w=2" alt="Picture of Impeccable Pig" /></a><br />  Image posted by <a href="/userinfo.php?name=Waj+The+Badge" class="indisplay">Andy Hemingway</a><br />
   Submitted on Sunday, 5<sup>th</sup> February 2012<br />
-  With picture contributions to 960 other pubs<br />
+  With picture contributions to 961 other pubs<br />
 <a href="/pubpictures/4303/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -260,7 +260,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 <span class="h2ish" id="linksheading">External web links for Impeccable Pig</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="DUR/6802">CAMRA WhatPub :: Impeccable Pig - <a href="https://whatpub.com/pubs/DUR/6802/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([54.65380200000000, -1.44838600000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Newton Aycliffe, 8.6 miles, 2 hr 46 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Billingham, 8.84 miles, 2 hr 50 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Heighington, 9.18 miles, 2 hr 57 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('gqqlI|zyGp@@BnFz@^ZVF|@CDJZz@pAPfEt@\\p@jBXzAZlDXNLrBTpApA|Dn@lCxA`ITbCJ`CPfFTxBETK|Ne@r@MJMXMp@@x@DTVr@@n@Q`GCdC@jBBvBZvJR~BZtJ[p@E`@@`DFpAv@rHL\\LFRrEPBLNHj@H~@@|@Kb@UXNhGDjFYFENs@tGGt@A`ADnI@dFLdIJfCj@hJDfAA`BLdJBjFH|EJjADRHNZ@HhKPfGHlE@zACpCKjEKpCm@dKK~A_@|DSzAk@|Ck@dC_@pAc@lAsAdDuBdESv@GhAB`ACb@G`@I^mAnCYf@OLg@L_Ad@YR]^Ub@wAjEw@zCo@`DWfBUjBOjBMlBInBEnBCnBDjELrDb@hGp@dEvDvQtA~Hz@vHx@vJ^lJB~DTbS^pVVrMo@EK`@BdKF~ER|BXdB\\h@?jEEjETv@K|FWtB]h@y@fIo@|DgAvFgA`EmAvDyDvKEXCv@?ZHFNVDRDj@Ef@EPEHWVIZEZAr@HtBJv@PFLTZCnD_BlA[h@AnANp@\\p@f@x@z@bArAvF|HzGzJvJrOfNdUhChEnBrDrFdJn@r@\\z@d@f@HPLF\\rANOJ`@HEn@BZHz@r@Zl@b@n@Zt@PRh@|AV^\\TPXVDXRz@`@r@r@j@vAZd@\\TZH\\RTb@^\\XA\\z@VP^`@fAf@x@RNEL?NIPC`@@p@hBf@d@n@F^?RJfAUPKVJ\\X\\`Af@TXAd@PrA|@VFTPRFp@v@RLZb@zCwHDKHAF?NLHOT\\t@j@vBpArB|AjGfH`A`Av@\\j@Pp@FlAGn@Sv@a@xAcB~AcDHHNDvCtFFSFNlBiCfAbC^Rr@?XPn@x@Th@Jd@?zBBz@Nt@j@|AnAwBNQZSn@?TLvSnOzCfCbBbAXND]PFHIFMNu@DEH@VPDCRg@l@{CdCwKJWb@g@Pe@Fi@XPHe@TNIb@CCKh@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('gqqlI|zyGp@@FoFLoBRy@v@gCf@eCb@yA[]JqAF_@NMEg@Ag@HwGIgIB_EHuECoBBiBPmF?eA[wGGwGE{A@OKE?UMaBKu@m@{FAOBIPGBMHFRKBGg@oHM{Bg@aHUkGIwE]yKwAgX?u@Cw@{@}H]{Ei@_GgA}OIy@@m@GmA?a@GmA_@wEc@oBqAeEm@qCwA}Fe@kCk@eCMe@[eC@s@[}FKuCAwEX_JFmDFy@VaCZcCv@{DzAeGx@cCdEgLrBeF~GcR|CmK^eAdDqKbB{GzCwMV{Af@eCZwAt@qCG[lA_El@eBjDmIz@{Bz@gCdAyDtAgGbHi`@v@qFfAiKd@{Dp@cEv@kDfAiDjBeE|@eB~BaERSh@[NCLKP_@D_@?YPqAtAsDx@}CbE_VhBwIr@_DlFcSd@wBj@yC\\aCp@oGXwDr@oH^sCZsBb@wBl@mCxAcFdAiCt@s@JEJMHQFi@AONiAp@iB|@oCp@_CxF}TdE}PbBwHZ_APWRSLKJSDW@YA[@aANcAvCsMz@oE`BiKTuB`@iCPi@p@gAXUXe@R}@^kD@o@EaAKk@OYOw@Eo@?a@@_@f@eHZcBNWDY@[Ig@Ae@?i@HkADWN]VQpAWzBgAp@Qx@@jB\\~@FPCLOFU@ODBd@EjAw@lAgAXa@F_@Dm@F_BDSK}BQeCAs@FuAjE|B`DtAZGtEnB~@V`BXxBDvAIrBc@jDqAVQ`@e@FO~@gAxAkCd@kAXkARiALmAVgFN_A\\u@RQxE}Cu@mFQiBz@]jASvAB@XbAIn@WbAw@dAwAj@_@CUv@InAT@YLBd@e@tGaF@Qf@J`AiAFJZJnBy]LD@IxBl@TsDHWCILyCFWHMHCGq@i@sBp@i@Ka@f@e@`AmAbAiB\\w@GK?GVqARoAOMg@gALUGM@EFLNYEGCDAC', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('gqqlI|zyGp@@BnFz@^ZVF|@CDJZz@pAPfEt@\\p@jBXzAZlDXNLrBTpApA|Dn@lCxA`ITbCJ`CPfFTxBP`@Zd@fBnBh@t@^w@p@eA\\]v@e@h@Od@C`@@n@LxFxArFl@zAXl@T`Af@|FlEzBvApBdAnBlApIlFxAhA`GnFhAz@rBdAjA`@|An@rC|A|@^~@ZlAj@lBdAzDhClLpJv@^v@X`Cb@r@Rt@h@t@`A\\`AVjAPlANvAb@pFVvAn@pENvAFdALtClByA`F}Bn@Sp@Id@@VFdA^nB`AbE`CtCpBtAh@~AVlBChD_@h@C|ABhB^pDtAzAp@hE|AhFfCdGbC^TbAv@zA~AnAdApAj@tC`@fEd@~DnA`ARx@D~@GhA_@l@e@bB{Ar@a@XK|AOrCMnGOjCCbCUpCC~@Bv@Hx@?XErF_CbAY|Ba@h@W|AuAvAu@lAa@zGkArCu@?|AGxAg@hFYzFIjIs@pF]|IDhFOrGBjFKfOjAjHXdFHhDIhNK~Gg@rJDfCrB|D|@xBHdRaB`W_Ffq@v@X\\ZJt@eArTIbCD|A`AxO\\|CeA^{ABUfNc@fMoApK{AdHAjBXtDu@tEr@rCKtF{@dIj@jW_E@m@j@KpRpEzWdAbC~@vGc@dDf@|@d@lB~@xBIdEGvAe@v@c@\\R\\~@rCHb@HADdIApLTbIT~EB~@?~AJLDXETGF?|@OzVGrEMrCGh@[bAQFKX?V@NAvAUtBO|CCt@DpBNrGTIv@G', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([54.65380200000000,-1.44838600000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

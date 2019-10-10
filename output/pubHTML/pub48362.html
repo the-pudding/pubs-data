@@ -126,13 +126,13 @@ var thispub = 48362;var pubaddress = "Main Street";var pubname = "Central Bar"
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 48362;var pubaddress = "Main Street";var pubname = "Central Bar"
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="rjnv4ijbhig8prd4rcfa8jctr5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="lmm9rn1gssc71cbvetdiacd1r7" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 48362;var pubaddress = "Main Street";var pubname = "Central Bar"
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -253,7 +253,7 @@ var thispub = 48362;var pubaddress = "Main Street";var pubname = "Central Bar"
 <p class="old">Picture taken 30 September 2013. Pub looks like it has been closed for a long while.</p>
 <p class="Reviewer">On 20<sup>th</sup> June 2014 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 320 recommendations about 290 pubs]</span></p>
+  <span class="leftspace">[User has posted 319 recommendations about 289 pubs]</span></p>
   </div>
 </div>
 
@@ -267,7 +267,7 @@ var thispub = 48362;var pubaddress = "Main Street";var pubname = "Central Bar"
 <span class="h2ish" id="linksheading">External web links for Central Bar</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-<ul id="Custom2"><li class="fblink" id="1964373047185573">Facebook - <a href="https://www.facebook.com/rentoncafe/" target="_blank" rel="nofollow">Central Cafe</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="1964373047185573">Facebook - <a href="https://www.facebook.com/rentoncafe/" target="_blank" rel="nofollow">Central Cafe</a></li></ul><ul id="Custom2"><li class="wplink" id="GLA/972">CAMRA WhatPub :: Central Bar - <a href="https://whatpub.com/pubs/GLA/972/" target="_blank">whatpub.com</a></li><li class="hilink" id="261">Historic Pub Interiors - <a href="https://pubheritage.camra.org.uk/pubs/261" target="_blank">pubheritage.camra.org.uk</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -281,7 +281,7 @@ var thispub = 48362;var pubaddress = "Main Street";var pubname = "Central Bar"
 
 	var mymap = L.map('mapid').setView([55.97137800000000, -4.58437300000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -306,7 +306,39 @@ var thispub = 48362;var pubaddress = "Main Street";var pubname = "Central Bar"
 
 
 </script><div>
+<i class="fas fa-train"></i> Renton, 0.17 miles, 3 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Alexandria, 1.31 miles, 25 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Dalreoch, 2.11 miles, 40 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('a|rtIhi~ZzEGBxFU@BnCBLG@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('a|rtIhi~ZcB@KuI_CiBsB{@KFYEmD?eBBOMw@wB]g@[@WZU|@Yt@UZk@XqCBOHCTCWOUk@S]?yAMKGgAaBUm@_@gB}BiNOoAw@iB}AaBw@QeCh@wAReCGcAQ?ZOn@s@t@qFp@_@Ng@ZGYIQe@eAmBFQ`@I\\cCi@AHbAPlA`@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('a|rtIhi~Z~AA?w@PHx@Wt@IZ[NCbASv@[hBkBx@gApCwFXGzA{@XKh@RD_@Lc@`@m@l@GjARX@f@e@v@iAZ{@XqCVCh@FlA\\XgFv@XjAVt@BdBZFCb@HpBrAh@DNIfB{CbBiDLe@Hk@LwBNiAL[PInABRgAHKHAbAl@DXC^JFp@LrCXxEhBP`@NdAv@RVZt@bCb@r@`A|@x@|@t@pAdA`AtAz@tAlAfAhAn@^lATdAYJ\\N@NRz@lHJPJChDoC?XHt@NRR?v@c@XHP`@hDyEfAiA`Ay@~@o@t@]p@SpASbAeFj@sBOEU@GI@AFS', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([55.97137800000000,-4.58437300000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

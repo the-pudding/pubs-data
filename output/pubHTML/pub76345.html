@@ -126,13 +126,13 @@ var thispub = 76345;var pubaddress = "B4314";var pubname = "The Sporting Chanc
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 76345;var pubaddress = "B4314";var pubname = "The Sporting Chanc
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="ecjrnt21edkho2e5a75rft4v96" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="g151h7t8oh9obr2r32kb8cv2i7" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 76345;var pubaddress = "B4314";var pubname = "The Sporting Chanc
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 76345;var pubaddress = "B4314";var pubname = "The Sporting Chanc
   <div id="displayedimage">
 <a href="/pubpictures/76345/" class="indisplay"><img src="/images/display/76001_76500/76345_ee76c172.jpg?w=2" alt="Picture of The Sporting Chance" /></a><br />  Image posted by <a href="/userinfo.php?name=First+King" class="indisplay">Wynne Route</a><br />
   Submitted on Monday, 14<sup>th</sup> January 2013<br />
-  With picture contributions to 3464 other pubs<br />
+  With picture contributions to 3485 other pubs<br />
 <a href="/pubpictures/76345/" class="smallbutton">View all this pub's pictures</a> (1 more image)
  
   
@@ -260,7 +260,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 <span class="h2ish" id="linksheading">External web links for The Sporting Chance</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="CAT/226">CAMRA WhatPub :: The Sporting Chance - <a href="https://whatpub.com/pubs/CAT/226/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([51.77587470000000, -4.60481380000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Whitland, 4.37 miles, 1 hr 24 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Kilgetty, 6.02 miles, 1 hr 56 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Narberth, 6.68 miles, 2 hr 9 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('}m_{Hhjb[TPQ|@[dAe@rAsD`Hi@bBo@lCQbAStBSdD@bBEdAo@`GEvABjDCjAMzAGdB?nAItAIx@U`A_AlCQdAKtAA`AB`AZdED|BApAIlAkBpNc@vBk@~AgBrDeAbBmD~Di@lAQnACtA?bCEh@In@{CpK_@hBsA|H{AxJ?~@@n@Ln@sCkD}CqFoFuIkBkCyIyLuFyE_CuCuDkE{I_IuCcDqAeEsBsC}BgFkAuBaBmFuC_Ok@gH]cBiCeByAwA{@[uA[}BEqCt@gDpDsCfBwLqCiFqAiCSwBm@qB_B}Fy@yEH}Fp@}ElBq@FeESsBCq@Ia@OaAcAwAyBs@s@e@Qi@K[?Y@y@NkCnBoAl@QbB[G', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('}m_{Hhjb[~D`Cd@j@\\z@p@zBVbBvBrQ`@fErAzN\\~Cb@jC`CxI`DrHtE~G~BzBrHtD|Bv@lDrBlAz@z@v@xAbBj@t@pAxBn@pAjAjDd@hBz@rE|CfY`BdNvAfKf@hC`D`W~AzK|@`G`BvGD\\fEfShCdR^|FfAhXX`F`JjsAj@pFzAzLl@lDhAjE`BtE`AtBz@~ArCfE`RhZtBjHfD~Yh@tCdCrOtEnOvHvOpDfFnAzA|AbB~AzAjBxA~HpExMlEzCv@tGnCrBt@PfA`@|@RjAD`AUxJjBjFfAnF`AzHv@tI^pC\\rBzB{A', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('}m_{Hhjb[TPQ|@[dAe@rAsD`Hi@bBo@lCQbAStBSdD@bBEdAo@`GEvABjDCjAMzAGdB?nAItAIx@U`A_AlCQdAKtAA`AB`AZdED|BApAIlAkBpNc@vBk@~AgBrDeAbBmD~Di@lAQnACtA?bCEh@In@{CpK_@hBsA|H{AxJ?~@@n@Ln@tCvEHRLp@f@`DzFth@_Ab@{CvCi@~@wCjBg@d@cBpByAlAw@J{@DQd@yBbBw@dAcDpCgAb@w@j@Q\\BtA~@nFt@nF^bHClEGh@m@hEe@bCF`Ed@hDb@hFh@hBPtD|@~Ip@bDVxBRrELxKSnASpBMlFBdFg@bCG`CJlE?pAMt@aDbB@`ANtBGhD[p@iDpCu@`Ac@d@uA]STeEhJ}F`Ii@nAkEtB{AzDq@~@Od@JvBu@n@}AhAkAtAoApBoAnCaAtAmC~C}IKRnBRtERfCDdB?nBVhBb@|BG~EH`ATtAn@pCRhBZv@rAdAbA`A\\~Bp@fBDlBHj@xAbGb@lCXzB^~DVbD[xPLnCf@fELxARjDp@lG~@`N_@vJhAtIgE~OmFdRo@hDs@pH_@vBuA`EcBpDo@zAm@dBcArEoAWo@FyBoEe@eAa@gA', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.77587470000000,-4.60481380000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

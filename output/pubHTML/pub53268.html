@@ -126,13 +126,13 @@ var thispub = 53268;var pubaddress = "Brighton Road";var pubname = "Royal Gurk
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 53268;var pubaddress = "Brighton Road";var pubname = "Royal Gurk
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="c2811jnj2nrcubu4ajkilm3o10" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="3v8gi7kmkp3j1coje8v6um2ai4" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 53268;var pubaddress = "Brighton Road";var pubname = "Royal Gurk
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -253,7 +253,7 @@ var thispub = 53268;var pubaddress = "Brighton Road";var pubname = "Royal Gurk
 <p class="old">Formerly The Fox on the Hill, it has hosted an Indian restaurant and letting rooms for some time.  It now appears to have changed hands, and names. The pub side of things is pretty basic really, just the public bar of the original premises. Sparse furnishings, pool table, TV, the usual stuff.  There&#039;s some decking outside overlooking a garden which could do with a bit of TLC.  There a couple of unused handpumps; Cobra and a couple of the usual suspects on keg.  The main reason for making a trip here would be for the Nepalese restaurant, which has a local following, and it might make a stop on the trip out to the M25 if you fancy a pint and some Indian snacks rather than the usual pub fare.</p>
 <p class="Reviewer">On 5<sup>th</sup> August 2013 
   - rating: <b>4</b><br />
-  <span class="leftspace">[User has posted 450 recommendations about 442 pubs]</span></p>
+  <span class="leftspace">[User has posted 458 recommendations about 450 pubs]</span></p>
   </div>
 </div>
 
@@ -266,8 +266,11 @@ var thispub = 53268;var pubaddress = "Brighton Road";var pubname = "Royal Gurk
 <div id="ContentPanel4">
 <span class="h2ish" id="linksheading">External web links for Royal Gurkha</span>
 <div class="hline"></div>
-			<p>No known official website for this pub.</p>
-</div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of Royal Gurkha - <a href="http://sites.google.com/view/royalgurkhafoxonthehill/" title="Submitted by:- Nick Davies" target="_blank">sites.google.com</a></li>
+          </ul>
+<ul id="Custom2"><li class="wplink" id="REI/242">CAMRA WhatPub :: Royal Gurkha - <a href="https://whatpub.com/pubs/REI/242/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -281,7 +284,7 @@ var thispub = 53268;var pubaddress = "Brighton Road";var pubname = "Royal Gurk
 
 	var mymap = L.map('mapid').setView([51.26990680635129, -0.21118909120560], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -345,12 +348,12 @@ var thispub = 53268;var pubaddress = "Brighton Road";var pubname = "Royal Gurk
 <span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=53268">View all updates for Royal Gurkha, Tadworth</a></span>
 <div class="hline"></div>
       <div class="auditrow"><div class="auditdate">
-        5<span class="sup">th</span> Aug 2013, 13:09
-      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=NickDavies">Nick Davies</a> amended by <a rel="nofollow" href="/userinfo.php?name=NickDavies">Nick Davies</a> 
+        6<span class="sup">th</span> Jul 2019, 22:04
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=NickDavies">Nick Davies</a> approved
       </div></div>
       <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
-        4<span class="sup">th</span> Aug 2013, 09:27
-      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=NickDavies">Nick Davies</a> 
+        6<span class="sup">th</span> Jul 2019, 22:04
+      </div><div class="auditexp">Web Link submitted by <a rel="nofollow" href="/userinfo.php?name=NickDavies">Nick Davies</a>
       </div></div>
       
 

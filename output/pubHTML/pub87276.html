@@ -126,13 +126,13 @@ var thispub = 87276;var pubaddress = "Grand Junction Retail Park";var pubname 
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87276;var pubaddress = "Grand Junction Retail Park";var pubname 
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="vnvqhlib9nt03asgf145c8auk3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="77fq8cdcs818dclr12qcf5o8h6" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87276;var pubaddress = "Grand Junction Retail Park";var pubname 
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.1920928955078E-5 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87276;var pubaddress = "Grand Junction Retail Park";var pubname 
   <div id="displayedimage">
 <a href="/pubpictures/87276/" class="indisplay"><img src="/images/display/87001_87500/87276_557a21c2.jpg?w=2" alt="Picture of Chiquito" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
   Submitted on Wednesday, 19<sup>th</sup> December 2018<br />
-  With picture contributions to 24007 other pubs<br />
+  With picture contributions to 24825 other pubs<br />
 <a href="/pubpictures/87276/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([53.09683660000000, -2.43401670000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Crewe, 0.83 miles, 16 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Sandbach, 5.09 miles, 1 hr 38 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Nantwich, 5.57 miles, 1 hr 47 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('mnacIllzMaAk@WS@Kk@aAISOi@[aDEgB@{@ECJeBL{@h@aB`EP?`AtH^dBDdCRNM\\G~Hp@^PDHBPP@F_@DCbCRf@ZV^Rf@BR?PLLHIH?VLTZNt@HCl@vEPIBB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('mnacIllzMaAk@WSUYMSIGKAKDa@f@YBu@O_@wA{@{A_EuEkAcAmBeAeLeH}AmG}@kAu@q@yCaBu@YcB[uAGe@N{DjCmB`BgCjBwBnBeBnAsArBcBaCGMUw@YZEJ]WOGsMdGkB_GoBRgBEaAmA{LoFIcANeAy@}As@YcCPmAmAc@uAYoFmEPIoGc@gAnCwFlAcDqCmEoCgCgE_FqFcLw@_@sEqIkB|DcAN}CmEqCkDmBy@f@sB`@eCL{BUIi@w@aAq@sF}C_Ay@aB}@s@Ut@qDO?_MuH_a@oWkAnAi@\\gA^m@@iB]HJRb@LLBwAAWO[aA}@]m@Sy@E}@@eAJo@Ca@USQI_@]]q@e@iB]_Bs@_CeA_C}@aBc@jAk@~CgKwGi@hDaDiB{FkEQgDEuCMoBcBgJ]}@gFnAgHnBUBQEiC}AYlBXRBLCRKGCLUM', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('mnacIllzMaAk@YDBHQLYv@WvAmAxHEhAMEQfD?~BOp@ELCV@PDLDhAOxD~KvAMbDIVRHv@f@^H|@DxDUvCGJvMBX\\dABT?`@cAd^WpHOlCk@zCaBt\\e@tLMfFAzA@rCLdJF~APxB@r@Cx@Kz@QhAG\\KTP~BJfD~CE|@K`@MBZp@|Dt@tCh@~Ar@dBbAnBnAfBt@~@hAdA`Ar@jEhCq@lEGn@?t@JxAv@IX?NFZf@JH\\AFCDbAEVh@jAV`@JA`@hAd@r@`Az@`@YTU\\TJb@t@TdB`An@l@t@|@|AxBHV`@h@l@xAd@xAh@xAJv@p@p@r@rAh@`Bd@bAbCbJf@dC~AtFR~@Vd@rBzEh@p@Xl@xAT~@Th@Dr@CNdBDfDFt@BbBAnBPfBl@OfEo@?fBEbF@VEnAJzBNnBP`A@VEz@FlAGh@Y~@M`AHnAGdASnAW`AKhAD|@AbASr@C~AL^^d@BIRRxAb@l@^t@BtBdCf@dAb@t@HFJ@h@r@Lj@NZh@rBxBrEN`@t@`DF\\TfCzBdQh@|@r@ENMd@wAN_A\\bAJlADz@ZfDV|AFPFj@|@`@`@ThA`AhBpBlDnEtDfFVb@r@|@Vb@Nb@Pn@NtAtASPRd@Rt@HNK\\`@D\\A|@j@X~@t@MtAxBh@XGBERPEz@`AXPoAtAPFjFGvAhAPr@z@p@VTp@hAu@`@E`@DBMFID?JF@F`AWhAFBi@?FH@YuE', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.09683660000000,-2.43401670000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

@@ -126,13 +126,13 @@ var thispub = 9839;var pubaddress = "Lydfords Lane";var pubname = "The Buffalo
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 9839;var pubaddress = "Lydfords Lane";var pubname = "The Buffalo
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="n1bbvbd6q3uv22pndaj10fdu26" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="uh1vspj6jvokca9ssm696gde34" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 9839;var pubaddress = "Lydfords Lane";var pubname = "The Buffalo
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 9839;var pubaddress = "Lydfords Lane";var pubname = "The Buffalo
   <div id="displayedimage">
 <a href="/pubpictures/9839/" class="indisplay"><img src="/images/display/9501_10000/9839_bf6262e3.jpg?w=2" alt="Picture of The Buffalo Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=First+King" class="indisplay">Wynne Route</a><br />
   Submitted on Wednesday, 23<sup>rd</sup> August 2017<br />
-  With picture contributions to 3464 other pubs<br />
+  With picture contributions to 3485 other pubs<br />
 <a href="/pubpictures/9839/" class="smallbutton">View all this pub's pictures</a> (3 more images)
  
   
@@ -260,7 +260,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 <span class="h2ish" id="linksheading">External web links for The Buffalo Inn</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-<ul id="Custom2"><li class="fblink" id="197047943817482">Facebook - <a href="https://www.facebook.com/BuffaloInnWyke/" target="_blank" rel="nofollow">The Buffalo Inn</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="197047943817482">Facebook - <a href="https://www.facebook.com/BuffaloInnWyke/" target="_blank" rel="nofollow">The Buffalo Inn</a></li></ul><ul id="Custom2"><li class="wplink" id="WSX/12">CAMRA WhatPub :: The Buffalo Inn - <a href="https://whatpub.com/pubs/WSX/12/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([51.03728100000000, -2.29187900000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -354,18 +354,11 @@ Be the first to write a recommendation on this pub and let everyone know why the
   <div class="hline"></div>
   <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
   
-  <span id="facdisptable"><ul class="Custom1"><li>Real Ale : <span id="fac1019839">Yes</span> <span id="discdetail1019839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 May 2014 by Dave McNally</span></li></ul></span>
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac1189839">No</span> <span id="discdetail1189839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Bar Billiards : <span id="fac1079839">No</span> <span id="discdetail1079839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Beer Festivals : <span id="fac1179839">No</span> <span id="discdetail1179839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Beer Garden : <span id="fac1149839">Yes</span> <span id="discdetail1149839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>CAMRA Discount : <span id="fac1029839">No</span> <span id="discdetail1029839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Car Park : <span id="fac1139839">Yes</span> <span id="discdetail1139839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Child Friendly : <span id="fac1219839">Yes</span> <span id="discdetail1219839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Darts : <span id="fac1119839">No</span> <span id="discdetail1119839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Dog Friendly : <span id="fac1059839">Yes</span> <span id="discdetail1059839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Function Room : <span id="fac1239839">Yes</span> <span id="discdetail1239839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Hot Food : <span id="fac1039839">Yes</span> <span id="discdetail1039839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Jukebox : <span id="fac1129839">No</span> <span id="discdetail1129839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Karaoke : <span id="fac1069839">No</span> <span id="discdetail1069839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Live Music : <span id="fac1089839">No</span> <span id="discdetail1089839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Live TV Sports : <span id="fac1109839">No</span> <span id="discdetail1109839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Micropub : <span id="fac1229839">No</span> <span id="discdetail1229839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Pinball : <span id="fac1169839">No</span> <span id="discdetail1169839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Pool Table : <span id="fac1049839">No</span> <span id="discdetail1049839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Quiz Night : <span id="fac1099839">No</span> <span id="discdetail1099839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Real Ale : <span id="fac1019839">Yes</span> <span id="discdetail1019839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 May 2014 by Dave McNally</span></li><li>Real Cider : <span id="fac1199839">No</span> <span id="discdetail1199839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>Wheelchair Access : <span id="fac1209839">No</span> <span id="discdetail1209839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li><li>WiFi : <span id="fac1159839">Yes</span> <span id="discdetail1159839" class="discdetail" style=""></span>  <span class="Reviewer">last updated 26 September 2019 by E TA</span></li></ul></span>
   
 </div>
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>12noon - 7:30pm</td></tr>
-<tr><td>Monday</td><td>5:30pm - 11pm</td></tr>
-<tr><td>Tuesday</td><td>12noon - 3pm | 5:30pm - 11pm</td></tr>
-<tr style="font-weight:bold"><td>Wednesday</td><td>12noon - 3pm | 5:30pm - 11pm</td></tr>
-<tr><td>Thursday</td><td>12noon - 3pm | 5:30pm - 11pm</td></tr>
-<tr><td>Friday</td><td>12noon - 3pm | 5:30pm - 11pm</td></tr>
-<tr><td>Saturday</td><td>12noon - 3pm | 5:30pm - 11pm</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>

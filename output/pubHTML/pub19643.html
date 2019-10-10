@@ -126,13 +126,13 @@ var thispub = 19643;var pubaddress = "Garstang Road";var pubname = "Brockholes
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 19643;var pubaddress = "Garstang Road";var pubname = "Brockholes
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="fe70q580j732kt72cvh5n29081" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="u3ti6qp466v3s6hqng4gnuame3" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 19643;var pubaddress = "Garstang Road";var pubname = "Brockholes
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -260,7 +260,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 <span class="h2ish" id="linksheading">External web links for Brockholes Arms</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-<ul id="Custom2"><li class="fblink" id="283364198443001">Facebook - <a href="https://www.facebook.com/pages/Brockholes-Arms/283364198443001" target="_blank" rel="nofollow">Brockholes Arms</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="283364198443001">Facebook - <a href="https://www.facebook.com/pages/Brockholes-Arms/283364198443001" target="_blank" rel="nofollow">Brockholes Arms</a></li></ul><ul id="Custom2"><li class="wplink" id="LUN/24">CAMRA WhatPub :: Brockholes Arms - <a href="https://whatpub.com/pubs/LUN/24/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([53.87600500000000, -2.75974500000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Preston, 9.29 miles, 2 hr 59 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Salwick, 9.34 miles, 3 hr 0 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Kirkham & Wesham, 11.75 miles, 3 hr 46 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('{sygIz`zOpCe@pL}GxB_AzBu@rAYjBmGZkCZwENyARmAZqAl@}An@eAt@iAzA}AhDyCHaAKYMgADCEWjBe@`C}@t@i@jBeCrCsC`BsB^q@Pc@tAsE\\i@n@c@d@Ix@Tr@p@Rj@Z]fCsBlBc@CQ?SDQFOHGR?HFhAw@zAw@jBe@hEE~FvAnB|@bBf@nDb@dCT|BQdCYjBF|A`@pEhCp@f@fB~AtAz@hAZrA@lAY\\OrHeH`CaChBmAdGaD`NeFbBmArFgFjB{@lDaA`Eo@`NaCpAKdEy@Cw@tEu@Dn@zB[`F]~Da@rEw@tEgAlp@}PjEcAjGeApBOxAg@`@UVYtAeBxA{C`AoC`CsHfBsEfAgBp@y@jDyCPVTBRSDOBg@CQfH_HnCcClAoAnCyBpAs@pE}AAIdA_@lI{BlAe@t@g@~@}@xEcFxAwAzAiBpAuBjBoCJ\\`AwApAgA\\MRAXBRFZX\\j@f@Av@STFX@DoAJk@h@m@d@Mb@[|@WFABBHSHAF[`AWnDgBb@c@xEaDtBy@dQe@dIkAbB_@dC]jDw@~HwAr_AcPtDqBj@a@tDsDfAeAj@a@h@UbKyF`GyBbFeArDq@jBc@pDm@xBGfBFnAJx@AnCe@lC@jD~@jCvA|BjC^ANDFL`Am@t@w@p@u@n@_Ar@nBj@cAx@t@v@y@T`AbAcA~BsBh@zAT`APCVOz@VlD|BNRLjBpAUt@YNR\\@?Lj@K?JhFk@?HMD}@J', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('{sygIz`zOpCe@pL}GxB_AzBu@rAYjBmGZkCZwENyARmAZqAl@}An@eAt@iAzA}AhDyCHaAKYMgADCEWjBe@`C}@t@i@jBeCrCsC`BsB^q@Pc@tAsE\\i@n@c@d@Ix@Tr@p@j@v@Zz@z@~AdBxCfNpV`BlCf@h@l@`@d@Rj@JbAIj@S|Ac@j@g@h@y@b@sAJw@d@uF`@aHd@qFTw@LYZa@d@_@h@SrDi@hFI~AJt@Zx@f@pDdCbCxAh@Vd@\\j@l@d@v@XbA`ApHfAlFf@xAz@fB`@t@`@l@fBvBnCtCxFnHrAxA\\XRXp@d@l@Pj@Dx@MhIkCxQbNvD~ABtAlGqAnIyCpA_AbCo@zEeE|BcAlH}@`QgBbCS`J{C@dHJnCTs@|BaD|CuCvIbC|BM|@m@`CBj@TjG`Bl@j@|@`BXJAX\\t@dEnTj@bC`@fA`@x@v@nAbBrB`DrDRJPTbBbCr@rA`@dAVz@XfBN|AL`CFfDF|BLbATxA\\rAn@~A`AhBfEnGb@`Ad@tAj@pBZz@h@bAn@~@f@h@HXr@jArDnFbAjB`@bA\\tAzCbO`F~Vh@`CJTH`@H~@Fz@?n@G~@aBpJo@vEWvD@\\@LO~AEhCFzCLlCh@|NDvDErFKtFAbEF|FL|EDTAlAj@bZb@bPZtDb@nCh@lBx@`B^^bDjBpCx@zALbC?tD]|LoCxIe@hAHtDDrATjAf@nBxAtGvGd@j@bAn@dAXpAAfAQzEoB~@[f@Fn@TAZtF`EdC`@lDIvDi@|B{@hADxDWVj@jCtK|AOxKmCWhD', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('{sygIz`zOpCe@pL}GxB_AzBu@rAYjBmGZkCZwENyARmAZqAl@}An@eAt@iAzA}AhDyCHaAKYMgADCEWjBe@`C}@t@i@jBeCrCsC`BsB^q@Pc@tAsE\\i@n@c@d@Ix@Tr@p@j@v@Zz@z@~AdBxCfNpV`BlCf@h@l@`@d@Rj@JbAIj@S|Ac@j@g@h@y@b@sAJw@d@uF`@aHd@qFTw@LYZa@d@_@h@SrDi@hFI~AJt@Zx@f@pDdCbCxAh@Vd@\\j@l@d@v@XbA`ApHfAlFf@xAz@fB`@t@`@l@fBvBnCtCxFnHrAxA\\XRXp@d@l@Pj@Dx@MhIkCxQbNvD~ABtAlGqAnIyCpA_AbCo@zEeE|BcAlH}@`QgBbCS`J{C@dHJnCTs@|BaD|CuCvIbC|BM|@m@`CBj@TjG`Bl@j@|@`BXJAX\\t@dEnTj@bC`@fA`@x@v@nAbBrB`DrDRJPTbBbCr@rA`@dAVz@XfBN|AL`CFfDF|BLbATxA\\rAn@~A`AhBfEnGb@`Ad@tAj@pBZz@h@bAn@~@f@h@HXr@jArDnFbAjB`@bA\\tAzCbO`F~Vh@`CJTH`@H~@Fz@?n@G~@aBpJo@vEWvD@\\@LO~AEhCFzCLlCh@|NDvDErFKtFAbEF|FL|EDTAlAj@bZb@bPZtDb@nCh@lBx@`B^^l@XUPQbAS`BWzF?zDH|FPjEj@zFFfC|HmBjNuDdA~GTrBBjDj@lId@tDvCfQnEfL|BlFp@bBr@zFvArOV`@n@Z`@d@Jz@HrBFp@bBaBrBu@nBUfCErDvOFd@GZgA~@Gv@LfAbBvGb@jBf@vA~BxBv@f@R`Ab@hGNf@p@P|A?^TxApDp@fCAt@DdICrADrCt@xIBrCGjDBbBNlBFtB?~@O|Am@bDCb@BVU?SrC}@jF]`FyAhMyAhDqAbAeAfDgAfHkAlCcAbJaAdOgA|OCtC`BbV|@rCj@vBjD[x@E^BlAj@jDpB~CMNdAv@|@Rl@\\j@v@XTb@HrDEzAk@|GzBy@LxAt@CdCH', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.87600500000000,-2.75974500000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

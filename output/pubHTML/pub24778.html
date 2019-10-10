@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Castle pub in North Acton, W3, London (Greater), W3 6UL : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Castle" />
+  <meta name="keywords" content="The Castle, 140 Victoria Road, W3, London (Greater), North Acton, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Castle in W3" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/24501_25000/24778_564343af.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/24778/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.52252927966976" />
+<meta property="og:longitude" content="-0.25867548213955" />
+<meta property="og:street-address" content="140 Victoria Road" />
+<meta property="og:locality" content="W3" />
+<meta property="og:region" content="London (Greater)" />
+<meta property="og:postal-code" content="W3 6UL" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Castle in W3? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Castle the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/24778/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Castle in W3" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Castle " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/24501_25000/24778_564343af.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/24778/" />
+<meta name="geo.position" content="51.52252927966976;-0.25867548213955" />
+<meta name="geo.placename" content="The Castle in W3" />
+<meta name="geo.region" content="UK" />
+<title>The Castle in North Acton, W3 : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":24778},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(24778);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 24778;var pubaddress = "140 Victoria Road";var pubname = "The Castle";var pubpostcode = "W3 6UL";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/greater-london/" title="Pubs Galore : London (Greater) Page">London (Greater)</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/w3/greater-london/" title="Pubs Galore : W3 Page">W3</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Castle Page">The Castle Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="ol6ku7vj16dcm6d7769nv6piq5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/24778/" class="indisplay"><img src="/images/display/24501_25000/24778_564343af.jpg?w=2" alt="Picture of The Castle" /></a><br />  Image posted by <a href="/userinfo.php?name=Arthurish" class="indisplay">Philip Carter</a><br />
+  Submitted on Saturday, 4<sup>th</sup> February 2012<br />
+  With picture contributions to 1100 other pubs<br />
+<a href="/pubpictures/24778/" class="smallbutton">View all this pub's pictures</a> (10 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/24778/">Pub map</a><br /><a href="/pubreviews/24778/">Pub reviews (3)</a><br /><a href="/pubpictures/24778/">Pub pictures (11)</a><br /><a href="/core/pubaudit.php?id=24778" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Castle, North Acton, W3</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">140 Victoria Road</span><br />
+
+
+<span class="town">W3</span><br />
+<span class="postcode">W3 6UL</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02089922027</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    <h3>Pub Type</h3><span class="pubaddress">Fuller's</span>
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/north-acton/greater-london/">North Acton</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The Castle</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/CastleActon" target="_blank"><img src="https://pbs.twimg.com/profile_images/1019207638322679808/qdQ4ukxN_normal.jpg" alt="Castle Acton" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/CastleActon" target="_blank">Castle Acton</a></strong>
+Tonight from 8:30! <a href='https://t.co/jK9ZUzEdXc' target='_blank'>https://t.co/jK9ZUzEdXc</a>
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/CastleActon/status/1116338430680674305">2:53 PM Apr 11th</a> from <a href="http://www.facebook.com/twitter" rel="nofollow">Facebook</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/CastleActon" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/CastleActon" target="_blank">Castle Acton</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Castle  <span class="h2note">(Average Rating: <span id="averagerating"><b>6&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review113848" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Rex_Rattus">Rex Rattus</a> left this review about The Castle</h6>
+<p class="old">This is a massive edifice of a pub near to North Acton Station, and is well named as The Castle as it has an enormous turret as its exterior centrepiece. It&#039;s covered in brewer&#039;s Tudor, and is built to a scale that was intended to dominate the junction at which it sits. Inside it&#039;s as large as its exterior suggest. It&#039;s largely opened up, but there remain three fairly distinct areas, and the smaller of the three at the back on the left can be separated to some extent as some concertina screening is still in place. This room still has some fielded panelling on the walls, as well as a nice tiled fireplace with a wooden surround. In my opinion this is the nicest of the three rooms here. But overall in the pub there are too many tall tables/tall stools and bucket armchairs for my liking, But I&#039;m sure I&#039;m in the minority as they seemed quite popular.<br />
+<br />
+As this is a Fuller&#039;s pub in Fuller&#039;s heartland there are no surprises as to the the ales available. Just the pair of London Pride (&pound;3.80 a pint) and Oliver&#039;s Island were on, with Jack Frost having just finished. The food here is a bit cheaper than at the Fox &amp; Goose that I had visited earlier, with sarnies around &pound;5 - &pound;6, and main courses around &pound;9 - &pound;11.<br />
+<br />
+It was very busy when I visited on Thursday afternoon, but I guess that might be a Christmas phenomenon. This is an OK pub, without being anything special.</p>
+<p class="Reviewer">On 25<sup>th</sup> December 2016 
+  - rating: <b>5</b><br />
+  <span class="leftspace">[User has posted 2521 recommendations about 2439 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review112742" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> left this review about The Castle</h6>
+<p class="old">Substantial Fuller&#039;s house near North Acton station in a full-on brewer&#039;s Tudor style.  It retains its island bar with two decent-sized seating areas and a separate dining room beyond.  Plenty of dark wood-panelling and other original features, including a fine fireplace in one bar.  Also has some wooden benches out front and a patio beer garden at the back.  Pride, the seasonal Red Fox (&pound;3.90) and Weird Beard Mariana Trench as a guest from a trio of three-handpump banks.</p>
+<p class="Reviewer">On 13<sup>th</sup> November 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 5722 recommendations about 5722 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review111829" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Castle</h6>
+<p class="old">This large Fullers pub opposite North Acton station was built in 1938 and retains some interesting historic features, despite having been mostly opened out into one single room. The pub is laid out around a central servery, with a number of formerly separate rooms still discernible as you complete your circuit around the bar. Dark wood is the preferred medium here, with the floorboards, wall panels and servery all sporting plenty of it and only some warm-shaded upper sections of wall offering an alternative. The walls have been further brightened up by a series of collages which include images of street art, stickers and posters from various bands and another collage of what appeared to be former footballers (although I only saw this from a distance, so I may have got the wrong end of the stick). The dark wood is certainly not sacred, as along with these obstructions to the wood panels, there were also various craft beer bottle labels stuck to the bar canopy. There is limited seating in the front part of the pub, with lots of space given over to vertical drinking, but as you make your way to the rear, more options appear, including on a raised seating section to the rear left and in front of a smart fireplace to the rear right. Behind the fireplace there is a raised carpeted lounge/function room full of tub chair and armchair seating. Walls are again dark wood panelled with white anglypta uppers, whilst the fireplace, which shares a chimney breast with the fireplace in the adjacent room, has an etched glass mirror above and some semi-crushed beer cans and aerosol spray paint tins on its mantelpiece, alongside another street art image. Windows here have stained glass rose motifs and the walls are decorated with breweriana and old 90&#039;s German gig posters. A stack of board games was available in the far corner and the pub has a paved garden through the doors behind the bar. As I was leaving, the bar staff turned a couple of TV screens on so the afternoon&#039;s England football fixture could be shown. <br />
+When I got to the bar, I could only see Fullers London Pride (&pound;3.70) available, so I ordered a pint from the cheery barmaid, which was in very good shape and worthy of their recent Good Beer Guide listing. However, moving to the rear of the bar, another set of handpulls had a second guest beer available, although I forgot to note what it was. <br />
+This is a part of town I doubt I&#039;d ever have visited were it not for my attention being drawn to this pub, as it&#039;s in an area that seems a little isolated and not served by many other pubs. Thankfully, I thought the place was pretty good, providing me with a good pint of Pride in pleasant, traditional surroundings, so the journey out here wasn&#039;t wasted. A good asset to the local area and worth calling in if you&#039;re passing.</p>
+<p class="Reviewer">On 18<sup>th</sup> October 2016 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2321 recommendations about 2321 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Castle</span>
+<div class="hline"></div>
+          <p class="Disclaimer">Pubs Galore is not responsible for the content of external internet sites.</p>
+          <ul id="Custom2">
+			<li>Official site of The Castle - <a href="http://www.castlenorthacton.co.uk/" title="Submitted by:- Just a quick pint, then I'm off" target="_blank">www.castlenorthacton.co.uk</a></li>
+			<li>Randomness Guide to London - <a href="http://london.randomness.org.uk/wiki.cgi?Castle,_W3_6UL" title="Submitted by:- Kake Pugh" target="_blank">Castle entry</a></li>
+          </ul>
+<ul id="Custom2"><li class="fblink" id="122926657723043">Facebook - <a href="https://www.facebook.com/castleacton/" target="_blank" rel="nofollow">The Castle</a></li></ul><ul id="Custom2"><li class="twitlink" id="425796570">Twitter - <a href="https://twitter.com/CastleActon" target="_blank" rel="nofollow">Castle Acton</a></li></ul><ul id="Custom2"><li class="wplink" id="MDX/12160">CAMRA WhatPub :: The Castle - <a href="https://whatpub.com/pubs/MDX/12160/" target="_blank">whatpub.com</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/24778/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Tris39">Tris C</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.52252927966976, -0.25867548213955], 16);
+
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.52252927966976, -0.25867548213955]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Acton Main Line, 0.62 miles, 11 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Willesden Junction, 1.02 miles, 19 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Harlesden, 1.24 miles, 23 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('u_nyHfoq@Jo@h@VXZ\\j@Xj@Dd@VA@DBh@N@HHr@xANh@d@hCd@|@fBdB`@TbBt@HJDX?Hb@Q@d@MlB^Vt@nBb@r@`@T~@rAz@~BRv@Jr@Cj@Sd@|@f@~@XlBd@NRJR', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('u_nyHfoq@Jo@wDwBcAq@mB{Ay@y@q@w@wAoBaA{AyAsCBG{CyFs@}AyAuCyBeHS_@oB}Bs@aAmCeD}EgDwC}CqCmB`AcHKGBQEi@Dq@HuCEA?KB?@_@CQ', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('u_nyHfoq@Jo@wDwBcAq@mB{A}AaBmCbP}@u@q@w@k@}@_C}F}GpJENEj@aA@QPmB`@cCr@_BRkKl@gFhAULc@b@u@{Ai@uAkBuJi@gAaA{@gAm@i@OCVGAIGCHGG@H@RDH', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.52252927966976,-0.25867548213955], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=24778">View all updates for The Castle, W3</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        17<span class="sup">th</span> May 2018, 14:30
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        17<span class="sup">th</span> May 2018, 00:38
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11824778">No</span> <span id="discdetail11824778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10724778">No</span> <span id="discdetail10724778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>Beer Festivals : <span id="fac11724778">No</span> <span id="discdetail11724778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 October 2017 by Komakino .</span></li><li>Beer Garden : <span id="fac11424778">Yes</span> <span id="discdetail11424778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>CAMRA Discount : <span id="fac10224778">No</span> <span id="discdetail10224778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 October 2017 by Komakino .</span></li><li>Car Park : <span id="fac11324778">Yes</span> <span id="discdetail11324778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>Child Friendly : <span id="fac12124778">Yes</span> <span id="discdetail12124778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>Darts : <span id="fac11124778">No</span> <span id="discdetail11124778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>Dog Friendly : <span id="fac10524778">Yes</span> <span id="discdetail10524778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>Function Room : <span id="fac12324778">Yes</span> <span id="discdetail12324778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>Hot Food : <span id="fac10324778">Yes</span> <span id="discdetail10324778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>Jukebox : <span id="fac11224778">No</span> <span id="discdetail11224778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>Karaoke : <span id="fac10624778">No</span> <span id="discdetail10624778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 October 2017 by Komakino .</span></li><li>Live Music : <span id="fac10824778">Yes</span> <span id="discdetail10824778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>Live TV Sports : <span id="fac11024778">Yes</span> <span id="discdetail11024778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>Micropub : <span id="fac12224778">No</span> <span id="discdetail12224778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>Pinball : <span id="fac11624778">No</span> <span id="discdetail11624778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>Pool Table : <span id="fac10424778">No</span> <span id="discdetail10424778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>Quiz Night : <span id="fac10924778">Yes</span> <span id="discdetail10924778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 October 2017 by Komakino .</span></li><li>Real Ale : <span id="fac10124778">Yes</span> <span id="discdetail10124778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 25 December 2016 by Rex Rattus</span></li><li>Real Cider : <span id="fac11924778">No</span> <span id="discdetail11924778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>Wheelchair Access : <span id="fac12024778">Yes</span> <span id="discdetail12024778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li><li>WiFi : <span id="fac11524778">Yes</span> <span id="discdetail11524778" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 October 2016 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/84357/" class="List1">The Common</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 3 from 1 reviewer(s)" title="Pub has average rating of 3 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/23854/" class="List1">The Fishermans Arms</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 2 picture(s)" title="Pub has 2 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/65114/" class="List1">The Wishing Well</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

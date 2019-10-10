@@ -126,13 +126,13 @@ var thispub = 87685;var pubaddress = "42 Station Road";var pubname = "Paul's";
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87685;var pubaddress = "42 Station Road";var pubname = "Paul's";
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="k6088sd6oodg6bu2sol792kve4" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="kk76didm4f2os7mfav2ihc5p15" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87685;var pubaddress = "42 Station Road";var pubname = "Paul's";
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87685;var pubaddress = "42 Station Road";var pubname = "Paul's";
   <div id="displayedimage">
 <a href="/pubpictures/87685/" class="indisplay"><img src="/images/display/87501_88000/87685_2ad22ef5.jpg?w=2" alt="Picture of Paul&#039;s" /></a><br />  Image posted by <a href="/userinfo.php?name=rpadam" class="indisplay">Just a quick pint, then I&#039;m off</a><br />
   Submitted on Sunday, 28<sup>th</sup> April 2019<br />
-  With picture contributions to 5082 other pubs<br />
+  With picture contributions to 5595 other pubs<br />
 <a href="/pubpictures/87685/" class="smallbutton">View all this pub's pictures</a> (1 more image)
  
   
@@ -260,7 +260,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 <span class="h2ish" id="linksheading">External web links for Paul&#039;s</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-<ul id="Custom2"><li class="fblink" id="204456372909810">Facebook - <a href="https://www.facebook.com/pages/Pauls-Cafe-Bar-Westgate/204456372909810" target="_blank" rel="nofollow">Pauls Cafe Bar Westgate</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="204456372909810">Facebook - <a href="https://www.facebook.com/pages/Pauls-Cafe-Bar-Westgate/204456372909810" target="_blank" rel="nofollow">Pauls Cafe Bar Westgate</a></li></ul><ul id="Custom2"><li class="wplink" id="THA/184">CAMRA WhatPub :: Paul's - <a href="https://whatpub.com/pubs/THA/184/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([51.38142167645593, 1.33878760013886], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Westgate-on-Sea, 0.15 miles, 2 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Birchington-on-Sea, 1.97 miles, 38 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Margate, 2.04 miles, 39 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('mmrxHgndGFbBBzBKn@ETB\\jB{@Wq@M_C', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('mmrxHgndGFbBBzBKn@ETB\\UH|AtS`A~Mv@zI^bGuA`@f@nHaFjAE`@g@tBG|A@tHFxGz@tDAr@W|EAtBBzAh@rEBdEHbA^|@PTNFR?|A[H~@T?HDHLDNF|Eb@NxBDG~CBJJFvCMh@hXTnEJhAJhd@vAZZl@Ol@JFF~@Jb@N@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('mmrxHgndGa@_QEUEEm@qGUiHAOcEe@@WkEG@aEg@I{@a@q@i@e@i@k@iA[mAIm@MHIu@YqEK_AUaASy@e@o@]uASe@[a@GQGm@ZeGCcC?c@JcADYRm@d@qC\\uA@WAo@JkC~@cHBaAPgBf@@BiMQ?GcCKQAuLSgCaCkLSc@i@q@_@YKWC[H}At@g@`DqChCaCmAkF{@}AyAaCLC?uAl@Ch@BCKFk@?a@GUh@E?e@M??ENKLUBUFyAF@BKB?Q`CGtC?r@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.38142167645593,1.33878760013886], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

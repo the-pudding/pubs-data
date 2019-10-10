@@ -126,13 +126,13 @@ var thispub = 87391;var pubaddress = "Arrow";var pubname = "Arrow Mill";var p
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87391;var pubaddress = "Arrow";var pubname = "Arrow Mill";var p
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="5tu1j12nkpm4434ano55lb2e74" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="r2ju4smqbm0c749k6a1bsuj722" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87391;var pubaddress = "Arrow";var pubname = "Arrow Mill";var p
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -246,7 +246,7 @@ var thispub = 87391;var pubaddress = "Arrow";var pubname = "Arrow Mill";var p
 <p>Part of the Bunning &amp; Price chain.</p>
 <p class="Reviewer">On 24<sup>th</sup> January 2019 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 783 recommendations about 755 pubs]</span></p>
+  <span class="leftspace">[User has posted 900 recommendations about 870 pubs]</span></p>
   </div>
 </div>
 
@@ -263,7 +263,7 @@ var thispub = 87391;var pubaddress = "Arrow";var pubname = "Arrow Mill";var p
           <ul id="Custom2">
 			<li>Official site of Arrow Mill - <a href="http://www.brunningandprice.co.uk/arrowmill/" title="Submitted by:- Delboy 20" target="_blank">www.brunningandprice.co.uk</a></li>
           </ul>
-</div>
+<ul id="Custom2"><li class="wplink" id="SHA/24">CAMRA WhatPub :: Arrow Mill - <a href="https://whatpub.com/pubs/SHA/24/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -277,7 +277,7 @@ var thispub = 87391;var pubaddress = "Arrow";var pubname = "Arrow Mill";var p
 
 	var mymap = L.map('mapid').setView([52.20276150000000, -1.88170490000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,39 @@ var thispub = 87391;var pubaddress = "Arrow";var pubname = "Arrow Mill";var p
 
 
 </script><div>
+<i class="fas fa-train"></i> Wilmcote, 6.97 miles, 2 hr 14 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Wootton Wawen, 7.64 miles, 2 hr 27 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Bearley, 7.74 miles, 2 hr 29 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('azr}HzonJSr@eAjIuA`JoKcCgD}@sAi@]Um@s@u@qAu@_Bc@yA_@_B`@eBA_FUQJeBB}AJ_C`@e@Va@@c@s@k@Qy@a@u@IFOEM[SYs@yAi@a@i@YQa@KGMFMuA]wC]{DCm@s@q@m@oDGm@?YG]Hk@BcAOqFFeBOeEKyAQkAF}@t@_ANoACmAmAiE{@w@}@DrAoGHaBA]UcBW{@Sa@mAwAaAeDiAsFy@kFOeAU_C?iAUwAMi@QoDWoDu@yEs@kDkBoIkAwEwGsTs@mCOw@YeC[mG?i@Bk@k@Y]g@_@{@Qg@[iBs@qFYmCOmBo@{Po@qJ}AgPi@wFK}A_@iKq@eOUwAwAqGO{@C[E_EEaAEYYeA_AgCc@kB[mCK}ACmA@q@HwBOyAIe@Oa@eA_BUe@Aa@p@uAlB}Cb@y@Tm@Le@?SAKCK_@_@cAe@eUcRlAuJ`AyM\\wH@kGJ{AxBmN@mCYyDgAeW@cDHiFNsAVuAn@}BvBiFl@mBb@}BkQqLYgBeBkIsBuI~EyDbCyBtCcDRyGYkDbA{GcAg@@[|@kD~BeG|BoFn@cCfCoOPyA~@{E`@sKZiFB_B?oBl@?C_PCa@Im@qAv@Ke@wA}CkCsH}AcDgCsG]aAYeA|AwAAMXO', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('azr}HzonJSr@eAjIuA`JoKcCgD}@sAi@]Um@s@u@qAu@_Bc@yA_@_B`@eBA_FUQJeBB}AJ_C`@e@Va@@c@s@k@Qy@a@u@IFOEM[SYs@yAi@a@i@YQa@KGMFMuA]wC]{DCm@s@q@YY[q@UYQKiAOLgD?cByGIgHsAF_@}AcBiBuA{@w@a@q@CSUFIAYYQCIKOWKa@COAe@cB{@mBGk@KOOg@y@o@aBmAwE{@kC[u@{BsEFMQ]Ca@KK}FmPGUcA{FSJgAwGo@LaAlAMMsB~B_Au@q@?{EcFkBgDeBm@AUyAa@iBZ}AAEVkDEaASc@o@eEoBUg@wA{@yD}Fo@{@sAaDuHiNk@j@}F}LwDQEmAqCi@uBw@Bg@cFeD_@o@k@e@w@wBs@_@_AMeBl@W]{@iDmAkCSBs@aBIs@c@@sAeCc@eAe@}AoBkIm@uCUy@Q]s@kAg@qAK@aCo@aAi@qCyBkBqBcA}@E}@COiBgGsBkISeAOaA[sDs@cGg@kFCKKSOGg@Ak@BkDn@_Bt@i@^q@Zk@Do@oAWs@o@yCM{AWyEQmIEa@S]SCy@XeBSQIYWuDoE]Ye@Om@CUGaAi@gAgAc@WMCgABy@HeARQ@GCEMMwAIg@Ma@]e@Se@sBqIKUQIQDMNMFGCGOI_AGiDMmDAsECaBOeBIc@g@kBKe@g@_EKo@dBkBjAeByAuCq@iBuBcB_@AOUqC_B_AuAuCgBeIyFiHeUkK}ESA}AsAmAm@q@i@sDiDpC_Hd@_BJ{@?aCJiDBqBAqAIqAWkCC{A@gBKaE?{AH{Cj@}F?w@]{IGuHOkC[uCe@{CCo@?k@hBJnA?lCK', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('azr}HzonJSr@eAjIuA`JoKcCgD}@sAi@]Um@s@u@qAu@_Bc@yA_@_B`@eBA_FUQJeBB}AJ_C`@e@Va@@c@s@k@Qy@a@u@IFOEM[SYs@yAi@a@i@YQa@KGMFMuA]wC]{DCm@s@q@YY[q@UYQKiAOLgD?cByGIgHsAF_@}AcBiBuA{@w@a@q@CSUFIAYYQCIKOWKa@COAe@cB{@mBGk@KOOg@y@o@aBmAwE{@kC[u@{BsEFMQ]Ca@KK_@aAoDcKu@}BqF_[GOIAIDeC_Oe@cBk@{A_AwBgA{BmAqBg@i@u@U{BMg@Ig@Wk@k@_@u@cC_Ho@cB_CkFk@yAaAmDgFuQGIICy@BUQIWWuAWcC]qEKCEOMcBM{@Ka@c@_AGQ@Mo@m@KQUq@e@_CqA{HcAsEIk@?[BMK?gA`@c@cBW{@qBsI]aCi@gCy@cFHsA@sA_@aI[iCFCAIO_@g@eD]mCCI^aDt@wDj@iExAiRf@uDR[{AmGo@cDS{AQ{Ae@sFHQ?iADqAVsCFWBu@TwAHgAKaCqAeFWqAY_Cq@{Bc@eBCq@SOIO_@gBMsBMaAK]Q{Al@o@Te@b@m@HOPMj@o@d@a@Qk@?OI?gAeBsBwBi@w@_BuAo@oBMMK@[eAMcAe@wBM]Is@YQw@OOImCE{@Qw@e@Y[Ua@_A{Ds@oC_AqCqCeHOUa@YXkDj@wCJ{@eB}AqAuA_@y@k@uBgAiFeBcHk@cBu@iBq@qBo@mCKo@A{@yCsNs@wCeBmFYmAQuBWgHAgREaEGiB_@_FEcBD{GK{B?_BHmA\\}CFo@Bs@Ag@G{Bw@oJEoABk@LkAl@yD^yAh@{ADqAwA_LyAyLYcDOcFOoHSgCo@kGWeBKe@~@yBf@{@|@yAhAsAlB`CXz@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.20276150000000,-1.88170490000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

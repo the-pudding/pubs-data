@@ -126,13 +126,13 @@ var thispub = 86480;var pubaddress = "9-11 Bedford Street";var pubname = "The 
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 86480;var pubaddress = "9-11 Bedford Street";var pubname = "The 
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="d3qh4f4q4b1ea57l3a8h8682c3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="uii4lqj9l9rt1hbta9m8pde6e7" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 86480;var pubaddress = "9-11 Bedford Street";var pubname = "The 
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 86480;var pubaddress = "9-11 Bedford Street";var pubname = "The 
   <div id="displayedimage">
 <a href="/pubpictures/86480/" class="indisplay"><img src="/images/display/86001_86500/86480_29a32f94.jpg?w=2" alt="Picture of The Nuthatch" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
   Submitted on Friday, 25<sup>th</sup> May 2018<br />
-  With picture contributions to 24007 other pubs<br />
+  With picture contributions to 24825 other pubs<br />
 <a href="/pubpictures/86480/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -246,12 +246,14 @@ var thispub = 86480;var pubaddress = "9-11 Bedford Street";var pubname = "The 
   <h2>Reviews of The Nuthatch  <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
   <div id="newreview"></div>
   <div class="hline"></div>
-  <div class="indreview"><div id="review131066" class="reviewdiv">
+  <div class="indreview"><div id="review131066" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
 <h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Zaphod">custodian 42</a> left this review about The Nuthatch</h6>
-<p>No draught ale of any kind in here.</p>
+<p class="old">No draught ale of any kind in here.</p>
 <p class="Reviewer">On 23<sup>rd</sup> July 2018 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 1391 recommendations about 1390 pubs]</span></p>
+  <span class="leftspace">[User has posted 1451 recommendations about 1449 pubs]</span></p>
   </div>
 </div>
 
@@ -282,7 +284,7 @@ var thispub = 86480;var pubaddress = "9-11 Bedford Street";var pubname = "The 
 
 	var mymap = L.map('mapid').setView([54.57376821642617, -1.23672064729078], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -356,6 +358,14 @@ var thispub = 86480;var pubaddress = "9-11 Bedford Street";var pubname = "The 
       </div></div>
       
 
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11886480">No</span> <span id="discdetail11886480" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2019 by ROB Camra</span></li><li>Beer Festivals : <span id="fac11786480">No</span> <span id="discdetail11786480" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2019 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10286480">No</span> <span id="discdetail10286480" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2019 by ROB Camra</span></li><li>Micropub : <span id="fac12286480">No</span> <span id="discdetail12286480" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2019 by ROB Camra</span></li><li>Real Ale : <span id="fac10186480">No</span> <span id="discdetail10186480" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2019 by ROB Camra</span></li><li>Real Cider : <span id="fac11986480">No</span> <span id="discdetail11986480" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 August 2019 by ROB Camra</span></li></ul></span>
+  
+</div>
 
 <!-- fbhours -->
 <!-- FH --> 

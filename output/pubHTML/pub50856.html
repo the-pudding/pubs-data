@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Ben Mhor Hotel pub in Grantown-On-Spey, Highland, PH26 3EG : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Ben Mhor Hotel" />
+  <meta name="keywords" content="Ben Mhor Hotel, 57  High Street, Grantown-On-Spey, Highland, Grantown-On-Spey Village, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Ben Mhor Hotel in Grantown-On-Spey" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/50501_51000/50856_2392c1febcc6b407f13c607da60039b1.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/50856/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="57.33003800000000" />
+<meta property="og:longitude" content="-3.60956200000000" />
+<meta property="og:street-address" content="57  High Street" />
+<meta property="og:locality" content="Grantown-On-Spey" />
+<meta property="og:region" content="Highland" />
+<meta property="og:postal-code" content="PH26 3EG" />
+<meta property="og:country-name" content="Scotland" />
+<meta property="og:description" content="Do you like Ben Mhor Hotel in Grantown-On-Spey? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Ben Mhor Hotel the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/50856/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Ben Mhor Hotel in Grantown-On-Spey" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Ben Mhor Hotel " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/50501_51000/50856_2392c1febcc6b407f13c607da60039b1.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/50856/" />
+<meta name="geo.position" content="57.33003800000000;-3.60956200000000" />
+<meta name="geo.placename" content="Ben Mhor Hotel in Grantown-On-Spey" />
+<meta name="geo.region" content="UK" />
+<title>Ben Mhor Hotel in Grantown-On-Spey : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":50856},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(50856);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 50856;var pubaddress = "57  High Street";var pubname = "Ben Mhor Hotel";var pubpostcode = "PH26 3EG";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/scotland/" title="Pubs Galore : Scotland Page">Scotland</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/highland/" title="Pubs Galore : Highland Page">Highland</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/grantownonspey/highland/" title="Pubs Galore : Grantown-On-Spey Page">Grantown-On-Spey</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Ben Mhor Hotel Page">Ben Mhor Hotel Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="44jfmhds00i506d7rk5cv9ekt3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/50856/" class="indisplay"><img src="/images/display/50501_51000/50856_2392c1febcc6b407f13c607da60039b1.jpg?w=2" alt="Picture of Ben Mhor Hotel" /></a><br />  Image posted by anonymous user<br />
+  Submitted on Wednesday, 21<sup>st</sup> July 2004<br />
+  <a href="/pubpictures/50856/" class="smallbutton">View all this pub's pictures</a>
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/50856/">Pub map</a><br /><a href="/pubreviews/50856/">Pub reviews (0)</a><br /><a href="/pubpictures/50856/">Pub pictures (1)</a><br /><a href="/core/pubaudit.php?id=50856" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Ben Mhor Hotel, Grantown-On-Spey Village, Grantown-On-Spey</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">57  High Street</span><br />
+
+
+<span class="town">Grantown-On-Spey</span><br />
+<span class="postcode">PH26 3EG</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/grantown-on-spey-village/highland/">Grantown-On-Spey Village</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Ben Mhor Hotel  <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div style="line-height:1.3;margin:5px 15px;text-align:center;"><b>Currently no reviews of this pub.</b><br />
+Be the first to write a recommendation on this pub and let everyone know why they should visit.</div>
+
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Ben Mhor Hotel</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="157059257654591">Facebook - <a href="https://www.facebook.com/benmhorhotel/" target="_blank" rel="nofollow">Ben Mhor</a></li></ul><ul id="Custom2"><li class="wplink" id="INV/131">CAMRA WhatPub :: Ben Mhor Hotel - <a href="https://whatpub.com/pubs/INV/131/" target="_blank">whatpub.com</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/50856/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location is best guess</div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([57.33003800000000, -3.60956200000000], 16);
+
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([57.33003800000000, -3.60956200000000]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Carrbridge, 10.32 miles, 3 hr 19 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Aviemore, 14.61 miles, 4 hr 42 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Forres, 22.73 miles, 7 hr 18 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('cg||Ib}_UnHtJzCdErDrEvAfEJEb@DlAnAVBxBg@H~ALhAv@~Cl@l@JpABhC~O`JxBfA~Bx@j@C\\Yn@v@dCpDlDdE|ChEnAlB^j@|@`ANXTGxE`OnAvC~Ytk@bDtGl@rBvKre@KnBdCfQT|JFzAr@nHt@fHNp@lEjNLt@^|DP`@Eh@@l@nEvf@^rD@^@fBE`DeA~HShCaBf\\s@pHAvDT~CvCfNbApIp@rRh@hEh@hKR~PErKa@jEmBpGUvDm@lQQrBc@nCa@vAs@lAgOxJeA|Ag@pBWnCMnLL`EbDfa@XfFQxGBjCd@lRNpa@K|GuDhg@WbJNxGVdHx@rG|FxZrBdIvBlHtHbVPrAhB|Q`@pBrBrEdHzL`CzGtG~ZbDxLfCtHTbBFlBCzBwF|To@rGqBvKI|AGfK[fKDlE`@dE~@zE~@tDr@lCzBpH\\tAlBtG|BvGtApDdAzAnEtCvCrDjCtBzBvAbCfAn@\\TX~BhDrDfGbAbCjAnHbDfW`@bFKF|@|Kt@hIP`AXfA^fA|@rDf@dBt@zD|AdKJM|@nFVx@HjABP?@NdAVv@Dt@VrAJz@OJh@pDj@vA~BS@`AThFL`ANj@Nr@z@zK?z@]~IBbJJdDv@vFhAlFlAtDtAtBz@fB\\|@~CcCdAcAl@SNZ@CHPb@aADMR`@GLCEMZ', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('cg||Ib}_UnHtJzCdErDrEvAfEJEb@DlAnAVBxBg@H~ALhAv@~Cl@l@JpABhC~O`JxBfA~Bx@j@C\\Yn@v@dCpDlDdE|ChEnAlB^j@|@`ANXTGxE`OnAvC~Ytk@bDtGl@rBvKre@KnBdCfQT|JFzAr@nHt@fHNp@lEjNLt@^|DP`@Eh@@l@nEvf@^rD@^@fBE`DeA~HlBxA^NF`@@j@k@pJCdA?tCFvAJrAMlACr@DzAh@rG\\~Bh@hBxAvCh@vAd@`BP~A`DxMlDhLd@nCd@bBl@xA`BpC~@r@f@r@t@t@z@d@d@f@NHt@JzAj@hBDd@Xv@LfDxAJH`@t@r@`@^F\\L`@ZxAd@bBJf@RBOV]p@Of@EVMd@Gp@[h@_@t@y@h@a@Z[j@aATk@z@}ArTbj@~Mz_@nAQ|CPdF}A\\?EnV?nP@xAJ|DH`BRfC^|Cb@hCf@xBbAfDbA`C|@bBd@r@|@fAnBjBdRvNxAvAbKzLhA|ApB~C~DlFz@rAn@xA|EjMhDnHnYtj@v@`Ct@pCr@|C`@tBtAlIn@zE^pBbKh_@|AjGf@dCv@jF^jDdAbLl@lEp@nDbG`YxKiLj@e@zEgCr@yARWVQPCdAThCbAb@XdAdAfBz@d@d@|AzBZ^\\ZnMnCFJ@VE|BhFn@|F`EjAdAbBlAz@b@lBpA|CxCdEhE~A`D^nAv@fBtAhCX|@b@rBp@lCdAhDj@`C\\hAd@|ClAzCd@dBj@~Bv@~B^lB`@lAd@x@|@pAh@pAh@fAn@bBxArFlCdHn@xCbAhDl@`Cl@rCrAdI\\fCf@pCV~@l@pAjBbD^v@~@tAXBb@Kn@@p@uA`Aq@v@[ZATv@|A~Dz@hDZh@Pz@x@`BXIP[\\}@LSVGTCtAr@ZVj@nBd@Bn@`@JPPr@`@fAj@lAZZXb@hA|B\\b@`B|@|@CRHPP~@jBPRdAt@z@d@ZFVL`@b@`@Ht@dA^ZhBjDlApDPhANh@Rd@DTN|BJj@Tj@lA`A`@l@Rf@ZdBRpAJXTTNXRn@Lh@T`@\\XZPxBxC`@jA^p@RRh@~@d@fAnAjDXn@`AfBnBhCtAfCd@j@Xd@Nb@HHHALIj@y@nAYL?JBv@f@r@bAZRl@p@RLv@LPTLZNv@Fh@HVp@t@TJp@t@`BnAp@NtB|@f@z@r@^dAZJPXJ^\\n@x@z@z@^h@Vr@F|ACp@DxATtDNhADf@Jd@Vb@Fl@Zp@`@dAz@fAb@\\Tv@NTTNHVR\\NLZHVP`@j@Nl@bBzBLVXRJNPN~@^RTl@`At@HNDNRl@XT^ZTnBl@FHLVNFd@l@r@n@ZhATh@FMHk@f@JJWRwCfDtCRFLp@^`BRf@Zd@`@ZXLhBd@\\HjAnAv@vA|AhBJF`B\\Op@[j@Od@rAnAJZXtBXpAZl@n@v@`@APMnAAnAr@zA`BNf@FDp@@z@ANM\\e@ZKn@F`@Pb@DZ~Av@~B~AtCn@dBPZX?PSLCRJVf@VTR?LDJNl@vBp@~ArAzAxBrBhB^|At@nAhAg@LgAq@Q?IL?VHNPBXETFRT`@z@bBfAj@NhBD|If@\\MR@At@|@H?LsB?gAA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('cg||Ib}_UuD{EOp@sDiEsCcEP{@_EoFqBaCsAgAkB[_Og@yEz@gCzCiBzCkA`C{A|BcBdBNrAB~@Ib@o@pGqBG}YrCeFX}HrA{GXeEuBeLqMwShAgBcBwA|F}HYmBUiFUw@D_AUyBiP_HsE_Cg@{D|H{BaFaD`FwGxKsHvRwE`QiF|VmItw@mBfLyDdLuIfKub@jVaZfP_K~DwM~DiU~Fal@tNm`@|J_V~CeIDeJz@uSdA_c@nCeFzA{FhDwG`FyGdE}An@iE?mC_@}DEuC{AkDo@oDOyFm@qMqBoLyA{Gs@{F}BuEuF}D_JoCqMg@gJc@mOu@aJmCyKcHwLkKgE}VtAgK_DaIyGaUaSaPiM_M}HuKaBmRY_[zH_Q`FwQbCa]`@}IfC_NtH{LtIwHlEuGlCqHd@oGB}XrEiF`AsHzEaFzI}IbOgLfQ_NzKoJ`@uKeAcKoFaKuIqJgQiEuH}EgCwDeA}E?wHhCkIvIqNhRoFnF{EdBgL?}EgCaGiCaGkDkTyWaJaLIv@NjAb@~F?f@[pAAr@Q\\g@^Y`AD^R\\Dx@t@zh@JtATx@^l@pAtALh@N|@BtCC|@FTYCySwGm@C}D^c@_@[o@cCeGoAE_ABmALwCH_IgD_JaDiBa@wBEwCuC]|@m@`@g@v@e@fBW@{Na@wFq@{G}@sI_AeIeA]KOYk@gEM}AWgJCuB?wDkLCwBZqHd@_JM{AB}AXgA\\gDzAiExCcDjBIQ_@{@}@kCSSUKi@?c@\\Yf@i@d@w@|@[?s@Ww@g@s@gAI[Eg@MiBSo@i@eAWs@Ou@K}@IaB@q@C_@M}@MYGa@KwAuBwHKQm@mBMY}@cAuBiBcCc@iFq@uBSqFkAoASe@Aa@JkAt@mAn@m@NSAc@S{CmCwA_ALlE@vCCfAIf@Qn@sHwPi@cAgBwBgFoBuEmBgCkBOE@SE[OSS?MVCJQ?gDaBuA{@eAcAoAaAD]C]KSMEKBINc@[iFcGsAgBCHG@{BaCcAhDSb@STJf@Dj@qIxOmFj@{EqGiEnFAEa@j@QL_GpB?\\Gd@M\\k@TC?o@aAuGmU]d@KDQA', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([57.33003800000000,-3.60956200000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=50856">View all updates for Ben Mhor Hotel, Grantown-On-Spey</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        4<span class="sup">th</span> May 2017, 14:33
+      </div><div class="auditexp">Request to mark pub as open by <a rel="nofollow" href="/userinfo.php?name=ROBCamra">ROB Camra</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        4<span class="sup">th</span> May 2017, 14:33
+      </div><div class="auditexp">Request to mark pub as open submitted by <a rel="nofollow" href="/userinfo.php?name=ROBCamra">ROB Camra</a>, with included notes: <span class="reason">Reopened under new ownership</span>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Beer Festivals : <span id="fac11750856">No</span> <span id="discdetail11750856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 May 2017 by ROB Camra</span></li><li>Beer Garden : <span id="fac11450856">No</span> <span id="discdetail11450856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 May 2017 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10250856">No</span> <span id="discdetail10250856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 May 2017 by ROB Camra</span></li><li>Car Park : <span id="fac11350856">Yes</span> <span id="discdetail11350856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 May 2017 by ROB Camra</span></li><li>Child Friendly : <span id="fac12150856">Yes</span> <span id="discdetail12150856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 May 2017 by ROB Camra</span></li><li>Function Room : <span id="fac12350856">Yes</span> <span id="discdetail12350856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 May 2017 by ROB Camra</span></li><li>Hot Food : <span id="fac10350856">Yes</span> <span id="discdetail10350856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 May 2017 by ROB Camra</span></li><li>Live Music : <span id="fac10850856">Yes</span>  - <span id="discdetail10850856" class="discdetail" style="">Saturday</span> -   <span class="Reviewer">last updated 04 May 2017 by ROB Camra</span></li><li>Micropub : <span id="fac12250856">No</span> <span id="discdetail12250856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 May 2017 by ROB Camra</span></li><li>Pool Table : <span id="fac10450856">Yes</span> <span id="discdetail10450856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 May 2017 by ROB Camra</span></li><li>Real Ale : <span id="fac10150856">Yes</span> <span id="discdetail10150856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 May 2017 by ROB Camra</span></li><li>Real Cider : <span id="fac11950856">No</span> <span id="discdetail11950856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 May 2017 by ROB Camra</span></li><li>WiFi : <span id="fac11550856">Yes</span> <span id="discdetail11550856" class="discdetail" style=""></span>  <span class="Reviewer">last updated 04 May 2017 by ROB Camra</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo-grey.gif" alt="Pub has no pictures" title="Pub has no pictures" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87988/" class="List1">High Street Merchants</a></li>
+                    <li><img src="/images/icon-photo-grey.gif" alt="Pub has no pictures" title="Pub has no pictures" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/50857/" class="List1">Claymore Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 10 from 1 reviewer(s)" title="Pub has average rating of 10 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/63610/" class="List1">The Craig Bar</a></li>
+                    <li><img src="/images/icon-photo-grey.gif" alt="Pub has no pictures" title="Pub has no pictures" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/50862/" class="List1">Grant Arms Hotel</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

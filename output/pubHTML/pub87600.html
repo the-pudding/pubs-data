@@ -126,13 +126,13 @@ var thispub = 87600;var pubaddress = "36 Scale Lane";var pubname = "Fretwells"
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87600;var pubaddress = "36 Scale Lane";var pubname = "Fretwells"
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="7glv7hfdipnrjq7ocgjpahpri7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="i2aesh5kbogsahp1tu72ka7fo5" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87600;var pubaddress = "36 Scale Lane";var pubname = "Fretwells"
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -246,7 +246,7 @@ var thispub = 87600;var pubaddress = "36 Scale Lane";var pubname = "Fretwells"
 <p>Newly opened traditional style pub, housed in a former printers (hence the name). Run by the same team behind the nearby Lion &amp; Key and Wm. Hawkes.</p>
 <p class="Reviewer">On 5<sup>th</sup> April 2019 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 316 recommendations about 304 pubs]</span></p>
+  <span class="leftspace">[User has posted 329 recommendations about 316 pubs]</span></p>
   </div>
 </div>
 
@@ -274,7 +274,7 @@ var thispub = 87600;var pubaddress = "36 Scale Lane";var pubname = "Fretwells"
 
 	var mymap = L.map('mapid').setView([53.74257877230619, -0.33129653670119], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ var thispub = 87600;var pubaddress = "36 Scale Lane";var pubname = "Fretwells"
 
 
 </script><div>
+<i class="fas fa-train"></i> Hull, 0.76 miles, 14 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Barrow Haven, 10.94 miles, 3 hr 31 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> New Holland, 12.96 miles, 4 hr 10 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('_r_gIfu_A@@FNOfAm@`G?|BE~Cc@~F_AlL_@bDGlOHpAVlH`@`KJpD}AJUgBEPu@NFhA}@RLxB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('_r_gIfu_A@@FNOfAm@`G?|BE~Cv@v@f@|@n@rAzAnBT`@jCXWdIEvC?dFHdMFvAL~@ZnA|AnEFVU^x@jDRR@DKHDJXzPCr@tAxAxBrCx@|@ZvC`@tBvAxLnA|Jh@nDDp@EnAAh@@Jp@Pn@h@b@vB^dDz@`G|@`HtB~N~AbMjBxb@PpCXlIZdGJnCNd@F@@nBHtCD?h@fIb@fJN|EVvOJhAv@|FIB?LOPCFI^?d@Ff@FL}AjEbArA\\p@f@|Af@lDx@~Gb@jCVnBg@hAY~@hG~IB^F^JNHHTAd@pCj@jEXzCVIDh@lBw@z@e@`BwA`@jCJd@j@hAZhCRAl@J|Cs@NfCX|BP~BFdLRhDh@pGHpEF~Ax@lItAdLr@bEf@nBBtAG|@pAtANnBd@nMJFc@hDE`A?z@Fn@\\v@r@rAPx@j@lEXpAO\\Ih@JdA@pBH`CVdBtA`Hd@pDhApFPn@Tf@Db@B`B{GFJjAz@nEXnCDbB`B^~Ab@h@Zd@b@r@hAbBvGVlACVy@fAKv@IjAClALzCz@|LLf@f@\\fI~BfBp@|@~@HLJ`@XzCpCv[X~E}Cn@l@pFPtBRzCDTDNPJn@DVHP`@BdA?n@CVK`@qAd@kAPo@NYAgArCOHKSX{@PsAg@?Cg@BAAk@PGx@K|BQjBFxGOnDONL\\?RM`lAwDRJ\\?PO|H[tQoA`FUbBArABdBL~Cd@vAj@nAl@Ej@_A]B}DXeO_COWUiKC@uHNgBNURITq@FwAW?AQW?@eBeAm@oBYAe@o@?QIYa@OWQg@Ko@Cm@Us@U[ECI}DDoAVyABmCCkKFm[c@eBQmCAsKB{@\\WhAIi@wtADaEIOSaCIuKMoB?}@KOAO@SFO@g@IcRmCoBw@uCgAoKFkDyDqf@EcDpA{@dB{@^Bt@\\TEvDoAYaDA?', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('_r_gIfu_A@@FNOfAm@`G?|BE~Cv@v@f@|@n@rAzAnBT`@jCXWdIEvC?dFHdMFvAL~@ZnA|AnEFVU^x@jDRR@DKHDJXzPCr@tAxAxBrCx@|@ZvC`@tBvAxLnA|Jh@nDDp@EnAAh@@Jp@Pn@h@b@vB^dDz@`G|@`HtB~N~AbMjBxb@PpCXlIZdGJnCNd@F@@nBHtCD?h@fIb@fJN|EVvOJhAv@|FIB?LOPCFI^?d@Ff@FL}AjEbArA\\p@f@|Af@lDx@~Gb@jCVnBg@hAY~@hG~IB^F^JNHHTAd@pCj@jEXzCVIDh@lBw@z@e@`BwA`@jCJd@j@hAZhCRAl@J|Cs@NfCX|BP~BFdLRhDh@pGHpEF~Ax@lItAdLr@bEf@nBBtAG|@pAtANnBd@nMJFc@hDE`A?z@Fn@\\v@r@rAPx@j@lEXpAO\\Ih@JdA@pBH`CVdBtA`Hd@pDhApFPn@Tf@Db@B`B{GFJjAz@nEXnCDbB`B^~Ab@h@Zd@b@r@hAbBvGVlACVy@fAKv@IjAClALzCz@|LLf@f@\\fI~BfBp@|@~@HLJ`@XzCpCv[X~E}Cn@l@pFPtBRzCDTDNPJn@DVHP`@BdA?n@CVK`@qAd@kAPo@NYAgArCOHKSX{@PsAg@?Cg@BAAk@PGx@K|BQjBFxGOnDONL\\?RM`lAwDRJ\\?PO|H[tQoA`FUbBArABdBL~Cd@vAj@nAl@Ej@_A]B}DXeO_COWUiKC@uHNgBNURITq@FwAW?AQW?@eBeAm@oBYAe@o@?QIYa@OWQg@Ko@Cm@Us@U[ECI}DDoAVyABmCCkKFm[c@eBQmCAsKB{@\\WhAIi@wtADaEIOSaCIuKMoB?}@KOAO@SFO@g@IcRmCoBw@uCgAoKFkDyDqf@EcDpA{@dB{@^Bt@\\TEvDoAYaDlF^v@GvCy@vBWfBcB`BkB~AWeCih@oJelB[FVs@EsAiAkUoG~@y@D][MGM?wD^sB^yEn@cATs@aLS_B[gASc@W[g@Ye@E', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.74257877230619,-0.33129653670119], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

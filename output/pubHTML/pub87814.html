@@ -126,13 +126,13 @@ var thispub = 87814;var pubaddress = "Mount Lane";var pubname = "The Smugglers
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87814;var pubaddress = "Mount Lane";var pubname = "The Smugglers
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="plerg7goac6skn9tsg0e7237g7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="o3ssosgegmqj7j66vg359egai5" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87814;var pubaddress = "Mount Lane";var pubname = "The Smugglers
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -272,7 +272,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([50.71979380000001, -2.78259495337295], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -297,7 +297,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Maiden Newton, 12.2 miles, 3 hr 55 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Axminster, 12.56 miles, 4 hr 2 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Crewkerne, 13.86 miles, 4 hr 27 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('afqtHdk~OgARcDs@YJkFsGmDeCgBmDEWOIcAuAiBeEc@YeA_Ak@YyAbAMDq@aNGiMCaAaAwLO{BCaAYgDi@_C{Aa@C}@YcBm@aCq@_CSc@Cq@o@DCa@w@cB}@yAIy@SESqDS?Cm@[}BKkBCkAGSOw@q@qA]kAi@w@c@}@_@iFqCTEmCFcDaBu@BM?g@kDcDUOs@SANiBiAwB}CIaAQg@]kCSmCeA}EsAeCwCoDkBsBq@s@_Ay@|@{B^qAMoB@EG}AOiAAg@D_AaA~@k@B_@SW[OMAS@UFWGk@Cs@KUy@_AUQKOa@W_@a@g@eAILEBi@[kAsAcAk@KsA{@qCgHwKs@sA_AeEiAiAg@XmBmI_@i@gA}@y@Wa@No@eB_AoAmB??a@NiCE{@c@wBQgH?{Gf@oKGy@g@wAe@qB_@iDiGmJw@sB{@oJR_@gAoAmA_A{@aAy@sAcBkE}AgDsAmEy@{CG}@QmGAkBFgBRmC@eBKiA{@sDAaAG}@{@}FWsAe@sAc@c@eBqAmA{AqA{BeB}B_BkC}@oB[_BUoESmBUqAs@cBWaAmAqLUsCIuB@mFJeEd@}KZmENmCf@uFFkCKaG?cDF}CRwDRqGCg@Ks@KwBCiBBwCL}FTaFFcBCi@M}@KoAL}@h@{AtAmGWYU_BiAqCyBqG{AaDoCiHcCcHRgIJ_C@_CAyBLgAVgAdAeBhB_EjAqDz@cBrB_CTw@JoA^iCPsCZ}CJ}C@q@\\oGT{ARk@d@aA|E}HVw@F}@XcBdCyGhH_QxA}EZqATs@j@iC~@aDgGiP`@Jm@_Co@yDg@gEaBsKWyBiA_Jo@cHe@}CYaBa@}AqA}J]gAw@sBuAsCiAsB{GiKyBsDgAcBkA}AyAgCg@q@eBeD[q@k@_Ay@y@sAs@GIEe@XeBHeA@}BImEOeCw@gFeA{EgAaDgGaS}@mCwAsFuAaGs@uDY}BBy@b@}E\\gMFiDA}@Gq@Uy@Wq@GY?i@l@sE`@wDn@cFlAmGh@eDLcADoAG_EMwC@eAPgEZ}EmIyBwFcAqFu@cAGqAH}@O}@u@eAsAa@_Bq@aBg@aBk@cCk@wAeAcBw@s@eCu@mEgBaAYoAI{A@eEyAsHqI_B}AoAwAo@cAc@mAW_BE{CuB_BQ@q@UIKc@_CKGNgKX}HI}CCsB_@{B?i@U@iAf@k@Hc@COMm@wAOQUQm@QuB_Fi@}BQgAB_ATs@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('afqtHdk~OgARcDs@YJkFsGmDeCgBmDoD`GaDvDGt@sKtJu@]oAdEkA|CmB|IeArEWbBKVWVOZCl@RhCH|A@xBGpBQnBKxANdDJ`A^pA^hADn@Mz@[p@]b@QDcEVa@RYp@aA|H[lBUdBO|BKfBGTsAx@C`Gq@dJInMu@dGaBxAgRpCs@v@mE~F_E`MgHtH_EvMFtA@`DOhAI~CO`Au@pCSXo@bDa@|@w@b@oAdCa@dAQ|@c@nFKj@}@hDo@bGa@t@}@tC_DdFoAjAkD|BoAbAsAzCORo@xBa@lAgA`Fm@lEe@lEUbFYtAy@|DI`@[|E]`P]dEWh@c@l@i@GcABs@Lo@jAk@jBSRMVKZWhEo@tBk@vFMzC@lEIz@c@dBUh@g@~@s@fAq@nA[r@{AjGw@pCi@lAIXAn@[|BQr@o@|BAXa@XkApAd@bAFvFCrBp@MaAbBCRC~AEh@W|@KfAAz@BfBJzAPxAZpA^x@n@|@r@p@n@b@q@~Be@pAaAxD{@rCk@vASv@O~As@nASd@Y`Ac@rCa@lBWpACvAIhA@~@Bv@?bAKvCMfA_@nB}@dJIrAa@fCMZw@|Co@l@SXQd@On@OjAGbA]~DKzBGp@W`Bc@jG[|F]dEQpAU`Au@pCGZA^@b@NtBd@x@XpAPd@NTFZ^lCZ`B^fBv@jEp@vATn@Np@RlA`@|Gz@lFf@rDHvBQlGHjDC`BF`KJrDIzDDn@MVI`@AV@`AGhBStCa@bEm@xEItAYn@G^CnDGdAKx@wChDa@D}A`AyA|Au@bBJ|@FpBMpAQdAKhAQx@i@zB_@zEs@~Fe@bB_AxBsAnEo@pAa@fA_@~A_@`@a@R}@x@k@Ta@HUECFaDjB}@~Aw@p@oBZK\\yFhIuAlEcAnC?NCHsAjAsAtAmFnJIbD?jDNjBCpBKnA@`@@JXp@^~A{@l@_@r@UXALQCc@B[`@Q\\aAbDOXWZe@X[b@qDvG_ElKMH_BlBWRa@?cAJ_@NWl@c@T}@IgBw@i@C_@b@w@tAoAnCa@p@a@b@mA|@g@r@[Ni@HHjK]|Qk@xOoEtWc@~JV`V_AdRHbQr@zIOhIFdDK~ACjCD|@R|@zB`IP~A?p@Ep@[`DCt@@pAF|@@dCe@pBGxCv@jKRhAX|@f@jA`@dC@~@IbEq@fHi@pAMTb@~AZxAL|@DfA^p@ANSf@l@tAm@bAX|DnAbHbApD|DnMBlCiB|P?|BD|@UnEMnAo@jA_AzBuAhIDD_AhFqD{CYbCElAE\\CAUfAM`AB\\BRNVNLDVVn@`Av@Kl@n@b@Mj@EE', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('afqtHdk~OgARcDs@YJkFsGmDeCgBmDEWOIcAuAiBeEc@YeA_Ak@YyAbAMDq@aNGiMCaAaAwLO{BCaAYgDi@_C{Aa@}Cg@wIm@{BIKo@[gAQo@i@WS]I[E[Es@mBYqAe@UPQCUgAqAcEsBTSZe@CKi@kAIAs@Ec@KAq@j@gAqDm@]uDm@Y?[Dg@\\s@Lu@G?eAEU_AwCg@{Bm@eAcAqCIs@]q@SO]wAFYLKMe@GoBGe@Kc@AiAC_@FqAkBw@mCy@{LiFqHuEmCoAu@YoB_@kCcAy@s@_AuAiBwA}@[aAm@{FcF}BgC]w@aAaCq@yC[_@eBqASbAK`BE`BS|BYjBgAxDm@`Am@jAk@DaCt@aA^[C}AwAgDeBYG_B?m@OcD{BM]kIeBw@GwAHs@PcEpBmBp@sAEaBe@mBqB_AsAi@g@eA}@qAqA}ByAOUUcBO_@MQIEc@EyBX_Dl@qAh@qEhDmBjAmBdB_CbB_Dl@{FbCgAp@cBfC{AfCsA`A{C`@gJnC}Cf@}Db@gCD}@SkC{A{BoBeKsEqB@eBFoF~@kDf@mAXcFxBiIbD_CpAgAd@yC\\i@?o@QQOUU[q@FMi@kAa@k@c@U_AA}@TGq@GSOQSMmAG{Du@gBcAcBe@mDeBUEm@Jc@TIgAsAv@c@P}AaAkByAYu@]GcBaDaAm@qCeA_C{AcBu@gBgAeA{AcAkAkCk@GIeBgBuBkCkDaGcFuFkAyB[eBa@kCe@iA_@k@WOsBq@eAm@]YMAa@NoAfA_AcBY[WWS_@C]KU]k@KQiH}BkASkAEo@P]XKPw@jBu@r@oBx@w@PaJnAw@BSE}@Yc@g@qDmD{@aAsAmAuB}BuDuDmAoBiBcAaBk@_BHaBI_AUUU]Oe@a@{@kAi@[QGm@TiAs@e@MmANYRs@Xm@Bm@Oi@Uq@k@Y_@Ii@o@gAoAq@k@SYBm@Va@Aq@PaDw@WCA_@qDZyJl@aJv@y@`CORQFKKwAVgK~B}@Z_BHuGdA}@D{HbASEIKGSaAuAuCgD}CgDyHqFcDgAO?QoAqAwB[SiA\\a@MU_@EOITy@lBYVq@\\u@t@g@Zc@`@m@FcAbBgAtAODy@hAK\\QTUv@i@|BaAlDg@nAG@wApEg@bCo@~EIb@Qr@cDjDUJ}ATg@ReCvAkAVk@t@iAbCs@lBa@CODElAu@bCC~AJl@e@nECfARzAId@Ql@]d@YTk@Xa@h@o@hA}AzEe@x@Of@Mn@m@?aDg@]jA_@h@Wh@]hAIx@i@[uAm@w@Kk@?mAFsEv@kAd@mCj@iC\\g@@mCe@m@@uCZcFr@C\\Ir@aBvEaBjDOr@Q|A_@jE?b@OPAPr@xGaAzBwBlNAd@_CrNcBvFw@lDYzBOjBo@nDG\\yAlGi@hB@JKTKf@QNMDOfBE?SL}@bBaBfBMHQ@QEg@]EMu@}@AKa@MGHe@pBSzBCz@{@pN?Ji@Rc@j@qBnDSr@SnBgAfEGFk@FQJLlCVhATKPBj@^VDv@OTa@Ls@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([50.71979380000001,-2.78259495337295], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

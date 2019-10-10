@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The Fat Cat pub in Colchester, Essex, CO3 3BZ : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The Fat Cat" />
+  <meta name="keywords" content="The Fat Cat, 65  Butt Road, Colchester, Essex, Colchester Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The Fat Cat in Colchester" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/11501_12000/11707_cd1f42e3.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/11707/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.88544438903116" />
+<meta property="og:longitude" content="0.89409071163936" />
+<meta property="og:street-address" content="65  Butt Road" />
+<meta property="og:locality" content="Colchester" />
+<meta property="og:region" content="Essex" />
+<meta property="og:postal-code" content="CO3 3BZ" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like The Fat Cat in Colchester? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The Fat Cat the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/11707/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The Fat Cat in Colchester" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The Fat Cat " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/11501_12000/11707_cd1f42e3.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/11707/" />
+<meta name="geo.position" content="51.88544438903116;0.89409071163936" />
+<meta name="geo.placename" content="The Fat Cat in Colchester" />
+<meta name="geo.region" content="UK" />
+<title>The Fat Cat in Colchester : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":11707},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(11707);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 11707;var pubaddress = "65  Butt Road";var pubname = "The Fat Cat";var pubpostcode = "CO3 3BZ";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/essex/" title="Pubs Galore : Essex Page">Essex</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/colchester/essex/" title="Pubs Galore : Colchester Page">Colchester</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The Fat Cat Page">The Fat Cat Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="nd04usmmesm4llh3agti34efs7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/11707/" class="indisplay"><img src="/images/display/11501_12000/11707_cd1f42e3.jpg?w=2" alt="Picture of The Fat Cat" /></a><br />  Image posted by <a href="/userinfo.php?name=hophead" class="indisplay">john mcgraw</a><br />
+  Submitted on Wednesday, 3<sup>rd</sup> October 2012<br />
+  With picture contributions to 20678 other pubs<br />
+<a href="/pubpictures/11707/" class="smallbutton">View all this pub's pictures</a> (17 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/11707/">Pub map</a><br /><a href="/pubreviews/11707/">Pub reviews (7)</a><br /><a href="/pubpictures/11707/">Pub pictures (18)</a><br /><a href="/core/pubaudit.php?id=11707" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The Fat Cat, Colchester Town, Colchester</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">65  Butt Road</span><br />
+
+
+<span class="town">Colchester</span><br />
+<span class="postcode">CO3 3BZ</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/colchester-town/essex/">Colchester Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The Fat Cat  <span class="h2note">(Average Rating: <span id="averagerating"><b>7&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review84308" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=ETA">E TA</a> left this review about The Fat Cat</h6>
+<p class="old">Previously The Royal, The Fat Cat (the sign hanging outside is annotated &#039;Free Mouse&#039;) has matured into an excellent local pub with 8 ales on gravity feed.  It has the feel of a cross between a micro and a traditional town local.  There is a good bar menu and they run regular curry nights as well as a take-away curry service.  The staff are dedicated and hardworking, but maybe not as welcoming as they could be.  The locals were very much more welcoming, friendly and chatty.  The d&eacute;cor is basic: bare brick, bare floorboards, minimal clutter on the walls and plain paint on what wood panneling remains.  The building has been extended to the rear and now occupies almost the whole plot, leaving a tiny shred of garden as an outside terrace.  The extension isn&#039;t terribly sympathetic to the original Victorian building &ndash; anachronistic beams, for example &ndash; but that doesn&#039;t detract from the pub&#039;s operation.  The from bar is mainly for vertical drinkers though there are a few bar stools for the less steady, while the back bar in the extension has tables and pew seating.  An outstanding pub which makes an essential addition to a crawl and one I shall certainly visit next time I&#039;m in the area.</p>
+<p class="Reviewer">On 26<sup>th</sup> June 2014 
+  - rating: <b>9</b><br />
+  <span class="leftspace">[User has posted 2381 recommendations about 2360 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review40719" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The Fat Cat</h6>
+<p class="old">I popped in here prior to AFC Bournemouth&#039;s Friday evening match against Colchester (partly because there is a bus to the stadium that leaves from outside) and had high expectations for my first visit to a Fat Cat pub.<br />
+The interior is L-shaped, with a few seats at the front, a relatively narrow strip down the side, and a more open area with additional seating to the rear. The walls were wood panelled and there wasn&#039;t really a lot of interest on display, which left it feeling a bit cold and impersonal. The staff were pretty friendly and I got chatting to some of the locals who seemed like a decent bunch, but I got the impression that it was only the football crowd generating any kind of atmosphere and that once the match-day bus departed, the pub would be a bit lifeless.<br />
+There were 5 ales on hand pull, with a sixth pump displaying a turned clip. Crouch Vale Brewer&#039;s Gold, Woodfordes Wherry, Sharp&#039;s Doom Bar, Nethergate Sweeney Todd and one other were complimented by a further selection available from the tap room, but to my shame I only spotted the tap room about ten minutes before I had to leave, so I don&#039;t know how many beers were on offer from there. My Brewer&#039;s Gold was in pretty good shape and my companions enjoyed pints of a Belgian lager, the name of which I neglected to record, with Leffe also available on tap.<br />
+This has the makings of a great pub, but I found it was lacking in atmosphere and character. Having said that, it&#039;s clearly a real ale destination pub and for that reason alone, I&#039;m sure this won&#039;t be the last time I visit.</p>
+<p class="Reviewer">On 27<sup>th</sup> January 2011 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2321 recommendations about 2321 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review33935" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=RogerB">Roger Button</a> left this review about The Fat Cat</h6>
+<p class="old">I was looking forward to my initial visit to the Fat Cat having been somewhat overwhelmed by the ales in its Norwich namesake but my early evening Saturday visit found little more than a rack of empty barrels and reversed pump clips (5 of the 6 were unavailable). Before I had even tried to ask for a pint listed on the overhead board the barmaid read out a long list of those that were not available and of the ones that were left, there really wasn&rsquo;t much choice by the standards that I was expecting. The blame was apparently down to Colchester Utd being at home (they run a shuttle bus from the pub to the ground) but since this presumably happens at least once a fortnight, I would have expected the pub to be a bit more on the ball and have sufficient supplies at the ready. On a normal day I think it&rsquo;s fair to assume that the ale range would be among the best in town and I certainly had no need to criticize the quality on the single beer I did try (Wolf Golden Jackal).<br />
+<br />
+The pub itself has a quite compact L shaped interior with some quite narrow drinking areas although it does seem to be a bit more spacious to the rear where there is an alcove with some pew seating and a further extension housed under a pitched roof. A small external yard won&rsquo;t be of much use to anyone other than the &ldquo;quick fag&rdquo; customers. The front section has a window through which the tap room and its racked (empty, grrrr) barrels can be viewed. The general d&eacute;cor is quite plain and basic with bare floors, exposed brickwork, solid furnishings, a few nostaglic adverts and the old pub sign mounted on the wall. There was a good babble among the punters with no music and a sole silent TV showing Sky Sports News (before its recent withdrawal from Freeview). <br />
+<br />
+I do get the impression that I caught them on a bad day at the office and I would expect my rating to vastly improve on a return visit but for now, it must rank as a bit of a disappointment.</p>
+<p class="Reviewer">On 16<sup>th</sup> September 2010 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 1238 recommendations about 1232 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/11707/">View more reviews of The Fat Cat (7)</a>
+</div>
+
+<div id="pubcrawllist">This pub features in the following crawls:<br /><a href="/crawl/viewcrawl.php?crawl=577">Colchester Crawl</a> by <a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a><br />
+</div>
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The Fat Cat</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="256386394476092">Facebook - <a href="https://www.facebook.com/fatcatcolchester/" target="_blank" rel="nofollow">Fat Cat Colchester</a></li></ul><ul id="Custom2"><li class="twitlink" id="842094048">Twitter - <a href="https://twitter.com/FatCatColcheste" target="_blank" rel="nofollow">Fat Cat Colchester</a></li></ul><ul id="Custom2"><li class="wplink" id="COL/10631">CAMRA WhatPub :: The Fat Cat - <a href="https://whatpub.com/pubs/COL/10631/" target="_blank">whatpub.com</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/11707/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.88544438903116, 0.89409071163936], 16);
+
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.88544438903116, 0.89409071163936]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Colchester Town, 0.61 miles, 11 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Colchester, 1.22 miles, 23 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Hythe (Essex), 1.68 miles, 32 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('k{t{HwtmDfBnA?}@QaEUoCy@iNCUFIJ]BwDCOMMs@DQOoAkCGk@CaAFu@CeECm@Nw@p@aA[L]GIIOYCQEk@@QMGDMNm@BCFYAIFOSOAc@AcB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('k{t{HwtmDkDiCi@Wm@Qg@W{@}@wAgBQKUEuEJqF[eC?kCN}FAm@HSRi@Pm@HkBPyCTqD`@u@?{CR{@WKIMAOFILGVALSXAMUNkBf@y@Fo@AY[W@CLUHOEIp@FDGXe@]]Ma@CaCHW\\R^KpCWrDE\\QAIrA', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('k{t{HwtmDfBnA?}@QaEUoCy@iNCUFIJ]BwDCOMMs@DQOoAkCGk@CaAFu@CeE@i@Jq@LYn@{@Rc@I?Dq@E_@O_@@MUmA@_@TiBZs@H]bB{Dl@qAC]BeCC[DoDTmEF_BD{LDqB@iBoAD_@EPeCbAcT`A_\\sAYCuBDsAAc@IcAG]EQg@iACS?k@AMCmBGSQUJw@EWJYJOv@YY{Ai@uD', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.88544438903116,0.89409071163936], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=11707">View all updates for The Fat Cat, Colchester</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        17<span class="sup">th</span> Mar 2019, 19:43
+      </div><div class="auditexp">Pub <a href="/pubmapaudit/11707/">map correction</a> submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        17<span class="sup">th</span> Mar 2019, 19:43
+      </div><div class="auditexp">Pub <a href="/pubmapaudit/11707/">map correction</a> submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a>
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Real Ale : <span id="fac10111707">Yes</span> <span id="discdetail10111707" class="discdetail" style=""></span>  <span class="Reviewer">last updated 24 August 2010 by hondo .</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 27 picture(s)" title="Pub has 27 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 2 reviewer(s)" title="Pub has average rating of 4.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/54660/" class="List1">The Ale House</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87742/" class="List1">Two Brews</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 18 picture(s)" title="Pub has 18 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/63731/" class="List1">Qube Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 14 picture(s)" title="Pub has 14 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/63844/" class="List1">Rubix</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 10 picture(s)" title="Pub has 10 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 2 reviewer(s)" title="Pub has average rating of 7.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/11669/" class="List1">The New Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 16 picture(s)" title="Pub has 16 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6.5 from 3 reviewer(s)" title="Pub has average rating of 6.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/11644/" class="List1">The Hole In The Wall</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 29 picture(s)" title="Pub has 29 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/11591/" class="List1">The Bull</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 23 picture(s)" title="Pub has 23 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/11647/" class="List1">The Kings Arms</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

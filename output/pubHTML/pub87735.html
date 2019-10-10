@@ -126,13 +126,13 @@ var thispub = 87735;var pubaddress = "Cliff Lane";var pubname = "The Fifth Whe
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87735;var pubaddress = "Cliff Lane";var pubname = "The Fifth Whe
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="m4q1ac868q6ahqqhgcu3ih73g6" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="h184tldga71ch06hj55vgopr80" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87735;var pubaddress = "Cliff Lane";var pubname = "The Fifth Whe
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87735;var pubaddress = "Cliff Lane";var pubname = "The Fifth Whe
   <div id="displayedimage">
 <a href="/pubpictures/87735/" class="indisplay"><img src="/images/display/87501_88000/87735_b0ee2b52.jpg?w=2" alt="Picture of The Fifth Wheel" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
   Submitted on Saturday, 18<sup>th</sup> May 2019<br />
-  With picture contributions to 24007 other pubs<br />
+  With picture contributions to 24825 other pubs<br />
 <a href="/pubpictures/87735/" class="smallbutton">View all this pub's pictures</a> (1 more image)
  
   
@@ -251,7 +251,7 @@ var thispub = 87735;var pubaddress = "Cliff Lane";var pubname = "The Fifth Whe
 <p>The Fifth Wheel is situated at Lymm Services just off the M6 and has been open for a couple of years.Thought this would be a small bar but in fact is a quite large place with a fully stocked bar with 5 beer pumps, but sadly no cask.</p>
 <p class="Reviewer">On 18<sup>th</sup> May 2019 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 1994 recommendations about 1960 pubs]</span></p>
+  <span class="leftspace">[User has posted 2072 recommendations about 2036 pubs]</span></p>
   </div>
 </div>
 
@@ -279,7 +279,7 @@ var thispub = 87735;var pubaddress = "Cliff Lane";var pubname = "The Fifth Whe
 
 	var mymap = L.map('mapid').setView([53.35891200000000, -2.50475970000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -304,7 +304,39 @@ var thispub = 87735;var pubaddress = "Cliff Lane";var pubname = "The Fifth Whe
 
 
 </script><div>
+<i class="fas fa-train"></i> Warrington Central, 5.1 miles, 1 hr 38 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Padgate, 5.3 miles, 1 hr 42 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Birchwood, 7.4 miles, 2 hr 22 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('gutdIhghNVp@OVx@tB_AzAEGMCUg@QUi@Qa@DCHOLg@vAe@hBIh@A~@HX@\\?TGd@EJMfAApEDf@J^`@n@LVF\\BVCd@Kf@KNq@rCKX[lGg@jDi@|AQVCP?Ra@t@qBhAaDzAiAr@oJnIgAlA{@tAs@vAkHtScFrMoHfQwLx`@oAdDkAvBk@x@}A`BqBtAsEzBsBvA_Ax@o@x@u@|BUdBKvB_@rGiBa@E^_@hEUnD]@q@Rs@n@_A~AyAlDw@rAgAvAkD~BZrBYL_Ap@`@xCEBQAMVNdB[OOh@WNj@fEdAzGO\\Ip@EdAU|Bi@~Di@pFUrCC|@?fCDzA\\zIsObCP`FsDxCMV]pDLv@OPBHINSbALjBqAvC]h@qAn@SIY[o@fB]v@ORu@n@yFhBFd@b@FCl@@|DAtABtACjBMbE[nGEbBG`AQjA}BlOGt@An@?hC@j@C`@GXQb@Kn@@ZBVb@lBBj@CTMXk@|@_@bAw@bC]x@ZdA}@hA?zHDl@?dAs@n@TtAwCrBRnAcBnAfAxGHZm@R?\\R??H{@FgAEq@LYVKTI\\Kl@EdAPzC^vDf@hERtBd@zG', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('gutdIhghNVp@OVx@tB_AzAEGMCUg@QUi@Qa@DCHOLg@vAe@hBIh@A~@HX@\\?TGd@EJMfAApEDf@J^`@n@LVF\\BVCd@Kf@KNq@rCKX[lGg@jDi@|AQVCP?Ra@t@qBhAaDzAiAr@oJnIgAlA{@tAs@vAkHtScFrMoHfQwLx`@oAdDkAvBk@x@}A`BqBtAsEzBsBvA_Ax@o@x@u@|BUdBKvB_@rGiBa@E^_@hEUnD]@q@Rs@n@_A~AyAlDw@rAgAvAkD~BZrBYL_Ap@`@xCEBQAMVNdB[OOh@WNj@fEdAzGO\\Ip@EdAU|Bi@~Di@pFUrCC|@?fCDzA\\zIsObCP`FsDxCMV]pDLv@OPBHINSbALjBqAvC]h@qAn@SIY[o@fB]v@ORu@n@yFhBEW^o@KKg@wCy@w@u@c@aHGMFsCSuCiAiAk@uCe@m@RINa@MmCc@WO_@_@_@_AQ}@EcAuAeAMPwG|DYBQS]IqBXDg@CgAEs@qCCCf@_@Vc@HWMOSg@EYb@WVq@Ai@]I?E}@u@OiAGaDiA}AQiDGqHBoCmIM_A]mFKg@cBSSBGg@e@sAv@a@HX', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('gutdIhghNVp@OVx@tB_AzAEGMCUg@QUi@Qa@DCHOLg@vAe@hBIh@A~@HX@\\?TGd@EJMfAApEDf@J^`@n@LVF\\BVCd@Kf@KNq@rCKX[lGg@jDi@|AQVCP?Ra@t@qBhAaDzAiAr@oJnIgAlA{@tAs@vAkHtScFrMoHfQwLx`@oAdDkAvBk@x@}A`BqBtAsEzBsBvA_Ax@o@x@u@|BUdBKvB_@rGiBa@E^_@hEUnD]@q@Rs@n@_A~AyAlDw@rAgAvAkD~BZrBYL_Ap@Jz@EBQAMXkAgIYDO\\_@oBa@w@SEuAcKuAyJs@uCgDaXu@iFyAkL}BaRQwBqGmg@_@eBYs@]k@e@[q@S{Bh@yAdAiAh@yA`@wADiDgAwKsE}@S?F`@b@CJ_@?Bn@e@x@oCzCYoAGkAGYKIQ?a@YCRSeAm@s@w@a@eA]u@MqAm@aC_Bs@w@a@i@uAwC[a@UOYK_@Gw@CUhJSvR_Jp@QPQj@a@jCY~BsBbSEh@?z@RnB?v@Kx@y@~EGn@wKpKgKtH}B~AsGhDoAL_@BmBKc@H[Li@rB}ChJKn@?f@M@Id@i@`BETDxAALUZ]y@IL]]OAOH_@f@yBdEu@yAmCfFq@[GM_AuDUi@w@yAc@g@oAeEMg@u@{EC}@JiCCa@OYu@ASM}C}GRa@vCaGPQN_@Ga@TIp@GJEHMB[Po@R_@FD|@sB`@cBVu@n@eAfA{@`Ao@lCyA\\[N]Fa@@m@Cg@cC{PXUFK?GXDb@tCDEgAkH', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.35891200000000,-2.50475970000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

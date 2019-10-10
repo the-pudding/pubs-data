@@ -126,13 +126,13 @@ var thispub = 87605;var pubaddress = "8 High Street";var pubname = "Old Post O
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87605;var pubaddress = "8 High Street";var pubname = "Old Post O
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="rnqciesf64dsqrlplvieh9bd15" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="656r6su3vlfst2u3f38s5dk0j7" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87605;var pubaddress = "8 High Street";var pubname = "Old Post O
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -258,7 +258,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul id="Custom2">
 			<li>Official site of Old Post Office - <a href="http://www.theoldpostofficebar.co.uk/" title="Submitted by:- Delboy 20" target="_blank">www.theoldpostofficebar.co.uk</a></li>
           </ul>
-<ul id="Custom2"><li class="fblink" id="763889977016181">Facebook - <a href="https://www.facebook.com/theoldpostofficebar/" target="_blank" rel="nofollow">The Old Post Office</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="763889977016181">Facebook - <a href="https://www.facebook.com/theoldpostofficebar/" target="_blank" rel="nofollow">The Old Post Office</a></li></ul><ul id="Custom2"><li class="wplink" id="LUN/435">CAMRA WhatPub :: Old Post Office - <a href="https://whatpub.com/pubs/LUN/435/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -272,7 +272,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([54.15419120000000, -2.46662700000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -297,7 +297,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Bentham, 3.55 miles, 1 hr 8 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Clapham (N Yorks), 4.93 miles, 1 hr 35 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Wennington, 6.32 miles, 2 hr 2 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('q~oiIpw`NKRMt@C\\@XJZd@t@Xj@A\\?L^jANRB\\V^T@nAnBr@tAZr@j@r@H[DC`@}@XeAt@ZBh@L`@NPVBLGl@_A\\l@NLPBZCb@r@`@hAH?vA|CRh@TnATv@`@~@h@v@jEhEELpA|BrA|DPZpA|@f@h@t@bBb@r@t@~@b@z@jAdDjArETb@DBFr@x@dBhA|@d@n@HBn@^tDjDhAb@~@~@`CjE`DzDn@lAhAzA`B~B~EnL|A~B`C^|DjE`DtFzAfApApCt@|@`Av@h@|@fAg@dBrGzGlJvCnEpPfTnC~AlA`EbAdA`@|AfBzCvB`C~@z@h@\\~GvDpDbAt@XdArAr@tC`B?f@HrAh@xArApCt@hA`@bBt@bAR?tExGMr@BZFhHPOZoBJIn@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('q~oiIpw`Nz@qBp@~@?JF\\XRZt@|@x@R}@bAPtDbELs@l@yATu@VLX\\Rh@vA}APPZBPC|BwA@JbCgA`DuCxDmCr@oCfAO|@EpATjEJl@AJFJKfGcCx@c@oBkEUqACcAXyAfB_AhA}AjBqDlAyCj@gAHd@t@a@Zg@L_@fBcCzAwDDa@lGwI\\eA~A}G~B{H|BoElAeE`AaC^wBhEoKFq@IiD?Io@oIHq@rDgDbIwGbC{BjCoC`E}ArC_G|BcFc@s@nAsCWwONw@lAaEjAkGVqBR_@vAuS`FpCbAhAd@JB]^}A~AaEp@mBV{B\\gIFJ|@tBf@h@p@`@`BXpA@vBc@\\UTAdBj@Z?XKb@m@bDcGfDsFl@}@VG`@C|E@lA~@bC]`B_@jHkFbE}BrIsDzBoAjBmBtDkF|AwApAy@tAgB|LmV`BcElAeB^p@}AnCDL', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('q~oiIpw`NKRMt@C\\@XJZd@t@Xj@A\\?L^jANRB\\V^T@nAnBr@tAFlAL`@Td@d@p@HX^BZJTVfAhA\\AHKNLR\\x@`BTh@\\`BXl@lApBb@p@`@\\d@R`@RTVXb@P`@~@rDu@~Ce@fBQ^w@|@gAr@?zC[fBTdIXdCh@lAt@tBd@fFInB~A|Gg@`GT~Bd@tJ_A|Ie@dGEdCHp@ArEMtAU~@@hAAxChAxDl@nACfA`@bBHbBPlIX`Ct@jAhA`@fFnSRhBx@pDNfDjAfHNlCX|Bo@`AWz@j@~@z@rCd@n@t@nBtA|CfAnAKFKZk@fFZb@^lFFrH?zBErHA~FUlH?rCaAjIGdAW`O_@tBO~CINObAS\\@p@Gd@?ZMR]~AWv@FTx@f@Xb@\\InCUD@xAdKZ[bEkFnAm@n@nFRlENzAp@`D^zAhAnDnCa@DXFD~AUvHq@DL`FxJjAh@h@h@d@B`@n@D?DvCG`C@p@Hv@DPV??JvAp@R`@|@nAz@|A`IhRr@JTxEd@bF|@~HtA~MiAra@DfBnA|Jj@dMnCnD~@dBHfChIvRj@`BJf@V~Bt@bIZ`GTvCNdAl@rBPrAFjBLzARz@\\bAd@|Aj@dDLpB\\pDNx@Xl@lAbALNNfAl@rHCdDInBBrCJvAP~Ap@hDj@zBVnCJx@Tz@rApAh@bAt@{@C_@IBE_@PE', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([54.15419120000000,-2.46662700000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -314,14 +346,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
       
 
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>1pm - 11pm</td></tr>
-<tr><td>Monday</td><td>Closed</td></tr>
-<tr><td>Tuesday</td><td>Closed</td></tr>
-<tr style="font-weight:bold"><td>Wednesday</td><td>3pm - 11pm</td></tr>
-<tr><td>Thursday</td><td>3pm - 11pm</td></tr>
-<tr><td>Friday</td><td>3pm - 11pm</td></tr>
-<tr><td>Saturday</td><td>1pm - 11pm</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>

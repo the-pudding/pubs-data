@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="Elms Inn pub in Street, Somerset, BA16 0SA : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of Elms Inn" />
+  <meta name="keywords" content="Elms Inn, 110  Somerton Road, Street, Somerset, Street Town, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="Elms Inn in Street" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/33001_33500/33126_f464b5b1.jpg?w=1" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/33126/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.12356294313875" />
+<meta property="og:longitude" content="-2.73128002882004" />
+<meta property="og:street-address" content="110  Somerton Road" />
+<meta property="og:locality" content="Street" />
+<meta property="og:region" content="Somerset" />
+<meta property="og:postal-code" content="BA16 0SA" />
+<meta property="og:country-name" content="England" />
+<meta property="og:description" content="Do you like Elms Inn in Street? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make Elms Inn the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/33126/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="Elms Inn in Street" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about Elms Inn " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/33001_33500/33126_f464b5b1.jpg?w=1" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/33126/" />
+<meta name="geo.position" content="51.12356294313875;-2.73128002882004" />
+<meta name="geo.placename" content="Elms Inn in Street" />
+<meta name="geo.region" content="UK" />
+<title>Elms Inn in Street : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":33126},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(33126);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 33126;var pubaddress = "110  Somerton Road";var pubname = "Elms Inn";var pubpostcode = "BA16 0SA";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/england/" title="Pubs Galore : England Page">England</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/somerset/" title="Pubs Galore : Somerset Page">Somerset</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/street/somerset/" title="Pubs Galore : Street Page">Street</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : Elms Inn Page">Elms Inn Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="3vshoe4sof06qjv12m020e1i76" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/33126/" class="indisplay"><img src="/images/display/33001_33500/33126_f464b5b1.jpg?w=1" alt="Picture of Elms Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=Blackthorn" class="indisplay">Blackthorn _</a><br />
+  Submitted on Saturday, 18<sup>th</sup> February 2017<br />
+  With picture contributions to 4477 other pubs<br />
+<a href="/pubpictures/33126/" class="smallbutton">View all this pub's pictures</a> (6 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/33126/">Pub map</a><br /><a href="/pubreviews/33126/">Pub reviews (2)</a><br /><a href="/pubpictures/33126/">Pub pictures (7)</a><br /><a href="/core/pubaudit.php?id=33126" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">Elms Inn, Street Town, Street</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">110  Somerton Road</span><br />
+
+
+<span class="town">Street</span><br />
+<span class="postcode">BA16 0SA</span>
+  </div>
+  
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/street-town/somerset/">Street Town</a></div>
+      
+    
+  </div>
+</div></div>
+
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of Elms Inn  <span class="h2note">(Average Rating: <span id="averagerating"><b>7</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review119010" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=ETA">E TA</a> left this review about Elms Inn</h6>
+<p class="old">A Victorian roadside inn which tends to get overlooked by tourists as it&#039;s on the outskirts of Street.  There is a good sized car park and a large, well maintained garden, though if you&#039;re travelling too fast in traffic, you will miss the entrance.  Inside, the single large L-shaped bar has been formed by opening out the original bars, retaining the two 1960s stone fireplaces, both now with woodburners.  The d&eacute;cor is a bit tired, very 1960s, but that is a minor point when seen in light of the food, the welcome and the beer.  There is a TV in the bar, which was showing MTV or something very like it, though the noise emanating from it was largely drowned out by the clatter from the jukebox.  Staff and regulars were very welcoming, the food was basic pub grub, well cooked and reasonably priced.  The ales on draft were Sharp&#039;s Atlantic, Doombar and Butcombe&#039;s Bitter.  The Atlantic was slightly off, and the barmaid replaced it immediately without question.  The other beers were in good condition.   A decent local and a good place to stop for lunch.</p>
+<p class="Reviewer">On 16<sup>th</sup> June 2017 
+  - rating: <b>6</b><br />
+  <span class="leftspace">[User has posted 2382 recommendations about 2361 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review1030" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=jeanmcnally">Jean McNally</a> left this review about The Elms Inn</h6>
+<p class="old">great food, good service and reasonable prices. will look forward to visiting again.</p>
+<p class="Reviewer">On 13<sup>th</sup> August 2006 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 2 recommendations about 2 pubs]</span></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for Elms Inn</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="wplink" id="TAU/293">CAMRA WhatPub :: Elms Inn - <a href="https://whatpub.com/pubs/TAU/293/" target="_blank">whatpub.com</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/33126/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=bcfczuluarmy">Jonathan Wilde</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.12356294313875, -2.73128002882004], 16);
+
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.12356294313875, -2.73128002882004]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Castle Cary, 11 miles, 3 hr 32 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Bridgwater, 13.23 miles, 4 hr 15 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Highbridge & Burnham-on-Sea, 15.28 miles, 4 hr 55 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('ga`wHpltOtAGhADJw@~@}C`A}BdAwBhC_F^e@VSYw@E]Ca@CqFEcAaA{H_@yDd@Ib@Ud@a@h@q@`BaCdE{Il@cA|AyBTg@Tw@N{@J_ABo@IkDV_BH}@BsEAeALmANgAn@aCvA_Fo@c@kAoAUSo@YkA[gAQYA_EVPeRCm@CgIcAoKOqA_B_IOiHDq@Lg@r@wA~A]p@W~B}Ar@o@bBaA`@_@r@{@xAaAf@a@HQb@kBf@y@v@gANKPI\\DtAX~Ab@l@D\\Ib@CT@\\NfBq@@MAe@@c@NMLCHQz@qNXaDd@kC`@kAV_ARsARcIFqACoAOkABsBVmDJiBLCHSBWBsAB[Le@|IiU~CyH^a@n@yAt@_CFo@Je@TQp@WROAiF@[IoBMsJSyU@_CCg@G_@?U@eBEiBSaBm@aCu@sB_@{AQ}@o@uECo@AyA?aCJqGAu@E[KYOM[FcAZYKIMG[}@eKa@gIImA]{C_@cEVKc@mEUcDWaEAa@F_ALo@`@oALYDW?Ue@eDKqBu@uHQiCo@mNYiF[eG?o@DoAf@gG`AyNFk@b@sB@q@y@sMq@qIOsA_@}Aq@_CtAaAj@{@^SNSv@gD`BgEvAkEj@eAxCuJHG|BuENCfCqROkOSk@eAoFoA{LlBiBhBsBR]|CiJNm@Dm@DkANcCXcDLyDT_F_@Q}AmC}@gBu@_CGc@HsJNiB@iF_@wCUwFMmKGq@CcJMgGIEYCIQMkC?g@C]UuADSjDgW\\OtKaWp@iBNG`@EJLrBcEZk@HGVMfAkCbBcF^sAVoANwAI_@A[@]Fa@Li@bDsJJa@Hw@DUxAuD\\s@r@aAx@cBq@cCAS|@eC?u@Z{@lA{C~@uCdAiDPmAL]p@QTIJ]Fs@FeAHwC?eCE{ABcANgCC_CBu@p@sDFu@IeB]uNKmBUqB]eC?MgAuIe@uFU_BQs@kBwG_@aB]mBu@{EW{BKgAA{@Dy@Hm@j@kCR}AJgA@eACeAK{@O{@w@uCCWBUHOx@u@LQFa@gAyFkA_EgAkF[kAi@uCc@uCc@aB[u@m@kAI_@Es@Ai@Bu@Da@Lk@b@sAVqANoBB}AEiAFIb@}Ed@}FZgCEOEeDJgCNm@p@mAv@aBXuATa@gAiKOaAOc@Ci@YuA]cA@o@PiD^cENs@N_@CMp@Ol@EXm@t@g@dAi@JMXCJIG]XQDRDLGDzAxGCBaA}D', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('ga`wHpltO{@DgFd@Cl@YzBsAfFeBhIKVBRVjDx@`FENt@dB?x@OBMLiEtFg@v@JVc@r@y@x@]j@g@~A_@bAYp@QZeCpBQFvBvRPlANn@LZFDIXcAzABREf@KPc@f@Wz@OKI^uBzFKJ@dBMxB@rDHtBJnA@FFDD?`Ad@gApGQxAU|D?XH|@Hh@ZhADFQ^e@zCi@|EAb@@Lw@IMJyAfCgBzDcCdEMZARJHEJiFxC{ChAe@h@_@fAMhCP~AUxJGdA_@rEAn@MtP@bGA|F]lJi@pKoA~UIr@GIi@zAsCvIKl@OhAU~CEtAH|DHtG`@xIpA|GZnA|EnMl@xAtBfDh@bAlEhLbAtBHBC|CQpCWdCQ~B@rLD`B`@d@lA|B|AjErClGTp@l@tDEtAn@fCJC`@BXETKTr@^v@DxCb@jBDDKl@DBJVx@pJn@dGDv@HfF?nCBfBNnCHnC\\fIX|E~@fLR|EtAQhAGl@JAVc@bCJ\\HPLPVN@NBdGA|AEhAApAYdGQbCBTGrAElBDhGl@tC@ZTLl@zAd@|@GV@jAXrOZlDBn@^fAJxAJxEFdD?`D]lM@jEn@hK|DyAJGRm@P\\NHt@TVXADAf@Bt@NjJQ`Fi@xFOpCa@jCeCfImCnMwAnG_@jBGJJ\\Fj@D`AIjEMdAGpDG^e@lHSdBSzAJN|ChNEjBmCrDFzCNtA@b@YbCY`FG~CMjBm@tBs@lC]dEg@|J[~EN|CpBbXR\\XpAn@jEb@tALj@@nAPj@KZgE|JH^n@hBBT@n@[~DkBdPeAlFYrDGbBG`@IXMFGfFGVyALy@\\Dl@TfH@~A?|DCt@i@hFEr@@r@D\\Rz@kAdEK`AKZQ@eC`ImCrJ?JeFbOB^uCr@{A~@_@XGNM|AUv@AJXxA?b@m@xJyBva@oArUcAdTKx@A^FbA~@xHXlCHhAF~B?lAEbBaA|DWtFGPa@DUFk@f@ZfD`DtKHd@JvA^dAJJh@XBDWrFRH@D[jGv@pDENBt@AzC|BxBr@hA|@dB|BzFR\\r@pB~CbIfAbCfAjBx@hB`AdDXp@zAhCn@rALNBVnA~Db@jD`@`FCtGKlEO|Fk@bNBLFDhAD?`@}@lJMRAHFLh@d@QzAuAxHTNHTh@RARLxAQtCKCU`FNB?^gAhD}@pE@Ld@^?NFd@ALlAxGc@nAk@VuAZHbBBTIDBPAj@GH@RP`B?|@M`A[nEQhEOxGDVBhAHVBhDGzA@z@EdA?nAC^`BF?h@z@BIbLOzDx@TrBAp@Lh@THC@DRBRPJTc@nANBVj@HLiA|CCLAVBZf@zABP@LIx@]zACh@ELGDe@H', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('ga`wHpltO{@DgFd@Cl@YzBsAfFeBhIKVBRVjDx@`FENt@dB?x@OBMLiEtFg@v@JVc@r@y@x@]j@g@~A_@bAYp@QZeCpBQFvBvRPlANn@LZFDIXcAzABREf@KPc@f@Wz@OKI^uBzFKJ@dBMxB@rDHtBJnA@FFDD?`Ad@gApGQxAU|D?XH|@Hh@ZhADFQ^e@zCi@|EAb@@Lw@IMJyAfCgBzDcCdEMZARJHEJiFxC{ChAe@h@_@fAMhCP~AUxJGdA_@rEAn@MtP@bGA|F]lJi@pKoA~UIr@GIi@zAsCvIKl@OhAU~CEtAH|DHtG\\vH{@n@uAJ]NyCDSRo@BEJ\\rOQp@fEfOn@fCoAbACL`@nDXpB`@tBlA`Fb@bBl@~A@NCJPLPh@R`At@~E^lBPv@d@dAaAbAwCnKIBo@tFFp@Hh@KT[tDQ~A}AzKa@`DGJ_@hEYtH]xDeAvNItBBpG?hCw@rCs@rDOhAZfSAr@CZFp@A|A@xAR`G\\lWF|B?|@MjBAjCcBEeAx@cC|AEvAg@LmEc@gBlDe@v@oAnA]J[DGb@yM~Xo@x@mAzBkBfCmBxAu@bBoBfKC`@i@rCa@jLe@rFeAnFqAnK{@`Gg@dBo@~DSjFNfM?fDOfF_A|GGPMFw@r@]T[@KFEL_@fKIxAO|AMIsDi@KK[XIRGn@ERG@kAAw@G}B?O@g@d@]@oEa@}A[[~BcAfGCv@M`Au@zByAbEGCIB_@lAgAnAS\\q@vACLgCoBUMOCM@}@V?^ERu@pBaD|KUQyDmASF_@EuCiAi@lCIzAG^eB`GWlAMbA]jA[lAOv@]`@Gf@e@lB}@bF_AnEeAvD_@hCS^_@n@SnAS~@e@vAq@xF_@rEmA`LKd@eFuAyAYeC}@s@SgE@q@CyASK@i@t@?HOnCc@hESvAYjCeA|Ha@zDMZQJOBc@?iFc@q@AwCUgAUa@By@EYB]IsBCeBc@uBEm@F[EeBR}B_@e@?YHs@Ec@Oa@Aa@[W@uA`@M?_@c@k@Jg@RK@kAOaAWsAIgA?k@E{@Nm@AIlQaAbd@BPCtAIjBKxEEtFC^Il@Cj@DTXNJNHTMT{@tCIt@eEjz@OTQ?{HyAkH}AkBe@UF@NmFzb@YhBQ|@mBhEaAnCiAnB[~@S|@[tBs@hB_BbMQjBUxAWtAIXSXODU?OHGLYa@q@m@eC_BkBo@EBEKKBa@p@mApE_@l@mBxESJsH`BiCv@]DKHk@|@mE^aAMe@f@yB~EaAlCMLC?g@QEGE@iBYKDWdAWvAi@fCaBfJICyO~oAWIGDaA]GFUj@{@hAc@t@kBnCu@bBQ|@@`CKZg@FF\\@x@EbB@f@DRM\\QrAITcJv@oCvKo@rCw@fAeAjCuAxE]~@w@|DYrHAjBSnDS~C{@pD?d@NzB?HEN]RcEvAeH~Jm@`BEBEPO?AFcHu@?IIAA`@JBFD_@E?Id@D', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.12356294313875,-2.73128002882004], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=33126">View all updates for Elms Inn, Street</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        16<span class="sup">th</span> Jun 2017, 06:51
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=ETA">E TA</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        18<span class="sup">th</span> Feb 2017, 18:53
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Blackthorn">Blackthorn _</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11833126">No</span> <span id="discdetail11833126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2015 by Jonathan Wilde</span></li><li>Bar Billiards : <span id="fac10733126">No</span> <span id="discdetail10733126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2015 by Jonathan Wilde</span></li><li>Beer Festivals : <span id="fac11733126">No</span> <span id="discdetail11733126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2015 by Jonathan Wilde</span></li><li>Beer Garden : <span id="fac11433126">Yes</span> <span id="discdetail11433126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2015 by Jonathan Wilde</span></li><li>CAMRA Discount : <span id="fac10233126">No</span> <span id="discdetail10233126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2015 by Jonathan Wilde</span></li><li>Car Park : <span id="fac11333126">Yes</span> <span id="discdetail11333126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2015 by Jonathan Wilde</span></li><li>Child Friendly : <span id="fac12133126">Yes</span> <span id="discdetail12133126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2015 by Jonathan Wilde</span></li><li>Darts : <span id="fac11133126">Yes</span> <span id="discdetail11133126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 April 2017 by E TA</span></li><li>Dog Friendly : <span id="fac10533126">Yes</span> <span id="discdetail10533126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 April 2017 by E TA</span></li><li>Function Room : <span id="fac12333126">No</span> <span id="discdetail12333126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 April 2017 by E TA</span></li><li>Hot Food : <span id="fac10333126">No</span> <span id="discdetail10333126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2015 by Jonathan Wilde</span></li><li>Jukebox : <span id="fac11233126">Yes</span> <span id="discdetail11233126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 April 2017 by E TA</span></li><li>Karaoke : <span id="fac10633126">Yes</span> <span id="discdetail10633126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 April 2017 by E TA</span></li><li>Live Music : <span id="fac10833126">Yes</span> <span id="discdetail10833126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 April 2017 by E TA</span></li><li>Live TV Sports : <span id="fac11033126">Yes</span> <span id="discdetail11033126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2015 by Jonathan Wilde</span></li><li>Micropub : <span id="fac12233126">No</span> <span id="discdetail12233126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2015 by Jonathan Wilde</span></li><li>Pinball : <span id="fac11633126">No</span> <span id="discdetail11633126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2015 by Jonathan Wilde</span></li><li>Pool Table : <span id="fac10433126">No</span> <span id="discdetail10433126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2015 by Jonathan Wilde</span></li><li>Real Ale : <span id="fac10133126">Yes</span> <span id="discdetail10133126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 May 2014 by Dave McNally</span></li><li>Real Cider : <span id="fac11933126">No</span> <span id="discdetail11933126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2015 by Jonathan Wilde</span></li><li>Wheelchair Access : <span id="fac12033126">No</span> <span id="discdetail12033126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 30 March 2015 by Jonathan Wilde</span></li><li>WiFi : <span id="fac11533126">Yes</span> <span id="discdetail11533126" class="discdetail" style=""></span>  <span class="Reviewer">last updated 09 April 2017 by E TA</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 6 picture(s)" title="Pub has 6 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 1 reviewer(s)" title="Pub has average rating of 4 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/33132/" class="List1">The King Alfred</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4 from 2 reviewer(s)" title="Pub has average rating of 4 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/73962/" class="List1">The Street Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 3 reviewer(s)" title="Pub has average rating of 5.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/33131/" class="List1">The Bear Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87497/" class="List1">Fondo Lounge</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 13 picture(s)" title="Pub has 13 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 4 reviewer(s)" title="Pub has average rating of 4.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56375/" class="List1">The Lantokay (JD Wetherspoon)</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

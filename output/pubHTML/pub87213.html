@@ -126,13 +126,13 @@ var thispub = 87213;var pubaddress = "21-23 Atholl Street";var pubname = "Howi
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87213;var pubaddress = "21-23 Atholl Street";var pubname = "Howi
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="1s2nt80rprthfkkr9ac13ra042" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="19qbs1e51rf7jnao14fopjidg2" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87213;var pubaddress = "21-23 Atholl Street";var pubname = "Howi
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87213;var pubaddress = "21-23 Atholl Street";var pubname = "Howi
   <div id="displayedimage">
 <a href="/pubpictures/87213/" class="indisplay"><img src="/images/display/87001_87500/87213_ebb08c6b5a6238a230cf241b21fe69c9.jpg?w=2" alt="Picture of Howie&rsquo;s Bistro" /></a><br />  Image posted by <a href="/userinfo.php?name=Barty19" class="indisplay">Alastair  Barter</a><br />
   Submitted on Saturday, 1<sup>st</sup> December 2018<br />
-  With picture contributions to 1103 other pubs<br />
+  With picture contributions to 1199 other pubs<br />
 <a href="/pubpictures/87213/" class="smallbutton">View all this pub's pictures</a> (1 more image)
  
   
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([56.56627040000000, -3.58573200000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Dunkeld & Birnam, 0.81 miles, 15 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Pitlochry, 12.98 miles, 4 hr 10 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Perth, 15.88 miles, 5 hr 6 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('uagxIzi{T?a@rBK|@OtBM|Ng@?UbBI~@uBfAuAd@eFL_Ab@uF^cCZmA^aAd@y@Rm@@S`@_@Zs@Ts@Nu@`@ZjAFnBMh@X~A|AJa@h@s@ZoA', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('uagxIzi{T?a@kEj@g@N}@h@{@z@i@jAoClIgApBqCvDeAlBeApCShASYaA_IM}FmAJ}A\\aBFo@Ng@\\a@l@e@\\iBDo@Xc@v@k@n@k@Ja@IQ_@u@_Aw@Wi@Eu@U_@D{Ar@e@j@g@YSE_@YsAgAg@m@[IwCNk@E[BKX_@f@o@n@]HQEYHgBNuAhAu@Q{CoFeBo@_C`BeAZKt@AbAR^~@PXd@IrA_BtBwD`EaD`E}@`BkA`EkCzDgBbAiAScBmBqAiBmEqCsAdB_AfDoE`D{ArCk@`@G\\k@fA{A|@eA~@_BhFwFxIuAvGy@p@\\nA\\bBp@fAhExSpArAnAbCbBjBZx@Lx@Ax@I`@UNk@Do@\\aAvAQl@IdAg@`Ce@pAk@pCSd@e@d@WLYZA^Df@Tr@N|@iA\\y@`@gC~@SNw@pAmAvAgE`DmDzBsAp@aH`AkBRc@Gy@SU?YLs@FiBa@g@Ly@Bc@A{A_@kC_@oAToA?oBOiDi@a@A}AJ_B@aDXyATyAj@e@He@?k@Qg@YYAYDwAr@eANk@A]OUd@HrJAlBLtCMdCLbBQbDTrB?pBQv@o@n@S?Sb@i@nCc@~A_@rFC~@E`@i@nAHb@QFW`@gHxC_ABsFhAcE[oBCeA`@YTKPEZFlBqFvBgEdCkHrEeFlFqAR{AQ}C}Co@g@{@IgAXiCvC}BtF?t@iB|CsCfIu@|CQ`AqHt@sAdBk@bAyCxEQN{@RwF[kB[k@h@sExFgInNmAz@a@rAcItMkI~HoIdF{M`Te@`CsBzG}BvFyDjEaDzEwBnE}GjUuAfEqA`Cy@pAc@CiB_@SZ}@Tw@v@}@pAs@v@uAjAi@~@WdASMQ?IHgC|DcAlBu@`A]XeDtAN~AqBh@wCj@sC^wAJsBMuB@kCPwDa@uJwAcDUwA?mAJyDdAuAr@_BfAcB~A_BnBy\\|f@wAdCsApBoVda@uHdNiWbg@aPx[ePp[w@jBu@rB{@`D_AfEs@~EiAhFs@zAc@d@}@h@[Ji@@aCUkAUy@Au@HyBr@uBfAqIlGyBpBuAdBk@`Ae@dA_@`AY`Aq@jD_@pEG`BUh@Ad@@d@Ph@IzJKbCMlAOdAS~@y@`C}@tA{@v@cDjBeA`@qAZEp@In@c@|B[`Cg@fFkA~MOdAC~@HtD@jABRYnBMRIDg@Kg@Wu@~FKnCM~@Q^Gh@Qt@MfAAf@`@CH}@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('uagxIzi{T?a@rBK|@OtBM|Ng@?UbBI~@uBfAuAd@eFL_Ab@uF^cCZmA^aAd@y@Rm@@S`@_@Zs@Ts@Nu@`@ZjAFnBMh@X~A|A@Ez@z@J?XYP@pBd@TTx@{D~A}G`@kB\\q@j@yIxA_I~@qJh@kBUcEj@eCl@m@xADb@wAnAmAz@oBpBiBxBeD`C}@jDqCxBu@lAl@dBN\\k@fA}@j@m@j@aBb@u@~@oBrByAh@mCdBuClD?BDjACb@Yt@{Bb@cBlBgD^_@PGND~@l@r@fAb@lAn@|BZn@ZRjAVP_@VKv@@t@^h@G^]`@HnAlCb@@r@a@v@_Aj@OfAEjBp@t@a@dBo@|@Q~@LRYf@oAZcBhAsId@g@dA}AxB{Bl@mBL_A\\iAl@_CRsBXcIXyEJuD^}HH{D\\gDr@sGu@sHIaBE{ACeEvBn@j@{JZmCZiBZyBJy@@o@CgAUsBc@qCeAmFa@cCUgBMwBW{H@_@O_H?iCB{@LcCtAcRGyAcAkO|CzAt@EfJbBpd@rHb@?\\OvM}MjF{Fb@QvK_Cvz@wOr@UbHyC`CiAzB{@vFiChHqC|@m@hAmAjEyCxCaBT@PDVURMA_AJq@TmCt@BTWzBuCRy@`@SpBe@r@U\\[Rq@aBiC{AeBGgKz@aCpB{E|BiBxAcAzCaDz@iB~AyCbBkBvAkG|BaChB}@`BwBdB[d@Yt@qGr@aBxBuBtBgB`BkC~@YtAl@bB`AnBuA`C@vBTfB^tBDfH`AzA^tBhD^e@hK}OnC}DbCaDbCiC`F{ElT}RtEkElQgSrBgCbCcCfB}ArBsAvEkC~D{A|RgElJcCdKcDzOaGdOsE~HyBlReEvHsA~D_@fDQ`I@fCNzDd@t[xE@k@|@d@`FPzCWlFoArB{@`GaFtN{M|CiBPEJ~@rCqAhC{@|WuFrEiAlEsBjBmAZWP]N_@D]Ru@PWd@Sx@IjAYbBaAx@}@j@gA~@cAPIHQBc@L[dJ}OpCgGdB}CWcAk@_BEg@JEAcFPOVa@vBmDVsAF_AIcN?YDQHMLCj@EBg@jAuF^AA{Cf@AHc@p@E?eBZMl@ANWjAIj@FfBC`CQj@KGqFAwDGwISmDv@QZUTm@Fc@?_@z@QL@LGLWzBg@z@?H[hOwBvDo@TMfScVVWxFcJlGWhAMfESrHEMRATvAhK~@hAvBj@dDfAp@`@~@hANFJx@j@YHr@`@Or@GAs@BMqAoBIU?[N`@p@bA', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([56.56627040000000,-3.58573200000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

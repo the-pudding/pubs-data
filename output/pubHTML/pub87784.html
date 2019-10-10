@@ -126,13 +126,13 @@ var thispub = 87784;var pubaddress = "Princess Theatre, Torbay Road";var pubna
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87784;var pubaddress = "Princess Theatre, Torbay Road";var pubna
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="7g17s0jff0h854nu2l5ncbhrf3" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="4f84m7ca5mlc3uuom0g7qbe0n5" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87784;var pubaddress = "Princess Theatre, Torbay Road";var pubna
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87784;var pubaddress = "Princess Theatre, Torbay Road";var pubna
   <div id="displayedimage">
 <a href="/pubpictures/87784/" class="indisplay"><img src="/images/display/87501_88000/87784_f0596cae.jpg?w=2" alt="Picture of Princess Bistro" /></a><br />  Image posted by <a href="/userinfo.php?name=rpadam" class="indisplay">Just a quick pint, then I&#039;m off</a><br />
   Submitted on Saturday, 1<sup>st</sup> June 2019<br />
-  With picture contributions to 5082 other pubs<br />
+  With picture contributions to 5595 other pubs<br />
 <a href="/pubpictures/87784/" class="smallbutton">View all this pub's pictures</a> (1 more image)
  
   
@@ -251,7 +251,7 @@ var thispub = 87784;var pubaddress = "Princess Theatre, Torbay Road";var pubna
 <p>Modern caf&eacute; / bar for the Princess Theatre but open to all during the day and early evening and in a good spot overlooking the harbour marina and Princess Pier.  Serveries and seating / dining areas on two floors, with most tables having fine views through the picture windows.  Limited choice of craft and standard beers on the keg taps on both counters (not always manned but you can still order from the general tills).</p>
 <p class="Reviewer">On 3<sup>rd</sup> June 2019 
   - rating: <b>5</b><br />
-  <span class="leftspace">[User has posted 5457 recommendations about 5457 pubs]</span></p>
+  <span class="leftspace">[User has posted 5722 recommendations about 5722 pubs]</span></p>
   </div>
 </div>
 
@@ -279,7 +279,7 @@ var thispub = 87784;var pubaddress = "Princess Theatre, Torbay Road";var pubna
 
 	var mymap = L.map('mapid').setView([50.46122739797987, -3.53023872394260], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -304,7 +304,39 @@ var thispub = 87784;var pubaddress = "Princess Theatre, Torbay Road";var pubna
 
 
 </script><div>
+<i class="fas fa-train"></i> Torquay, 0.74 miles, 14 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Torre, 1.25 miles, 24 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Paignton, 3.02 miles, 58 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('cu~rHfopTE^UJm@`Bi@fAa@jA[p@e@j@q@p@aBlBSUKd@Kz@Ax@@l@Z`Dj@hDW\\Av@R@n@`ClArDE@lCdI~@xBLn@Rj@?ZAJfAPX@PRFh@Ld@?xAO^HPIRIrAKp@mAp@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('cu~rHfopTE^UJm@`Bi@fAa@jA[p@e@j@q@p@aBlBSUKd@Kz@Ax@@l@Z`Dj@hDW\\i@ZqAl@sA^uAV_@P}@l@i@f@y@vAO[gAjAcAt@UVF^gFtEeBbAq@j@aDdCSJU@ETOf@Yb@[Za@VeA\\_Eh@wAf@Fh@EfAYpAE\\K@QRYp@s@zBUbAC\\Ad@BnAk@\\yAlA_@t@Kh@DLCNUp@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('cu~rHfopTE^UJm@`Bi@fAa@jA[p@e@j@q@p@aBlBSUKd@Kz@Ax@@l@Z`DVFJz@P|@fAxDfCvHrAbElAxCjAjBfB~BOBGNd@f@d@n@^^RHhDfA~@`@p@j@^f@xAlDxAlCnBhCrArAZR`G~Cn@d@LPzEvJTn@Df@DnBDb@Rx@JT`@rAfBrFdB`D`@dAHb@j@tEALHZPb@d@n@LAJHt@\\lDp@d@^b@t@pBfE^t@\\b@|AjC^}@pAgCr@gBHC\\XtCdEVRjCbD~DlFxEfIpE|GRDHA`@QJFpAhD@b@r@fC^dAb@xAZpAVt@RPHeC~ACnAMhBkAfBwAb@QVA\\FtBn@@F|Bd@dCn@H^EvBhBFPE`@_@RMDSlA\\DFLKFi@ND', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([50.46122739797987,-3.53023872394260], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -321,6 +353,14 @@ var thispub = 87784;var pubaddress = "Princess Theatre, Torbay Road";var pubna
       </div></div>
       
 
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Beer Festivals : <span id="fac11787784">No</span> <span id="discdetail11787784" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>CAMRA Discount : <span id="fac10287784">No</span> <span id="discdetail10287784" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>Hot Food : <span id="fac10387784">Yes</span> <span id="discdetail10387784" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>Micropub : <span id="fac12287784">No</span> <span id="discdetail12287784" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>Real Ale : <span id="fac10187784">No</span> <span id="discdetail10187784" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li><li>Real Cider : <span id="fac11987784">No</span> <span id="discdetail11987784" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 August 2019 by ROB Camra</span></li></ul></span>
+  
+</div>
 
 <!-- fbhours -->
 <!-- FH --> 
@@ -336,7 +376,7 @@ var thispub = 87784;var pubaddress = "Princess Theatre, Torbay Road";var pubna
                     <li><img src="/images/icon-photo.gif" alt="Pub has 8 picture(s)" title="Pub has 8 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 1 reviewer(s)" title="Pub has average rating of 6 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/60839/" class="List1">Rock Garden</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/83314/" class="List1">Visto Lounge</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 4 picture(s)" title="Pub has 4 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 1 reviewer(s)" title="Pub has average rating of 7 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87783/" class="List1">Bistrot Pierre</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55454/" class="List1">Appleby&#039;s (The Heritage Hotel)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 5 picture(s)" title="Pub has 5 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5.5 from 2 reviewer(s)" title="Pub has average rating of 5.5 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55454/" class="List1">Appleby&#039;s @ The Heritage Hotel</a></li>
 
           </ul>
   

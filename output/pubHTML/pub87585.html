@@ -126,13 +126,13 @@ var thispub = 87585;var pubaddress = "Southsea Marina, Fort Cumberland Road";v
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87585;var pubaddress = "Southsea Marina, Fort Cumberland Road";v
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="60lecgl982pnvsdidnrvp6gjg7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="n0p2bmahhohahbk1u5hmpt1ja4" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87585;var pubaddress = "Southsea Marina, Fort Cumberland Road";v
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87585;var pubaddress = "Southsea Marina, Fort Cumberland Road";v
   <div id="displayedimage">
 <a href="/pubpictures/87585/" class="indisplay"><img src="/images/display/87501_88000/87585_0d9c8c0d.jpg?w=2" alt="Picture of Marina Bar" /></a><br />  Image posted by <a href="/userinfo.php?name=rpadam" class="indisplay">Just a quick pint, then I&#039;m off</a><br />
   Submitted on Sunday, 31<sup>st</sup> March 2019<br />
-  With picture contributions to 5082 other pubs<br />
+  With picture contributions to 5595 other pubs<br />
 <a href="/pubpictures/87585/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -277,7 +277,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([50.79163171338552, -1.03339610737498], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Fratton, 2.32 miles, 44 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Portsmouth & Southsea, 3.05 miles, 58 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Hilsea, 4 miles, 1 hr 17 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('yd_uHdwhE~@vBX`Ap@lCfBnFj@pArAfB|@hBa@t@QNaAVo@l@q@wBw@z@Uq@o@t@AL|AjEtAzEfAbGVnBBhA?`@[~E?XIl@IJeB|@c@tAKJ[x@k@fB_A`CyA`COdAAd@LpDHfB~Adg@a@VSPi@z@NV@HaA|NsGd[]U[rBu@~FM`B[`FSlHqBY?l@MxAGAw@`J{@|HqBnOICBSg@Ey@X@NG@EKO@[_E', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('yd_uHdwhE~@vBX`Ap@lCfBnFj@pArAfB|@hBrGrML\\FZD|@An@_AzP?fBBTHRMVET[zBSjAmA|EGp@KxEAp@YBMn@ONiAp@i@bAQfB?zOBdKH?DTFB@nE`ALCpAwAbUyDj[PNg@bMkAdLeBOSI_@jDGRMLKBIAShGD@m@nCM~@u@jJKpBMxMiALH`LBdACjAHHE~DALGEmB~J}AqA{A`F[B@Hi@DMe@i@m@IFS\\sDvJ}@lAmAtAkAt@WB?rNEzBu@JGHMd@E|@E`BOb@?h@?|@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('yd_uHdwhE~@vBX`Ap@lCfBnFj@pArAfB|@hBa@t@QNaAVo@l@q@wBw@z@Uq@o@t@AL|AjEtAzEfAbGVnBBhA?`@[~E?XIl@IJeB|@QP_@TQ@QGa@c@CeFAK}DgAQIiCmCqA}AEEa@IYc@c@SS?OJs@DWJQAk@_Ae@Rb@lGwFIuTHC@UCcADu@\\k@h@_@r@W`AW~Aa@fDa@SqCHa@Ea@Mq@Ck@FeDx@y@VK?UKSAg@TMAMOaAo@[@oAl@cAVsAp@q@~@UTo@x@Oc@YNgDbAyEp@mAj@?bBo@tJDbB]HQW_@LKLSXGCcBPi@PgAl@WFYTGLg@lB]|@y@tA_Af@OLyChD_@Z[N_EpAgELwCZ]A}@g@If@a@nBEGLaA_BqAGO]kCa@RwBcCy@a@wAOmCVIEODIPAJwD`AoTpMkA|@aAlAi@bASb@Wt@Mp@UzAOd@SZQJUV@XEJIBIEe@~@uAnDYl@m@Zo@AaBg@mDsAMj@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([50.79163171338552,-1.03339610737498], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -321,14 +353,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
       
 
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>8am - 10pm</td></tr>
-<tr><td>Monday</td><td>8am - 11pm</td></tr>
-<tr><td>Tuesday</td><td>8am - 11pm</td></tr>
-<tr><td>Wednesday</td><td>8am - 11pm</td></tr>
-<tr style="font-weight:bold"><td>Thursday</td><td>8am - 11pm</td></tr>
-<tr><td>Friday</td><td>8am - 11pm</td></tr>
-<tr><td>Saturday</td><td>8am - 11pm</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>
@@ -337,7 +362,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul class="Custom1">
                     <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 4 reviewer(s)" title="Pub has average rating of 4.5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14034/" class="List1">Thatched House</a></li>
                     <li><img src="/images/icon-photo.gif" alt="Pub has 7 picture(s)" title="Pub has 7 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 2 recommendation(s)" title="Pub has 2recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 6 from 2 reviewer(s)" title="Pub has average rating of 6 from 2 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/14051/" class="List1">Old Oyster House</a></li>
-                    <li><img src="/images/icon-photo.gif" alt="Pub has 22 picture(s)" title="Pub has 22 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 3 recommendation(s)" title="Pub has 3recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 4.5 from 3 reviewer(s)" title="Pub has average rating of 4.5 from 3 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/59661/" class="List1">The Ferryboat Inn</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 24 picture(s)" title="Pub has 24 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 5 from 4 reviewer(s)" title="Pub has average rating of 5 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/59661/" class="List1">The Ferryboat Inn</a></li>
 
           </ul>
   

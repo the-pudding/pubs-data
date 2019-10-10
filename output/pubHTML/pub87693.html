@@ -126,13 +126,13 @@ var thispub = 87693;var pubaddress = "Parc Eithin, Ffordd Dewi Sant";var pubna
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87693;var pubaddress = "Parc Eithin, Ffordd Dewi Sant";var pubna
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="q1iu657r0mik9rlspqkk9nehp2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="fqc4pb78qk33ja53tfhjcj3cs1" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87693;var pubaddress = "Parc Eithin, Ffordd Dewi Sant";var pubna
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -258,7 +258,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul id="Custom2">
 			<li>Official site of Cwrw Llyn Tap - <a href="http://cwrwllyn.cymru/en/" title="Submitted by:- Old Boots" target="_blank">cwrwllyn.cymru</a></li>
           </ul>
-<ul id="Custom2"><li class="fblink" id="220068638015097">Facebook - <a href="https://www.facebook.com/cwrwllyn/" target="_blank" rel="nofollow">Cwrw Llŷn</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="220068638015097">Facebook - <a href="https://www.facebook.com/cwrwllyn/" target="_blank" rel="nofollow">Cwrw Llŷn</a></li></ul><ul id="Custom2"><li class="wplink" id="SIR/368">CAMRA WhatPub :: Cwrw Llyn Tap - <a href="https://whatpub.com/pubs/SIR/368/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -272,7 +272,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([52.93523190000000, -4.52788760000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -297,7 +297,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Pwllheli, 6.89 miles, 2 hr 13 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Abererch, 8.87 miles, 2 hr 51 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Penychain, 10.41 miles, 3 hr 21 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('_{abIbisZsBiGi@aCQcBK{ACgAB_AfAmHPmBDcA@yAEcEBGAK~AaC|AcBN]l@{BVs@@UG{FQ{B?g@Dm@Ns@Da@?UUyACwABsBF}A^mAN_@b@u@dA{CXk@p@aAzAoD|@iCpAyE^cAf@}@d@s@fC}CxJeYbBeE`AsBRaAFeAL_A`@}ANcAPcELcH\\yGHgCDcKCaCWeH[gHMwAe@oDAc@Dy@Aq@i@gEiAuEKs@CYC{@BoB?sAKcCo@uIlCeFx@cBr@gA`AmBZ{AXkCDyADi@Jo@No@Rk@Xi@vAyBVSl@IHn@dA?~@MbA]fCwAv@{BxEcJnBmHXs@dAuEh@_BzHkRkDgFk@kAg@w@Ok@C[A[DwB?aAIeBAc@LmB@iAOiECkBMmBBSZS|Bq@f@_@N[LsALkDJcAj@}DReATuAh@iBtAqGRg@Vc@dAqARMXEZBTIdAw@V@TPTFn@W`BuAXITHPVRHRGx@cAVUXS`@M\\At@FzAC|@GTG|@c@\\]Ve@\\_@\\Ox@C\\GtAa@pCk@lAg@r@Qn@c@VMp@Ul@IVFf@ZdDx@\\Tr@r@dAp@r@ZP?`@MBm@z@eE\\gAv@sAn@iBt@aAp@mCLm@Bw@EuC@_@JWfD_BfAW|FuHdAcF|CwKxAyCnEsKjAeHd@cBtCaE|@{@VHjArDVP`Ai@nC{K\\cAZsB^aECcDfAqBzBgGx@mCp@cDf@kFPm@rBcDf@qBxB}Dp@yAhBsFXSXa@Ro@l@qAv@o@`Ai@p@Kp@NhBfBd@N^CJG~AmB|@k@`BSnAI@gAMq@IUHs@TB^EnCsAu@cEIs@Mc@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('_{abIbisZsBiGi@aCQcBK{ACgAB_AfAmHPmBDcA@yAEcEBGAK~AaC|AcBN]l@{BVs@@UG{FQ{B?g@Dm@Ns@Da@?UUyACwABsBF}A^mAN_@b@u@dA{CXk@p@aAzAoD|@iCpAyE^cAf@}@d@s@fC}CxJeYbBeE`AsBRaAFeAL_A`@}ANcAPcELcH\\yGHgCDcKCaCWeH[gHMwAe@oDAc@Dy@Aq@i@gEiAuEKs@CYC{@BoB?sAKcCo@uIlCeFx@cBr@gA`AmBZ{AXkCDyADi@Jo@No@Rk@Xi@vAyBVSl@IHn@dA?~@MbA]fCwAv@{BxEcJnBmHXs@dAuEh@_BzHkRkDgFk@kAg@w@Ok@C[A[DwB?aAIeBAc@LmB@iAOiECkBMmBBSZS|Bq@f@_@N[LsALkDJcAj@}DReATuAh@iBtAqGRg@Vc@dAqARMXEZBTIdAw@V@TPTFn@W`BuAXITHPVRHRGx@cAVUXS`@M\\At@FzAC|@GTG|@c@\\]Ve@\\_@\\Ox@C\\GtAa@pCk@lAg@r@Qn@c@VMp@Ul@IVFf@ZdDx@\\Tr@r@dAp@r@ZP?`@MBm@z@eE\\gAv@sAn@iBt@aAp@mCLm@Bw@EuC@_@JWfD_BfAW|FuHdAcF|CwKxAyCnEsKjAeHd@cBtCaE|@{@VHjArDVP`Ai@nC{K\\cAZsB^aECcDfAqBzBgGx@mCp@cDf@kFPm@h@{@AyAB_BJ}AVoBDgA^}B|AsDKi@QiBK{BGc@_AuDQsAKmA?mCE}@s@aFSy@So@UYwAs@SWOc@Im@K}BIg@Oe@Yc@}@y@Sg@Sq@mByDoAyBSo@OsBKm@i@wB]_AyBeF_DkGeDeGc@c@WOCO?SRqC_EeAcBq@{Ay@eDiDFM?SCWgA{DIc@u@uFGcAg@aNW}D?i@Bm@v@}Fz@sErA_GRqARmBj@oH?MNUNw@PgHeAcAUiL[wBm@}EEcDFeC^eClA}Gl@eEv@iCj@iCb@aA`@a@lBQ@OFSFGJCHBJPBNx@B^C`Ba@jAEvGG', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('_{abIbisZsBiGi@aCQcBK{ACgAB_AfAmHPmBDcA@yAEcEBGAK~AaC|AcBN]l@{BVs@@UG{FQ{B?g@Dm@Ns@Da@?UUyACwABsBF}A^mAN_@b@u@dA{CXk@p@aAzAoD|@iCpAyE^cAf@}@d@s@fC}CxJeYbBeE`AsBRaAFeAL_A`@}ANcAPcELcH\\yGHgCDcKCaCWeH[gHMwAe@oDAc@Dy@Aq@i@gEiAuEKs@CYC{@BoB?sAKcCo@uIlCeFx@cBr@gA`AmBZ{AXkCDyADi@Jo@No@Rk@Xi@vAyBVSl@IHn@dA?~@MbA]fCwAv@{BxEcJnBmHXs@dAuEh@_BzHkRkDgFk@kAg@w@Ok@C[A[DwB?aAIeBAc@LmB@iAOiECkBMmBBSZS|Bq@f@_@N[LsALkDJcAj@}DReATuAh@iBtAqGRg@Vc@dAqARMXEZBTIdAw@V@TPTFn@W`BuAXITHPVRHRGx@cAVUXS`@M\\At@FzAC|@GTG|@c@\\]Ve@\\_@\\Ox@C\\GtAa@pCk@lAg@r@Qn@c@VMp@Ul@IVFf@ZdDx@\\Tr@r@dAp@r@ZP?`@MBm@z@eE\\gAv@sAn@iBt@aAp@mCLm@Bw@EuC@_@JWfD_BfAW|FuHdAcF|CwKxAyCnEsKjAeHd@cBtCaE|@{@VHjArDVP`Ai@nC{K\\cAZsB^aECcDfAqBzBgGx@mCp@cDf@kFPm@h@{@AyAB_BJ}AVoBDgA^}B|AsDKi@QiBK{BGc@_AuDQsAKmA?mCE}@s@aFSy@So@UYwAs@SWOc@Im@K}BIg@Oe@Yc@}@y@Sg@Sq@mByDoAyBSo@OsBKm@i@wB]_AyBeF_DkGeDeGc@c@WOCO?SRqC_EeAcBq@{Ay@eDiDFM?SCWgA{DIc@u@uFGcAg@aNW}D?i@Bm@v@}Fz@sErA_GRqARmBj@oH?MNUNw@PgHeAcAUiL[wBm@}EEcDFeC^eClA}Gl@eEv@iCj@iCb@aA`@a@JCKo@A]@Wl@qEDsEBi@V{AjBuHJq@Bi@MmDAu@FeAVgDJeFCyASaCGiA[mLE{@Oq@yAgDSkAQeCGaBEqDMiAk@aC_B}Em@qA}E{G[k@]oAIi@Cw@KqNB]F[GMESGcGCQCgK]eEuAsMEyA\\GMwGIyKM}CKsAbB[|BWjGY', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.93523190000000,-4.52788760000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -314,14 +346,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
       
 
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>Closed</td></tr>
-<tr><td>Monday</td><td>12noon - 7pm</td></tr>
-<tr><td>Tuesday</td><td>12noon - 7pm</td></tr>
-<tr><td>Wednesday</td><td>12noon - 7pm</td></tr>
-<tr style="font-weight:bold"><td>Thursday</td><td>12noon - 7pm</td></tr>
-<tr><td>Friday</td><td>12noon - 9pm</td></tr>
-<tr><td>Saturday</td><td>12noon - 9pm</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>

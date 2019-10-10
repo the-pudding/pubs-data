@@ -126,13 +126,13 @@ var thispub = 87383;var pubaddress = "62 Bradgate Road";var pubname = "Stadon"
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87383;var pubaddress = "62 Bradgate Road";var pubname = "Stadon"
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="g234q8ac0muo0chdlfmgsnlli5" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="d12j5kop1mvm65rhlv758dv8h1" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87383;var pubaddress = "62 Bradgate Road";var pubname = "Stadon"
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -246,7 +246,7 @@ var thispub = 87383;var pubaddress = "62 Bradgate Road";var pubname = "Stadon"
 <p>Former social club, now a free house.</p>
 <p class="Reviewer">On 21<sup>st</sup> January 2019 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 783 recommendations about 755 pubs]</span></p>
+  <span class="leftspace">[User has posted 900 recommendations about 870 pubs]</span></p>
   </div>
 </div>
 
@@ -260,7 +260,7 @@ var thispub = 87383;var pubaddress = "62 Bradgate Road";var pubname = "Stadon"
 <span class="h2ish" id="linksheading">External web links for Stadon</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="LEI/423">CAMRA WhatPub :: Stadon - <a href="https://whatpub.com/pubs/LEI/423/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -274,7 +274,7 @@ var thispub = 87383;var pubaddress = "62 Bradgate Road";var pubname = "Stadon"
 
 	var mymap = L.map('mapid').setView([52.67173720000000, -1.19061030000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ var thispub = 87383;var pubaddress = "62 Bradgate Road";var pubname = "Stadon"
 
 
 </script><div>
+<i class="fas fa-train"></i> Leicester, 4.41 miles, 1 hr 25 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Syston, 5.94 miles, 1 hr 54 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Sileby, 6.3 miles, 2 hr 1 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('smn`IhpgFBo@AgC@cAIOWeACw@IWMeA@Wb@u@Pc@VkAj@X\\_DXmCp@qBr@}AvAyDOm@@Mn@}@d@qB^oBPoBfA_GfAkFPa@j@s@f@_@dC{AxAw@z@[f@O~F}@?Md@QfAaAvC_DFNNWfAuAnCuDjEyHZSTGTDPMBJd@oAv@s@\\SbA_@f@Ib@DXHR_AFQ@}AxBoBfC}Cz@qAxDiHfJeYlAmCVa@jA{ApIiKxBuCn@cAHCL?LCFSDa@DO|@eBj@yAIQn@m@CO@UDIFGJ@FF\\s@dEyDhA{A~@mBTw@lAiEJeAf@LJALI`BaCfBqClHuJxAcB|D{D\\HRKHqALgAZoHLiB^oCXcBf@wA`CeBhBoAx@[|@m@|@y@xCkBBNtA_ArC}AGYh@q@f@a@bAo@j@WQcBEgB@mBjAm@Pg@Sc@@Mv@{BJmAzAjALPHA`@s@IQhAqBh@k@R_@m@{GR}CHWhAmBFXjC}BzC{CGYBy@FMP?Mc@E_@nBgC|AuCxAaErAkFlAsFDAFQTAB}@TIpAsADURWSo@\\a@_@[Eo@k@i@Pm@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('smn`IhpgFBo@AgC@cAIOWeACw@IWMeA@Wb@u@Pc@VkAj@X\\_DXmCp@qBr@}AvAyDOm@@Mn@}@d@qB^oBPoBfA_GfAkFQi@mBgD_CkB{BgCSm@qB}JsAqFkAkGSi@Iw@qA{Gg@uCkBkM{AgI^o@KiBMGo@iDvAaB]oAYyAWqBK{AOiBRKn@s@dAqAMU?QmAwCm@cBo@qBw@}C]qBsAeKCEEOA}@F}C?aBE]Ue@G]HcAPYr@wK@[Wa@JQHiAJGZUBaQL?a@{Hb@O_A{BYye@Su@KcG]CKcBw@?OkKMu@g@_Ce@sKRCY}AFcZPBWcZAa@EYSw@vAoCP{@Jm@@[CWKg@GO@WFMhAy@DMNy@Fq@?e@AqBB_CCYGUJiAm@i@_DcDmDcFeFiJu@gBc@kBv@}ALiBk@gEPeIP_CdAkAbA{D`ByDHaBcB_FuByAPoAS_@i@s@YQ]Gi@F?c@CIk@w@YUU]?eAYYS[E]QQq@U]Fk@@]Ue@EZiFj@}FyD}BwDoCWKcImFa@C?TaBHmA`@_@}AGsCmCeBDa@qF_Dm@g@eBmA{@cAiByCM]o@_AgAgCY_AONe@uBWyACs@Ya@aCoGoAkDw@gCq@cBqImR[m@Uf@Ox@Kv@Cv@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('smn`IhpgFBo@AgC@cAIOWeACw@IWMeA@WuAsCKe@Jk@AIi@g@KFo@}BuBuIOwA{AiFe@{AQc@[c@m@m@_Bg@UaLKwC@}@GWEKKa@SYa@Y_EkEuGsGMgBG_@e@gAYk@gAi@e@]q@y@g@wAIKMGiAAi@I[KiAoAqFcEaAa@yEeAc@XGQyG}MkBaDsD{D}EwDyCkBmKiCu@w@oEcDaAaAc@o@c@UcG{Ba@IeA_@a@g@sCiC}@uAa@O[Co@?[DM_As@_BuAcCuAuB{Ay@mBaBiC{AgAc@k@_@yBsLi@mDa@iBo@yE{@uEc@{Ag@oD]wB{B}KWcC_@qBe@mLcAiF_A{CiD}G[TYD_AAwCa@k@Oy@_@kAqAECMBAKGQ_AaBa@_ASm@Oq@c@_EQoBBw@A{@M{BEWIM[Ke@BOk@q@sBaAy@SKONaAd@KcAMs@GOUSoA_@a@Wa@m@qDwI_AkCiCsJ]cBw@iE{EQ_AOgD{@@i@CYGMWE]X]?QOmA{CoBvAaAZUGeAyDKUQQq@g@mCq@QBeEcL_@Uu@NoCvA{AsIYm@WSiALsAj@kBlCeAjBcAd@uAHcApBgKj@qAxDSOiBqBI\\B@GTSMIKSGYFKk@q@|@u@_CS[_@_@EMKq@W{CUyD_@mEw@cDcBgGGMFOB_@Cc@o@aHG{C^eCEe@a@{B_@oCMyBOs@@a@WkBUy@O[KNc@w@DIqA_CQ@i@n@M_@STOe@|@yAl@q@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.67173720000000,-1.19061030000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

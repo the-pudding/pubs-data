@@ -126,13 +126,13 @@ var thispub = 44477;var pubaddress = "75  Newport Road";var pubname = "The Goo
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 44477;var pubaddress = "75  Newport Road";var pubname = "The Goo
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="o1nr78rti8ftugvnsm59i22qe4" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="od9uqq4281ucfpfrung53rkop2" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 44477;var pubaddress = "75  Newport Road";var pubname = "The Goo
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 44477;var pubaddress = "75  Newport Road";var pubname = "The Goo
   <div id="displayedimage">
 <a href="/pubpictures/44477/" class="indisplay"><img src="/images/display/44001_44500/44477_c9b0a2b9.jpg?w=1" alt="Picture of The Good Measure" /></a><br />  Image posted by <a href="/userinfo.php?name=Lady+Grey" class="indisplay">Helen Iwanczuk</a><br />
   Submitted on Thursday, 17<sup>th</sup> May 2018<br />
-  With picture contributions to 791 other pubs<br />
+  With picture contributions to 813 other pubs<br />
 <a href="/pubpictures/44477/" class="smallbutton">View all this pub's pictures</a> (4 more images)
  
   
@@ -260,7 +260,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 <span class="h2ish" id="linksheading">External web links for The Good Measure</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="NEW/507">CAMRA WhatPub :: The Good Measure - <a href="https://whatpub.com/pubs/NEW/507/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -274,7 +274,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([51.58937284836961, -2.75521874427795], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Caldicot, 0.42 miles, 8 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Severn Tunnel Junction, 1.69 miles, 32 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Severn Beach, 12.43 miles, 4 hr 0 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('{_{yH~ayObEtHlClCV`@J\\Db@BfAHb@PXVTj@VnBf@TTP\\TS~Bh@h@?lAId@^@d@@?@f@', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('{_{yH~ayOfArBuAdCRb@Q`Ec@DYHYR]^l@bBV`AL~@?d@iCDP~DsFnDj@zDX`Ai@`AWfAQnAAz@DfCNt@N`@`@jCRfB?h@h@pJ|@xHfArGn@xFl@~DlBnK|BqAfEgAJd@JtAp@hHbA`MzAhFjEfBCc@?m@NuAJm@`@_An@aAJWJm@HaAFaAAyC', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('{_{yH~ayOaBsCiDoGIAiA_DgC_GK[AY|EyLXcATgAp@oEbA_IlAsKtAyMiA{BCOoEkB_Ay@_AyAFYC[EIvDsMXqA\\qBZuCXcGAgBEeBY{IM}BUsAqA{FSoG@_ABa@jAyKIqBqAoD]gBU{BOy@_@mDkBiMo@sDaBuIYsA_AeDa@_AUa@VeAtAoE\\cBd@aBd@aCj@kBJUXOj@MPMH]NoDJw@lC{Ij@oCX}APuAn@gB`AsBEQUI_@H]PYASSKBYUe@Me@[m@W_Dl@c@r@wD[kAqA_LiJkGmKg@_CmA_BgBkAi@gAuAuAwCuBoDkAq@aAYYi@oAe@Mi@kAq@y@a@_@OGSEOBe@l@IZGh@Md@o@p@eAPuD|@yDpAyANoAQqBc@uHyBcCc@a@COeBQ{A_@o@sD}@qAOMOYKKDcBqAaALiAlAMXKJcEo@aBOuAgAQm@u@gAqA{@wBiBoAi@LsBCc@cAiEQmBIOQw@M]aB}BGAE@GKmA_A{BeDs@oAD_@wAwQy@}@eAiB_BcFkDuFg@wA[qAKwADcCTwA`@y@z@g@^?|@`@x@LPGdBAXFHARKHQ?WaCuMU{BGB_BgB_@o@o@eDeAaEEW?Y|@oOC_@Bg@t@eKdAgInb@a|Avs@{iC~@oDxAmCvCyHnDoEbCcG\\s@hDWbCKbEEx@yA\\_BjAf@pFhB?|BJvBZjAb@~CxClQd@v@Vp@zAxFBNST^dBvApBhC~B\\`@bAr@T^vFnGjBbD^VRd@h@TjCfDXTp@v@fErEbCnA\\t@dBdJNhAX~@fHhMxAbBZRjBr@n@fAl@|@rArAnBfBrC|Bd@FpDDVPrDlEt@vA^|@nA`AnE`GjA|@z@NrAlETd@z@t@z@f@z@dBnBtFx@jDXn@xApBpCjDl@bAhAtDjAnCBPAPS`@_BzBq@hCSb@STu@\\e@ZKL?VLpArAhELT`@PTtAfA~DFZf@pEF^LTd@X|@r@|DrBrDp@v@R`Bl@`C`@R\\tANbBOHG^HHFRZPPXJVBxAGrALjAVNV^NxC\\THn@f@^TjDv@xBRfBBh@J|@Zb@KPQVm@LAbBo@FNRXNDVA^_@HAEeChBUPGLMLYT[l@[XSDa@K}Al@G?Fv@N', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.58937284836961,-2.75521874427795], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

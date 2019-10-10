@@ -126,13 +126,13 @@ var thispub = 68997;var pubaddress = "High Street";var pubname = "Olive Tree";
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 68997;var pubaddress = "High Street";var pubname = "Olive Tree";
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="tscrn5v7l33pr73nb848iucae4" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="5qo78mkm0fphk2r5ev3r1f6di0" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 68997;var pubaddress = "High Street";var pubname = "Olive Tree";
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 68997;var pubaddress = "High Street";var pubname = "Olive Tree";
   <div id="displayedimage">
 <a href="/pubpictures/68997/" class="indisplay"><img src="/images/display/68501_69000/68997_89d2d482.jpg?w=2" alt="Picture of Olive Tree" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
   Submitted on Tuesday, 1<sup>st</sup> April 2014<br />
-  With picture contributions to 24007 other pubs<br />
+  With picture contributions to 24825 other pubs<br />
 <a href="/pubpictures/68997/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -263,7 +263,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul id="Custom2">
 			<li>Official site of the Hare &amp; Hounds, contains menu and wine list - <a href="http://www.hareandhoundsstramshall.co.uk" title="Submitted by:- Paul Brett" target="_blank">www.hareandhoundsstramshall.co.uk</a></li>
           </ul>
-<ul id="Custom2"><li class="fblink" id="135962363264019">Facebook - <a href="https://www.facebook.com/hareandhoundsstramshall/" target="_blank" rel="nofollow">Hare & Hounds Stramshall</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="135962363264019">Facebook - <a href="https://www.facebook.com/hareandhoundsstramshall/" target="_blank" rel="nofollow">Hare & Hounds Stramshall</a></li></ul><ul id="Custom2"><li class="wplink" id="STA/2928">CAMRA WhatPub :: Olive Tree - <a href="https://whatpub.com/pubs/STA/2928/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -277,7 +277,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([52.91901408686526, -1.88045114278793], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Uttoxeter, 2.18 miles, 42 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Blythe Bridge, 9.29 miles, 2 hr 59 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Tutbury & Hatton, 9.99 miles, 3 hr 12 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('cv~aIphnJf@iBn@}CTy@p@{ArAoCzBuDr@wAtAsDrAiE`@m@|@{@|AaAvC{@b@EI[_@c@i@}@MWHM?Wd@aCf@w@ASVYO]DMLeARCLGRYPXNFH?Ba@\\}A`AiCfAcCt@kAjBwBnAaAdAq@nLsGzAeA~AmAvAaBjAcB|EyH|AsBv@s@CMnBwAz@e@`C{@bAS|BYzAAh@EPKHMPINBt@\\d@Fb@GJICs@BQDVHPRRb@NdCIdBMTKZANH^HzBXbDr@l@D^I`@a@LDF]ZHLC\\]@Uk@wHQaAMc@Te@Ia@NQJCEkCA?A_@`@??ZI@?A', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('cv~aIphnJmB~GiAnDGb@uBEw@LeC`Bm@x@g@bBwAjGGv@wCdDYl@oDjSi@nFu@Ne@\\gGbOYh@qApAa@j@Qr@Q~@eD`D^~Ff@pEe@~@zCtKZlHnHtUGx@F^|F|IBjAvGpIiKrPwK|SwBlDkBpDgFjLS\\qB|Bw@fA[p@Wr@mArEi@hBkCfHiAjDa@tAkCtO]rAQb@]p@sAbBWf@]`AQn@QpAEn@ZpL@dBAfAKhEMhBKbAm@fCYrAU`Bu@vIWrDa@fCi@vBs@bCmA`Fc@nBcBjJqIbq@yC|RsBdLyDnQ{BxJ]lAq@`DMd@u@fB{AnC}AzC_@|@kAjDaAdDUhBAdBF~JChCWxCcAzF[nAo@pAqB`GKTqDjEuFjHm@p@sCxByDdCyApAoErE{DrEu@\\}AZi@DgC@QHMTIb@EtBOhFO|CGpBAxBI~A]rCeArFYrBOvCKhFa@xJOxA_A`FKz@IhAChAJtE?tAUzH?xAJpED@Dz@?p@C@JfGPlNApACt@u@lIEz@FrFGjFGxBWhC{@dFOdBQrIO`FOtB{@hFQbC[pC{@zFq@`FMr@m@`Ck@lCG\\Et@KfEOtAg@bD}AbJeBnJyHbf@eLfn@iBdG_@tAc@lBc@tDCtAAhBDvAg@vAqBrKqAhL[pBoBxK_C`NcI|c@QnB^?VW', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('cv~aIphnJf@iBn@}CTy@p@{ArAoCzBuDr@wAtAsDrAiE`@m@|@{@|AaAvC{@b@EI[_@c@i@}@MWHM?Wd@aCf@w@ASVYO]DMLeARCLGRYPXNFH?Ba@\\}A`AiCfAcCt@kAjBwBnAaAdAq@pDqB@}ADOLMC_BAeCF_QFaC^iHj@cGhBiL|@cDx@qBp@qBTiB@_AEyABOJWLGT@t@MLWLKLGP?LFLJj@lBHODO?MUcAUw@Ec@A_@j@yETsCVuG?}CCaHI}AFQSiD?MBK?SDAdKuQhAkEzD{OTmAt@uE`@gDBwBAgAGeBUaCEMMiAGU_CoCg@yDISI_@JGL_@d@wBl@gFLkCNiBv@_@fBqA|@oAHQlAwA~A{A`@c@rAgD@S?m@`@IbCiJD]NgCF_@`@s@JWJe@R_GRgDb@{Cx@mE^_Cr@{Gd@oC^eDReGCkBGY]_@OKn@}Dt@cHHwDD{FAeSDmLDuAn@eLRuBzFap@j@uE`@{Bp@wCXcAxLe_@r@kCp@qDNgAT_CP{CD}C?iCEwAK}BIiAH{AJ[Bg@AOGUIOOGIOKc@Aa@DcEVkF\\iDVoBb@oCbEsRl@iDxAaFjAoD`BiEv@iB`BeDfAsBxBiDfEuFfCsDl@_Av@yAz@cBr@aBzA_ElAqDb@kAXi@T]Z[L]BMd@eAb@Sb@]XIn@G~@A`CR\\}ApA}E`BgFT{@jAcHT_ATo@xDoIVq@ToBRmEXaBdA}DNeA`@gGv@wH^yBrHuVfCmHdFkLf@eBr@yF\\}ArBcHPu@jAcIRu@bHcTbBuJhAqEVk@r@iATo@VkCRwEFqBC{BB_BJ}Bd@cEHiAB_A?uEFw@NaAd@wBJeA@g@IuGFuCJmD?sAE{BSyECoA@gANmC^{Cj@mC`BwGZyARsAX}CF{ADoEMyCOcBCeAFeBp@kHXcBNc@nBmE^iAj@gDXkCFyA@oBMoBAw@?uBRgJE}G@w@RmETyCNoEHy@~BfASnE^VR^', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.91901408686526,-1.88045114278793], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

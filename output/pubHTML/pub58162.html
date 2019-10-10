@@ -126,13 +126,13 @@ var thispub = 58162;var pubaddress = "Aspley Lane";var pubname = "The Beacon H
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 58162;var pubaddress = "Aspley Lane";var pubname = "The Beacon H
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="i49hkie22i45dej1oagm2hbvd4" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="s0fq2q14ks88536cn4v7rt7iq6" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 58162;var pubaddress = "Aspley Lane";var pubname = "The Beacon H
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -253,7 +253,7 @@ var thispub = 58162;var pubaddress = "Aspley Lane";var pubname = "The Beacon H
 <p class="old">The Beacon is now the last remaining pub in Aspley located at the main Aspley lane.  The outside mock Tudor exterior is nice in an otherwise not so desirable area. Upon entering there is a one large room with lots of tables and chairs with a long bar running across the back wall. This is a typical no thrills estate pub that was very busy on a Thursday evening with older customers who were playing bingo but there was also a large mixture of other customers. Behind the main room is another large room with its own full sized bar. This room seems much larger because of a really impressive domed roof that came as a big surprise and is a genuinely impressive piece of architecture.  This room had more tables and chairs with pool and darts but was completely empty as everyone else was in the busier main room. This looks like it is probably rented out as a hire room as the main room will cater for the type of numbers this pub is used to attracting. Another really nice feature that was retained was stained glass beacons in the doors that you pass to get through to the back room that have quite rightfully been retained which I like very much. As with most of these type of estate pubs the beer selection was completely dire. There was one unclipped hand pull that looked like it hadn&rsquo;t been used in decades that the landlady then confirmed. To make matters worse Mild and Boddingtons had both recently been taken out so I was left with the great choice of John Smiths or Guinness. The Guinness was ok and cost &pound;3.20. Overall a pretty standard rough estate type pub frequented only by locals. No real reason to ever venture here but if you do ever find yourself in Aspley and in dire need of a pint go and take a look at the back room celling as you don&rsquo;t see rooms like that in pubs every day. Not the sort of place to make a special journey too.</p>
 <p class="Reviewer">On 10<sup>th</sup> March 2017 
   - rating: <b>5</b><br />
-  <span class="leftspace">[User has posted 424 recommendations about 424 pubs]</span></p>
+  <span class="leftspace">[User has posted 431 recommendations about 431 pubs]</span></p>
   </div>
 </div><hr />
 <div class="indreview"><div id="review60760" class="reviewdiv old">
@@ -284,7 +284,7 @@ Photo taken 1984</p>
 <span class="h2ish" id="linksheading">External web links for The Beacon Hotel</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="NOT/16">CAMRA WhatPub :: The Beacon Hotel - <a href="https://whatpub.com/pubs/NOT/16/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -298,7 +298,7 @@ Photo taken 1984</p>
 
 	var mymap = L.map('mapid').setView([52.97290500000000, -1.21007700000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '

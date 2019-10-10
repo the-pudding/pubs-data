@@ -126,13 +126,13 @@ var thispub = 87007;var pubaddress = "10 Thurland Street";var pubname = "Roxy 
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87007;var pubaddress = "10 Thurland Street";var pubname = "Roxy 
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="qc2nsok53ti1qpvpqnisds1iq0" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="htdjn9c6nim2vp7lp5a5930846" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87007;var pubaddress = "10 Thurland Street";var pubname = "Roxy 
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87007;var pubaddress = "10 Thurland Street";var pubname = "Roxy 
   <div id="displayedimage">
 <a href="/pubpictures/87007/" class="indisplay"><img src="/images/display/87001_87500/87007_062aac17.jpg?w=2" alt="Picture of Roxy Ball Room" /></a><br />  Image posted by <a href="/userinfo.php?name=sniffer" class="indisplay">peter ashworth</a><br />
   Submitted on Thursday, 4<sup>th</sup> October 2018<br />
-  With picture contributions to 24007 other pubs<br />
+  With picture contributions to 24825 other pubs<br />
 <a href="/pubpictures/87007/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -246,12 +246,14 @@ var thispub = 87007;var pubaddress = "10 Thurland Street";var pubname = "Roxy 
   <h2>Reviews of Roxy Ball Room  <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
   <div id="newreview"></div>
   <div class="hline"></div>
-  <div class="indreview"><div id="review133569" class="reviewdiv">
+  <div class="indreview"><div id="review133569" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
 <h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a> left this review about Roxy Ball Room</h6>
-<p>This has the same address as Mojo i think the reason being this one is situated on the first floor</p>
+<p class="old">This has the same address as Mojo i think the reason being this one is situated on the first floor</p>
 <p class="Reviewer">On 4<sup>th</sup> October 2018 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 1994 recommendations about 1960 pubs]</span></p>
+  <span class="leftspace">[User has posted 2072 recommendations about 2036 pubs]</span></p>
   </div>
 </div>
 
@@ -282,7 +284,7 @@ var thispub = 87007;var pubaddress = "10 Thurland Street";var pubname = "Roxy 
 
 	var mymap = L.map('mapid').setView([52.95392250000000, -1.14663000000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -307,7 +309,39 @@ var thispub = 87007;var pubaddress = "10 Thurland Street";var pubname = "Roxy 
 
 
 </script><div>
+<i class="fas fa-train"></i> Nottingham, 0.64 miles, 12 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Netherfield, 3.61 miles, 1 hr 9 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Carlton, 3.63 miles, 1 hr 10 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('_qebI`}~E^C@RDABDCtCHA?Pj@Av@I?d@h@B|@Or@vFLCFNND?BRGBSH?Jb@tA{@n@AdBJtA|@J[D??EdAKn@ICs@PCCo@JFN@ZCfCy@CWDGDSJHJBlA_@tDuACQv@YCO', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('_qebI`}~Ev@GLaFPaABGCk@@KA[CGC{@MwAAEAWI_ACI@YGuBBiDDc@?sFFo@^s@CUBMCCv@gBTUPi@NC?OtBF~AShCe@Is@GcDOgI@SRWKe@E?f@kEfBcNBwAAqFz@Sh@[r@mA^iAHwCA_@EKEODu@KUkBkGeCgHiBmFeD}LwAuE~@}@rC{@MiBw@qGAGBBOASy@[y@Mo@O]KGSm@@O_@PSG]g@SgC_DkBj@eMgDy@WMUWgAsBMOQBWcDiBkNkBiSi@gDuAsHeC}KOaB?cCJyAXyBrAyIl@eDFq@?YKi@yAqDqGeOaBwDGGfByBLDVf@l@iAaAmB}@eC{@oAi@gAuBkFi@aBiAmE_@yBOkAIeArA_Bo@iB@ECC@KHc@oAmAGaBHGAuDD{B?ET??I[WGWiACDeCFm@@I', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('_qebI`}~Ev@GLaFPaABGCk@@KA[CGC{@MwAAEAWI_ACI@YGuBBiDDc@?sFFo@^s@CUBMCCv@gBTUPi@NC?OtBF~AShCe@Is@GcDOgI@SRWKe@E?f@kEfBcNBwAAqFz@Sh@[r@mA^iAHwCA_@EKEODu@KUkBkGeCgHiBmFeD}LwAuE~@}@rC{@MiBw@qGAGBBOASy@[y@Mo@O]KGSm@@O_@PSG]g@SgC_DkBj@eMgDy@WMUWgAsBMOQBWcDiBkNkBiSi@gDuAsHeC}KOaB?cCJyAXyBrAyIl@eDFq@?YKi@yAqDqGeOaBwDGGvAgBy@yBg@yAyA_DuDoIiBqCYkAWq@_CaGs@yAaBqEqC{FaBuCwCgHYg@k@kBJQFLBE', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([52.95392250000000,-1.14663000000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

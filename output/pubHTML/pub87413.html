@@ -126,13 +126,13 @@ var thispub = 87413;var pubaddress = "Huxley Lane";var pubname = "The Inn";va
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87413;var pubaddress = "Huxley Lane";var pubname = "The Inn";va
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="pfgdvajsesph7d89ud17kk92k7" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="1i1ft6sal8qd5nb2ru85bqems2" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87413;var pubaddress = "Huxley Lane";var pubname = "The Inn";va
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -246,7 +246,7 @@ var thispub = 87413;var pubaddress = "Huxley Lane";var pubname = "The Inn";va
 <p>Newly built pub on the site of the former Farmers Arms , opens 1st Febuary .</p>
 <p class="Reviewer">On 1<sup>st</sup> February 2019 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 740 recommendations about 637 pubs]</span></p>
+  <span class="leftspace">[User has posted 771 recommendations about 661 pubs]</span></p>
   </div>
 </div>
 
@@ -263,7 +263,7 @@ var thispub = 87413;var pubaddress = "Huxley Lane";var pubname = "The Inn";va
           <ul id="Custom2">
 			<li>Official site of The Inn - <a href="http://theinnathuxley.co.uk/" title="Submitted by:- Alan Hurdle" target="_blank">theinnathuxley.co.uk</a></li>
           </ul>
-</div>
+<ul id="Custom2"><li class="wplink" id="CLW/832">CAMRA WhatPub :: The Inn - <a href="https://whatpub.com/pubs/CLW/832/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -277,7 +277,7 @@ var thispub = 87413;var pubaddress = "Huxley Lane";var pubname = "The Inn";va
 
 	var mymap = L.map('mapid').setView([53.14891617301344, -2.74068500981753], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,39 @@ var thispub = 87413;var pubaddress = "Huxley Lane";var pubname = "The Inn";va
 
 
 </script><div>
+<i class="fas fa-train"></i> Mouldsworth, 7.32 miles, 2 hr 21 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Delamere, 7.75 miles, 2 hr 29 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Chester, 7.85 miles, 2 hr 31 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('qtkcIrgvOTkASO}BqEyCmGg@cBk@g@yDsJgCcB{GyGaDiFs@cBQ@OIqC_GwBeCkFsEmH{FmCiBq@I{CXe@_Ae@Fk@B_@\\sAR_B^g@B_AZa@Q{ADyAZ{DLyATaCDaAe@}D[eB?wD|Ey@EqDmAmEJqFeAgCHwCg@u@nCuC}CeCkBMPuB}@o@xD{BkBmAq@kD~Ja@|AG^Cd@M`EeAr@oBnCoDdDkAxAOb@]@}Cs@g@HcAfAw@lAYx@_B_Bu@a@qBi@mAu@aM}Mk@`@[Fu@U{@j@qGlG{@KcAk@aCf@cDvUGvAMdA{@dDCv@M^eEzJuAbEsBtGk@~AMPmAk@iDzLk@~C}AtEkA_Au@jBq@|BMTFf@yCrFkCtGoBfE_CpDsFhJUBmCzIaFvRsAeCuDyHkAqCcBaFuC_Jy@}BoD}NmBeJeClAwA{@sB@}Ie@{DoGkADuAO}D_B_Ak@qB{AaAe@sA_@cAc@uAu@mCkBcBsAy@}@S?UPU@eEmEo@w@SMs@C}@MuEiBiAi@kJiHuCsAeBgAiBsAqCqA?Y_@q@YCo@{A{@sAmAcBkFcFeA{AsBqEy@o@aCkA{AQoKp@@iBTQ?C', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('qtkcIrgvOTkASO}BqEyCmGg@cBk@g@yDsJgCcB{GyGaDiFs@cBQ@OIqC_GwBeCkFsEmH{FmCiBq@I{CXe@_Ae@Fk@B_@\\sAR_B^g@B_AZa@Q{ADyAZ{DLyATaCDaAe@}D[eB?wD|Ey@EqDmAmEJqFeAgCHwCg@u@nCuC}CeCkBMPuB}@o@xD{BkBmAq@gBqA_D{DiBuB_BmAwA_BaBqC_AsBsA@kAWgBJu@_@yAaBgA}@]u@]yA_EiJsCyMg@qCS{@}@{@}@iAq@m@{@{DkAqHc@_FYm@qBgDqAcBkAy@wIqMQc@g@kCy@mD[}AUyAa@sDYoB_@oEgBCORqElCaALo@Mq@Ya@IQBOJs@rBaAzA{AbAi@T]_AsAgDiAsDuAcFaBwFQ_@GCG@uF~CSGoDfAwJeAmAGSBe@tA{Ap@sBn@oJZwBx@IKsAj@Sf@KJgBC_d@eDEwEKs@[m@_A_A`@kBd@aDLmBFqB@eAQyL@k@Yc@eAkCwBuIq@uB_@a@{@}BUNU^c@bAY^WPw@\\g@HUIe@o@u@KOMCICg@E[IK[Oa@[o@AgAa@Y[[qBeB]c@ZsCKo@]}@Bc@WuAc@g@yA_BiAkAc@w@gAyBoGaAoA]k@?s@MOJYCcBHw@Lu@d@oBLa@D_@Ce@Mu@E_AJqAB_AASYUw@We@A_@Kq@u@IOEQAk@@uDBoABgELaA\\cBH{@?[E[EOW]AcBCQNc@?a@Yg@SGi@@W[B[O_@U}EUcD]_A@c@kD}BkPaGy@_Az@qTe@A@MS?', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('qtkcIrgvOMr@OzBCnAaAKmAd@]f@YCmIdE_B^u@f@c@@a@XBR}FfER~F_@fCm@pA?TuAnByAzCcJpL@PRd@Lj@?jEFhCR|CTzANh@NXJNTRd@P\\@FDVnAd@lBLxA\\|A|@dGDJv@|@x@nEhAjFrAhFHb@Bp@e@hEKzA?zB}@t\\HvGHdDtDvSj@`CtBhEt@z@hEtBn@PJGBLFLPLvAn@Td@PPTAQ_AWNKTGXsAbCYl@kAtDqF|Rw@xB}@zBmEfJ{CfGkAvBgBdE]nAgAnG[xA_@nAu@vBoBxE_E`LgAdDqAzCoAzBm@z@e@h@[V[L[h@yAzAmDxCyA|@_AXs@N_AHaA?aDWyEIUPuA\\cAn@aAx@c@j@gA~AcBxC_AjBaA|BeB|Ee@bBKNIR}AnGkC~N_ClKoCnLiA`G]bCYrAW|@Yf@Od@CPwAlCeA`Cc@|@s@lBqBxH}@vCq@pAoAhBiCjBgBx@_D|Aa@VoAtAc@j@_@p@e@bAUp@q@zCW~AWnCEbB@dCF`FIfC[tB_AjDe@xB[fCSvBK`@?v@I|BW`CY|A}FlRy@tCiBjFgBzDcCtEy@`Aq@l@{E`GURGB{BvCmApBoCpGyAtDgD~IoDzIaH`Rs@tBm@xBi@`CmCtQeApIUt@OfA?ZKrAMpDYjE]xBUt@w@lBWv@Mn@Kl@iAzJSnCEhBBfANjCn@hGJPADNrDDpCFjA}@@YCu@OEr@JlF?ZCTSf@MFgCZMHCXBjEw@@CRQKY|AaCpI', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([53.14891617301344,-2.74068500981753], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

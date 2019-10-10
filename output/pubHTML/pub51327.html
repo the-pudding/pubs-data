@@ -126,13 +126,13 @@ var thispub = 51327;var pubaddress = "Main Road";var pubname = "Aultguish Inn"
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 51327;var pubaddress = "Main Road";var pubname = "Aultguish Inn"
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="68l67tef78qb4su8o1b958u434" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="b7ua4ab4p85us0t5lletjigar1" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 51327;var pubaddress = "Main Road";var pubname = "Aultguish Inn"
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 51327;var pubaddress = "Main Road";var pubname = "Aultguish Inn"
   <div id="displayedimage">
 <a href="/pubpictures/51327/" class="indisplay"><img src="/images/display/51001_51500/51327_683282ab.jpg?w=2" alt="Picture of Aultguish Inn" /></a><br />  Image posted by <a href="/userinfo.php?name=sheffield+hatter" class="indisplay">Will Larter</a><br />
   Submitted on Monday, 3<sup>rd</sup> September 2012<br />
-  With picture contributions to 8564 other pubs<br />
+  With picture contributions to 8736 other pubs<br />
 <a href="/pubpictures/51327/" class="smallbutton">View all this pub's pictures</a> (4 more images)
  
   
@@ -257,7 +257,7 @@ On entering there&#039;s a restaurant to the left and the bar is to the right, w
 The beer was a disappointment: An Teallach Ale that was well past its best, in fact undrinkable. I exchanged it for a bottle of the same ale, which was OK but not really what I&#039;d been hoping for. I wouldn&#039;t mind stopping here again if the weather made it necessary. Opening times and days can vary, so if planning a visit it&#039;s best to phone or email to check.</p>
 <p class="Reviewer">On 7<sup>th</sup> September 2012 
   - rating: <b>5</b><br />
-  <span class="leftspace">[User has posted 2309 recommendations about 2199 pubs]</span></p>
+  <span class="leftspace">[User has posted 2381 recommendations about 2251 pubs]</span></p>
   </div>
 </div>
 
@@ -274,7 +274,7 @@ The beer was a disappointment: An Teallach Ale that was well past its best, in f
           <ul id="Custom2">
 			<li>Official site of the Aultguish Inn - <a href="http://www.aultguish.co.uk/restaurant-bar" title="Submitted by:- Will Larter" target="_blank">www.aultguish.co.uk</a></li>
           </ul>
-</div>
+<ul id="Custom2"><li class="wplink" id="INV/2">CAMRA WhatPub :: Aultguish Inn - <a href="https://whatpub.com/pubs/INV/2/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -288,7 +288,7 @@ The beer was a disappointment: An Teallach Ale that was well past its best, in f
 
 	var mymap = L.map('mapid').setView([57.69338606690325, -4.76792693138123], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '

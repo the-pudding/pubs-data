@@ -126,13 +126,13 @@ var thispub = 10041;var pubaddress = "Church Road";var pubname = "The Rose & C
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 10041;var pubaddress = "Church Road";var pubname = "The Rose & C
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="167hl20jkao4mor8q0j49t53m2" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="pvar3a1q5ce0hg837i60lafsc7" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 10041;var pubaddress = "Church Road";var pubname = "The Rose & C
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -253,7 +253,7 @@ var thispub = 10041;var pubaddress = "Church Road";var pubname = "The Rose & C
 <p class="old">A small stone-built village pub with 14th&nbsp;Century origins, currently owned by Marston.&nbsp; The single long bar room is carpeted.&nbsp; One end has a carvery counter, the bar counter is in the middle and the far end is bight-shaped, the centre being a chimney stack which has been left when the wall was demolished.&nbsp; The car park is comparatively large, though it does have a couple of cars in it which look as though they have been abandoned but are probably just being ignored by local owners as parking in the village is problematic.&nbsp; The staff were friendly, though they appeared bemused by the presence of strangers.&nbsp; The locals were the younger generation, which meant that the jukebox music was rather out of place given the village setting.&nbsp; Four handpumps on the counter, but only 2 ales on.&nbsp; I had a pint of 61 Deep, which was in decent condition. &nbsp;The food is basic pub grub, reasonably priced. &nbsp;It&rsquo;s a decent enough local, has some historic interest, and I&rsquo;d be happy to drop in if in the area, but it&rsquo;s a way off the beaten track and not the paragon previous reviews might lead you to expect.</p>
 <p class="Reviewer">On 15<sup>th</sup> August 2017 
   - rating: <b>6</b><br />
-  <span class="leftspace">[User has posted 2299 recommendations about 2279 pubs]</span></p>
+  <span class="leftspace">[User has posted 2382 recommendations about 2361 pubs]</span></p>
   </div>
 </div><hr />
 <div class="indreview"><div id="review48498" class="reviewdiv old">
@@ -287,7 +287,7 @@ var thispub = 10041;var pubaddress = "Church Road";var pubname = "The Rose & C
 <span class="h2ish" id="linksheading">External web links for The Rose &amp; Crown</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="SWD/011">CAMRA WhatPub :: The Rose & Crown - <a href="https://whatpub.com/pubs/SWD/011/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -301,7 +301,7 @@ var thispub = 10041;var pubaddress = "Church Road";var pubname = "The Rose & C
 
 	var mymap = L.map('mapid').setView([50.92616000000000, -2.58648400000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '

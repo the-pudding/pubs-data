@@ -126,13 +126,13 @@ var thispub = 87150;var pubaddress = "31-33 Station Road";var pubname = "The V
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87150;var pubaddress = "31-33 Station Road";var pubname = "The V
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="hgnktde5o9khklbqphpu6hm7h1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="q7temb8m7kpf0089t5dc39c8b4" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87150;var pubaddress = "31-33 Station Road";var pubname = "The V
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.8610229492188E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -246,7 +246,7 @@ var thispub = 87150;var pubaddress = "31-33 Station Road";var pubname = "The V
 <p>New micropub.</p>
 <p class="Reviewer">On 17<sup>th</sup> November 2018 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 783 recommendations about 755 pubs]</span></p>
+  <span class="leftspace">[User has posted 900 recommendations about 870 pubs]</span></p>
   </div>
 </div>
 
@@ -260,7 +260,7 @@ var thispub = 87150;var pubaddress = "31-33 Station Road";var pubname = "The V
 <span class="h2ish" id="linksheading">External web links for The Village Crossing Bar</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="CLV/18-0542">CAMRA WhatPub :: The Village Crossing Bar - <a href="https://whatpub.com/pubs/CLV/18-0542/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -274,7 +274,7 @@ var thispub = 87150;var pubaddress = "31-33 Station Road";var pubname = "The V
 
 	var mymap = L.map('mapid').setView([54.59653570000000, -1.29351450000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -299,7 +299,39 @@ var thispub = 87150;var pubaddress = "31-33 Station Road";var pubname = "The V
 
 
 </script><div>
+<i class="fas fa-train"></i> Billingham, 1.37 miles, 26 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Stockton, 2.76 miles, 53 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Thornaby, 3.48 miles, 1 hr 7 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('kkflIjs{FlAgBoBcFeA{CAYNkJBSvAgCUi@aA}CsAeFYw@Wg@[]WO]MwBODwFKA@k@G}@QUQEwCSq@Qc@UMUo@m@uCoDI\\[x@YAaEeFI@e@n@GDMCc@qAiEzEo@`ANT?Rg@|Dc@w@e@m@k@g@w@a@NeBEMQIIHgAuAeAhBQEIGM[bAiB\\w@GK?GVqARoAOMg@gALUGM@EFLNYEGCDAC', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('kkflIjs{FvAsBb@zA@tBh@rFR~@z@zCDd@@P`CI@v@G??HxIOHEVFb@b@f@`ADPTf@F^rJrf@@f@Cl@AN?TDR?X?x@Dv@Ln@Tj@nBjD`@|@xA~B`Av@tAb@ATJh@BFJFM~@z@d@XTXf@Nh@fAmAJ@`@z@^`@f@ZAJfC^~BL~DzA~Bh@l@Fp@?hFQjAFhAb@jAr@d@L|@CpD{@GaBfDs@?DxDoAtAW@xAr@IfIE`FUdANx@f@DZrAhAFPnBdAO|ATd@@JRELBzAt@?HHd@Uj@P\\FOFLHlAJx@Lv@^tALXRHj@JA^@PJLtBHTHfAbBTPLHbCj@WrDDf@Ph@jBb@Ol@u@`B[d@YN[GgAs@_@FEPNJAFKKCL', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('kkflIjs{FvAsBb@zA@tBh@rFR~@z@zCDd@@P`CI@v@G??HxIOHEVFb@b@f@`ADPTf@F^rJrf@@f@Cl@AN?TDR?X?x@\\@?f@Df@HZb@~@bAfB~B~D^b@RPl@`@vDnAj@^VBPEJB`@}CX{ArBaI`V{DrCi@Pi@|C{F`BeDNOV@l@^rACnBQjEm@b@g@H@jDdEjAcAVi@HKHCLBjA|AxD{FZQd@O|A@\\D|@f@rBt@|Bn@DKHB`Kb@Cs@@WB[FOJOVMv@KVQPk@Ji@RDHGHMBS@SI]Xm@V_@|JuAh@JfCbBn@yDJqAn@RdNbDHyAjAPLBA\\B^JRRLp@RAVrB|@rAp@j@RvBXn@ZHNPFJAPWDQd@`@LTJ^j@hD\\pAXx@FKHPZb@d@g@K_@HIg@sB?IEAGD`@dBEBs@{C', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([54.59653570000000,-1.29351450000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

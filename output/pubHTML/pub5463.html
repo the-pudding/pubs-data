@@ -126,13 +126,13 @@ var thispub = 5463;var pubaddress = "Post House Wynd";var pubname = "Jessica's
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 5463;var pubaddress = "Post House Wynd";var pubname = "Jessica's
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="v9frm6e501vc970vjnmc12pm53" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="jc5jkoqbnf8nn63s2icmh5dsl3" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 5463;var pubaddress = "Post House Wynd";var pubname = "Jessica's
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 3.0994415283203E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -251,7 +251,7 @@ var thispub = 5463;var pubaddress = "Post House Wynd";var pubname = "Jessica's
 <p>Once the Old Dunn Cow, this alleyway pub retains a fine exterior but inside is a different story. Apart from the bar itself, the rooms have been stripped down and opened out with a very bare feel, and equipped with a mixture of benches, tables and sofas, presumably aimed at younger customers. A couple of craft keg beers are on offer, together with one handpump in use which offered the rare Read Kjarr (as in Redcar) from North Yorkshire Brewery. Sadly this proved to be totally undrinkable, hence the low rating.</p>
 <p class="Reviewer">On 6<sup>th</sup> June 2019 
   - rating: <b>4</b><br />
-  <span class="leftspace">[User has posted 1775 recommendations about 1734 pubs]</span></p>
+  <span class="leftspace">[User has posted 1965 recommendations about 1921 pubs]</span></p>
   </div>
 </div><hr />
 <div class="indreview"><div id="review14507" class="reviewdiv old">
@@ -275,7 +275,7 @@ var thispub = 5463;var pubaddress = "Post House Wynd";var pubname = "Jessica's
 <span class="h2ish" id="linksheading">External web links for Jessica&#039;s</span>
 <div class="hline"></div>
 			<p>No known official website for this pub.</p>
-</div>
+<ul id="Custom2"><li class="wplink" id="DAR/6803">CAMRA WhatPub :: Jessica's - <a href="https://whatpub.com/pubs/DAR/6803/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -289,7 +289,7 @@ var thispub = 5463;var pubaddress = "Post House Wynd";var pubname = "Jessica's
 
 	var mymap = L.map('mapid').setView([54.52494180530648, -1.55612880892477], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -314,20 +314,51 @@ var thispub = 5463;var pubaddress = "Post House Wynd";var pubname = "Jessica's
 
 
 </script><div>
+<i class="fas fa-train"></i> Darlington, 0.64 miles, 12 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> North Road, 0.84 miles, 16 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Dinsdale, 4.31 miles, 1 hr 23 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('_lxkIx|nHDwBxB`@Ao@j@SrBZp@yJjC`@\\@Xs@H_@Dm@FcADMT[T?NJLETSL]D_@`Bg]CABa@a@GFoAc@G?Gv@J', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('_lxkIx|nHDwBiFcABqAuDgDK@o@a@s@[q@e@s@G{@^IGG]Ba@QMk@OaB[wD_@cFc@kBW_AH{EdB}ATqAI}B_@Az@{AWKBOPUb@Y|@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('_lxkIx|nHDwBg@KRe@KADEHUDa@PoBBiA?{@Q}GDaAI{DLaAT[b@A@mCZcDXcC|@qEd@eCf@wBn@oDf@eDDkD@iEUcLG}JD_I[gU?cCDiBZoFfDuZTgDJeCkBc@JwB_@oC`@QL]b@oIBSRm@VgGTqDN{CEk@~Am@AOB_@DKf@q@P?A_@|@iNd@{CZgAdEcIbBaGj@iDUMb@oF?S@sADy@DGDSVgCb@}GPyDHeC@aAEe@EKo@q@E_APYR{A@]E]IyC]}DMe@i@}@F_@@i@JCHIDQBYH?AcAC_@g@kBWaCBqCwCq]_@qDWmB_@wB_AgEgAqDe@oAmByDmEiIPa@GYDIBU@qAKsQQoLA_ABs@lEs[F[Xi@JEfDk@rA]b@[V[pB{D`CaDP_@P]`BaF\\k@`@Ut@Y~Ag@bAW~@GHPNPTD`Gs@_@gHUDBb@', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([54.52494180530648,-1.55612880892477], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
 <span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=5463">View all updates for Jessica&#039;s, Darlington</a></span>
 <div class="hline"></div>
       <div class="auditrow"><div class="auditdate">
-        8<span class="sup">th</span> Jun 2019, 16:03
-      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> approved
-
+        12<span class="sup">th</span> Aug 2019, 08:34
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=sniffer">peter ashworth</a> deleted by owner
       </div></div>
       <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
-        8<span class="sup">th</span> Jun 2019, 10:51
-      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a>
+        8<span class="sup">th</span> Jun 2019, 16:03
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=Pangolin">Graham Coombs</a> approved
 
       </div></div>
       

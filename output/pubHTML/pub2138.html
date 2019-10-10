@@ -126,13 +126,13 @@ var thispub = 2138;var pubaddress = "London End";var pubname = "The White Hors
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 2138;var pubaddress = "London End";var pubname = "The White Hors
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="tq5r1usl7nuljule6fvic63o42" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="6ks01rujclligr5kvnpic9hhk3" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 2138;var pubaddress = "London End";var pubname = "The White Hors
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=29760"><strong>The Good Intent</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11983">rpadam</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 2138;var pubaddress = "London End";var pubname = "The White Hors
   <div id="displayedimage">
 <a href="/pubpictures/2138/" class="indisplay"><img src="/images/display/2001_2500/2138_1effcb6c.jpg?w=2" alt="Picture of The White Horse" /></a><br />  Image posted by <a href="/userinfo.php?name=Komakino" class="indisplay">Komakino .</a><br />
   Submitted on Tuesday, 11<sup>th</sup> December 2018<br />
-  With picture contributions to 592 other pubs<br />
+  With picture contributions to 601 other pubs<br />
 <a href="/pubpictures/2138/" class="smallbutton">View all this pub's pictures</a> (1 more image)
  
   
@@ -251,7 +251,7 @@ var thispub = 2138;var pubaddress = "London End";var pubname = "The White Hors
 <p>Re-opened as a pub by the Brunning &amp; Price group after 18 years of closure and spending that time as a Loch Fyne fish restaurant. This is set back from the road with a small car park and decking out front and is semi-Tardis-like internally, extending far back including a conservatory-type area at the far reaches. A long bar on the right-hand side offered a seven-ale line-up of Five Points XPA, Animal Hop Kitty, Redemption Rock the Kazbek, Rebellion Roasted Nuts, Sambrooks Wandle, Fisher&#039;s Blonde Ale and Chiltern Pale with an eighth pump clip reversed. A pint of the Fisher&#039;s was &pound;4.80 for the privilege and in average condition. Very woody, with bare boards, wooden ceiling slats, third-height panelling and carved wood fireplace surround along with plenty of framed photos, paintings, portraits, old maps, et al on the walls. Bucks and Oxon seem to be bucking the trend with closed pubs re-opening and long may it continue.</p>
 <p class="Reviewer">On 11<sup>th</sup> December 2018 
   - rating: <b>7</b><br />
-  <span class="leftspace">[User has posted 940 recommendations about 940 pubs]</span></p>
+  <span class="leftspace">[User has posted 955 recommendations about 955 pubs]</span></p>
   </div>
 </div>
 
@@ -282,7 +282,7 @@ var thispub = 2138;var pubaddress = "London End";var pubname = "The White Hors
 
 	var mymap = L.map('mapid').setView([51.60206300000000, -0.63263400000000], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -307,7 +307,39 @@ var thispub = 2138;var pubaddress = "London End";var pubname = "The White Hors
 
 
 </script><div>
+<i class="fas fa-train"></i> Beaconsfield, 1.17 miles, 22 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Seer Green, 2.1 miles, 40 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Gerrards Cross, 3.77 miles, 1 hr 12 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('cq}yHhqzBZbFp@lMHdAH^EDM`@AZY\\IPgBtAwAnAwBxAc@TWFiBDwBNu@X@n@[dDWbEa@zBs@~BiEnKSp@Kj@Q\\UHo@DmBB_ACcAMe@M[]mDpBo@f@INqAbAyAdBqAtAEOJaG?yD', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('cq}yHhqzBAA[DgB`AIo@a@eBaB|@_CfAyCz@mEEsI[sHaZ{AsKcCuUoA_F{@yFcBAEgKTiM`@kIOwGyA_Iu@kBUaDQsHkA{Ah@eA`@gA~BcIf@m@j@aAHkAvAaI`@mAp@f@r@bAh@vBj@vA`@vAJzACzA[jBq@lC?p@Ot@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('cq}yHhqzBKsBDAHO?OGQLYjCyXPoE?_BNqBPm@Vg@b@q@TaADk@?a@Ca@Qw@?YHw@Lk@tCaIx@kCj@uBr@eDp@uDp@gFV}C`@wGDoCEuFBkBToM`AkPlAgQbCaTd@aI\\sDz@kDt@yBpFiJ`H_QzG}Wf@wCVKRuAHcBCm@OaAc@eT[aKIsGTaGdAwKxGad@GGd@oDnAiMf@eDCCoAf@i@Be@Q]i@oA}CQu@Sk@[oMxA}Cc@e@qC{DKYj@kF`DkKFABEbCgILK|@iAXOXWH?AD', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.60206300000000,-0.63263400000000], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

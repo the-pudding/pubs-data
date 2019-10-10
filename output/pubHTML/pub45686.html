@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="content-language" content="en-gb"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+<meta name="description" content="The City Arms pub in Cardiff, South Glamorgan, CF10 1EA : Pubs Galore : Contains reviews, photos, maps, events &amp; social media details of The City Arms" />
+  <meta name="keywords" content="The City Arms, 12  Quay Street, Cardiff, South Glamorgan, Cardiff Central, map, review, photo" />
+  <!--<meta property="fb:app_id" content="121286221253053" />-->
+<meta property="og:admins" content="672713974" />
+<meta property="og:title" content="The City Arms in Cardiff" />
+<meta property="og:type" content="bar" />
+<meta property="og:image" content="http://www.pubsgalore.co.uk/images/display/45501_46000/45686_c17f0d22.jpg?w=2" />
+<meta property="og:url" content="https://www.pubsgalore.co.uk/pubs/45686/" />
+<meta property="og:site_name" content="Pubs Galore" />
+<meta property="og:latitude" content="51.48003319587983" />
+<meta property="og:longitude" content="-3.18094968795776" />
+<meta property="og:street-address" content="12  Quay Street" />
+<meta property="og:locality" content="Cardiff" />
+<meta property="og:region" content="South Glamorgan" />
+<meta property="og:postal-code" content="CF10 1EA" />
+<meta property="og:country-name" content="Wales" />
+<meta property="og:description" content="Do you like The City Arms in Cardiff? Visit Pubs Galore, leave a review and rating. Be sure to hit the Like button and make The City Arms the most liked pub in the country." />
+<link rel="canonical" href="https://www.pubsgalore.co.uk/pubs/45686/" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PubsGalore" />
+<meta name="twitter:title" content="The City Arms in Cardiff" />
+<meta name="twitter:description" content="Find reviews, ratings, photos, events and lots more about The City Arms " />
+<meta name="twitter:image" content="http://www.pubsgalore.co.uk/images/display/45501_46000/45686_c17f0d22.jpg?w=2" />
+<meta name="twitter:url" content="https://www.pubsgalore.co.uk/pubs/45686/" />
+<meta name="geo.position" content="51.48003319587983;-3.18094968795776" />
+<meta name="geo.placename" content="The City Arms in Cardiff" />
+<meta name="geo.region" content="UK" />
+<title>The City Arms in Cardiff : Pubs Galore</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/common/template_functions_jquery.js?v=1"></script>
+<script> 
+      $.mobile.autoInitializePage = false
+    </script> <script type="text/javascript" src="/js/core/pubs.js?v=7"></script>
+<script type="text/javascript" src="/js/classes/pubreview.js?ver=15"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+  var pgcontrols = new userlogin('121286221253053',false);
+  thispage = new pubpage();
+	$("#fileuploader").uploadFile({
+	url:"/ajax/pubpictures.php",
+	formData: {"process":"addphoto","pubid":45686},
+	fileName:"imageupload",
+	returnType:"json",
+	allowedTypes:"png,gif,jpg,jpeg",
+	onSuccess:function(files,data,xhr)
+	{
+		
+		if (data.checkresult) {
+		$('#displayedimage').html($('<img/>', {src: data.display, alt: 'Picture of pub', id: 'display' + data.pictureid}));
+		$('#displayedimage').append($('<br/>'));
+		$('#displayedimage').append(data.info);
+		jQuery(document).trigger('pgupdateNotification');
+		}
+	}
+	});
+	review = new pubreview(45686);
+});
+var thispage = null;
+$(document).bind("pgpostlogin", function() {
+  var failop = '<div class="notifications"><p>Reloading page</p></div>';
+  $('#infocontainer').append($('<div/>', {'id': 'logininfo', 'class': 'notifsur'}).html(failop));
+  $('#logininfo').effect('pulsate');
+  location.reload(true);
+});
+var thispub = 45686;var pubaddress = "12  Quay Street";var pubname = "The City Arms";var pubpostcode = "CF10 1EA";$( document ).ready(function() {});
+-->
+</script>
+<link href="/css/master.css?a=18" rel="stylesheet" type="text/css" />
+<link href="/css/master_print.css" rel="stylesheet" type="text/css" media="print" />
+<style>
+#mapid { height: 400px; width: 700px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/css/core/pubs.css?v=11" />
+<link type="text/css" rel="stylesheet" href="/css/core/pubaudit.css?v=1" />
+<link type="text/css" rel="stylesheet" href="/css/uploadfile.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script src="/js/leaflet/gpx.js"></script>
+   <script src="/js/leaflet/polyline.encoded.js"></script><!--[if lt IE 7]>
+<style type="text/css">
+#pagetop, #breadcrumb, .menubutton {
+  height: 100%;
+  overflow: visible;
+}
+#pagetop, #content, #breadcrumb {
+  width: expression(document.body.clientWidth < 972? "970px" : this.width); 
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagetop">
+  <div id="logo" title="Pubs Galore, home of all things Pub related"><a rel="nofollow" href="/"><img src="/images/pubslogo.gif" alt="Pubs Galore" /></a></div>
+  <div id="menucountry" title="Browse the site by region">
+    <h4>Countries</h4>
+    <div class="menulink" title="Browse English pubs"><a href="/countries/england/">England</a></div>
+    <div class="menulink" title="Browse Northern Irish pubs"><a href="/countries/northern-ireland/">Northern Ireland</a></div>
+    <div class="menulink" title="Browse Scottish pubs"><a href="/countries/scotland/">Scotland</a></div>
+    <div class="menulink" title="Browse Welsh pubs"><a href="/countries/wales/">Wales</a></div>
+  </div>
+  <div id="menuother" title="Pubs Galore Extras">
+    <h4>Other bits</h4>
+    <div class="menulink" title="Look at the Pubs forum"><a href="http://forums.pubsgalore.co.uk/">The Pub Forum</a></div>
+    <div class="menulink" title="Pubs in the CAMRA Member Discount scheme"><a href="/pub-features/camra-discount/">CAMRA Discounts</a></div>
+    <div class="menulink" title="Other useful pub sites"><a href="/stats/">Stats & Features</a></div>
+    <div class="menulink" title="Common pub names"><a href="/stats/pubs/pub-names/">Popular Pub Names</a></div>
+  </div>
+  <div id="menuinform" title="Submit new information to Pubs Galore">
+    <h4>Inform us</h4>
+    <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
+    <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
+  </div>
+  <form action="/search.php" id="searcharea" method="get">
+    <div id="searchbox" title="Search the content of Pubs Galore">
+      <h4>Search site</h4>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
+      <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
+    </div>
+  </form>
+</div>
+<div id="breadcrumb">
+  <div id="indexheader"><a href="/"><img src="/images/navbit-home.png" title="Home" alt="Home" /></a><a href="/" title="Pubs Galore : Home Page">Home</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/countries/wales/" title="Pubs Galore : Wales Page">Wales</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/counties/south-glamorgan/" title="Pubs Galore : South Glamorgan Page">South Glamorgan</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <a href="/towns/cardiff/south-glamorgan/" title="Pubs Galore : Cardiff Page">Cardiff</a> <img src="/images/navbit-arrow-right.png" alt="arrow" /> <span title="Pubs Galore : The City Arms Page">The City Arms Summary</span></div>
+</div>
+<div id="content">
+<div id="infocontainer">
+<div id="infowindow">
+  <div class="iwtop"> </div>
+  <div id="loginform">
+    
+      <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
+    <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
+    <input type="hidden" value="cucpv54i7rboccfmlk34drul61" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="" id="hdnPType" name="hdnPType" />
+    <input type="hidden" value="" id="hdnPID" name="hdnPID" />
+    <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
+    <p>
+      User name:<br />
+      <input type="text" name="txtLogin" id="txtLogin" class="text" />
+    </p>
+    <p>
+      Password:<br />
+      <input type="password" name="txtPassword" id="txtPassword" class="text" />
+    </p>
+    <p>
+      <label for="rememberme"><input type="checkbox" class="checkbox" value="true" name="rememberme" id="rememberme" /> Remember Me</label>
+    </p>
+    <p><span class="menubuttonclicked" id="sblogin">Login</span></p>
+    </form>
+    <hr /><p style="text-align:center"><fb:login-button scope="email" v="2" size="small">Sign&nbsp;in&nbsp;with&nbsp;Facebook</fb:login-button></p>
+    <hr />
+    <p><strong>Not already a member?</strong><br />
+    Join our community and
+    <span class="list">- Rate &amp; review pubs</span>
+    <span class="list">- Upload pictures</span>
+    <span class="list">- Add events</span>
+    <a class="join" rel="nofollow" href="http://www.galorenetwork.co.uk/secure/registration.php" target="_blank">JOIN for free NOW</a></p>
+    
+
+  </div>
+  
+  
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
+ on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
+</div>
+<div id="skyscraperad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pubs Galore Skyscraper 160x600, created 02/03/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-5109749778713414"
+     data-ad-slot="9709323957"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="displayarea">
+
+  <div id="displayedimage">
+<a href="/pubpictures/45686/" class="indisplay"><img src="/images/display/45501_46000/45686_c17f0d22.jpg?w=2" alt="Picture of The City Arms" /></a><br />  Image posted by <a href="/userinfo.php?name=rpadam" class="indisplay">Just a quick pint, then I&#039;m off</a><br />
+  Submitted on Saturday, 5<sup>th</sup> August 2017<br />
+  With picture contributions to 5595 other pubs<br />
+<a href="/pubpictures/45686/" class="smallbutton">View all this pub's pictures</a> (10 more images)
+ 
+  
+  </div>
+  <div id="uploadblank">
+    Only members may add pictures, <b><a target="_blank" href="http://www.galorenetwork.co.uk/secure/registration.php" rel="nofollow" class="indisplay">click to receive free membership</a></b>
+  </div>
+
+<!-- none -->
+</div>
+
+<div id="pubcardouter"><div id="pubcard">
+  <div id="pubpages">
+    <h2>Detail Pages</h2>
+    <p>
+      <a href="/pubmap/45686/">Pub map</a><br /><a href="/pubreviews/45686/">Pub reviews (6)</a><br /><a href="/pubpictures/45686/">Pub pictures (11)</a><br /><a href="/core/pubaudit.php?id=45686" rel="nofollow">Page updates</a><br />
+    </p>
+  </div>
+  <h1 class="pubname">The City Arms, Cardiff Central, Cardiff</h1>
+  
+  <div id="pubaddress" class="pubaddress">
+  <span class="address">12  Quay Street</span><br />
+
+
+<span class="town">Cardiff</span><br />
+<span class="postcode">CF10 1EA</span>
+  </div>
+  <div id="pubphone"><b>Phone:</b> 02920641913</div>
+  <div><span class="smallbuttonclicked" id="btncorrect">Correct details</span></div>
+  <div id="pubcorrections" style="display:none;"></div>
+  <div class="pubpages">
+    
+        <h3>Served areas</h3>
+    <div id="pubareas"><a href="/areas/cardiff-central/south-glamorgan/">Cardiff Central</a></div>
+      
+    
+  </div>
+</div></div>
+
+<span class="h2ish" id="twitterheading">Tweets by The City Arms</span>
+<div class="divtwitter">    
+  <div class="tweettext">
+    <span class="tweetthumb"><a href="http://twitter.com/cityarmscardiff" target="_blank"><img src="https://pbs.twimg.com/profile_images/1102850330763710464/4_lEn-vy_normal.jpg" alt="The City Arms" /></a></span>
+    <span class="tweetbody">
+      <span class="tweetcontent">
+        <strong><a href="http://twitter.com/cityarmscardiff" target="_blank">The City Arms</a></strong>
+A decision needs to be made for tonight&#039;s telly.
+      </span>  
+      <span class="tweetdate">
+<a href="http://twitter.com/cityarmscardiff/status/1180107837445431296">2:10 PM Oct 4th</a> from <a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a>
+      </span>      
+    </span>
+  </div>
+  <div><a href="http://twitter.com/cityarmscardiff" target="_blank">View</a> the full twitter feed for <strong><a href="http://twitter.com/cityarmscardiff" target="_blank">The City Arms</a></strong></div>
+</div>
+
+
+
+
+<div id="pubreviews">
+  <h2>Reviews of The City Arms  <span class="h2note">(Average Rating: <span id="averagerating"><b>7&frac12;</b> of 10</span>)</span> <span class="menubuttonclicked" id="btnAddreview">Add Review</span> <span class="headingcontrol" id="reviewhint">see review guidelines</span></h2>
+  <div id="newreview"></div>
+  <div class="hline"></div>
+  <div class="indreview"><div id="review135204" class="reviewdiv">
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> left this review about The City Arms</h6>
+<p>What was a fairly run of the mill Brains pub is now run as a free house that also sells Brains beers. I didn&#039;t get the impression of a two room pub as the central bar counter just seems to have the furnishings wrapped around it. I didn&#039;t see any stillage either but I did count something like fourteen hand pumps.<br />
+I didn&#039;t note all the beers but I&#039;m sure there was a full range of Brains beers and did see Milestone and Ascot represented. I went for the Vale Of Glamorgan Flying Hellfish (&pound;3.45) which was in good nick.<br />
+Given the central location this is an obvious place to try Brains beers but I would return for the guests and save the Brains for the Goat Major and Old Arcade.</p>
+<p class="Reviewer">On 3<sup>rd</sup> December 2018 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 2130 recommendations about 2125 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review94310" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Pubsignman">Pub SignMan</a> left this review about The City Arms</h6>
+<p class="old">This is a large, two bar Brains house just outside the Millennium Stadium, but offering a much more varied ale range than the majority of the city&#039;s Brains outlets. The left hand bar is a simple wedge shaped room with the servery over to the right hand side and a large open space opposite, presumably very useful on heaving match days. A good deal of sturdy looking seating has been arranged around the perimeter and the room has a lot of visual appeal, with breweriana, mirrors, beer bottles and pump clip collections adding a significant amount of colour to the walls. The right hand bar is L shaped with bare floorboards, low stools and some high padded banquettes as well as the provision of plenty more vertical drinking space. Lots of pump clips run around the walls here and there are numerous old photos and advertisements on display as well, with the focal point being an impressive etched mirror for W, J &amp; J Sanderson, 1850. The room extends into a rear space where a good deal more seating can be found and there are lots more interesting items worth looking through here including some well presented beer bottle displays. Each area has its own large TV screen, all of which were off on this visit, although I suspect certain sports events get an airing. The day&#039;s papers were filed in a rack next to the bar and some music quietly piped its way through the rooms for the duration of my visit.<br />
+The ale range included four casks on stilage behind the bar, but I couldn&#039;t figure out which of these, if any, were actually on and what they were dispensing. The handpulls were all clearly clipped and offered Brains Bitter, SA, Reverend James, Dark, Boilermaker and Rye Catcher, Anarchy Urban Assault, Oakham Black Hole Porter, Portcullis Castles and something called Firebox, plus two real ciders. The Urban Assault was in pretty good shape and served by a friendly, welcoming barmaid.<br />
+I found this an incredibly relaxing place to enjoy some good beer, although I appreciate that there will be times when the environment and atmosphere changes dramatically. The pub is well kept, welcoming and offers a good range of ales by Cardiff standards and in my view is probably the best traditional style pub in the city centre.</p>
+<p class="Reviewer">On 18<sup>th</sup> April 2015 
+  - rating: <b>8</b><br />
+  <span class="leftspace">[User has posted 2321 recommendations about 2321 pubs]</span></p>
+  </div>
+</div><hr />
+<div class="indreview"><div id="review87646" class="reviewdiv old">
+  <p class="ReviewerHeadWarn"><b>Please Note:  This review is over a year old.</b></p>
+  <hr />
+<h6 class="Reviewer"><a rel="nofollow" href="/userinfo.php?name=Quinno">Quinno _</a> left this review about The City Arms</h6>
+<p class="old">Handily opposite the Urban Tap House, this is a Brains outlet but also hosts a number of their own specials/seasonals and proper guests, spread over handpulls and the dreaded stillage. True to form, the Dark Star from handpull was a decent drop but the stillaged Glastonbury was slops. Also available were some of the Westons Twist ciders &ndash; which were revolting. Internally there&rsquo;s not a huge amount to get excited by. There&#039;s a few tables outside but expect to be accosted by wandering vagrants. Worth a look-in for the handpulls only. A 6.5 kind of place but I&#039;ll be generous and err upward.</p>
+<p class="Reviewer">On 1<sup>st</sup> October 2014 
+  - rating: <b>7</b><br />
+  <span class="leftspace">[User has posted 3912 recommendations about 3900 pubs]</span></p>
+  </div>
+</div>
+<br /><a class="smallbutton" href="/pubreviews/45686/">View more reviews of The City Arms (6)</a>
+</div>
+
+
+
+
+
+<div id="ContentPanel4">
+<span class="h2ish" id="linksheading">External web links for The City Arms</span>
+<div class="hline"></div>
+			<p>No known official website for this pub.</p>
+<ul id="Custom2"><li class="fblink" id="164267616941143">Facebook - <a href="https://www.facebook.com/cityarmscardiff/" target="_blank" rel="nofollow">City Arms, Cardiff</a></li></ul><ul id="Custom2"><li class="twitlink" id="214021276">Twitter - <a href="https://twitter.com/cityarmscardiff" target="_blank" rel="nofollow">The City Arms</a></li></ul><ul id="Custom2"><li class="wplink" id="CAR/018">CAMRA WhatPub :: The City Arms - <a href="https://whatpub.com/pubs/CAR/018/" target="_blank">whatpub.com</a></li></ul></div>
+
+
+<div id="pubmap" style="margin:10px;">
+<span class="h2ish">Pub location <a class="headingcontrol fakelink" href="/pubmap/45686/">see interactive map of local area</a></span>
+<div class="hline"></div>
+<div class="mapdesc">Map location corrected by <a class="fakelink" href="/userinfo.php?name=Pubsignman">Pub SignMan</a></div>
+  <div id="mapid">
+  </div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([51.48003319587983, -3.18094968795776], 16);
+
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
+  }).addTo(mymap);
+  
+
+
+  var marker = L.marker([51.48003319587983, -3.18094968795776]).addTo(mymap);
+  var assetLayerGroup = new L.LayerGroup();
+  assetLayerGroup.addTo(mymap);
+  originalbounds = assetLayerGroup.getBounds;
+
+  mymap.scrollWheelZoom.disable();
+  mymap.on('focus', 
+  function() { 
+    mymap.scrollWheelZoom.enable(); 
+  });
+  mymap.on('blur', 
+  function() { 
+    mymap.scrollWheelZoom.disable(); 
+  });
+
+
+</script><div>
+<i class="fas fa-train"></i> Cardiff Central, 0.47 miles, 9 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Cardiff Queen Street, 0.61 miles, 11 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Cathays, 0.81 miles, 15 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('uteyHphlRNa@MUMo@o@qCzBgCLIBGlAuAxCcBt@w@d@]LIN?HKdEiDJRBGHAJDT`@J?TbARb@^hAB|AEBIZ@BCHBdB', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('uteyHphlRNa@MUMo@o@qCu@p@y@mDEG_@M_@oAe@h@k@Rq@mIa@iHUoBe@}COw@k@wB~@{@?MDIRMhBkBm@mCq@aDv@a@', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('uteyHphlRNa@MUMo@o@qCu@p@y@mDEG_@M_@oAe@h@k@Rw@RkAHIHm@EWGa@AwAmAIBAOk@BWI?Mo@_@U?SEeBj@}AkEuBkFkHxDm@`@}A~AsB`D[c@eA|B', 5));
+  function showRoute(id) {
+
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.48003319587983,-3.18094968795776], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
+</div>
+
+</div>
+<span class="h2ish">Latest updates <a class="headingcontrol fakelink" href="/core/pubaudit.php?id=45686">View all updates for The City Arms, Cardiff</a></span>
+<div class="hline"></div>
+      <div class="auditrow"><div class="auditdate">
+        3<span class="sup">rd</span> Dec 2018, 08:58
+      </div><div class="auditexp">Review submitted by <a rel="nofollow" href="/userinfo.php?name=Aqualung">Aqualung .</a> 
+      </div></div>
+      <div class="hline">&nbsp;</div>      <div class="auditrow"><div class="auditdate">
+        5<span class="sup">th</span> Aug 2017, 20:39
+      </div><div class="auditexp">Picture submitted by <a rel="nofollow" href="/userinfo.php?name=rpadam">Just a quick pint, then I&#039;m off</a> approved
+
+      </div></div>
+      
+
+<div id="pubfacilities">
+  <h2>Pub Details </h2>
+  <div class="hline"></div>
+  <p class="inst">Pub details supplied by members of this site to the best of their knowledge. Please check with pub directly before making a special trip.</p>
+  
+  <span id="facdisptable"><ul class="Custom1"><li>Accommodation : <span id="fac11845686">No</span> <span id="discdetail11845686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2015 by Pub SignMan</span></li><li>Bar Billiards : <span id="fac10745686">No</span> <span id="discdetail10745686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2015 by Pub SignMan</span></li><li>Beer Festivals : <span id="fac11745686">No</span> <span id="discdetail11745686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 November 2018 by Aqualung .</span></li><li>Beer Garden : <span id="fac11445686">No</span> <span id="discdetail11445686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2015 by Pub SignMan</span></li><li>CAMRA Discount : <span id="fac10245686">No</span> <span id="discdetail10245686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 November 2018 by Aqualung .</span></li><li>Car Park : <span id="fac11345686">No</span> <span id="discdetail11345686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2015 by Pub SignMan</span></li><li>Child Friendly : <span id="fac12145686">No</span> <span id="discdetail12145686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 November 2018 by Aqualung .</span></li><li>Dog Friendly : <span id="fac10545686">Yes</span> <span id="discdetail10545686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2015 by Pub SignMan</span></li><li>Function Room : <span id="fac12345686">No</span> <span id="discdetail12345686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 November 2018 by Aqualung .</span></li><li>Hot Food : <span id="fac10345686">No</span> <span id="discdetail10345686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2015 by Pub SignMan</span></li><li>Jukebox : <span id="fac11245686">No</span> <span id="discdetail11245686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2015 by Pub SignMan</span></li><li>Karaoke : <span id="fac10645686">No</span> <span id="discdetail10645686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 28 November 2018 by Aqualung .</span></li><li>Live Music : <span id="fac10845686">Yes</span> <span id="discdetail10845686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2015 by Pub SignMan</span></li><li>Live TV Sports : <span id="fac11045686">Yes</span> <span id="discdetail11045686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2015 by Pub SignMan</span></li><li>Micropub : <span id="fac12245686">No</span> <span id="discdetail12245686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2015 by Pub SignMan</span></li><li>Pinball : <span id="fac11645686">No</span> <span id="discdetail11645686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2015 by Pub SignMan</span></li><li>Pool Table : <span id="fac10445686">No</span> <span id="discdetail10445686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2015 by Pub SignMan</span></li><li>Quiz Night : <span id="fac10945686">Yes</span> <span id="discdetail10945686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 27 June 2014 by Dave McNally</span></li><li>Real Ale : <span id="fac10145686">Yes</span> <span id="discdetail10145686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 29 July 2013 by Dave McNally</span></li><li>Real Cider : <span id="fac11945686">Yes</span> <span id="discdetail11945686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2015 by Pub SignMan</span></li><li>Wheelchair Access : <span id="fac12045686">Yes</span> <span id="discdetail12045686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2015 by Pub SignMan</span></li><li>WiFi : <span id="fac11545686">Yes</span> <span id="discdetail11545686" class="discdetail" style=""></span>  <span class="Reviewer">last updated 18 April 2015 by Pub SignMan</span></li></ul></span>
+  
+</div>
+
+<!-- fbhours -->
+<!-- FH --> 
+      <div id="ContentPanel3">
+      <span class="h2ish">Local pubs</span>
+      <p><img src="/images/icon-key-small.gif" alt="Icon Key: Picture Recommendation Rating Closed" /></p>
+       
+          <ul class="Custom1">
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 26 picture(s)" title="Pub has 26 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 4 recommendation(s)" title="Pub has 4recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 4 reviewer(s)" title="Pub has average rating of 8 from 4 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/80772/" class="List1">Tiny Rebel Cardiff</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 9 picture(s)" title="Pub has 9 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 5 recommendation(s)" title="Pub has 5recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7 from 5 reviewer(s)" title="Pub has average rating of 7 from 5 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/55856/" class="List1">The Gatekeeper (JD Wetherspoon)</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82309/" class="List1">Fuel Bar</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/71206/" class="List1">Revolution</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 1 picture(s)" title="Pub has 1 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/82306/" class="List1">Seasons</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 11 picture(s)" title="Pub has 11 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 10 recommendation(s)" title="Pub has 10recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 7.5 from 10 reviewer(s)" title="Pub has average rating of 7.5 from 10 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/45725/" class="List1">The Goat Major</a></li>
+                    <li><img src="/images/icon-photo.gif" alt="Pub has 3 picture(s)" title="Pub has 3 picture(s)" /><img src="/images/icon-comment.gif" alt="Pub has 1 recommendation(s)" title="Pub has 1recommendation(s)" /><img src="/images/icon-rating.gif" alt="Pub has average rating of 8 from 1 reviewer(s)" title="Pub has average rating of 8 from 1 reviewer(s)" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/56669/" class="List1">Elevens</a></li>
+                    <li><img src="/images/icon-photo-grey.gif" alt="Pub has no pictures" title="Pub has no pictures" /><img src="/images/icon-comment-grey.gif" alt="Pub has no reviews" title="Pub has no reviews" /><img src="/images/icon-rating-grey.gif" alt="Pub has no ratings" title="Pub has no ratings" /><img src="/images/icon-closed-grey.gif" alt="" title="" /><a href="/pubs/87424/" class="List1">The Alchemist</a></li>
+
+          </ul>
+  
+
+      </div>
+
+
+</div>
+<div id="footer">
+<a href="/pubs-near-me/nearby-pubs.php">Pubs close to my location</a>  <a href="/pubuser/termsandconditions.php" rel="nofollow" target="_blank">Terms &amp; Conditions</a><a rel="nofollow" href="http://www.pubsgalore.co.uk/pubuser/privacypolicy.php" target="_blank">Privacy Policy</a>
+</div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6700866-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to personalise content on this site. Some third parties also set cookies to provide ads, social media features and to analyse our traffic.","dismiss":"OK","learnMore":"More info","link":"http://www.pubsgalore.co.uk/pubuser/privacypolicy.php","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+</body>
+</html>

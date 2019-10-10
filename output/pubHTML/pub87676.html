@@ -126,13 +126,13 @@ var thispub = 87676;var pubaddress = "Hill Street";var pubname = "Pulp Coffee 
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 87676;var pubaddress = "Hill Street";var pubname = "Pulp Coffee 
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="vohh57nc3r7f7v4hdusitf7vd1" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="c8nrlqmtbhjb1mggkvcpf3o9u6" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 87676;var pubaddress = "Hill Street";var pubname = "Pulp Coffee 
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=19575">AlanH</a>
+  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 87676;var pubaddress = "Hill Street";var pubname = "Pulp Coffee 
   <div id="displayedimage">
 <a href="/pubpictures/87676/" class="indisplay"><img src="/images/display/87501_88000/87676_fbe21b5e6be158b58c9191d547db51c0.jpg?w=2" alt="Picture of Pulp Coffee &amp; Wine Bar" /></a><br />  Image posted by <a href="/userinfo.php?name=Delboy20" class="indisplay">Delboy 20</a><br />
   Submitted on Friday, 26<sup>th</sup> April 2019<br />
-  With picture contributions to 1026 other pubs<br />
+  With picture contributions to 1189 other pubs<br />
 <a href="/pubpictures/87676/" class="smallbutton">View all this pub's pictures</a>
  
   
@@ -251,7 +251,7 @@ var thispub = 87676;var pubaddress = "Hill Street";var pubname = "Pulp Coffee 
 <p>After doing Lydney I had stumbled on this place and reviewed it through the window and found no sign of any pumps so didn&#039;t add it. But if the fact it has Wine Bar in the name and may have some bottled beers warrants it then so be it but given no draught I won&#039;t be making an effort to go. Trip Advisor reviews are slating it now after a being a recent opening so suspect it may shut soon anyway.</p>
 <p class="Reviewer">On 30<sup>th</sup> April 2019 
   - no rating submitted<br />
-  <span class="leftspace">[User has posted 354 recommendations about 335 pubs]</span></p>
+  <span class="leftspace">[User has posted 359 recommendations about 340 pubs]</span></p>
   </div>
 </div>
 
@@ -279,7 +279,7 @@ var thispub = 87676;var pubaddress = "Hill Street";var pubname = "Pulp Coffee 
 
 	var mymap = L.map('mapid').setView([51.72621693645101, -2.53153020000002], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -304,7 +304,38 @@ var thispub = 87676;var pubaddress = "Hill Street";var pubname = "Pulp Coffee 
 
 
 </script><div>
+<i class="fas fa-train"></i> Lydney, 0.93 miles, 17 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Chepstow, 9.52 miles, 3 hr 3 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('mxuzHhmmNEs@dCKf@GTKzBaDxAWfAG~B@z@CXmAx@OZHbAUrAPVRlA@z@LBQjBd@j@URe@`ClARMN?NLdD^xAt@dEdG~@x@`AVhABjCm@`Bk@Ec@?ML_@j@_A', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('mxuzHhmmNLbBTvAz@tCvAhFbAtBrAjBNXl@rB`ApChAbBn@jAjExJf@hAb@t@dApA~CdD~A~AjEvDdG~Ct@j@bAjA?\\FRLHLCNUV`@nCnGt@bCb@rBl@dEXjCDfBExE@rADb@Hb@|@vCbBnIN^pB~Bv@jAXVt@`@p@r@hA|AnA~A`@n@|BrEvBxEpDvJdBvFdBtGxAnHv@pEv@tFz@bHp@~G`AlHd@dCzApEzD`H|AhEvA~C~BpDtAdCpAjCjAxCtAzB|DpEbAx@xAfE|@jAxAjCt@|@fAlBXXZBl@AAf@LdBA\\b@WTFb@r@N_@vAn@nBtAbEjVcAjNjAg@ZQdBdHn@?~FvO|@fA^Ob@XvB`CXp@Xb@t@qBh@cA`DiCDMJ{@x@XVd@VH\\Mb@?HEb@d@pAtCt@|@~BhE|@jAt@xAd@jAz@~CXlBh@fF\\tCbAnEz@`C~E~KbCzGrAvChAdBf@|@`DlGhDpHjAbChAlBpFbIbLhP|AlBrKpKf@n@nG`JlGpJ~DnFnL`MxBfCJr@d@t@xCbDr@h@f@RpMrOfB|AjDfCtBhB]z@LPNHj@PpEnEmAvBUlA@PNZlAjEXnBzAr@~@n@DNqBdI`@j@XEfAF`Bb@h@`@v@dALB@X~@~CIfCv@~@tAf@h@tA|A]t@CfB\\pAv@bApAlDvDlAv@`AxE~@|FvHvV\\Yf@{@FOJJSp@GZAZ?TLn@bB`Fz@~BrBbEx@pA`B~BZ\\~EhCpEvAlBv@xA|@N@`@K?F]r@Kd@j@n@DNDtAAhAQxCxARLPfEbPGh@c@ZZvAYTh@vCdAm@~@y@j@t@r@`CPFlFlSvAjGjBjJh@[xD]^M`BwCNmAiAS@I|AT', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([51.72621693645101,-2.53153020000002], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>

@@ -126,13 +126,13 @@ var thispub = 36491;var pubaddress = "Jubilee Road";var pubname = "The Jubilee
   <div id="menuinform" title="Submit new information to Pubs Galore">
     <h4>Inform us</h4>
     <div class="menulink" title="Add a missing pub to Pubs Galore"><a rel="nofollow" href="/pubadd.php">Add Pub</a></div>
-    <div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>
+    <!--<div class="menulink" title="Add Beer Festival to Pubs Galore"><a rel="nofollow" href="/beerfestival/addfestival.php">Add Beer Festival</a></div>-->
     <div class="menulink" title="Submit Feedback to Pubs Galore and let us know how to improve the site"><a rel="nofollow" href="/feedback.php">Contact Us</a></div>
   </div>
   <form action="/search.php" id="searcharea" method="get">
     <div id="searchbox" title="Search the content of Pubs Galore">
       <h4>Search site</h4>
-      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" value="search here" onclick="selectSearch()" /></div>
+      <div class="menulink" title="Insert your search"><input name="search" id="searchinput" maxlength="150" type="text" placeholder="search here" onclick="selectSearch()" /></div>
       <div class="menubutton" onclick="submitSearch()" style="display:block;margin:3px">Search</div>
     </div>
   </form>
@@ -148,7 +148,7 @@ var thispub = 36491;var pubaddress = "Jubilee Road";var pubname = "The Jubilee
     
       <form action="https://www.galorenetwork.co.uk/secure/logindump.php" method="post" name="frmLogin" id="frmLogin" target="logindump">
     <input type="hidden" value="login" id="hdnProcess" name="hdnProcess" />
-    <input type="hidden" value="ri4e6l61i4aobvlm79o9nmn313" id="PHPSESSID" name="PHPSESSID" />
+    <input type="hidden" value="t7cg203pp230mmb40llaqc77m0" id="PHPSESSID" name="PHPSESSID" />
     <input type="hidden" value="" id="hdnPType" name="hdnPType" />
     <input type="hidden" value="" id="hdnPID" name="hdnPID" />
     <iframe src="about:blank" height="0" width="0" style="visibility:hidden" name="logindump" id="logindump"></iframe>
@@ -178,7 +178,7 @@ var thispub = 36491;var pubaddress = "Jubilee Road";var pubname = "The Jubilee
   </div>
   
   
-  <hr /><p>Chat about:<br /><!-- vb 1.9073486328125E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=17609"><strong>Yet another list</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=17193">Tris39</a>
+  <hr /><p>Chat about:<br /><!-- vb 2.1457672119141E-6 --><a class="iwlink" href="http://forums.pubsgalore.co.uk/showthread.php?goto=newpost&amp;t=627"><strong>Wetherspoon's news of the day</strong></a> with <a class="iwlink" href="http://forums.pubsgalore.co.uk/member.php?u=11299">oldboots</a>
  on <a class="iwlink" href="http://forums.pubsgalore.co.uk/"> the Pub Forum</a></p>
 </div>
 <div id="skyscraperad">
@@ -198,7 +198,7 @@ var thispub = 36491;var pubaddress = "Jubilee Road";var pubname = "The Jubilee
   <div id="displayedimage">
 <a href="/pubpictures/36491/" class="indisplay"><img src="/images/display/36001_36500/36491_14ba1dba.jpg?w=2" alt="Picture of The Jubilee" /></a><br />  Image posted by <a href="/userinfo.php?name=sheffield+hatter" class="indisplay">Will Larter</a><br />
   Submitted on Monday, 4<sup>th</sup> April 2016<br />
-  With picture contributions to 8564 other pubs<br />
+  With picture contributions to 8736 other pubs<br />
 <a href="/pubpictures/36491/" class="smallbutton">View all this pub's pictures</a> (1 more image)
  
   
@@ -263,7 +263,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
           <ul id="Custom2">
 			<li>Official site of The Jubilee - <a href="http://www.jubileegosforth.co.uk" title="Submitted by:- Will Larter" target="_blank">www.jubileegosforth.co.uk</a></li>
           </ul>
-<ul id="Custom2"><li class="fblink" id="185633164907295">Facebook - <a href="https://www.facebook.com/TheJubileePublicHouse/" target="_blank" rel="nofollow">The Jubilee Public House</a></li></ul></div>
+<ul id="Custom2"><li class="fblink" id="185633164907295">Facebook - <a href="https://www.facebook.com/TheJubileePublicHouse/" target="_blank" rel="nofollow">The Jubilee Public House</a></li></ul><ul id="Custom2"><li class="wplink" id="TYN/6980">CAMRA WhatPub :: The Jubilee - <a href="https://whatpub.com/pubs/TYN/6980/" target="_blank">whatpub.com</a></li></ul></div>
 
 
 <div id="pubmap" style="margin:10px;">
@@ -277,7 +277,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 	var mymap = L.map('mapid').setView([55.01114123288112, -1.63963437080383], 16);
 
-	L.tileLayer('https://capalert.co.uk/osm_tiles/{z}/{x}/{y}.png', {
+	L.tileLayer('https://maps.pubsgalore.co.uk/tile/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> '
@@ -302,7 +302,39 @@ Be the first to write a recommendation on this pub and let everyone know why the
 
 
 </script><div>
+<i class="fas fa-train"></i> Manors, 3.74 miles, 1 hr 12 min walk (<a id="polyline1" class="showroute fakelink" onClick="showRoute(1)">show</a>)<br /><i class="fas fa-train"></i> Newcastle, 3.87 miles, 1 hr 14 min walk (<a id="polyline2" class="showroute fakelink" onClick="showRoute(2)">show</a>)<br /><i class="fas fa-train"></i> Newcastle Airport Metro, 4 miles, 1 hr 17 min walk (<a id="polyline3" class="showroute fakelink" onClick="showRoute(3)">show</a>)<br />
+  <script>
+   var polyline1 = new L.polyline(L.PolylineUtil.decode('yiwnIvf_IRV[jAOQMd@qAaBfByGfAoEvAsGbB{IzBuK`GkOrG{ObAgACGASBSFGEi@rYqUkB{MpEyAnAm@fBmAtDqDPgBDaANCzIa`@bAE~Hs@FCAUfC{@LArBaAbBkAN?rBiBFS~BoBbF|@ReGlBiAj@Q^@pFvAR_DxJsAB}AjB]|Bg@xM{BT?PVT{@VS`@Dz@MDPXY[}APMLCt@s@pEiABIDAAU@Yr@IjDu@Ai@xCPFu@pFrBJkANGvHj@AVTB@Nj@GtAa@\\AbAPz@Zh@FhCH@j@LNNbBX~AAf@PbAPTN?NEPO@QR_@HRJSFNCDa@oALMbA|B', 5));
+   var polyline2 = new L.polyline(L.PolylineUtil.decode('yiwnIvf_IRV[jAOQMd@qAaBfByGfAoEvAsGp@qDd@V^XRXN\\`@pAF^Fp@F|@bEhABb@D?TvBz@EJfBr@Av@^h@G`@j@RfBhA_@f@Xd@dAZLf@Ip@]v@mATQZO\\EXQGUAK@ODMf@i@t@[OsCOaBWmBxBmAFa@bAy@bHmGpDwCx@iA`BmClBuDNWZOT?@OHYHEJ?JHDRb@AjG_DfMgHxc@iUr@DtHiCvHuJfNiQtCxA@XLLD?FIz@`@\\@bA\\DwA|@{DBWHqEl@gBBOHeA@cAf@@t@{A~@PNMR]Pb@nC_FbDyGRcAJUr@Pf@Bh@TJMdA_@`HqB~E_Cr@nFVDJb@fAk@@g@zCdBfFpDlBnAbFxEZTv@f@~BbAn@^RjB^QXjB^]HI', 5));
+   var polyline3 = new L.polyline(L.PolylineUtil.decode('yiwnIvf_IRV[jAOQMd@qAaBgBvFmFzNq@jAUTYJWRe@GLzMAbBGbAcEzR[hA{EtGO`ACl@]j@EXWhEIl@f@r@t@tAZ`@Qb@q@hCGf@At@CN@r@ED@|Ge@NBj@Gdc@D|FR|I?`@GdASd@_ArAzAlExA`DVhC|@rCOTB^bAfDBX@z@Ap@@d@HX~@v@NXCzAJrA@fAG`C~@PRPP\\[n@_AbCqAxEoBhGyGpQgC~FaD~G}BfFy@fCq@`Di@dGqAhJWtAg@lBSj@qAtBmBfBoFlBw@T{@^uAv@aAdAsBvCoUb_@OPoFtI_DxF_BjDmEnKiBrDwC~EoIlLLb@yBtDQYSh@GKa@KP]tAiB', 5));
+  function showRoute(id) {
 
+    //console.log($('#polyline'+id).html());
+
+
+    if($('#polyline'+id).html()=='show'){
+    linetoadd = eval('polyline'+id);
+    assetLayerGroup.clearLayers();
+    $('.showroute').html('show');
+    assetLayerGroup.addLayer(linetoadd);
+    mymap.fitBounds(linetoadd.getBounds());
+    $('#polyline'+id).html('hide');
+    }else{
+      assetLayerGroup.clearLayers();
+      $('.showroute').html('show');
+      //console.log(originalbounds);
+      mymap.setView([55.01114123288112,-1.63963437080383], 16);
+    }
+}
+
+
+  $('span.showroute').click(function () {
+    
+
+  });
+
+
+  </script>
 </div>
 
 </div>
@@ -319,14 +351,7 @@ Be the first to write a recommendation on this pub and let everyone know why the
       
 
 
-<div><span class="h2ish">Opening Hours</span><div class="hline"></div><table><tr><td>Sunday</td><td>11am - 11pm</td></tr>
-<tr><td>Monday</td><td>11am - 11pm</td></tr>
-<tr><td>Tuesday</td><td>11am - 11pm</td></tr>
-<tr><td>Wednesday</td><td>11am - 11pm</td></tr>
-<tr style="font-weight:bold"><td>Thursday</td><td>11am - 11pm</td></tr>
-<tr><td>Friday</td><td>11am - Midnight</td></tr>
-<tr><td>Saturday</td><td>11am - Midnight</td></tr>
-</table><span class="Reviewer">Hours according to Facebook page, please check before making a special visit</span></div>
+<!-- fbhours -->
 <!-- FH --> 
       <div id="ContentPanel3">
       <span class="h2ish">Local pubs</span>
