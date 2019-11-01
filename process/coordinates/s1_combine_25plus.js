@@ -2,8 +2,8 @@ const fs = require('fs');
 const d3 = require('d3');
 const _ = require('lodash');
 
-const OUT_PATH = './output/over-25/results-combined/'
-const IN_PATH = './output/over-25/results/'
+const OUT_PATH = './output/over-25/combined-test/'
+const IN_PATH = './output/over-25/results-test/'
 let PUB_NAMES = [];
 let GROUPED_FILES = [];
 let GROUPED_COORDS = [];
